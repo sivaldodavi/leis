@@ -61,6 +61,9 @@ def norma_natureza(nid):
 def dispositivos(nid):
     return q("SELECT * FROM dispositivos WHERE norma_id=? ORDER BY ordem", nid)
 
+def partes_do_disp(did):
+    return q("SELECT * FROM dispositivo_partes WHERE dispositivo_id=? ORDER BY ordem", did)
+
 def temas_do_disp(did):
     ids = [r["tema_id"] for r in q("SELECT tema_id FROM dispositivo_tema WHERE dispositivo_id=?", did)]
     return [temas[i]["nome"] for i in ids if i in temas]
@@ -82,6 +85,8 @@ for f in os.listdir(content_dir):
         os.remove(os.path.join(content_dir, f))
 
 normas_list = []
+dispositivos_list = []
+busca_list = []
 for n in q("SELECT * FROM normas ORDER BY id"):
     nid = n["id"]
     s = slug(nid)
@@ -96,7 +101,7 @@ for n in q("SELECT * FROM normas ORDER BY id"):
     tipo_lbl = tipo_label.get(tipo, tipo)
     nzid, nznome, nzdesc, nzjust = norma_natureza(nid)
 
-    expl_perfis_norma = set()
+    norma_expl_perfis = set()
     lines = []
     lines.append("---")
     lines.append('title: "%s"' % (ementa if ementa else nid).replace('"', '\\"'))
@@ -111,7 +116,7 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         lines.append('observacao: "%s"' % obs.replace('"', '\\"'))
     lines.append("categorias: [%s]" % ", ".join('"%s"' % c for c in cats))
     lines.append("publicos: [%s]" % ", ".join('"%s"' % p[0] for p in pubs))
-    lines.append("explicacoes_perfis: [%s]" % ", ".join('"%s"' % p for p in sorted(expl_perfis_norma)))
+    lines.append("explicacoes_perfis: [%s]" % ", ".join('"%s"' % p for p in sorted(norma_expl_perfis)))
     if pubs:
         lines.append("publicos_motivos:")
         for p in pubs:
@@ -150,17 +155,51 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         texto = md_text(d["texto"])
         temas_list = temas_do_disp(did)
         expls = explicacoes_do_disp(did)
-        for _pid in expls:
-            expl_perfis_norma.add(_pid)
+        expl_perfis_disp = set(expls.keys())
+        for _pid in expl_perfis_disp:
+            norma_expl_perfis.add(_pid)
 
         heading = tit if tit else (cap + " " + rotulo).strip()
         if not heading:
             heading = rotulo or ("Art. %d" % d["ordem"])
+        lines.append('<a id="disp-%d"></a>' % did)
         lines.append("### " + heading)
         lines.append("")
-        if texto:
+        parts = partes_do_disp(did)
+        if parts:
+            for p in parts:
+                ident = md_text(p["identificador"])
+                ptexto = md_text(p["texto"])
+                if ident:
+                    lines.append("**%s.** %s" % (ident, ptexto))
+                else:
+                    lines.append(ptexto)
+                lines.append("")
+                busca_list.append({
+                    "norma_id": nid,
+                    "norma_slug": s,
+                    "norma_numero": n["numero"],
+                    "dispositivo_id": did,
+                    "rotulo": rotulo,
+                    "anchor": "disp-%d" % did,
+                    "tipo_parte": p["tipo"],
+                    "identificador": ident,
+                    "texto": ptexto,
+                })
+        elif texto:
             lines.append(texto)
             lines.append("")
+            busca_list.append({
+                "norma_id": nid,
+                "norma_slug": s,
+                "norma_numero": n["numero"],
+                "dispositivo_id": did,
+                "rotulo": rotulo,
+                "anchor": "disp-%d" % did,
+                "tipo_parte": "caput",
+                "identificador": "",
+                "texto": texto,
+            })
         for pub_id, lst in expls.items():
             for e in lst:
                 short = short_profile.get(pub_id, pub_id)
@@ -184,6 +223,18 @@ for n in q("SELECT * FROM normas ORDER BY id"):
             lines.append("")
         lines.append("")
 
+        dispositivos_list.append({
+            "id": did,
+            "norma_id": nid,
+            "norma_slug": s,
+            "norma_numero": n["numero"],
+            "rotulo": rotulo,
+            "heading": heading,
+            "anchor": "disp-%d" % did,
+            "explicacoes_perfis": sorted(expl_perfis_disp),
+            "n_explicacoes": sum(len(v) for v in expls.values()),
+        })
+
     out_path = os.path.join(content_dir, s + ".md")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
@@ -203,7 +254,7 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         "publicos": [p[0] for p in pubs],
         "publicos_nomes": pub_names,
         "publicos_motivos": {p[0]: md_text(p[1]) for p in pubs},
-        "explicacoes_perfis": sorted(expl_perfis_norma),
+        "explicacoes_perfis": sorted(norma_expl_perfis),
         "natureza_id": nzid or "",
         "natureza": nznome or "",
         "natureza_desc": nzdesc or "",
@@ -215,11 +266,15 @@ os.makedirs(data_dir, exist_ok=True)
 with open(os.path.join(data_dir, "legislacao.json"), "w", encoding="utf-8") as f:
     json.dump({
         "normas": normas_list,
+        "dispositivos": dispositivos_list,
         "publicos": list(publicos.values()),
         "temas": list(temas.values()),
         "naturezas": list(naturezas.values()),
         "categorias": list(categorias.values()),
     }, f, ensure_ascii=False, indent=2)
+
+with open(os.path.join(data_dir, "busca.json"), "w", encoding="utf-8") as f:
+    json.dump({"partes": busca_list}, f, ensure_ascii=False)
 
 # --- Dados abertos (Portal de Transparência Fiorilli) ---
 def parse_br(v):
@@ -294,7 +349,7 @@ print("dinheiro: orgaos=%d fornecedores=%d diarias=%d licitacoes=%d contratos=%d
 # Publicar JSON como endpoints estáticos (sem API/backend)
 static_dados = os.path.join(BASE, "static", "dados")
 os.makedirs(static_dados, exist_ok=True)
-for fname in ("legislacao.json", "dinheiro_publico.json"):
+for fname in ("legislacao.json", "dinheiro_publico.json", "busca.json"):
     src = os.path.join(data_dir, fname)
     dst = os.path.join(static_dados, fname)
     if os.path.exists(src):

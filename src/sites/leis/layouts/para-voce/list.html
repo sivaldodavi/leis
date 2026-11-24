@@ -1,8 +1,8 @@
 {{ define "main" }}
-{{ $normas := where .Site.RegularPages "Section" "normas" }}
+{{ $disps := .Site.Data.legislacao.dispositivos }}
 <div style="padding:40px 48px 72px">
   <h1 style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px">Para você</h1>
-  <p class="lead" id="pv-lead">Escolha quem você é para ver as leis que têm explicação feita para o seu perfil. A escolha fica salva neste navegador.</p>
+  <p class="lead" id="pv-lead">Escolha quem você é para ver os trechos das leis que têm explicação feita para o seu perfil. A escolha fica salva neste navegador. Você também pode abrir a lei inteira quando quiser.</p>
 
   <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 8px">
     <span style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B;align-self:center">Seu perfil:</span>
@@ -17,23 +17,23 @@
   <p id="pv-status" style="font-size:14px;color:#5B5B5B;margin:0 0 20px"></p>
 
   <div class="grid grid-3" id="pv-grid">
-    {{ range $normas }}
-    {{ $cls := "outro" }}{{ if eq .Params.situacao "vigente" }}{{ $cls = "vigente" }}{{ else if eq .Params.situacao "projeto_em_tramitacao" }}{{ $cls = "tramit" }}{{ end }}
+    {{ range $disps }}
+    {{ if .explicacoes_perfis }}
     <article class="card pv-card"
-      data-explicacoes="{{ delimit .Params.explicacoes_perfis "," }}"
-      data-numero="{{ .Params.numero }}"
-      data-url="{{ .RelPermalink }}">
-      <span class="badge {{ $cls }}">{{ .Params.situacao_label }}</span>
-      <h3 style="margin:0;font-size:22px;font-weight:800">{{ .Params.numero }} — {{ .Title }}</h3>
-      <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A">{{ .Params.ementa }}</p>
+      data-explicacoes="{{ delimit .explicacoes_perfis "," }}"
+      data-url="/normas/{{ .norma_slug }}/#{{ .anchor }}">
+      <span class="badge vigente">{{ .norma_numero }}</span>
+      <h3 style="margin:0;font-size:20px;font-weight:800">{{ .rotulo }} — {{ .heading }}</h3>
       <p class="pv-expl" style="margin:0;font-size:14px;color:#5B5B5B;font-style:italic"></p>
-      <a href="{{ .RelPermalink }}" style="margin-top:auto;font-weight:700;font-size:16px">Ler a lei →</a>
+      <a href="/normas/{{ .norma_slug }}/#{{ .anchor }}" style="margin-top:auto;font-weight:700;font-size:16px">Ver trecho →</a>
+      <a href="/normas/{{ .norma_slug }}/" style="font-size:14px;color:#5B5B5B">Abrir lei inteira</a>
     </article>
+    {{ end }}
     {{ end }}
   </div>
 
   <div id="pv-empty" style="display:none;padding:40px 0;text-align:center;color:#5B5B5B">
-    <p style="font-size:18px">Nenhuma lei com explicação específica para este perfil.</p>
+    <p style="font-size:18px">Nenhum trecho com explicação específica para este perfil.</p>
   </div>
 </div>
 
@@ -54,7 +54,7 @@
         shown++;
         var el=c.querySelector('.pv-expl');
         if(el){
-          var txt = prof ? 'Tem explicação para o seu perfil.' : 'Tem explicação para: '+expls.filter(Boolean).join(', ');
+          var txt = prof ? 'Tem explicação para o seu perfil.' : 'Perfis: '+expls.filter(Boolean).join(', ');
           el.textContent = txt;
         }
       }
@@ -64,9 +64,9 @@
     var status=document.getElementById('pv-status');
     if(status){
       if(prof){
-        status.textContent = shown+' lei(s) com explicação para o perfil selecionado.';
+        status.textContent = shown+' trecho(s) com explicação para o perfil selecionado.';
       } else {
-        status.textContent = 'Nenhum perfil escolhido: mostrando todas as '+shown+' leis. Escolha um perfil acima.';
+        status.textContent = 'Nenhum perfil escolhido: mostrando todos os '+shown+' trechos. Escolha um perfil acima.';
       }
     }
     document.querySelectorAll('.pv-prof').forEach(function(b){
@@ -74,7 +74,6 @@
     });
   }
   document.addEventListener('DOMContentLoaded', function(){
-    // initial from URL or localStorage
     var params=new URLSearchParams(window.location.search);
     var fromUrl=params.get('perfil');
     prof = fromUrl || getPerfil() || '';
@@ -83,8 +82,6 @@
     document.querySelectorAll('.pv-prof').forEach(function(b){
       if(b.hasAttribute('data-prof')){
         b.addEventListener('click', function(){ prof=b.getAttribute('data-prof'); setPerfil(prof); apply(); });
-      } else if(b.hasAttribute('data-prof-clear')){
-        b.addEventListener('click', function(){ prof=''; setPerfil(''); apply(); });
       }
     });
     var clearBtn=document.querySelector('.pv-prof[data-prof-clear]');
