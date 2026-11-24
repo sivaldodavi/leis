@@ -1,11 +1,18 @@
 {{ define "main" }}
 <div style="padding:40px 48px 72px">
-  <h1 style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Leis e atos cadastrados</h1>
+  <h1 style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 16px">Leis e atos cadastrados</h1>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px">
+    <button class="profile-btn filtro-sit active" data-sit="all">Todas</button>
+    <button class="profile-btn filtro-sit" data-sit="vigente">Em vigor</button>
+    <button class="profile-btn filtro-sit" data-sit="projeto_em_tramitacao">Em tramitação</button>
+    <button class="profile-btn filtro-sit" data-sit="outro">Encerradas/outras</button>
+  </div>
   <div style="overflow-x:auto">
     <div class="table">
       <div class="rowhead"><span>Ato</span><span>O que faz</span><span>Categoria</span><span>Para quem</span><span>Situação</span></div>
       {{ range .Pages }}
-      <div class="rowgrid">
+      {{ $outro := "outro" }}{{ if eq .Params.situacao "vigente" }}{{ $outro = "vigente" }}{{ else if eq .Params.situacao "projeto_em_tramitacao" }}{{ $outro = "tramit" }}{{ end }}
+      <div class="rowgrid filtro-row" data-sit="{{ .Params.situacao }}">
         <strong><a href="{{ .RelPermalink }}">{{ .Params.numero }}</a></strong>
         <span>{{ .Params.ementa }}</span>
         <span>{{ delimit .Params.categorias ", " }}</span>
@@ -17,4 +24,25 @@
     </div>
   </div>
 </div>
+<script>
+(function(){
+  var sit='all';
+  function apply(){
+    document.querySelectorAll('.filtro-row').forEach(function(r){
+      var s=r.getAttribute('data-sit');
+      var ok = (sit==='all') || (sit==='outro' ? (s!=='vigente' && s!=='projeto_em_tramitacao') : s===sit);
+      r.style.display = ok ? '' : 'none';
+    });
+    document.querySelectorAll('.filtro-sit').forEach(function(b){
+      b.classList.toggle('active', b.getAttribute('data-sit')===sit);
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    apply();
+    document.querySelectorAll('.filtro-sit').forEach(function(b){
+      b.addEventListener('click', function(){ sit=b.getAttribute('data-sit'); apply(); });
+    });
+  });
+})();
+</script>
 {{ end }}

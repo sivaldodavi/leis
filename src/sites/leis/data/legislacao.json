@@ -26,6 +26,7 @@
         "cidadao": "Contas do município e transparência",
         "estudante": "Exemplo de controle das contas públicas"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "transparencia_controle",
       "natureza": "Transparência e controle",
       "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
@@ -54,6 +55,7 @@
       "publicos_motivos": {
         "cidadao": "Moradores e produtores dos povoados"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "transparencia_controle",
       "natureza": "Transparência e controle",
       "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
@@ -85,6 +87,12 @@
         "cidadao": "Higiene, barulho, animais e calçadas",
         "comerciante": "Regras de funcionamento e licença"
       },
+      "explicacoes_perfis": [
+        "cidadao",
+        "comerciante",
+        "estudante",
+        "responsavel"
+      ],
       "natureza_id": "impacto_direto",
       "natureza": "Impacto direto na população",
       "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
@@ -116,6 +124,7 @@
         "cidadao": "Uso e ocupação do solo, moradia e meio ambiente",
         "comerciante": "Zoneamento e incentivos econômicos"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "impacto_direto",
       "natureza": "Impacto direto na população",
       "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
@@ -136,6 +145,7 @@
       "publicos": [],
       "publicos_nomes": [],
       "publicos_motivos": {},
+      "explicacoes_perfis": [],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -164,6 +174,7 @@
       "publicos_motivos": {
         "comerciante": "Benefícios para a associação comercial"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -192,6 +203,7 @@
       "publicos_motivos": {
         "cidadao": "Nome de logradouro na região do Gama"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -221,6 +233,7 @@
       "publicos_motivos": {
         "cidadao": "Canal de denúncias e defesa de direitos humanos"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "impacto_direto",
       "natureza": "Impacto direto na população",
       "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
@@ -241,6 +254,7 @@
       "publicos": [],
       "publicos_nomes": [],
       "publicos_motivos": {},
+      "explicacoes_perfis": [],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -272,6 +286,7 @@
         "cidadao": "Organização geral da cidade",
         "estudante": "Como a cidade é organizada"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "impacto_direto",
       "natureza": "Impacto direto na população",
       "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
@@ -300,6 +315,7 @@
       "publicos_motivos": {
         "cidadao": "Atuação das equipes no incêndio"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -331,6 +347,7 @@
         "cidadao": "Mesmas regras de convivência",
         "comerciante": "Proposta de nova regra de posturas"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "impacto_direto",
       "natureza": "Impacto direto na população",
       "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
@@ -359,6 +376,7 @@
       "publicos_motivos": {
         "servidor": "Novos cargos em comissão"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -387,6 +405,7 @@
       "publicos_motivos": {
         "cidadao": "Quem pede informações pelo e-SIC"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "transparencia_controle",
       "natureza": "Transparência e controle",
       "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
@@ -415,6 +434,7 @@
       "publicos_motivos": {
         "cidadao": "Qualidade da energia elétrica"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "transparencia_controle",
       "natureza": "Transparência e controle",
       "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
@@ -435,6 +455,7 @@
       "publicos": [],
       "publicos_nomes": [],
       "publicos_motivos": {},
+      "explicacoes_perfis": [],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -466,6 +487,7 @@
         "comerciante": "Empresas com contratos com a Câmara",
         "servidor": "Gestão de contratos"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "transparencia_controle",
       "natureza": "Transparência e controle",
       "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
@@ -494,6 +516,7 @@
       "publicos_motivos": {
         "cidadao": "Eleição da Mesa Diretora (interesse público)"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -525,6 +548,7 @@
         "cidadao": "Serviços digitais da Câmara",
         "estudante": "Acesso a serviços e transparência"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "transparencia_controle",
       "natureza": "Transparência e controle",
       "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
@@ -556,6 +580,7 @@
         "cidadao": "Pedir informações à Câmara",
         "estudante": "Acesso à informação para pesquisa"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "transparencia_controle",
       "natureza": "Transparência e controle",
       "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
@@ -587,6 +612,7 @@
         "cidadao": "Reconhecimento à educação",
         "estudante": "Educadores homenageados"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -615,6 +641,7 @@
       "publicos_motivos": {
         "cidadao": "Canal de denúncia de violência contra a mulher"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "impacto_direto",
       "natureza": "Impacto direto na população",
       "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
@@ -646,6 +673,7 @@
         "cidadao": "Atendimento pelos gabinetes",
         "servidor": "Regras para servidores de gabinete"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -674,6 +702,7 @@
       "publicos_motivos": {
         "servidor": "Regras internas de votação e comissões"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -702,6 +731,7 @@
       "publicos_motivos": {
         "cidadao": "Nome das alas da Câmara"
       },
+      "explicacoes_perfis": [],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",

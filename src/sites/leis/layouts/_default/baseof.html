@@ -77,42 +77,5 @@ footer.site{padding:24px 48px;border-top:2px solid #1A1A1A;font-size:14px;color:
 {{ block "main" . }}{{ end }}
 </main>
 {{ partial "footer.html" . }}
-<script>
-(function(){
-  var KEY='leis.perfil';
-  function getPerfil(){ try{return localStorage.getItem(KEY)||'';}catch(e){return '';} }
-  function setPerfil(p){ try{ if(p) localStorage.setItem(KEY,p); else localStorage.removeItem(KEY);}catch(e){} applyPerfil(); if(window.leisOnPerfilChange) window.leisOnPerfilChange(); }
-  function applyPerfil(){
-    var p=getPerfil();
-    document.body.classList.remove('perfil-cidadao','perfil-comerciante','perfil-estudante','perfil-responsavel','perfil-servidor');
-    if(p) document.body.classList.add('perfil-'+p);
-    document.querySelectorAll('.expl').forEach(function(el){
-      var ep=el.getAttribute('data-perfil');
-      var show = !p || ep===p;
-      if(p && ep!=='cidadao' && ep!==p) show=false;
-      if(p && ep==='cidadao' && ep!==p){
-        var root=el.closest('.content')||document;
-        if(!root.querySelector('.expl[data-perfil="'+p+'"]')) show=true;
-      }
-      el.style.display = show ? '' : 'none';
-    });
-    document.querySelectorAll('[data-profile]').forEach(function(b){
-      b.classList.toggle('active', b.getAttribute('data-profile')===p);
-    });
-    var lbl=document.getElementById('perfil-atual');
-    if(lbl){ lbl.textContent = p ? ('Perfil: '+p) : 'Nenhum perfil escolhido'; }
-  }
-  window.leisSetPerfil=setPerfil;
-  window.leisGetPerfil=getPerfil;
-  document.addEventListener('DOMContentLoaded', applyPerfil);
-  // delegate clicks
-  document.addEventListener('click', function(e){
-    var b=e.target.closest('[data-profile]');
-    if(b){ e.preventDefault(); setPerfil(b.getAttribute('data-profile')); }
-    var c=e.target.closest('[data-profile-clear]');
-    if(c){ e.preventDefault(); setPerfil(''); }
-  });
-})();
-</script>
 </body>
 </html>

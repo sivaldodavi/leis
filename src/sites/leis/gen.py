@@ -96,6 +96,7 @@ for n in q("SELECT * FROM normas ORDER BY id"):
     tipo_lbl = tipo_label.get(tipo, tipo)
     nzid, nznome, nzdesc, nzjust = norma_natureza(nid)
 
+    expl_perfis_norma = set()
     lines = []
     lines.append("---")
     lines.append('title: "%s"' % (ementa if ementa else nid).replace('"', '\\"'))
@@ -110,6 +111,7 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         lines.append('observacao: "%s"' % obs.replace('"', '\\"'))
     lines.append("categorias: [%s]" % ", ".join('"%s"' % c for c in cats))
     lines.append("publicos: [%s]" % ", ".join('"%s"' % p[0] for p in pubs))
+    lines.append("explicacoes_perfis: [%s]" % ", ".join('"%s"' % p for p in sorted(expl_perfis_norma)))
     if pubs:
         lines.append("publicos_motivos:")
         for p in pubs:
@@ -148,6 +150,8 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         texto = md_text(d["texto"])
         temas_list = temas_do_disp(did)
         expls = explicacoes_do_disp(did)
+        for _pid in expls:
+            expl_perfis_norma.add(_pid)
 
         heading = tit if tit else (cap + " " + rotulo).strip()
         if not heading:
@@ -199,6 +203,7 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         "publicos": [p[0] for p in pubs],
         "publicos_nomes": pub_names,
         "publicos_motivos": {p[0]: md_text(p[1]) for p in pubs},
+        "explicacoes_perfis": sorted(expl_perfis_norma),
         "natureza_id": nzid or "",
         "natureza": nznome or "",
         "natureza_desc": nzdesc or "",

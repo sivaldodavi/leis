@@ -10,6 +10,7 @@ ementa: "Lei Orgânica do Município de Pinheiro"
 observacao: "Texto atual sem histórico de emendas. Emendas posteriores a 2011-2012 pendentes."
 categorias: ["Regulamentação de regras"]
 publicos: ["cidadao", "estudante"]
+explicacoes_perfis: []
 publicos_motivos:
   cidadao: "Organização geral da cidade"
   estudante: "Como a cidade é organizada"

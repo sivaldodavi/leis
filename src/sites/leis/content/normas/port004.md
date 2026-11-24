@@ -10,6 +10,7 @@ ementa: "Cria, no quadro permanente da Câmara, dois cargos em comissão: Procur
 observacao: "Arquivo chama-se PORT_004, mas o documento é a Resolução 004/2026. Nome do arquivo deve ser corrigido."
 categorias: ["Criação de cargo"]
 publicos: ["servidor"]
+explicacoes_perfis: []
 publicos_motivos:
   servidor: "Novos cargos em comissão"
 natureza_id: "rotina_interna"
