@@ -81,7 +81,7 @@ footer.site{padding:24px 48px;border-top:2px solid #1A1A1A;font-size:14px;color:
 (function(){
   var KEY='leis.perfil';
   function getPerfil(){ try{return localStorage.getItem(KEY)||'';}catch(e){return '';} }
-  function setPerfil(p){ try{ if(p) localStorage.setItem(KEY,p); else localStorage.removeItem(KEY);}catch(e){} applyPerfil(); }
+  function setPerfil(p){ try{ if(p) localStorage.setItem(KEY,p); else localStorage.removeItem(KEY);}catch(e){} applyPerfil(); if(window.leisOnPerfilChange) window.leisOnPerfilChange(); }
   function applyPerfil(){
     var p=getPerfil();
     document.body.classList.remove('perfil-cidadao','perfil-comerciante','perfil-estudante','perfil-responsavel','perfil-servidor');

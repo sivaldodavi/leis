@@ -88,12 +88,8 @@
       b.addEventListener('click', function(){ natFilter=b.getAttribute('data-nat'); apply(); });
     });
   });
-  // re-apply when profile changes (header buttons call setPerfil which reloads? no) -> listen storage + custom
+  window.leisOnPerfilChange = apply;
   window.addEventListener('storage', apply);
-  // poll lightweight: hook into leisSetPerfil by wrapping
-  var orig=window.leisSetPerfil;
-  if(orig){ window.leisSetPerfil=function(p){ orig(p); apply(); }; }
-  // also apply on click delegation already triggers setPerfil; but apply needs run after. Use timeout.
   document.addEventListener('click', function(e){
     if(e.target.closest('[data-profile]')||e.target.closest('[data-profile-clear]')){ setTimeout(apply,50); }
   });
