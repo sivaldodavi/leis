@@ -6,5 +6,16 @@
     <a href="/para-voce/">Para você</a>
     <a href="/dinheiro-publico/">Dinheiro público</a>
     <a href="/fontes-e-dados/">Fontes e dados</a>
+    <button id="tema-toggle" class="profile-btn" style="padding:4px 10px">Tema</button>
   </nav>
 </header>
+<script>
+(function(){
+  var btn=document.getElementById('tema-toggle');
+  function isDark(){return document.documentElement.classList.contains('dark');}
+  function apply(){ document.documentElement.classList.toggle('dark', isDark()); try{localStorage.setItem('leis.tema', isDark()?'dark':'light');}catch(e){} }
+  if(btn){
+    btn.addEventListener('click', function(){ document.documentElement.classList.toggle('dark'); apply(); });
+  }
+})();
+</script>
