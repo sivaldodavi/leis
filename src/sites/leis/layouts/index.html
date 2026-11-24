@@ -1,0 +1,99 @@
+{{ define "main" }}
+<div style="background:#F4F1EA">
+  <section style="padding:72px 48px 40px; max-width:1100px">
+    <p class="eyebrow">Município de Pinheiro, MA</p>
+    <h1 class="hero">As leis da sua cidade, em linguagem simples.</h1>
+    <p class="lead">Veja o que está em vigor, o que está sendo discutido na Câmara e o que mudou ao longo do tempo.</p>
+    <form style="display:flex;gap:12px;flex-wrap:wrap" onsubmit="return false">
+      <label for="busca" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Buscar lei</label>
+      <input id="busca" type="search" placeholder="Busque por assunto, número ou palavra-chave" class="search">
+      <button type="submit" class="btn">Buscar</button>
+    </form>
+  </section>
+
+  {{ $normas := where .Site.RegularPages "Section" "normas" }}
+  {{ $vigente := where $normas "Params.situacao" "vigente" }}
+  {{ $tramit := where $normas "Params.situacao" "projeto_em_tramitacao" }}
+  {{ $outros := sub (len $normas) (add (len $vigente) (len $tramit)) }}
+
+  <section style="padding:24px 48px 16px">
+    <h2 style="margin:0 0 16px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5B5B5B">Medidor de situação</h2>
+    <div class="meter">
+      <div style="flex:{{ len $vigente }};background:#1E7B4F"></div>
+      <div style="flex:{{ len $tramit }};background:#8A5F00"></div>
+      <div style="flex:{{ $outros }};background:#D6D1C4"></div>
+    </div>
+    <div class="legend">
+      <span><strong style="color:#1E7B4F">■</strong> Em vigor ({{ len $vigente }})</span>
+      <span><strong style="color:#8A5F00">■</strong> Em tramitação ({{ len $tramit }})</span>
+      <span><strong style="color:#6B6B6B">■</strong> Sem efeito ou encerrado ({{ $outros }})</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Como a lei me ajuda, por perfil</h2>
+    <p class="sub">Escolha quem você é e veja as leis que mais têm a ver com a sua rotina.</p>
+    <div class="grid grid-4">
+      <a href="#" class="profilecard"><span class="k">Morador</span><strong>Barulho, lixo e calçada</strong><span class="d">Regras de convivência na cidade.</span></a>
+      <a href="#" class="profilecard"><span class="k">Comerciante</span><strong>Horário, alvará e multas</strong><span class="d">O que seu negócio precisa cumprir.</span></a>
+      <a href="#" class="profilecard"><span class="k">Estudante</span><strong>Como a cidade é organizada</strong><span class="d">Para trabalhos, provas e participação.</span></a>
+      <a href="#" class="profilecard"><span class="k">Responsável</span><strong>Escola e transporte escolar</strong><span class="d">Direitos das crianças e dos pais.</span></a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Leis cadastradas</h2>
+    <div class="grid grid-3">
+      {{ range first 3 $normas }}
+      <article class="card">
+        {{ $cls := "outro" }}{{ if eq .Params.situacao "vigente" }}{{ $cls = "vigente" }}{{ else if eq .Params.situacao "projeto_em_tramitacao" }}{{ $cls = "tramit" }}{{ end }}
+        <span class="badge {{ $cls }}">{{ .Params.situacao_label }}</span>
+        <h3 style="margin:0;font-size:22px;font-weight:800">{{ .Params.numero }} — {{ .Title }}</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A">{{ .Params.ementa }}</p>
+        <a href="{{ .RelPermalink }}" style="margin-top:auto;font-weight:700;font-size:16px">Ler a lei →</a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Outros atos da Câmara</h2>
+    <p class="sub">Cada ato tem um verbo que diz o que ele faz. Ao lado, a categoria e para quem ele interessa.</p>
+    <div style="overflow-x:auto">
+      <div class="table">
+        <div class="rowhead"><span>Ato</span><span>O que faz</span><span>Categoria</span><span>Para quem</span><span>Situação</span></div>
+        {{ range $normas }}
+        {{ if ne .Params.tipo "lei_organica" }}{{ if ne .Params.tipo "codigo_posturas" }}{{ if ne .Params.tipo "projeto_lei" }}
+        <div class="rowgrid">
+          <strong>{{ .Params.numero }}</strong>
+          <span>{{ .Params.ementa }}</span>
+          <span>{{ delimit .Params.categorias ", " }}</span>
+          <span>{{ delimit .Params.publicos ", " }}</span>
+          {{ $col := "#6B6B6B" }}{{ if eq .Params.situacao "vigente" }}{{ $col = "#1E7B4F" }}{{ end }}
+          <span style="color:{{ $col }};font-weight:700">{{ .Params.situacao_label }}</span>
+        </div>
+        {{ end }}{{ end }}{{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:40px 48px 72px">
+    <h2 style="margin:0 0 8px;font-size:28px;font-weight:800;letter-spacing:-.01em">O que cada verbo significa</h2>
+    <p class="sub">Os textos usam verbos parecidos. A diferença está no que o ato faz.</p>
+    <div class="grid grid-3">
+      <div class="verbcard"><p class="t">Criar</p><p class="d">Dá existência a algo novo: um órgão, um cargo, uma procuradoria.</p><p class="e">Ex.: cria a Procuradoria Especial da Mulher.</p></div>
+      <div class="verbcard"><p class="t">Instituir</p><p class="d">Estabelece algo mais abstrato e duradouro: um programa, uma política ou um fundo.</p><p class="e">Ex.: institui o Programa de Governo Digital.</p></div>
+      <div class="verbcard"><p class="t">Regulamentar / dispor sobre</p><p class="d">Define as regras de como algo funciona.</p><p class="e">Ex.: regulamenta os gabinetes parlamentares.</p></div>
+      <div class="verbcard"><p class="t">Denominar</p><p class="d">Dá nome a um bem público, como uma ala, uma ponte ou um prédio.</p><p class="e">Ex.: denomina a ala de convivência.</p></div>
+      <div class="verbcard"><p class="t">Reconhecer</p><p class="d">Declara uma condição que já existe, como utilidade pública.</p><p class="e">Ex.: reconhece a ACIP como de utilidade pública.</p></div>
+      <div class="verbcard"><p class="t">Suspender</p><p class="d">Interrompe os efeitos por um prazo ou até um evento. Não apaga a norma.</p><p class="e">Ex.: suspende a eleição da Mesa.</p></div>
+      <div class="verbcard"><p class="t">Alterar / dar nova redação</p><p class="d">Muda o texto de uma norma que já está em vigor.</p><p class="e">Ex.: altera o artigo 58 do Regimento.</p></div>
+      <div class="verbcard"><p class="t">Revogar</p><p class="d">Torna sem efeito uma norma anterior.</p><p class="e">Ex.: revoga a Lei 507/1978, se o projeto 004/2026 for aprovado.</p></div>
+      <div class="verbcard"><p class="t">Designar</p><p class="d">Escolhe uma pessoa para uma função específica.</p><p class="e">Ex.: designa servidora para o e-SIC.</p></div>
+      <div class="verbcard"><p class="t">Julgar</p><p class="d">Decide sobre contas ou responsabilidades.</p><p class="e">Ex.: julga as contas de 2016.</p></div>
+      <div class="verbcard"><p class="t">Requerer / indicar</p><p class="d">Faz um pedido ou sugestão formal. Não obriga a prefeitura sozinho.</p><p class="e">Ex.: indica a recuperação de um ramal.</p></div>
+    </div>
+  </section>
+</div>
+{{ end }}

@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="content">
+  <p class="eyebrow">{{ .Params.tipo }} · {{ .Params.numero }}</p>
+  <h1>{{ .Title }}</h1>
+  <p style="font-size:14px;color:#5B5B5B">Situação: <strong style="color:{{ if eq .Params.situacao "vigente" }}#1E7B4F{{ else }}#6B6B6B{{ end }}">{{ .Params.situacao_label }}</strong> · Data: {{ .Params.data }}</p>
+  <hr>
+  {{ .Content }}
+  <p style="margin-top:32px"><a href="/">← Voltar ao início</a> · <a href="/normas/">Ver todas as leis</a></p>
+</div>
+{{ end }}

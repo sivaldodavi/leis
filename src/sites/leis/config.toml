@@ -1,0 +1,11 @@
+baseURL = "https://leis.sivaldodavi.com.br/"
+languageCode = "pt-br"
+title = "Leis de Pinheiro"
+
+disableKinds = ["taxonomy", "term"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
+      unsafe = true
