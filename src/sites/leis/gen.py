@@ -12,6 +12,7 @@ def q(sql, *a):
 publicos = {r["id"]: dict(r) for r in q("SELECT * FROM publicos")}
 temas = {r["id"]: dict(r) for r in q("SELECT * FROM temas")}
 categorias = {r["id"]: dict(r) for r in q("SELECT * FROM categorias")}
+naturezas = {r["id"]: dict(r) for r in q("SELECT * FROM naturezas")}
 
 situacao_label_map = {
     "vigente": "Em vigor",
@@ -31,6 +32,8 @@ tipo_label = {
     "resolucao": "Resolução",
     "mocao": "Moção",
     "portaria": "Portaria",
+    "lei_ordinaria": "Lei Ordinária",
+    "regimento_interno": "Regimento Interno",
 }
 
 short_profile = {"cidadao":"Morador","comerciante":"Comerciante","estudante":"Estudante","responsavel":"Responsável","servidor":"Servidor"}
@@ -45,6 +48,15 @@ def norma_categorias(nid):
 def norma_publicos(nid):
     rows = q("SELECT publico_id, motivo FROM norma_publico WHERE norma_id=?", nid)
     return [(r["publico_id"], r["motivo"]) for r in rows]
+
+def norma_natureza(nid):
+    rows = q("SELECT natureza_id, justificativa FROM norma_natureza WHERE norma_id=?", nid)
+    if not rows:
+        return None, None, None, None
+    r = rows[0]
+    nzid = r["natureza_id"]
+    nz = naturezas.get(nzid, {})
+    return nzid, nz.get("nome"), nz.get("descricao"), r["justificativa"]
 
 def dispositivos(nid):
     return q("SELECT * FROM dispositivos WHERE norma_id=? ORDER BY ordem", nid)
@@ -65,6 +77,9 @@ def md_text(s):
 
 content_dir = os.path.join(BASE, "content", "normas")
 os.makedirs(content_dir, exist_ok=True)
+for f in os.listdir(content_dir):
+    if f.endswith(".md") and f != "_index.md":
+        os.remove(os.path.join(content_dir, f))
 
 normas_list = []
 for n in q("SELECT * FROM normas ORDER BY id"):
@@ -79,6 +94,7 @@ for n in q("SELECT * FROM normas ORDER BY id"):
     obs = md_text(n["observacao"])
     tipo = n["tipo"]
     tipo_lbl = tipo_label.get(tipo, tipo)
+    nzid, nznome, nzdesc, nzjust = norma_natureza(nid)
 
     lines = []
     lines.append("---")
@@ -94,12 +110,26 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         lines.append('observacao: "%s"' % obs.replace('"', '\\"'))
     lines.append("categorias: [%s]" % ", ".join('"%s"' % c for c in cats))
     lines.append("publicos: [%s]" % ", ".join('"%s"' % p[0] for p in pubs))
+    if pubs:
+        lines.append("publicos_motivos:")
+        for p in pubs:
+            motivo = md_text(p[1]).replace('"', '\\"')
+            lines.append('  %s: "%s"' % (p[0], motivo))
+    if nzid:
+        lines.append('natureza_id: "%s"' % nzid)
+    if nznome:
+        lines.append('natureza: "%s"' % nznome.replace('"', '\\"'))
+    if nzdesc:
+        lines.append('natureza_desc: "%s"' % nzdesc.replace('"', '\\"'))
     lines.append("---")
     lines.append("")
     lines.append("**%s**" % (ementa if ementa else nid))
     lines.append("")
     if cats:
         lines.append("**Categorias:** " + ", ".join(cats))
+        lines.append("")
+    if nznome:
+        lines.append("**Natureza:** " + nznome)
         lines.append("")
     if pub_names:
         lines.append("**Para quem interessa:** " + ", ".join(pub_names))
@@ -168,13 +198,23 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         "categorias": cats,
         "publicos": [p[0] for p in pubs],
         "publicos_nomes": pub_names,
+        "publicos_motivos": {p[0]: md_text(p[1]) for p in pubs},
+        "natureza_id": nzid or "",
+        "natureza": nznome or "",
+        "natureza_desc": nzdesc or "",
         "n_dispositivos": len(dispositivos(nid)),
     })
 
 data_dir = os.path.join(BASE, "data")
 os.makedirs(data_dir, exist_ok=True)
 with open(os.path.join(data_dir, "legislacao.json"), "w", encoding="utf-8") as f:
-    json.dump({"normas": normas_list, "publicos": list(publicos.values()), "temas": list(temas.values())}, f, ensure_ascii=False, indent=2)
+    json.dump({
+        "normas": normas_list,
+        "publicos": list(publicos.values()),
+        "temas": list(temas.values()),
+        "naturezas": list(naturezas.values()),
+        "categorias": list(categorias.values()),
+    }, f, ensure_ascii=False, indent=2)
 
 os.makedirs(os.path.join(BASE, "content"), exist_ok=True)
 os.makedirs(os.path.join(BASE, "content", "normas"), exist_ok=True)

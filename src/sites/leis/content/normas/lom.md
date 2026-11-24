@@ -10,11 +10,19 @@ ementa: "Lei Orgânica do Município de Pinheiro"
 observacao: "Texto atual sem histórico de emendas. Emendas posteriores a 2011-2012 pendentes."
 categorias: ["Regulamentação de regras"]
 publicos: ["cidadao", "estudante"]
+publicos_motivos:
+  cidadao: "Organização geral da cidade"
+  estudante: "Como a cidade é organizada"
+natureza_id: "impacto_direto"
+natureza: "Impacto direto na população"
+natureza_desc: "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes."
 ---
 
 **Lei Orgânica do Município de Pinheiro**
 
 **Categorias:** Regulamentação de regras
+
+**Natureza:** Impacto direto na população
 
 **Para quem interessa:** Cidadão em geral, Estudante
 

@@ -1,0 +1,102 @@
+{{ define "main" }}
+<div style="padding:40px 48px 72px">
+  <h1 style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px">Para você</h1>
+  <p class="lead" id="pv-lead">Escolha seu perfil no topo da página para ver as leis que mais têm a ver com a sua rotina. A escolha fica salva neste navegador.</p>
+
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 8px">
+    <span style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B;align-self:center">Natureza:</span>
+    <button class="profile-btn pv-nat active" data-nat="all">Todas</button>
+    <button class="profile-btn pv-nat" data-nat="impacto_direto">Impacto direto</button>
+    <button class="profile-btn pv-nat" data-nat="transparencia_controle">Transparência</button>
+    <button class="profile-btn pv-nat" data-nat="rotina_interna">Rotina interna</button>
+  </div>
+
+  <p id="pv-status" style="font-size:14px;color:#5B5B5B;margin:0 0 20px"></p>
+
+  <div class="grid grid-3" id="pv-grid">
+    {{ $normas := where .Site.RegularPages "Section" "normas" }}
+    {{ range $normas }}
+    {{ $cls := "outro" }}{{ if eq .Params.situacao "vigente" }}{{ $cls = "vigente" }}{{ else if eq .Params.situacao "projeto_em_tramitacao" }}{{ $cls = "tramit" }}{{ end }}
+    <article class="card pv-card"
+      data-publicos="{{ delimit .Params.publicos "," }}"
+      data-natureza="{{ .Params.natureza_id }}"
+      data-numero="{{ .Params.numero }}"
+      data-url="{{ .RelPermalink }}"
+      data-motivos='{{ .Params.publicos_motivos | jsonify }}'>
+      <span class="badge {{ $cls }}">{{ .Params.situacao_label }}</span>
+      {{ if .Params.natureza }}<span style="align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1E7B4F">{{ .Params.natureza }}</span>{{ end }}
+      <h3 style="margin:0;font-size:22px;font-weight:800">{{ .Params.numero }} — {{ .Title }}</h3>
+      <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A">{{ .Params.ementa }}</p>
+      <p class="pv-motivo" style="margin:0;font-size:14px;color:#5B5B5B;font-style:italic"></p>
+      <a href="{{ .RelPermalink }}" style="margin-top:auto;font-weight:700;font-size:16px">Ler a lei →</a>
+    </article>
+    {{ end }}
+  </div>
+
+  <div id="pv-empty" style="display:none;padding:40px 0;text-align:center;color:#5B5B5B">
+    <p style="font-size:18px">Nenhuma lei encontrada para este perfil e filtro.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var KEY='leis.perfil';
+  function getPerfil(){ try{return localStorage.getItem(KEY)||'';}catch(e){return '';} }
+  var natFilter='all';
+  function apply(){
+    var p=getPerfil();
+    var cards=document.querySelectorAll('.pv-card');
+    var shown=0;
+    cards.forEach(function(c){
+      var pubs=(c.getAttribute('data-publicos')||'').split(',');
+      var nat=c.getAttribute('data-natureza')||'';
+      var relevant = !p || pubs.indexOf(p)!==-1;
+      var natOk = (natFilter==='all') || (nat===natFilter);
+      var show = relevant && natOk;
+      c.style.display = show ? '' : 'none';
+      if(show){
+        shown++;
+        var mEl=c.querySelector('.pv-motivo');
+        if(mEl){
+          var motivos={};
+          try{ motivos=JSON.parse(c.getAttribute('data-motivos')||'{}'); }catch(e){}
+          var mot = p ? (motivos[p]||'') : '';
+          mEl.textContent = mot ? ('Por que interessa a você: '+mot) : '';
+          mEl.style.display = mot ? '' : 'none';
+        }
+      }
+    });
+    var empty=document.getElementById('pv-empty');
+    if(empty) empty.style.display = (shown===0) ? '' : 'none';
+    var status=document.getElementById('pv-status');
+    if(status){
+      var natLabel = natFilter==='all' ? 'todas as naturezas' : natFilter.replace(/_/g,' ');
+      if(p){
+        status.textContent = shown+' lei(s) para o perfil selecionado — '+natLabel+'.';
+      } else {
+        status.textContent = 'Nenhum perfil escolhido: mostrando todas as '+shown+' leis. Escolha um perfil no topo para filtrar.';
+      }
+    }
+    // highlight nat buttons
+    document.querySelectorAll('.pv-nat').forEach(function(b){
+      b.classList.toggle('active', b.getAttribute('data-nat')===natFilter);
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    apply();
+    document.querySelectorAll('.pv-nat').forEach(function(b){
+      b.addEventListener('click', function(){ natFilter=b.getAttribute('data-nat'); apply(); });
+    });
+  });
+  // re-apply when profile changes (header buttons call setPerfil which reloads? no) -> listen storage + custom
+  window.addEventListener('storage', apply);
+  // poll lightweight: hook into leisSetPerfil by wrapping
+  var orig=window.leisSetPerfil;
+  if(orig){ window.leisSetPerfil=function(p){ orig(p); apply(); }; }
+  // also apply on click delegation already triggers setPerfil; but apply needs run after. Use timeout.
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-profile]')||e.target.closest('[data-profile-clear]')){ setTimeout(apply,50); }
+  });
+})();
+</script>
+{{ end }}
