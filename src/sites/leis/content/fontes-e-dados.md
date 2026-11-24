@@ -19,6 +19,7 @@ Os dados legislativos deste site (leis, dispositivos e explicações por perfil)
 Estes arquivos são atualizados a cada publicação do site e podem ser usados livremente (com atribuição à fonte):
 
 - `/dados/legislacao.json` — leis e atos da Câmara, dispositivos e metadados.
+- `/dados/busca.json` — índice de busca (trechos de dispositivos) para pesquisa client-side.
 - `/dados/dinheiro_publico.json` — despesas, fornecedores, licitações, contratos e emendas (a partir do portal Fiorilli).
 
 Exemplo de uso:

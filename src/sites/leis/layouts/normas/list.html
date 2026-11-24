@@ -1,6 +1,12 @@
 {{ define "main" }}
 <div style="padding:40px 48px 72px">
   <h1 style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 16px">Leis e atos cadastrados</h1>
+  <div style="margin:0 0 24px;padding:16px;border:2px solid #1A1A1A;background:#fff">
+    <label for="busca-leis" style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B;display:block;margin-bottom:6px">Buscar nas leis</label>
+    <input id="busca-leis" type="search" placeholder="Ex.: barulho, multa, servidor, art. 5" style="width:100%;padding:10px 12px;border:2px solid #1A1A1A;font-family:inherit;font-size:16px">
+    <p id="busca-status" style="font-size:13px;color:#5B5B5B;margin:8px 0 0"></p>
+    <div id="busca-resultados" style="margin-top:12px;display:grid;gap:10px"></div>
+  </div>
   <div style="display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px">
     <button class="profile-btn filtro-sit active" data-sit="all">Todas</button>
     <button class="profile-btn filtro-sit" data-sit="vigente">Em vigor</button>
@@ -41,6 +47,44 @@
     apply();
     document.querySelectorAll('.filtro-sit').forEach(function(b){
       b.addEventListener('click', function(){ sit=b.getAttribute('data-sit'); apply(); });
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var input=document.getElementById('busca-leis');
+  var status=document.getElementById('busca-status');
+  var box=document.getElementById('busca-resultados');
+  if(!input) return;
+  var partes=[];
+  fetch('/dados/busca.json').then(function(r){return r.json();}).then(function(d){partes=d.partes||[]; if(status) status.textContent='Índice carregado: '+partes.length+' trechos. Digite para buscar.';}).catch(function(){if(status) status.textContent='Não foi possível carregar o índice.';});
+  function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  input.addEventListener('input', function(){
+    var q=norm(input.value.trim());
+    box.innerHTML='';
+    if(q.length<2){ if(status) status.textContent='Digite pelo menos 2 caracteres.'; return; }
+    var res=[];
+    for(var i=0;i<partes.length;i++){
+      var p=partes[i];
+      if(norm(p.texto).indexOf(q)!==-1 || norm(p.norma_numero).indexOf(q)!==-1 || norm(p.rotulo||'').indexOf(q)!==-1 || norm(p.identificador||'').indexOf(q)!==-1){
+        res.push(p);
+        if(res.length>=60) break;
+      }
+    }
+    if(status) status.textContent=res.length+' resultado(s)';
+    res.forEach(function(p){
+      var a=document.createElement('a');
+      a.href='/normas/'+p.norma_slug+'/#'+p.anchor;
+      a.style.display='block';
+      a.style.padding='10px 12px';
+      a.style.border='2px solid #1A1A1A';
+      a.style.background='#F4F1EA';
+      a.style.color='#1A1A1A';
+      a.style.textDecoration='none';
+      var snip=(p.texto||'').slice(0,180);
+      a.innerHTML='<strong>'+p.norma_numero+' — '+ (p.rotulo||'') +' '+(p.identificador||'')+'</strong><br><span style="font-size:14px;color:#3A3A3A">'+snip+(snip.length>=180?'…':'')+'</span>';
+      box.appendChild(a);
     });
   });
 })();
