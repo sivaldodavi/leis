@@ -1,4 +1,4 @@
-import sqlite3, json, os
+import sqlite3, json, os, urllib.request, datetime
 
 BASE = "/opt/servidor/src/sites/leis"
 DB = "/opt/servidor/data/servicos/leis/legislacao_pinheiro.db"
@@ -215,6 +215,76 @@ with open(os.path.join(data_dir, "legislacao.json"), "w", encoding="utf-8") as f
         "naturezas": list(naturezas.values()),
         "categorias": list(categorias.values()),
     }, f, ensure_ascii=False, indent=2)
+
+# --- Dados abertos (Portal de Transparência Fiorilli) ---
+def parse_br(v):
+    if v is None:
+        return 0.0
+    s = str(v).strip()
+    if not s:
+        return 0.0
+    s = s.replace(".", "").replace(",", ".")
+    try:
+        return float(s)
+    except ValueError:
+        return 0.0
+
+def fmt_br(x):
+    s = "{:.2f}".format(x)
+    s = s.replace(",", "X").replace(".", ",").replace("X", ".")
+    return s
+
+def fetch_json(path):
+    url = "http://177.136.250.170:5656/SCPIWEB_CMDEPINHEIRO/" + path
+    try:
+        with urllib.request.urlopen(url, timeout=30) as r:
+            return json.load(r)
+    except Exception as e:
+        print("WARN fetch", path, e)
+        return []
+
+base = "versaoJson/"
+desp_orgao = fetch_json(base + "Despesas/?ConectarExercicio=2026&Listagem=DespesasPorOrgao&DiaInicioPeriodo=01&MesInicialPeriodo=01&DiaFinalPeriodo=31&MesFinalPeriodo=12&Ano=2026&Empresa=1&MostraDadosConsolidado=False")
+desp_forn = fetch_json(base + "Despesas/?ConectarExercicio=2026&Listagem=DespesasPorFornecedor&DiaInicioPeriodo=01&MesInicialPeriodo=01&DiaFinalPeriodo=31&MesFinalPeriodo=12&Ano=2026&Empresa=1&MostrarFornecedor=True&MostraDadosConsolidado=False")
+diarias = fetch_json(base + "Despesas/?ConectarExercicio=2026&Listagem=Diarias&DiaInicioPeriodo=01&MesInicialPeriodo=01&DiaFinalPeriodo=31&MesFinalPeriodo=12&Ano=2026&Empresa=1&MostraDadosConsolidado=False")
+licitacoes = fetch_json(base + "LicitacoesEContratos/?ConectarExercicio=2026&Listagem=Licitacoes&Ano=2026&Empresa=1&MostraDadosConsolidado=False")
+contratos = fetch_json(base + "LicitacoesEContratos/?ConectarExercicio=2026&Listagem=Contratos&Ano=2026&Empresa=1&MostraDadosConsolidado=False&ContratosApenasPublicados=False")
+emendas = fetch_json(base + "Transferencias/?ConectarExercicio=2026&Listagem=EmendasImpositivasArt166A&Empresa=1&MostraDadosConsolidado=False")
+
+total_emp = sum(parse_br(x.get("EMPENHADO")) for x in desp_orgao)
+total_liq = sum(parse_br(x.get("LIQUIDADO")) for x in desp_orgao)
+total_pag = sum(parse_br(x.get("PAGO")) for x in desp_orgao)
+diarias_total = sum(parse_br(x.get("VALOR")) for x in diarias) if diarias else 0.0
+# fallback: some diarias records may use other field names
+if diarias and diarias_total == 0.0:
+    for x in diarias:
+        for k, v in x.items():
+            if "VALOR" in k.upper() or "PAGO" in k.upper():
+                diarias_total += parse_br(v)
+
+dinheiro = {
+    "atualizado_em": datetime.date.today().isoformat(),
+    "fonte": "Portal de Transparência (Fiorilli) - Câmara Municipal de Pinheiro",
+    "resumo": {
+        "total_empenhado": fmt_br(total_emp),
+        "total_liquidado": fmt_br(total_liq),
+        "total_pago": fmt_br(total_pag),
+        "fornecedores": len(desp_forn),
+        "diarias_total": fmt_br(diarias_total),
+        "licitacoes": len(licitacoes),
+        "contratos": len(contratos),
+        "emendas": len(emendas),
+    },
+    "despesas_orgao": desp_orgao,
+    "despesas_fornecedor": desp_forn,
+    "diarias": diarias,
+    "licitacoes": licitacoes,
+    "contratos": contratos,
+    "emendas": emendas,
+}
+with open(os.path.join(data_dir, "dinheiro_publico.json"), "w", encoding="utf-8") as f:
+    json.dump(dinheiro, f, ensure_ascii=False, indent=2)
+print("dinheiro: orgaos=%d fornecedores=%d diarias=%d licitacoes=%d contratos=%d emendas=%d" % (len(desp_orgao), len(desp_forn), len(diarias), len(licitacoes), len(contratos), len(emendas)))
 
 os.makedirs(os.path.join(BASE, "content"), exist_ok=True)
 os.makedirs(os.path.join(BASE, "content", "normas"), exist_ok=True)
