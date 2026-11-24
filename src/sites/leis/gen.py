@@ -1,4 +1,4 @@
-import sqlite3, json, os, urllib.request, datetime
+import sqlite3, json, os, urllib.request, datetime, shutil
 
 BASE = "/opt/servidor/src/sites/leis"
 DB = "/opt/servidor/data/servicos/leis/legislacao_pinheiro.db"
@@ -285,6 +285,16 @@ dinheiro = {
 with open(os.path.join(data_dir, "dinheiro_publico.json"), "w", encoding="utf-8") as f:
     json.dump(dinheiro, f, ensure_ascii=False, indent=2)
 print("dinheiro: orgaos=%d fornecedores=%d diarias=%d licitacoes=%d contratos=%d emendas=%d" % (len(desp_orgao), len(desp_forn), len(diarias), len(licitacoes), len(contratos), len(emendas)))
+
+# Publicar JSON como endpoints estáticos (sem API/backend)
+static_dados = os.path.join(BASE, "static", "dados")
+os.makedirs(static_dados, exist_ok=True)
+for fname in ("legislacao.json", "dinheiro_publico.json"):
+    src = os.path.join(data_dir, fname)
+    dst = os.path.join(static_dados, fname)
+    if os.path.exists(src):
+        shutil.copyfile(src, dst)
+print("static dados publicados em", static_dados)
 
 os.makedirs(os.path.join(BASE, "content"), exist_ok=True)
 os.makedirs(os.path.join(BASE, "content", "normas"), exist_ok=True)

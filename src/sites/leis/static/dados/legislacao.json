@@ -1,0 +1,894 @@
+{
+  "normas": [
+    {
+      "id": "DL075",
+      "slug": "dl075",
+      "tipo": "decreto_legislativo",
+      "tipo_label": "Decreto Legislativo",
+      "numero": "075/2026",
+      "data": "2026-06-11",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Julga as contas anuais de governo do Município referentes a 2016, de responsabilidade do ex-prefeito Filadelfo Mendes Neto, e reprova as contas.",
+      "observacao": "Publicado no DO nº 229 de 15/06/2026 (Poder Legislativo). Data é a da assinatura. Art. 5º menciona \"Projeto\" no lugar de decreto legislativo: possível erro de redação. Ref. TCE-MA, Processo 4883/2017.",
+      "categorias": [
+        "Julgamento de contas ou fato"
+      ],
+      "publicos": [
+        "cidadao",
+        "estudante"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral",
+        "Estudante"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Contas do município e transparência",
+        "estudante": "Exemplo de controle das contas públicas"
+      },
+      "natureza_id": "transparencia_controle",
+      "natureza": "Transparência e controle",
+      "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "IND507",
+      "slug": "ind507",
+      "tipo": "indicacao",
+      "tipo_label": "Indicação",
+      "numero": "507/2026",
+      "data": "2026-08-12",
+      "situacao": "apresentada",
+      "situacao_label": "Apresentada",
+      "ementa": "Recuperação, com revestimento em piçarra, de ramal de aproximadamente 1 km ligando o Povoado Ponta de Santana ao entroncamento Chapadinha, com acesso aos povoados Ponta Branca e Nova Ponta Branca. Autor: Ver. Herasmo Leite Soares.",
+      "observacao": "Indicação ao Executivo (Secretaria Municipal de Infraestrutura). Menciona o prefeito como André Leão Costa Silva; outros documentos citam nomes diferentes (ver observação em LEI_2979 e Lei 2.920). Conferir.",
+      "categorias": [
+        "Pedido, indicação ou requerimento"
+      ],
+      "publicos": [
+        "cidadao"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Moradores e produtores dos povoados"
+      },
+      "natureza_id": "transparencia_controle",
+      "natureza": "Transparência e controle",
+      "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "L507",
+      "slug": "l507",
+      "tipo": "codigo_posturas",
+      "tipo_label": "Código de Posturas",
+      "numero": "507/78",
+      "data": "1978-01-19",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Código de Posturas do Município de Pinheiro",
+      "observacao": "Alterado por Lei 2.555/2010 (art. 66, valor de referência municipal) e Lei 2.910/2023 (art. 46, horários). Multas em VL: exige revisão jurídica.",
+      "categorias": [
+        "Regulamentação de regras"
+      ],
+      "publicos": [
+        "cidadao",
+        "comerciante"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral",
+        "Comerciante, MEI e prestador de serviço"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Higiene, barulho, animais e calçadas",
+        "comerciante": "Regras de funcionamento e licença"
+      },
+      "natureza_id": "impacto_direto",
+      "natureza": "Impacto direto na população",
+      "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
+      "n_dispositivos": 135
+    },
+    {
+      "id": "LEI2467",
+      "slug": "lei2467",
+      "tipo": "lei_ordinaria",
+      "tipo_label": "Lei Ordinária",
+      "numero": "2.467/2008",
+      "data": "2008-12-29",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Institui o Plano Diretor Participativo do Município de Pinheiro e dá outras providências.",
+      "observacao": "Texto obtido por OCR (camada de texto do PDF enviado). A própria lei prevê revisão em até 10 anos (art. 95). Alterações posteriores não foram verificadas.",
+      "categorias": [
+        "Regulamentação de regras"
+      ],
+      "publicos": [
+        "cidadao",
+        "comerciante"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral",
+        "Comerciante, MEI e prestador de serviço"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Uso e ocupação do solo, moradia e meio ambiente",
+        "comerciante": "Zoneamento e incentivos econômicos"
+      },
+      "natureza_id": "impacto_direto",
+      "natureza": "Impacto direto na população",
+      "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
+      "n_dispositivos": 91
+    },
+    {
+      "id": "LEI2580",
+      "slug": "lei2580",
+      "tipo": "lei_ordinaria",
+      "tipo_label": "Lei Ordinária",
+      "numero": "2.580/2011",
+      "data": "2011-12-27",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Dispõe sobre o Estatuto dos Servidores Públicos Civis do Município de Pinheiro, revoga a Lei 195/59 e dá outras providências.",
+      "observacao": "Texto digital (não precisou de OCR). Regime jurídico dos servidores municipais.",
+      "categorias": [],
+      "publicos": [],
+      "publicos_nomes": [],
+      "publicos_motivos": {},
+      "natureza_id": "rotina_interna",
+      "natureza": "Rotina interna e burocracia",
+      "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
+      "n_dispositivos": 316
+    },
+    {
+      "id": "LEI2920",
+      "slug": "lei2920",
+      "tipo": "lei_ordinaria",
+      "tipo_label": "Lei Ordinária",
+      "numero": "2.920/2024",
+      "data": "2024-04-01",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Reconhece como de utilidade pública a Associação Comercial e Industrial de Pinheiro (ACIP), CNPJ 12.568.267/0001-69.",
+      "observacao": "Texto obtido por OCR. Assinada pelo prefeito João Luciano Silva Soares.",
+      "categorias": [
+        "Homenagem ou reconhecimento"
+      ],
+      "publicos": [
+        "comerciante"
+      ],
+      "publicos_nomes": [
+        "Comerciante, MEI e prestador de serviço"
+      ],
+      "publicos_motivos": {
+        "comerciante": "Benefícios para a associação comercial"
+      },
+      "natureza_id": "rotina_interna",
+      "natureza": "Rotina interna e burocracia",
+      "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
+      "n_dispositivos": 2
+    },
+    {
+      "id": "LEI2921",
+      "slug": "lei2921",
+      "tipo": "lei_ordinaria",
+      "tipo_label": "Lei Ordinária",
+      "numero": "2.921/2024",
+      "data": "2024-04-01",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Denomina José Gabriel Ferreira a ponte de concreto sobre o Igarapé do Açude, na região do Gama.",
+      "observacao": "Texto obtido por OCR.",
+      "categorias": [
+        "Denominação de bem público"
+      ],
+      "publicos": [
+        "cidadao"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Nome de logradouro na região do Gama"
+      },
+      "natureza_id": "rotina_interna",
+      "natureza": "Rotina interna e burocracia",
+      "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
+      "n_dispositivos": 2
+    },
+    {
+      "id": "LEI2924",
+      "slug": "lei2924",
+      "tipo": "lei_ordinaria",
+      "tipo_label": "Lei Ordinária",
+      "numero": "2.924/2024",
+      "data": "2024-04-24",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Cria o Conselho Municipal de Direitos Humanos (CMDH) e o Fundo Municipal de Direitos Humanos (FMDH), e dá providências correlatas.",
+      "observacao": "Texto obtido por OCR. Vinculado à SEMDIHFAM. Art. 25 trata da abertura de crédito para implantar o fundo.",
+      "categorias": [
+        "Criação de órgão ou colegiado",
+        "Programa ou política pública"
+      ],
+      "publicos": [
+        "cidadao"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Canal de denúncias e defesa de direitos humanos"
+      },
+      "natureza_id": "impacto_direto",
+      "natureza": "Impacto direto na população",
+      "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
+      "n_dispositivos": 26
+    },
+    {
+      "id": "LEI2979",
+      "slug": "lei2979",
+      "tipo": "lei_ordinaria",
+      "tipo_label": "Lei Ordinária",
+      "numero": "2.979/2025",
+      "data": "2025-12-02",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Consolida as normas pertinentes à organização da estrutura administrativa da Câmara Municipal de Pinheiro.",
+      "observacao": "Texto digital, mas a leitura dos artigos ficou aproximada: a numeração começa no art. 12 e algumas ocorrências de artigos estão fora de ordem no texto (ex.: art. 79). Anexos I a VI guardados como dispositivo único \"Anexos\". Conferir antes de usar.",
+      "categorias": [],
+      "publicos": [],
+      "publicos_nomes": [],
+      "publicos_motivos": {},
+      "natureza_id": "rotina_interna",
+      "natureza": "Rotina interna e burocracia",
+      "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
+      "n_dispositivos": 30
+    },
+    {
+      "id": "LOM",
+      "slug": "lom",
+      "tipo": "lei_organica",
+      "tipo_label": "Lei Orgânica",
+      "numero": "LOM",
+      "data": "2000 (consolidada até 2011-2012)",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Lei Orgânica do Município de Pinheiro",
+      "observacao": "Texto atual sem histórico de emendas. Emendas posteriores a 2011-2012 pendentes.",
+      "categorias": [
+        "Regulamentação de regras"
+      ],
+      "publicos": [
+        "cidadao",
+        "estudante"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral",
+        "Estudante"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Organização geral da cidade",
+        "estudante": "Como a cidade é organizada"
+      },
+      "natureza_id": "impacto_direto",
+      "natureza": "Impacto direto na população",
+      "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
+      "n_dispositivos": 284
+    },
+    {
+      "id": "MOC061",
+      "slug": "moc061",
+      "tipo": "mocao",
+      "tipo_label": "Moção",
+      "numero": "061/2026",
+      "data": "2026-11-16",
+      "situacao": "apresentada",
+      "situacao_label": "Apresentada",
+      "ementa": "Requer moção de aplausos à Guarda Civil Municipal, ao Corpo de Bombeiros Militar, à Secretaria Municipal de Infraestrutura, à Secretaria Municipal de Meio Ambiente e ao Centro Tático Aéreo (CTA) pelo combate ao incêndio nos campos naturais do Município. Autor: Ver. Herasmo Leite Soares.",
+      "observacao": "Moção de aplausos: não tem efeito normativo. Situação deve ser atualizada se o Plenário aprovar.",
+      "categorias": [
+        "Homenagem ou reconhecimento"
+      ],
+      "publicos": [
+        "cidadao"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Atuação das equipes no incêndio"
+      },
+      "natureza_id": "rotina_interna",
+      "natureza": "Rotina interna e burocracia",
+      "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "PL004",
+      "slug": "pl004",
+      "tipo": "projeto_lei",
+      "tipo_label": "Projeto de Lei",
+      "numero": "004/2026",
+      "data": "2026-01-16",
+      "situacao": "projeto_em_tramitacao",
+      "situacao_label": "Projeto em tramitação",
+      "ementa": "Institui o novo Código de Postura e revoga a Lei 507/1978",
+      "observacao": "Texto como apresentado. Não está em vigor. Situação de tramitação ainda não verificada.",
+      "categorias": [
+        "Regulamentação de regras"
+      ],
+      "publicos": [
+        "cidadao",
+        "comerciante"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral",
+        "Comerciante, MEI e prestador de serviço"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Mesmas regras de convivência",
+        "comerciante": "Proposta de nova regra de posturas"
+      },
+      "natureza_id": "impacto_direto",
+      "natureza": "Impacto direto na população",
+      "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
+      "n_dispositivos": 251
+    },
+    {
+      "id": "PORT004",
+      "slug": "port004",
+      "tipo": "resolucao",
+      "tipo_label": "Resolução",
+      "numero": "004/2026",
+      "data": "2026-04-01",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Cria, no quadro permanente da Câmara, dois cargos em comissão: Procurador Legislativo (CC1) e Assessor de Engenharia (CC2).",
+      "observacao": "Arquivo chama-se PORT_004, mas o documento é a Resolução 004/2026. Nome do arquivo deve ser corrigido.",
+      "categorias": [
+        "Criação de cargo"
+      ],
+      "publicos": [
+        "servidor"
+      ],
+      "publicos_nomes": [
+        "Servidores públicos"
+      ],
+      "publicos_motivos": {
+        "servidor": "Novos cargos em comissão"
+      },
+      "natureza_id": "rotina_interna",
+      "natureza": "Rotina interna e burocracia",
+      "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "PORT213_2026",
+      "slug": "port213_2026",
+      "tipo": "portaria",
+      "tipo_label": "Portaria",
+      "numero": "213/2026",
+      "data": "2026-08-10",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Designa servidora para responder às demandas do e-SIC (Sistema Eletrônico de Serviço de Informação ao Cidadão).",
+      "observacao": "Publicada no mural em 10/08/2026.",
+      "categorias": [
+        "Designação de servidor"
+      ],
+      "publicos": [
+        "cidadao"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Quem pede informações pelo e-SIC"
+      },
+      "natureza_id": "transparencia_controle",
+      "natureza": "Transparência e controle",
+      "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "REQ014",
+      "slug": "req014",
+      "tipo": "requerimento",
+      "tipo_label": "Requerimento",
+      "numero": "014/2026",
+      "data": "2026-11-13",
+      "situacao": "apresentado",
+      "situacao_label": "Apresentado",
+      "ementa": "Requer que representante da Equatorial Energia Maranhão compareça a Sessão Ordinária para prestar esclarecimentos sobre investimentos e a qualidade do fornecimento de energia elétrica em Pinheiro. Autor: Ver. Oziel Menezes.",
+      "observacao": "Requerimento de convocação. Não tem efeito normativo. Data pelo cabeçalho do documento.",
+      "categorias": [
+        "Pedido, indicação ou requerimento"
+      ],
+      "publicos": [
+        "cidadao"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Qualidade da energia elétrica"
+      },
+      "natureza_id": "transparencia_controle",
+      "natureza": "Transparência e controle",
+      "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "RI006",
+      "slug": "ri006",
+      "tipo": "regimento_interno",
+      "tipo_label": "Regimento Interno",
+      "numero": "006/1991",
+      "data": "1991-09-06",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Regimento Interno da Câmara Municipal de Pinheiro (Resolução 006/91).",
+      "observacao": "Texto digital, com alterações posteriores pelas Resoluções 014/2024 (arts. 21-A, 58 e 126-A/B). Data é a do fim do documento (06/09/1991). Conferir se há outras alterações.",
+      "categorias": [],
+      "publicos": [],
+      "publicos_nomes": [],
+      "publicos_motivos": {},
+      "natureza_id": "rotina_interna",
+      "natureza": "Rotina interna e burocracia",
+      "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
+      "n_dispositivos": 291
+    },
+    {
+      "id": "RSL001_2025",
+      "slug": "rsl001_2025",
+      "tipo": "resolucao",
+      "tipo_label": "Resolução",
+      "numero": "001/2025",
+      "data": "2025-01-01",
+      "situacao": "prazo_expirado",
+      "situacao_label": "Prazo expirado",
+      "ementa": "Suspende por 60 dias a executoriedade de contratos, termos de aditivos e apostilamentos de exercícios anteriores, com exceção dos contratos essenciais da administração.",
+      "observacao": "Prazo de 60 dias a partir de 01/01/2025 já expirou. Situação deve ser conferida.",
+      "categorias": [
+        "Suspensão temporária"
+      ],
+      "publicos": [
+        "comerciante",
+        "servidor"
+      ],
+      "publicos_nomes": [
+        "Comerciante, MEI e prestador de serviço",
+        "Servidores públicos"
+      ],
+      "publicos_motivos": {
+        "comerciante": "Empresas com contratos com a Câmara",
+        "servidor": "Gestão de contratos"
+      },
+      "natureza_id": "transparencia_controle",
+      "natureza": "Transparência e controle",
+      "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "RSL001_2026",
+      "slug": "rsl001_2026",
+      "tipo": "resolucao",
+      "tipo_label": "Resolução",
+      "numero": "001/2026",
+      "data": "2026-07-15",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Suspende a eleição da Mesa Diretora para o biênio 2027/2028, prevista para 17/07/2026, até a conclusão da tramitação da Proposta de Emenda à LOM que trata da matéria.",
+      "observacao": "Protocolo 663/2026, de 15/07/2026. Depende da PEC à Lei Orgânica, ainda não promulgada.",
+      "categorias": [
+        "Suspensão temporária"
+      ],
+      "publicos": [
+        "cidadao"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Eleição da Mesa Diretora (interesse público)"
+      },
+      "natureza_id": "rotina_interna",
+      "natureza": "Rotina interna e burocracia",
+      "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "RSL002_2025",
+      "slug": "rsl002_2025",
+      "tipo": "resolucao",
+      "tipo_label": "Resolução",
+      "numero": "002/2025",
+      "data": "2025-07-02",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Institui o Programa de Governo Digital do Legislativo Pinheirense (PGDLP), em obediência à Lei Federal 14.129/2021.",
+      "observacao": "Art. 7º prevê plataformas em fase de implantação em até 90 dias.",
+      "categorias": [
+        "Programa ou política pública"
+      ],
+      "publicos": [
+        "cidadao",
+        "estudante"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral",
+        "Estudante"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Serviços digitais da Câmara",
+        "estudante": "Acesso a serviços e transparência"
+      },
+      "natureza_id": "transparencia_controle",
+      "natureza": "Transparência e controle",
+      "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "RSL002_2026",
+      "slug": "rsl002_2026",
+      "tipo": "resolucao",
+      "tipo_label": "Resolução",
+      "numero": "002/2026",
+      "data": "2026-08-12",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Dispõe sobre o acesso à informação, aplica a Lei 12.527/2011 na Câmara e cria o Serviço de Informação ao Cidadão (SIC).",
+      "observacao": "Art. 6º: prazo de 20 dias corridos, prorrogável por 10. Art. 7º: recurso em 10 dias.",
+      "categorias": [
+        "Regulamentação de regras"
+      ],
+      "publicos": [
+        "cidadao",
+        "estudante"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral",
+        "Estudante"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Pedir informações à Câmara",
+        "estudante": "Acesso à informação para pesquisa"
+      },
+      "natureza_id": "transparencia_controle",
+      "natureza": "Transparência e controle",
+      "natureza_desc": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "RSL003_2025",
+      "slug": "rsl003_2025",
+      "tipo": "resolucao",
+      "tipo_label": "Resolução",
+      "numero": "003/2025",
+      "data": "2025-12-17",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Cria o Diploma de Honra ao Mérito Padre Luís Risso, para profissionais da educação.",
+      "observacao": "A honraria é anual. Cada vereador pode indicar até 2 profissionais da educação.",
+      "categorias": [
+        "Homenagem ou reconhecimento"
+      ],
+      "publicos": [
+        "cidadao",
+        "estudante"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral",
+        "Estudante"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Reconhecimento à educação",
+        "estudante": "Educadores homenageados"
+      },
+      "natureza_id": "rotina_interna",
+      "natureza": "Rotina interna e burocracia",
+      "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "RSL011",
+      "slug": "rsl011",
+      "tipo": "resolucao",
+      "tipo_label": "Resolução",
+      "numero": "011/2023",
+      "data": "2023-08-31",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Cria a Procuradoria Especial da Mulher no âmbito da Câmara, formada por vereadoras, com eleição pela Mesa Diretora.",
+      "observacao": "Art. 9º revoga disposições em contrário. Promulgada pelo presidente José Lucas Pereira Fernandes.",
+      "categorias": [
+        "Criação de órgão ou colegiado"
+      ],
+      "publicos": [
+        "cidadao"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Canal de denúncia de violência contra a mulher"
+      },
+      "natureza_id": "impacto_direto",
+      "natureza": "Impacto direto na população",
+      "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "RSL013_2024",
+      "slug": "rsl013_2024",
+      "tipo": "resolucao",
+      "tipo_label": "Resolução",
+      "numero": "013/2024",
+      "data": "2024-07-16",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Dispõe e regulamenta sobre os gabinetes parlamentares dos vereadores e sobre os servidores que atuam neles.",
+      "observacao": "Art. 5º: não cumprir as obrigações pode levar à retenção da verba indenizatória.",
+      "categorias": [
+        "Regulamentação de regras"
+      ],
+      "publicos": [
+        "cidadao",
+        "servidor"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral",
+        "Servidores públicos"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Atendimento pelos gabinetes",
+        "servidor": "Regras para servidores de gabinete"
+      },
+      "natureza_id": "rotina_interna",
+      "natureza": "Rotina interna e burocracia",
+      "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "RSL014_2024",
+      "slug": "rsl014_2024",
+      "tipo": "resolucao",
+      "tipo_label": "Resolução",
+      "numero": "014/2024",
+      "data": "2024-12-12",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Dá nova redação ao § 1º do art. 21-A, ao art. 58 e ao § 1º (com § 5º acrescido) e acrescenta o art. 126-B ao Regimento Interno (Resolução 006/91).",
+      "observacao": "Altera o Regimento Interno. Os § 2º a 4º do art. 21-A e o art. 126-B aparecem como [...] no documento original.",
+      "categorias": [
+        "Alteração de norma existente"
+      ],
+      "publicos": [
+        "servidor"
+      ],
+      "publicos_nomes": [
+        "Servidores públicos"
+      ],
+      "publicos_motivos": {
+        "servidor": "Regras internas de votação e comissões"
+      },
+      "natureza_id": "rotina_interna",
+      "natureza": "Rotina interna e burocracia",
+      "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
+      "n_dispositivos": 0
+    },
+    {
+      "id": "RSL015_2024",
+      "slug": "rsl015_2024",
+      "tipo": "resolucao",
+      "tipo_label": "Resolução",
+      "numero": "015/2024",
+      "data": "2024-12-19",
+      "situacao": "vigente",
+      "situacao_label": "Em vigor",
+      "ementa": "Dispõe sobre a denominação de alas no Poder Legislativo.",
+      "observacao": "Dá nomes a três alas: Convivência, Térreo dos Gabinetes e 1º Andar dos Gabinetes.",
+      "categorias": [
+        "Denominação de bem público"
+      ],
+      "publicos": [
+        "cidadao"
+      ],
+      "publicos_nomes": [
+        "Cidadão em geral"
+      ],
+      "publicos_motivos": {
+        "cidadao": "Nome das alas da Câmara"
+      },
+      "natureza_id": "rotina_interna",
+      "natureza": "Rotina interna e burocracia",
+      "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
+      "n_dispositivos": 0
+    }
+  ],
+  "publicos": [
+    {
+      "id": "cidadao",
+      "nome": "Cidadão em geral",
+      "descricao": "Moradores e pessoas que vivem ou circulam na cidade."
+    },
+    {
+      "id": "comerciante",
+      "nome": "Comerciante, MEI e prestador de serviço",
+      "descricao": "Quem tem loja, bar, oficina, banca ou presta serviço na cidade."
+    },
+    {
+      "id": "estudante",
+      "nome": "Estudante",
+      "descricao": "Alunos que precisam entender como a cidade é organizada."
+    },
+    {
+      "id": "responsavel",
+      "nome": "Pai, mãe ou responsável",
+      "descricao": "Pais e responsáveis por crianças e adolescentes."
+    },
+    {
+      "id": "servidor",
+      "nome": "Servidores públicos",
+      "descricao": "Servidores da prefeitura e da Câmara e pessoas que atuam nas instituições."
+    }
+  ],
+  "temas": [
+    {
+      "id": "multas_penalidades",
+      "nome": "Multas e penalidades"
+    },
+    {
+      "id": "higiene_limpeza",
+      "nome": "Higiene e limpeza"
+    },
+    {
+      "id": "lixo_agua",
+      "nome": "Lixo e água parada"
+    },
+    {
+      "id": "alimentos_higiene",
+      "nome": "Alimentos e higiene de estabelecimentos"
+    },
+    {
+      "id": "ordem_publica",
+      "nome": "Ordem pública"
+    },
+    {
+      "id": "barulho",
+      "nome": "Barulho e sossego"
+    },
+    {
+      "id": "eventos",
+      "nome": "Eventos e diversões públicas"
+    },
+    {
+      "id": "transito_calcadas",
+      "nome": "Trânsito, calçadas e passagem"
+    },
+    {
+      "id": "animais",
+      "nome": "Animais"
+    },
+    {
+      "id": "obras_tapumes",
+      "nome": "Obras e tapumes"
+    },
+    {
+      "id": "arvores_vias",
+      "nome": "Árvores e espaço público"
+    },
+    {
+      "id": "inflamaveis",
+      "nome": "Inflamáveis e explosivos"
+    },
+    {
+      "id": "meio_ambiente",
+      "nome": "Meio ambiente, queimadas e florestas"
+    },
+    {
+      "id": "mineracao",
+      "nome": "Pedreiras, areia e olarias"
+    },
+    {
+      "id": "terrenos_muros",
+      "nome": "Terrenos, muros e cercas"
+    },
+    {
+      "id": "publicidade",
+      "nome": "Publicidade e anúncios"
+    },
+    {
+      "id": "licenca_funcionamento",
+      "nome": "Licença para funcionar"
+    },
+    {
+      "id": "ambulantes",
+      "nome": "Comércio ambulante"
+    },
+    {
+      "id": "horario_funcionamento",
+      "nome": "Horário de funcionamento"
+    },
+    {
+      "id": "disposicoes_gerais",
+      "nome": "Disposições gerais"
+    }
+  ],
+  "naturezas": [
+    {
+      "id": "impacto_direto",
+      "nome": "Impacto direto na população",
+      "descricao": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes."
+    },
+    {
+      "id": "transparencia_controle",
+      "nome": "Transparência e controle",
+      "descricao": "Trata de contas, fiscalização, pedidos, acesso à informação ou contratos. Afeta o cidadão indiretamente, pelo controle público."
+    },
+    {
+      "id": "rotina_interna",
+      "nome": "Rotina interna e burocracia",
+      "descricao": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores."
+    }
+  ],
+  "categorias": [
+    {
+      "id": "criacao_orgao",
+      "nome": "Criação de órgão ou colegiado",
+      "descricao": "Cria algo novo com estrutura própria: conselho, procuradoria, comissão."
+    },
+    {
+      "id": "criacao_cargo",
+      "nome": "Criação de cargo",
+      "descricao": "Cria vaga de servidor, normalmente cargo em comissão."
+    },
+    {
+      "id": "programa_politica",
+      "nome": "Programa ou política pública",
+      "descricao": "Institui programa, política, fundo ou sistema com objetivos de longo prazo."
+    },
+    {
+      "id": "regulamentacao",
+      "nome": "Regulamentação de regras",
+      "descricao": "Define como algo deve funcionar: regras, procedimentos, prazos."
+    },
+    {
+      "id": "denominacao",
+      "nome": "Denominação de bem público",
+      "descricao": "Dá nome a ala, ponte, prédio ou outro bem público."
+    },
+    {
+      "id": "homenagem",
+      "nome": "Homenagem ou reconhecimento",
+      "descricao": "Reconhece pessoas, instituições ou ações; em geral sem efeito normativo."
+    },
+    {
+      "id": "suspensao",
+      "nome": "Suspensão temporária",
+      "descricao": "Interrompe efeitos por prazo ou até um evento; não revoga a norma."
+    },
+    {
+      "id": "alteracao",
+      "nome": "Alteração de norma existente",
+      "descricao": "Muda o texto de uma norma já em vigor."
+    },
+    {
+      "id": "julgamento",
+      "nome": "Julgamento de contas ou fato",
+      "descricao": "Decide sobre contas, fatos ou responsabilidades."
+    },
+    {
+      "id": "designacao",
+      "nome": "Designação de servidor",
+      "descricao": "Escolhe uma pessoa para uma função específica."
+    },
+    {
+      "id": "pedido",
+      "nome": "Pedido, indicação ou requerimento",
+      "descricao": "Sugestão ou pedido formal ao Executivo ou à Mesa. Não cria obrigação por si só."
+    }
+  ]
+}
