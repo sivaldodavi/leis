@@ -57,6 +57,17 @@ input.search{flex:1;min-width:280px;padding:16px 20px;font-size:17px;border:2px 
 .content ul{margin:0 0 12px 20px}
 .content hr{border:0;border-top:2px solid #1A1A1A;margin:24px 0}
 footer.site{padding:24px 48px;border-top:2px solid #1A1A1A;font-size:14px;color:#5B5B5B}
+.expl{margin:10px 0 4px;border:1px solid #D6D1C4;background:#FBF9F3}
+.expl-sum{cursor:pointer;list-style:none;padding:8px 12px;font-size:14px;font-weight:600;color:#5B5B5B;user-select:none}
+.expl-sum::-webkit-details-marker{display:none}
+.expl-sum:hover{color:#1E7B4F}
+.expl-body{padding:8px 12px 12px;font-size:15px;line-height:1.55;color:#3A3A3A}
+.expl-titulo{margin:0 0 4px;font-size:15px}
+.expl-exemplo{margin:6px 0 0;font-size:14px;color:#5B5B5B}
+.profile-switcher{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.profile-btn{padding:6px 12px;font-size:13px;font-weight:600;border:2px solid #1A1A1A;background:#fff;cursor:pointer;font-family:inherit;border-radius:0}
+.profile-btn.active{background:#1E7B4F;color:#fff;border-color:#1E7B4F}
+.profile-btn:hover:not(.active){background:#F4F1EA}
 @media(max-width:720px){h1.hero{font-size:40px}.wrap{padding:0 20px}header.site{padding:20px}.section{padding:40px 20px 16px}.content{padding:40px 20px 72px}}
 </style>
 </head>
@@ -66,5 +77,42 @@ footer.site{padding:24px 48px;border-top:2px solid #1A1A1A;font-size:14px;color:
 {{ block "main" . }}{{ end }}
 </main>
 {{ partial "footer.html" . }}
+<script>
+(function(){
+  var KEY='leis.perfil';
+  function getPerfil(){ try{return localStorage.getItem(KEY)||'';}catch(e){return '';} }
+  function setPerfil(p){ try{ if(p) localStorage.setItem(KEY,p); else localStorage.removeItem(KEY);}catch(e){} applyPerfil(); }
+  function applyPerfil(){
+    var p=getPerfil();
+    document.body.classList.remove('perfil-cidadao','perfil-comerciante','perfil-estudante','perfil-responsavel','perfil-servidor');
+    if(p) document.body.classList.add('perfil-'+p);
+    document.querySelectorAll('.expl').forEach(function(el){
+      var ep=el.getAttribute('data-perfil');
+      var show = !p || ep===p;
+      if(p && ep!=='cidadao' && ep!==p) show=false;
+      if(p && ep==='cidadao' && ep!==p){
+        var root=el.closest('.content')||document;
+        if(!root.querySelector('.expl[data-perfil="'+p+'"]')) show=true;
+      }
+      el.style.display = show ? '' : 'none';
+    });
+    document.querySelectorAll('[data-profile]').forEach(function(b){
+      b.classList.toggle('active', b.getAttribute('data-profile')===p);
+    });
+    var lbl=document.getElementById('perfil-atual');
+    if(lbl){ lbl.textContent = p ? ('Perfil: '+p) : 'Nenhum perfil escolhido'; }
+  }
+  window.leisSetPerfil=setPerfil;
+  window.leisGetPerfil=getPerfil;
+  document.addEventListener('DOMContentLoaded', applyPerfil);
+  // delegate clicks
+  document.addEventListener('click', function(e){
+    var b=e.target.closest('[data-profile]');
+    if(b){ e.preventDefault(); setPerfil(b.getAttribute('data-profile')); }
+    var c=e.target.closest('[data-profile-clear]');
+    if(c){ e.preventDefault(); setPerfil(''); }
+  });
+})();
+</script>
 </body>
 </html>
