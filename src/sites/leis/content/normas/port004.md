@@ -5,6 +5,7 @@ tipo: "resolucao"
 tipo_label: "Resolução"
 numero: "004/2026"
 data: "2026-04-01"
+ano: "2026"
 especie: "resolucao"
 og_image: "/og/tipos/resolucao.jpg"
 situacao: "vigente"
@@ -13,15 +14,15 @@ ementa: "Cria, no quadro permanente da Câmara, dois cargos em comissão: Procur
 observacao: "Arquivo chama-se PORT_004, mas o documento é a Resolução 004/2026. Nome do arquivo deve ser corrigido."
 categorias: ["Criação de cargo"]
 natureza: "Rotina interna"
-fonte_arquivo: "PORT_004_2026.pdf"
+fonte_arquivo: "portarias/PORT_004_2026.pdf"
 fonte_paginas: 3
 teor_status: "integral_no_banco"
-teor_obs: "Texto integral carregado a partir do PDF."
+teor_obs: "Texto com colunas intercaladas (layout de 2 colunas no PDF). Requer re-extração com OCR por coluna ou digitação manual do conteúdo estrutural."
 ---
 
 **Cria, no quadro permanente da Câmara, dois cargos em comissão: Procurador Legislativo (CC1) e Assessor de Engenharia (CC2).**
 
-**Tipo:** Resolução · **Número:** 004/2026 · **Data:** 2026-04-01 · **Situação:** Em vigor · **Categorias:** Criação de cargo · **Natureza:** Rotina interna · **Fonte:** PORT_004_2026.pdf
+**Tipo:** Resolução · **Número:** 004/2026 · **Data:** 2026-04-01 · **Situação:** Em vigor · **Categorias:** Criação de cargo · **Natureza:** Rotina interna · **Fonte:** portarias/PORT_004_2026.pdf
 
 > Arquivo chama-se PORT_004, mas o documento é a Resolução 004/2026. Nome do arquivo deve ser corrigido.
 

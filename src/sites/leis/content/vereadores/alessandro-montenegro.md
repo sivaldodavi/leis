@@ -23,7 +23,7 @@ coletivas: 15
 taxa_exclusividade: 50
 peso_medio: 0.53
 og_image: "/og/v/alessandro-montenegro.jpg"
-share_text: "Alessandro Montenegro — 30 proposições, 15 de autoria exclusiva, 9 com objeto definido na Câmara de Pinheiro"
+share_text: "Alessandro Montenegro — 30 proposições, 15 de autoria exclusiva, 16 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/alessandro-montenegro-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/alessandro-montenegro-9x16.jpg"}

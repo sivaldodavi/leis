@@ -23,7 +23,7 @@ coletivas: 25
 taxa_exclusividade: 45
 peso_medio: 0.49
 og_image: "/og/v/fabricia-do-sindicato.jpg"
-share_text: "Fabrícia do Sindicato — 47 proposições, 21 de autoria exclusiva, 11 com objeto definido na Câmara de Pinheiro"
+share_text: "Fabrícia do Sindicato — 47 proposições, 21 de autoria exclusiva, 29 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/fabricia-do-sindicato-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/fabricia-do-sindicato-9x16.jpg"}

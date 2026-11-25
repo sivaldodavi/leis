@@ -22,7 +22,7 @@ coletivas: 11
 taxa_exclusividade: 70
 peso_medio: 0.75
 og_image: "/og/v/keimilson-guterres.jpg"
-share_text: "Keimilson Guterres — 59 proposições, 41 de autoria exclusiva, 18 com objeto definido na Câmara de Pinheiro"
+share_text: "Keimilson Guterres — 59 proposições, 41 de autoria exclusiva, 42 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/keimilson-guterres-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/keimilson-guterres-9x16.jpg"}

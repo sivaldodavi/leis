@@ -23,7 +23,7 @@ coletivas: 0
 taxa_exclusividade: 100
 peso_medio: 1.00
 og_image: "/og/v/gury.jpg"
-share_text: "Gury — 16 proposições, 16 de autoria exclusiva, 11 com objeto definido na Câmara de Pinheiro"
+share_text: "Gury — 16 proposições, 16 de autoria exclusiva, 14 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/gury-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/gury-9x16.jpg"}

@@ -42,16 +42,16 @@
         "Proposição inclusa na Ordem do Dia": 7
       },
       "by_classe": {
-        "Proposta com objeto": 14,
-        "Não classificável": 14,
+        "Proposta com objeto": 24,
         "Moção/manifestação": 9,
+        "Não classificável": 4,
         "Homenagem ou título": 2,
         "Nomeação de lugar": 1
       },
-      "n_proposta": 14,
+      "n_proposta": 24,
       "n_nomeacao": 1,
       "n_homenagem": 2,
-      "n_indefinida": 14
+      "n_indefinida": 4
     },
     "situacao_tse_label": "Eleito por média",
     "situacao_tse_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.",
@@ -102,7 +102,7 @@
         "2025": 15,
         "2026": 25
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 21 proposições",
@@ -204,16 +204,16 @@
         "Proposição retirada da Ordem do Dia": 3
       },
       "by_classe": {
-        "Não classificável": 26,
-        "Proposta com objeto": 23,
+        "Proposta com objeto": 44,
         "Moção/manifestação": 11,
+        "Não classificável": 5,
         "Homenagem ou título": 1,
         "Nomeação de lugar": 1
       },
-      "n_proposta": 23,
+      "n_proposta": 44,
       "n_nomeacao": 1,
       "n_homenagem": 1,
-      "n_indefinida": 26
+      "n_indefinida": 5
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -266,7 +266,7 @@
         "2025": 20,
         "2026": 24
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 33 proposições",
@@ -388,15 +388,15 @@
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Não classificável": 10,
+        "Proposta com objeto": 16,
         "Moção/manifestação": 9,
-        "Proposta com objeto": 9,
+        "Não classificável": 3,
         "Nomeação de lugar": 2
       },
-      "n_proposta": 9,
+      "n_proposta": 16,
       "n_nomeacao": 2,
       "n_homenagem": 0,
-      "n_indefinida": 10
+      "n_indefinida": 3
     },
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
@@ -448,7 +448,7 @@
         "2023": 12,
         "2024": 18
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 15 proposições",
@@ -566,16 +566,16 @@
         "Proposição inclusa na Ordem do Dia": 4
       },
       "by_classe": {
-        "Não classificável": 49,
-        "Proposta com objeto": 41,
+        "Proposta com objeto": 87,
         "Moção/manifestação": 10,
+        "Não classificável": 3,
         "Homenagem ou título": 2,
         "Nomeação de lugar": 1
       },
-      "n_proposta": 41,
+      "n_proposta": 87,
       "n_nomeacao": 1,
       "n_homenagem": 2,
-      "n_indefinida": 49
+      "n_indefinida": 3
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -626,7 +626,7 @@
         "2025": 40,
         "2026": 63
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 84 proposições",
@@ -729,16 +729,16 @@
         "Proposição retirada da Ordem do Dia": 3
       },
       "by_classe": {
-        "Proposta com objeto": 95,
-        "Não classificável": 83,
+        "Proposta com objeto": 164,
         "Moção/manifestação": 36,
+        "Não classificável": 14,
         "Nomeação de lugar": 6,
         "Homenagem ou título": 5
       },
-      "n_proposta": 95,
+      "n_proposta": 164,
       "n_nomeacao": 6,
       "n_homenagem": 5,
-      "n_indefinida": 83
+      "n_indefinida": 14
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -792,7 +792,7 @@
         "2025": 79,
         "2026": 91
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Mais moções da Câmara (44)",
@@ -997,16 +997,16 @@
         "Proposição inclusa na Ordem do Dia": 4
       },
       "by_classe": {
-        "Não classificável": 53,
-        "Proposta com objeto": 44,
+        "Proposta com objeto": 95,
         "Moção/manifestação": 11,
         "Homenagem ou título": 2,
+        "Não classificável": 2,
         "Nomeação de lugar": 1
       },
-      "n_proposta": 44,
+      "n_proposta": 95,
       "n_nomeacao": 1,
       "n_homenagem": 2,
-      "n_indefinida": 53
+      "n_indefinida": 2
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -1057,7 +1057,7 @@
         "2025": 67,
         "2026": 44
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 97 proposições",
@@ -1160,16 +1160,16 @@
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Não classificável": 10,
+        "Proposta com objeto": 11,
         "Moção/manifestação": 8,
-        "Proposta com objeto": 7,
+        "Não classificável": 6,
         "Nomeação de lugar": 3,
         "Homenagem ou título": 1
       },
-      "n_proposta": 7,
+      "n_proposta": 11,
       "n_nomeacao": 3,
       "n_homenagem": 1,
-      "n_indefinida": 10
+      "n_indefinida": 6
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -1223,7 +1223,7 @@
         "2025": 6,
         "2026": 12
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 14 proposições",
@@ -1341,15 +1341,15 @@
         "Proposição inclusa na Ordem do Dia": 2
       },
       "by_classe": {
-        "Não classificável": 36,
-        "Proposta com objeto": 26,
+        "Proposta com objeto": 57,
         "Moção/manifestação": 11,
+        "Não classificável": 5,
         "Homenagem ou título": 1
       },
-      "n_proposta": 26,
+      "n_proposta": 57,
       "n_nomeacao": 0,
       "n_homenagem": 1,
-      "n_indefinida": 36
+      "n_indefinida": 5
     },
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
@@ -1399,7 +1399,7 @@
         "2025": 36,
         "2026": 30
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 50 proposições",
@@ -1551,7 +1551,7 @@
         "2025": 5,
         "2026": 1
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 5 proposições"
@@ -1684,7 +1684,7 @@
         "2025": 23,
         "2026": 17
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 57 proposições",
@@ -1746,16 +1746,16 @@
         "Proposição retirada da Ordem do Dia": 1
       },
       "by_classe": {
-        "Não classificável": 24,
-        "Proposta com objeto": 11,
+        "Proposta com objeto": 29,
         "Moção/manifestação": 10,
+        "Não classificável": 6,
         "Homenagem ou título": 1,
         "Nomeação de lugar": 1
       },
-      "n_proposta": 11,
+      "n_proposta": 29,
       "n_nomeacao": 1,
       "n_homenagem": 1,
-      "n_indefinida": 24
+      "n_indefinida": 6
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -1806,7 +1806,7 @@
         "2025": 12,
         "2026": 19
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 21 proposições",
@@ -1925,15 +1925,15 @@
         "Proposição retirada da Ordem do Dia": 1
       },
       "by_classe": {
-        "Não classificável": 9,
+        "Proposta com objeto": 9,
         "Moção/manifestação": 8,
-        "Proposta com objeto": 3,
+        "Não classificável": 3,
         "Nomeação de lugar": 1
       },
-      "n_proposta": 3,
+      "n_proposta": 9,
       "n_nomeacao": 1,
       "n_homenagem": 0,
-      "n_indefinida": 9
+      "n_indefinida": 3
     },
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
@@ -1982,7 +1982,7 @@
         "2023": 8,
         "2024": 13
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 7 proposições",
@@ -2092,14 +2092,13 @@
         "Proposição aprovada": 2
       },
       "by_classe": {
-        "Proposta com objeto": 11,
-        "Não classificável": 3,
+        "Proposta com objeto": 14,
         "Moção/manifestação": 2
       },
-      "n_proposta": 11,
+      "n_proposta": 14,
       "n_nomeacao": 0,
       "n_homenagem": 0,
-      "n_indefinida": 3
+      "n_indefinida": 0
     },
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
@@ -2127,7 +2126,7 @@
       "anos": {
         "2025": 16
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Maior taxa de autoria exclusiva (100%)",
@@ -2211,16 +2210,16 @@
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Proposta com objeto": 26,
+        "Proposta com objeto": 32,
         "Moção/manifestação": 19,
-        "Não classificável": 15,
+        "Não classificável": 9,
         "Homenagem ou título": 3,
         "Nomeação de lugar": 2
       },
-      "n_proposta": 26,
+      "n_proposta": 32,
       "n_nomeacao": 2,
       "n_homenagem": 3,
-      "n_indefinida": 15
+      "n_indefinida": 9
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -2273,7 +2272,7 @@
         "2025": 23,
         "2026": 23
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "3º em moções (26)",
@@ -2404,16 +2403,16 @@
         "Proposição rejeitada pelo Plenário": 1
       },
       "by_classe": {
-        "Não classificável": 364,
-        "Proposta com objeto": 141,
+        "Proposta com objeto": 478,
+        "Não classificável": 27,
         "Moção/manifestação": 23,
         "Homenagem ou título": 8,
         "Nomeação de lugar": 4
       },
-      "n_proposta": 141,
+      "n_proposta": 478,
       "n_nomeacao": 4,
       "n_homenagem": 8,
-      "n_indefinida": 364
+      "n_indefinida": 27
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -2472,7 +2471,7 @@
         "2025": 233,
         "2026": 163
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Mais proposições aprovadas (83)",
@@ -2598,16 +2597,16 @@
         "Proposição retirada da Ordem do Dia": 1
       },
       "by_classe": {
-        "Proposta com objeto": 37,
-        "Não classificável": 31,
+        "Proposta com objeto": 58,
         "Moção/manifestação": 15,
+        "Não classificável": 10,
         "Homenagem ou título": 1,
         "Nomeação de lugar": 1
       },
-      "n_proposta": 37,
+      "n_proposta": 58,
       "n_nomeacao": 1,
       "n_homenagem": 1,
-      "n_indefinida": 31
+      "n_indefinida": 10
     },
     "situacao_tse_label": "Eleito por média",
     "situacao_tse_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.",
@@ -2661,7 +2660,7 @@
         "2025": 34,
         "2026": 25
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 50 proposições",
@@ -2776,14 +2775,14 @@
         "nao_informada": 1
       },
       "by_classe": {
-        "Não classificável": 7,
+        "Proposta com objeto": 7,
         "Moção/manifestação": 2,
-        "Proposta com objeto": 1
+        "Não classificável": 1
       },
-      "n_proposta": 1,
+      "n_proposta": 7,
       "n_nomeacao": 0,
       "n_homenagem": 0,
-      "n_indefinida": 7
+      "n_indefinida": 1
     },
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
@@ -2829,7 +2828,7 @@
       "anos": {
         "2023": 10
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Assina mais com Lucas do Beiradão (8)"
@@ -2928,15 +2927,15 @@
         "Proposição inclusa na Ordem do Dia": 4
       },
       "by_classe": {
-        "Não classificável": 96,
-        "Proposta com objeto": 63,
+        "Proposta com objeto": 155,
         "Moção/manifestação": 8,
+        "Não classificável": 4,
         "Homenagem ou título": 2
       },
-      "n_proposta": 63,
+      "n_proposta": 155,
       "n_nomeacao": 0,
       "n_homenagem": 2,
-      "n_indefinida": 96
+      "n_indefinida": 4
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -2990,7 +2989,7 @@
         "2025": 87,
         "2026": 69
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "3º em indicações (151)",
@@ -3088,15 +3087,15 @@
         "Proposição inclusa na Ordem do Dia": 4
       },
       "by_classe": {
-        "Não classificável": 25,
-        "Proposta com objeto": 18,
+        "Proposta com objeto": 42,
         "Moção/manifestação": 14,
-        "Homenagem ou título": 2
+        "Homenagem ou título": 2,
+        "Não classificável": 1
       },
-      "n_proposta": 18,
+      "n_proposta": 42,
       "n_nomeacao": 0,
       "n_homenagem": 2,
-      "n_indefinida": 25
+      "n_indefinida": 1
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -3144,7 +3143,7 @@
         "2025": 19,
         "2026": 40
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 41 proposições",
@@ -3292,7 +3291,7 @@
       "anos": {
         "2024": 6
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [],
     "mandatos": [
@@ -3392,16 +3391,16 @@
         "Proposição retirada da Ordem do Dia": 5
       },
       "by_classe": {
-        "Não classificável": 25,
-        "Proposta com objeto": 14,
+        "Proposta com objeto": 24,
+        "Não classificável": 15,
         "Moção/manifestação": 13,
         "Homenagem ou título": 6,
         "Nomeação de lugar": 2
       },
-      "n_proposta": 14,
+      "n_proposta": 24,
       "n_nomeacao": 2,
       "n_homenagem": 6,
-      "n_indefinida": 25
+      "n_indefinida": 15
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -3457,7 +3456,7 @@
         "2025": 4,
         "2026": 10
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "3º em projetos de lei do Legislativo (6)",
@@ -3576,15 +3575,15 @@
         "Proposição inclusa na Ordem do Dia": 2
       },
       "by_classe": {
-        "Não classificável": 6,
+        "Proposta com objeto": 6,
         "Homenagem ou título": 4,
         "Nomeação de lugar": 2,
-        "Proposta com objeto": 1
+        "Não classificável": 1
       },
-      "n_proposta": 1,
+      "n_proposta": 6,
       "n_nomeacao": 2,
       "n_homenagem": 4,
-      "n_indefinida": 6
+      "n_indefinida": 1
     },
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
@@ -3623,7 +3622,7 @@
       "anos": {
         "2026": 13
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 11 proposições"
@@ -3711,16 +3710,16 @@
         "Proposição retirada da Ordem do Dia": 1
       },
       "by_classe": {
-        "Proposta com objeto": 25,
-        "Não classificável": 12,
+        "Proposta com objeto": 35,
         "Moção/manifestação": 5,
         "Nomeação de lugar": 3,
+        "Não classificável": 2,
         "Homenagem ou título": 2
       },
-      "n_proposta": 25,
+      "n_proposta": 35,
       "n_nomeacao": 3,
       "n_homenagem": 2,
-      "n_indefinida": 12
+      "n_indefinida": 2
     },
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
@@ -3772,7 +3771,7 @@
         "2023": 19,
         "2024": 27
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 31 proposições",
@@ -3871,16 +3870,16 @@
         "Proposição rejeitada pelo Plenário": 1
       },
       "by_classe": {
-        "Não classificável": 14,
-        "Proposta com objeto": 7,
+        "Proposta com objeto": 13,
+        "Não classificável": 8,
         "Moção/manifestação": 5,
         "Homenagem ou título": 3,
         "Nomeação de lugar": 1
       },
-      "n_proposta": 7,
+      "n_proposta": 13,
       "n_nomeacao": 1,
       "n_homenagem": 3,
-      "n_indefinida": 14
+      "n_indefinida": 8
     },
     "situacao_tse_label": "Eleito por média",
     "situacao_tse_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.",
@@ -3931,7 +3930,7 @@
         "2023": 16,
         "2024": 14
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 14 proposições",
@@ -4049,15 +4048,15 @@
         "nao_informada": 1
       },
       "by_classe": {
-        "Não classificável": 9,
+        "Proposta com objeto": 6,
+        "Não classificável": 4,
         "Moção/manifestação": 3,
-        "Nomeação de lugar": 1,
-        "Proposta com objeto": 1
+        "Nomeação de lugar": 1
       },
-      "n_proposta": 1,
+      "n_proposta": 6,
       "n_nomeacao": 1,
       "n_homenagem": 0,
-      "n_indefinida": 9
+      "n_indefinida": 4
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -4106,7 +4105,7 @@
         "2023": 6,
         "2024": 8
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Assina mais com Albininho (12)"
@@ -4221,15 +4220,15 @@
         "Proposição inclusa na Ordem do Dia": 3
       },
       "by_classe": {
-        "Não classificável": 23,
+        "Proposta com objeto": 33,
         "Moção/manifestação": 15,
-        "Proposta com objeto": 15,
+        "Não classificável": 5,
         "Homenagem ou título": 2
       },
-      "n_proposta": 15,
+      "n_proposta": 33,
       "n_nomeacao": 0,
       "n_homenagem": 2,
-      "n_indefinida": 23
+      "n_indefinida": 5
     },
     "situacao_tse_label": "Eleito por média",
     "situacao_tse_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.",
@@ -4277,7 +4276,7 @@
         "2025": 26,
         "2026": 29
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "3º em requerimentos (5)",
@@ -4382,16 +4381,16 @@
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Não classificável": 30,
-        "Proposta com objeto": 23,
+        "Proposta com objeto": 48,
         "Moção/manifestação": 11,
+        "Não classificável": 5,
         "Nomeação de lugar": 4,
         "Homenagem ou título": 1
       },
-      "n_proposta": 23,
+      "n_proposta": 48,
       "n_nomeacao": 4,
       "n_homenagem": 1,
-      "n_indefinida": 30
+      "n_indefinida": 5
     },
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
@@ -4446,7 +4445,7 @@
         "2025": 7,
         "2026": 28
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 37 proposições",
@@ -4563,15 +4562,14 @@
         "Proposição inclusa na Ordem do Dia": 3
       },
       "by_classe": {
-        "Não classificável": 26,
-        "Proposta com objeto": 23,
+        "Proposta com objeto": 49,
         "Moção/manifestação": 7,
         "Homenagem ou título": 2
       },
-      "n_proposta": 23,
+      "n_proposta": 49,
       "n_nomeacao": 0,
       "n_homenagem": 2,
-      "n_indefinida": 26
+      "n_indefinida": 0
     },
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
@@ -4619,7 +4617,7 @@
         "2025": 22,
         "2026": 36
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 45 proposições",
@@ -4719,16 +4717,16 @@
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Não classificável": 15,
-        "Proposta com objeto": 10,
+        "Proposta com objeto": 19,
+        "Não classificável": 6,
         "Moção/manifestação": 5,
         "Nomeação de lugar": 1,
         "Homenagem ou título": 1
       },
-      "n_proposta": 10,
+      "n_proposta": 19,
       "n_nomeacao": 1,
       "n_homenagem": 1,
-      "n_indefinida": 15
+      "n_indefinida": 6
     },
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
@@ -4781,7 +4779,7 @@
         "2023": 10,
         "2024": 22
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 17 proposições",
@@ -4901,16 +4899,16 @@
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Proposta com objeto": 18,
-        "Não classificável": 14,
+        "Proposta com objeto": 27,
         "Moção/manifestação": 5,
+        "Não classificável": 5,
         "Homenagem ou título": 2,
         "Nomeação de lugar": 1
       },
-      "n_proposta": 18,
+      "n_proposta": 27,
       "n_nomeacao": 1,
       "n_homenagem": 2,
-      "n_indefinida": 14
+      "n_indefinida": 5
     },
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
@@ -4962,7 +4960,7 @@
         "2023": 14,
         "2024": 26
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Autor exclusivo de 24 proposições",
@@ -5080,14 +5078,15 @@
         "nao_informada": 1
       },
       "by_classe": {
-        "Não classificável": 9,
+        "Proposta com objeto": 6,
         "Moção/manifestação": 5,
+        "Não classificável": 3,
         "Nomeação de lugar": 1
       },
-      "n_proposta": 0,
+      "n_proposta": 6,
       "n_nomeacao": 1,
       "n_homenagem": 0,
-      "n_indefinida": 9
+      "n_indefinida": 3
     },
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
@@ -5137,7 +5136,7 @@
         "2023": 8,
         "2024": 7
       },
-      "atualizado_em": "2026-11-25T13:10:11"
+      "atualizado_em": "2026-11-25T17:48:41"
     },
     "destaques": [
       "Assina mais com Lucas do Beiradão (15)"

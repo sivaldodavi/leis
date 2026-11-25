@@ -23,7 +23,7 @@ coletivas: 14
 taxa_exclusividade: 87
 peso_medio: 0.88
 og_image: "/og/v/eduardo-da-ralpnet.jpg"
-share_text: "Eduardo da Ralpnet — 111 proposições, 97 de autoria exclusiva, 44 com objeto definido na Câmara de Pinheiro"
+share_text: "Eduardo da Ralpnet — 111 proposições, 97 de autoria exclusiva, 95 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/eduardo-da-ralpnet-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/eduardo-da-ralpnet-9x16.jpg"}

@@ -23,7 +23,7 @@ coletivas: 0
 taxa_exclusividade: 85
 peso_medio: 0.92
 og_image: "/og/v/oziel-menezes.jpg"
-share_text: "Oziel Menezes — 13 proposições, 11 de autoria exclusiva, 1 com objeto definido na Câmara de Pinheiro"
+share_text: "Oziel Menezes — 13 proposições, 11 de autoria exclusiva, 6 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/oziel-menezes-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/oziel-menezes-9x16.jpg"}

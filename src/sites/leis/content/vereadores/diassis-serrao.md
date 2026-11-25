@@ -23,7 +23,7 @@ coletivas: 12
 taxa_exclusividade: 82
 peso_medio: 0.86
 og_image: "/og/v/diassis-serrao.jpg"
-share_text: "Diassis Serrão — 103 proposições, 84 de autoria exclusiva, 41 com objeto definido na Câmara de Pinheiro"
+share_text: "Diassis Serrão — 103 proposições, 84 de autoria exclusiva, 87 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/diassis-serrao-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/diassis-serrao-9x16.jpg"}

@@ -23,7 +23,7 @@ coletivas: 29
 taxa_exclusividade: 54
 peso_medio: 0.59
 og_image: "/og/v/guto.jpg"
-share_text: "Guto — 65 proposições, 35 de autoria exclusiva, 26 com objeto definido na Câmara de Pinheiro"
+share_text: "Guto — 65 proposições, 35 de autoria exclusiva, 32 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/guto-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/guto-9x16.jpg"}

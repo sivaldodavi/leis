@@ -22,7 +22,7 @@ coletivas: 12
 taxa_exclusividade: 78
 peso_medio: 0.80
 og_image: "/og/v/sapo-da-kiola.jpg"
-share_text: "Sapo da Kiola — 58 proposições, 45 de autoria exclusiva, 23 com objeto definido na Câmara de Pinheiro"
+share_text: "Sapo da Kiola — 58 proposições, 45 de autoria exclusiva, 49 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/sapo-da-kiola-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/sapo-da-kiola-9x16.jpg"}

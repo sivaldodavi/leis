@@ -33,6 +33,9 @@
       <label>Situação
         <select id="filtro-sit"><option value="">Todas</option></select>
       </label>
+      <label>Tema
+        <select id="filtro-tema"><option value="">Todos</option></select>
+      </label>
       <label>Autoria
         <select id="filtro-cat">
           <option value="">Todas</option>
@@ -59,13 +62,15 @@
            data-sit="{{ .situacao_label }}"
            data-cat="{{ .autoria_categoria }}"
            data-autor="{{ delimit .autores_nomes "|" }}"
-           data-search="{{ .identificacao }} {{ .ementa_limpa }} {{ delimit .autores_nomes " " }}">
+           data-tema="{{ .tema_rotulo }}"
+           data-search="{{ .identificacao }} {{ .ementa_limpa }} {{ .tema_rotulo }} {{ delimit .autores_nomes " " }}">
         <div>
-          <span class="plist-id">{{ .identificacao }}</span>
+          <a class="plist-id" href="/proposicoes/{{ .slug }}/">{{ .identificacao }}</a>
           <span class="plist-sub">{{ .especie_rotulo }} · {{ .ano_label }}</span>
         </div>
         <div>
           <span class="clamp2">{{ .ementa_limpa }}</span>
+          {{ if .tema_rotulo }}<span class="plist-sub">Tema: {{ .tema_rotulo }}</span>{{ end }}
           {{ if .coletiva }}<span class="plist-sub">{{ .autoria_label }}</span>{{ end }}
         </div>
         <div class="autores">
@@ -76,7 +81,10 @@
             <span class="plist-sub">Não informada</span>
           {{ end }}
         </div>
-        <div><span class="badge-sit {{ .situacao_classe }}">{{ .situacao_label }}</span></div>
+        <div>
+          <span class="badge-sit {{ .situacao_classe }}">{{ .situacao_label }}</span>
+          {{ if .pdf_url }}<div><a href="{{ .pdf_url }}" target="_blank" rel="noopener" class="plist-sub" style="color:#1E7B4F;font-weight:700">PDF ↗</a></div>{{ end }}
+        </div>
       </div>
     {{ end }}
     </div>
@@ -91,6 +99,7 @@
   var fano = document.getElementById('filtro-ano');
   var fautor = document.getElementById('filtro-autor');
   var fsit = document.getElementById('filtro-sit');
+  var ftema = document.getElementById('filtro-tema');
   var fcat = document.getElementById('filtro-cat');
   var status = document.getElementById('prop-status');
 
@@ -105,11 +114,11 @@
       var o = document.createElement('option'); o.value = v; o.textContent = v; sel.appendChild(o);
     });
   }
-  fill(ftipo, 'data-tipo'); fill(fano, 'data-ano'); fill(fautor, 'data-autor', true); fill(fsit, 'data-sit');
+  fill(ftipo, 'data-tipo'); fill(fano, 'data-ano'); fill(fautor, 'data-autor', true); fill(fsit, 'data-sit'); fill(ftema, 'data-tema');
 
   function apply(){
     var q = norm(busca.value.trim());
-    var tipo = ftipo.value, ano = fano.value, autor = fautor.value, sit = fsit.value, cat = fcat.value;
+    var tipo = ftipo.value, ano = fano.value, autor = fautor.value, sit = fsit.value, cat = fcat.value, tema = ftema.value;
     var n = 0;
     rows.forEach(function(r){
       var ok = true;
@@ -119,12 +128,13 @@
       if(autor && (r.getAttribute('data-autor') || '').split('|').indexOf(autor) === -1) ok = false;
       if(sit && r.getAttribute('data-sit') !== sit) ok = false;
       if(cat && r.getAttribute('data-cat') !== cat) ok = false;
+      if(tema && r.getAttribute('data-tema') !== tema) ok = false;
       r.style.display = ok ? '' : 'none';
       if(ok) n++;
     });
     status.textContent = n + ' proposição(ões) encontrada(s).';
   }
-  [busca, ftipo, fano, fautor, fsit, fcat].forEach(function(el){ el.addEventListener('input', apply); el.addEventListener('change', apply); });
+  [busca, ftipo, fano, fautor, fsit, fcat, ftema].forEach(function(el){ el.addEventListener('input', apply); el.addEventListener('change', apply); });
   var qp = new URLSearchParams(window.location.search).get('q');
   if(qp){ busca.value = qp; }
   var h = window.location.hash;

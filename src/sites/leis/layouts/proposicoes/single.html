@@ -1,0 +1,56 @@
+{{ define "main" }}
+<div class="content">
+  <p class="eyebrow">{{ .Params.tipo_label }}{{ with .Params.ano }} · {{ . }}{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+  <p style="font-size:14px;color:#5B5B5B">
+    Situação: <strong>{{ with .Params.situacao_label }}{{ . }}{{ else }}Não informada{{ end }}</strong>
+    {{ with .Params.data }} · Data: <strong>{{ . }}</strong>{{ end }}
+    · <a href="/proposicoes/" style="font-weight:700;color:#1E7B4F">← Todas as proposições</a>
+  </p>
+
+  <div class="chips" style="margin:16px 0 24px">
+    {{ with .Params.tema }}<span class="chip active" title="{{ $.Params.tema_evidencia }}">Tema: {{ $.Params.tema_rotulo }}</span>{{ end }}
+    <span class="chip">{{ .Params.classe_rotulo }}</span>
+  </div>
+
+  <p style="font-size:17px;line-height:1.6"><strong>Ementa:</strong> {{ .Params.ementa }}</p>
+
+  {{ with .Params.autores }}
+  <p style="font-size:15px;color:#5B5B5B"><strong>Autoria:</strong>
+    {{ range $i, $a := . }}{{ if $i }}, {{ end }}<a href="/vereadores/{{ $a.slug }}/" style="color:#1E7B4F;font-weight:600">{{ $a.nome }}</a>{{ end }}
+  </p>
+  {{ end }}
+
+  {{ with .Params.pdf_url }}
+  <p style="margin:20px 0">
+    <a href="{{ . }}" target="_blank" rel="noopener"
+       style="display:inline-block;padding:12px 18px;background:#1E7B4F;color:#fff;border:2px solid #1A1A1A;font-weight:700;text-decoration:none">
+      Abrir o PDF original ↗
+    </a>
+    <span style="font-size:13px;color:#5B5B5B;margin-left:10px">{{ $.Params.pdf_arquivo }}</span>
+  </p>
+  {{ end }}
+
+  <hr>
+
+  {{ if .Params.tem_texto }}
+    <h2>Texto integral</h2>
+    {{ .Content }}
+  {{ else }}
+    <h2>Texto integral</h2>
+    <p style="color:#5B5B5B">
+      O texto desta proposição ainda não está disponível no acervo digital.
+      {{ with .Params.pdf_url }}O documento original está <a href="{{ . }}" target="_blank" rel="noopener" style="color:#1E7B4F;font-weight:600">neste PDF</a>.{{ else }}Não há PDF localizado para ela.{{ end }}
+    </p>
+  {{ end }}
+
+  <details style="margin-top:32px;font-size:14px;color:#5B5B5B">
+    <summary style="cursor:pointer;font-weight:700">Como esta página foi classificada</summary>
+    <ul style="margin-top:10px">
+      <li><strong>Classe:</strong> {{ .Params.classe_rotulo }}{{ with .Params.classe_evidencia }} — evidência: {{ . }}{{ end }}</li>
+      {{ with .Params.tema }}<li><strong>Tema:</strong> {{ $.Params.tema_rotulo }} — evidência: {{ $.Params.tema_evidencia }}</li>{{ end }}
+      <li><strong>Ementa:</strong> transcrita como consta na fonte; pode estar truncada na origem (indicada por reticências).</li>
+    </ul>
+  </details>
+</div>
+{{ end }}

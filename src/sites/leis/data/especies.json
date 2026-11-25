@@ -40,7 +40,7 @@
     "exemplos": [
       {
         "titulo": "PELO-001/2026",
-        "url": "/proposicoes/?q=PELO-001/2026",
+        "url": "/proposicoes/pelo-001-2026/",
         "data": "2026",
         "ementa": "Altera a Redação do Parágrafo 3° do ART 42 da Lei Orgânica do Município de Pinheiro."
       }
@@ -130,13 +130,13 @@
       },
       {
         "titulo": "PLO-016/2026",
-        "url": "/proposicoes/?q=PLO-016/2026",
+        "url": "/proposicoes/plo-016-2026/",
         "data": "2026",
         "ementa": "Dispõe sobre o Sistema Municipal da Política de Promoção da Igualdade Racial, do Órgão Gestor da Política…"
       },
       {
         "titulo": "PLO-018/2026",
-        "url": "/proposicoes/?q=PLO-018/2026",
+        "url": "/proposicoes/plo-018-2026/",
         "data": "2026",
         "ementa": "Prorroga, até 31 de dezembro de 2026, a Vigência do Plano Municipal de Educação de Pinheiro, Instituído pela…"
       }
@@ -178,13 +178,13 @@
       },
       {
         "titulo": "PRE-001/2026",
-        "url": "/proposicoes/?q=PRE-001/2026",
+        "url": "/proposicoes/pre-001-2026/",
         "data": "2026",
         "ementa": "Dispõe sobre a Criação de Cargos em Comissão no Quadro Permanente de Servidores da Câmara Municipal de…"
       },
       {
         "titulo": "PRE-003/2025",
-        "url": "/proposicoes/?q=PRE-003/2025",
+        "url": "/proposicoes/pre-003-2025/",
         "data": "2025",
         "ementa": "Cria, no âmbito da Câmara Municipal de Pinheiro/MA, o Diploma de Honra ao Mérito “Padre Luís Risso”…"
       }
@@ -226,13 +226,13 @@
       },
       {
         "titulo": "PDL-013/2026",
-        "url": "/proposicoes/?q=PDL-013/2026",
+        "url": "/proposicoes/pdl-013-2026/",
         "data": "2026",
         "ementa": "Dispõe sobre Concessão de Título de Cidadania Pinheirense."
       },
       {
         "titulo": "PDL-012/2026",
-        "url": "/proposicoes/?q=PDL-012/2026",
+        "url": "/proposicoes/pdl-012-2026/",
         "data": "2026",
         "ementa": "Projeto Decreto do Legislativo de nº 012/2026. Estima o Repasse de Receita e Fixa a Despesa do Poder…"
       }
@@ -311,24 +311,36 @@
     "exemplo_norma": "IND507",
     "exemplo_prop": "IND-507/2026",
     "ordem": 9,
-    "n_normas": 1,
+    "n_normas": 1403,
     "n_props": 1403,
     "exemplos": [
       {
-        "titulo": "Indicação nº 507/2026",
+        "titulo": "Indicação nº 506",
+        "url": "/normas/ind506_2026/",
+        "data": "2026-08-12",
+        "ementa": "Indica ao Excelentíssimo Prefeito Municipal, André Leão Costa Silva, que determine aos órgãos competentes a adequação e…"
+      },
+      {
+        "titulo": "Indicação nº 507",
         "url": "/normas/ind507/",
         "data": "2026-08-12",
-        "ementa": "Recuperação, com revestimento em piçarra, de ramal de aproximadamente 1 km ligando o Povoado Ponta de Santana ao…"
+        "ementa": "Indica ao Excelentíssimo Prefeito Municipal, André Leão Costa Silva, que determine à Secretaria Municipal de…"
+      },
+      {
+        "titulo": "Indicação nº 503",
+        "url": "/normas/ind503_2026/",
+        "data": "2026-08-10",
+        "ementa": "Obedecendo disposições regimentais, INDICO, ao Exmo. Prefeito Municipal, ANDRÉ LEÃO COSTA SILVA, com cópia ao…"
       },
       {
         "titulo": "IND-505/2026",
-        "url": "/proposicoes/?q=IND-505/2026",
+        "url": "/proposicoes/ind-505-2026/",
         "data": "2026",
         "ementa": "Obedecendo disposições regimentais, INDICO ao Exmo. Prefeito Municipal, ANDRE LEÃO COSTA SILVA, que seja…"
       },
       {
         "titulo": "IND-506/2026",
-        "url": "/proposicoes/?q=IND-506/2026",
+        "url": "/proposicoes/ind-506-2026/",
         "data": "2026",
         "ementa": "Indica ao Excelentíssimo Prefeito Municipal, André Leão Costa Silva, que determine aos órgãos competentes a…"
       }
@@ -358,13 +370,13 @@
       },
       {
         "titulo": "REQ-014/2026",
-        "url": "/proposicoes/?q=REQ-014/2026",
+        "url": "/proposicoes/req-014-2026/",
         "data": "2026",
         "ementa": "REQUERIMENTO Nº 014/2026 O Vereador que abaixo subscreve, no uso de suas atribuições conferidas pelas…"
       },
       {
         "titulo": "REQ-011/2026",
-        "url": "/proposicoes/?q=REQ-011/2026",
+        "url": "/proposicoes/req-011-2026/",
         "data": "2026",
         "ementa": "O Vereador que este subscreve, no uso de suas atribuições legais e regimentais, requer que seja encaminhado…"
       }
@@ -394,13 +406,13 @@
       },
       {
         "titulo": "MOC-055/2026",
-        "url": "/proposicoes/?q=MOC-055/2026",
+        "url": "/proposicoes/moc-055-2026/",
         "data": "2026",
         "ementa": "Concede PESAR pelo falecimento da estimada Pastora TALITA SUELLEN GOMES RIBEIRO."
       },
       {
         "titulo": "MOC-056/2026",
-        "url": "/proposicoes/?q=MOC-056/2026",
+        "url": "/proposicoes/moc-056-2026/",
         "data": "2026",
         "ementa": "Pesar pelo falecimento da Senhora MARIA DO SOCORRO LIMA BARBOSA,..."
       }
@@ -424,13 +436,13 @@
     "exemplos": [
       {
         "titulo": "EMD-003/2024",
-        "url": "/proposicoes/?q=EMD-003/2024",
+        "url": "/proposicoes/emd-003-2024/",
         "data": "2024",
         "ementa": "Acrescenta o ART. 5º-a e Seu Respectivo Parágrafo Único ao Projeto de Lei N° 014/2024 que “Estima a Receita e…"
       },
       {
         "titulo": "EMD-002/2024",
-        "url": "/proposicoes/?q=EMD-002/2024",
+        "url": "/proposicoes/emd-002-2024/",
         "data": "2024",
         "ementa": "Acrescenta o ART. 13-a e Seus Respectivos Parágrafos (§1º e §2º) ao Projeto de Lei N° 009/2024"
       }
@@ -454,7 +466,7 @@
     "exemplos": [
       {
         "titulo": "PCE-071/2026",
-        "url": "/proposicoes/?q=PCE-071/2026",
+        "url": "/proposicoes/pce-071-2026/",
         "data": "2026",
         "ementa": "Dispõe sobre Julgamento das contas de Governo do Município de Pinheiro/MA. Relativas ao Exercício Financeiro…"
       }

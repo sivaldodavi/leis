@@ -23,7 +23,7 @@ coletivas: 25
 taxa_exclusividade: 94
 peso_medio: 0.95
 og_image: "/og/v/herasmo-leite.jpg"
-share_text: "Herasmo Leite — 540 proposições, 510 de autoria exclusiva, 141 com objeto definido na Câmara de Pinheiro"
+share_text: "Herasmo Leite — 540 proposições, 510 de autoria exclusiva, 478 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/herasmo-leite-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/herasmo-leite-9x16.jpg"}

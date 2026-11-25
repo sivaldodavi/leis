@@ -1,4 +1,4 @@
-import sqlite3, json, os, re, shutil, unicodedata
+import sqlite3, json, os, re, shutil, unicodedata, html
 
 BASE = os.environ.get("LEIS_BASE", "/opt/servidor/src/sites/leis")
 DB = os.environ.get("LEIS_DB", "/opt/servidor/data/servicos/leis/legislacao_pinheiro.db")
@@ -160,6 +160,29 @@ try:
         }
 except sqlite3.OperationalError:
     pass
+
+tema_por_prop = {}
+try:
+    for r in q("SELECT * FROM proposicao_tema"):
+        tema_por_prop[r["proposicao_id"]] = dict(r)
+except sqlite3.OperationalError:
+    pass
+
+# Texto integral e PDF das indicações (chave: numero, ano)
+indicacao_extra = {}
+for r in q(
+    "SELECT id, numero, data, texto_integral, arquivo_pdf FROM normas "
+    "WHERE tipo='indicacao'"
+):
+    m = re.match(r"^IND(\d+)_(\d{4})$", r["id"])
+    if m:
+        chave = (int(m.group(1)), int(m.group(2)))
+    elif r["id"] == "IND507":
+        chave = (507, 2026)
+    else:
+        chave = None
+    if chave:
+        indicacao_extra[chave] = dict(r)
 
 CLASSE_CURTA = {
     "proposta": "Proposta",
@@ -454,6 +477,25 @@ for r in props_rows:
     p["classe_rotulo"] = cls["rotulo"]
     p["classe_curta"] = CLASSE_CURTA.get(cls["classe"], cls["rotulo"])
     p["classe_evidencia"] = cls["evidencia"]
+    tema = tema_por_prop.get(p["id"])
+    p["tema"] = tema["tema"] if tema else ""
+    p["tema_rotulo"] = tema["rotulo"] if tema else ""
+    p["tema_evidencia"] = tema["evidencia"] if tema else ""
+    p["slug"] = re.sub(r"[^a-z0-9]+", "-", (p["identificacao"] or "").lower()).strip("-") or ("prop-%s" % p["id"])
+    p["texto_integral"] = ""
+    p["pdf_arquivo"] = ""
+    p["data_prop"] = ""
+    if (p["tipo"] or "").lower().startswith("indica"):
+        try:
+            extra = indicacao_extra.get((int(p["numero"]), int(str(p["ano"]).strip())))
+        except (TypeError, ValueError):
+            extra = None
+        if extra:
+            p["texto_integral"] = extra["texto_integral"] or ""
+            p["pdf_arquivo"] = extra["arquivo_pdf"] or ""
+            p["data_prop"] = extra["data"] or ""
+    p["pdf_url"] = "/pdfs/%s" % p["pdf_arquivo"] if p["pdf_arquivo"] else ""
+    p["tem_texto"] = len(p["texto_integral"]) > 100
     p["qualidade"] = qualidade_por_prop.get(p["id"]) or {
         "pontuacao": None,
         "nivel": "",
@@ -506,6 +548,80 @@ def stats_de_proposicoes(ps):
 for a in autores:
     a["stats"] = stats_de_proposicoes(props_por_autor.get(a["id"], []))
 
+
+RE_TITULO_LINHA = re.compile(r"^[A-ZÁÉÍÓÚÂÊÔÃÕÇ0-9 ,.\-ºª]{3,42}$")
+
+
+def paragrafos(texto):
+    blocos = [b.strip() for b in re.split(r"\n\s*\n", texto or "") if b.strip()]
+    saida = []
+    for b in blocos:
+        linhas = [l.strip() for l in b.split("\n") if l.strip()]
+        atual = []
+        for l in linhas:
+            if RE_TITULO_LINHA.match(l) and not l.endswith("."):
+                if atual:
+                    saida.append(" ".join(atual))
+                    atual = []
+                saida.append(l)
+            else:
+                atual.append(l)
+        if atual:
+            saida.append(" ".join(atual))
+    return [html.escape(x) for x in saida if x.strip()]
+
+
+# Páginas individuais das proposições
+props_dir = os.path.join(BASE, "content", "proposicoes")
+os.makedirs(props_dir, exist_ok=True)
+slug_usado = {}
+for p in props:
+    slug = p["slug"]
+    if slug in slug_usado:
+        slug_usado[slug] += 1
+        slug = "%s-%d" % (slug, slug_usado[slug])
+    else:
+        slug_usado[slug] = 1
+    p["slug"] = slug
+
+for p in props:
+    lines = ["---"]
+    lines.append('title: "%s"' % yaml_escape(p["identificacao"]))
+    lines.append('proposicao_id: %d' % p["id"])
+    lines.append('tipo: "%s"' % yaml_escape(p["tipo"] or ""))
+    lines.append('tipo_label: "%s"' % yaml_escape(p["especie_rotulo"]))
+    lines.append('numero: "%s"' % yaml_escape(str(p["numero"] or "")))
+    lines.append('ano: "%s"' % yaml_escape(str(p["ano_label"])))
+    lines.append('data: "%s"' % yaml_escape(p["data_prop"]))
+    lines.append('situacao: "%s"' % yaml_escape(p["situacao"] or ""))
+    lines.append('situacao_label: "%s"' % yaml_escape(p["situacao_label"]))
+    lines.append('classe: "%s"' % yaml_escape(p["classe"]))
+    lines.append('classe_rotulo: "%s"' % yaml_escape(p["classe_rotulo"]))
+    lines.append('classe_evidencia: "%s"' % yaml_escape(p["classe_evidencia"] or ""))
+    if p["tema"]:
+        lines.append('tema: "%s"' % yaml_escape(p["tema"]))
+        lines.append('tema_rotulo: "%s"' % yaml_escape(p["tema_rotulo"]))
+        lines.append('tema_evidencia: "%s"' % yaml_escape(p["tema_evidencia"] or ""))
+    if p["pdf_url"]:
+        lines.append('pdf_url: "%s"' % yaml_escape(p["pdf_url"]))
+        lines.append('pdf_arquivo: "%s"' % yaml_escape(p["pdf_arquivo"]))
+    lines.append('tem_texto: %s' % ("true" if p["tem_texto"] else "false"))
+    lines.append('ementa: "%s"' % yaml_escape(p["ementa_limpa"]))
+    if p["autores"]:
+        lines.append("autores:")
+        for a in p["autores"]:
+            lines.append('  - {nome: "%s", slug: "%s"}' % (yaml_escape(a["nome"]), a["slug"]))
+    lines.append("---")
+    lines.append("")
+    paras = paragrafos(p["texto_integral"])
+    if paras:
+        lines.append('<div class="texto-integral">')
+        for par in paras:
+            lines.append("<p>%s</p>" % par)
+        lines.append("</div>")
+    with open(os.path.join(props_dir, p["slug"] + ".md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
 normas_list = []
 dispositivos_list = []
 busca_list = []
@@ -518,6 +634,8 @@ for n in normas_rows:
     cats = norma_categorias(nid)
     sit = n["situacao"]
     sit_label = situacao_label_map.get(sit, sit)
+    if sit_label == "nao_informada":
+        sit_label = "Não informada"
     ementa = md_text(n["ementa"])
     obs = md_text(n["observacao"])
     tipo = n["tipo"]
@@ -570,6 +688,8 @@ for n in normas_rows:
     cats = norma_categorias(nid)
     sit = n["situacao"]
     sit_label = situacao_label_map.get(sit, sit)
+    if sit_label == "nao_informada":
+        sit_label = "Não informada"
     ementa = md_text(n["ementa"])
     obs = md_text(n["observacao"])
     tipo = n["tipo"]
@@ -582,13 +702,25 @@ for n in normas_rows:
     alts = alteracoes_da_norma(nid)
     evs = eventos_da_norma(nid)
 
+    if tipo == "indicacao" and n["numero"]:
+        titulo_pagina = "%s nº %s%s" % (
+            tipo_lbl, n["numero"],
+            (" de " + n["data"][:4]) if n["data"] else "",
+        )
+    else:
+        titulo_pagina = ementa if ementa else nid
+
     lines = ["---"]
-    lines.append('title: "%s"' % yaml_escape(ementa if ementa else nid))
+    lines.append('title: "%s"' % yaml_escape(titulo_pagina))
     lines.append('norma_id: "%s"' % nid)
     lines.append('tipo: "%s"' % tipo)
     lines.append('tipo_label: "%s"' % tipo_lbl)
     lines.append('numero: "%s"' % yaml_escape(n["numero"]))
     lines.append('data: "%s"' % n["data"])
+    lines.append('ano: "%s"' % (n["data"][:4] if n["data"] else ""))
+    arquivo_pdf = n["arquivo_pdf"] if "arquivo_pdf" in n.keys() else None
+    if arquivo_pdf:
+        lines.append('pdf_url: "/pdfs/%s"' % yaml_escape(arquivo_pdf))
     lines.append('especie: "%s"' % esp)
     lines.append('og_image: "%s"' % ("/og/tipos/%s.jpg" % esp if esp else "/og/site.jpg"))
     lines.append('situacao: "%s"' % sit)
@@ -622,6 +754,9 @@ for n in normas_rows:
         meta.append("**Fonte:** %s" % fonte["arquivo"])
     lines.append(" · ".join(meta))
     lines.append("")
+    if arquivo_pdf:
+        lines.append("**Documento original:** [ver PDF da indicação](/pdfs/%s)" % arquivo_pdf)
+        lines.append("")
     if obs:
         lines.append("> %s" % obs)
         lines.append("")
@@ -934,8 +1069,10 @@ with open(os.path.join(data_dir, "legislacao.json"), "w", encoding="utf-8") as f
 with open(os.path.join(data_dir, "busca.json"), "w", encoding="utf-8") as f:
     json.dump({"partes": busca_list}, f, ensure_ascii=False)
 
+# o texto integral fica nas páginas; o JSON público leva só os metadados
+props_json = [{k: v for k, v in p.items() if k != "texto_integral"} for p in props]
 with open(os.path.join(data_dir, "proposicoes.json"), "w", encoding="utf-8") as f:
-    json.dump(props, f, ensure_ascii=False, indent=2)
+    json.dump(props_json, f, ensure_ascii=False, indent=2)
 
 with open(os.path.join(data_dir, "autores.json"), "w", encoding="utf-8") as f:
     json.dump(autores, f, ensure_ascii=False, indent=2)
@@ -967,7 +1104,7 @@ for e in especies:
     for p in ps[:2]:
         exemplos.append({
             "titulo": p["identificacao"],
-            "url": "/proposicoes/?q=" + p["identificacao"],
+            "url": "/proposicoes/%s/" % p["slug"],
             "data": p["ano_label"],
             "ementa": p["ementa_card"],
         })
@@ -1006,7 +1143,7 @@ for p in props:
         "problemas": qual["problemas"],
         "ementa": p["ementa_card"],
         "autores": p["autores_nomes"],
-        "url": "/proposicoes/?q=" + p["identificacao"],
+        "url": "/proposicoes/%s/" % p["slug"],
     })
 
 por_ano_q = {}

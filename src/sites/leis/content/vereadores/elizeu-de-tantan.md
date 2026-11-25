@@ -23,7 +23,7 @@ coletivas: 15
 taxa_exclusividade: 48
 peso_medio: 0.52
 og_image: "/og/v/elizeu-de-tantan.jpg"
-share_text: "Elizeu de Tantan — 29 proposições, 14 de autoria exclusiva, 7 com objeto definido na Câmara de Pinheiro"
+share_text: "Elizeu de Tantan — 29 proposições, 14 de autoria exclusiva, 11 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/elizeu-de-tantan-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/elizeu-de-tantan-9x16.jpg"}

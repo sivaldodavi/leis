@@ -5,6 +5,7 @@ tipo: "lei_organica"
 tipo_label: "Lei Orgânica"
 numero: "LOM"
 data: "2000"
+ano: "2000"
 especie: "lei_organica"
 og_image: "/og/tipos/lei_organica.jpg"
 situacao: "vigente"
@@ -13,14 +14,14 @@ ementa: "Lei Orgânica do Município de Pinheiro"
 observacao: "Texto atual sem histórico de emendas. Emendas posteriores a 2011-2012 pendentes."
 categorias: ["Regulamentação de regras"]
 natureza: "Impacto direto na população"
-fonte_arquivo: "LOM_025_2000.pdf"
+fonte_arquivo: "lei_organica/LOM_025_2000.pdf"
 fonte_paginas: 68
 teor_status: "integral_no_banco"
 ---
 
 **Lei Orgânica do Município de Pinheiro**
 
-**Tipo:** Lei Orgânica · **Número:** LOM · **Data:** 2000 · **Situação:** Em vigor · **Categorias:** Regulamentação de regras · **Natureza:** Impacto direto na população · **Fonte:** LOM_025_2000.pdf
+**Tipo:** Lei Orgânica · **Número:** LOM · **Data:** 2000 · **Situação:** Em vigor · **Categorias:** Regulamentação de regras · **Natureza:** Impacto direto na população · **Fonte:** lei_organica/LOM_025_2000.pdf
 
 > Texto atual sem histórico de emendas. Emendas posteriores a 2011-2012 pendentes.
 

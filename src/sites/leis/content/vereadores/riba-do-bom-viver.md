@@ -23,7 +23,7 @@ coletivas: 12
 taxa_exclusividade: 14
 peso_medio: 0.20
 og_image: "/og/v/riba-do-bom-viver.jpg"
-share_text: "Riba do Bom Viver — 14 proposições, 2 de autoria exclusiva, 1 com objeto definido na Câmara de Pinheiro"
+share_text: "Riba do Bom Viver — 14 proposições, 2 de autoria exclusiva, 6 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/riba-do-bom-viver-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/riba-do-bom-viver-9x16.jpg"}

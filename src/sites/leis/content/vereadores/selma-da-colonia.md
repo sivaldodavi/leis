@@ -23,7 +23,7 @@ coletivas: 15
 taxa_exclusividade: 53
 peso_medio: 0.56
 og_image: "/og/v/selma-da-colonia.jpg"
-share_text: "Selma da Colônia — 32 proposições, 17 de autoria exclusiva, 10 com objeto definido na Câmara de Pinheiro"
+share_text: "Selma da Colônia — 32 proposições, 17 de autoria exclusiva, 19 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/selma-da-colonia-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/selma-da-colonia-9x16.jpg"}
