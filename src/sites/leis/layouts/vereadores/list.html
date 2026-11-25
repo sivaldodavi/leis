@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div style="padding:40px 48px 72px">
+  <h1 style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px">Vereadores e autores</h1>
+  <p class="lead">Quem propôs o quê na Câmara de Pinheiro. Partido, votos e situação eleitoral vêm do TSE (eleição de 2024).</p>
+  <div class="grid grid-3">
+    {{ range sort .Pages "Params.votos" "desc" }}
+    <article class="card">
+      {{ with .Params.partido }}<span class="badge vigente">{{ . }}</span>{{ else }}<span class="badge outro">Sem TSE</span>{{ end }}
+      <h2 style="margin:0;font-size:24px;font-weight:800"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.nome_urna }}<p style="margin:0;font-size:14px;color:#5B5B5B">Nome de urna: {{ . }}</p>{{ end }}
+      <p style="margin:0;font-size:15px;color:#3A3A3A">
+        {{ with .Params.votos }}<strong>{{ . }}</strong> votos em 2024{{ else }}Sem dados eleitorais{{ end }}
+        {{ with .Params.situacao_tse }} · {{ . }}{{ end }}
+      </p>
+      <p style="margin:0;font-size:15px;color:#3A3A3A"><strong>{{ .Params.n_proposicoes }}</strong> proposições</p>
+      <a href="{{ .RelPermalink }}" style="margin-top:auto;font-weight:700;font-size:15px">Ver atuação →</a>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

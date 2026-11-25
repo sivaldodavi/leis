@@ -1,0 +1,95 @@
+{{ define "main" }}
+{{ $props := .Site.Data.proposicoes }}
+<div style="padding:40px 48px 72px">
+  <h1 style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px">Proposições</h1>
+  <p class="lead">{{ len $props }} indicações, moções, projetos e requerimentos apresentados na Câmara de Pinheiro.</p>
+
+  <div style="margin:0 0 20px;padding:16px;border:2px solid #1A1A1A;background:#fff;display:grid;gap:12px">
+    <div>
+      <label for="busca-prop" style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B;display:block;margin-bottom:6px">Buscar</label>
+      <input id="busca-prop" type="search" placeholder="Ex.: pavimentação, saúde, escola, autor..." style="width:100%;padding:10px 12px;border:2px solid #1A1A1A;font-family:inherit;font-size:16px">
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px">
+      <label style="font-size:13px;font-weight:700;color:#5B5B5B">Tipo
+        <select id="filtro-tipo" style="width:100%;padding:8px;border:2px solid #1A1A1A;font-family:inherit;font-size:15px;background:#fff"><option value="">Todos</option></select>
+      </label>
+      <label style="font-size:13px;font-weight:700;color:#5B5B5B">Ano
+        <select id="filtro-ano" style="width:100%;padding:8px;border:2px solid #1A1A1A;font-family:inherit;font-size:15px;background:#fff"><option value="">Todos</option></select>
+      </label>
+      <label style="font-size:13px;font-weight:700;color:#5B5B5B">Autor
+        <select id="filtro-autor" style="width:100%;padding:8px;border:2px solid #1A1A1A;font-family:inherit;font-size:15px;background:#fff"><option value="">Todos</option></select>
+      </label>
+      <label style="font-size:13px;font-weight:700;color:#5B5B5B">Situação
+        <select id="filtro-sit" style="width:100%;padding:8px;border:2px solid #1A1A1A;font-family:inherit;font-size:15px;background:#fff"><option value="">Todas</option></select>
+      </label>
+    </div>
+    <p id="prop-status" style="font-size:13px;color:#5B5B5B;margin:0">{{ len $props }} proposições.</p>
+  </div>
+
+  <div style="overflow-x:auto">
+    <table class="table">
+      <thead>
+        <tr><th>Identificação</th><th>Tipo</th><th>Ano</th><th>Ementa</th><th>Autor(es)</th><th>Situação</th></tr>
+      </thead>
+      <tbody>
+      {{ range $props }}
+        <tr id="prop-{{ .id }}" class="prop-row"
+            data-tipo="{{ .tipo }}"
+            data-ano="{{ .ano }}"
+            data-sit="{{ .situacao }}"
+            data-autor="{{ delimit .autores_nomes "|" }}"
+            data-search="{{ .identificacao }} {{ .ementa_curta }} {{ delimit .autores_nomes " " }}">
+          <td><strong>{{ .identificacao }}</strong></td>
+          <td>{{ .tipo }}</td>
+          <td>{{ .ano }}</td>
+          <td>{{ .ementa_curta }}</td>
+          <td>{{ range $i, $a := .autores }}{{ if $i }}, {{ end }}<a href="/vereadores/{{ $a.slug }}/">{{ $a.nome }}</a>{{ end }}</td>
+          <td>{{ .situacao | replace "_" " " }}</td>
+        </tr>
+      {{ end }}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+(function(){
+  var rows = Array.prototype.slice.call(document.querySelectorAll('.prop-row'));
+  var busca = document.getElementById('busca-prop');
+  var ftipo = document.getElementById('filtro-tipo');
+  var fano = document.getElementById('filtro-ano');
+  var fautor = document.getElementById('filtro-autor');
+  var fsit = document.getElementById('filtro-sit');
+  var status = document.getElementById('prop-status');
+
+  function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  function fill(sel, attr){
+    var vals = {};
+    rows.forEach(function(r){ var v = r.getAttribute(attr); if(v) vals[v] = true; });
+    Object.keys(vals).sort().reverse().forEach(function(v){
+      var o = document.createElement('option'); o.value = v; o.textContent = v; sel.appendChild(o);
+    });
+  }
+  fill(ftipo, 'data-tipo'); fill(fano, 'data-ano'); fill(fautor, 'data-autor'); fill(fsit, 'data-sit');
+
+  function apply(){
+    var q = norm(busca.value.trim());
+    var tipo = ftipo.value, ano = fano.value, autor = fautor.value, sit = fsit.value;
+    var n = 0;
+    rows.forEach(function(r){
+      var ok = true;
+      if(q && norm(r.getAttribute('data-search')).indexOf(q) === -1) ok = false;
+      if(tipo && r.getAttribute('data-tipo') !== tipo) ok = false;
+      if(ano && r.getAttribute('data-ano') !== ano) ok = false;
+      if(autor && (r.getAttribute('data-autor') || '').split('|').indexOf(autor) === -1) ok = false;
+      if(sit && r.getAttribute('data-sit') !== sit) ok = false;
+      r.style.display = ok ? '' : 'none';
+      if(ok) n++;
+    });
+    status.textContent = n + ' proposição(ões) encontrada(s).';
+  }
+  [busca, ftipo, fano, fautor, fsit].forEach(function(el){ el.addEventListener('input', apply); el.addEventListener('change', apply); });
+  apply();
+})();
+</script>
+{{ end }}

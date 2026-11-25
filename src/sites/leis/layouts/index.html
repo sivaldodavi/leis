@@ -1,20 +1,42 @@
 {{ define "main" }}
+{{ $normas := where .Site.RegularPages "Section" "normas" }}
+{{ $props := .Site.Data.proposicoes }}
+{{ $autores := .Site.Data.autores }}
+{{ $vigente := where $normas "Params.situacao" "vigente" }}
+{{ $tramit := where $normas "Params.situacao" "projeto_em_tramitacao" }}
+{{ $outros := sub (len $normas) (add (len $vigente) (len $tramit)) }}
 <div style="background:#F4F1EA">
-  <section style="padding:72px 48px 40px; max-width:1100px">
+  <section style="padding:72px 48px 32px; max-width:1100px">
     <p class="eyebrow">Câmara Municipal de Pinheiro, MA</p>
     <h1 class="hero">As leis de Pinheiro, em linguagem simples.</h1>
-    <p class="lead">Veja o que está em vigor, o que está sendo discutido na Câmara e o que mudou — só do município de Pinheiro.</p>
-    <form style="display:flex;gap:12px;flex-wrap:wrap" onsubmit="return false">
+    <p class="lead">Veja o que está em vigor, o que está sendo discutido na Câmara e quem propôs cada coisa — só do município de Pinheiro.</p>
+    <form action="/normas/" method="get" style="display:flex;gap:12px;flex-wrap:wrap">
       <label for="busca" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Buscar lei</label>
-      <input id="busca" type="search" placeholder="Busque por assunto, número ou palavra-chave" class="search">
+      <input id="busca" name="q" type="search" placeholder="Busque por assunto, número ou palavra-chave" class="search">
       <button type="submit" class="btn">Buscar</button>
     </form>
   </section>
 
-  {{ $normas := where .Site.RegularPages "Section" "normas" }}
-  {{ $vigente := where $normas "Params.situacao" "vigente" }}
-  {{ $tramit := where $normas "Params.situacao" "projeto_em_tramitacao" }}
-  {{ $outros := sub (len $normas) (add (len $vigente) (len $tramit)) }}
+  <section style="padding:0 48px 16px">
+    <div class="grid grid-4">
+      <a class="card" href="/normas/" style="text-decoration:none">
+        <p style="margin:0;font-size:34px;font-weight:800;color:#1E7B4F">{{ len $normas }}</p>
+        <p style="margin:0;font-size:15px;color:#3A3A3A">normas cadastradas</p>
+      </a>
+      <a class="card" href="/proposicoes/" style="text-decoration:none">
+        <p style="margin:0;font-size:34px;font-weight:800;color:#1E7B4F">{{ len $props }}</p>
+        <p style="margin:0;font-size:15px;color:#3A3A3A">proposições apresentadas</p>
+      </a>
+      <a class="card" href="/vereadores/" style="text-decoration:none">
+        <p style="margin:0;font-size:34px;font-weight:800;color:#1E7B4F">{{ len $autores }}</p>
+        <p style="margin:0;font-size:15px;color:#3A3A3A">vereadores e autores</p>
+      </a>
+      <a class="card" href="/temas/" style="text-decoration:none">
+        <p style="margin:0;font-size:34px;font-weight:800;color:#1E7B4F">{{ len .Site.Data.legislacao.temas }}</p>
+        <p style="margin:0;font-size:15px;color:#3A3A3A">temas para navegar</p>
+      </a>
+    </div>
+  </section>
 
   <section style="padding:24px 48px 16px">
     <h2 style="margin:0 0 16px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5B5B5B">Medidor de situação</h2>
@@ -26,7 +48,7 @@
     <div class="legend">
       <span><strong style="color:#1E7B4F">■</strong> Em vigor ({{ len $vigente }})</span>
       <span><strong style="color:#8A5F00">■</strong> Em tramitação ({{ len $tramit }})</span>
-      <span><strong style="color:#6B6B6B">■</strong> Sem efeito ou encerrado ({{ $outros }})</span>
+      <span><strong style="color:#6B6B6B">■</strong> Sem efeito, a verificar ou encerrado ({{ $outros }})</span>
     </div>
   </section>
 
@@ -37,12 +59,31 @@
       <article class="card">
         {{ $cls := "outro" }}{{ if eq .Params.situacao "vigente" }}{{ $cls = "vigente" }}{{ else if eq .Params.situacao "projeto_em_tramitacao" }}{{ $cls = "tramit" }}{{ end }}
         <span class="badge {{ $cls }}">{{ .Params.situacao_label }}</span>
-        <h3 style="margin:0;font-size:22px;font-weight:800">{{ .Params.numero }} — {{ .Title }}</h3>
+        <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B">{{ .Params.tipo_label }} · {{ .Params.numero }}</p>
+        <h3 style="margin:0;font-size:22px;font-weight:800">{{ .Title }}</h3>
         <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A">{{ .Params.ementa }}</p>
-        <a href="{{ .RelPermalink }}" style="margin-top:auto;font-weight:700;font-size:16px">Ler a lei →</a>
+        <a href="{{ .RelPermalink }}" style="margin-top:auto;font-weight:700;font-size:16px">Ler a norma →</a>
       </article>
       {{ end }}
     </div>
+    <p style="margin:20px 0 0"><a href="/normas/" style="font-weight:700">Ver todas as {{ len $normas }} normas →</a></p>
+  </section>
+
+  <section class="section">
+    <h2>Proposições recentes</h2>
+    <p class="sub">Indicações, moções, projetos e requerimentos apresentados na Câmara.</p>
+    <div class="grid grid-3">
+      {{ range first 5 $props }}
+      <article class="card">
+        <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B">{{ .tipo }} · {{ .ano }}</p>
+        <h3 style="margin:0;font-size:20px;font-weight:800">{{ .identificacao }}</h3>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:#3A3A3A">{{ .ementa_curta }}</p>
+        <p style="margin:0;font-size:14px;color:#5B5B5B">{{ delimit .autores_nomes ", " }}</p>
+        <a href="/proposicoes/#prop-{{ .id }}" style="margin-top:auto;font-weight:700;font-size:15px">Ver proposição →</a>
+      </article>
+      {{ end }}
+    </div>
+    <p style="margin:20px 0 0"><a href="/proposicoes/" style="font-weight:700">Ver todas as {{ len $props }} proposições →</a></p>
   </section>
 
   <section class="section">
@@ -50,11 +91,11 @@
     <p class="sub">Cada ato tem um verbo que diz o que ele faz. Ao lado, a categoria e para quem ele interessa.</p>
     <div style="overflow-x:auto">
       <div class="table">
-        <div class="rowhead"><span>Ato</span><span>O que faz</span><span>Categoria</span><span>Para quem</span><span>Situação</span></div>
-        {{ range $normas }}
+        <div class="rowhead"><span>Ato</span><span>O que faz</span><span>Categoria</span><span>Natureza</span><span>Situação</span></div>
+        {{ range first 8 $normas }}
         {{ if ne .Params.tipo "lei_organica" }}{{ if ne .Params.tipo "codigo_posturas" }}{{ if ne .Params.tipo "projeto_lei" }}
         <div class="rowgrid">
-          <strong>{{ .Params.numero }}</strong>
+          <strong><a href="{{ .RelPermalink }}">{{ .Params.numero }}</a><br><span style="font-size:12px;color:#5B5B5B">{{ .Params.tipo_label }}</span></strong>
           <span>{{ .Params.ementa }}</span>
           <span>{{ delimit .Params.categorias ", " }}</span>
           <span>{{ .Params.natureza }}</span>
@@ -65,6 +106,7 @@
         {{ end }}
       </div>
     </div>
+    <p style="margin:20px 0 0"><a href="/normas/" style="font-weight:700">Ver a lista completa →</a></p>
   </section>
 
   <section style="padding:40px 48px 72px">

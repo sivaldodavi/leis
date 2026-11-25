@@ -19,7 +19,7 @@
       {{ range .Pages }}
       {{ $outro := "outro" }}{{ if eq .Params.situacao "vigente" }}{{ $outro = "vigente" }}{{ else if eq .Params.situacao "projeto_em_tramitacao" }}{{ $outro = "tramit" }}{{ end }}
       <div class="rowgrid filtro-row" data-sit="{{ .Params.situacao }}">
-        <strong><a href="{{ .RelPermalink }}">{{ .Params.numero }}</a></strong>
+        <strong><a href="{{ .RelPermalink }}">{{ .Params.numero }}</a><br><span style="font-size:12px;color:#5B5B5B">{{ .Params.tipo_label }}</span></strong>
         <span>{{ .Params.ementa }}</span>
         <span>{{ delimit .Params.categorias ", " }}</span>
         <span>{{ .Params.natureza }}</span>
@@ -94,6 +94,8 @@
     });
     });
   });
+  var qp=new URLSearchParams(window.location.search).get('q');
+  if(qp){ input.value=qp; input.dispatchEvent(new Event('input')); }
 })();
 </script>
 {{ end }}

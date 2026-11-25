@@ -1,0 +1,73 @@
+---
+title: "PAULINHO ENFERMEIRO"
+autor_id: 4
+slug: "paulinho-enfermeiro"
+partido: "PSD"
+nome_urna: "PAULINHO ENFERMEIRO"
+votos: 678
+situacao_tse: "SUPLENTE"
+n_proposicoes: 47
+fonte_tse: "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+---
+
+**Partido:** PSD · **Votos em 2024:** 678 · **Situação no TSE:** SUPLENTE
+
+**Proposições:** 47
+
+Fonte: [TSE — Candidatos 2024](https://dadosabertos.tse.jus.br/dataset/candidatos-2024).
+
+## Proposições
+
+### 2024
+
+- [PRE-003/2024](/proposicoes/#prop-420) — DISPOE SOBRE DENOMINAÇÃO DE ALAS NO AMBITO DO PODER LEGISLATIVO
+- [MOC-018/2024](/proposicoes/#prop-405) — Pesar pelo falecimento do Senhor OSMAR PSCHECO externando condolências à família.
+- [PRE-002/2024](/proposicoes/#prop-399) — Dispõe de nova redação ao § 1º do Art. 21.A, Art. 58 e § 1º, acrescido do § 5º, e acrescido o Art. 126.B - da Resolução 006/91 (Regimento Interno) da Câmara
+- [PDL-009/2024](/proposicoes/#prop-359) — DISPÕE SOBRE CONCESSÃO DE TÍTULO CIDADÃO BENEMÉRITO AO PASTOR ABRÃAO DO SANTOS SERRA
+- [MOC-013/2024](/proposicoes/#prop-343) — externa os mais elevados sentimentos de Pesar pelo falecimento da Senhora Silvia Maria F. Silveira.
+- [MOC-014/2024](/proposicoes/#prop-335) — encaminha Pesar pelo falecimento do Senhor JOÃO CARLOS FLORÊNCIO MONTEIRO, externando condolências à família.
+- [IND-186/2024](/proposicoes/#prop-334) — Obedecendo disposições regimentais, INDICO, ao Exmo. Prefeito Municipal, JOÃO LUCIANO SOARES, implantação de Unidade Básica de Saúde/UBS, nos seguintes Bairros: Ilha de Leonor, Antigo...
+- [IND-187/2024](/proposicoes/#prop-333) — Obedecendo disposições regimentais, INDICO, ao Exmo. Prefeito Municipal, JOÃO LUCIANO SOARES, implantação do Programa “SAÚDE BUCAL” nas Unidade Básica de Saúde/UBS, dos seguintes...
+- [PLL-009/2024](/proposicoes/#prop-310) — DISPÕE SOBRE DENOMINAÇÃO DE POSTO DE SAÚDE DO POVOADO CUBA, NESTE MUNICÍPIO.
+- [IND-166/2024](/proposicoes/#prop-302) — Obedecendo disposições regimentais, INDICO, ao Exmo. Prefeito Municipal, JOÃO LUCIANO SOARES, recuperação da Travessa Mariano Chagas, situada no Bairro da Matriz, neste Município.
+- [IND-146/2024](/proposicoes/#prop-299) — Obedecendo disposições regimentais, INDICO ao Exmo. Prefeito Municipal, JOÃO LUCIANO, operação “Tapa-Buracos” na Rua Vicente Fialho/ Bairro Campinho, assim como, na Rua principal do Bairro...
+- [IND-147/2024](/proposicoes/#prop-298) — Obedecendo disposições regimentais, INDICO ao Exmo. Prefeito Municipal, JOÃO LUCIANO, reforma da Unidade Básica de Saúde do povoado Pirinã, neste Município.
+- [IND-154/2024](/proposicoes/#prop-289) — Obedecendo disposições regimentais, INDICO, ao Exmo. Prefeito Municipal, JOÃO LUCIANO SOARES, reforma da Unidade Básica de Saúde -UBS, do Bairro do Campinho, neste Município.
+- [PDL-005/2024](/proposicoes/#prop-253) — DISPÕE SOBRE CONCESSÃO DE TÍTULO HONORIFICO DE HONRA AO MÉRITO AO SENHOR FILADELFO MENDES FILHO “DEDECO MENDES".
+- [PDL-006/2024](/proposicoes/#prop-243) — DISPÕE SOBRE CONCESSÃO DE TÍTULO HONORIFICO DE HONRA AO MÉRITO, ENFERMEIROS E TECNICOS DE ENFERMAGEM
+- [IND-087/2024](/proposicoes/#prop-222) — Obedecidas as normas regimentais INDICO ao Exmo. Prefeito Municipal, JOÃO LUCIANO, recuperação asfáltica (tapa-buracos) das seguintes Ruas: Viriato Costa, sito no Bairro Campinho; Clodoaldo...
+- [IND-081/2024](/proposicoes/#prop-202) — Obedecidas as normas regimentais INDICO ao Exmo. Prefeito Municipal, JOÃO LUCIANO, a reforma da Praça da Promessa, sito no Bairro do Sete, neste Município.
+- [IND-069/2024](/proposicoes/#prop-184) — Obedecidas as normas regimentais INDICO ao Exmo. Prefeito Municipal, JOÃO LUCIANO, manutenção da estrutura da base da caixa d´água do povoado Pirinã, neste Município.
+- [IND-070/2024](/proposicoes/#prop-183) — Obedecidas as normas regimentais INDICO ao Exmo. Prefeito Municipal, JOÃO LUCIANO, reforma da Unidade Básica de Saúde do Bairro Campinho, neste Município.
+- [IND-035/2024](/proposicoes/#prop-159) — Obedecidas as normas regimentais INDICO ao Prefeito Municipal, JOÃO LUCIANO SILVA SOARES, implantação de bueiro em um córrego, situado na Rua Josias Abreu, no Bairro do Campinho, neste Município.
+- [IND-036/2024](/proposicoes/#prop-158) — Obedecidas as normas regimentais INDICO ao Prefeito Municipal, LUCIANO SILVA SOARES, reativação do Laboratório Central, assim como da Unidade Básica de Saúde do povoado Ponta Branca, neste...
+- [IND-037/2024](/proposicoes/#prop-157) — Obedecidas as normas regimentais INDICO ao Prefeito Municipal, LUCIANO SILVA SOARES, recuperação paliativa da Rua Principal que dá acesso ao Bairro Bubalina, assim como capina e limpeza da...
+- [IND-001/2024](/proposicoes/#prop-114) — Obedecidas as disposições regimentais, INDICO ao Exmo. Prefeito Municipal, JOÃO LUCIANO, recuperação da camada asfáltica, ou substitui-las com pavimentação de blocos de concreto nas Ruas:...
+- [IND-002/2024](/proposicoes/#prop-113) — Obedecidas as disposições regimentais, INDICO ao Exmo. Prefeito Municipal, JOÃO LUCIANO, construção de Barragem para interligar a (MA-106) (Barragem da Justina) com o povoado Ilhinha/Gama,...
+- [IND-003/2024](/proposicoes/#prop-112) — Obedecidas as disposições regimentais, INDICO ao Exmo. Prefeito Municipal, JOÃO LUCIANO, recuperação das Ruas dos Bairros: Bubalina, Fomento, Conjunto São José, Vila Zé Arlindo e Vila Nova.
+- [IND-004/2024](/proposicoes/#prop-111) — Obedecidas as normas regimentais INDICO ao Exmo. Prefeito Municipal, JOÃO LUCIANO, pavimentação asfáltica, ou pavimentação com blocos de concreto (bloquetes), na Rua Francisca Moraes...
+- [IND-005/2024](/proposicoes/#prop-110) — Obedecidas as normas regimentais INDICO ao Exmo. Prefeito Municipal, JOÃO LUVIANO, pavimentação asfáltica da Rua Benedito Leite, Bairro Ilha de Leonor/Sete, neste Município.
+### 2023
+
+- [MOC-044/2023](/proposicoes/#prop-118) — Assunto: externa os mais elevados sentimentos de Pesar pelo falecimento do Senhor, JOSÉ INÁCIO GOMES SILVA.
+- [IND-438/2023](/proposicoes/#prop-106) — Obedecidas as disposições regimentais, INDICO ao Diretor da Universidade Estadual do Maranhão-UEMA Campus de Pinheiro, Senhor GILBERTO MATOS AROUCHA, no sentido que seja feita uma avaliação...
+- [IND-445/2023](/proposicoes/#prop-98) — Obedecidas as disposições regimentais, sugerindo a Ilma. Gerente dos CORREIOS, SILVIA ANDREIA SOARES, a execução dos serviços de entrega de correspondências no Bairro do Fomento, mais...
+- [MOC-039/2023](/proposicoes/#prop-89) — Assunto: externa os mais elevados sentimentos de Pesar pelo falecimento do Radialista Jonas Orestes
+- [IND-436/2023](/proposicoes/#prop-85) — Obedecidas as disposições regimentais, INDICO ao Exmo. Prefeito JOÃO LUCIANO, implantação de um Centro de Atenção Psicossocial-CAPS-3, neste Município.
+- [IND-437/2023](/proposicoes/#prop-84) — Obedecidas as disposições regimentais, INDICO ao Ilmo. Gerente Regional da CAEMA, Senhor JOSÉ NILSON OLIVEIRA, ampliação da rede de abastecimento de água tratada para as residências que...
+- [IND-440/2023](/proposicoes/#prop-77) — Obedecidas as disposições regimentais, INDICO ao Secretario de INFRAESTRUTURA, RAIMUNDO MIRANDA, regularidade da coleta de lixos, nas Ruas: Robson Oliveira e Rio Preto, ambas no Bairro do Fomento.
+- [PLO-015/2023](/proposicoes/#prop-71) — DISPÕE SOBRE A DENOMINAÇÃO DA ESCOLA DE MÚSICA DO MUNICÍPIO PINHEIRO-MA.
+- [IND-416/2023](/proposicoes/#prop-58) — Obedecendo as disposições regimentais, INDICO ao Exmo. Governador do Estado, Senhor CARLOS BRANDÃO, extensivo ao Exmo. Secretário de Saúde do Estado, TIAGO JOSÉ MENDES FERNANDES, no sentido...
+- [IND-419/2023](/proposicoes/#prop-55) — Obedecidas as normas regimentais, INDICO ao Prefeito Municipal, JOÃO LUCIANO, doação de um imóvel (terreno) a Defensoria Pública, para a construção de seu prédio próprio, neste município....
+- [IND-420/2023](/proposicoes/#prop-54) — Obedecidas as normas regimentais, INDICO ao Prefeito Municipal, JOÃO LUCIANO, reativação do Laboratório Central, sito no Bairro da Matriz, uma vez que o mesmo se encontra desativado, e com a...
+- [IND-421/2023](/proposicoes/#prop-53) — Obedecidas as normas regimentais, INDICO à Ilma. Secretária de Cultura, ALEXSANDRA KOQUEIRO, disponibilização de Assessoria Jurídica, Contábil e Técnica aos segmentos da cultura, que...
+- [IND-404/2023](/proposicoes/#prop-42) — Obedecendo as disposições regimentais, INDICO ao Exmo. Prefeito Municipal, JOÃO LUCIANO, implantação de bueiros em substituição a ponte de madeira, situada a Rua Verdes Campos, no Bairro...
+- [PRE-005/2023](/proposicoes/#prop-36) — DISPÕE SOBRE A IMPLANTAÇÃO DA ATA ELETRÔNICA NA CÂMARA MUNICIPAL DE VEREADORES DE PINHEIRO-MA E DÁ OUTRAS PROVIDÊNCIAS.
+- [IND-415/2023](/proposicoes/#prop-32) — Obedecendo as disposições regimentais, INDICO ao Exmo. Governador do Estado, Senhor CARLOS BRANDÃO, extensivo ao Exmo. Secretário de Segurança Pública do Estado, MAURICIO RIBEIRO MARTINS,...
+- [IND-385/2023](/proposicoes/#prop-30) — Obedecendo as disposições regimentais, INDICO ao Exmo. Governador do Estado, Senhor CARLOS BRANDÃO, extensivo ao Exmo. Secretário de Segurança Pública do Estado, MAURICIO RIBEIRO MARTINS, que...
+- [IND-386/2023](/proposicoes/#prop-29) — Obedecendo as disposições regimentais, INDICO ao Exmo. Governador do Estado, Senhor CARLOS BRANDÃO, extensivo ao Exmo. Secretario de Saúde do Estado, Senhor TIAGO JOSÉ MENDES FERNANDES, que...
+- [IND-387/2023](/proposicoes/#prop-28) — Obedecendo as disposições regimentais, INDICO ao Exmo. Governador do Estado, Senhor CARLOS BRANDÃO, extensivo ao Exmo. Secretario de Saúde do Estado, Senhor TIAGO JOSÉ MENDES FERNANDES, afim...
+- [IND-382/2023](/proposicoes/#prop-4) — Obedecidas as normas regimentais, INDICO ao Exmo. Procurador Geral de Justiça do Maranhão, Senhor EDUARDO JORGE HILUY NICOLAU, criação da unidade do Grupo de Atuação Especial de Combate às...
+### 2022
+
+- [PLO-002/2022](/proposicoes/#prop-14) — INSTITUI A SEMANA DE COMBATE À INTOLERÂNCIA E DESRESPEITO RELIGIOSO NO ÂMBITO DO MUNICÍPIO DE PINHEIRO-MA E DÁ OUTRAS PROVIDÊNCIAS

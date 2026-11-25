@@ -6,8 +6,10 @@ title: "API"
 
 Base: `https://leis.sivaldodavi.com.br/dados/`
 
-- `/dados/legislacao.json` — leis, dispositivos e metadados.
+- `/dados/legislacao.json` — normas, dispositivos e metadados.
 - `/dados/busca.json` — índice de busca (trechos de dispositivos).
+- `/dados/proposicoes.json` — proposições, autores e situação.
+- `/dados/autores.json` — vereadores/autores, partido, votos e proposições.
 
 Versão estável: `/dados/v1/...` (mesmos arquivos).
 
@@ -18,9 +20,9 @@ curl https://leis.sivaldodavi.com.br/dados/legislacao.json
 ```
 
 ```js
-const r = await fetch('https://leis.sivaldodavi.com.br/dados/busca.json');
+const r = await fetch('https://leis.sivaldodavi.com.br/dados/proposicoes.json');
 const dados = await r.json();
-console.log(dados.partes.length);
+console.log(dados.length);
 ```
 
 ## CORS
