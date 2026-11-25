@@ -4,8 +4,10 @@ autor_id: 724
 slug: "sapo-da-kiola"
 partido: "SOLIDARIEDADE"
 nome_urna: "SAPO DO KIOLA"
+nome_urna_display: "Sapo do Kiola"
 votos: 587
 situacao_tse: "SUPLENTE"
+situacao_tse_ajuda: "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
 n_proposicoes: 58
 foto: "/fotos/sapo-da-kiola-2024.jpg"
 foto_ano: 2024
@@ -20,7 +22,7 @@ coletivas: 12
 taxa_exclusividade: 78
 peso_medio: 0.80
 og_image: "/og/v/sapo-da-kiola.jpg"
-share_text: "Sapo da Kiola — 58 proposições, 45 de autoria exclusiva na Câmara de Pinheiro"
+share_text: "Sapo da Kiola — 58 proposições, 45 de autoria exclusiva, 23 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/sapo-da-kiola-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/sapo-da-kiola-9x16.jpg"}

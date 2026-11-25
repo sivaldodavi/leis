@@ -150,6 +150,25 @@ try:
 except sqlite3.OperationalError:
     pass
 
+classe_por_prop = {}
+try:
+    for r in q("SELECT * FROM proposicao_classe"):
+        classe_por_prop[r["proposicao_id"]] = {
+            "classe": r["classe"],
+            "rotulo": r["rotulo"],
+            "evidencia": r["evidencia"],
+        }
+except sqlite3.OperationalError:
+    pass
+
+CLASSE_CURTA = {
+    "proposta": "Proposta",
+    "denominacao": "Nomeação",
+    "homenagem": "Homenagem",
+    "manifestacao": "Moção",
+    "indefinida": "Não classificável",
+}
+
 impacto_por_autor = {}
 try:
     for r in q("SELECT * FROM autor_impacto"):
@@ -299,6 +318,31 @@ TSE_LABEL = {
     "#NULO": "",
 }
 
+# Explicações curtas para termos do TSE que não são óbvios.
+TSE_AJUDA = {
+    "ELEITO POR QP": (
+        "O partido conquistou a vaga pelo quociente partidário: divide-se o total "
+        "de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada "
+        "partido ou federação preenche. A vaga fica com os mais votados da lista."
+    ),
+    "ELEITO POR MÉDIA": (
+        "A vaga veio na distribuição das sobras, pela média: divide-se a votação do "
+        "partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a "
+        "maior média fica com a vaga."
+    ),
+    "SUPLENTE": (
+        "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou "
+        "do partido e pode ser convocado."
+    ),
+}
+
+
+def norm_nome(s):
+    """Compara nomes sem depender de caixa, acento ou espaços."""
+    s = unicodedata.normalize("NFKD", (s or "").strip().lower())
+    s = "".join(ch for ch in s if not unicodedata.combining(ch))
+    return re.sub(r"[^a-z0-9]+", " ", s).strip()
+
 
 def label_tse(s):
     s = clean_ws(s)
@@ -315,6 +359,11 @@ for r in autores_rows:
     a["n_proposicoes"] = 0
     a["stats"] = {}
     a["situacao_tse_label"] = label_tse(a.get("situacao_tse"))
+    a["situacao_tse_ajuda"] = TSE_AJUDA.get((a.get("situacao_tse") or "").upper(), "")
+    a["nome_urna_display"] = display_nome(a.get("nome_urna"))
+    a["nome_urna_igual"] = bool(
+        a.get("nome_urna") and norm_nome(a["nome_urna"]) == norm_nome(a.get("nome"))
+    )
     imp = impacto_por_autor.get(a["id"])
     a["impacto"] = imp or {
         "n_total": 0, "n_exclusiva": 0, "n_dupla": 0, "n_trio": 0,
@@ -326,7 +375,11 @@ for r in autores_rows:
     ms = sorted(mandatos_por_autor.get(a["id"], []), key=lambda x: x["ano_eleicao"])
     for m in ms:
         m["nome_tse_display"] = display_nome(m.get("nome_tse"))
+        m["nome_tse_igual"] = bool(
+            m.get("nome_tse") and norm_nome(m["nome_tse"]) == norm_nome(a.get("nome"))
+        )
         m["situacao_label"] = label_tse(m.get("situacao_tse"))
+        m["situacao_ajuda"] = TSE_AJUDA.get((m.get("situacao_tse") or "").upper(), "")
     a["mandatos"] = ms
     eleitos = [m for m in ms if m.get("eleito")]
     a["legislaturas"] = []
@@ -392,6 +445,15 @@ for r in props_rows:
     p["especie_rotulo"] = (especies_por_chave.get(esp) or {}).get("rotulo", p["tipo"] or "")
     p["familia"] = (especies_por_chave.get(esp) or {}).get("familia", "")
     p["familia_label"] = (especies_por_chave.get(esp) or {}).get("familia_label", "")
+    cls = classe_por_prop.get(p["id"]) or {
+        "classe": "indefinida",
+        "rotulo": "Não classificável",
+        "evidencia": "sem classificação",
+    }
+    p["classe"] = cls["classe"]
+    p["classe_rotulo"] = cls["rotulo"]
+    p["classe_curta"] = CLASSE_CURTA.get(cls["classe"], cls["rotulo"])
+    p["classe_evidencia"] = cls["evidencia"]
     p["qualidade"] = qualidade_por_prop.get(p["id"]) or {
         "pontuacao": None,
         "nivel": "",
@@ -405,6 +467,7 @@ for r in props_rows:
 
 def stats_de_proposicoes(ps):
     by_year, by_tipo, by_situacao, by_familia = {}, {}, {}, {}
+    by_classe = {}
     aprovadas = rejeitadas = 0
     for p in ps:
         ano = str(p.get("ano") or "")
@@ -413,6 +476,8 @@ def stats_de_proposicoes(ps):
         by_tipo[p.get("tipo") or "Não informado"] = by_tipo.get(p.get("tipo") or "Não informado", 0) + 1
         fam = p.get("familia_label") or "Não informado"
         by_familia[fam] = by_familia.get(fam, 0) + 1
+        cls = p.get("classe_rotulo") or "Não classificável"
+        by_classe[cls] = by_classe.get(cls, 0) + 1
         sit = p.get("situacao") or "nao_informada"
         by_situacao[sit] = by_situacao.get(sit, 0) + 1
         if "aprovada" in sit.lower():
@@ -431,6 +496,11 @@ def stats_de_proposicoes(ps):
         "by_tipo": dict(sorted(by_tipo.items(), key=lambda x: -x[1])),
         "by_familia": dict(sorted(by_familia.items(), key=lambda x: -x[1])),
         "by_situacao": dict(sorted(by_situacao.items(), key=lambda x: -x[1])),
+        "by_classe": dict(sorted(by_classe.items(), key=lambda x: -x[1])),
+        "n_proposta": by_classe.get("Proposta com objeto", 0),
+        "n_nomeacao": by_classe.get("Nomeação de lugar", 0),
+        "n_homenagem": by_classe.get("Homenagem ou título", 0),
+        "n_indefinida": by_classe.get("Não classificável", 0),
     }
 
 for a in autores:
@@ -791,10 +861,15 @@ for a in autores:
         lines.append('partido: "%s"' % yaml_escape(a["partido"]))
     if a.get("nome_urna"):
         lines.append('nome_urna: "%s"' % yaml_escape(a["nome_urna"]))
+        lines.append('nome_urna_display: "%s"' % yaml_escape(a["nome_urna_display"]))
+        if a.get("nome_urna_igual"):
+            lines.append("nome_urna_igual: true")
     if a.get("votos") is not None:
         lines.append('votos: %d' % int(a["votos"] or 0))
     if a.get("situacao_tse"):
         lines.append('situacao_tse: "%s"' % yaml_escape(a["situacao_tse"]))
+    if a.get("situacao_tse_ajuda"):
+        lines.append('situacao_tse_ajuda: "%s"' % yaml_escape(a["situacao_tse_ajuda"]))
     lines.append('n_proposicoes: %d' % a["n_proposicoes"])
     if a.get("foto"):
         lines.append('foto: "%s"' % yaml_escape(a["foto"]))
@@ -817,6 +892,8 @@ for a in autores:
         share_txt += " — %d proposições" % imp["n_total"]
         if imp.get("n_exclusiva"):
             share_txt += ", %d de autoria exclusiva" % imp["n_exclusiva"]
+        if a["stats"].get("n_proposta"):
+            share_txt += ", %d com objeto definido" % a["stats"]["n_proposta"]
     share_txt += " na Câmara de Pinheiro"
     lines.append('share_text: "%s"' % yaml_escape(share_txt))
     lines.append("og_cards:")

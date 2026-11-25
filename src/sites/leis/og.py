@@ -44,29 +44,29 @@ def esc(s):
     return html.escape(str(s or ""), quote=True)
 
 
-def wrap(texto, largura, tamanho, max_linhas=None):
-    """Quebra o texto em linhas por estimativa de largura (sem Pango aqui)."""
+def wrap(texto, largura, tamanho, max_linhas=None, peso="400"):
+    """Quebra o texto em linhas por estimativa de largura (sem Pango aqui).
+
+    O fator muda com o peso da fonte: negrito ocupa mais espaço. O número de
+    linhas é sempre limitado a max_linhas, com reticências no fim."""
     texto = " ".join(str(texto or "").split())
     if not texto:
         return []
-    limite = max(8, int(largura / (tamanho * 0.52)))
-    palavras, linhas, atual = texto.split(" "), [], ""
-    for p in palavras:
+    fator = {"800": 0.57, "700": 0.555, "600": 0.54}.get(str(peso), 0.52)
+    limite = max(6, int(largura / (tamanho * fator)))
+    linhas, atual = [], ""
+    for p in texto.split(" "):
         teste = (atual + " " + p).strip()
-        if len(teste) <= limite:
+        if len(teste) <= limite or not atual:
             atual = teste
         else:
-            if atual:
-                linhas.append(atual)
+            linhas.append(atual)
             atual = p
-            if max_linhas and len(linhas) >= max_linhas:
-                break
-    if atual and (not max_linhas or len(linhas) < max_linhas):
+    if atual:
         linhas.append(atual)
-    if max_linhas and len(linhas) == max_linhas and palavras:
-        resto = " ".join(palavras)
-        if len(" ".join(linhas)) < len(resto) - 1:
-            linhas[-1] = linhas[-1].rstrip(" .,;:") + "…"
+    if max_linhas and len(linhas) > max_linhas:
+        linhas = linhas[:max_linhas]
+        linhas[-1] = linhas[-1].rstrip(" .,;:") + "…"
     return linhas
 
 
@@ -203,8 +203,42 @@ def card_tipo(e):
     return w, h, "".join(p)
 
 
+def _fatos_vereador(a):
+    """Só dados que um eleitor consegue verificar e usar para julgar o mandato."""
+    st = a.get("stats") or {}
+    imp = a.get("impacto") or {}
+    fatos = []
+    # O partido já aparece na legenda; repetir aqui só gasta espaço.
+    if a.get("votos"):
+        fatos.append(("Votos em %s" % (a.get("ano_tse") or ""), fmt(a["votos"])))
+    if st.get("aprovadas"):
+        fatos.append(("Proposições aprovadas", fmt(st["aprovadas"])))
+    if st.get("n_proposta"):
+        fatos.append(("Propostas com objeto", fmt(st["n_proposta"])))
+    cerimonial = (st.get("n_nomeacao") or 0) + (st.get("n_homenagem") or 0)
+    if cerimonial:
+        fatos.append(("Nomeações e homenagens", fmt(cerimonial)))
+    if imp.get("n_exclusiva"):
+        fatos.append(("De autoria exclusiva", fmt(imp["n_exclusiva"])))
+    return fatos
+
+
+def _desenha_fatos(p, fatos, x, y, largura_col, cols=1, max_linhas=None):
+    """Rótulo pequeno em cima, número grande embaixo. Devolve o y final."""
+    if max_linhas:
+        fatos = fatos[:max_linhas]
+    for i, (rotulo, valor) in enumerate(fatos):
+        col = i % cols
+        row = i // cols
+        xx = x + col * largura_col
+        yy = y + row * 84
+        p.append(txt(xx, yy, valor, 28, "800", INK))
+        p.append(txt(xx, yy + 22, rotulo.upper(), 13, "700", MUTED, espacamento="1"))
+    return y + ((len(fatos) + cols - 1) // cols) * 84
+
+
 def _bloco_stats(p, a, x, y, largura, tamanho_num=56, gap=None):
-    """Três números do perfil, em coluna ou linha."""
+    """Três números do perfil, em coluna."""
     imp = a.get("impacto") or {}
     itens = [
         (fmt(imp.get("n_total", a.get("n_proposicoes", 0))), "PROPOSIÇÕES"),
@@ -217,8 +251,34 @@ def _bloco_stats(p, a, x, y, largura, tamanho_num=56, gap=None):
         p.append(txt(x, yy + 22, rotulo, 15, "700", MUTED, espacamento="1"))
 
 
+def _resumo_classe(p, a, x, y, largura):
+    st = a.get("stats") or {}
+    partes = []
+    if st.get("n_proposta"):
+        partes.append("%s com objeto definido" % fmt(st["n_proposta"]))
+    cerimonial = (st.get("n_nomeacao") or 0) + (st.get("n_homenagem") or 0)
+    if cerimonial:
+        partes.append("%s nomeações/homenagens" % fmt(cerimonial))
+    if not partes:
+        return
+    for i, l in enumerate(wrap(" · ".join(partes), largura, 20, 1, "600")):
+        p.append(txt(x, y + i * 26, l, 20, "600", "#3A3A3A"))
+
+
+def _stats_linha(p, a, x, y, espaco=212, tamanho=46):
+    imp = a.get("impacto") or {}
+    itens = [
+        (fmt(imp.get("n_total", 0)), "PROPOSIÇÕES"),
+        (fmt(imp.get("autoria_equivalente", 0)), "AUTORIA EQUIV."),
+        (fmt(imp.get("n_exclusiva", 0)), "EXCLUSIVAS"),
+    ]
+    for i, (valor, rotulo) in enumerate(itens):
+        xx = x + i * espaco
+        p.append(txt(xx, y, valor, tamanho, "800", GREEN))
+        p.append(txt(xx, y + 28, rotulo, 14, "700", MUTED, espacamento="1"))
+
+
 def card_vereador(a, formato):
-    slug = a.get("slug")
     nome = a.get("nome") or ""
     partido = a.get("partido") or ""
     cargo = []
@@ -229,30 +289,28 @@ def card_vereador(a, formato):
     if a.get("situacao_tse_label"):
         cargo.append(a["situacao_tse_label"])
     legenda = " · ".join([x for x in [partido] + cargo if x])
+    fatos = _fatos_vereador(a)
 
     if formato == "4x5":
         w, h = 1080, 1350
         p = [moldura(w, h), rect(4, 4, w - 8, 10, GREEN)]
         p.append(txt(64, 96, "CÂMARA MUNICIPAL DE PINHEIRO", 20, "700", GREEN, espacamento="2"))
-        linhas = wrap(nome, 600, 74, 2)
+        linhas = wrap(nome, 600, 74, 2, "800")
         for i, l in enumerate(linhas):
             p.append(txt(64, 184 + i * 80, l, 74, "800"))
         p.append(avatar_svg(696, 150, 320, 447, a.get("foto"), iniciais(nome)))
         y = 184 + len(linhas) * 80
+        fatos_y = 446
         if legenda:
-            p.append(txt(64, y + 42, legenda, 25, "700", "#3A3A3A"))
-            y += 42
-        # destaques na coluna da esquerda, abaixo da legenda
-        dy = y + 78
-        for d in (a.get("destaques") or [])[:3]:
-            ls = wrap(d, 580, 24, 2)
-            p.append(rect(64, dy - 17, 6, 6, GREEN))
-            for i, l in enumerate(ls):
-                p.append(txt(84, dy + i * 30, l, 24, "600", "#3A3A3A"))
-            dy += 30 * len(ls) + 24
-        p.append(linha(64, 664, w - 64, 664, INK, 3))
-        _bloco_stats(p, a, 64, 744, w - 128, 54)
-        p.append(linha(64, 1046, w - 64, 1046, LINE, 2))
+            leg = wrap(legenda, 600, 25, 2, "700")
+            for i, l in enumerate(leg):
+                p.append(txt(64, y + 42 + i * 30, l, 25, "700", "#3A3A3A"))
+            fatos_y = max(fatos_y, y + 42 + len(leg) * 30 + 30)
+        # Grade de fatos: nunca encosta no traço nem nos números.
+        _desenha_fatos(p, fatos, 64, fatos_y, 300, cols=2, max_linhas=4)
+        p.append(linha(64, 720, w - 64, 720, INK, 3))
+        _bloco_stats(p, a, 64, 800, w - 128, 54)
+        p.append(linha(64, 1056, w - 64, 1056, LINE, 2))
         p.append(marca(64, 1128, 20))
         p.append(txt(w - 64, 1128, "Leis de Pinheiro", 22, "800", GREEN, "end"))
         return w, h, "".join(p)
@@ -261,22 +319,22 @@ def card_vereador(a, formato):
         w, h = 1080, 1920
         p = [moldura(w, h), rect(4, 4, w - 8, 12, GREEN)]
         p.append(txt(64, 110, "CÂMARA MUNICIPAL DE PINHEIRO", 22, "700", GREEN, espacamento="2"))
-        linhas = wrap(nome, 960, 84, 3)
+        linhas = wrap(nome, 960, 84, 3, "800")
         for i, l in enumerate(linhas):
             p.append(txt(64, 220 + i * 92, l, 84, "800"))
         y = 220 + len(linhas) * 92
         if legenda:
-            p.append(txt(64, y + 30, legenda, 28, "700", "#3A3A3A"))
-        p.append(avatar_svg(64, y + 70, 420, 585, a.get("foto"), iniciais(nome)))
-        destaques = a.get("destaques") or []
-        dy = y + 120
-        for d in destaques[:3]:
-            for i, l in enumerate(wrap(d, 480, 24, 2)):
-                p.append(txt(534, dy + i * 32, l, 24, "600", "#3A3A3A"))
-            dy += 32 * max(1, len(wrap(d, 480, 24, 2))) + 26
-        hline = max(y + 70 + 585, dy) + 60
+            leg = wrap(legenda, 950, 27, 2, "700")
+            for i, l in enumerate(leg):
+                p.append(txt(64, y + 30 + i * 32, l, 27, "700", "#3A3A3A"))
+            y += (len(leg) - 1) * 32
+        foto_y = y + 70
+        p.append(avatar_svg(64, foto_y, 420, 585, a.get("foto"), iniciais(nome)))
+        fim_fatos = _desenha_fatos(p, fatos, 534, foto_y + 26, 480, cols=1, max_linhas=5)
+        hline = max(foto_y + 585, fim_fatos + 20) + 50
         p.append(linha(64, hline, w - 64, hline, INK, 3))
         _bloco_stats(p, a, 64, hline + 110, w - 128, 64)
+        _resumo_classe(p, a, 64, h - 216, w - 128)
         p.append(linha(64, h - 180, w - 64, h - 180, LINE, 2))
         p.append(marca(64, h - 120, 22))
         p.append(txt(w - 64, h - 120, "Entende lei.", 26, "800", GREEN, "end"))
@@ -286,23 +344,22 @@ def card_vereador(a, formato):
     w, h = 1200, 630
     p = [moldura(w, h), rect(4, 4, 10, h - 8, GREEN)]
     p.append(txt(64, 86, "CÂMARA MUNICIPAL DE PINHEIRO", 18, "700", GREEN, espacamento="2"))
-    linhas = wrap(nome, 600, 56, 2)
+    linhas = wrap(nome, 620, 56, 2, "800")
     for i, l in enumerate(linhas):
         p.append(txt(64, 162 + i * 60, l, 56, "800"))
     y = 162 + len(linhas) * 60
     if legenda:
-        p.append(txt(64, y + 30, legenda, 22, "700", "#3A3A3A"))
-    p.append(linha(64, 330, 690, 330, LINE, 2))
-    imp = a.get("impacto") or {}
-    itens = [
-        (fmt(imp.get("n_total", 0)), "PROPOSIÇÕES"),
-        (fmt(imp.get("autoria_equivalente", 0)), "AUTORIA EQUIV."),
-        (fmt(imp.get("n_exclusiva", 0)), "EXCLUSIVAS"),
-    ]
-    for i, (valor, rotulo) in enumerate(itens):
-        xx = 64 + i * 212
-        p.append(txt(xx, 424, valor, 46, "800", GREEN))
-        p.append(txt(xx, 452, rotulo, 14, "700", MUTED, espacamento="1"))
+        leg = wrap(legenda, 640, 20, 2, "700")
+        for i, l in enumerate(leg):
+            p.append(txt(64, y + 28 + i * 24, l, 20, "700", "#3A3A3A"))
+        y += (len(leg) - 1) * 24
+    hline = max(318, y + 70)
+    p.append(linha(64, hline, 700, hline, LINE, 2))
+    _stats_linha(p, a, 64, hline + 70, 212, 44)
+    if fatos:
+        resumo = " · ".join("%s: %s" % (r, v) for r, v in fatos[:2])
+        for l in wrap(resumo, 620, 17, 1, "600"):
+            p.append(txt(64, 512, l, 17, "600", "#3A3A3A"))
     p.append(avatar_svg(772, 94, 320, 447, a.get("foto"), iniciais(nome)))
     p.append(rodape(w, h, "Perfil do vereador · Leis de Pinheiro"))
     return w, h, "".join(p)

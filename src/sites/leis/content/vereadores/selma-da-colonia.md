@@ -4,8 +4,11 @@ autor_id: 11
 slug: "selma-da-colonia"
 partido: "PP"
 nome_urna: "SELMA DA COLÔNIA"
+nome_urna_display: "Selma da Colônia"
+nome_urna_igual: true
 votos: 641
 situacao_tse: "SUPLENTE"
+situacao_tse_ajuda: "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
 n_proposicoes: 32
 foto: "/fotos/selma-da-colonia-2024.jpg"
 foto_ano: 2024
@@ -20,7 +23,7 @@ coletivas: 15
 taxa_exclusividade: 53
 peso_medio: 0.56
 og_image: "/og/v/selma-da-colonia.jpg"
-share_text: "Selma da Colônia — 32 proposições, 17 de autoria exclusiva na Câmara de Pinheiro"
+share_text: "Selma da Colônia — 32 proposições, 17 de autoria exclusiva, 10 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/selma-da-colonia-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/selma-da-colonia-9x16.jpg"}

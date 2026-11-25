@@ -4,8 +4,11 @@ autor_id: 29
 slug: "ze-filho"
 partido: "PL"
 nome_urna: "ZÉ FILHO"
+nome_urna_display: "ZÉ Filho"
+nome_urna_igual: true
 votos: 557
 situacao_tse: "SUPLENTE"
+situacao_tse_ajuda: "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
 n_proposicoes: 15
 foto: "/fotos/ze-filho-2024.jpg"
 foto_ano: 2024

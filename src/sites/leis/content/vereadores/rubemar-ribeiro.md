@@ -4,8 +4,11 @@ autor_id: 30
 slug: "rubemar-ribeiro"
 partido: "PP"
 nome_urna: "RUBEMAR RIBEIRO"
+nome_urna_display: "Rubemar Ribeiro"
+nome_urna_igual: true
 votos: 1126
 situacao_tse: "ELEITO POR QP"
+situacao_tse_ajuda: "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
 n_proposicoes: 69
 foto: "/fotos/rubemar-ribeiro-2024.jpg"
 foto_ano: 2024
@@ -20,7 +23,7 @@ coletivas: 28
 taxa_exclusividade: 54
 peso_medio: 0.58
 og_image: "/og/v/rubemar-ribeiro.jpg"
-share_text: "Rubemar Ribeiro — 69 proposições, 37 de autoria exclusiva na Câmara de Pinheiro"
+share_text: "Rubemar Ribeiro — 69 proposições, 37 de autoria exclusiva, 23 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/rubemar-ribeiro-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/rubemar-ribeiro-9x16.jpg"}

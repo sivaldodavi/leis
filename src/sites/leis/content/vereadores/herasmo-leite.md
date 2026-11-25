@@ -4,8 +4,11 @@ autor_id: 1
 slug: "herasmo-leite"
 partido: "PSD"
 nome_urna: "HERASMO LEITE"
+nome_urna_display: "Herasmo Leite"
+nome_urna_igual: true
 votos: 987
 situacao_tse: "ELEITO POR QP"
+situacao_tse_ajuda: "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
 n_proposicoes: 540
 foto: "/fotos/herasmo-leite-2024.jpg"
 foto_ano: 2024
@@ -20,7 +23,7 @@ coletivas: 25
 taxa_exclusividade: 94
 peso_medio: 0.95
 og_image: "/og/v/herasmo-leite.jpg"
-share_text: "Herasmo Leite — 540 proposições, 510 de autoria exclusiva na Câmara de Pinheiro"
+share_text: "Herasmo Leite — 540 proposições, 510 de autoria exclusiva, 141 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/herasmo-leite-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/herasmo-leite-9x16.jpg"}

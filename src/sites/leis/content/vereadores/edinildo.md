@@ -4,8 +4,10 @@ autor_id: 23
 slug: "edinildo"
 partido: "SOLIDARIEDADE"
 nome_urna: "EDINILDO RODRIGUES"
+nome_urna_display: "Edinildo Rodrigues"
 votos: 1151
 situacao_tse: "ELEITO POR QP"
+situacao_tse_ajuda: "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
 n_proposicoes: 225
 foto: "/fotos/edinildo-2024.jpg"
 foto_ano: 2024
@@ -20,7 +22,7 @@ coletivas: 33
 taxa_exclusividade: 77
 peso_medio: 0.82
 og_image: "/og/v/edinildo.jpg"
-share_text: "Edinildo — 225 proposições, 173 de autoria exclusiva na Câmara de Pinheiro"
+share_text: "Edinildo — 225 proposições, 173 de autoria exclusiva, 95 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/edinildo-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/edinildo-9x16.jpg"}

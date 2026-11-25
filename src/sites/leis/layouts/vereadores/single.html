@@ -18,14 +18,14 @@
         {{ with $autor.partido }}<span class="pill">{{ . }}</span>{{ end }}
         {{ if $autor.atual }}<span class="pill green">Legislatura 2025–2028</span>{{ end }}
         {{ if $autor.anterior }}<span class="pill amber">Legislatura 2021–2024</span>{{ end }}
-        {{ with $autor.situacao_tse_label }}<span class="pill">{{ . }}</span>{{ end }}
+        {{ with $autor.situacao_tse_label }}<span class="pill{{ if $autor.situacao_tse_ajuda }} help{{ end }}"{{ with $autor.situacao_tse_ajuda }} title="{{ . }}"{{ end }}>{{ . }}</span>{{ end }}
       </div>
       {{ if $autor.votos }}
       <p class="meta-line"><strong>{{ $autor.votos }}</strong> votos em {{ $autor.ano_tse }}{{ with $autor.situacao_tse_label }} · {{ . }}{{ end }}</p>
       {{ else }}
       <p class="meta-line" style="color:#5B5B5B">Sem dados eleitorais correspondentes no TSE.</p>
       {{ end }}
-      {{ with $autor.nome_urna }}<p class="meta-line" style="font-size:14px;color:#5B5B5B">Nome de urna: {{ . }}</p>{{ end }}
+      {{ with $autor.nome_urna }}<p class="meta-line" style="font-size:14px;color:#5B5B5B">Nome de urna: {{ if $autor.nome_urna_igual }}igual ao nome{{ else }}{{ $autor.nome_urna_display }}{{ end }}</p>{{ end }}
       <p class="meta-line" style="font-size:14px;color:#5B5B5B">
         {{ if gt $autor.n_proposicoes 0 }}{{ $autor.n_proposicoes }} proposições registradas no banco.{{ else }}Nenhuma proposição registrada no banco para este perfil.{{ end }}
       </p>
@@ -101,18 +101,51 @@
     <article class="mandato">
       <div class="top">
         <span class="leg">{{ if .eleito }}Legislatura {{ .legislatura }}{{ else }}Candidatura em {{ .ano_eleicao }}{{ end }}</span>
-        <span class="pill {{ if .eleito }}green{{ else }}amber{{ end }}">{{ if .eleito }}Eleito(a){{ else }}{{ .situacao_label }}{{ end }}</span>
+        <span class="pill {{ if .eleito }}green{{ else }}amber{{ end }}{{ if .situacao_ajuda }} help{{ end }}"{{ with .situacao_ajuda }} title="{{ . }}"{{ end }}>{{ if .eleito }}Eleito(a){{ else }}{{ .situacao_label }}{{ end }}</span>
       </div>
       <p class="detail">{{ .partido }} · {{ .votos }} votos{{ with .situacao_label }} · {{ . }}{{ end }}</p>
-      <p class="detail" style="font-size:13px;color:#5B5B5B">Nome no TSE: {{ .nome_tse_display }}</p>
+      {{ if not .nome_tse_igual }}<p class="detail" style="font-size:13px;color:#5B5B5B">Nome no TSE: {{ .nome_tse_display }}</p>{{ end }}
     </article>
     {{ end }}
   </div>
+  {{ $tem_ajuda := false }}{{ range $autor.mandatos }}{{ if .situacao_ajuda }}{{ $tem_ajuda = true }}{{ end }}{{ end }}
+  {{ if $tem_ajuda }}
+  <details class="tse-help">
+    <summary>O que é “quociente partidário” e “média”?</summary>
+    <p><strong>Quociente partidário:</strong> divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista do partido.</p>
+    <p><strong>Média (sobras):</strong> quando ainda sobram cadeiras, divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.</p>
+  </details>
+  {{ end }}
   {{ else }}
   <p class="empty">Sem mandato ou candidatura localizada no TSE.</p>
   {{ end }}
 
   {{ if gt $autor.n_proposicoes 0 }}
+  <div class="section-line">
+    <h2>O que as proposições fazem</h2>
+    <p>Classificação pelo objeto declarado na ementa.</p>
+  </div>
+  <div class="panel">
+    <div class="bar-list">
+      {{ $classes := slice (dict "l" "Proposta com objeto (obra, serviço, política)" "k" "Proposta com objeto" "c" "proposta") (dict "l" "Nomeação de lugar (via, ponte, prédio)" "k" "Nomeação de lugar" "c" "denominacao") (dict "l" "Homenagem ou título" "k" "Homenagem ou título" "c" "homenagem") (dict "l" "Moção/manifestação" "k" "Moção/manifestação" "c" "manifestacao") (dict "l" "Não classificável" "k" "Não classificável" "c" "indefinida") }}
+      {{ $maxc := 1 }}
+      {{ range $classes }}{{ $n := index $autor.stats.by_classe .k | default 0 }}{{ if gt $n $maxc }}{{ $maxc = $n }}{{ end }}{{ end }}
+      {{ range $classes }}
+      {{ $n := index $autor.stats.by_classe .k | default 0 }}
+      <div class="bar-row">
+        <span class="lbl">{{ .l }}</span>
+        <div class="bar-track"><div class="bar-fill" style="width:{{ if $n }}{{ math.Round (mul (div (float $n) (float $maxc)) 100) }}{{ else }}0{{ end }}%"></div></div>
+        <span class="val">{{ $n }}</span>
+      </div>
+      {{ end }}
+    </div>
+    <p class="note">
+      {{ $nc := add $autor.stats.n_nomeacao $autor.stats.n_homenagem }}
+      {{ if gt $nc 0 }}{{ $nc }} proposição(ões) apenas nomeiam lugares ou homenageiam pessoas. {{ end }}
+      “Não classificável” reúne ementas incompletas na fonte ou sem objeto explícito; não significa proposta sem valor. A classificação não entra na conta de autoria equivalente.
+    </p>
+  </div>
+
   <div class="section-line">
     <h2>Atuação por ano</h2>
     <p>Proposições apresentadas e registradas.</p>
@@ -157,7 +190,7 @@
   if(!box) return;
   var autorId = parseInt(box.getAttribute('data-autor-id'), 10);
   var props = [];
-  var busca, ftipo, fano;
+  var busca, ftipo, fano, fclasse;
 
   function el(tag, cls, txt){ var e=document.createElement(tag); if(cls) e.className=cls; if(txt!==undefined) e.textContent=txt; return e; }
   function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
@@ -168,6 +201,11 @@
     a.href = '/proposicoes/?q=' + encodeURIComponent(p.identificacao || '');
     c1.appendChild(a);
     c1.appendChild(el('span','plist-sub', (p.especie_rotulo || p.tipo || '') + ' · ' + (p.ano_label || '—')));
+    if(p.classe_curta){
+      var tag = el('span','tag-classe ' + (p.classe || ''), p.classe_curta);
+      tag.title = p.classe_rotulo || '';
+      c1.appendChild(tag);
+    }
     var c2 = el('div');
     c2.appendChild(el('span','clamp2', p.ementa_limpa || p.ementa_curta || ''));
     var c3 = el('div','autores');
@@ -190,13 +228,14 @@
     var list = document.getElementById('autor-props-list');
     if(!list) return;
     var q = norm(busca.value.trim());
-    var tipo = ftipo.value, ano = fano.value;
+    var tipo = ftipo.value, ano = fano.value, classe = fclasse.value;
     list.innerHTML = '';
     var n = 0;
     props.forEach(function(p){
       if(q && norm((p.identificacao||'') + ' ' + (p.ementa_limpa||'')).indexOf(q) === -1) return;
       if(tipo && (p.especie_rotulo || p.tipo) !== tipo) return;
       if(ano && String(p.ano_label) !== ano) return;
+      if(classe && (p.classe_curta || '') !== classe) return;
       n++;
       list.appendChild(row(p));
     });
@@ -215,11 +254,13 @@
     var l1 = el('label', null, 'Buscar'); busca = el('input'); busca.type='search'; busca.placeholder='Assunto ou identificação'; l1.appendChild(busca);
     var l2 = el('label', null, 'Tipo'); ftipo = el('select'); var o0 = el('option', null, 'Todos'); o0.value=''; ftipo.appendChild(o0);
     var l3 = el('label', null, 'Ano'); fano = el('select'); var o1 = el('option', null, 'Todos'); o1.value=''; fano.appendChild(o1);
-    grid.appendChild(l1); grid.appendChild(l2); grid.appendChild(l3); toolbar.appendChild(grid);
-    var types = {}, years = {};
-    props.forEach(function(p){ var t = p.especie_rotulo || p.tipo; if(t) types[t]=1; if(p.ano_label) years[p.ano_label]=1; });
+    var l4 = el('label', null, 'O que faz'); fclasse = el('select'); var o2 = el('option', null, 'Todas'); o2.value=''; fclasse.appendChild(o2);
+    grid.appendChild(l1); grid.appendChild(l2); grid.appendChild(l3); grid.appendChild(l4); toolbar.appendChild(grid);
+    var types = {}, years = {}, classes = {};
+    props.forEach(function(p){ var t = p.especie_rotulo || p.tipo; if(t) types[t]=1; if(p.ano_label) years[p.ano_label]=1; if(p.classe_curta) classes[p.classe_curta]=1; });
     Object.keys(types).sort().forEach(function(v){ var o=el('option',null,v); o.value=v; ftipo.appendChild(o); });
     Object.keys(years).sort().reverse().forEach(function(v){ var o=el('option',null,v); o.value=v; fano.appendChild(o); });
+    Object.keys(classes).sort().forEach(function(v){ var o=el('option',null,v); o.value=v; fclasse.appendChild(o); });
 
     box.innerHTML = '';
     box.appendChild(toolbar);
@@ -230,7 +271,7 @@
     var list = el('div'); list.id = 'autor-props-list';
     plist.appendChild(list);
     box.appendChild(plist);
-    [busca, ftipo, fano].forEach(function(x){ x.addEventListener('input', render); x.addEventListener('change', render); });
+    [busca, ftipo, fano, fclasse].forEach(function(x){ x.addEventListener('input', render); x.addEventListener('change', render); });
     render();
   }
 

@@ -4,6 +4,7 @@ autor_id: 3447
 slug: "edmilson-silva"
 partido: "PDT"
 nome_urna: "EDMILSON SILVA"
+nome_urna_display: ""
 votos: 1094
 situacao_tse: "ELEITO POR QP"
 n_proposicoes: 0

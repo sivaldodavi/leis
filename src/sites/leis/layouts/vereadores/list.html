@@ -29,7 +29,7 @@
     {{ $page := . }}
     <article class="person-card pessoa" data-atual="{{ .Params.atual }}" data-anterior="{{ .Params.anterior }}">
       {{ if .Params.foto }}
-      <img class="person-photo" src="{{ .Params.foto }}" alt="Foto de {{ .Title }}" loading="lazy" width="260" height="230">
+      <img class="person-photo" src="{{ .Params.foto }}" alt="Foto de {{ .Title }}" loading="lazy" width="260" height="363">
       {{ else }}
       <div class="person-photo-fallback" aria-hidden="true">{{ substr .Title 0 1 }}</div>
       {{ end }}
@@ -40,7 +40,7 @@
           {{ if .Params.anterior }}<span class="pill amber">2021–2024</span>{{ end }}
         </div>
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        {{ with .Params.nome_urna }}<p class="small">Nome de urna: {{ . }}</p>{{ end }}
+        {{ with .Params.nome_urna }}<p class="small">Nome de urna: {{ if $page.Params.nome_urna_igual }}igual ao nome{{ else }}{{ $page.Params.nome_urna_display }}{{ end }}</p>{{ end }}
         <p class="small">
           {{ with .Params.votos }}<strong>{{ . }}</strong> votos em {{ $page.Params.ano_tse }}{{ else }}Sem dados eleitorais{{ end }}
           {{ with .Params.situacao_tse }} · {{ . }}{{ end }}

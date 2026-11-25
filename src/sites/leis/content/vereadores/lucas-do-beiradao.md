@@ -4,8 +4,11 @@ autor_id: 13
 slug: "lucas-do-beiradao"
 partido: "PP"
 nome_urna: "LUCAS DO BEIRADÃO"
+nome_urna_display: "Lucas do Beiradão"
+nome_urna_igual: true
 votos: 972
 situacao_tse: "ELEITO POR QP"
+situacao_tse_ajuda: "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
 n_proposicoes: 60
 foto: "/fotos/lucas-do-beiradao-2024.jpg"
 foto_ano: 2024
@@ -20,7 +23,7 @@ coletivas: 27
 taxa_exclusividade: 52
 peso_medio: 0.56
 og_image: "/og/v/lucas-do-beiradao.jpg"
-share_text: "Lucas do Beiradão — 60 proposições, 31 de autoria exclusiva na Câmara de Pinheiro"
+share_text: "Lucas do Beiradão — 60 proposições, 31 de autoria exclusiva, 14 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/lucas-do-beiradao-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/lucas-do-beiradao-9x16.jpg"}

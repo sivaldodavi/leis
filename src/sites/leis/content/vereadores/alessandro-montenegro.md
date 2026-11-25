@@ -4,8 +4,11 @@ autor_id: 19
 slug: "alessandro-montenegro"
 partido: "PP"
 nome_urna: "ALESSANDRO MONTENEGRO"
+nome_urna_display: "Alessandro Montenegro"
+nome_urna_igual: true
 votos: 596
 situacao_tse: "SUPLENTE"
+situacao_tse_ajuda: "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
 n_proposicoes: 30
 foto: "/fotos/alessandro-montenegro-2024.jpg"
 foto_ano: 2024
@@ -20,7 +23,7 @@ coletivas: 15
 taxa_exclusividade: 50
 peso_medio: 0.53
 og_image: "/og/v/alessandro-montenegro.jpg"
-share_text: "Alessandro Montenegro — 30 proposições, 15 de autoria exclusiva na Câmara de Pinheiro"
+share_text: "Alessandro Montenegro — 30 proposições, 15 de autoria exclusiva, 9 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/alessandro-montenegro-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/alessandro-montenegro-9x16.jpg"}

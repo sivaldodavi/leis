@@ -40,9 +40,23 @@
         "nao_informada": 18,
         "Proposição aprovada": 15,
         "Proposição inclusa na Ordem do Dia": 7
-      }
+      },
+      "by_classe": {
+        "Proposta com objeto": 14,
+        "Não classificável": 14,
+        "Moção/manifestação": 9,
+        "Homenagem ou título": 2,
+        "Nomeação de lugar": 1
+      },
+      "n_proposta": 14,
+      "n_nomeacao": 1,
+      "n_homenagem": 2,
+      "n_indefinida": 14
     },
     "situacao_tse_label": "Eleito por média",
+    "situacao_tse_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.",
+    "nome_urna_display": "Abdias de Jesus",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 700,
       "n_total": 40,
@@ -88,7 +102,7 @@
         "2025": 15,
         "2026": 25
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 21 proposições",
@@ -110,7 +124,9 @@
         "sq_candidato": "100002089464",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Abdias de Jesus Silva",
-        "situacao_label": "Eleito por média"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por média",
+        "situacao_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga."
       }
     ],
     "legislaturas": [
@@ -186,9 +202,23 @@
         "Proposição aprovada": 19,
         "Proposição inclusa na Ordem do Dia": 5,
         "Proposição retirada da Ordem do Dia": 3
-      }
+      },
+      "by_classe": {
+        "Não classificável": 26,
+        "Proposta com objeto": 23,
+        "Moção/manifestação": 11,
+        "Homenagem ou título": 1,
+        "Nomeação de lugar": 1
+      },
+      "n_proposta": 23,
+      "n_nomeacao": 1,
+      "n_homenagem": 1,
+      "n_indefinida": 26
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Albininho",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 31,
       "n_total": 62,
@@ -236,7 +266,7 @@
         "2025": 20,
         "2026": 24
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 33 proposições",
@@ -259,7 +289,9 @@
         "sq_candidato": "100001087726",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Jose Albino Costa Araujo",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       },
       {
         "autor_id": 31,
@@ -276,7 +308,9 @@
         "sq_candidato": "100002088697",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Jose Albino Costa Araujo",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -352,9 +386,22 @@
         "nao_informada": 9,
         "Proposição inclusa na Ordem do Dia": 5,
         "Proposição retirada da Ordem do Dia": 2
-      }
+      },
+      "by_classe": {
+        "Não classificável": 10,
+        "Moção/manifestação": 9,
+        "Proposta com objeto": 9,
+        "Nomeação de lugar": 2
+      },
+      "n_proposta": 9,
+      "n_nomeacao": 2,
+      "n_homenagem": 0,
+      "n_indefinida": 10
     },
     "situacao_tse_label": "Suplente",
+    "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
+    "nome_urna_display": "Alessandro Montenegro",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 19,
       "n_total": 30,
@@ -401,7 +448,7 @@
         "2023": 12,
         "2024": 18
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 15 proposições",
@@ -423,7 +470,9 @@
         "sq_candidato": "100001087722",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Alessandro Costa Montenegro",
-        "situacao_label": "Eleito por média"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por média",
+        "situacao_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga."
       },
       {
         "autor_id": 19,
@@ -440,7 +489,9 @@
         "sq_candidato": "100001998268",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Alessandro Costa Montenegro",
-        "situacao_label": "Suplente"
+        "nome_tse_igual": false,
+        "situacao_label": "Suplente",
+        "situacao_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
       }
     ],
     "legislaturas": [
@@ -513,9 +564,23 @@
         "nao_informada": 85,
         "Proposição aprovada": 14,
         "Proposição inclusa na Ordem do Dia": 4
-      }
+      },
+      "by_classe": {
+        "Não classificável": 49,
+        "Proposta com objeto": 41,
+        "Moção/manifestação": 10,
+        "Homenagem ou título": 2,
+        "Nomeação de lugar": 1
+      },
+      "n_proposta": 41,
+      "n_nomeacao": 1,
+      "n_homenagem": 2,
+      "n_indefinida": 49
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Diassis Serrão",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 694,
       "n_total": 103,
@@ -561,7 +626,7 @@
         "2025": 40,
         "2026": 63
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 84 proposições",
@@ -583,7 +648,9 @@
         "sq_candidato": "100002171741",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Francisco de Assis Serrão",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -660,9 +727,23 @@
         "Proposição aprovada": 57,
         "Proposição inclusa na Ordem do Dia": 19,
         "Proposição retirada da Ordem do Dia": 3
-      }
+      },
+      "by_classe": {
+        "Proposta com objeto": 95,
+        "Não classificável": 83,
+        "Moção/manifestação": 36,
+        "Nomeação de lugar": 6,
+        "Homenagem ou título": 5
+      },
+      "n_proposta": 95,
+      "n_nomeacao": 6,
+      "n_homenagem": 5,
+      "n_indefinida": 83
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Edinildo Rodrigues",
+    "nome_urna_igual": false,
     "impacto": {
       "autor_id": 23,
       "n_total": 225,
@@ -711,7 +792,7 @@
         "2025": 79,
         "2026": 91
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Mais moções da Câmara (44)",
@@ -735,7 +816,9 @@
         "sq_candidato": "100001246529",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Edinildo dos Santos Soares Rodrigues",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       },
       {
         "autor_id": 23,
@@ -752,7 +835,9 @@
         "sq_candidato": "100002089107",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Edinildo dos Santos Soares Rodrigues",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -808,9 +893,17 @@
       "by_year": {},
       "by_tipo": {},
       "by_familia": {},
-      "by_situacao": {}
+      "by_situacao": {},
+      "by_classe": {},
+      "n_proposta": 0,
+      "n_nomeacao": 0,
+      "n_homenagem": 0,
+      "n_indefinida": 0
     },
     "situacao_tse_label": "",
+    "situacao_tse_ajuda": "",
+    "nome_urna_display": "",
+    "nome_urna_igual": false,
     "impacto": {
       "n_total": 0,
       "n_exclusiva": 0,
@@ -843,7 +936,9 @@
         "sq_candidato": "100001246541",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Edmilson José Alves da Silva",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -900,9 +995,23 @@
         "nao_informada": 89,
         "Proposição aprovada": 18,
         "Proposição inclusa na Ordem do Dia": 4
-      }
+      },
+      "by_classe": {
+        "Não classificável": 53,
+        "Proposta com objeto": 44,
+        "Moção/manifestação": 11,
+        "Homenagem ou título": 2,
+        "Nomeação de lugar": 1
+      },
+      "n_proposta": 44,
+      "n_nomeacao": 1,
+      "n_homenagem": 2,
+      "n_indefinida": 53
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Eduardo da Ralpnet",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 693,
       "n_total": 111,
@@ -948,7 +1057,7 @@
         "2025": 67,
         "2026": 44
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 97 proposições",
@@ -970,7 +1079,9 @@
         "sq_candidato": "100002089093",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Eduardo Lynnik Ribeiro Rodrigues",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -1047,9 +1158,23 @@
         "nao_informada": 8,
         "Proposição inclusa na Ordem do Dia": 7,
         "Proposição retirada da Ordem do Dia": 2
-      }
+      },
+      "by_classe": {
+        "Não classificável": 10,
+        "Moção/manifestação": 8,
+        "Proposta com objeto": 7,
+        "Nomeação de lugar": 3,
+        "Homenagem ou título": 1
+      },
+      "n_proposta": 7,
+      "n_nomeacao": 3,
+      "n_homenagem": 1,
+      "n_indefinida": 10
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Elizeu de Tantan",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 343,
       "n_total": 29,
@@ -1098,7 +1223,7 @@
         "2025": 6,
         "2026": 12
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 14 proposições",
@@ -1120,7 +1245,9 @@
         "sq_candidato": "100001087738",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Elizeu Rodrigues Furtado",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       },
       {
         "autor_id": 343,
@@ -1137,7 +1264,9 @@
         "sq_candidato": "100001998419",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Elizeu Rodrigues Furtado",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -1210,9 +1339,22 @@
         "nao_informada": 49,
         "Proposição aprovada": 23,
         "Proposição inclusa na Ordem do Dia": 2
-      }
+      },
+      "by_classe": {
+        "Não classificável": 36,
+        "Proposta com objeto": 26,
+        "Moção/manifestação": 11,
+        "Homenagem ou título": 1
+      },
+      "n_proposta": 26,
+      "n_nomeacao": 0,
+      "n_homenagem": 1,
+      "n_indefinida": 36
     },
     "situacao_tse_label": "Suplente",
+    "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
+    "nome_urna_display": "Nésio Ferreira",
+    "nome_urna_igual": false,
     "impacto": {
       "autor_id": 95,
       "n_total": 74,
@@ -1257,7 +1399,7 @@
         "2025": 36,
         "2026": 30
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 50 proposições",
@@ -1279,7 +1421,9 @@
         "sq_candidato": "100002088693",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Enesio Vitorino Ribeiro Ferreira",
-        "situacao_label": "Suplente"
+        "nome_tse_igual": false,
+        "situacao_label": "Suplente",
+        "situacao_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
       }
     ],
     "legislaturas": [],
@@ -1348,9 +1492,22 @@
         "nao_informada": 3,
         "Proposição inclusa na Ordem do Dia": 2,
         "Proposição aprovada": 1
-      }
+      },
+      "by_classe": {
+        "Proposta com objeto": 3,
+        "Moção/manifestação": 1,
+        "Homenagem ou título": 1,
+        "Nomeação de lugar": 1
+      },
+      "n_proposta": 3,
+      "n_nomeacao": 1,
+      "n_homenagem": 1,
+      "n_indefinida": 0
     },
     "situacao_tse_label": "Suplente",
+    "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
+    "nome_urna_display": "Evilson Santos",
+    "nome_urna_igual": false,
     "impacto": {
       "autor_id": 1118,
       "n_total": 6,
@@ -1394,7 +1551,7 @@
         "2025": 5,
         "2026": 1
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 5 proposições"
@@ -1415,7 +1572,9 @@
         "sq_candidato": "100001998412",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Evilson de Jesus Lopes dos Santos",
-        "situacao_label": "Suplente"
+        "nome_tse_igual": false,
+        "situacao_label": "Suplente",
+        "situacao_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
       }
     ],
     "legislaturas": [],
@@ -1484,9 +1643,21 @@
         "Proposição aprovada": 18,
         "Proposição retirada da Ordem do Dia": 2,
         "nao_informada": 1
-      }
+      },
+      "by_classe": {
+        "Não classificável": 37,
+        "Proposta com objeto": 19,
+        "Nomeação de lugar": 1
+      },
+      "n_proposta": 19,
+      "n_nomeacao": 1,
+      "n_homenagem": 0,
+      "n_indefinida": 37
     },
     "situacao_tse_label": "",
+    "situacao_tse_ajuda": "",
+    "nome_urna_display": "",
+    "nome_urna_igual": false,
     "impacto": {
       "autor_id": 142,
       "n_total": 57,
@@ -1513,7 +1684,7 @@
         "2025": 23,
         "2026": 17
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 57 proposições",
@@ -1573,9 +1744,23 @@
         "Proposição aprovada": 17,
         "Proposição inclusa na Ordem do Dia": 6,
         "Proposição retirada da Ordem do Dia": 1
-      }
+      },
+      "by_classe": {
+        "Não classificável": 24,
+        "Proposta com objeto": 11,
+        "Moção/manifestação": 10,
+        "Homenagem ou título": 1,
+        "Nomeação de lugar": 1
+      },
+      "n_proposta": 11,
+      "n_nomeacao": 1,
+      "n_homenagem": 1,
+      "n_indefinida": 24
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Fabrícia do Sindicato",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 28,
       "n_total": 47,
@@ -1621,7 +1806,7 @@
         "2025": 12,
         "2026": 19
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 21 proposições",
@@ -1644,7 +1829,9 @@
         "sq_candidato": "100001246531",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Fabricia Lorena Melo Durans",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       },
       {
         "autor_id": 28,
@@ -1661,7 +1848,9 @@
         "sq_candidato": "100001998410",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Fabricia Lorena Melo Durans",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -1734,9 +1923,22 @@
         "Proposição inclusa na Ordem do Dia": 4,
         "nao_informada": 4,
         "Proposição retirada da Ordem do Dia": 1
-      }
+      },
+      "by_classe": {
+        "Não classificável": 9,
+        "Moção/manifestação": 8,
+        "Proposta com objeto": 3,
+        "Nomeação de lugar": 1
+      },
+      "n_proposta": 3,
+      "n_nomeacao": 1,
+      "n_homenagem": 0,
+      "n_indefinida": 9
     },
     "situacao_tse_label": "Suplente",
+    "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
+    "nome_urna_display": "Felipe de Chicão",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 36,
       "n_total": 21,
@@ -1780,7 +1982,7 @@
         "2023": 8,
         "2024": 13
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 7 proposições",
@@ -1802,7 +2004,9 @@
         "sq_candidato": "100001262457",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Felipe Dayvisson Carvalho da Silva",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       },
       {
         "autor_id": 36,
@@ -1819,7 +2023,9 @@
         "sq_candidato": "100002171737",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Felipe Dayvissson Carvalho da Silva",
-        "situacao_label": "Suplente"
+        "nome_tse_igual": false,
+        "situacao_label": "Suplente",
+        "situacao_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
       }
     ],
     "legislaturas": [
@@ -1884,9 +2090,21 @@
       "by_situacao": {
         "nao_informada": 14,
         "Proposição aprovada": 2
-      }
+      },
+      "by_classe": {
+        "Proposta com objeto": 11,
+        "Não classificável": 3,
+        "Moção/manifestação": 2
+      },
+      "n_proposta": 11,
+      "n_nomeacao": 0,
+      "n_homenagem": 0,
+      "n_indefinida": 3
     },
     "situacao_tse_label": "Suplente",
+    "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
+    "nome_urna_display": "Gury",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 1215,
       "n_total": 16,
@@ -1909,7 +2127,7 @@
       "anos": {
         "2025": 16
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Maior taxa de autoria exclusiva (100%)",
@@ -1931,7 +2149,9 @@
         "sq_candidato": "100002171736",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "José Magno Ramalho Froz",
-        "situacao_label": "Suplente"
+        "nome_tse_igual": false,
+        "situacao_label": "Suplente",
+        "situacao_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
       }
     ],
     "legislaturas": [],
@@ -1989,9 +2209,23 @@
         "nao_informada": 24,
         "Proposição inclusa na Ordem do Dia": 13,
         "Proposição retirada da Ordem do Dia": 2
-      }
+      },
+      "by_classe": {
+        "Proposta com objeto": 26,
+        "Moção/manifestação": 19,
+        "Não classificável": 15,
+        "Homenagem ou título": 3,
+        "Nomeação de lugar": 2
+      },
+      "n_proposta": 26,
+      "n_nomeacao": 2,
+      "n_homenagem": 3,
+      "n_indefinida": 15
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Guto",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 89,
       "n_total": 65,
@@ -2039,7 +2273,7 @@
         "2025": 23,
         "2026": 23
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "3º em moções (26)",
@@ -2063,7 +2297,9 @@
         "sq_candidato": "100001158940",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Augusto Vinícius Martins de Araujo",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       },
       {
         "autor_id": 89,
@@ -2080,7 +2316,9 @@
         "sq_candidato": "100002215966",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Augusto Vinícius Martins de Araujo",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -2164,9 +2402,23 @@
         "Proposição inclusa na Ordem do Dia": 18,
         "Proposição retirada da Ordem do Dia": 8,
         "Proposição rejeitada pelo Plenário": 1
-      }
+      },
+      "by_classe": {
+        "Não classificável": 364,
+        "Proposta com objeto": 141,
+        "Moção/manifestação": 23,
+        "Homenagem ou título": 8,
+        "Nomeação de lugar": 4
+      },
+      "n_proposta": 141,
+      "n_nomeacao": 4,
+      "n_homenagem": 8,
+      "n_indefinida": 364
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Herasmo Leite",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 1,
       "n_total": 540,
@@ -2220,7 +2472,7 @@
         "2025": 233,
         "2026": 163
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Mais proposições aprovadas (83)",
@@ -2245,7 +2497,9 @@
         "sq_candidato": "100001246534",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Herasmo Leite Soares",
-        "situacao_label": "Eleito por média"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por média",
+        "situacao_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga."
       },
       {
         "autor_id": 1,
@@ -2262,7 +2516,9 @@
         "sq_candidato": "100001998417",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Herasmo Leite Soares",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -2340,9 +2596,23 @@
         "Proposição aprovada": 22,
         "Proposição inclusa na Ordem do Dia": 11,
         "Proposição retirada da Ordem do Dia": 1
-      }
+      },
+      "by_classe": {
+        "Proposta com objeto": 37,
+        "Não classificável": 31,
+        "Moção/manifestação": 15,
+        "Homenagem ou título": 1,
+        "Nomeação de lugar": 1
+      },
+      "n_proposta": 37,
+      "n_nomeacao": 1,
+      "n_homenagem": 1,
+      "n_indefinida": 31
     },
     "situacao_tse_label": "Eleito por média",
+    "situacao_tse_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.",
+    "nome_urna_display": "Jaelson Araujo",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 10,
       "n_total": 85,
@@ -2391,7 +2661,7 @@
         "2025": 34,
         "2026": 25
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 50 proposições",
@@ -2414,7 +2684,9 @@
         "sq_candidato": "100001158927",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Jaelson Pereira Souza",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       },
       {
         "autor_id": 10,
@@ -2431,7 +2703,9 @@
         "sq_candidato": "100001998411",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Jaelson Pereira Souza",
-        "situacao_label": "Eleito por média"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por média",
+        "situacao_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga."
       }
     ],
     "legislaturas": [
@@ -2500,9 +2774,21 @@
         "Proposição aprovada": 7,
         "Proposição inclusa na Ordem do Dia": 2,
         "nao_informada": 1
-      }
+      },
+      "by_classe": {
+        "Não classificável": 7,
+        "Moção/manifestação": 2,
+        "Proposta com objeto": 1
+      },
+      "n_proposta": 1,
+      "n_nomeacao": 0,
+      "n_homenagem": 0,
+      "n_indefinida": 7
     },
     "situacao_tse_label": "Suplente",
+    "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
+    "nome_urna_display": "João Morais",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 40,
       "n_total": 10,
@@ -2543,7 +2829,7 @@
       "anos": {
         "2023": 10
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Assina mais com Lucas do Beiradão (8)"
@@ -2564,7 +2850,9 @@
         "sq_candidato": "100002171734",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "João Raimundo Morais",
-        "situacao_label": "Suplente"
+        "nome_tse_igual": false,
+        "situacao_label": "Suplente",
+        "situacao_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
       }
     ],
     "legislaturas": [],
@@ -2638,9 +2926,22 @@
         "nao_informada": 139,
         "Proposição aprovada": 26,
         "Proposição inclusa na Ordem do Dia": 4
-      }
+      },
+      "by_classe": {
+        "Não classificável": 96,
+        "Proposta com objeto": 63,
+        "Moção/manifestação": 8,
+        "Homenagem ou título": 2
+      },
+      "n_proposta": 63,
+      "n_nomeacao": 0,
+      "n_homenagem": 2,
+      "n_indefinida": 96
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "João do Vale",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 5,
       "n_total": 169,
@@ -2689,7 +2990,7 @@
         "2025": 87,
         "2026": 69
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "3º em indicações (151)",
@@ -2713,7 +3014,9 @@
         "sq_candidato": "100002171738",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "João José Martins Frazão",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -2783,9 +3086,22 @@
         "nao_informada": 37,
         "Proposição aprovada": 18,
         "Proposição inclusa na Ordem do Dia": 4
-      }
+      },
+      "by_classe": {
+        "Não classificável": 25,
+        "Proposta com objeto": 18,
+        "Moção/manifestação": 14,
+        "Homenagem ou título": 2
+      },
+      "n_proposta": 18,
+      "n_nomeacao": 0,
+      "n_homenagem": 2,
+      "n_indefinida": 25
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Keimilson de Zezinho",
+    "nome_urna_igual": false,
     "impacto": {
       "autor_id": 663,
       "n_total": 59,
@@ -2828,7 +3144,7 @@
         "2025": 19,
         "2026": 40
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 41 proposições",
@@ -2850,7 +3166,9 @@
         "sq_candidato": "100001998042",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Keimilson Sodré Guterres",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -2919,9 +3237,20 @@
         "Proposição aprovada": 3,
         "Proposição retirada da Ordem do Dia": 2,
         "nao_informada": 1
-      }
+      },
+      "by_classe": {
+        "Não classificável": 3,
+        "Moção/manifestação": 3
+      },
+      "n_proposta": 0,
+      "n_nomeacao": 0,
+      "n_homenagem": 0,
+      "n_indefinida": 3
     },
     "situacao_tse_label": "",
+    "situacao_tse_ajuda": "",
+    "nome_urna_display": "Layanna Ferreira",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 407,
       "n_total": 6,
@@ -2963,7 +3292,7 @@
       "anos": {
         "2024": 6
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [],
     "mandatos": [
@@ -2982,7 +3311,9 @@
         "sq_candidato": "100001998044",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Lutiellen Layanna Bastos SÁ",
-        "situacao_label": ""
+        "nome_tse_igual": false,
+        "situacao_label": "",
+        "situacao_ajuda": ""
       }
     ],
     "legislaturas": [],
@@ -3059,9 +3390,23 @@
         "Proposição inclusa na Ordem do Dia": 21,
         "nao_informada": 11,
         "Proposição retirada da Ordem do Dia": 5
-      }
+      },
+      "by_classe": {
+        "Não classificável": 25,
+        "Proposta com objeto": 14,
+        "Moção/manifestação": 13,
+        "Homenagem ou título": 6,
+        "Nomeação de lugar": 2
+      },
+      "n_proposta": 14,
+      "n_nomeacao": 2,
+      "n_homenagem": 6,
+      "n_indefinida": 25
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Lucas do Beiradão",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 13,
       "n_total": 60,
@@ -3112,7 +3457,7 @@
         "2025": 4,
         "2026": 10
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "3º em projetos de lei do Legislativo (6)",
@@ -3136,7 +3481,9 @@
         "sq_candidato": "100001087716",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "José Lucas Pereira Fernandes",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       },
       {
         "autor_id": 13,
@@ -3153,7 +3500,9 @@
         "sq_candidato": "100001998265",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "José Lucas Pereira Fernandes",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -3225,9 +3574,22 @@
         "nao_informada": 6,
         "Proposição aprovada": 5,
         "Proposição inclusa na Ordem do Dia": 2
-      }
+      },
+      "by_classe": {
+        "Não classificável": 6,
+        "Homenagem ou título": 4,
+        "Nomeação de lugar": 2,
+        "Proposta com objeto": 1
+      },
+      "n_proposta": 1,
+      "n_nomeacao": 2,
+      "n_homenagem": 4,
+      "n_indefinida": 6
     },
     "situacao_tse_label": "Suplente",
+    "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
+    "nome_urna_display": "Oziel Menezes",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 2197,
       "n_total": 13,
@@ -3261,7 +3623,7 @@
       "anos": {
         "2026": 13
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 11 proposições"
@@ -3282,7 +3644,9 @@
         "sq_candidato": "100002215960",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Oziel Abreu Menezes",
-        "situacao_label": "Suplente"
+        "nome_tse_igual": false,
+        "situacao_label": "Suplente",
+        "situacao_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
       }
     ],
     "legislaturas": [],
@@ -3345,9 +3709,23 @@
         "Proposição aprovada": 16,
         "Proposição inclusa na Ordem do Dia": 7,
         "Proposição retirada da Ordem do Dia": 1
-      }
+      },
+      "by_classe": {
+        "Proposta com objeto": 25,
+        "Não classificável": 12,
+        "Moção/manifestação": 5,
+        "Nomeação de lugar": 3,
+        "Homenagem ou título": 2
+      },
+      "n_proposta": 25,
+      "n_nomeacao": 3,
+      "n_homenagem": 2,
+      "n_indefinida": 12
     },
     "situacao_tse_label": "Suplente",
+    "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
+    "nome_urna_display": "Paulinho Enfermeiro",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 4,
       "n_total": 47,
@@ -3394,7 +3772,7 @@
         "2023": 19,
         "2024": 27
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 31 proposições",
@@ -3416,7 +3794,9 @@
         "sq_candidato": "100001998414",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Paulo Henrique Trinta Marques",
-        "situacao_label": "Suplente"
+        "nome_tse_igual": false,
+        "situacao_label": "Suplente",
+        "situacao_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
       }
     ],
     "legislaturas": [],
@@ -3489,9 +3869,23 @@
         "Proposição retirada da Ordem do Dia": 5,
         "nao_informada": 4,
         "Proposição rejeitada pelo Plenário": 1
-      }
+      },
+      "by_classe": {
+        "Não classificável": 14,
+        "Proposta com objeto": 7,
+        "Moção/manifestação": 5,
+        "Homenagem ou título": 3,
+        "Nomeação de lugar": 1
+      },
+      "n_proposta": 7,
+      "n_nomeacao": 1,
+      "n_homenagem": 3,
+      "n_indefinida": 14
     },
     "situacao_tse_label": "Eleito por média",
+    "situacao_tse_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.",
+    "nome_urna_display": "Professor Sandro Lima",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 3,
       "n_total": 30,
@@ -3537,7 +3931,7 @@
         "2023": 16,
         "2024": 14
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 14 proposições",
@@ -3559,7 +3953,9 @@
         "sq_candidato": "100001246535",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Sandro Henrique Lima",
-        "situacao_label": "Eleito por média"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por média",
+        "situacao_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga."
       },
       {
         "autor_id": 3,
@@ -3576,7 +3972,9 @@
         "sq_candidato": "100002089097",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Sandro Henrique Lima",
-        "situacao_label": "Eleito por média"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por média",
+        "situacao_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga."
       }
     ],
     "legislaturas": [
@@ -3649,9 +4047,22 @@
         "Proposição inclusa na Ordem do Dia": 3,
         "Proposição retirada da Ordem do Dia": 3,
         "nao_informada": 1
-      }
+      },
+      "by_classe": {
+        "Não classificável": 9,
+        "Moção/manifestação": 3,
+        "Nomeação de lugar": 1,
+        "Proposta com objeto": 1
+      },
+      "n_proposta": 1,
+      "n_nomeacao": 1,
+      "n_homenagem": 0,
+      "n_indefinida": 9
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Riba do BOM Viver",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 33,
       "n_total": 14,
@@ -3695,7 +4106,7 @@
         "2023": 6,
         "2024": 8
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Assina mais com Albininho (12)"
@@ -3716,7 +4127,9 @@
         "sq_candidato": "100001158933",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "José de Ribamar Brito",
-        "situacao_label": "Eleito por média"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por média",
+        "situacao_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga."
       },
       {
         "autor_id": 33,
@@ -3733,7 +4146,9 @@
         "sq_candidato": "100002088698",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "José de Ribamar Brito",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -3804,9 +4219,22 @@
         "nao_informada": 30,
         "Proposição aprovada": 22,
         "Proposição inclusa na Ordem do Dia": 3
-      }
+      },
+      "by_classe": {
+        "Não classificável": 23,
+        "Moção/manifestação": 15,
+        "Proposta com objeto": 15,
+        "Homenagem ou título": 2
+      },
+      "n_proposta": 15,
+      "n_nomeacao": 0,
+      "n_homenagem": 2,
+      "n_indefinida": 23
     },
     "situacao_tse_label": "Eleito por média",
+    "situacao_tse_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.",
+    "nome_urna_display": "Rodrigo Brasil",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 692,
       "n_total": 55,
@@ -3849,7 +4277,7 @@
         "2025": 26,
         "2026": 29
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "3º em requerimentos (5)",
@@ -3872,7 +4300,9 @@
         "sq_candidato": "100002215969",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Rodrigo Brasil Rodrigues",
-        "situacao_label": "Eleito por média"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por média",
+        "situacao_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga."
       }
     ],
     "legislaturas": [
@@ -3950,9 +4380,23 @@
         "Proposição aprovada": 22,
         "Proposição inclusa na Ordem do Dia": 8,
         "Proposição retirada da Ordem do Dia": 2
-      }
+      },
+      "by_classe": {
+        "Não classificável": 30,
+        "Proposta com objeto": 23,
+        "Moção/manifestação": 11,
+        "Nomeação de lugar": 4,
+        "Homenagem ou título": 1
+      },
+      "n_proposta": 23,
+      "n_nomeacao": 4,
+      "n_homenagem": 1,
+      "n_indefinida": 30
     },
     "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Rubemar Ribeiro",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 30,
       "n_total": 69,
@@ -4002,7 +4446,7 @@
         "2025": 7,
         "2026": 28
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 37 proposições",
@@ -4025,7 +4469,9 @@
         "sq_candidato": "100001246540",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Rubemar de Jesus Diniz Ribeiro",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       },
       {
         "autor_id": 30,
@@ -4042,7 +4488,9 @@
         "sq_candidato": "100001998261",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Rubemar de Jesus Diniz Ribeiro",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       }
     ],
     "legislaturas": [
@@ -4113,9 +4561,22 @@
         "nao_informada": 45,
         "Proposição aprovada": 10,
         "Proposição inclusa na Ordem do Dia": 3
-      }
+      },
+      "by_classe": {
+        "Não classificável": 26,
+        "Proposta com objeto": 23,
+        "Moção/manifestação": 7,
+        "Homenagem ou título": 2
+      },
+      "n_proposta": 23,
+      "n_nomeacao": 0,
+      "n_homenagem": 2,
+      "n_indefinida": 26
     },
     "situacao_tse_label": "Suplente",
+    "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
+    "nome_urna_display": "Sapo do Kiola",
+    "nome_urna_igual": false,
     "impacto": {
       "autor_id": 724,
       "n_total": 58,
@@ -4158,7 +4619,7 @@
         "2025": 22,
         "2026": 36
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 45 proposições",
@@ -4180,7 +4641,9 @@
         "sq_candidato": "100002089101",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Jurdinewton Pereira Ribeiro",
-        "situacao_label": "Suplente"
+        "nome_tse_igual": false,
+        "situacao_label": "Suplente",
+        "situacao_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
       }
     ],
     "legislaturas": [],
@@ -4254,9 +4717,23 @@
         "Proposição aprovada": 10,
         "Proposição inclusa na Ordem do Dia": 5,
         "Proposição retirada da Ordem do Dia": 2
-      }
+      },
+      "by_classe": {
+        "Não classificável": 15,
+        "Proposta com objeto": 10,
+        "Moção/manifestação": 5,
+        "Nomeação de lugar": 1,
+        "Homenagem ou título": 1
+      },
+      "n_proposta": 10,
+      "n_nomeacao": 1,
+      "n_homenagem": 1,
+      "n_indefinida": 15
     },
     "situacao_tse_label": "Suplente",
+    "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
+    "nome_urna_display": "Selma da Colônia",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 11,
       "n_total": 32,
@@ -4304,7 +4781,7 @@
         "2023": 10,
         "2024": 22
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 17 proposições",
@@ -4326,7 +4803,9 @@
         "sq_candidato": "100001087724",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Selma Maria Rodrigues Durans",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       },
       {
         "autor_id": 11,
@@ -4343,7 +4822,9 @@
         "sq_candidato": "100001998264",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Selma Maria Rodrigues Durans",
-        "situacao_label": "Suplente"
+        "nome_tse_igual": false,
+        "situacao_label": "Suplente",
+        "situacao_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
       }
     ],
     "legislaturas": [
@@ -4418,9 +4899,23 @@
         "Proposição aprovada": 11,
         "Proposição inclusa na Ordem do Dia": 8,
         "Proposição retirada da Ordem do Dia": 2
-      }
+      },
+      "by_classe": {
+        "Proposta com objeto": 18,
+        "Não classificável": 14,
+        "Moção/manifestação": 5,
+        "Homenagem ou título": 2,
+        "Nomeação de lugar": 1
+      },
+      "n_proposta": 18,
+      "n_nomeacao": 1,
+      "n_homenagem": 2,
+      "n_indefinida": 14
     },
     "situacao_tse_label": "Suplente",
+    "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
+    "nome_urna_display": "Willian Vieira da TV",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 37,
       "n_total": 40,
@@ -4467,7 +4962,7 @@
         "2023": 14,
         "2024": 26
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Autor exclusivo de 24 proposições",
@@ -4489,7 +4984,9 @@
         "sq_candidato": "100001087739",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "Antonio Willian Ramos dos Santos",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       },
       {
         "autor_id": 37,
@@ -4506,7 +5003,9 @@
         "sq_candidato": "100001998256",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "Antonio Willian Ramos dos Santos",
-        "situacao_label": "Suplente"
+        "nome_tse_igual": false,
+        "situacao_label": "Suplente",
+        "situacao_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
       }
     ],
     "legislaturas": [
@@ -4579,9 +5078,21 @@
         "Proposição inclusa na Ordem do Dia": 3,
         "Proposição retirada da Ordem do Dia": 2,
         "nao_informada": 1
-      }
+      },
+      "by_classe": {
+        "Não classificável": 9,
+        "Moção/manifestação": 5,
+        "Nomeação de lugar": 1
+      },
+      "n_proposta": 0,
+      "n_nomeacao": 1,
+      "n_homenagem": 0,
+      "n_indefinida": 9
     },
     "situacao_tse_label": "Suplente",
+    "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
+    "nome_urna_display": "ZÉ Filho",
+    "nome_urna_igual": true,
     "impacto": {
       "autor_id": 29,
       "n_total": 15,
@@ -4626,7 +5137,7 @@
         "2023": 8,
         "2024": 7
       },
-      "atualizado_em": "2026-11-25T12:19:47"
+      "atualizado_em": "2026-11-25T13:10:11"
     },
     "destaques": [
       "Assina mais com Lucas do Beiradão (15)"
@@ -4647,7 +5158,9 @@
         "sq_candidato": "100001246532",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
         "nome_tse_display": "José Maria Naziazeno Filho",
-        "situacao_label": "Eleito por quociente partidário"
+        "nome_tse_igual": false,
+        "situacao_label": "Eleito por quociente partidário",
+        "situacao_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
       },
       {
         "autor_id": 29,
@@ -4664,7 +5177,9 @@
         "sq_candidato": "100002171731",
         "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
         "nome_tse_display": "José Maria Naziazeno Filho",
-        "situacao_label": "Suplente"
+        "nome_tse_igual": false,
+        "situacao_label": "Suplente",
+        "situacao_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
       }
     ],
     "legislaturas": [

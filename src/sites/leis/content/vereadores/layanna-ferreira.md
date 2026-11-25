@@ -4,6 +4,8 @@ autor_id: 407
 slug: "layanna-ferreira"
 partido: "PDT"
 nome_urna: "LAYANNA FERREIRA"
+nome_urna_display: "Layanna Ferreira"
+nome_urna_igual: true
 n_proposicoes: 6
 foto: "/fotos/layanna-ferreira-2024.jpg"
 foto_ano: 2024
