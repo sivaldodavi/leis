@@ -276,6 +276,30 @@ for r in glossario_rows:
 with open(os.path.join(BASE, "content", "glossario.md"), "w", encoding="utf-8") as f:
     f.write("\n".join(gl))
 
+# --- Temas ---
+temas_rows = q("SELECT id, nome FROM temas ORDER BY nome")
+tm = ["---", 'title: "Temas das leis"', "---", "", "Navegue pelas normas por tema.", ""]
+for t in temas_rows:
+    tid = t["id"]
+    tm.append("## " + t["nome"])
+    tm.append("")
+    devs = q("""SELECT DISTINCT d.id, d.rotulo, n.id AS norma_id, n.numero
+               FROM dispositivo_tema dt
+               JOIN dispositivos d ON d.id = dt.dispositivo_id
+               JOIN normas n ON n.id = d.norma_id
+               WHERE dt.tema_id = ?
+               ORDER BY n.numero, d.ordem""", tid)
+    if not devs:
+        tm.append("_Nenhum dispositivo vinculado._")
+        tm.append("")
+        continue
+    for d in devs:
+        slug_n = d["norma_id"].lower()
+        tm.append("- [%s — %s](/normas/%s/#disp-%d)" % (d["norma_id"], d["rotulo"], slug_n, d["id"]))
+    tm.append("")
+with open(os.path.join(BASE, "content", "temas.md"), "w", encoding="utf-8") as f:
+    f.write("\n".join(tm))
+
 data_dir = os.path.join(BASE, "data")
 os.makedirs(data_dir, exist_ok=True)
 with open(os.path.join(data_dir, "legislacao.json"), "w", encoding="utf-8") as f:

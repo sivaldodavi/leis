@@ -51,7 +51,7 @@ Parágrafo Único - A ação Municipal desenvolve-se em todo o seu território, 
 <div class="expl-body">
 <p class="expl-titulo"><strong>Lei Orgânica da cidade</strong></p>
 <p>É a "constituição" de Pinheiro: organiza o município e seus poderes.</p>
-<p class="expl-exemplo"><em>Exemplo:</em> Útil para entender como a cidade é governada.</p>
+<p class="expl-exemplo"><em>Exemplo:</em> Mostra como a cidade é organizada e quais são seus direitos como morador.</p>
 </div>
 </details>
 
