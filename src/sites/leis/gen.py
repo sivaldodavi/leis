@@ -261,6 +261,21 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         "n_dispositivos": len(dispositivos(nid)),
     })
 
+# --- Glossário ---
+glossario_rows = q("SELECT verbo, definicao, exemplo FROM glossario ORDER BY verbo")
+os.makedirs(os.path.join(BASE, "content"), exist_ok=True)
+gl = ["---", 'title: "Glossário de termos legislativos"', "---", "", "Termos usados nas leis e atos da Câmara de Pinheiro.", ""]
+for r in glossario_rows:
+    gl.append("## " + (r["verbo"] or "").strip())
+    gl.append("")
+    gl.append((r["definicao"] or "").strip())
+    if r["exemplo"]:
+        gl.append("")
+        gl.append("*Exemplo:* " + r["exemplo"].strip())
+    gl.append("")
+with open(os.path.join(BASE, "content", "glossario.md"), "w", encoding="utf-8") as f:
+    f.write("\n".join(gl))
+
 data_dir = os.path.join(BASE, "data")
 os.makedirs(data_dir, exist_ok=True)
 with open(os.path.join(data_dir, "legislacao.json"), "w", encoding="utf-8") as f:
