@@ -373,6 +373,14 @@ for fname in ("legislacao.json", "dinheiro_publico.json", "busca.json"):
     dst = os.path.join(static_dados, fname)
     if os.path.exists(src):
         shutil.copyfile(src, dst)
+# versão estável
+v1_dir = os.path.join(static_dados, "v1")
+os.makedirs(v1_dir, exist_ok=True)
+for fname in ("legislacao.json", "dinheiro_publico.json", "busca.json"):
+    src = os.path.join(static_dados, fname)
+    dst = os.path.join(v1_dir, fname)
+    if os.path.exists(src):
+        shutil.copyfile(src, dst)
 print("static dados publicados em", static_dados)
 
 os.makedirs(os.path.join(BASE, "content"), exist_ok=True)
