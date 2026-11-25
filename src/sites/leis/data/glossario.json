@@ -120,7 +120,14 @@
     "verbo": "requerer / indicar",
     "definicao": "Faz um pedido ou sugestão formal. Não obriga a Administração por si só.",
     "exemplo": "Indica ao Prefeito a recuperação de um ramal.",
-    "norma": null
+    "norma": {
+      "id": "IND507",
+      "slug": "ind507",
+      "numero": "507/2026",
+      "tipo_label": "Indicação",
+      "data": "2026-08-12",
+      "ementa": "Recuperação, com revestimento em piçarra, de ramal de aproximadamente 1 km ligando o Povoado Ponta de Santana ao entroncamento Chapadinha, com acesso aos povoados Ponta Branca e Nova Ponta Branca. Autor: Ver. Herasmo Leite Soares."
+    }
   },
   {
     "verbo": "revogar",

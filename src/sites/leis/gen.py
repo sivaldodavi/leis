@@ -509,6 +509,10 @@ for r in glossario_rows:
     verbo = (r["verbo"] or "").strip()
     termo = busca_verbo.get(verbo.lower(), verbo.split(" / ")[0].lower())
     alvo = q("SELECT * FROM normas WHERE lower(ementa) LIKE ? ORDER BY data DESC LIMIT 1", "%" + termo + "%") if termo else []
+    if not alvo:
+        tipo_fallback = {"requerer / indicar": "indicacao", "homenagear / aplaudir": "mocao"}.get(verbo.lower())
+        if tipo_fallback:
+            alvo = q("SELECT * FROM normas WHERE tipo=? ORDER BY data DESC LIMIT 1", tipo_fallback)
     norma = None
     if alvo:
         n = alvo[0]
