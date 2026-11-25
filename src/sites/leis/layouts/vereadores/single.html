@@ -198,7 +198,7 @@
     var r = el('div','plist-row prop-row');
     var c1 = el('div');
     var a = el('a','plist-id', p.identificacao || ('Proposição ' + p.id));
-    a.href = '/proposicoes/?q=' + encodeURIComponent(p.identificacao || '');
+    a.href = p.slug ? '/proposicoes/' + p.slug + '/' : '/proposicoes/?q=' + encodeURIComponent(p.identificacao || '');
     c1.appendChild(a);
     c1.appendChild(el('span','plist-sub', (p.especie_rotulo || p.tipo || '') + ' · ' + (p.ano_label || '—')));
     if(p.classe_curta){
