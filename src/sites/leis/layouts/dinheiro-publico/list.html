@@ -12,42 +12,30 @@
   </div>
 
   <section style="padding:24px 48px 16px">
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:16px">
       <article class="card">
         <h2 style="margin:0; font-size:19px; font-weight:800">Quanto a Câmara gasta?</h2>
-        <p style="margin:0; font-size:40px; font-weight:800; color:#1E7B4F">R$ {{ if $d }}{{ $d.resumo.total_empenhado }}{{ else }}0,00{{ end }}</p>
+        <p style="margin:0; font-size:30px; font-weight:800; color:#1E7B4F">R$ {{ if $d }}{{ $d.resumo.total_empenhado }}{{ else }}0,00{{ end }}</p>
         <p style="margin:0; font-size:15px; color:#5B5B5B">Total empenhado no ano, por órgão. Fonte: despesas por órgão.</p>
         <a href="#despesas-orgao" style="margin-top:auto; font-weight:700; font-size:15px">Ver por órgão →</a>
       </article>
       <article class="card">
         <h2 style="margin:0; font-size:19px; font-weight:800">Quem recebe dinheiro público?</h2>
-        <p style="margin:0; font-size:40px; font-weight:800; color:#1E7B4F">{{ if $d }}{{ $d.resumo.fornecedores }}{{ else }}0{{ end }} fornecedores</p>
+        <p style="margin:0; font-size:30px; font-weight:800; color:#1E7B4F">{{ if $d }}{{ $d.resumo.fornecedores }}{{ else }}0{{ end }} fornecedores</p>
         <p style="margin:0; font-size:15px; color:#5B5B5B">Fornecedores pagos no período, com CNPJ. Fonte: despesas por fornecedor.</p>
         <a href="#fornecedores" style="margin-top:auto; font-weight:700; font-size:15px">Ver fornecedores →</a>
       </article>
       <article class="card">
-        <h2 style="margin:0; font-size:19px; font-weight:800">Quanto custam as diárias?</h2>
-        <p style="margin:0; font-size:40px; font-weight:800; color:#1E7B4F">R$ {{ if $d }}{{ $d.resumo.diarias_total }}{{ else }}0,00{{ end }}</p>
-        <p style="margin:0; font-size:15px; color:#5B5B5B">Viagens e diárias pagas a vereadores e servidores. Fonte: diárias.</p>
-        <a href="#diarias" style="margin-top:auto; font-weight:700; font-size:15px">Ver diárias →</a>
-      </article>
-      <article class="card">
         <h2 style="margin:0; font-size:19px; font-weight:800">Como a prefeitura compra?</h2>
-        <p style="margin:0; font-size:40px; font-weight:800; color:#1E7B4F">{{ if $d }}{{ $d.resumo.licitacoes }} licitações / {{ $d.resumo.contratos }} contratos{{ else }}0{{ end }}</p>
+        <p style="margin:0; font-size:30px; font-weight:800; color:#1E7B4F">{{ if $d }}{{ $d.resumo.licitacoes }} licitações / {{ $d.resumo.contratos }} contratos{{ else }}0{{ end }}</p>
         <p style="margin:0; font-size:15px; color:#5B5B5B">Licitações e contratos publicados no ano. Fonte: licitações e contratos.</p>
         <a href="#licitacoes" style="margin-top:auto; font-weight:700; font-size:15px">Ver licitações →</a>
       </article>
       <article class="card">
         <h2 style="margin:0; font-size:19px; font-weight:800">Para onde vão as emendas?</h2>
-        <p style="margin:0; font-size:40px; font-weight:800; color:#1E7B4F">{{ if $d }}{{ $d.resumo.emendas }} emendas{{ else }}0{{ end }}</p>
+        <p style="margin:0; font-size:30px; font-weight:800; color:#1E7B4F">{{ if $d }}{{ $d.resumo.emendas }} emendas{{ else }}0{{ end }}</p>
         <p style="margin:0; font-size:15px; color:#5B5B5B">Emendas impositivas (art. 166-A da CF). Fonte: transferências.</p>
         <a href="#emendas" style="margin-top:auto; font-weight:700; font-size:15px">Ver emendas →</a>
-      </article>
-      <article class="card">
-        <h2 style="margin:0; font-size:19px; font-weight:800">Quanto custa o quadro de pessoal?</h2>
-        <p style="margin:0; font-size:40px; font-weight:800; color:#1E7B4F">dados indisponíveis</p>
-        <p style="margin:0; font-size:15px; color:#5B5B5B">O endpoint de pessoal da Câmara retornou erro no período consultado. Fonte: pessoal (indisponível).</p>
-        <a href="http://177.136.250.170:5656/SCPIWEB_CMDEPINHEIRO/versaoJson/DadosAbertos/" style="margin-top:auto; font-weight:700; font-size:15px" target="_blank" rel="noopener">Ver portal →</a>
       </article>
     </div>
   </section>
