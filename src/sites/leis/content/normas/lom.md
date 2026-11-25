@@ -22,7 +22,7 @@ natureza_desc: "Afeta a rotina, direitos ou deveres de moradores, comerciantes o
 
 ## Dispositivos
 
-<a id="disp-2346"></a>
+<a id="disp-2626"></a>
 ### Art. 1
 
 O Município de Pinheiro, em união indissolúvel ao Estado do Maranhão e à República Federativa do Brasil, constituído dentro do Estado Democrático de Direito, em esfera de Governo local, objetiva o seu desenvolvimento com a construção de uma sociedade livre, justa e solidária, exercendo o seu poder por decisão dos Munícipes, pelos seus representantes eleitos ou diretamente, nos termos desta Lei Orgânica da Constituição Estadual e Constituição Federal.
@@ -39,31 +39,31 @@ O Município de Pinheiro, em união indissolúvel ao Estado do Maranhão e à Re
 </details>
 
 
-<a id="disp-2347"></a>
+<a id="disp-2627"></a>
 ### Art. 2
 
 O território do Município poderá ser dividido em distritos, criados, organizados suprimidos ou fundidos por Lei Municipal, observada a Legislação Estadual, após a consulta plebiscitária e o disposto nesta Lei Orgânica. (NR)
 
 
-<a id="disp-2348"></a>
+<a id="disp-2628"></a>
 ### Art. 3
 
 A sede do Município dá-lhe o nome e tem a categoria de cidade enquanto a sede do Distrito tem a categoria de vila.
 
 
-<a id="disp-2349"></a>
+<a id="disp-2629"></a>
 ### Art. 4
 
 O Município objetivando integrar a organização, planejamento e a execução de funções públicas de interesse regional comum, poderá associar-se a outros Municípios da região e ao Estado.
 
 
-<a id="disp-2350"></a>
+<a id="disp-2630"></a>
 ### Art. 5
 
 São símbolos do Município o Brasão, a Bandeira e o Hino, representativos de sua cultura e história.
 
 
-<a id="disp-2351"></a>
+<a id="disp-2631"></a>
 ### Art. 6
 
 Constituem bens do Município todas as coisas móveis e imóveis, direitos e ações que a qualquer título lhe pertençam.
@@ -71,7 +71,7 @@ Constituem bens do Município todas as coisas móveis e imóveis, direitos e aç
 **Parágrafo Único.** O Município tem o direito à participação no resultado da exploração de petróleo ou gás natural, de recursos hídricos para fins de geração de energia elétrica e de outros recursos minerais de seu Território.
 
 
-<a id="disp-2352"></a>
+<a id="disp-2632"></a>
 ### Art. 7
 
 Pertencem ao Patrimônio Municipal as terras devolutas que se localizem dentro do raio de 6 km, contados do ponto central da sede do Município.
@@ -79,19 +79,19 @@ Pertencem ao Patrimônio Municipal as terras devolutas que se localizem dentro d
 **Parágrafo Único.** Integram, igualmente o Patrimônio Municipal, as terras devolutas localizadas dentro do raio de 6 km, contados do ponto central dos distritos ou povoados, que possuírem no mínimo 3 (três) serviços públicos. (NR)
 
 
-<a id="disp-2353"></a>
+<a id="disp-2633"></a>
 ### Art. 8
 
 Cabe ao Prefeito a administração dos bens municipais, respeitada a competência da Câmara quanto àqueles utilizados nos seus serviços.
 
 
-<a id="disp-2354"></a>
+<a id="disp-2634"></a>
 ### Art. 9
 
 Todos os bens municipais deverão ser cadastrados, com a identificação respectiva, numerando-se os móveis segundo o que for estabelecido em Decreto regulamentador.
 
 
-<a id="disp-2355"></a>
+<a id="disp-2635"></a>
 ### Art. 10
 
 A alienação dos bens municipais subordinada à existência de interesse público devidamente justificado será sempre precedida de avaliação e obedecerá às seguintes normas:
@@ -117,7 +117,7 @@ A alienação dos bens municipais subordinada à existência de interesse públi
 **§ 2º.** A venda aos proprietários de imóveis limítrofes de áreas urbanas remanescentes e inaproveitáveis para edificação, resultantes de obras públicas dependerá apenas de prévia avaliação e autorização legislativa. As áreas resultantes de modificação de alinhamento serão alienadas nas mesmas condições quer sejam aproveitáveis ou não.
 
 
-<a id="disp-2356"></a>
+<a id="disp-2636"></a>
 ### Art. 11
 
 O uso de bens municipais por terceiros poderá ser feito mediante concessão, permissão ou autorização conforme o caso, e o interesse público o exigir.
@@ -129,10 +129,16 @@ O uso de bens municipais por terceiros poderá ser feito mediante concessão, pe
 **§ 3º.** A permissão, que poderá incidir sobre qualquer bem público, será feita por Decreto, para atividades ou usos específicos e transitórios, pelo prazo máximo de sessenta dias.
 
 
-<a id="disp-2357"></a>
+<a id="disp-2637"></a>
 ### Art. 12
 
-Os projetos de leis sobre alienação permuta ou empréstimos de imóveis são da iniciativa do Prefeito. Artigo. 13 Lei Municipal disporá sobre a Concessão de Direito Real de uso obedecendo aos seguintes preceitos. (NR)
+Os projetos de leis sobre alienação permuta ou empréstimos de imóveis são da iniciativa do Prefeito.
+
+
+<a id="disp-2638"></a>
+### Art. 13
+
+Lei Municipal disporá sobre a Concessão de Direito Real de uso obedecendo aos seguintes preceitos. (NR)
 
 **I.** prazo de concessão; (NR)
 
@@ -145,7 +151,7 @@ Os projetos de leis sobre alienação permuta ou empréstimos de imóveis são d
 **Parágrafo Único.** vedação de concessão de direito real de uso de mais de 2 (dois) terrenos ou áreas de terras do Município para uma só pessoa. (AC)
 
 
-<a id="disp-2358"></a>
+<a id="disp-2639"></a>
 ### Art. 14
 
 Os bens pertencentes ao Patrimônio Público Municipal não poderão ser alienados ou cedidos, a qualquer título, dentro do período que compreenda 6 (seis) meses antes das eleições municipais até o término do mandato do Prefeito Municipal, em exercício.(NR)
@@ -153,7 +159,7 @@ Os bens pertencentes ao Patrimônio Público Municipal não poderão ser alienad
 **Parágrafo Único.** Salvo nos casos de interesse público, com prévia autorização legislativa.
 
 
-<a id="disp-2359"></a>
+<a id="disp-2640"></a>
 ### Art. 15
 
 Compete ao Município:
@@ -245,13 +251,13 @@ Compete ao Município:
 **Parágrafo Único.** compete privativamente ao Município o disposto nos Incisos: I, II, III IV, V, VI, VII,
 
 
-<a id="disp-2360"></a>
+<a id="disp-2641"></a>
 ### Art. 16
 
 Além das competências previstas no Artigo anterior o Município atuará em cooperação com a União e o Estado para o exercício das competências enumeradas no Artigo 23 da Constituição Federal.
 
 
-<a id="disp-2361"></a>
+<a id="disp-2642"></a>
 ### Art. 17
 
 Compete ao Município instituir os seguintes tributos:
@@ -271,7 +277,7 @@ Compete ao Município instituir os seguintes tributos:
 **III.** contribuição de melhoria, decorrente de obras públicas.
 
 
-<a id="disp-2362"></a>
+<a id="disp-2643"></a>
 ### Art. 18
 
 A administração tributária é atividade vinculada, essencial ao Município e deverá estar dotada de recursos humanos e materiais necessários ao fiel exercício de sua atribuições, principalmente no que se refere a:
@@ -285,7 +291,7 @@ A administração tributária é atividade vinculada, essencial ao Município e 
 **IV.** Inscrição dos inadimplentes em dívida ativa e respectiva cobrança amigável ou encaminhamento para cobrança judicial.
 
 
-<a id="disp-2363"></a>
+<a id="disp-2644"></a>
 ### Art. 19
 
 O Município deverá criar colegiado constituído paritariamente por servidores designados pelo Prefeito Municipal e contribuintes indicados por entidades representativas de categorias econômicas e de profissionais, com a função de avaliar e aprovar preços, tarifas, alíquotas e valores dos serviços públicos e tributos municipais.
@@ -293,7 +299,7 @@ O Município deverá criar colegiado constituído paritariamente por servidores 
 **Parágrafo Único.** Os recursos oriundos de reclamações sobre lançamentos e demais questões tributárias serão decididas pelo Prefeito Municipal.
 
 
-<a id="disp-2364"></a>
+<a id="disp-2645"></a>
 ### Art. 20
 
 O Prefeito Municipal, em conjunto com o colegiado constante do Artigo 19, desta Lei, promoverá, periodicamente, a atualização da Base de Cálculo dos tributos Municipais.
@@ -311,31 +317,31 @@ O Prefeito Municipal, em conjunto com o colegiado constante do Artigo 19, desta 
 **II.** quando a variação de custos for superior àqueles índices, a atualização poderá ser feita mensalmente até esse limite, ficando com percentual restante para ser atualizado por meio de Lei que deverá estar em vigor antes do início do exercício subseqüente.
 
 
-<a id="disp-2365"></a>
+<a id="disp-2646"></a>
 ### Art. 21
 
 A concessão de isenção e de anistia de tributos municipais dependerá de autorização legislativa, aprovada por maioria de dois terços dos membros da Câmara Municipal.
 
 
-<a id="disp-2366"></a>
+<a id="disp-2647"></a>
 ### Art. 22
 
 A remissão de créditos tributários somente poderá ocorrer nos casos de calamidade pública ou notória pobreza do contribuinte, devendo a lei que autoriza ser aprovada por maioria de dois terços dos membros da Câmara Municipal.
 
 
-<a id="disp-2367"></a>
+<a id="disp-2648"></a>
 ### Art. 23
 
 A concessão de isenção, anistia ou moratória não gera direito adquirido e será revogada ex- offício, sempre que se apure que o beneficiário não satisfazia ou deixou de satisfazer as condições, não cumpria ou deixou de cumprir os requisitos para sua concessão.
 
 
-<a id="disp-2368"></a>
+<a id="disp-2649"></a>
 ### Art. 24
 
 É de responsabilidade do órgão competente da Prefeitura Municipal a inscrição em dívida ativa dos créditos provenientes de impostos, taxas, contribuições de melhoria e multas de qualquer natureza, decorrentes de infrações à legislação tributária com prazo de pagamento fixado pela legislação ou por decisão proferida em processo regular de fiscalização.
 
 
-<a id="disp-2369"></a>
+<a id="disp-2650"></a>
 ### Art. 25
 
 Ocorrendo a decadência do direito de contribuir o crédito tributário ou a prescrição da ação de cobrá-la, abrir-se-á inquérito administrativo para apurar as responsabilidades, na forma da lei.
@@ -343,7 +349,7 @@ Ocorrendo a decadência do direito de contribuir o crédito tributário ou a pre
 **Parágrafo Único.** A autoridade municipal, qualquer que seja seu cargo, emprego ou função, e independente do vínculo que possuir com o Município, responderá civil, criminal e administrativamente pela prescrição ou decadência ocorrida sob sua responsabilidade, cumprindo-lhe indenizar o Município do valor dos créditos prescritos ou não lançados.
 
 
-<a id="disp-2370"></a>
+<a id="disp-2651"></a>
 ### Art. 26
 
 Para obter o ressarcimento da prestação de serviços de natureza comercial ou industrial ou de sua atuação na organização e exploração de atividades econômicas, o Município poderá cobrar preços públicos.
@@ -351,13 +357,13 @@ Para obter o ressarcimento da prestação de serviços de natureza comercial ou 
 **Parágrafo Único.** Os preços devidos pela utilização de bens e serviços municipais deverão ser fixados de modo a cobrir os custos dos respectivos serviços e serem reajustados, quando se tornarem deficitários.
 
 
-<a id="disp-2371"></a>
+<a id="disp-2652"></a>
 ### Art. 27
 
 Lei Municipal estabelecerá outros critérios para fixação de preços.
 
 
-<a id="disp-2372"></a>
+<a id="disp-2653"></a>
 ### Art. 28
 
 O Governo Municipal é constituído pelos Poderes Legislativo e Executivo, independentes e harmônicos entre si.
@@ -365,7 +371,7 @@ O Governo Municipal é constituído pelos Poderes Legislativo e Executivo, indep
 **Parágrafo Único.** É vedada aos Poderes Municipais a delegação recíproca de atribuições, salvo nos casos previstos nesta Lei Orgânica.
 
 
-<a id="disp-2373"></a>
+<a id="disp-2654"></a>
 ### Art. 29
 
 O Poder Legislativo é exercido pela Câmara Municipal, composta de Vereadores, eleitos para cada legislatura entre cidadãos maiores de dezoito anos, no exercício dos direitos políticos, pelo voto direto e secreto.
@@ -385,7 +391,7 @@ O Poder Legislativo é exercido pela Câmara Municipal, composta de Vereadores, 
 **II.** a Mesa da Câmara enviará ao Tribunal Regional Eleitoral, logo após a sua edição, cópia da Emenda de que trata o inciso anterior. (Ac. Em. LOM. 025-07/10/2011)
 
 
-<a id="disp-2374"></a>
+<a id="disp-2655"></a>
 ### Art. 30
 
 Salvo disposição em contrário desta Lei, a discussão e votação de matéria constante da Ordem do Dia só poderá ser efetuada com a presença da maioria absoluta dos membros da Câmara. (NR)
@@ -453,7 +459,7 @@ Salvo disposição em contrário desta Lei, a discussão e votação de matéria
 **VII.** Regimento Interno (AC. Em. LOM nº 024 - 16/07/2008)
 
 
-<a id="disp-2375"></a>
+<a id="disp-2656"></a>
 ### Art. 31
 
 Os Vereadores gozam de inviolabilidade por suas opiniões, palavras e votos no exercício do mandato, e na circunscrição do Município.
@@ -465,19 +471,19 @@ Os Vereadores gozam de inviolabilidade por suas opiniões, palavras e votos no e
 **§ 3º.** Aplicam-se ao Vereador as demais regras da Constituição Federal, não inscritas nesta Lei Orgânica, sobre sistema eleitoral, inviolabilidade, remuneração, perda de mandato, impedimento e incorporação nas Forças Armadas. (NR)
 
 
-<a id="disp-2376"></a>
+<a id="disp-2657"></a>
 ### Art. 32
 
 Os Vereadores não serão obrigados a testemunhar, perante a Câmara, sobre informações recebidas ou prestadas em razão do exercício do mandato, nem sobre as pessoas que lhes confiaram ou deles receberam informações.
 
 
-<a id="disp-2377"></a>
+<a id="disp-2658"></a>
 ### Art. 33
 
 É incompatível com o decoro parlamentar, além dos casos definidos no Regimento Interno, o abuso das prerrogativas asseguradas aos Vereadores ou a percepção, por estes, de vantagens indevidas.
 
 
-<a id="disp-2378"></a>
+<a id="disp-2659"></a>
 ### Art. 34
 
 Os Vereadores não poderão:
@@ -499,7 +505,7 @@ Os Vereadores não poderão:
 **d.** ser titulares de mais de um cargo ou mandato público eletivo.
 
 
-<a id="disp-2379"></a>
+<a id="disp-2660"></a>
 ### Art. 35
 
 Perderá o mandato o Vereador:
@@ -529,7 +535,7 @@ Perderá o mandato o Vereador:
 **§ 3º.** Nos casos dos Incisos III, IV,V e VIII, a perda do mandato será declarada pela Câmara, ex-offício, ou mediante provocação de qualquer Vereador de partido político representado na Câmara, assegurada ampla defesa.
 
 
-<a id="disp-2380"></a>
+<a id="disp-2661"></a>
 ### Art. 36
 
 O exercício de Vereança por servidor público se dará de acordo com as determinações da Constituição Federal.
@@ -537,13 +543,13 @@ O exercício de Vereança por servidor público se dará de acordo com as determ
 **Parágrafo Único.** O Vereador ocupante de cargo, emprego ou função pública municipal, é inamovível ex-offício pelo tempo de duração de seu mandato.
 
 
-<a id="disp-2381"></a>
+<a id="disp-2662"></a>
 ### Art. 37
 
 Não perderá o mandato o Vereador que estiver privado de comparecer às Sessões da Câmara em decorrência de processo criminal em curso. (AC)
 
 
-<a id="disp-2382"></a>
+<a id="disp-2663"></a>
 ### Art. 38
 
 No caso de vaga, licença por mais de 30 (trinta) dias ou investidura no cargo de Secretário Municipal ou equivalente, far-se-á convocação do suplente pelo Presidente da Câmara.
@@ -555,7 +561,7 @@ No caso de vaga, licença por mais de 30 (trinta) dias ou investidura no cargo d
 **§ 3º.** Enquanto a vaga a que se refere o Parágrafo anterior não for preenchida, calcular-se-á o quorum em função dos Vereadores remanescentes.
 
 
-<a id="disp-2383"></a>
+<a id="disp-2664"></a>
 ### Art. 39
 
 A Câmara Municipal reunir-se-á em sessão preparatória a partir de 1º de janeiro do primeiro ano da legislatura, para a posse de seus membros.
@@ -569,7 +575,7 @@ A Câmara Municipal reunir-se-á em sessão preparatória a partir de 1º de jan
 **§ 4º.** No ato da posse, os Vereadores deverão desincompatibilizar-se e fazer declaração de seus bens, repetida quando do término do mandato, sendo ambas transcritas em livro próprio, resumidas em ata e divulgadas para o conhecimento público.
 
 
-<a id="disp-2384"></a>
+<a id="disp-2665"></a>
 ### Art. 40
 
 Cabe à Câmara Municipal, com a sanção do Prefeito, legislar sobre as matérias de competência do Município, especialmente no que se refere ao seguinte:
@@ -637,7 +643,7 @@ Cabe à Câmara Municipal, com a sanção do Prefeito, legislar sobre as matéri
 **XVI.** organização e prestação de serviços públicos.
 
 
-<a id="disp-2385"></a>
+<a id="disp-2666"></a>
 ### Art. 41
 
 Compete à Câmara Municipal, privativamente, entre outras, as seguintes atribuições:
@@ -693,7 +699,7 @@ Compete à Câmara Municipal, privativamente, entre outras, as seguintes atribui
 **§ 2º.** O não atendimento, em 15 (quinze) dias úteis por parte do Secretariado Municipal, das convocações previstas no Inciso XXII, constituem infrações político-administrativas de responsabilidade do Prefeito, sancionável com as punições previstas na Legislação Federal pertinente.
 
 
-<a id="disp-2386"></a>
+<a id="disp-2667"></a>
 ### Art. 42
 
 Imediatamente após a posse, os Vereadores reunir-se-ão sob a Presidência do Vereador mais votado ou, na hipótese de empate, do mais idoso entre os presentes e, havendo maioria absoluta dos membros da Câmara, elegerão os componentes da Mesa, que ficarão automaticamente empossados.
@@ -717,7 +723,7 @@ Imediatamente após a posse, os Vereadores reunir-se-ão sob a Presidência do V
 **§ 5º.** Qualquer componente da Mesa poderá ser destituído, pelo voto da maioria absoluta dos membros da Câmara Municipal, quando faltoso, omisso ou ineficiente no desempenho de suas atribuições, devendo o Regimento Interno da Câmara Municipal dispor sobre o processo de destituição e sobre a substituição do membro destituído.
 
 
-<a id="disp-2387"></a>
+<a id="disp-2668"></a>
 ### Art. 43
 
 A Câmara Municipal reunir-se-á anualmente, de 02 de fevereiro a 17 de julho e de 01 de agosto a 22 de dezembro. (Nov. Red. EM. LOM nº 022 04/04/2006) ‘
@@ -729,19 +735,19 @@ A Câmara Municipal reunir-se-á anualmente, de 02 de fevereiro a 17 de julho e 
 **§ 3º.** É vedado o pagamento de parcela indenizatória em razão da Convocação de Sessão Extraordinária. (AC. EM. LOM nº. 022/04/2006)
 
 
-<a id="disp-2388"></a>
+<a id="disp-2669"></a>
 ### Art. 44
 
 As sessões da Câmara Municipal deverão ser realizadas em recinto destinado ao seu funcionamento, considerando-se nulas as que se realizarem fora dele, salvo nos casos previstos no Regimento Interno da Câmara.
 
 
-<a id="disp-2389"></a>
+<a id="disp-2670"></a>
 ### Art. 45
 
 As Sessões da Câmara serão públicas, salvo deliberação em contrário, tomada pela maioria absoluta de seus membros, quando ocorrer motivo relevante de preservação do decoro parlamentar.
 
 
-<a id="disp-2390"></a>
+<a id="disp-2671"></a>
 ### Art. 46
 
 As sessões somente poderão ser abertas pelo Presidente da Câmara ou por outro membro da Mesa com a presença mínima de um terço dos seus membros.
@@ -749,7 +755,7 @@ As sessões somente poderão ser abertas pelo Presidente da Câmara ou por outro
 **Parágrafo Único.** Considerar-se-á presente à Sessão o Vereador que assinar o livro ou as folhas de presença até o início da ORDEM DO DIA e participar das votações.
 
 
-<a id="disp-2391"></a>
+<a id="disp-2672"></a>
 ### Art. 47
 
 A convocação extraordinária da Câmara dar-se-á:
@@ -763,7 +769,7 @@ A convocação extraordinária da Câmara dar-se-á:
 **Parágrafo Único.** Na sessão legislativa extraordinária, a Câmara Municipal deliberará somente sobre a matéria para a qual foi convocada.
 
 
-<a id="disp-2392"></a>
+<a id="disp-2673"></a>
 ### Art. 48
 
 Compete à Mesa da Câmara Municipal, além de outras atribuições estipuladas no Regimento Interno:
@@ -779,7 +785,7 @@ Compete à Mesa da Câmara Municipal, além de outras atribuições estipuladas 
 **Parágrafo Único.** A Mesa decidirá sempre por maioria de seus membros.
 
 
-<a id="disp-2393"></a>
+<a id="disp-2674"></a>
 ### Art. 49
 
 A Câmara Municipal terá comissões permanentes e especiais, constituídas na forma e com as atribuições definidas no Regimento Interno ou no ato de que resultar a sua criação.
@@ -805,13 +811,13 @@ A Câmara Municipal terá comissões permanentes e especiais, constituídas na f
 **VIII.** fiscalizar, inclusive efetuando diligências vistorias e levantamentos “IN LOCO” os atos da administração direta e indireta, nos termos da legislação pertinente em especial para verificar regularidade, a eficiência e a eficácia dos seus órgãos no cumprimento dos objetivos institucionais, recorrendo ao auxílio do Tribunal de Contas, quando, for o caso.(AC)
 
 
-<a id="disp-2394"></a>
+<a id="disp-2675"></a>
 ### Art. 50
 
 As comissões especiais de inquérito, que terão poderes de investigação próprios das autoridades judiciais, além de outros previstos no Regimento Interno, serão criadas pela Câmara mediante requerimento de um terço de seus membros, para apuração de fato determinado e por prazo certo, sendo suas conclusões, se for o caso, encaminhadas ao Ministério Público para que este promova a responsabilidade civil ou criminal dos infratores.
 
 
-<a id="disp-2395"></a>
+<a id="disp-2676"></a>
 ### Art. 51
 
 Qualquer entidade da sociedade civil poderá solicitar ao Presidente da Câmara que lhe permita emitir conceitos de opiniões, junto às comissões, sobre projetos que neles encontram para estudo.
@@ -819,7 +825,7 @@ Qualquer entidade da sociedade civil poderá solicitar ao Presidente da Câmara 
 **Parágrafo Único.** O Presidente da Câmara enviará o pedido ao Presidente da respectiva comissão a quem caberá deferir ou indeferir o requerimento, indicando, se for o caso, dia e hora para o pronunciamento e seu tempo de duração.
 
 
-<a id="disp-2396"></a>
+<a id="disp-2677"></a>
 ### Art. 52
 
 Compete ao Presidente da Câmara, além de outras atribuições estipuladas no Regimento Interno:
@@ -853,7 +859,7 @@ Compete ao Presidente da Câmara, além de outras atribuições estipuladas no R
 **XIII.** administrar os serviços da Câmara Municipal, fazendo lavrar os atos pertinentes a essa área de gestão.
 
 
-<a id="disp-2397"></a>
+<a id="disp-2678"></a>
 ### Art. 53
 
 O Presidente da Câmara ou quem o substituir, somente manifestará o seu voto nas seguintes hipóteses:
@@ -865,7 +871,7 @@ O Presidente da Câmara ou quem o substituir, somente manifestará o seu voto na
 **III.** quando ocorrer empate em qualquer votação no Plenário.
 
 
-<a id="disp-2398"></a>
+<a id="disp-2679"></a>
 ### Art. 54
 
 Ao Vice-Presidente compete além das atribuições contidas no Regimento Interno, as seguintes:
@@ -877,7 +883,7 @@ Ao Vice-Presidente compete além das atribuições contidas no Regimento Interno
 **III.** promulgar e fazer publicar, obrigatoriamente, as Leis quando o Prefeito Municipal e o Presidente da Câmara, sucessivamente, tenham deixado de fazê-lo, sob pena de perda do mandato de membros da Mesa. DO SECRETÁRIO E DO 2º SECRETÁRIO DA MESA DIRETORA
 
 
-<a id="disp-2399"></a>
+<a id="disp-2680"></a>
 ### Art. 55
 
 Ao Secretário compete além das atribuições contidas no Regimento Interno, as seguintes:
@@ -897,7 +903,7 @@ Ao Secretário compete além das atribuições contidas no Regimento Interno, as
 **Parágrafo Único.** Ao 2º Secretário da Mesa Diretora, além das atribuições constantes do Regimento Interno, compete substituir o Secretário da Mesa Diretora em seus impedimentos.
 
 
-<a id="disp-2400"></a>
+<a id="disp-2681"></a>
 ### Art. 56
 
 O Processo Legislativo Municipal, compreende a elaboração de:
@@ -915,7 +921,7 @@ O Processo Legislativo Municipal, compreende a elaboração de:
 **VI.** resoluções.
 
 
-<a id="disp-2401"></a>
+<a id="disp-2682"></a>
 ### Art. 57
 
 A Lei Orgânica Municipal poderá ser emendada mediante proposta:
@@ -931,13 +937,13 @@ A Lei Orgânica Municipal poderá ser emendada mediante proposta:
 **§ 2º.** A emenda à Lei Orgânica Municipal será promulgada pela Mesa da Câmara com o respectivo número de ordem.
 
 
-<a id="disp-2402"></a>
+<a id="disp-2683"></a>
 ### Art. 58
 
 A iniciativa das leis complementares e ordinárias cabe a qualquer Vereador ou comissão da Câmara ao Prefeito Municipal e aos cidadãos, na forma e nos casos previstos nesta Lei Orgânica.
 
 
-<a id="disp-2403"></a>
+<a id="disp-2684"></a>
 ### Art. 59
 
 Compete privativamente ao Prefeito Municipal a iniciativa das leis que versam sobre:
@@ -951,7 +957,7 @@ Compete privativamente ao Prefeito Municipal a iniciativa das leis que versam so
 **IV.** criação, estruturação e atribuições dos órgãos da Administração direta do Município.
 
 
-<a id="disp-2404"></a>
+<a id="disp-2685"></a>
 ### Art. 60
 
 A iniciativa popular será exercida pela apresentação à Câmara Municipal, de Projeto de Lei subscrito por, no mínimo 5% (cinco por cento) dos eleitores inscritos no Município, contendo assuntos de interesse específico, do Município da cidade ou de bairros.
@@ -963,7 +969,7 @@ A iniciativa popular será exercida pela apresentação à Câmara Municipal, de
 **§ 3º.** Caberá ao Regimento Interno da Câmara assegurar e dispor sobre o modo pelo qual os projetos de iniciativa popular serão defendidos, na Tribuna da Câmara.
 
 
-<a id="disp-2405"></a>
+<a id="disp-2686"></a>
 ### Art. 61
 
 São objetos de leis complementares as seguintes matérias:
@@ -985,7 +991,7 @@ São objetos de leis complementares as seguintes matérias:
 **Parágrafo Único.** Revogado
 
 
-<a id="disp-2406"></a>
+<a id="disp-2687"></a>
 ### Art. 62
 
 O Prefeito Municipal, em caso de calamidade pública poderá adotar a Medida Provisória, com força de lei para abertura de crédito extraordinário, devendo submetê-la de imediato à Câmara Municipal, que estando em recesso será convocada extraordinariamente para se reunir no prazo de 5 (cinco) dias.
@@ -993,7 +999,7 @@ O Prefeito Municipal, em caso de calamidade pública poderá adotar a Medida Pro
 **Parágrafo Único.** A Medida Provisória perderá a eficácia, desde a edição, se não for convertida em lei no prazo de 30 (trinta) dias, a partir de sua publicação, devendo a Câmara Municipal disciplinar as relações jurídicas dela decorrentes.
 
 
-<a id="disp-2407"></a>
+<a id="disp-2688"></a>
 ### Art. 63
 
 Não será admitido aumento de despesa prevista:
@@ -1003,7 +1009,7 @@ Não será admitido aumento de despesa prevista:
 **II.** nos projetos sobre organização dos serviços administrativos da Câmara Municipal.
 
 
-<a id="disp-2408"></a>
+<a id="disp-2689"></a>
 ### Art. 64
 
 O Prefeito Municipal poderá solicitar urgência, para apreciação de projetos de sua iniciativa, considerados relevantes, os quais deverão ser apreciados no prazo de 30 (trinta) dias.
@@ -1013,7 +1019,7 @@ O Prefeito Municipal poderá solicitar urgência, para apreciação de projetos 
 **§ 2º.** O prazo referido neste Artigo não ocorre no período de recesso da Câmara e nem se aplica aos projetos de codificação.
 
 
-<a id="disp-2409"></a>
+<a id="disp-2690"></a>
 ### Art. 65
 
 O Projeto de Lei aprovado pela Câmara será no prazo de 10 (dez) dias úteis, enviado pelo seu Presidente ao Prefeito Municipal que, concordando o sancionará no prazo de 15 (quinze) dias úteis.
@@ -1037,31 +1043,31 @@ O Projeto de Lei aprovado pela Câmara será no prazo de 10 (dez) dias úteis, e
 **§ 9º.** A manutenção do veto não restaura matéria suprimida ou modificada pela Câmara.
 
 
-<a id="disp-2410"></a>
+<a id="disp-2691"></a>
 ### Art. 66
 
 A matéria constante de Projeto de Lei rejeitado somente poderá constituir objeto de novo projeto, na mesma sessão legislativa, mediante proposta da maioria absoluta dos membros da Câmara.
 
 
-<a id="disp-2411"></a>
+<a id="disp-2692"></a>
 ### Art. 67
 
 A Resolução destina-se a regular matéria político-administrativa da Câmara, de sua competência exclusiva não dependendo de sanção ou veto do Prefeito Municipal.
 
 
-<a id="disp-2412"></a>
+<a id="disp-2693"></a>
 ### Art. 68
 
 O Decreto Legislativo destina-se a regular matéria de competência exclusiva da Câmara que produza efeitos externos, não dependendo de sanção ou veto do Prefeito Municipal.
 
 
-<a id="disp-2413"></a>
+<a id="disp-2694"></a>
 ### Art. 69
 
 O processo legislativo das Resoluções e dos Decretos Legislativos se dará conforme determinado no Regimento Interno da Câmara, observado, no que couber, o disposto nesta Lei Orgânica.
 
 
-<a id="disp-2414"></a>
+<a id="disp-2695"></a>
 ### Art. 70
 
 O cidadão que desejar poderá usar da palavra durante a primeira discussão dos Projetos de Lei, para opinar sobre eles, desde que se inscreva em lista especial na secretaria da Câmara, antes de iniciada a sessão.
@@ -1073,19 +1079,19 @@ O cidadão que desejar poderá usar da palavra durante a primeira discussão dos
 **§ 3º.** O Regimento Interno da Câmara estabelecerá as condições e requisitos para o uso da palavra pelos cidadãos.
 
 
-<a id="disp-2415"></a>
+<a id="disp-2696"></a>
 ### Art. 71
 
 O Poder Executivo é exercido pelo Prefeito, com funções políticas, executivas e administrativas.
 
 
-<a id="disp-2416"></a>
+<a id="disp-2697"></a>
 ### Art. 72
 
 O Prefeito e o Vice-Prefeito serão eleitos simultaneamente para cada legislatura de quatro anos, por eleição direta, em sufrágio universal e secreto, dentre brasileiros maiores de vinte um anos, e no pleno exercício de seus direitos políticos, permitida a reeleição por igual período. (NR)
 
 
-<a id="disp-2417"></a>
+<a id="disp-2698"></a>
 ### Art. 73
 
 O Prefeito e o Vice-Prefeito tomarão posse no dia 1º de janeiro do ano subseqüente à eleição em sessão solene da Câmara Municipal ou, se esta não estiver reunida, perante a autoridade Judiciária competente, ocasião em que prestarão o seguinte compromisso: (NR) (Redação dada pela Emenda LOM 017 de 11/12/2000).
@@ -1099,7 +1105,7 @@ O Prefeito e o Vice-Prefeito tomarão posse no dia 1º de janeiro do ano subseq�
 **§ 4º.** O Vice-Prefeito, além de outras atribuições que lhe forem conferidas pela legislação, auxiliará o Prefeito sempre que por ele convocado para missões especiais, inclusive para o exercício da função de Secretário Municipal, o sucederá no caso de vacância do cargo e o substituirá automaticamente nos casos de licença e ausência do Município por qualquer período ou motivo, conforme dispuser a Lei.
 
 
-<a id="disp-2418"></a>
+<a id="disp-2699"></a>
 ### Art. 74
 
 Em caso de impedimento do Prefeito e do Vice- Prefeito, ou vacância dos respectivos cargos, será chamado, ao exercício do cargo, o Presidente da Câmara Municipal.
@@ -1107,7 +1113,7 @@ Em caso de impedimento do Prefeito e do Vice- Prefeito, ou vacância dos respect
 **Parágrafo Único.** A recusa do Presidente em assumir a Prefeitura implicará em perda de mandato que ocupa na Mesa Diretora.
 
 
-<a id="disp-2419"></a>
+<a id="disp-2700"></a>
 ### Art. 75
 
 O Prefeito e o Vice-Prefeito não poderão, desde a posse sob pena de perda do mandato.
@@ -1127,7 +1133,7 @@ O Prefeito e o Vice-Prefeito não poderão, desde a posse sob pena de perda do m
 **Parágrafo Único.** a proibição constante do Caput deste artigo não se estenderá a Vice-Prefeito, para o exercício do cargo de Secretario Municipal. (AC)
 
 
-<a id="disp-2420"></a>
+<a id="disp-2701"></a>
 ### Art. 76
 
 O Prefeito e o Vice-Prefeito não poderão ausentar-se do Município, sem licença da Câmara Municipal, sob pena de perda do mandato, salvo por período inferior a 15 (quinze) dias.
@@ -1147,7 +1153,7 @@ O Prefeito e o Vice-Prefeito não poderão ausentar-se do Município, sem licen�
 **§ 3º.** no caso deste artigo e de ausência, em missão oficial o Prefeito licenciado fará jus ao seu subsídio. (NR)
 
 
-<a id="disp-2421"></a>
+<a id="disp-2702"></a>
 ### Art. 77
 
 o Prefeito e o Vice- Prefeito serão processados e julgados: (NR)
@@ -1161,7 +1167,7 @@ o Prefeito e o Vice- Prefeito serão processados e julgados: (NR)
 **§ 2º.** Se o Plenário entender que as acusações são procedentes determinará o envio, à Procuradoria Geral da Justiça, do quer for apurado, para as providências; caso contrário determinará o arquivamento, fazendo publicar as conclusões de ambas as decisões.
 
 
-<a id="disp-2422"></a>
+<a id="disp-2703"></a>
 ### Art. 78
 
 O Prefeito perderá o mandato por cassação nos termos do inciso II do artigo 77, quando infringir o estabelecido no artigo 75 ou em legislação pertinente, assim como, pela prática de infrações político-administrativas dispostas neste artigo. (NR)
@@ -1197,7 +1203,7 @@ O Prefeito perderá o mandato por cassação nos termos do inciso II do artigo 7
 **§ 4º.** Revogado.
 
 
-<a id="disp-2423"></a>
+<a id="disp-2704"></a>
 ### Art. 79
 
 Compete privativamente ao prefeito:
@@ -1257,25 +1263,25 @@ Compete privativamente ao prefeito:
 **§ 2º.** O Prefeito Municipal poderá, a qualquer momento, segundo seu único critério, avocar a si a competência delegada.
 
 
-<a id="disp-2424"></a>
+<a id="disp-2705"></a>
 ### Art. 80
 
 O Prefeito Municipal, por intermédio de ato administrativo estabelecerá as atribuições dos seus auxiliares diretos, definindo-lhes competência, deveres e responsabilidades.
 
 
-<a id="disp-2425"></a>
+<a id="disp-2706"></a>
 ### Art. 81
 
 Os Auxiliares direto do Prefeito Municipal são solidariamente responsáveis, junto com este, pelos atos que assinarem ordenarem ou praticarem.
 
 
-<a id="disp-2426"></a>
+<a id="disp-2707"></a>
 ### Art. 82
 
 Os Auxiliares direto do Prefeito Municipal deverão fazer declaração de bens no ato de sua posse em cargo ou função pública municipal e quando de sua exoneração.
 
 
-<a id="disp-2427"></a>
+<a id="disp-2708"></a>
 ### Art. 83
 
 Os Secretários Municipais serão escolhidos dentre brasileiros maiores de dezoito anos e no exercício dos direitos políticos.
@@ -1293,7 +1299,7 @@ Os Secretários Municipais serão escolhidos dentre brasileiros maiores de dezoi
 **V.** praticar os atos pertinentes às atribuições que lhe forem outorgadas ou delegadas pelo Prefeito.
 
 
-<a id="disp-2428"></a>
+<a id="disp-2709"></a>
 ### Art. 84
 
 Lei Complementar disporá sobre a criação estruturação, e atribuição das Secretarias Municipais.
@@ -1303,37 +1309,37 @@ Lei Complementar disporá sobre a criação estruturação, e atribuição das S
 **§ 2.** o – A procuradoria Geral do Município terá “status” de Secretaria Municipal.
 
 
-<a id="disp-2429"></a>
+<a id="disp-2710"></a>
 ### Art. 85
 
 A Procuradoria Geral do Município é a instituição que representa o município judicial e extrajudicialmente, como advocacia geral, cabendo-lhe nos termos da Lei Complementar, as atividades de consultoria e assessoramento jurídico do Poder Executivo.
 
 
-<a id="disp-2430"></a>
+<a id="disp-2711"></a>
 ### Art. 86
 
 A destituição do Procurador Geral do Município deverá ser precedida de autorização da maioria absoluta da Câmara Municipal (AC)
 
 
-<a id="disp-2431"></a>
+<a id="disp-2712"></a>
 ### Art. 87
 
 A Guarda Municipal destina-se única e exclusivamente à proteção dos bens, serviços e instalações do Município e terá organização, funcionamento e comando na forma da Lei.
 
 
-<a id="disp-2432"></a>
+<a id="disp-2713"></a>
 ### Art. 88
 
 O Prefeito Municipal poderá realizar consultas populares para decidir sobre assuntos de interesse específico do Município, de Bairros ou de Distritos, cujas medidas deverão ser tomadas diretamente pela Administração Municipal.
 
 
-<a id="disp-2433"></a>
+<a id="disp-2714"></a>
 ### Art. 89
 
 A consulta popular poderá ser realizada sempre que a maioria absoluta dos membros da Câmara, ou pelo menos 5% (cinco por cento) do eleitorado inscrito no Município, no Bairro ou no Distrito, com a identificação de título eleitoral, apresentarem proposição nesse sentido.
 
 
-<a id="disp-2434"></a>
+<a id="disp-2715"></a>
 ### Art. 90
 
 A votação será organizada pelo Poder Executivo no prazo de dois meses após a apresentação da proposição, adotando-se cédula oficial que conterá as palavras SIM e NÃO, indicando respectivamente, aprovação ou rejeição da proposição.
@@ -1345,13 +1351,13 @@ A votação será organizada pelo Poder Executivo no prazo de dois meses após a
 **§ 3º.** É vedada a realização de consulta populares nos quatro meses que antecedem as eleições para qualquer nível de Governo.
 
 
-<a id="disp-2435"></a>
+<a id="disp-2716"></a>
 ### Art. 91
 
 O Prefeito Municipal proclamará o resultado da consulta popular, que será considerada como decisão sobre a questão proposta, devendo o Governo Municipal quando couber, adotar as providências legais para sua consecução.
 
 
-<a id="disp-2436"></a>
+<a id="disp-2717"></a>
 ### Art. 92
 
 Até 5(cinco) dias após a publicação oficial do resultado das eleições Municipais, o Prefeito Municipal entregará ao seu sucessor e fará publicação imediata, o relatório da Administração Municipal, que conterá informações atualizadas sobre (NR)
@@ -1375,7 +1381,7 @@ Até 5(cinco) dias após a publicação oficial do resultado das eleições Muni
 **Parágrafo Único.** Independente da entrega do relatório mencionado neste artigo, o Prefeito Municipal prestará as informações que lhe forem solicitadas pelo Prefeito eleito, ao que diz respeito à Administração Pública. (NR)
 
 
-<a id="disp-2437"></a>
+<a id="disp-2718"></a>
 ### Art. 93
 
 É vedado ao Prefeito Municipal assumir, por qualquer forma, compromissos financeiros para execução de programas ou projetos após o término do seu mandato, não previstos na legislação orçamentaria.
@@ -1385,7 +1391,7 @@ Até 5(cinco) dias após a publicação oficial do resultado das eleições Muni
 **§ 2º.** Serão nulos e não produzirão nenhum efeito os empenhos e atos praticados em desacordo neste Artigo, sem prejuízo da responsabilidade do Prefeito Municipal.
 
 
-<a id="disp-2438"></a>
+<a id="disp-2719"></a>
 ### Art. 94
 
 Os subsídios de Prefeito, do Vice-Prefeito, dos Vereadores e dos Secretários Municipais serão fixados por Lei de iniciativa da Câmara Municipal no último ano da Legislatura para a seguinte, observado o disposto na Constituição Federal. (NR)
@@ -1393,7 +1399,7 @@ Os subsídios de Prefeito, do Vice-Prefeito, dos Vereadores e dos Secretários M
 **Parágrafo Único.** a fixação dos subsídios de que trata o ”caput” deste artigo será estabelecido 30 (trinta) dias antes do término da legislatura. (AC)
 
 
-<a id="disp-2439"></a>
+<a id="disp-2720"></a>
 ### Art. 95
 
 O subsídio do Prefeito, Vice-Prefeito, dos Vereadores e dos Secretários Municipais será fixado determinando-se o valor em moeda corrente no País, vedada qualquer vinculação. (NR)
@@ -1411,25 +1417,25 @@ O subsídio do Prefeito, Vice-Prefeito, dos Vereadores e dos Secretários Munici
 **§ 6º.** Revogado.
 
 
-<a id="disp-2440"></a>
+<a id="disp-2721"></a>
 ### Art. 96
 
 O subsídio do Vereador terá como limite máximo o valor percebido como subsídio pelo Prefeito Municipal. (NR)
 
 
-<a id="disp-2441"></a>
+<a id="disp-2722"></a>
 ### Art. 97
 
 Revogado
 
 
-<a id="disp-2442"></a>
+<a id="disp-2723"></a>
 ### Art. 98
 
 A não fixação dos subsídios do Prefeito Municipal, do Vice-Prefeito e dos Vereadores implicará a suspensão do pagamento dos subsídios dos Vereadores pelo restante do mandato. (NR) “Parágrafo Único - Revogado
 
 
-<a id="disp-2443"></a>
+<a id="disp-2724"></a>
 ### Art. 99
 
 Lei fixará critérios para:
@@ -1441,13 +1447,13 @@ Lei fixará critérios para:
 **c.** indenização de despesas com transporte e estada de Vereador residente fora da sede do Município, em dias de reuniões da Câmara. “Parágrafo Único – Revogado
 
 
-<a id="disp-2444"></a>
+<a id="disp-2725"></a>
 ### Art. 100
 
 O Município instituirá até 120 (cento e vinte) dias após a promulgação desta Emenda, o Conselho de Política de Administração e Remuneração de Pessoal, integrado por servidores designados pelos respectivos poderes, observado o disposto no artigo 105 desta Lei. (AC)
 
 
-<a id="disp-2445"></a>
+<a id="disp-2726"></a>
 ### Art. 101
 
 O regime jurídico único dos servidores da administração pública direta, fundacional e autárquica é o estatutário, vedada qualquer outra vinculação de trabalho.
@@ -1461,7 +1467,7 @@ O regime jurídico único dos servidores da administração pública direta, fun
 **§ 4º.** será concedida aos servidores municipais, na forma da Lei, gratificação de distância pelo exercício de cargo ou função em unidades de trabalho consideradas de difícil acesso. (AC)
 
 
-<a id="disp-2446"></a>
+<a id="disp-2727"></a>
 ### Art. 102
 
 É livre a associação profissional ou sindical do servidor público municipal na forma da Lei Federal, observado o seguinte.
@@ -1475,25 +1481,25 @@ O regime jurídico único dos servidores da administração pública direta, fun
 **§ 4º.** Os servidores públicos gozarão, na forma da Lei, de estabilidade no cargo de emprego desde o registro da candidatura para o exercício de cargo de representação sindical, até 1 (um) ano após o término do mandato, se eleito, ainda que suplente, salvo se cometer falta grave definida em Lei. (AC)
 
 
-<a id="disp-2447"></a>
+<a id="disp-2728"></a>
 ### Art. 103
 
 O direito de greve, assegurado aos servidores públicos municipais, não se aplica aos que exerçam funções em serviços ou atividades consideradas essenciais pela Lei.
 
 
-<a id="disp-2448"></a>
+<a id="disp-2729"></a>
 ### Art. 104
 
 A lei disporá, em caso de greve, sobre o atendimento das necessidades inadiáveis da comunidade.
 
 
-<a id="disp-2449"></a>
+<a id="disp-2730"></a>
 ### Art. 105
 
 É segurada a participação dos servidores públicos municipais, por eleição, nos colegiados da Administração pública, em que seus interesses profissionais ou previdenciários sejam objeto de discussão e deliberação.
 
 
-<a id="disp-2450"></a>
+<a id="disp-2731"></a>
 ### Art. 106
 
 A publicação das leis e dos Atos Municipais far-se-á em órgão oficial ou, não havendo, em órgãos da imprensa local.
@@ -1505,7 +1511,7 @@ A publicação das leis e dos Atos Municipais far-se-á em órgão oficial ou, n
 **§ 3º.** A escolha do órgão de imprensa particular para divulgação dos atos municipais será feita por meio de licitação em que se levarão em conta além dos preços, as circunstâncias de periodicidade, tiragem e distribuição.
 
 
-<a id="disp-2451"></a>
+<a id="disp-2732"></a>
 ### Art. 107
 
 A formalização dos atos administrativos da competência do Prefeito far-se-á.
@@ -1559,7 +1565,7 @@ A formalização dos atos administrativos da competência do Prefeito far-se-á.
 **Parágrafo Único.** Poderão ser delegados os atos constantes do Inciso II deste Artigo.
 
 
-<a id="disp-2452"></a>
+<a id="disp-2733"></a>
 ### Art. 108
 
 O Governo Municipal manterá processo permanente de planejamento, visando promover o desenvolvimento do Município, o bem-estar da população e a melhoria da prestação dos serviços públicos municipais.
@@ -1567,13 +1573,13 @@ O Governo Municipal manterá processo permanente de planejamento, visando promov
 **Parágrafo Único.** O desenvolvimento do Município terá por objetivo a realização plena de seu potencial econômico e a redução das desigualdades sociais no acesso aos bens e serviços, respeitadas as vocações, as peculiaridades e a cultura locais e preservado o seu patrimônio ambiental, natural e construído.
 
 
-<a id="disp-2453"></a>
+<a id="disp-2734"></a>
 ### Art. 109
 
 O processo de planejamento municipal deverá considerar os aspectos técnicos e políticos envolvidos na fixação de objetivos, diretrizes e metas para a ação municipal, propiciando que autoridades, técnicos de planejamento, executoras e representantes da sociedade civil participem do debate sobre os problemas locais e as alternativas para o seu enfrentamento, buscando conciliar interesse e solucionar conflitos.
 
 
-<a id="disp-2454"></a>
+<a id="disp-2735"></a>
 ### Art. 110
 
 O planejamento municipal deverá orientar-se pelos seguintes princípios básicos:
@@ -1589,13 +1595,13 @@ O planejamento municipal deverá orientar-se pelos seguintes princípios básico
 **V.** respeito e adequação à realidade local e regional e consonância com os planos e programas estaduais e federais existentes.
 
 
-<a id="disp-2455"></a>
+<a id="disp-2736"></a>
 ### Art. 111
 
 A elaboração e a execução dos planos e dos programas do Governo Municipal obedecerão às diretrizes do Plano Diretor e terão acompanhamento e avaliação permanentes de modo a garantir o seu êxito e assegurar sua continuidade no horizonte de tempo necessário.
 
 
-<a id="disp-2456"></a>
+<a id="disp-2737"></a>
 ### Art. 112
 
 O planejamento das atividades do Governo Municipal obedecerá às diretrizes deste capítulo e será feito por meio de elaboração e manutenção atualizada, entre outros dos seguintes instrumentos:
@@ -1611,13 +1617,13 @@ O planejamento das atividades do Governo Municipal obedecerá às diretrizes des
 **V.** Plano Plurianual.
 
 
-<a id="disp-2457"></a>
+<a id="disp-2738"></a>
 ### Art. 113
 
 Os instrumentos de planejamento municipal mencionados no Artigo anterior deverão incorporar as propostas constantes dos planos e dos programas setoriais do Município, dadas as suas implicações para o desenvolvimento local.
 
 
-<a id="disp-2458"></a>
+<a id="disp-2739"></a>
 ### Art. 114
 
 O Município buscará, por todos os meios ao seu alcance, a cooperação das associações representativas no planejamento municipal.
@@ -1625,7 +1631,7 @@ O Município buscará, por todos os meios ao seu alcance, a cooperação das ass
 **Parágrafo Único.** Para fins deste Artigo, entende-se como associação representativa qualquer grupo organizado, de fins lícitos que tenha legitimidade para representar seus filiados independentemente de seus objetivos ou natureza jurídica.
 
 
-<a id="disp-2459"></a>
+<a id="disp-2740"></a>
 ### Art. 115
 
 O Município submeterá à apreciação das associações antes de encaminhá-los à Câmara Municipal os Projetos de Lei do Plano Plurianual, do Orçamento Anual e do Plano Diretor, a fim de receber sugestões quanto à oportunidade e o estabelecimento de prioridades das medidas propostas.
@@ -1633,25 +1639,25 @@ O Município submeterá à apreciação das associações antes de encaminhá-lo
 **Parágrafo Único.** Os projetos de que trata este Artigo ficarão à disposição das associações durante 30 (trinta) dias, antes das fixadas para a sua remessa à Câmara Municipal.
 
 
-<a id="disp-2460"></a>
+<a id="disp-2741"></a>
 ### Art. 116
 
 A convocação das entidades mencionadas neste capítulo far-se-á por todos os meios à disposição do Governo Municipal.
 
 
-<a id="disp-2461"></a>
+<a id="disp-2742"></a>
 ### Art. 117
 
 Compete ao Prefeito Municipal a administração dos bens municipais, respeitada a competência da Câmara quanto àqueles empregados nos serviços desta.
 
 
-<a id="disp-2462"></a>
+<a id="disp-2743"></a>
 ### Art. 118
 
 A alienação de bens municipais se fará de conformidade com a legislação pertinente.
 
 
-<a id="disp-2463"></a>
+<a id="disp-2744"></a>
 ### Art. 119
 
 A afetação e a desafetação de bens municipais dependerá de lei.
@@ -1659,7 +1665,7 @@ A afetação e a desafetação de bens municipais dependerá de lei.
 **Parágrafo Único.** As áreas transferidas ao Município em decorrência da aprovação de Loteamento serão considerados bens dominais enquanto não se efetivarem benfeitorias que lhes dêem outra destinação.
 
 
-<a id="disp-2464"></a>
+<a id="disp-2745"></a>
 ### Art. 120
 
 O uso de bens municipais por terceiros poderá ser feito mediante concessão, permissão ou autorização, conforme o interesse público o exigir.
@@ -1667,7 +1673,7 @@ O uso de bens municipais por terceiros poderá ser feito mediante concessão, pe
 **Parágrafo Único.** O Município poderá ceder seus bens a outras entidades públicas, inclusive os da Administração Indireta, desde que atendido o interesse público.
 
 
-<a id="disp-2465"></a>
+<a id="disp-2746"></a>
 ### Art. 121
 
 A concessão administrativa dos bens municipais de uso especial e dominais dependerá de lei e de licitação e far-se-á mediante contrato por prazo determinado sob pena de nulidade do ato.
@@ -1679,25 +1685,25 @@ A concessão administrativa dos bens municipais de uso especial e dominais depen
 **§ 3º.** A autorização, que poderá incidir sobre qualquer bem público, será feita por Portaria, para atividades ou usos específicos e transitórios.
 
 
-<a id="disp-2466"></a>
+<a id="disp-2747"></a>
 ### Art. 122
 
 Nenhum servidor será dispensado, transferido, exonerado ou terá aceito o seu pedido de exoneração ou rescisão sem que o órgão responsável pelo controle dos bens patrimoniais da Prefeitura ou da Câmara ateste que o mesmo devolveu os bens móveis do Município que estavam sob sua guarda.
 
 
-<a id="disp-2467"></a>
+<a id="disp-2748"></a>
 ### Art. 123
 
 O órgão competente do Município será obrigado, independentemente de despacho de qualquer autoridade, a abrir inquérito administrativo e a propor, se for o caso, a competente ação civil e penal contra qualquer servidor sempre que forem apresentadas denúncias contra o extravio ou danos de bens municipais.
 
 
-<a id="disp-2468"></a>
+<a id="disp-2749"></a>
 ### Art. 124
 
 É de responsabilidade do Município, mediante licitação e de conformidade com os interesses e as necessidades da população, prestar serviços públicos, diretamente ou sob regime de concessão ou permissão, bem como realizar obras públicas, podendo contratá-las com particulares através de processo licitatório.
 
 
-<a id="disp-2469"></a>
+<a id="disp-2750"></a>
 ### Art. 125
 
 Nenhuma obra pública, salvo os casos de extrema urgência devidamente justificados, será realizada sem que conste:
@@ -1713,7 +1719,7 @@ Nenhuma obra pública, salvo os casos de extrema urgência devidamente justifica
 **V.** os prazos para o seu início e término.
 
 
-<a id="disp-2470"></a>
+<a id="disp-2751"></a>
 ### Art. 126
 
 A concessão ou permissão de serviços públicos, somente será efetivada com a autorização da Câmara Municipal e mediante contrato, precedido de licitação.
@@ -1723,7 +1729,7 @@ A concessão ou permissão de serviços públicos, somente será efetivada com a
 **§ 2º.** Os serviços concedidos ou permitidos ficarão sempre sujeitos à regulamentação e à fiscalização da Administração Municipal, cabendo ao Prefeito Municipal aprovar as tarifas respectivas.
 
 
-<a id="disp-2471"></a>
+<a id="disp-2752"></a>
 ### Art. 127
 
 Os usuários estarão representados nas entidades prestadoras de serviços públicos na forma que dispuser a legislação municipal, assegurando-se sua participação em decisões relativas a:
@@ -1741,13 +1747,13 @@ Os usuários estarão representados nas entidades prestadoras de serviços públ
 **Parágrafo Único.** Em se tratando de empresas concessionárias ou permissionárias de serviços públicos, a obrigatoriedade mencionada neste Artigo deverá constar do contrato de concessão ou permissão.
 
 
-<a id="disp-2472"></a>
+<a id="disp-2753"></a>
 ### Art. 128
 
 As entidades prestadoras de serviços públicos são obrigadas, pelo menos uma vez por ano, a dar ampla divulgação de suas atividades, informando em especial sobre planos de expansão, aplicação de recursos financeiros e realização de programas de trabalho.
 
 
-<a id="disp-2473"></a>
+<a id="disp-2754"></a>
 ### Art. 129
 
 Nos contratos de concessão ou permissão de serviços públicos serão estabelecidos, entre outros:
@@ -1767,19 +1773,19 @@ Nos contratos de concessão ou permissão de serviços públicos serão estabele
 **Parágrafo Único.** Na concessão ou na permissão de serviços públicos, o Município reprimirá qualquer forma de abuso do poder econômico, principalmente as que visem à dominação do mercado, à exploração monopolística e ao aumento abusivo de lucros.
 
 
-<a id="disp-2474"></a>
+<a id="disp-2755"></a>
 ### Art. 130
 
 O Município poderá revogar a concessão ou permissão dos serviços que forem executados em desconformidade com o contrato ou ato pertinente, bem como daqueles que se revelarem manifestamente insatisfatórios para o atendimento dos usuários.
 
 
-<a id="disp-2475"></a>
+<a id="disp-2756"></a>
 ### Art. 131
 
 As licitações para a concessão ou permissão de serviços públicos deverão ser precedidas de ampla publicidade, inclusive em jornais da capital do Estado, mediante Edital ou comunicado resumido.
 
 
-<a id="disp-2476"></a>
+<a id="disp-2757"></a>
 ### Art. 132
 
 As tarifas dos serviços públicos prestados diretamente pelo Município ou por órgãos de sua Administração descentralizada serão fixadas pelo Prefeito Municipal, cabendo à Câmara Municipal definir os serviços que serão remunerados pelo custo, acima do custo e abaixo do custo, tendo em vista seu interesse econômico social.
@@ -1787,7 +1793,7 @@ As tarifas dos serviços públicos prestados diretamente pelo Município ou por 
 **Parágrafo Único.** Na formação do custo dos serviços de natureza industrial computar-se-ão, além das despesas operacionais e administrativas, as reservas para depreciação e reposição dos equipamentos e instalações, como previsão para expansão dos serviços.
 
 
-<a id="disp-2477"></a>
+<a id="disp-2758"></a>
 ### Art. 133
 
 O Município poderá consorciar-se com outros municípios para a realização de obras ou prestação de serviços públicos de interesse comum.
@@ -1795,7 +1801,7 @@ O Município poderá consorciar-se com outros municípios para a realização de
 **Parágrafo Único.** O Município deverá propiciar meios para criação, nos consórcios de órgão constituído por cidadãos não pertencentes ao serviço público municipal.
 
 
-<a id="disp-2478"></a>
+<a id="disp-2759"></a>
 ### Art. 134
 
 Ao Município é facultado conveniar, com a União ou com o Estado, a prestação de serviços públicos de sua competência privativa, quando lhe faltarem recursos técnicos ou financeiros para a execução do serviço em padrões adequados, ou quando houver interesse mútuo para a celebração do convênio.
@@ -1809,19 +1815,19 @@ Ao Município é facultado conveniar, com a União ou com o Estado, a prestaçã
 **III.** realizar avaliação periódica da prestação dos serviços.
 
 
-<a id="disp-2479"></a>
+<a id="disp-2760"></a>
 ### Art. 135
 
 A criação pelo Município de entidade de Administração Indireta para execução de obras ou prestação de serviços públicos só será permitida caso a entidade possa assegurar sua auto-sustentação financeira.
 
 
-<a id="disp-2480"></a>
+<a id="disp-2761"></a>
 ### Art. 136
 
 Os órgãos colegiados das entidades de Administração indireta do Município terão a participação obrigatória de um representante de seus servidores, eleito por estes mediante voto direto e secreto, conforme regulamentação a ser expedida por ato do Prefeito Municipal.
 
 
-<a id="disp-2481"></a>
+<a id="disp-2762"></a>
 ### Art. 137
 
 Leis de iniciativa do Poder Executivo estabelecerão:
@@ -1899,19 +1905,19 @@ Leis de iniciativa do Poder Executivo estabelecerão:
 **VI.** orçamento analítico de cada órgão e unidade orçamentária, por projeto e/ou atividade e categoria econômica, que compõem o Poder Público Municipal. (AC)
 
 
-<a id="disp-2482"></a>
+<a id="disp-2763"></a>
 ### Art. 138
 
 Os Planos e programas municipais de execução Plurianual ou anual serão elaboradas em consonância com o plano plurianual e com as diretrizes orçamentárias, respectivamente, e apreciados pela Câmara Municipal.
 
 
-<a id="disp-2483"></a>
+<a id="disp-2764"></a>
 ### Art. 139
 
 Os orçamentos previstos no § 3º do Art. 137 serão compatibilizados com o plano plurianual e as diretrizes orçamentárias, evidenciando os programas e políticas do Governo Municipal.
 
 
-<a id="disp-2484"></a>
+<a id="disp-2765"></a>
 ### Art. 140
 
 São vedados:
@@ -1939,7 +1945,7 @@ São vedados:
 **§ 2º.** A abertura de crédito extraordinário somente será admitida para atender as despesas imprevisíveis e urgentes como as decorrentes de calamidade pública, observado o disposto no Artigo 62 desta Lei Orgânica.
 
 
-<a id="disp-2485"></a>
+<a id="disp-2766"></a>
 ### Art. 141
 
 Os Projetos de lei relativos ao Plano Plurianual, às Diretrizes Orçamentarias, ao Orçamento Anual e aos créditos adicionais suplementares e especiais serão apreciados pela Câmara Municipal, na forma do Regimento Interno.
@@ -1981,19 +1987,19 @@ Os Projetos de lei relativos ao Plano Plurianual, às Diretrizes Orçamentarias,
 **§ 8º.** Os recursos que, em decorrência de veto, emendas ou rejeição do projeto de lei orçamentária anual, ficaram sem despesas correspondentes, poderão ser utilizados, conforme o caso, mediante abertura de créditos adicionais suplementares ou especiais com prévia e específica autorização legislativa.
 
 
-<a id="disp-2486"></a>
+<a id="disp-2767"></a>
 ### Art. 142
 
 A execução do Orçamento do Município se refletirá na obtenção das suas receitas próprias, transferidas e outras, bem como na utilização das dotações consignadas às despesas para execução dos programas nela determinados, observado sempre o princípio de equilíbrio.
 
 
-<a id="disp-2487"></a>
+<a id="disp-2768"></a>
 ### Art. 143
 
 O Prefeito Municipal fará publicar, até 30 (trinta) dias após o encerramento de cada bimestre, relatório resumido da execução orçamentária.
 
 
-<a id="disp-2488"></a>
+<a id="disp-2769"></a>
 ### Art. 144
 
 As alterações orçamentárias durante o exercício se representarão:
@@ -2005,7 +2011,7 @@ As alterações orçamentárias durante o exercício se representarão:
 **Parágrafo Único.** O remanejamento, a transferência e a transposição somente se realizarão quando autorizado em lei específica que contenha a justificativa.
 
 
-<a id="disp-2489"></a>
+<a id="disp-2770"></a>
 ### Art. 145
 
 Na efetivação dos empenhos sobre as dotações fixadas para cada despesa será emitido o documento Nota de Empenho, que conterá as características já determinadas nas normas gerais de Direito Financeiro.
@@ -2023,7 +2029,7 @@ Na efetivação dos empenhos sobre as dotações fixadas para cada despesa será
 **§ 2º.** Nos casos previstos no parágrafo anterior os empenhos e os procedimentos de contabilidade terão a base legal dos próprios documentos que originarem o empenho.
 
 
-<a id="disp-2490"></a>
+<a id="disp-2771"></a>
 ### Art. 146
 
 As receitas e as despesas orçamentárias serão movimentadas através de caixa única, regularmente instituído.
@@ -2031,7 +2037,7 @@ As receitas e as despesas orçamentárias serão movimentadas através de caixa 
 **Parágrafo Único.** A Câmara Municipal poderá ter a sua própria Tesouraria, por onde movimentará os recursos que lhe forem liberados.
 
 
-<a id="disp-2491"></a>
+<a id="disp-2772"></a>
 ### Art. 147
 
 As disponibilidades de caixa do Município e de suas entidades de Administração indireta, inclusive dos fundos especiais e fundações instituídas e mantidas pelo Poder Público Municipal, serão depositadas em instituições financeiras oficiais.
@@ -2039,19 +2045,19 @@ As disponibilidades de caixa do Município e de suas entidades de Administraçã
 **Parágrafo Único.** As arrecadações das receitas, próprias do Município e de suas entidades de Administração indireta poderão ser feitas através da rede bancária privada, mediante convênio.
 
 
-<a id="disp-2492"></a>
+<a id="disp-2773"></a>
 ### Art. 148
 
 Poderá ser constituído regime de adiantamento em cada uma das entidades da Administração Direta, nas Autarquias, nas Fundações instituídas e mantidas pelo Poder Público Municipal e na Câmara Municipal para ocorrer às despesas miúdas de pronto pagamento definidos em lei.
 
 
-<a id="disp-2493"></a>
+<a id="disp-2774"></a>
 ### Art. 149
 
 A contabilidade do Município obedecerá na organização do seu sistema administrativo e informativo e nos seus procedimentos, aos princípios fundamentais de contabilidade e às normas estabelecidas na legislação pertinente.
 
 
-<a id="disp-2494"></a>
+<a id="disp-2775"></a>
 ### Art. 150
 
 A Câmara Municipal poderá ter a sua própria contabilidade.
@@ -2059,7 +2065,7 @@ A Câmara Municipal poderá ter a sua própria contabilidade.
 **Parágrafo Único.** A contabilidade da Câmara Municipal encaminhará à Prefeitura Municipal a sua Prestação de Contas Anual, até o dia 20 de fevereiro do ano subseqüente, para fins de anexação à Prestação de Contas do Chefe do Executivo. (NR.)
 
 
-<a id="disp-2495"></a>
+<a id="disp-2776"></a>
 ### Art. 151
 
 Até 60 (sessenta) dias após o início da Sessão Legislativa de cada ano, o Prefeito Municipal encaminhará à Câmara Municipal, ao Tribunal de Contas dos Municípios ou órgãos equivalentes, as Contas do Município, que se comporão de:
@@ -2079,7 +2085,7 @@ Até 60 (sessenta) dias após o início da Sessão Legislativa de cada ano, o Pr
 **VII.** outros documentos exigidos pela legislação pertinente.
 
 
-<a id="disp-2496"></a>
+<a id="disp-2777"></a>
 ### Art. 152
 
 São sujeitos à tomada ou à prestação de contas os agentes da Administração Municipal responsáveis por bens e valores pertencentes ou confiados ao Erário Público Municipal.
@@ -2089,7 +2095,7 @@ São sujeitos à tomada ou à prestação de contas os agentes da Administraçã
 **§ 2º.** Os demais agentes municipais apresentarão as suas respectivas prestações de contas até o dia 15 (quinze) do mês subseqüente àquele em que o valor tenha sido recebido.
 
 
-<a id="disp-2497"></a>
+<a id="disp-2778"></a>
 ### Art. 153
 
 Os Poderes Executivo e Legislativo manterão de forma integrada, um sistema de controle interno, apoiado nas informações contábeis, como objetivo de:
@@ -2101,7 +2107,7 @@ Os Poderes Executivo e Legislativo manterão de forma integrada, um sistema de c
 **III.** exercer o controle dos empréstimos e dos financiamentos, avais, e garantias, bem como dos direitos e haveres do Município.
 
 
-<a id="disp-2498"></a>
+<a id="disp-2779"></a>
 ### Art. 154
 
 As contas do Município ficarão à disposição dos cidadãos durante 60 (sessenta) dias, a partir de 15 (quinze) de abril de cada exercício, no horário de funcionamento da Câmara Municipal, em local de fácil acesso ao público.
@@ -2131,13 +2137,13 @@ As contas do Município ficarão à disposição dos cidadãos durante 60 (sesse
 **§ 5º.** A anexação da segunda via, de que trata o Inciso II do § 4º deste Artigo, independerá do despacho de qualquer autoridade deverá ser feita no prazo de 48 (quarenta e oito) horas pelo servidor que tenha recebido no protocolo da Câmara, sob pena de suspensão, sem vencimentos pelo prazo de 15 (quinze) dias.
 
 
-<a id="disp-2499"></a>
+<a id="disp-2780"></a>
 ### Art. 155
 
 A Câmara Municipal enviará ao reclamante cópia da correspondência que encaminhou ao Tribunal de contas ou ao órgão equivalente.
 
 
-<a id="disp-2500"></a>
+<a id="disp-2781"></a>
 ### Art. 156
 
 Nos Distritos, exceto na sede do Município, haverá um Conselho Distrital composto por três conselheiros eleitos pela respectiva população e um administrador distrital nomeado em Comissão pelo Prefeito Municipal.
@@ -2145,7 +2151,7 @@ Nos Distritos, exceto na sede do Município, haverá um Conselho Distrital compo
 **Parágrafo Único.** Cada Conselho terá 3 (três) suplentes.
 
 
-<a id="disp-2501"></a>
+<a id="disp-2782"></a>
 ### Art. 157
 
 A instalação do Distrito novo dar-se-á com a posse do Administrador Distrital e dos Conselheiros Distritais perante o Prefeito Municipal.
@@ -2153,25 +2159,25 @@ A instalação do Distrito novo dar-se-á com a posse do Administrador Distrital
 **Parágrafo Único.** O Prefeito Municipal comunicará ao Governo do Estado, através da Secretaria a que assunto pertença e à Fundação Instituto Brasileiro de Geografia e Estatística - IBGE, para os devidos fins, a instalação do Distrito.
 
 
-<a id="disp-2502"></a>
+<a id="disp-2783"></a>
 ### Art. 158
 
 A eleição dos Conselheiros Distritais e de seus respectivos suplentes ocorrerá 45 (quarenta e cinco) dias após a posse do Prefeito Municipal, cabendo à Câmara Municipal adotar as providências necessárias à sua realização, observado o disposto nesta Lei Orgânica.
 
 
-<a id="disp-2503"></a>
+<a id="disp-2784"></a>
 ### Art. 159
 
 Os Conselheiros Distritais, quando de sua posse, proferirão o seguinte juramento:
 
 
-<a id="disp-2504"></a>
+<a id="disp-2785"></a>
 ### Art. 160
 
 A função do Conselheiro Distrital constitui serviço público relevante e será exercida gratuitamente.
 
 
-<a id="disp-2505"></a>
+<a id="disp-2786"></a>
 ### Art. 161
 
 O Conselho Distrital reunir-se-á, ordinariamente, pelo menos uma vez por mês, nos dias estabelecidos em seu Regimento Interno, e, extraordinariamente, por convocação do Prefeito Municipal ou do Administrador Distrital, tomando suas deliberações por maioria de votos.
@@ -2185,13 +2191,13 @@ O Conselho Distrital reunir-se-á, ordinariamente, pelo menos uma vez por mês, 
 **§ 4º.** Nas reuniões do Conselho Distrital, qualquer cidadão, desde que residente no Distrito, poderá usar da palavra, na forma que dispuser o Regimento Interno do Conselho.
 
 
-<a id="disp-2506"></a>
+<a id="disp-2787"></a>
 ### Art. 162
 
 Nos casos de licença ou de vaga de membro do Conselho Distrital, será convocado o respectivo suplente.
 
 
-<a id="disp-2507"></a>
+<a id="disp-2788"></a>
 ### Art. 163
 
 Compete ao Conselho Distrital:
@@ -2213,7 +2219,7 @@ Compete ao Conselho Distrital:
 **VIII.** prestar as informações que lhe forem solicitadas pelo Governo Municipal.
 
 
-<a id="disp-2508"></a>
+<a id="disp-2789"></a>
 ### Art. 164
 
 O Administrador Distrital terá a remuneração que for fixada na legislação municipal.
@@ -2221,7 +2227,7 @@ O Administrador Distrital terá a remuneração que for fixada na legislação m
 **Parágrafo Único.** Criado o Distrito, fica o Prefeito Municipal autorizado a criar o respectivo cargo de Administrador Distrital.
 
 
-<a id="disp-2509"></a>
+<a id="disp-2790"></a>
 ### Art. 165
 
 Compete ao Administrador Distrital.
@@ -2259,7 +2265,7 @@ Compete ao Administrador Distrital.
 **§ 7º.** A posse dos Conselheiros Distritais e do Administrador dar-se-á 10 (dez) dias após a divulgação dos resultados da eleição.
 
 
-<a id="disp-2510"></a>
+<a id="disp-2791"></a>
 ### Art. 166
 
 O Município na sua circunscrição territorial e dentro de sua competência constitucional, assegurará a todos dentro do princípio da ordem econômica, fundada na valorização do trabalho humano e na livre iniciativa, existência digna, observados os seguintes princípios.
@@ -2297,7 +2303,7 @@ O Município na sua circunscrição territorial e dentro de sua competência con
 **V.** Orçamento Anual aprovado pelo Prefeito.
 
 
-<a id="disp-2511"></a>
+<a id="disp-2792"></a>
 ### Art. 167
 
 A prestação de serviços públicos, pelo Município, diretamente ou sob regime de concessão ou permissão, será regulada em lei que assegurará:
@@ -2313,13 +2319,13 @@ A prestação de serviços públicos, pelo Município, diretamente ou sob regime
 **V.** a obrigação de manter serviços adequados.
 
 
-<a id="disp-2512"></a>
+<a id="disp-2793"></a>
 ### Art. 168
 
 O Município promoverá e incentivará o turismo como fator de desenvolvimento social e econômico.
 
 
-<a id="disp-2513"></a>
+<a id="disp-2794"></a>
 ### Art. 169
 
 A Política Urbana, a ser formulada no âmbito do processo de planejamento municipal, terá por objetivo o plano do desenvolvimento das funções sociais da cidade e o bem-estar dos seus habitantes, em consonância com as políticas sociais e econômicas do Município.
@@ -2327,7 +2333,7 @@ A Política Urbana, a ser formulada no âmbito do processo de planejamento munic
 **Parágrafo Único.** As funções sociais da cidade dependem do acesso de todos os cidadãos, aos bens e aos serviços urbanos, assegurando-se-lhes condições de vida e moradia compatíveis com o estágio de desenvolvimento do Município.
 
 
-<a id="disp-2514"></a>
+<a id="disp-2795"></a>
 ### Art. 170
 
 O Plano Diretor, aprovado pela Câmara Municipal, é o instrumento básico da Política Urbana a ser executado pelo Município.
@@ -2339,13 +2345,13 @@ O Plano Diretor, aprovado pela Câmara Municipal, é o instrumento básico da Po
 **§ 3º.** O Plano Diretor definirá as áreas especiais de interesse social, urbanístico ou ambiental, para as quais será exigido aproveitamento adequado nos termos previstos na Constituição Federal.
 
 
-<a id="disp-2515"></a>
+<a id="disp-2796"></a>
 ### Art. 171
 
 Para assegurar as funções sociais da cidade, o Poder Executivo deverá utilizar os instrumentos jurídicos, tributários, financeiros e de controle urbanístico existente e à disposição do Município.
 
 
-<a id="disp-2516"></a>
+<a id="disp-2797"></a>
 ### Art. 172
 
 O Município promoverá em consonância com sua Política Urbana e respeitadas as disposições do Plano Diretor, programa de habitação popular destinado a melhorar as condições de moradia da população carente do Município.
@@ -2363,7 +2369,7 @@ O Município promoverá em consonância com sua Política Urbana e respeitadas a
 **§ 3º.** A concessão de alvará de licença para execução de conjuntos residenciais estará condicionada à edificação de prédios escolares com capacidade de atender a população ali residente. (Nov. Red. EM. LOM. 015/11/1999)
 
 
-<a id="disp-2517"></a>
+<a id="disp-2798"></a>
 ### Art. 173
 
 O Município em consonância com a sua Política Urbana e segundo o disposto em seu Plano Diretor, deverá promover programas de saneamento básico destinados a melhorar as condições sanitárias e ambientais das áreas urbanas e os níveis de saúde da população.
@@ -2379,13 +2385,13 @@ O Município em consonância com a sua Política Urbana e segundo o disposto em 
 **IV.** levar à prática, pelas autoridades competentes, tarifas sociais para os serviços de água.
 
 
-<a id="disp-2518"></a>
+<a id="disp-2799"></a>
 ### Art. 174
 
 O Município deverá manter articulação permanente, com os demais Municípios de sua região e com o Estado visando à racionalização da utilização dos recursos hídricos e das bacias hidrográficas, respeitadas as diretrizes estabelecidas pela União.
 
 
-<a id="disp-2519"></a>
+<a id="disp-2800"></a>
 ### Art. 175
 
 O Município, na prestação de serviços de transporte público, fará obedecer os seguintes princípios básicos:
@@ -2403,25 +2409,25 @@ O Município, na prestação de serviços de transporte público, fará obedecer
 **VI.** participação das entidades representativas da comunidade e dos usuários no planejamento e na fiscalização dos serviços.
 
 
-<a id="disp-2520"></a>
+<a id="disp-2801"></a>
 ### Art. 176
 
 O Município em consonância com sua Política Urbana e segundo o disposto em seu Plano Diretor, deverá promover planos e programas setoriais destinados a melhorar as condições do transporte público, da circulação de veículos e da segurança do trânsito, bem como programas de Educação em articulação com o Estado.
 
 
-<a id="disp-2521"></a>
+<a id="disp-2802"></a>
 ### Art. 177
 
 A Política Fundiária será planejada e executada com o intuito de fixar o homem na zona rural e garantir reais condições de melhoria de sua qualidade de vida observada às normas constitucionais pertinentes a esta Lei Orgânica.
 
 
-<a id="disp-2522"></a>
+<a id="disp-2803"></a>
 ### Art. 178
 
 O Município não poderá dispor de suas terras sem prévia discriminação, nem aliená-las sem prévia demarcação.
 
 
-<a id="disp-2523"></a>
+<a id="disp-2804"></a>
 ### Art. 179
 
 Exceto nos casos de interesse público, o Município utilizará suas terras para:
@@ -2449,7 +2455,7 @@ Exceto nos casos de interesse público, o Município utilizará suas terras para
 **§ 3º.** São isentos de impostos municipais as operações de transferência de imóveis que tenham por fim o assentamento de trabalhadores rurais de programas desenvolvidos pelos Poderes Públicos.
 
 
-<a id="disp-2524"></a>
+<a id="disp-2805"></a>
 ### Art. 180
 
 – o Poder Executivo Municipal só poderá conceder Direito Real de Uso de terras municipais, quando se tratar de programa de assentamento, até o limite de 5 (cinco ) hectares.(NR)
@@ -2457,7 +2463,7 @@ Exceto nos casos de interesse público, o Município utilizará suas terras para
 **Parágrafo Único.** áreas superiores a 5 (cinco ) hectares e até o limite de 10 (dez ) hectares, só poderão ser concedidas mediante prévia autorização da Câmara Municipal.(NR)
 
 
-<a id="disp-2525"></a>
+<a id="disp-2806"></a>
 ### Art. 181
 
 As políticas agrícola e agrária, com intuito de fixar o homem à terra, democratizar o acesso à propriedade, garantir a justiça social e o desenvolvimento econômico e tecnológico, serão planejados e executados a nível municipal nos termos da Constituição Federal, com a participação e integração dos trabalhos rurais, e orientar-se-ão no sentido de:
@@ -2481,13 +2487,13 @@ As políticas agrícola e agrária, com intuito de fixar o homem à terra, democ
 **VII.** desenvolver, em recuperação com o Estado, programa anual de recuperação de estradas vicinais para escoamento da produção agrícola.
 
 
-<a id="disp-2526"></a>
+<a id="disp-2807"></a>
 ### Art. 182
 
 As ações de apoio à produção atenderão preferencialmente aos beneficiários de projetos de assentamento e das posses já consolidadas, e aos estabelecimentos, agrícolas que cumpram a função social da propriedade conforme dispor a legislação.
 
 
-<a id="disp-2527"></a>
+<a id="disp-2808"></a>
 ### Art. 183
 
 Lei disporá sobre a forma de proteção das propriedades privadas e públicas destinadas à produção agrícola, pecuária, hortifrutigranjeiras, pastoris e outras, obedecendo aos seguintes preceitos:
@@ -2503,7 +2509,7 @@ Lei disporá sobre a forma de proteção das propriedades privadas e públicas d
 **V.** normas para a exploração de avicultura e apicultura.
 
 
-<a id="disp-2528"></a>
+<a id="disp-2809"></a>
 ### Art. 184
 
 O Município elaborará Plano de Desenvolvimento do Setor Pesqueiro com o objetivo de:
@@ -2515,7 +2521,7 @@ O Município elaborará Plano de Desenvolvimento do Setor Pesqueiro com o objeti
 **III.** desenvolver programas de comercialização do mercado, visando ao abastecimento local com a exportação de excedente, garantindo-se o preço mínimo do mercado.
 
 
-<a id="disp-2529"></a>
+<a id="disp-2810"></a>
 ### Art. 185
 
 Compete, ainda, ao Município:
@@ -2523,13 +2529,13 @@ Compete, ainda, ao Município:
 **I.** promover a conscientização, e a educação ambiental junto a pescadores, suas famílias e organização, para a preservação do meio ambiente através de serviços de assistência técnica e extensão pesqueira gratuitas.
 
 
-<a id="disp-2530"></a>
+<a id="disp-2811"></a>
 ### Art. 186
 
 A base da sociedade, que é a família, terá do Município proteção especial de acordo com esta Lei e com as Constituições Federal e Estadual.
 
 
-<a id="disp-2531"></a>
+<a id="disp-2812"></a>
 ### Art. 187
 
 O Município deverá participar de programas destinados à assistência integral à família e também promovê-los no sentido de:
@@ -2539,7 +2545,7 @@ O Município deverá participar de programas destinados à assistência integral
 **II.** criar e manter serviços de orientação, prevenção, recebimento e encaminhamento de denúncias que se refiram à violência no âmbito das relações familiares, institucionais e sociais.
 
 
-<a id="disp-2532"></a>
+<a id="disp-2813"></a>
 ### Art. 188
 
 Os programas de Ação do município no campo da assistência social objetivarão promover:
@@ -2553,7 +2559,7 @@ Os programas de Ação do município no campo da assistência social objetivarã
 **Parágrafo Único.** Na formulação e desenvolvimento de programas de assistência social, o Município buscará a participação das entidades representativas, beneficentes e de assistência social existentes na comunidade.
 
 
-<a id="disp-2533"></a>
+<a id="disp-2814"></a>
 ### Art. 189
 
 O Município, a sociedade e a família deverão promover e participar de Ações que visem a assegurar a criança e ao adolescente, prioritariamente o direito à vida, à saúde, à alimentação, à educação, ao lazer, à cultura, à profissionalização, à dignidade, ao respeito, à liberdade, à convivência familiar e comunitária, colocando-os sempre a salvo de toda forma de negligências, discriminação, exploração, violência, crueldade e opressão.
@@ -2561,7 +2567,7 @@ O Município, a sociedade e a família deverão promover e participar de Ações
 **Parágrafo Único.** O Município, em colaboração com a União, o Estado e com outros Municípios, deverá encontrar soluções para o problema dos menores desamparados e/ou desajustados, através de processos adequados de permanente recuperação.
 
 
-<a id="disp-2534"></a>
+<a id="disp-2815"></a>
 ### Art. 190
 
 O Município promoverá o acolhimento ou a guarda de crianças, adolescentes ou idosos necessitados.
@@ -2571,7 +2577,7 @@ O Município promoverá o acolhimento ou a guarda de crianças, adolescentes ou 
 **§ 2º.** A família, a sociedade e o Município têm o dever de amparar as pessoas idosas, carentes e deficientes, de preferência em seus próprios lares assegurando sua participação na comunidade, zelando por sua dignidade e bem-estar e garantindo-lhes o direito à vida e à moradia.
 
 
-<a id="disp-2535"></a>
+<a id="disp-2816"></a>
 ### Art. 191
 
 A Lei disporá sobre a exigência de adaptação dos logradouros, dos edifícios de uso público e dos veículos de transportes coletivos a fim de garantir acesso adequado às pessoas portadoras de deficiências físicas e sensoriais.
@@ -2579,7 +2585,7 @@ A Lei disporá sobre a exigência de adaptação dos logradouros, dos edifícios
 **Parágrafo Único.** Aos maiores de 65 anos é garantida a gratuidade no transporte coletivo urbano.
 
 
-<a id="disp-2536"></a>
+<a id="disp-2817"></a>
 ### Art. 192
 
 O Município manterá seu sistema de ensino em colaboração com a União e o Estado, atuando prioritariamente no ensino fundamental e pré-escolar seguindo os seguintes princípios:
@@ -2601,25 +2607,25 @@ O Município manterá seu sistema de ensino em colaboração com a União e o Es
 **VIII.** manter o professorado municipal em nível econômico, social e moral, condicente com sua função.
 
 
-<a id="disp-2537"></a>
+<a id="disp-2818"></a>
 ### Art. 193
 
 O Município promoverá o recenseamento da população escolar e fará chamada dos educandos.
 
 
-<a id="disp-2538"></a>
+<a id="disp-2819"></a>
 ### Art. 194
 
 O Município zelará por todos os meios ao seu alcance, pela permanência do educando na escola.
 
 
-<a id="disp-2539"></a>
+<a id="disp-2820"></a>
 ### Art. 195
 
 O calendário escolar municipal será flexível e adequado às peculiaridades climáticas e às condições sociais e econômicos dos alunos.
 
 
-<a id="disp-2540"></a>
+<a id="disp-2821"></a>
 ### Art. 196
 
 Os currículos escolares serão adequados às peculiaridades do Município, e valorização de sua cultura e seu patrimônio histórico, artístico, cultural e ambiental, deles constando a obrigatoriedade da pesquisa e conhecimento “in loco” de nossa realidade. (NR)
@@ -2643,7 +2649,7 @@ Os currículos escolares serão adequados às peculiaridades do Município, e va
 **§ 2º.** a disciplina constante da alínea b do parágrafo anterior, será ministrada de forma prática e teórica, da 5ª a 8ª série do ensino fundamental. (AC)
 
 
-<a id="disp-2541"></a>
+<a id="disp-2822"></a>
 ### Art. 197
 
 Os recursos para a manutenção e desenvolvimento do ensino compreenderão:
@@ -2655,7 +2661,7 @@ Os recursos para a manutenção e desenvolvimento do ensino compreenderão:
 **Parágrafo Único.** Os recursos referidos neste Artigo poderão ser dirigidos, também, às escolas comunitárias, na forma da Lei, desde que atendidas as prioridades da rede de ensino do Município.
 
 
-<a id="disp-2542"></a>
+<a id="disp-2823"></a>
 ### Art. 198
 
 A Lei garantirá a participação em nível de decisão de entidades representativas dos usuários, dos trabalhadores na educação e representantes governamentais na formulação, gestão e controle da Política Municipal e das Ações de Educação através do Conselho Municipal, de caráter deliberativo e paritário, que terá as seguintes atribuições.
@@ -2671,79 +2677,79 @@ A Lei garantirá a participação em nível de decisão de entidades representat
 **§ 2º.** O candidato a Diretor de Escola Municipal, referido no § 1º deste Artigo, deverá ter como condição básica, habilitação na área de Educação.
 
 
-<a id="disp-2543"></a>
+<a id="disp-2824"></a>
 ### Art. 199
 
 O Escotismo deverá ser considerado como método complementar da Educação, merecendo o apoio dos órgãos do Município. “Parágrafo Único – Revogado
 
 
-<a id="disp-2544"></a>
+<a id="disp-2825"></a>
 ### Art. 200
 
 O Município apoiará e incentivará a valorização e a difusão das manifestações culturais, prioritariamente, às diretamente ligadas à sua história, à sua comunidade e aos seus bens.
 
 
-<a id="disp-2545"></a>
+<a id="disp-2826"></a>
 ### Art. 201
 
 O Município protegerá com todos os meios ao seu alcance, obras, objetos, documentos e imóveis de valor histórico, artístico, cultural e paisagístico.
 
 
-<a id="disp-2546"></a>
+<a id="disp-2827"></a>
 ### Art. 202
 
 Ficam isentos do pagamento do imposto predial e territorial urbano os imóveis tombados pelo Município em razão de suas características culturais e paisagísticas.
 
 
-<a id="disp-2547"></a>
+<a id="disp-2828"></a>
 ### Art. 203
 
 A os bens tombados pela União e pelo Estado aplicar-se-ão os dispostos nos Artigos 201 e 202, mediante convênio.
 
 
-<a id="disp-2548"></a>
+<a id="disp-2829"></a>
 ### Art. 204
 
 O Município, promoverá o levantamento e a divulgação das manifestações culturais e folclóricas, de sua memória e realizarão concursos, exposições e publicações para sua divulgação.
 
 
-<a id="disp-2549"></a>
+<a id="disp-2830"></a>
 ### Art. 205
 
 O acesso à consulta dos arquivos da documentação oficial do Município é livre.
 
 
-<a id="disp-2550"></a>
+<a id="disp-2831"></a>
 ### Art. 206
 
 O Município fomentará as práticas desportivas formais e não formais, dando prioridade aos alunos de sua rede de ensino, sem privilégios de escolas, e à promoção desportiva dos clubes locais.
 
 
-<a id="disp-2551"></a>
+<a id="disp-2832"></a>
 ### Art. 207
 
 É vedada ao Município a subvenção de entidades desportivas profissionais.
 
 
-<a id="disp-2552"></a>
+<a id="disp-2833"></a>
 ### Art. 208
 
 O Município incentivará e investirá no lazer, como forma de promoção social.
 
 
-<a id="disp-2553"></a>
+<a id="disp-2834"></a>
 ### Art. 208-A
 
 O Município promoverá programas especiais de desporto destinados à participação de deficientes. (AC)
 
 
-<a id="disp-2554"></a>
+<a id="disp-2835"></a>
 ### Art. 209
 
 A saúde é direito de todos os Munícipes e dever do Poder Público, assegurada mediante políticas e economias que visem à eliminação do risco de doenças e outros agravos e ao acesso universal e igualitário às ações e serviços para a sua promoção, proteção e recuperação.
 
 
-<a id="disp-2555"></a>
+<a id="disp-2836"></a>
 ### Art. 210
 
 Para atingir os objetivos estabelecidos no Artigo anterior, o Município promoverá por todos os meios ao seu alcance:
@@ -2757,7 +2763,7 @@ Para atingir os objetivos estabelecidos no Artigo anterior, o Município promove
 **IV.** inspeção periódica de saúde nos alunos das Escolas Municipais, em caráter obrigatório, conforme dispuser a Lei.
 
 
-<a id="disp-2556"></a>
+<a id="disp-2837"></a>
 ### Art. 211
 
 As ações de saúde são de relevância pública, devendo sua execução ser feita, preferencialmente, através de serviços públicos e, complementarmente, através de terceiros.
@@ -2765,7 +2771,7 @@ As ações de saúde são de relevância pública, devendo sua execução ser fe
 **Parágrafo Único.** É vedado ao Município cobrar do usuário pela apresentação de serviços de assistência à saúde mantidos pelo Poder Público ou contratados com terceiros.
 
 
-<a id="disp-2557"></a>
+<a id="disp-2838"></a>
 ### Art. 212
 
 São atribuições do Município, no âmbito do sistema de Saúde:
@@ -2803,7 +2809,7 @@ São atribuições do Município, no âmbito do sistema de Saúde:
 **XIII.** promover campanhas de prevenção, proteção e recuperação da saúde nas escolas do Município.
 
 
-<a id="disp-2558"></a>
+<a id="disp-2839"></a>
 ### Art. 213
 
 As ações e os serviços de saúde realizados no Município integram uma rede regionalizada e hierarquizada constituindo o Sistema Único de Saúde no âmbito do Município, organizado de acordo com as seguintes diretrizes:
@@ -2827,13 +2833,13 @@ As ações e os serviços de saúde realizados no Município integram uma rede r
 **III.** resolutividade de serviços à disposição da população.
 
 
-<a id="disp-2559"></a>
+<a id="disp-2840"></a>
 ### Art. 214
 
 O Prefeito promoverá anualmente a Conferência Municipal de Saúde, com ampla participação da sociedade, conforme dispuser a Lei, para avaliar a situação do Município e fixar diretrizes gerais de política de saúde municipal. (NR)
 
 
-<a id="disp-2560"></a>
+<a id="disp-2841"></a>
 ### Art. 215
 
 A Lei disporá sobre a organização e funcionamento do Conselho Municipal de Saúde que terá as seguintes atribuições:
@@ -2845,13 +2851,13 @@ A Lei disporá sobre a organização e funcionamento do Conselho Municipal de Sa
 **III.** aprovar a instalação e o funcionamento de novos serviços públicos ou privados de saúde atendidas as diretrizes do plano municipal de saúde.
 
 
-<a id="disp-2561"></a>
+<a id="disp-2842"></a>
 ### Art. 216
 
 As instituições privadas poderão participar de forma complementar do Sistema Único de Saúde, mediante contrato de direito público ou convênio, tendo preferência as entidades filantrópicas e as sem fins lucrativos.
 
 
-<a id="disp-2562"></a>
+<a id="disp-2843"></a>
 ### Art. 217
 
 O Sistema Único de Saúde no âmbito do Município será financiado com recursos do orçamento do Município, do Estado, da União e da seguridade social, além de outras fontes.
@@ -2863,13 +2869,13 @@ O Sistema Único de Saúde no âmbito do Município será financiado com recurso
 **§ 3º.** É vedada a destinação de recursos públicos para auxílios ou subvenções às instituições privadas com fins lucrativos.
 
 
-<a id="disp-2563"></a>
+<a id="disp-2844"></a>
 ### Art. 217-A
 
 É vedada a nomeação ou designação, para cargo ou função de chefia ou assessoramento na área de saúde em qualquer nível, de pessoa que seja proprietário ou participe da direção, da gerência ou da Administração de Empresa, Entidade ou Instituição que mantenham contrato com o Sistema Único de Saúde, ou seja, por ele creditado. (AC)
 
 
-<a id="disp-2564"></a>
+<a id="disp-2845"></a>
 ### Art. 218
 
 O Município deverá atuar no sentido de assegurar a todos os cidadãos o direito ao meio ambiente ecologicamente saudável e equilibrado, bem de uso comum do povo e essencial à qualidade de vida.
@@ -2877,61 +2883,61 @@ O Município deverá atuar no sentido de assegurar a todos os cidadãos o direit
 **Parágrafo Único.** Para assegurar efetividade a esse direito, o Município deverá articular-se com os órgãos estaduais, regionais e federais componentes e ainda, quando for o caso, com outros Municípios, objetivando a solução de problemas comuns relativos à proteção ambiental.
 
 
-<a id="disp-2565"></a>
+<a id="disp-2846"></a>
 ### Art. 219
 
 O Município deverá atuar mediante planejamento, controle e fiscalização das atividades, públicas ou privadas, causadores efetivas ou potenciais de alterações, significativas no meio ambiente.
 
 
-<a id="disp-2566"></a>
+<a id="disp-2847"></a>
 ### Art. 220
 
 O Município, ao promover a ordenação de seu território definirá saneamento e diretrizes gerais de ocupação que assegurem a proteção dos recursos naturais e de seus bens, pela proteção da fauna e da flora e pela preservação de lagos, ilhas e rios, especialmente de suas nascentes e margens, tendo em vista o equilíbrio ecológico, em consonância com o disposto na legislação estadual pertinente.
 
 
-<a id="disp-2567"></a>
+<a id="disp-2848"></a>
 ### Art. 221
 
 A Política Urbana do Município e o seu plano diretor deverão contribuir para a proteção do meio ambiente, através da adoção de diretrizes adequadas de uso e ocupação do solo urbano.
 
 
-<a id="disp-2568"></a>
+<a id="disp-2849"></a>
 ### Art. 222
 
 O Município exigirá na forma da lei, para instalação de obra, atividade ou parcelamento de solo, potencialmente causadora de significativa degradação do meio ambiente, estudos práticos de impacto ambiental, a que se dará publicidade.
 
 
-<a id="disp-2569"></a>
+<a id="disp-2850"></a>
 ### Art. 223
 
 As empresas concessionárias de serviços públicos deverá atender rigorosamente aos dispositivos de proteção ambiental em vigor, sob pena de não ser renovada a concessão ou permissão pelo Município.
 
 
-<a id="disp-2570"></a>
+<a id="disp-2851"></a>
 ### Art. 224
 
 O Município assegurará a participação das entidades representativas da comunidade no planejamento e na fiscalização de proteção ambiental, garantindo o amplo acesso dos interessados às informações sobre as fontes de poluição e degradação ambiental ao seu dispor.
 
 
-<a id="disp-2571"></a>
+<a id="disp-2852"></a>
 ### Art. 225
 
 O Município deverá promover a educação ambiental na rede de ensino e a conscientização da comunidade para a preservação do meio ambiente.
 
 
-<a id="disp-2572"></a>
+<a id="disp-2853"></a>
 ### Art. 226
 
 Aquele que explorar recursos minerais, inclusive extração de areia, cascalho ou pedreiras fica obrigado a recuperar o meio ambiente degradado, de acordo com a lei.
 
 
-<a id="disp-2573"></a>
+<a id="disp-2854"></a>
 ### Art. 227
 
 As condutas e atividades consideradas lesivas ao meio ambiente sujeitarão os infratores; pessoas físicas ou jurídicas, às sanções administrativas e penais, independentemente da obrigação de reparar os danos causados.
 
 
-<a id="disp-2574"></a>
+<a id="disp-2855"></a>
 ### Art. 228
 
 O Município promoverá o seu desenvolvimento econômico agindo de modo que as atividades econômicas realizadas em seu território contribuam para elevar o nível de vida e o bem-estar da população local, bem como para valorizar o trabalho humano.
@@ -2939,7 +2945,7 @@ O Município promoverá o seu desenvolvimento econômico agindo de modo que as a
 **Parágrafo Único.** Para a consecução do objetivo mencionado neste Artigo, o Município atuará de forma exclusiva ou em articulação com a União ou com o Estado.
 
 
-<a id="disp-2575"></a>
+<a id="disp-2856"></a>
 ### Art. 229
 
 Na promoção do desenvolvimento econômico, o Município agirá, sem prejuízo de outras iniciativas, no sentido de:
@@ -2973,7 +2979,7 @@ Na promoção do desenvolvimento econômico, o Município agirá, sem prejuízo 
 **d.** serviços de suporte informativo ou de mercado.
 
 
-<a id="disp-2576"></a>
+<a id="disp-2857"></a>
 ### Art. 230
 
 É de responsabilidade do Município, no campo de sua competência a realização de investimentos para formar e manter a infra-estrutura básica capaz de atrair, apoiar ou incentivar o desenvolvimento de atividades produtivas, seja diretamente ou mediante delegação, ao setor privado para esse fim.
@@ -2981,7 +2987,7 @@ Na promoção do desenvolvimento econômico, o Município agirá, sem prejuízo 
 **Parágrafo Único.** A atuação do Município dar-se-á, inclusive, no meio rural, para a fixação de contingentes populacionais, possibilitando-lhes acesso aos meios de produção e geração de renda e estabelecendo a necessária infra-estrutura, destinada a viabilizar esse propósito.
 
 
-<a id="disp-2577"></a>
+<a id="disp-2858"></a>
 ### Art. 231
 
 A atuação do Município na zona rural terá como principais objetivos:
@@ -2993,19 +2999,19 @@ A atuação do Município na zona rural terá como principais objetivos:
 **III.** garantir a utilização racional dos recursos naturais.
 
 
-<a id="disp-2578"></a>
+<a id="disp-2859"></a>
 ### Art. 232
 
 Como principais instrumentos para o fomento da produção na zona rural, o Município utilizará a assistência técnica, a extensão rural, o armazenamento, o transporte, o associativismo e a divulgação das oportunidades de crédito e de incentivos fiscais.
 
 
-<a id="disp-2579"></a>
+<a id="disp-2860"></a>
 ### Art. 233
 
 O Município poderá consorciar-se com outras                   Municipalidades   com   vistas   ao desenvolvimento regional a cargo de outras esferas de Governo.
 
 
-<a id="disp-2580"></a>
+<a id="disp-2861"></a>
 ### Art. 234
 
 O Município desenvolverá esforços para proteger o consumidor através de:
@@ -3015,13 +3021,13 @@ O Município desenvolverá esforços para proteger o consumidor através de:
 **II.** criação de órgãos no âmbito da Prefeitura ou da Câmara Municipal para defesa do consumidor.
 
 
-<a id="disp-2581"></a>
+<a id="disp-2862"></a>
 ### Art. 235
 
 O Município dispensará tratamento jurídico diferenciado à microempresas e empresas de pequeno porte, assim definidas em legislação municipal.
 
 
-<a id="disp-2582"></a>
+<a id="disp-2863"></a>
 ### Art. 236
 
 Às microempresas e às empresas de pequeno porte municipais serão concedidos os seguintes favores fiscais:
@@ -3037,7 +3043,7 @@ O Município dispensará tratamento jurídico diferenciado à microempresas e em
 **Parágrafo Único.** O tratamento diferenciado previsto neste artigo será dado aos contribuintes citados, desde que atendam às condições estabelecidas na legislação específicas.
 
 
-<a id="disp-2583"></a>
+<a id="disp-2864"></a>
 ### Art. 237
 
 O Município, em caráter precário e por prazo limitado definido em ato do Prefeito, permitirá às microempresas se estabelecerem na residência de seus titulares, desde que não prejudiquem as normas ambientais, de segurança, de silêncio, de trânsito e de saúde pública.
@@ -3045,31 +3051,31 @@ O Município, em caráter precário e por prazo limitado definido em ato do Pref
 **Parágrafo Único.** As microempresas, desde que trabalhadas exclusivamente pela família, não terão seus bens ou os de seus proprietários sujeitos à penhora pelo Município para pagamento de débito decorrente de sua atividade produtiva.
 
 
-<a id="disp-2584"></a>
+<a id="disp-2865"></a>
 ### Art. 238
 
 Fica assegurada às microempresas ou às empresas de pequeno porte a simplificação ou a elaboração através de Ato do Prefeito, de procedimentos administrativos em seu relacionamento com a Administração Municipal, direta ou indireta, especialmente em exigências relativas às licitações.
 
 
-<a id="disp-2585"></a>
+<a id="disp-2866"></a>
 ### Art. 239
 
 Os portadores de deficiências físicas e de limitação sensorial, assim como as pessoas idosas, terão, prioridade para exercer o comércio eventual ou ambulante no Município.
 
 
-<a id="disp-2586"></a>
+<a id="disp-2867"></a>
 ### Art. 240
 
 O Município promoverá e incentivará o turismo como fator de desenvolvimento social e econômico.
 
 
-<a id="disp-2587"></a>
+<a id="disp-2868"></a>
 ### Art. 241
 
 Fica criada a Comissão Municipal de Defesa do Consumidor - COMDECON- visando assegurar os direitos e interesses do consumidor.
 
 
-<a id="disp-2588"></a>
+<a id="disp-2869"></a>
 ### Art. 242
 
 À Comissão Municipal de Defesa do Consumidor compete:
@@ -3097,13 +3103,13 @@ Fica criada a Comissão Municipal de Defesa do Consumidor - COMDECON- visando as
 **k.** incentivar a organização comunitária e estimular, as entidades existentes.
 
 
-<a id="disp-2589"></a>
+<a id="disp-2870"></a>
 ### Art. 243
 
 A COMDECON será vinculada à Secretaria Municipal de Governo, executando trabalho de interesse social em harmonia e com pronta colaboração dos demais órgãos municipais.
 
 
-<a id="disp-2590"></a>
+<a id="disp-2871"></a>
 ### Art. 244
 
 A COMDECON será dirigida por um Presidente com as seguintes atribuições:
@@ -3115,73 +3121,73 @@ A COMDECON será dirigida por um Presidente com as seguintes atribuições:
 **III.** exercer o poder normativo e a direção superior da COMDECON orientando, supervisionando os seus trabalhos e promovendo as medidas necessárias ao fiel cumprimento da suas finalidades.
 
 
-<a id="disp-2591"></a>
+<a id="disp-2872"></a>
 ### Art. 245
 
 O subsídio do Prefeito Municipal, não poderá ser inferior ao subsídio pago ao servidor do Município na data de sua fixação. (NR)
 
 
-<a id="disp-2592"></a>
+<a id="disp-2873"></a>
 ### Art. 246
 
 O Ensino Público Municipal será orientado no sentido de excluir toda e qualquer forma de manifestação racista e discriminação religiosa e de contemplar as origens étnicas da população.
 
 
-<a id="disp-2593"></a>
+<a id="disp-2874"></a>
 ### Art. 247
 
 O Município deverá, junto com o Estado, disciplinar a criação de rebanho bubalino, visando conciliar essa atividade com os interesses do pequeno produtor rural e da pesca artesanal.
 
 
-<a id="disp-2594"></a>
+<a id="disp-2875"></a>
 ### Art. 248
 
 É vedada o uso de qualquer integrante da Guarda Municipal para serviço de vigilância, guarda e proteção de bens particulares, incluindo-se aqui as residências não oficiais, de detentores de mandato eletivo ou de função pública de qualquer dos Poderes, salvo se no cumprimento de decisão judicial.
 
 
-<a id="disp-2595"></a>
+<a id="disp-2876"></a>
 ### Art. 249
 
 Incide na penalidade de destituição do mandato administrativo ou de cargo ou função de direção. o agente público que dentro de 60 (sessenta) dias do requerimento do interessado, deixar, injustificadamente, de sanar omissão inviabilizadora do exercício do direito constitucionalmente assegurado.
 
 
-<a id="disp-2596"></a>
+<a id="disp-2877"></a>
 ### Art. 250
 
 Ninguém será discriminado ou de qualquer forma prejudicado pelo fato de litigiar com a Administração Pública Municipal, no âmbito administrativo ou judicial.
 
 
-<a id="disp-2597"></a>
+<a id="disp-2878"></a>
 ### Art. 251
 
 Todos têm direito de requerer e obter, em prazo não superior a 30 (trinta) dias, informações sobre projetos do Poder Público, ressalvados os casos cujo sigilo seja comprovadamente imprescindível à segurança da sociedade e da soberania do Município.
 
 
-<a id="disp-2598"></a>
+<a id="disp-2879"></a>
 ### Art. 252
 
 Os estabelecimentos de ensino do Município farão incluir, obrigatoriamente no currículo escolar o estudo e a pesquisa da História de Pinheiro.
 
 
-<a id="disp-2599"></a>
+<a id="disp-2880"></a>
 ### Art. 253
 
 O uso de carro oficial de caráter exclusivo somente será permitido para o Prefeito Municipal e ao Presidente da Câmara Municipal. Parágrafo Único        A Lei regulará o uso de carros oficiais destinados ao serviço público.
 
 
-<a id="disp-2600"></a>
+<a id="disp-2881"></a>
 ### Art. 254
 
 Nos dez primeiros anos da promulgação da Constituição Federal, o Município envidará esforços, com a mobilização de todos os setores organizados da sociedade e com a aplicação de, pelo menos 50% (cinqüenta por cento) dos recursos a que se refere o Artigo 212 da Constituição Federal, para eliminar o analfabetismo e universalizar o ensino fundamental, como determina o Artigo 60 do Ato das Disposições Constitucionais Transitórias.
 
 
-<a id="disp-2601"></a>
+<a id="disp-2882"></a>
 ### Art. 255
 
 É assegurada a participação dos sindicatos ou associações de professores públicos no processo da reformulação do Estatuto do Magistério e na implantação, do Regimento das Escolas Públicas do Município.
 
 
-<a id="disp-2602"></a>
+<a id="disp-2883"></a>
 ### Art. 256
 
 Lei Municipal, segundo limite e critérios que estabeleça, poderá determinar que as despesas, de tratamento médico hospitalar do Prefeito e de Vereadores sejam custeadas pelo Município, quando, em razão do exercício do cargo, forem acometidos de doenças graves, contagiosas ou incuráveis.
@@ -3189,49 +3195,49 @@ Lei Municipal, segundo limite e critérios que estabeleça, poderá determinar q
 **Parágrafo Único.** A Lei poderá estabelecer igualmente que as despesas com funeral do Prefeito e de Vereadores serão custeadas pelo Município, quando falecerem no exercício dos respectivos cargos.
 
 
-<a id="disp-2603"></a>
+<a id="disp-2884"></a>
 ### Art. 257
 
 Fica criado o Conselho Municipal do Meio Ambiente, Ciência e Tecnologia, órgão colegiado e composição paritária regulada por lei ordinária.
 
 
-<a id="disp-2604"></a>
+<a id="disp-2885"></a>
 ### Art. 258
 
 Fica criado o Conselho Municipal de Defesa da Mulher, incumbido de desenvolver, orientar e deliberar a política a ser implantada no atendimento integral à Mulher, e cujas atribuições serão definidas em Lei, sendo constituída, paritariamente por Mulheres indicadas pelos Poderes Executivo, Legislativo e, por Entidades Religiosas e da Sociedade Civil.
 
 
-<a id="disp-2605"></a>
+<a id="disp-2886"></a>
 ### Art. 259
 
 Fica criado o Conselho Municipal de Entorpecentes de Pinheiro – COMEN – PH; órgão encarregado, de elaborar a política de combate às drogas no âmbito do Município, nas áreas de prevenção, Assistência e Repressão ao tráfico de drogas, de Constituição paritária com membros indicados pelo Poder Executivo, Poder Legislativo, Poder Judiciário, Entidades Religiosas e da Sociedade Civil, cujas atribuições e composições serão definidas em Lei.
 
 
-<a id="disp-2606"></a>
+<a id="disp-2887"></a>
 ### Art. 260
 
 Fica criado o Conselho Municipal de Defesa da Criança e do Adolescente, ao qual incumbe desenvolver, orientar, normatizar e deliberar a política de atendimento aos Direitos da Criança e do Adolescente com Constituição paritária pelo Município e pela Sociedade Civil, cujas atribuições e composição serão definidas em Lei.
 
 
-<a id="disp-2607"></a>
+<a id="disp-2888"></a>
 ### Art. 261
 
 Fica criado Conselho Municipal de Cultura, de Constituição paritária com membros indicados pelo Poder Executivo e outros da Sociedade Civil, cujas atribuições e composição serão reguladas em Lei.
 
 
-<a id="disp-2608"></a>
+<a id="disp-2889"></a>
 ### Art. 262
 
 A Lei disporá no que couber, sobre adaptação dos logradouros, dos edifícios de uso público e dos veículos de transporte coletivos atualmente existentes, a fim de garantir o acesso adequado a pessoas portadoras de deficiências.
 
 
-<a id="disp-2609"></a>
+<a id="disp-2890"></a>
 ### Art. 263
 
 Os Membros da Câmara Municipal, o Prefeito e o Vice-Prefeito prestarão o compromisso de manter, defender e cumprir a Lei Orgânica do Município, no ato e na data de sua promulgação.
 
 
-<a id="disp-2610"></a>
+<a id="disp-2891"></a>
 ### Art. 264
 
 São considerados estáveis os servidores públicos municipais, cujo ingresso não teria sido realizado de acordo com o Artigo 37 da Constituição Federal e que, até a data da promulgação da Constituição Federal, tenham completado, pelo menos, 5 (cinco) anos continuados de exercício, de função pública municipal.
@@ -3241,7 +3247,7 @@ São considerados estáveis os servidores públicos municipais, cujo ingresso n�
 **§ 2º.** O disposto neste Artigo não se aplica aos ocupantes de cargos, funções e empregos de confiança ou em comissão, nem aos que a lei declare de livre exoneração, cujo tempo de serviço não será computado para fins “caput” deste Artigo, salvo se tratar de servidor.
 
 
-<a id="disp-2611"></a>
+<a id="disp-2892"></a>
 ### Art. 265
 
 Os recursos correspondentes às dotações orçamentárias destinadas à Câmara Municipal, inclusive créditos complementares e especiais, ser-lhe-ão entregues até o penúltimo dia útil de cada mês, na forma que dispõe o Artigo 165, § 9º da Constituição Federal.
@@ -3249,7 +3255,7 @@ Os recursos correspondentes às dotações orçamentárias destinadas à Câmara
 **Parágrafo Único.** Até que seja editada a lei referida no “caput” deste artigo, os recursos da Câmara Municipal ser-lhe-ão entregues até o dia 25 do mês.
 
 
-<a id="disp-2612"></a>
+<a id="disp-2893"></a>
 ### Art. 266
 
 Nos Distritos já existentes, a posse do Administrador Distrital dar-se-á 60(sessenta) dias após a promulgação desta Lei Orgânica, ficando o Prefeito Municipal autorizado a criar o respectivo cargo em Comissão, da mesma natureza do de Secretário Municipal.
@@ -3257,25 +3263,25 @@ Nos Distritos já existentes, a posse do Administrador Distrital dar-se-á 60(se
 **Parágrafo Único.** A eleição dos Conselheiros Distritais dar-se-á observado, no que couber, o disposto nesta Lei Orgânica, dentro de 60 (sessenta) dias após sua promulgação.
 
 
-<a id="disp-2613"></a>
+<a id="disp-2894"></a>
 ### Art. 267
 
 Dentro de 180 (cento e oitenta) dias, após a promulgação desta Lei Orgânica, deverá ser instalado, a Procuradoria Geral do Município, na forma prevista nesta lei.
 
 
-<a id="disp-2614"></a>
+<a id="disp-2895"></a>
 ### Art. 268
 
 Até a promulgação da Lei Complementar referida no Artigo 169 da Constituição Federal, o Município, não poderá despender mais que 65% (sessenta e cinco por cento) das receitas correntes com pessoal, inclusive membros do Poder Legislativo.
 
 
-<a id="disp-2615"></a>
+<a id="disp-2896"></a>
 ### Art. 269
 
 Os Poderes Legislativo e Executivo deverão, dentro de 180 (cento e oitenta) dias após a promulgação, desta Lei Orgânica, regulamentar a situação dos servidores públicos existentes nos quadros de pessoal.
 
 
-<a id="disp-2616"></a>
+<a id="disp-2897"></a>
 ### Art. 270
 
 Salvo nos casos previstos nesta Lei, e, no Parágrafo Único deste Artigo, o Município não poderá contratar ou nomear pessoal no período de 24 (vinte quatro) meses, a contar de sua promulgação.
@@ -3283,55 +3289,55 @@ Salvo nos casos previstos nesta Lei, e, no Parágrafo Único deste Artigo, o Mun
 **Parágrafo Único.** A contratação ou nomeação de pessoal dentro do período disposto, no “caput” deste Artigo somente se dará nas áreas de Saúde e Educação, no limite máximo de 65% (sessenta e cinco por cento) e 50% (cinqüenta por cento), respectivamente, do pessoal existente em cada área na data da promulgação desta Lei.
 
 
-<a id="disp-2617"></a>
+<a id="disp-2898"></a>
 ### Art. 271
 
 O Poder Executivo deverá dentro do período de 180 (cento e oitenta) dias após a promulgação desta Lei, promover a reforma do Estatuto do Servidor Público Municipal.
 
 
-<a id="disp-2618"></a>
+<a id="disp-2899"></a>
 ### Art. 272
 
 A Lei disporá sobre a regularização e atendimento dos pensionistas do Município.
 
 
-<a id="disp-2619"></a>
+<a id="disp-2900"></a>
 ### Art. 273
 
 O Município deverá dentro do período de 365 (trezentos e sessenta e cinco) dias após a promulgação desta Lei Orgânica, elaborar todas as Leis Complementares, citadas no teor desta Lei Orgânica salvo as que já tiverem prazo predeterminado no Artigo que as estabelecem.
 
 
-<a id="disp-2620"></a>
+<a id="disp-2901"></a>
 ### Art. 274
 
 A Lei assegurará que o Município garanta, em seus orçamentos anuais, sua participação no financiamento da seguridade social, de acordo com os Artigos 195 e 198 da Constituição Federal.
 
 
-<a id="disp-2621"></a>
+<a id="disp-2902"></a>
 ### Art. 275
 
 Todos os Conselheiros e Comissões Municipais deverão ser criados e/ou implantados no prazo de 180 (cento e oitenta) dias após a promulgação desta Lei Orgânica, salvo os que já tiverem prazo determinado.
 
 
-<a id="disp-2622"></a>
+<a id="disp-2903"></a>
 ### Art. 276
 
 Continuam em vigor as Leis Municipais que não colidirem com o disposto nesta Lei Orgânica.
 
 
-<a id="disp-2623"></a>
+<a id="disp-2904"></a>
 ### Art. 277
 
 Esta Lei Orgânica não poderá ser emendada antes de decorridos 24 (vinte quatro meses) da sua promulgação.
 
 
-<a id="disp-2624"></a>
+<a id="disp-2905"></a>
 ### Art. 278
 
 O Município mandará imprimir esta Lei Orgânica para distribuição nas escolas, entidades representativas da sociedade, órgãos públicos, e outros, gratuitamente, de modo que se faça a mais ampla divulgação de seu conteúdo.
 
 
-<a id="disp-2625"></a>
+<a id="disp-2906"></a>
 ### Art. 279
 
 Esta Lei Orgânica, aprovada pela câmara Municipal de Pinheiro, será por ela promulgado e entrará em vigor na data de sua publicação, revogadas as disposições em contrário. RAIMUNDO HUMBERTO PINHEIRO FILHO                           JOÃO BATISTA RIBEIRO MORAES 1O SECRETÁRIO                                            2O SECRETÁRIO ANTÔNIO FLORÊNCIO RIBEIRO                                                       AVELINO ANDRÉ SILVA VEREADOR                                                                                  VEREADOR CARLOS AUGUSTO NUNES CASTRO                                               DOMINGOS JESUÍTA FURTADO VEREADOR                                                                                  VEREADOR EDSON BISPO CHAGAS                                                            JOÃO RAIMUNDO MORAES VEREADOR                                                                                  VEREADOR JOSÉ LUCIANO MORAES                                                                   OSMAR PACHECO VEREADOR                                                                                  VEREADOR PAULO FERREIRA SOBRINHO                                              RAIMUNDO NONATO PINHEIRO SILVA VEREADOR                                                                                 VEREADOR 1989/1990 PROFa. MARIA DO CARMO BARROS LEITE – EDUCAÇÃO SR. RAIMUNDO JOSÉ MENDES                            PRESIDENTE DA ASSOCIAÇÃO COMERCIAL SR. ANTÔNIO JOSÉ FREITAS                            CH. DISTRITO ESCOTEIRO DE PINHEIRO SR. JOSÉ PEDRO DE AMENGOL FILHO                     GERENTE DA EMPRESA BRAS. DE CORREIOS PROFa, REGINA DURANS SR. JOSÉ RIBAMAR OLIVEIRA SILVA                     CH. DO DISTRITO DA SUCAM EM PINHEIRO SR. CARLOS HENRIQUE SCHALCHER                       GERENTE DO BANCO DO BRASIL – AG. PINHEIRO 001 de 13/04/1991 001-A de 08/01/1997 002 de 13/10/1993 003 de 09/03/1994 0O4 de 27/03/1995 007 de 04/12/199 009 de 12/06/1996 010 de 16/12/1997 011 de 30/03/1998 012 de 21/10/1998 013 de 16/08/1999 014 de 16/08/1999 015 de 08/11/1999 016 de 13/11/2000 017 de 11/12/2000 018 de 29/05/2001 019 de 26/08/2002 020 de 15/04/2004 021 de 01/12/2004 022 de 04/04/2006 023 de 28/08/2006 024 de 16/07/2008 LEGISLATURA DE 01/01/1997 A 31/12/2000 PINHEIRO (MA), EM 14 DE DEZEMBRO DE 2000 MESA DIRETORA DA CÂMARA BIÊNIO -2011/2012 LEGISLATURA DE 01/01/2008 A 31/12/2012 Antonio Florêncio Ribeiro Carlos Alberto Soares Reis Conceição de Maria Ferreira Silva Edinildo dos Santos Soares Reis Gilmar Soares Jaelson Pereira Souza Leonardo Sarmento Pires de Sá Lutiellen Layanna Bastos Sá Oziel Menezes Abreu Stelio Castro Cordeiro
