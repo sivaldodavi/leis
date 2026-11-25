@@ -1,21 +1,77 @@
 {{ define "main" }}
-<div style="padding:40px 48px 72px">
-  <h1 style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px">Vereadores e autores</h1>
-  <p class="lead">Quem propôs o quê na Câmara de Pinheiro. Partido, votos e situação eleitoral vêm do TSE (eleição de 2024).</p>
-  <div class="grid grid-3">
+{{ $pages := .Pages }}
+{{ $atuais := where $pages "Params.atual" true }}
+{{ $anteriores := where $pages "Params.anterior" true }}
+<div class="pagehead">
+  <h1>Vereadores e autores</h1>
+  <p class="lead">Quem propôs o quê na Câmara de Pinheiro. Partido, votos e situação eleitoral vêm do TSE, nas eleições de 2020 e 2024.</p>
+  <div class="stats-strip">
+    <div class="stat"><span class="n">{{ len $pages }}</span><span class="l">perfis cadastrados</span></div>
+    <div class="stat"><span class="n">{{ len $atuais }}</span><span class="l">na legislatura 2025–2028</span></div>
+    <div class="stat"><span class="n">{{ len $anteriores }}</span><span class="l">na legislatura 2021–2024</span></div>
+    <div class="stat dark"><span class="n">{{ len (where $pages "Params.anterior" true) }}</span><span class="l">com passagem anterior</span></div>
+  </div>
+</div>
+
+<div style="padding:0 48px 72px;max-width:1100px">
+  <div class="toolbar">
+    <p class="toolbar-title">Filtrar por legislatura</p>
+    <div class="chips">
+      <button class="chip active" data-filtro="todos">Todos <span class="count">{{ len $pages }}</span></button>
+      <button class="chip" data-filtro="atual">2025–2028 <span class="count">{{ len $atuais }}</span></button>
+      <button class="chip" data-filtro="anterior">2021–2024 <span class="count">{{ len $anteriores }}</span></button>
+      <button class="chip" data-filtro="ambos">Nas duas <span class="count">{{ len (where $pages "Params.atual" true | intersect (where $pages "Params.anterior" true)) }}</span></button>
+    </div>
+  </div>
+
+  <div class="photo-grid" id="lista-vereadores">
     {{ range sort .Pages "Params.votos" "desc" }}
-    <article class="card">
-      {{ with .Params.partido }}<span class="badge vigente">{{ . }}</span>{{ else }}<span class="badge outro">Sem TSE</span>{{ end }}
-      <h2 style="margin:0;font-size:24px;font-weight:800"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      {{ with .Params.nome_urna }}<p style="margin:0;font-size:14px;color:#5B5B5B">Nome de urna: {{ . }}</p>{{ end }}
-      <p style="margin:0;font-size:15px;color:#3A3A3A">
-        {{ with .Params.votos }}<strong>{{ . }}</strong> votos em 2024{{ else }}Sem dados eleitorais{{ end }}
-        {{ with .Params.situacao_tse }} · {{ . }}{{ end }}
-      </p>
-      <p style="margin:0;font-size:15px;color:#3A3A3A"><strong>{{ .Params.n_proposicoes }}</strong> proposições</p>
-      <a href="{{ .RelPermalink }}" style="margin-top:auto;font-weight:700;font-size:15px">Ver atuação →</a>
+    {{ $page := . }}
+    <article class="person-card pessoa" data-atual="{{ .Params.atual }}" data-anterior="{{ .Params.anterior }}">
+      {{ if .Params.foto }}
+      <img class="person-photo" src="{{ .Params.foto }}" alt="Foto de {{ .Title }}" loading="lazy" width="260" height="230">
+      {{ else }}
+      <div class="person-photo-fallback" aria-hidden="true">{{ substr .Title 0 1 }}</div>
+      {{ end }}
+      <div class="person-body">
+        <div class="chips" style="margin:0 0 2px">
+          {{ with .Params.partido }}<span class="pill">{{ . }}</span>{{ end }}
+          {{ if .Params.atual }}<span class="pill green">2025–2028</span>{{ end }}
+          {{ if .Params.anterior }}<span class="pill amber">2021–2024</span>{{ end }}
+        </div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ with .Params.nome_urna }}<p class="small">Nome de urna: {{ . }}</p>{{ end }}
+        <p class="small">
+          {{ with .Params.votos }}<strong>{{ . }}</strong> votos em {{ $page.Params.ano_tse }}{{ else }}Sem dados eleitorais{{ end }}
+          {{ with .Params.situacao_tse }} · {{ . }}{{ end }}
+        </p>
+        <p class="small"><strong>{{ .Params.n_proposicoes }}</strong> proposições</p>
+        <a class="link" href="{{ .RelPermalink }}">Ver perfil →</a>
+      </div>
     </article>
     {{ end }}
   </div>
+  <p class="empty" id="vazio-vereadores" style="display:none;margin-top:20px">Nenhum vereador encontrado com esse filtro.</p>
 </div>
+
+<script>
+(function(){
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.pessoa'));
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-filtro]'));
+  var vazio = document.getElementById('vazio-vereadores');
+  function apply(filtro){
+    var n = 0;
+    cards.forEach(function(c){
+      var atual = c.getAttribute('data-atual') === 'true';
+      var anterior = c.getAttribute('data-anterior') === 'true';
+      var ok = filtro === 'todos' || (filtro === 'atual' && atual) || (filtro === 'anterior' && anterior) || (filtro === 'ambos' && atual && anterior);
+      c.style.display = ok ? '' : 'none';
+      if(ok) n++;
+    });
+    if(vazio) vazio.style.display = n ? 'none' : 'block';
+    buttons.forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-filtro') === filtro); });
+  }
+  buttons.forEach(function(b){ b.addEventListener('click', function(){ apply(b.getAttribute('data-filtro')); }); });
+})();
+</script>
 {{ end }}

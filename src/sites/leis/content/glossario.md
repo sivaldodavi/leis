@@ -2,7 +2,7 @@
 title: "Glossário de termos legislativos"
 ---
 
-Termos usados nas leis e atos da Câmara de Pinheiro.
+Termos usados nas leis e atos da Câmara de Pinheiro. Para entender o efeito de cada verbo com exemplos reais, veja o guia [Como ler uma lei](/como-ler/).
 
 ## alterar / dar nova redação
 

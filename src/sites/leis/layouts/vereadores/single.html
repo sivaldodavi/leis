@@ -1,8 +1,188 @@
 {{ define "main" }}
-<div class="content">
-  <p class="eyebrow">Vereador(a) · Câmara Municipal de Pinheiro</p>
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  <p style="margin-top:32px"><a href="/vereadores/">← Ver todos os vereadores</a> · <a href="/proposicoes/">Ver todas as proposições</a></p>
+{{ $autor := index (where .Site.Data.autores "slug" .Params.slug) 0 }}
+<div style="padding:0 48px 72px;max-width:1100px">
+  <p style="padding-top:22px;margin:0;font-size:14px"><a href="/vereadores/">← Vereadores e autores</a></p>
+
+  <section class="profile-hero">
+    <div>
+      {{ if $autor.foto }}
+      <img class="avatar" src="{{ $autor.foto }}" alt="Foto de {{ .Title }}" width="170" height="222" loading="eager">
+      {{ else }}
+      <div class="avatar-fallback" aria-hidden="true">{{ substr .Title 0 1 }}</div>
+      {{ end }}
+    </div>
+    <div>
+      <p class="profile-kicker">Vereador(a) · Câmara Municipal de Pinheiro</p>
+      <h1 class="profile-name">{{ .Title }}</h1>
+      <div class="profile-tags">
+        {{ with $autor.partido }}<span class="pill">{{ . }}</span>{{ end }}
+        {{ if $autor.atual }}<span class="pill green">Legislatura 2025–2028</span>{{ end }}
+        {{ if $autor.anterior }}<span class="pill amber">Legislatura 2021–2024</span>{{ end }}
+        {{ with $autor.situacao_tse }}<span class="pill">{{ . }}</span>{{ end }}
+      </div>
+      {{ if $autor.votos }}
+      <p class="meta-line"><strong>{{ $autor.votos }}</strong> votos em {{ $autor.ano_tse }} · {{ $autor.situacao_tse }}</p>
+      {{ else }}
+      <p class="meta-line" style="color:#5B5B5B">Sem dados eleitorais correspondentes no TSE.</p>
+      {{ end }}
+      {{ with $autor.nome_urna }}<p class="meta-line" style="font-size:14px;color:#5B5B5B">Nome de urna: {{ . }}</p>{{ end }}
+      <p class="meta-line" style="font-size:14px;color:#5B5B5B">
+        {{ if gt $autor.n_proposicoes 0 }}{{ $autor.n_proposicoes }} proposições registradas no banco.{{ else }}Nenhuma proposição registrada no banco para este perfil.{{ end }}
+      </p>
+    </div>
+  </section>
+
+  <div class="stats-strip">
+    <div class="stat"><span class="n">{{ $autor.n_proposicoes }}</span><span class="l">proposições</span></div>
+    <div class="stat"><span class="n">{{ $autor.stats.aprovadas }}</span><span class="l">aprovadas</span></div>
+    <div class="stat dark"><span class="n">{{ $autor.stats.taxa_aprovacao }}%</span><span class="l">taxa de aprovação</span></div>
+    <div class="stat dark"><span class="n">{{ len $autor.stats.by_year }}</span><span class="l">anos com proposições</span></div>
+    <div class="stat dark"><span class="n">{{ len $autor.legislaturas }}</span><span class="l">legislaturas</span></div>
+  </div>
+
+  <div class="section-line">
+    <h2>Mandatos e candidaturas</h2>
+    <p>Dados oficiais do TSE por eleição.</p>
+  </div>
+  {{ if $autor.mandatos }}
+  <div class="mandato-list">
+    {{ range $autor.mandatos }}
+    <article class="mandato">
+      <div class="top">
+        <span class="leg">{{ if .eleito }}Legislatura {{ .legislatura }}{{ else }}Candidatura em {{ .ano_eleicao }}{{ end }}</span>
+        <span class="pill {{ if .eleito }}green{{ else }}amber{{ end }}">{{ if .eleito }}Eleito(a){{ else }}{{ .situacao_tse }}{{ end }}</span>
+      </div>
+      <p class="detail">{{ .partido }} · {{ .votos }} votos · {{ .situacao_tse }}</p>
+      <p class="detail" style="font-size:13px;color:#5B5B5B">Nome no TSE: {{ .nome_tse }}</p>
+    </article>
+    {{ end }}
+  </div>
+  {{ else }}
+  <p class="empty">Sem mandato ou candidatura localizada no TSE.</p>
+  {{ end }}
+
+  {{ if gt $autor.n_proposicoes 0 }}
+  <div class="section-line">
+    <h2>Atuação por ano</h2>
+    <p>Proposições apresentadas e registradas.</p>
+  </div>
+  <div class="panel">
+    {{ $maxAno := 1 }}{{ range $k, $v := $autor.stats.by_year }}{{ if gt $v $maxAno }}{{ $maxAno = $v }}{{ end }}{{ end }}
+    <div class="bar-list">
+      {{ range $ano, $n := $autor.stats.by_year }}
+      {{ $pct := math.Round (mul (div (float $n) (float $maxAno)) 100) }}
+      <div class="bar-row">
+        <span class="lbl">{{ $ano }}</span>
+        <div class="bar-track"><div class="bar-fill" style="width:{{ $pct }}%"></div></div>
+        <span class="val">{{ $n }}</span>
+      </div>
+      {{ end }}
+    </div>
+    {{ $tipos := slice }}
+    {{ range $nome, $n := $autor.stats.by_tipo }}{{ $tipos = $tipos | append (dict "nome" $nome "n" $n) }}{{ end }}
+    {{ if $tipos }}
+    <p class="note"><strong>Tipos mais frequentes:</strong>
+      {{ range first 3 (sort $tipos "n" "desc") }}{{ .nome }} ({{ .n }}) · {{ end }}
+    </p>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <div class="section-line">
+    <h2>Proposições</h2>
+    <p id="autor-props-status">Carregando proposições…</p>
+  </div>
+  <div id="autor-props" data-autor-id="{{ .Params.autor_id }}">
+    <p class="empty">Carregando proposições…</p>
+  </div>
+
+  <p style="margin-top:32px"><a href="/vereadores/">← Ver todos os vereadores</a> · <a href="/proposicoes/">Ver todas as proposições</a>{{ with $autor.fonte_url }} · <a href="{{ . }}" target="_blank" rel="noopener">Fonte no TSE</a>{{ end }}</p>
 </div>
+
+<script>
+(function(){
+  var box = document.getElementById('autor-props');
+  var status = document.getElementById('autor-props-status');
+  if(!box) return;
+  var autorId = parseInt(box.getAttribute('data-autor-id'), 10);
+  var props = [];
+  var busca, ftipo, fano;
+
+  function el(tag, cls, txt){ var e=document.createElement(tag); if(cls) e.className=cls; if(txt!==undefined) e.textContent=txt; return e; }
+  function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  function situacaoLabel(s){ return (s||'Não informada').replace(/_/g,' '); }
+
+  function render(){
+    var wrap = document.getElementById('autor-props-body');
+    if(!wrap) return;
+    var q = norm(busca.value.trim());
+    var tipo = ftipo.value, ano = fano.value;
+    var tbody = wrap.querySelector('tbody');
+    tbody.innerHTML = '';
+    var n = 0;
+    props.forEach(function(p){
+      var ok = true;
+      if(q && norm(p.identificacao + ' ' + p.ementa_curta).indexOf(q) === -1) ok = false;
+      if(tipo && p.tipo !== tipo) ok = false;
+      if(ano && String(p.ano) !== ano) ok = false;
+      if(!ok) return;
+      n++;
+      var tr = el('tr');
+      var tdId = el('td');
+      var a = el('a', null, p.identificacao || ('Proposição ' + p.id));
+      a.href = '/proposicoes/#prop-' + p.id;
+      a.style.fontWeight = '700';
+      tdId.appendChild(a);
+      tr.appendChild(tdId);
+      tr.appendChild(el('td', null, p.tipo || '—'));
+      tr.appendChild(el('td', null, p.ano || '—'));
+      tr.appendChild(el('td', null, p.ementa_curta || ''));
+      tr.appendChild(el('td', null, (p.autores || []).map(function(a){return a.nome;}).join(', ')));
+      tr.appendChild(el('td', null, situacaoLabel(p.situacao)));
+      tbody.appendChild(tr);
+    });
+    if(!n){
+      var tr = el('tr'); var td = el('td', null, 'Nenhuma proposição encontrada com esses filtros.'); td.colSpan = 6; td.style.color = '#5B5B5B'; tr.appendChild(td); tbody.appendChild(tr);
+    }
+    status.textContent = n + ' proposição(ões) encontrada(s).';
+  }
+
+  function build(){
+    if(!props.length){
+      box.innerHTML = '<p class="empty">Nenhuma proposição registrada no banco para este perfil.</p>';
+      status.textContent = '0 proposições.';
+      return;
+    }
+    var toolbar = el('div','toolbar');
+    var grid = el('div','filter-grid');
+    var l1 = el('label', null, 'Buscar'); busca = el('input'); busca.type='search'; busca.placeholder='Assunto ou identificação'; l1.appendChild(busca);
+    var l2 = el('label', null, 'Tipo'); ftipo = el('select'); ftipo.appendChild(el('option', null, 'Todos')); ftipo.firstChild.value='';
+    var l3 = el('label', null, 'Ano'); fano = el('select'); fano.appendChild(el('option', null, 'Todos')); fano.firstChild.value='';
+    grid.appendChild(l1); grid.appendChild(l2); grid.appendChild(l3); toolbar.appendChild(grid);
+    var types = {}, years = {};
+    props.forEach(function(p){ if(p.tipo) types[p.tipo]=1; if(p.ano) years[p.ano]=1; });
+    Object.keys(types).sort().forEach(function(v){ var o=el('option',null,v); o.value=v; ftipo.appendChild(o); });
+    Object.keys(years).sort().reverse().forEach(function(v){ var o=el('option',null,v); o.value=v; fano.appendChild(o); });
+    box.innerHTML = '';
+    box.appendChild(toolbar);
+    var scroll = el('div'); scroll.style.overflowX='auto';
+    var table = el('table','table cards');
+    var thead = el('thead'); var htr = el('tr');
+    ['Identificação','Tipo','Ano','Ementa','Autor(es)','Situação'].forEach(function(t){ htr.appendChild(el('th',null,t)); });
+    thead.appendChild(htr); table.appendChild(thead);
+    var tbody = el('tbody'); table.appendChild(tbody); scroll.appendChild(table); box.appendChild(scroll);
+    var body = el('div'); body.id='autor-props-body'; body.appendChild(scroll); box.innerHTML=''; box.appendChild(toolbar); box.appendChild(body);
+    [busca, ftipo, fano].forEach(function(x){ x.addEventListener('input', render); x.addEventListener('change', render); });
+    render();
+  }
+
+  fetch('/dados/proposicoes.json').then(function(r){ return r.json(); }).then(function(data){
+    props = data.filter(function(p){ return (p.autor_ids || []).indexOf(autorId) !== -1; });
+    build();
+  }).catch(function(){
+    box.innerHTML = '<p class="empty">Não foi possível carregar as proposições.</p>';
+    status.textContent = 'Falha ao carregar.';
+  });
+})();
+</script>
 {{ end }}

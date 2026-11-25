@@ -12,7 +12,53 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "abdias-de-jesus",
-    "n_proposicoes": 40
+    "n_proposicoes": 40,
+    "stats": {
+      "total": 40,
+      "aprovadas": 15,
+      "taxa_aprovacao": 38,
+      "by_year": {
+        "2025": 15,
+        "2026": 25
+      },
+      "by_tipo": {
+        "Indicação": 18,
+        "Moção": 13,
+        "Projeto de Decreto Legislativo": 3,
+        "Projeto de Lei do Legislativo": 3,
+        "Projeto de Resolução": 2,
+        "Requerimento": 1
+      },
+      "by_situacao": {
+        "nao_informada": 18,
+        "Proposição aprovada": 15,
+        "Proposição inclusa na Ordem do Dia": 7
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 700,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "ABDIAS DE JESUS SILVA",
+        "nome_urna": "ABDIAS DE JESUS",
+        "partido": "MOBILIZA",
+        "cargo": "VEREADOR",
+        "votos": 770,
+        "situacao_tse": "ELEITO POR MÉDIA",
+        "eleito": 1,
+        "foto": "/fotos/abdias-de-jesus-2024.jpg",
+        "sq_candidato": "100002089464",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": false,
+    "foto": "/fotos/abdias-de-jesus-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 31,
@@ -27,7 +73,72 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "albininho",
-    "n_proposicoes": 62
+    "n_proposicoes": 62,
+    "stats": {
+      "total": 62,
+      "aprovadas": 19,
+      "taxa_aprovacao": 31,
+      "by_year": {
+        "2023": 8,
+        "2024": 10,
+        "2025": 20,
+        "2026": 24
+      },
+      "by_tipo": {
+        "Indicação": 40,
+        "Moção": 14,
+        "Projeto de Resolução": 3,
+        "Projeto de Decreto Legislativo": 2,
+        "Requerimento": 2,
+        "Emenda ao Projeto de Lei Ordinária": 1
+      },
+      "by_situacao": {
+        "nao_informada": 35,
+        "Proposição aprovada": 19,
+        "Proposição inclusa na Ordem do Dia": 5,
+        "Proposição retirada da Ordem do Dia": 3
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 31,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "JOSE ALBINO COSTA ARAUJO",
+        "nome_urna": "ALBININHO",
+        "partido": "PP",
+        "cargo": "Vereador",
+        "votos": 1203,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/albininho-2020.jpg",
+        "sq_candidato": "100001087726",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 31,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "JOSE ALBINO COSTA ARAUJO",
+        "nome_urna": "ALBININHO",
+        "partido": "PODE",
+        "cargo": "VEREADOR",
+        "votos": 1170,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "",
+        "sq_candidato": "100002088697",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024",
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": true,
+    "foto": "/fotos/albininho-2020.jpg",
+    "foto_ano": 2020
   },
   {
     "id": 19,
@@ -42,7 +153,69 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "alessandro-montenegro",
-    "n_proposicoes": 30
+    "n_proposicoes": 30,
+    "stats": {
+      "total": 30,
+      "aprovadas": 14,
+      "taxa_aprovacao": 47,
+      "by_year": {
+        "2023": 12,
+        "2024": 18
+      },
+      "by_tipo": {
+        "Indicação": 14,
+        "Moção": 10,
+        "Projeto de Resolução": 2,
+        "Projeto de Lei do Legislativo": 2,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Projeto de Decreto Legislativo": 1
+      },
+      "by_situacao": {
+        "Proposição aprovada": 14,
+        "nao_informada": 9,
+        "Proposição inclusa na Ordem do Dia": 5,
+        "Proposição retirada da Ordem do Dia": 2
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 19,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "ALESSANDRO COSTA MONTENEGRO",
+        "nome_urna": "ALESSANDRO MONTENEGRO",
+        "partido": "PP",
+        "cargo": "Vereador",
+        "votos": 885,
+        "situacao_tse": "ELEITO POR MÉDIA",
+        "eleito": 1,
+        "foto": "/fotos/alessandro-montenegro-2020.jpg",
+        "sq_candidato": "100001087722",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 19,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "ALESSANDRO COSTA MONTENEGRO",
+        "nome_urna": "ALESSANDRO MONTENEGRO",
+        "partido": "PP",
+        "cargo": "VEREADOR",
+        "votos": 596,
+        "situacao_tse": "SUPLENTE",
+        "eleito": 0,
+        "foto": "/fotos/alessandro-montenegro-2024.jpg",
+        "sq_candidato": "100001998268",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024"
+    ],
+    "atual": false,
+    "anterior": true,
+    "foto": "/fotos/alessandro-montenegro-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 694,
@@ -57,7 +230,53 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "diassis-serrao",
-    "n_proposicoes": 103
+    "n_proposicoes": 103,
+    "stats": {
+      "total": 103,
+      "aprovadas": 14,
+      "taxa_aprovacao": 14,
+      "by_year": {
+        "2025": 39,
+        "2026": 63
+      },
+      "by_tipo": {
+        "Indicação": 84,
+        "Moção": 14,
+        "Requerimento": 2,
+        "Projeto de Lei do Legislativo": 1,
+        "Projeto de Decreto Legislativo": 1,
+        "Projeto de Resolução": 1
+      },
+      "by_situacao": {
+        "nao_informada": 85,
+        "Proposição aprovada": 14,
+        "Proposição inclusa na Ordem do Dia": 4
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 694,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "FRANCISCO DE ASSIS SERRÃO",
+        "nome_urna": "DIASSIS SERRÃO",
+        "partido": "PL",
+        "cargo": "VEREADOR",
+        "votos": 854,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/diassis-serrao-2024.jpg",
+        "sq_candidato": "100002171741",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": false,
+    "foto": "/fotos/diassis-serrao-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 23,
@@ -72,7 +291,120 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "edinildo",
-    "n_proposicoes": 225
+    "n_proposicoes": 225,
+    "stats": {
+      "total": 225,
+      "aprovadas": 57,
+      "taxa_aprovacao": 25,
+      "by_year": {
+        "2023": 14,
+        "2024": 41,
+        "2025": 79,
+        "2026": 91
+      },
+      "by_tipo": {
+        "Indicação": 155,
+        "Moção": 44,
+        "Projeto de Lei do Legislativo": 8,
+        "Projeto de Decreto Legislativo": 7,
+        "Requerimento": 6,
+        "Projeto de Resolução": 4,
+        "Projeto de Emenda à Lei Orgânica": 1
+      },
+      "by_situacao": {
+        "nao_informada": 146,
+        "Proposição aprovada": 57,
+        "Proposição inclusa na Ordem do Dia": 19,
+        "Proposição retirada da Ordem do Dia": 3
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 23,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "EDINILDO DOS SANTOS SOARES RODRIGUES",
+        "nome_urna": "EDINILDO",
+        "partido": "PDT",
+        "cargo": "Vereador",
+        "votos": 1085,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/edinildo-2020.jpg",
+        "sq_candidato": "100001246529",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 23,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "EDINILDO DOS SANTOS SOARES RODRIGUES",
+        "nome_urna": "EDINILDO RODRIGUES",
+        "partido": "SOLIDARIEDADE",
+        "cargo": "VEREADOR",
+        "votos": 1151,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/edinildo-2024.jpg",
+        "sq_candidato": "100002089107",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024",
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": true,
+    "foto": "/fotos/edinildo-2024.jpg",
+    "foto_ano": 2024
+  },
+  {
+    "id": 3447,
+    "nome": "EDMILSON SILVA",
+    "nome_tse": "EDMILSON  JOSÉ ALVES DA SILVA",
+    "nome_urna": "EDMILSON SILVA",
+    "partido": "PDT",
+    "cargo": "Vereador",
+    "votos": 1094,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "ano_tse": 2020,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
+    "slug": "edmilson-silva",
+    "n_proposicoes": 0,
+    "stats": {
+      "total": 0,
+      "aprovadas": 0,
+      "taxa_aprovacao": 0,
+      "by_year": {},
+      "by_tipo": {},
+      "by_situacao": {}
+    },
+    "mandatos": [
+      {
+        "autor_id": 3447,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "EDMILSON  JOSÉ ALVES DA SILVA",
+        "nome_urna": "EDMILSON SILVA",
+        "partido": "PDT",
+        "cargo": "Vereador",
+        "votos": 1094,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/edmilson-silva-2020.jpg",
+        "sq_candidato": "100001246541",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024"
+    ],
+    "atual": false,
+    "anterior": true,
+    "foto": "/fotos/edmilson-silva-2020.jpg",
+    "foto_ano": 2020
   },
   {
     "id": 693,
@@ -87,7 +419,53 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "eduardo-da-ralpnet",
-    "n_proposicoes": 111
+    "n_proposicoes": 111,
+    "stats": {
+      "total": 111,
+      "aprovadas": 18,
+      "taxa_aprovacao": 16,
+      "by_year": {
+        "2025": 67,
+        "2026": 44
+      },
+      "by_tipo": {
+        "Indicação": 89,
+        "Moção": 14,
+        "Requerimento": 3,
+        "Projeto de Resolução": 2,
+        "Projeto de Lei do Legislativo": 2,
+        "Projeto de Decreto Legislativo": 1
+      },
+      "by_situacao": {
+        "nao_informada": 89,
+        "Proposição aprovada": 18,
+        "Proposição inclusa na Ordem do Dia": 4
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 693,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "EDUARDO LYNNIK RIBEIRO RODRIGUES",
+        "nome_urna": "EDUARDO DA RALPNET",
+        "partido": "SOLIDARIEDADE",
+        "cargo": "VEREADOR",
+        "votos": 1178,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/eduardo-da-ralpnet-2024.jpg",
+        "sq_candidato": "100002089093",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": false,
+    "foto": "/fotos/eduardo-da-ralpnet-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 343,
@@ -102,7 +480,72 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "elizeu-de-tantan",
-    "n_proposicoes": 29
+    "n_proposicoes": 29,
+    "stats": {
+      "total": 29,
+      "aprovadas": 12,
+      "taxa_aprovacao": 41,
+      "by_year": {
+        "2024": 11,
+        "2025": 6,
+        "2026": 12
+      },
+      "by_tipo": {
+        "Moção": 11,
+        "Indicação": 8,
+        "Projeto de Resolução": 3,
+        "Requerimento": 3,
+        "Projeto de Lei do Legislativo": 2,
+        "Projeto de Decreto Legislativo": 1,
+        "Emenda ao Projeto de Lei Ordinária": 1
+      },
+      "by_situacao": {
+        "Proposição aprovada": 12,
+        "nao_informada": 8,
+        "Proposição inclusa na Ordem do Dia": 7,
+        "Proposição retirada da Ordem do Dia": 2
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 343,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "ELIZEU RODRIGUES FURTADO",
+        "nome_urna": "ELIZEU DE TANTAN",
+        "partido": "PP",
+        "cargo": "Vereador",
+        "votos": 1727,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/elizeu-de-tantan-2020.jpg",
+        "sq_candidato": "100001087738",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 343,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "ELIZEU RODRIGUES FURTADO",
+        "nome_urna": "ELIZEU DE TANTAN",
+        "partido": "PSD",
+        "cargo": "VEREADOR",
+        "votos": 1999,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/elizeu-de-tantan-2024.jpg",
+        "sq_candidato": "100001998419",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024",
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": true,
+    "foto": "/fotos/elizeu-de-tantan-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 95,
@@ -117,7 +560,51 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "enesio-ferreira",
-    "n_proposicoes": 74
+    "n_proposicoes": 74,
+    "stats": {
+      "total": 74,
+      "aprovadas": 23,
+      "taxa_aprovacao": 31,
+      "by_year": {
+        "2023": 8,
+        "2025": 36,
+        "2026": 29
+      },
+      "by_tipo": {
+        "Indicação": 52,
+        "Moção": 16,
+        "Requerimento": 4,
+        "Projeto de Decreto Legislativo": 1,
+        "Projeto de Resolução": 1
+      },
+      "by_situacao": {
+        "nao_informada": 49,
+        "Proposição aprovada": 23,
+        "Proposição inclusa na Ordem do Dia": 2
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 95,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "ENESIO VITORINO RIBEIRO  FERREIRA",
+        "nome_urna": "NÉSIO FERREIRA",
+        "partido": "PODE",
+        "cargo": "VEREADOR",
+        "votos": 696,
+        "situacao_tse": "SUPLENTE",
+        "eleito": 0,
+        "foto": "/fotos/enesio-ferreira-2024.jpg",
+        "sq_candidato": "100002088693",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [],
+    "atual": false,
+    "anterior": false,
+    "foto": "/fotos/enesio-ferreira-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 1118,
@@ -132,7 +619,49 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "evilson-de-jesus",
-    "n_proposicoes": 6
+    "n_proposicoes": 6,
+    "stats": {
+      "total": 6,
+      "aprovadas": 1,
+      "taxa_aprovacao": 17,
+      "by_year": {
+        "2025": 5,
+        "2026": 1
+      },
+      "by_tipo": {
+        "Indicação": 3,
+        "Moção": 1,
+        "Projeto de Decreto Legislativo": 1,
+        "Projeto de Lei do Legislativo": 1
+      },
+      "by_situacao": {
+        "nao_informada": 3,
+        "Proposição inclusa na Ordem do Dia": 2,
+        "Proposição aprovada": 1
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 1118,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "EVILSON DE JESUS LOPES DOS SANTOS",
+        "nome_urna": "EVILSON SANTOS",
+        "partido": "PSD",
+        "cargo": "VEREADOR",
+        "votos": 880,
+        "situacao_tse": "SUPLENTE",
+        "eleito": 0,
+        "foto": "/fotos/evilson-de-jesus-2024.jpg",
+        "sq_candidato": "100001998412",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [],
+    "atual": false,
+    "anterior": false,
+    "foto": "/fotos/evilson-de-jesus-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 142,
@@ -147,7 +676,34 @@
     "ano_tse": null,
     "fonte_url": null,
     "slug": "executivo-municipal",
-    "n_proposicoes": 57
+    "n_proposicoes": 57,
+    "stats": {
+      "total": 57,
+      "aprovadas": 18,
+      "taxa_aprovacao": 32,
+      "by_year": {
+        "2023": 2,
+        "2024": 15,
+        "2025": 23,
+        "2026": 17
+      },
+      "by_tipo": {
+        "Projeto de Lei Ordinária": 56,
+        "Prestação de Contas do Executivo": 1
+      },
+      "by_situacao": {
+        "Proposição inclusa na Ordem do Dia": 36,
+        "Proposição aprovada": 18,
+        "Proposição retirada da Ordem do Dia": 2,
+        "nao_informada": 1
+      }
+    },
+    "mandatos": [],
+    "legislaturas": [],
+    "atual": false,
+    "anterior": false,
+    "foto": "",
+    "foto_ano": null
   },
   {
     "id": 28,
@@ -162,7 +718,71 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "fabricia-do-sindicato",
-    "n_proposicoes": 47
+    "n_proposicoes": 47,
+    "stats": {
+      "total": 47,
+      "aprovadas": 17,
+      "taxa_aprovacao": 36,
+      "by_year": {
+        "2023": 8,
+        "2024": 8,
+        "2025": 12,
+        "2026": 19
+      },
+      "by_tipo": {
+        "Indicação": 28,
+        "Moção": 13,
+        "Projeto de Decreto Legislativo": 3,
+        "Projeto de Resolução": 2,
+        "Requerimento": 1
+      },
+      "by_situacao": {
+        "nao_informada": 23,
+        "Proposição aprovada": 17,
+        "Proposição inclusa na Ordem do Dia": 6,
+        "Proposição retirada da Ordem do Dia": 1
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 28,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "FABRÍCIA LORENA MELO DURANS",
+        "nome_urna": "FABRICIA DO SINDICATO",
+        "partido": "PDT",
+        "cargo": "Vereador",
+        "votos": 1584,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/fabricia-do-sindicato-2020.jpg",
+        "sq_candidato": "100001246531",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 28,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "FABRICIA LORENA MELO DURANS",
+        "nome_urna": "FABRÍCIA DO SINDICATO",
+        "partido": "PSD",
+        "cargo": "VEREADOR",
+        "votos": 1161,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/fabricia-do-sindicato-2024.jpg",
+        "sq_candidato": "100001998410",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024",
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": true,
+    "foto": "/fotos/fabricia-do-sindicato-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 36,
@@ -177,7 +797,68 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "felipe-de-chicao",
-    "n_proposicoes": 21
+    "n_proposicoes": 21,
+    "stats": {
+      "total": 21,
+      "aprovadas": 12,
+      "taxa_aprovacao": 57,
+      "by_year": {
+        "2023": 8,
+        "2024": 13
+      },
+      "by_tipo": {
+        "Indicação": 9,
+        "Moção": 8,
+        "Projeto de Resolução": 2,
+        "Projeto de Decreto Legislativo": 1,
+        "Requerimento": 1
+      },
+      "by_situacao": {
+        "Proposição aprovada": 12,
+        "Proposição inclusa na Ordem do Dia": 4,
+        "nao_informada": 4,
+        "Proposição retirada da Ordem do Dia": 1
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 36,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "FELIPE DAYVISSON CARVALHO DA SILVA",
+        "nome_urna": "FELIPE DE CHICÃO",
+        "partido": "MDB",
+        "cargo": "Vereador",
+        "votos": 763,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/felipe-de-chicao-2020.jpg",
+        "sq_candidato": "100001262457",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 36,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "FELIPE DAYVISSSON CARVALHO DA SILVA",
+        "nome_urna": "FELIPE DE CHICÃO",
+        "partido": "PL",
+        "cargo": "VEREADOR",
+        "votos": 715,
+        "situacao_tse": "SUPLENTE",
+        "eleito": 0,
+        "foto": "/fotos/felipe-de-chicao-2024.jpg",
+        "sq_candidato": "100002171737",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024"
+    ],
+    "atual": false,
+    "anterior": true,
+    "foto": "/fotos/felipe-de-chicao-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 1215,
@@ -192,7 +873,45 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "gury",
-    "n_proposicoes": 16
+    "n_proposicoes": 16,
+    "stats": {
+      "total": 16,
+      "aprovadas": 2,
+      "taxa_aprovacao": 12,
+      "by_year": {
+        "2025": 16
+      },
+      "by_tipo": {
+        "Indicação": 14,
+        "Moção": 2
+      },
+      "by_situacao": {
+        "nao_informada": 14,
+        "Proposição aprovada": 2
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 1215,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "JOSÉ MAGNO RAMALHO FROZ",
+        "nome_urna": "GURY",
+        "partido": "PL",
+        "cargo": "VEREADOR",
+        "votos": 744,
+        "situacao_tse": "SUPLENTE",
+        "eleito": 0,
+        "foto": "/fotos/gury-2024.jpg",
+        "sq_candidato": "100002171736",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [],
+    "atual": false,
+    "anterior": false,
+    "foto": "/fotos/gury-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 89,
@@ -207,7 +926,72 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "guto",
-    "n_proposicoes": 65
+    "n_proposicoes": 65,
+    "stats": {
+      "total": 65,
+      "aprovadas": 26,
+      "taxa_aprovacao": 40,
+      "by_year": {
+        "2023": 10,
+        "2024": 9,
+        "2025": 23,
+        "2026": 22
+      },
+      "by_tipo": {
+        "Moção": 26,
+        "Indicação": 25,
+        "Projeto de Decreto Legislativo": 4,
+        "Projeto de Resolução": 4,
+        "Requerimento": 3,
+        "Projeto de Lei do Legislativo": 3
+      },
+      "by_situacao": {
+        "Proposição aprovada": 26,
+        "nao_informada": 24,
+        "Proposição inclusa na Ordem do Dia": 13,
+        "Proposição retirada da Ordem do Dia": 2
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 89,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "AUGUSTO VINICIUS MARTINS DE ARAUJO",
+        "nome_urna": "GUTO",
+        "partido": "PL",
+        "cargo": "Vereador",
+        "votos": 489,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/guto-2020.jpg",
+        "sq_candidato": "100001158940",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 89,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "AUGUSTO VINÍCIUS MARTINS DE ARAUJO",
+        "nome_urna": "GUTO",
+        "partido": "PRD",
+        "cargo": "VEREADOR",
+        "votos": 771,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/guto-2024.jpg",
+        "sq_candidato": "100002215966",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024",
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": true,
+    "foto": "/fotos/guto-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 1,
@@ -222,7 +1006,78 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "herasmo-leite",
-    "n_proposicoes": 540
+    "n_proposicoes": 540,
+    "stats": {
+      "total": 540,
+      "aprovadas": 83,
+      "taxa_aprovacao": 15,
+      "by_year": {
+        "2002": 1,
+        "2021": 2,
+        "2022": 1,
+        "2023": 36,
+        "2024": 102,
+        "2025": 231,
+        "2026": 161
+      },
+      "by_tipo": {
+        "Indicação": 452,
+        "Moção": 33,
+        "Projeto de Lei do Legislativo": 31,
+        "Requerimento": 14,
+        "Projeto de Decreto Legislativo": 6,
+        "Projeto de Resolução": 2,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Projeto de Lei Ordinária": 1
+      },
+      "by_situacao": {
+        "nao_informada": 430,
+        "Proposição aprovada": 83,
+        "Proposição inclusa na Ordem do Dia": 18,
+        "Proposição retirada da Ordem do Dia": 8,
+        "Proposição rejeitada pelo Plenário": 1
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 1,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "HERASMO LEITE SOARES",
+        "nome_urna": "HERASMO LEITE",
+        "partido": "PDT",
+        "cargo": "Vereador",
+        "votos": 885,
+        "situacao_tse": "ELEITO POR MÉDIA",
+        "eleito": 1,
+        "foto": "/fotos/herasmo-leite-2020.jpg",
+        "sq_candidato": "100001246534",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 1,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "HERASMO LEITE SOARES",
+        "nome_urna": "HERASMO LEITE",
+        "partido": "PSD",
+        "cargo": "VEREADOR",
+        "votos": 987,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/herasmo-leite-2024.jpg",
+        "sq_candidato": "100001998417",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024",
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": true,
+    "foto": "/fotos/herasmo-leite-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 10,
@@ -237,7 +1092,73 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "jaelson-araujo",
-    "n_proposicoes": 85
+    "n_proposicoes": 85,
+    "stats": {
+      "total": 85,
+      "aprovadas": 22,
+      "taxa_aprovacao": 26,
+      "by_year": {
+        "2023": 7,
+        "2024": 19,
+        "2025": 33,
+        "2026": 25
+      },
+      "by_tipo": {
+        "Indicação": 54,
+        "Moção": 18,
+        "Projeto de Decreto Legislativo": 4,
+        "Projeto de Resolução": 4,
+        "Projeto de Lei do Legislativo": 2,
+        "Requerimento": 2,
+        "Projeto de Emenda à Lei Orgânica": 1
+      },
+      "by_situacao": {
+        "nao_informada": 51,
+        "Proposição aprovada": 22,
+        "Proposição inclusa na Ordem do Dia": 11,
+        "Proposição retirada da Ordem do Dia": 1
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 10,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "JAELSON PEREIRA SOUZA",
+        "nome_urna": "JAELSON ARAÚJO",
+        "partido": "PL",
+        "cargo": "Vereador",
+        "votos": 656,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/jaelson-araujo-2020.jpg",
+        "sq_candidato": "100001158927",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 10,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "JAELSON PEREIRA SOUZA",
+        "nome_urna": "JAELSON ARAUJO",
+        "partido": "PSD",
+        "cargo": "VEREADOR",
+        "votos": 892,
+        "situacao_tse": "ELEITO POR MÉDIA",
+        "eleito": 1,
+        "foto": "/fotos/jaelson-araujo-2024.jpg",
+        "sq_candidato": "100001998411",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024",
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": true,
+    "foto": "/fotos/jaelson-araujo-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 5,
@@ -252,7 +1173,56 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "joao-do-vale",
-    "n_proposicoes": 169
+    "n_proposicoes": 169,
+    "stats": {
+      "total": 169,
+      "aprovadas": 26,
+      "taxa_aprovacao": 15,
+      "by_year": {
+        "2002": 1,
+        "2023": 12,
+        "2025": 87,
+        "2026": 69
+      },
+      "by_tipo": {
+        "Indicação": 151,
+        "Moção": 12,
+        "Projeto de Decreto Legislativo": 2,
+        "Projeto de Emenda à Lei Orgânica": 1,
+        "Requerimento": 1,
+        "Projeto de Resolução": 1,
+        "Projeto de Lei do Legislativo": 1
+      },
+      "by_situacao": {
+        "nao_informada": 139,
+        "Proposição aprovada": 26,
+        "Proposição inclusa na Ordem do Dia": 4
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 5,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "JOÃO JOSÉ MARTINS FRAZÃO",
+        "nome_urna": "JOÃO DO VALE",
+        "partido": "PL",
+        "cargo": "VEREADOR",
+        "votos": 939,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/joao-do-vale-2024.jpg",
+        "sq_candidato": "100002171738",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": false,
+    "foto": "/fotos/joao-do-vale-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 40,
@@ -267,7 +1237,47 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "joao-morais",
-    "n_proposicoes": 10
+    "n_proposicoes": 10,
+    "stats": {
+      "total": 10,
+      "aprovadas": 7,
+      "taxa_aprovacao": 70,
+      "by_year": {
+        "2023": 10
+      },
+      "by_tipo": {
+        "Indicação": 6,
+        "Moção": 2,
+        "Projeto de Lei do Legislativo": 2
+      },
+      "by_situacao": {
+        "Proposição aprovada": 7,
+        "Proposição inclusa na Ordem do Dia": 2,
+        "nao_informada": 1
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 40,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "JOÃO RAIMUNDO MORAIS",
+        "nome_urna": "JOÃO MORAIS",
+        "partido": "PL",
+        "cargo": "VEREADOR",
+        "votos": 662,
+        "situacao_tse": "SUPLENTE",
+        "eleito": 0,
+        "foto": "/fotos/joao-morais-2024.jpg",
+        "sq_candidato": "100002171734",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [],
+    "atual": false,
+    "anterior": false,
+    "foto": "/fotos/joao-morais-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 663,
@@ -282,7 +1292,51 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "keimilson-guterres",
-    "n_proposicoes": 59
+    "n_proposicoes": 59,
+    "stats": {
+      "total": 59,
+      "aprovadas": 18,
+      "taxa_aprovacao": 31,
+      "by_year": {
+        "2025": 19,
+        "2026": 40
+      },
+      "by_tipo": {
+        "Indicação": 37,
+        "Moção": 20,
+        "Projeto de Decreto Legislativo": 1,
+        "Requerimento": 1
+      },
+      "by_situacao": {
+        "nao_informada": 37,
+        "Proposição aprovada": 18,
+        "Proposição inclusa na Ordem do Dia": 4
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 663,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "KEIMILSON SODRÉ GUTERRES",
+        "nome_urna": "KEIMILSON DE ZEZINHO",
+        "partido": "PDT",
+        "cargo": "VEREADOR",
+        "votos": 742,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/keimilson-guterres-2024.jpg",
+        "sq_candidato": "100001998042",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": false,
+    "foto": "/fotos/keimilson-guterres-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 407,
@@ -297,7 +1351,48 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "layanna-ferreira",
-    "n_proposicoes": 6
+    "n_proposicoes": 6,
+    "stats": {
+      "total": 6,
+      "aprovadas": 3,
+      "taxa_aprovacao": 50,
+      "by_year": {
+        "2024": 6
+      },
+      "by_tipo": {
+        "Moção": 3,
+        "Projeto de Decreto Legislativo": 1,
+        "Requerimento": 1,
+        "Indicação": 1
+      },
+      "by_situacao": {
+        "Proposição aprovada": 3,
+        "Proposição retirada da Ordem do Dia": 2,
+        "nao_informada": 1
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 407,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "LUTIELLEN LAYANNA BASTOS SÁ",
+        "nome_urna": "LAYANNA FERREIRA",
+        "partido": "PDT",
+        "cargo": "VEREADOR",
+        "votos": 0,
+        "situacao_tse": "#NULO",
+        "eleito": 0,
+        "foto": "/fotos/layanna-ferreira-2024.jpg",
+        "sq_candidato": "100001998044",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [],
+    "atual": false,
+    "anterior": false,
+    "foto": "/fotos/layanna-ferreira-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 13,
@@ -312,7 +1407,74 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "lucas-do-beiradao",
-    "n_proposicoes": 60
+    "n_proposicoes": 60,
+    "stats": {
+      "total": 60,
+      "aprovadas": 23,
+      "taxa_aprovacao": 38,
+      "by_year": {
+        "2023": 17,
+        "2024": 29,
+        "2025": 4,
+        "2026": 10
+      },
+      "by_tipo": {
+        "Indicação": 17,
+        "Moção": 16,
+        "Projeto de Decreto Legislativo": 12,
+        "Projeto de Lei do Legislativo": 6,
+        "Projeto de Resolução": 4,
+        "Requerimento": 3,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Projeto de Lei Ordinária": 1
+      },
+      "by_situacao": {
+        "Proposição aprovada": 23,
+        "Proposição inclusa na Ordem do Dia": 21,
+        "nao_informada": 11,
+        "Proposição retirada da Ordem do Dia": 5
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 13,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "JOSE LUCAS PEREIRA FERNANDES",
+        "nome_urna": "LUCAS DO BEIRADÃO",
+        "partido": "PP",
+        "cargo": "Vereador",
+        "votos": 1287,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/lucas-do-beiradao-2020.jpg",
+        "sq_candidato": "100001087716",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 13,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "JOSÉ LUCAS PEREIRA FERNANDES",
+        "nome_urna": "LUCAS DO BEIRADÃO",
+        "partido": "PP",
+        "cargo": "VEREADOR",
+        "votos": 972,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/lucas-do-beiradao-2024.jpg",
+        "sq_candidato": "100001998265",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024",
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": true,
+    "foto": "/fotos/lucas-do-beiradao-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 2197,
@@ -327,7 +1489,49 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "oziel-menezes",
-    "n_proposicoes": 13
+    "n_proposicoes": 13,
+    "stats": {
+      "total": 13,
+      "aprovadas": 5,
+      "taxa_aprovacao": 38,
+      "by_year": {
+        "2026": 13
+      },
+      "by_tipo": {
+        "Indicação": 6,
+        "Moção": 2,
+        "Projeto de Lei do Legislativo": 2,
+        "Projeto de Decreto Legislativo": 2,
+        "Requerimento": 1
+      },
+      "by_situacao": {
+        "nao_informada": 6,
+        "Proposição aprovada": 5,
+        "Proposição inclusa na Ordem do Dia": 2
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 2197,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "OZIEL ABREU MENEZES",
+        "nome_urna": "OZIEL MENEZES",
+        "partido": "PRD",
+        "cargo": "VEREADOR",
+        "votos": 352,
+        "situacao_tse": "SUPLENTE",
+        "eleito": 0,
+        "foto": "/fotos/oziel-menezes-2024.jpg",
+        "sq_candidato": "100002215960",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [],
+    "atual": false,
+    "anterior": false,
+    "foto": "/fotos/oziel-menezes-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 4,
@@ -342,7 +1546,53 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "paulinho-enfermeiro",
-    "n_proposicoes": 47
+    "n_proposicoes": 47,
+    "stats": {
+      "total": 47,
+      "aprovadas": 16,
+      "taxa_aprovacao": 34,
+      "by_year": {
+        "2022": 1,
+        "2023": 19,
+        "2024": 27
+      },
+      "by_tipo": {
+        "Indicação": 33,
+        "Moção": 5,
+        "Projeto de Resolução": 3,
+        "Projeto de Decreto Legislativo": 3,
+        "Projeto de Lei Ordinária": 2,
+        "Projeto de Lei do Legislativo": 1
+      },
+      "by_situacao": {
+        "nao_informada": 23,
+        "Proposição aprovada": 16,
+        "Proposição inclusa na Ordem do Dia": 7,
+        "Proposição retirada da Ordem do Dia": 1
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 4,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "PAULO HENRIQUE TRINTA MARQUES",
+        "nome_urna": "PAULINHO ENFERMEIRO",
+        "partido": "PSD",
+        "cargo": "VEREADOR",
+        "votos": 678,
+        "situacao_tse": "SUPLENTE",
+        "eleito": 0,
+        "foto": "/fotos/paulinho-enfermeiro-2024.jpg",
+        "sq_candidato": "100001998414",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [],
+    "atual": false,
+    "anterior": false,
+    "foto": "/fotos/paulinho-enfermeiro-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 3,
@@ -357,7 +1607,71 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "professor-sandro-lima",
-    "n_proposicoes": 30
+    "n_proposicoes": 30,
+    "stats": {
+      "total": 30,
+      "aprovadas": 13,
+      "taxa_aprovacao": 43,
+      "by_year": {
+        "2023": 16,
+        "2024": 14
+      },
+      "by_tipo": {
+        "Indicação": 12,
+        "Moção": 6,
+        "Projeto de Decreto Legislativo": 5,
+        "Requerimento": 4,
+        "Projeto de Resolução": 2,
+        "Emenda ao Projeto de Lei Ordinária": 1
+      },
+      "by_situacao": {
+        "Proposição aprovada": 13,
+        "Proposição inclusa na Ordem do Dia": 7,
+        "Proposição retirada da Ordem do Dia": 5,
+        "nao_informada": 4,
+        "Proposição rejeitada pelo Plenário": 1
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 3,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "SANDRO HENRIQUE LIMA",
+        "nome_urna": "SANDRO LIMA",
+        "partido": "PDT",
+        "cargo": "Vereador",
+        "votos": 963,
+        "situacao_tse": "ELEITO POR MÉDIA",
+        "eleito": 1,
+        "foto": "/fotos/professor-sandro-lima-2020.jpg",
+        "sq_candidato": "100001246535",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 3,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "SANDRO HENRIQUE LIMA",
+        "nome_urna": "PROFESSOR SANDRO LIMA",
+        "partido": "SOLIDARIEDADE",
+        "cargo": "VEREADOR",
+        "votos": 697,
+        "situacao_tse": "ELEITO POR MÉDIA",
+        "eleito": 1,
+        "foto": "/fotos/professor-sandro-lima-2024.jpg",
+        "sq_candidato": "100002089097",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024",
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": true,
+    "foto": "/fotos/professor-sandro-lima-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 33,
@@ -372,7 +1686,69 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "riba-do-bom-viver",
-    "n_proposicoes": 14
+    "n_proposicoes": 14,
+    "stats": {
+      "total": 14,
+      "aprovadas": 7,
+      "taxa_aprovacao": 50,
+      "by_year": {
+        "2023": 6,
+        "2024": 8
+      },
+      "by_tipo": {
+        "Indicação": 6,
+        "Moção": 3,
+        "Projeto de Resolução": 2,
+        "Requerimento": 2,
+        "Projeto de Decreto Legislativo": 1
+      },
+      "by_situacao": {
+        "Proposição aprovada": 7,
+        "Proposição inclusa na Ordem do Dia": 3,
+        "Proposição retirada da Ordem do Dia": 3,
+        "nao_informada": 1
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 33,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "JOSE DE RIBAMAR BRITO",
+        "nome_urna": "RIBA DO BOM VIVER",
+        "partido": "PL",
+        "cargo": "Vereador",
+        "votos": 467,
+        "situacao_tse": "ELEITO POR MÉDIA",
+        "eleito": 1,
+        "foto": "/fotos/riba-do-bom-viver-2020.jpg",
+        "sq_candidato": "100001158933",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 33,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "JOSÉ DE RIBAMAR BRITO",
+        "nome_urna": "RIBA DO BOM VIVER",
+        "partido": "PODE",
+        "cargo": "VEREADOR",
+        "votos": 1095,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "",
+        "sq_candidato": "100002088698",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024",
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": true,
+    "foto": "/fotos/riba-do-bom-viver-2020.jpg",
+    "foto_ano": 2020
   },
   {
     "id": 692,
@@ -387,7 +1763,51 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "rodrigo-brasil",
-    "n_proposicoes": 55
+    "n_proposicoes": 55,
+    "stats": {
+      "total": 55,
+      "aprovadas": 22,
+      "taxa_aprovacao": 40,
+      "by_year": {
+        "2025": 26,
+        "2026": 29
+      },
+      "by_tipo": {
+        "Indicação": 30,
+        "Moção": 18,
+        "Requerimento": 5,
+        "Projeto de Decreto Legislativo": 2
+      },
+      "by_situacao": {
+        "nao_informada": 30,
+        "Proposição aprovada": 22,
+        "Proposição inclusa na Ordem do Dia": 3
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 692,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "RODRIGO BRASIL RODRIGUES",
+        "nome_urna": "RODRIGO BRASIL",
+        "partido": "PRD",
+        "cargo": "VEREADOR",
+        "votos": 649,
+        "situacao_tse": "ELEITO POR MÉDIA",
+        "eleito": 1,
+        "foto": "/fotos/rodrigo-brasil-2024.jpg",
+        "sq_candidato": "100002215969",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": false,
+    "foto": "/fotos/rodrigo-brasil-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 30,
@@ -402,7 +1822,73 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "rubemar-ribeiro",
-    "n_proposicoes": 69
+    "n_proposicoes": 69,
+    "stats": {
+      "total": 69,
+      "aprovadas": 22,
+      "taxa_aprovacao": 32,
+      "by_year": {
+        "2023": 12,
+        "2024": 21,
+        "2025": 7,
+        "2026": 28
+      },
+      "by_tipo": {
+        "Indicação": 45,
+        "Moção": 14,
+        "Projeto de Lei do Legislativo": 3,
+        "Projeto de Resolução": 3,
+        "Projeto de Decreto Legislativo": 2,
+        "Requerimento": 1,
+        "Emenda ao Projeto de Lei Ordinária": 1
+      },
+      "by_situacao": {
+        "nao_informada": 37,
+        "Proposição aprovada": 22,
+        "Proposição inclusa na Ordem do Dia": 8,
+        "Proposição retirada da Ordem do Dia": 2
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 30,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "RUBEMAR DE JESUS DINIZ RIBEIRO",
+        "nome_urna": "RUBEMAR RIBEIRO",
+        "partido": "PDT",
+        "cargo": "Vereador",
+        "votos": 1246,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/rubemar-ribeiro-2020.jpg",
+        "sq_candidato": "100001246540",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 30,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "RUBEMAR DE JESUS DINIZ RIBEIRO",
+        "nome_urna": "RUBEMAR RIBEIRO",
+        "partido": "PP",
+        "cargo": "VEREADOR",
+        "votos": 1126,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/rubemar-ribeiro-2024.jpg",
+        "sq_candidato": "100001998261",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024",
+      "2025–2028"
+    ],
+    "atual": true,
+    "anterior": true,
+    "foto": "/fotos/rubemar-ribeiro-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 724,
@@ -417,7 +1903,49 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "sapo-da-kiola",
-    "n_proposicoes": 58
+    "n_proposicoes": 58,
+    "stats": {
+      "total": 58,
+      "aprovadas": 10,
+      "taxa_aprovacao": 17,
+      "by_year": {
+        "2025": 22,
+        "2026": 36
+      },
+      "by_tipo": {
+        "Indicação": 45,
+        "Moção": 10,
+        "Projeto de Decreto Legislativo": 2,
+        "Projeto de Resolução": 1
+      },
+      "by_situacao": {
+        "nao_informada": 45,
+        "Proposição aprovada": 10,
+        "Proposição inclusa na Ordem do Dia": 3
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 724,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "JURDINEWTON PEREIRA RIBEIRO",
+        "nome_urna": "SAPO DO KIOLA",
+        "partido": "SOLIDARIEDADE",
+        "cargo": "VEREADOR",
+        "votos": 587,
+        "situacao_tse": "SUPLENTE",
+        "eleito": 0,
+        "foto": "/fotos/sapo-da-kiola-2024.jpg",
+        "sq_candidato": "100002089101",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [],
+    "atual": false,
+    "anterior": false,
+    "foto": "/fotos/sapo-da-kiola-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 11,
@@ -432,7 +1960,70 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "selma-da-colonia",
-    "n_proposicoes": 32
+    "n_proposicoes": 32,
+    "stats": {
+      "total": 32,
+      "aprovadas": 10,
+      "taxa_aprovacao": 31,
+      "by_year": {
+        "2023": 10,
+        "2024": 22
+      },
+      "by_tipo": {
+        "Indicação": 20,
+        "Moção": 5,
+        "Projeto de Resolução": 2,
+        "Projeto de Decreto Legislativo": 2,
+        "Projeto de Lei Ordinária": 1,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Requerimento": 1
+      },
+      "by_situacao": {
+        "nao_informada": 15,
+        "Proposição aprovada": 10,
+        "Proposição inclusa na Ordem do Dia": 5,
+        "Proposição retirada da Ordem do Dia": 2
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 11,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "SELMA MARIA RODRIGUES DURANS",
+        "nome_urna": "SELMA DA COLONIA",
+        "partido": "PP",
+        "cargo": "Vereador",
+        "votos": 954,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/selma-da-colonia-2020.jpg",
+        "sq_candidato": "100001087724",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 11,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "SELMA MARIA RODRIGUES DURANS",
+        "nome_urna": "SELMA DA COLÔNIA",
+        "partido": "PP",
+        "cargo": "VEREADOR",
+        "votos": 641,
+        "situacao_tse": "SUPLENTE",
+        "eleito": 0,
+        "foto": "/fotos/selma-da-colonia-2024.jpg",
+        "sq_candidato": "100001998264",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024"
+    ],
+    "atual": false,
+    "anterior": true,
+    "foto": "/fotos/selma-da-colonia-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 37,
@@ -447,7 +2038,69 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "willian-vieira-da-tv",
-    "n_proposicoes": 40
+    "n_proposicoes": 40,
+    "stats": {
+      "total": 40,
+      "aprovadas": 11,
+      "taxa_aprovacao": 28,
+      "by_year": {
+        "2023": 14,
+        "2024": 26
+      },
+      "by_tipo": {
+        "Indicação": 26,
+        "Moção": 5,
+        "Projeto de Decreto Legislativo": 4,
+        "Projeto de Resolução": 2,
+        "Projeto de Lei do Legislativo": 2,
+        "Emenda ao Projeto de Lei Ordinária": 1
+      },
+      "by_situacao": {
+        "nao_informada": 19,
+        "Proposição aprovada": 11,
+        "Proposição inclusa na Ordem do Dia": 8,
+        "Proposição retirada da Ordem do Dia": 2
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 37,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "ANTONIO WILLIAN RAMOS DOS SANTOS",
+        "nome_urna": "WILLIAN VIEIRA DA TV",
+        "partido": "PP",
+        "cargo": "Vereador",
+        "votos": 994,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/willian-vieira-da-tv-2020.jpg",
+        "sq_candidato": "100001087739",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 37,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "ANTONIO WILLIAN RAMOS DOS SANTOS",
+        "nome_urna": "WILLIAN VIEIRA DA TV",
+        "partido": "PP",
+        "cargo": "VEREADOR",
+        "votos": 695,
+        "situacao_tse": "SUPLENTE",
+        "eleito": 0,
+        "foto": "/fotos/willian-vieira-da-tv-2024.jpg",
+        "sq_candidato": "100001998256",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024"
+    ],
+    "atual": false,
+    "anterior": true,
+    "foto": "/fotos/willian-vieira-da-tv-2024.jpg",
+    "foto_ano": 2024
   },
   {
     "id": 29,
@@ -462,6 +2115,67 @@
     "ano_tse": 2024,
     "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "ze-filho",
-    "n_proposicoes": 15
+    "n_proposicoes": 15,
+    "stats": {
+      "total": 15,
+      "aprovadas": 9,
+      "taxa_aprovacao": 60,
+      "by_year": {
+        "2023": 8,
+        "2024": 7
+      },
+      "by_tipo": {
+        "Indicação": 6,
+        "Moção": 5,
+        "Projeto de Resolução": 2,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Projeto de Decreto Legislativo": 1
+      },
+      "by_situacao": {
+        "Proposição aprovada": 9,
+        "Proposição inclusa na Ordem do Dia": 3,
+        "Proposição retirada da Ordem do Dia": 2,
+        "nao_informada": 1
+      }
+    },
+    "mandatos": [
+      {
+        "autor_id": 29,
+        "ano_eleicao": 2020,
+        "legislatura": "2021–2024",
+        "nome_tse": "JOSÉ MARIA NAZIAZENO FILHO",
+        "nome_urna": "ZÉ FILHO",
+        "partido": "PDT",
+        "cargo": "Vereador",
+        "votos": 1556,
+        "situacao_tse": "ELEITO POR QP",
+        "eleito": 1,
+        "foto": "/fotos/ze-filho-2020.jpg",
+        "sq_candidato": "100001246532",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020"
+      },
+      {
+        "autor_id": 29,
+        "ano_eleicao": 2024,
+        "legislatura": "2025–2028",
+        "nome_tse": "JOSÉ MARIA NAZIAZENO FILHO",
+        "nome_urna": "ZÉ FILHO",
+        "partido": "PL",
+        "cargo": "VEREADOR",
+        "votos": 557,
+        "situacao_tse": "SUPLENTE",
+        "eleito": 0,
+        "foto": "/fotos/ze-filho-2024.jpg",
+        "sq_candidato": "100002171731",
+        "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+      }
+    ],
+    "legislaturas": [
+      "2021–2024"
+    ],
+    "atual": false,
+    "anterior": true,
+    "foto": "/fotos/ze-filho-2024.jpg",
+    "foto_ano": 2024
   }
 ]

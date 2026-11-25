@@ -1,7 +1,7 @@
 import sqlite3, json, os, re, shutil, unicodedata
 
-BASE = "/opt/servidor/src/sites/leis"
-DB = "/opt/servidor/data/servicos/leis/legislacao_pinheiro.db"
+BASE = os.environ.get("LEIS_BASE", "/opt/servidor/src/sites/leis")
+DB = os.environ.get("LEIS_DB", "/opt/servidor/data/servicos/leis/legislacao_pinheiro.db")
 conn = sqlite3.connect(DB)
 conn.row_factory = sqlite3.Row
 c = conn.cursor()
@@ -135,7 +135,7 @@ def eventos_da_norma(nid):
     return [dict(r) for r in q("SELECT * FROM projeto_eventos WHERE norma_id=? ORDER BY data", nid)]
 
 
-# Autores + TSE
+# Autores + TSE (2024 e legislatura 2021–2024)
 try:
     autores_rows = q("""
         SELECT a.id, a.nome,
@@ -148,12 +148,38 @@ try:
 except sqlite3.OperationalError:
     autores_rows = q("SELECT id, nome, NULL AS nome_tse, NULL AS nome_urna, NULL AS partido, NULL AS cargo, NULL AS votos, NULL AS situacao_tse, NULL AS eleito, NULL AS ano_tse, NULL AS fonte_url FROM autores ORDER BY nome")
 
+mandatos_por_autor = {}
+try:
+    for r in q("SELECT * FROM autor_mandato ORDER BY ano_eleicao, autor_id"):
+        m = dict(r)
+        mandatos_por_autor.setdefault(m["autor_id"], []).append(m)
+except sqlite3.OperationalError:
+    pass
+
 autores = []
 autor_por_id = {}
 for r in autores_rows:
     a = dict(r)
     a["slug"] = slugify(a["nome"])
     a["n_proposicoes"] = 0
+    a["stats"] = {}
+    ms = sorted(mandatos_por_autor.get(a["id"], []), key=lambda x: x["ano_eleicao"])
+    a["mandatos"] = ms
+    eleitos = [m for m in ms if m.get("eleito")]
+    a["legislaturas"] = []
+    for m in eleitos:
+        if m["legislatura"] not in a["legislaturas"]:
+            a["legislaturas"].append(m["legislatura"])
+    a["atual"] = any(m["ano_eleicao"] == 2024 and m.get("eleito") for m in ms)
+    a["anterior"] = any(m["ano_eleicao"] == 2020 and m.get("eleito") for m in ms)
+    if ms and not a.get("partido"):
+        latest = ms[-1]
+        for campo in ("nome_tse", "nome_urna", "partido", "cargo", "votos", "situacao_tse", "eleito", "fonte_url"):
+            a[campo] = latest.get(campo)
+        a["ano_tse"] = latest.get("ano_eleicao")
+    com_foto = [m for m in ms if m.get("foto")]
+    a["foto"] = com_foto[-1]["foto"] if com_foto else ""
+    a["foto_ano"] = com_foto[-1]["ano_eleicao"] if com_foto else None
     autores.append(a)
     autor_por_id[a["id"]] = a
 
@@ -167,17 +193,47 @@ props_rows = q("""
     ORDER BY p.ano DESC, p.id DESC
 """)
 props = []
+props_por_autor = {}
 for r in props_rows:
     p = dict(r)
     nomes = [x for x in (p.pop("autores_nomes") or "").split("||") if x]
-    p["autores"] = [a for a in autores if a["nome"] in nomes]
+    autores_prop = [a for a in autores if a["nome"] in nomes]
+    p["autores"] = [{"id": a["id"], "nome": a["nome"], "slug": a["slug"], "partido": a.get("partido")} for a in autores_prop]
     p["autores_nomes"] = nomes
+    p["autor_ids"] = [a["id"] for a in autores_prop]
     p["ementa_curta"] = clean_ws(p["ementa"])
     if len(p["ementa_curta"]) > 220:
         p["ementa_curta"] = p["ementa_curta"][:217].rstrip() + "..."
     props.append(p)
-    for a in p["autores"]:
+    for a in autores_prop:
         a["n_proposicoes"] += 1
+        props_por_autor.setdefault(a["id"], []).append(p)
+
+
+def stats_de_proposicoes(ps):
+    by_year, by_tipo, by_situacao = {}, {}, {}
+    aprovadas = 0
+    for p in ps:
+        ano = str(p.get("ano") or "")
+        if re.fullmatch(r"\d{4}", ano) and 2000 <= int(ano) <= 2030:
+            by_year[ano] = by_year.get(ano, 0) + 1
+        by_tipo[p.get("tipo") or "Não informado"] = by_tipo.get(p.get("tipo") or "Não informado", 0) + 1
+        sit = p.get("situacao") or "nao_informada"
+        by_situacao[sit] = by_situacao.get(sit, 0) + 1
+        if "aprovada" in sit.lower():
+            aprovadas += 1
+    total = len(ps)
+    return {
+        "total": total,
+        "aprovadas": aprovadas,
+        "taxa_aprovacao": round(100 * aprovadas / total) if total else 0,
+        "by_year": dict(sorted(by_year.items())),
+        "by_tipo": dict(sorted(by_tipo.items(), key=lambda x: -x[1])),
+        "by_situacao": dict(sorted(by_situacao.items(), key=lambda x: -x[1])),
+    }
+
+for a in autores:
+    a["stats"] = stats_de_proposicoes(props_por_autor.get(a["id"], []))
 
 normas_list = []
 dispositivos_list = []
@@ -421,7 +477,7 @@ for n in normas_rows:
 
 # Glossário
 glossario_rows = q("SELECT verbo, definicao, exemplo FROM glossario ORDER BY verbo")
-gl = ["---", 'title: "Glossário de termos legislativos"', "---", "", "Termos usados nas leis e atos da Câmara de Pinheiro.", ""]
+gl = ["---", 'title: "Glossário de termos legislativos"', "---", "", "Termos usados nas leis e atos da Câmara de Pinheiro. Para entender o efeito de cada verbo com exemplos reais, veja o guia [Como ler uma lei](/como-ler/).", ""]
 for r in glossario_rows:
     gl.append("## " + (r["verbo"] or "").strip())
     gl.append("")
@@ -432,6 +488,47 @@ for r in glossario_rows:
     gl.append("")
 with open(os.path.join(BASE, "content", "glossario.md"), "w", encoding="utf-8") as f:
     f.write("\n".join(gl))
+
+# Guia "Como ler": cada verbo com um exemplo real do banco.
+busca_verbo = {
+    "criar": "cria",
+    "instituir": "institui",
+    "regulamentar / dispor sobre": "regulamenta",
+    "denominar": "denomina",
+    "reconhecer": "reconhece",
+    "suspender": "suspende",
+    "alterar / dar nova redação": "altera",
+    "revogar": "revoga",
+    "designar": "designa",
+    "julgar": "julga",
+    "requerer / indicar": "indica",
+    "homenagear / aplaudir": "aplausos",
+}
+glossario_data = []
+for r in glossario_rows:
+    verbo = (r["verbo"] or "").strip()
+    termo = busca_verbo.get(verbo.lower(), verbo.split(" / ")[0].lower())
+    alvo = q("SELECT * FROM normas WHERE lower(ementa) LIKE ? ORDER BY data DESC LIMIT 1", "%" + termo + "%") if termo else []
+    norma = None
+    if alvo:
+        n = alvo[0]
+        norma = {
+            "id": n["id"],
+            "slug": n["id"].lower(),
+            "numero": n["numero"],
+            "tipo_label": tipo_label.get(n["tipo"], n["tipo"]),
+            "data": n["data"],
+            "ementa": clean_ws(n["ementa"]),
+        }
+    glossario_data.append({
+        "verbo": verbo,
+        "definicao": clean_ws(r["definicao"]),
+        "exemplo": clean_ws(r["exemplo"]),
+        "norma": norma,
+    })
+
+with open(os.path.join(BASE, "content", "como-ler.md"), "w", encoding="utf-8") as f:
+    f.write('---\ntitle: "Como ler uma lei"\nlayout: "como-ler"\ndescription: "O que cada verbo faz e um exemplo real de aplicação na Câmara de Pinheiro."\n---\n')
 
 # Temas
 temas_rows = q("SELECT id, nome FROM temas ORDER BY nome")
@@ -467,10 +564,9 @@ for f in os.listdir(autores_dir):
         os.remove(os.path.join(autores_dir, f))
 
 with open(os.path.join(autores_dir, "_index.md"), "w", encoding="utf-8") as f:
-    f.write('---\ntitle: "Vereadores e autores"\n---\n\nQuem propôs o quê na Câmara de Pinheiro. Partido, votos e situação eleitoral vêm do TSE (eleição de 2024).\n')
+    f.write('---\ntitle: "Vereadores e autores"\n---\n\nQuem propôs o quê na Câmara de Pinheiro. Partido, votos e situação eleitoral vêm do TSE, nas eleições de 2020 e 2024.\n')
 
 for a in autores:
-    props_autor = [p for p in props if a["id"] in [x["id"] for x in p["autores"]]]
     lines = ["---"]
     lines.append('title: "%s"' % yaml_escape(a["nome"]))
     lines.append('autor_id: %d' % a["id"])
@@ -483,37 +579,17 @@ for a in autores:
         lines.append('votos: %d' % int(a["votos"] or 0))
     if a.get("situacao_tse"):
         lines.append('situacao_tse: "%s"' % yaml_escape(a["situacao_tse"]))
-    lines.append('n_proposicoes: %d' % len(props_autor))
+    lines.append('n_proposicoes: %d' % a["n_proposicoes"])
+    if a.get("foto"):
+        lines.append('foto: "%s"' % yaml_escape(a["foto"]))
+        lines.append('foto_ano: %d' % a["foto_ano"])
+    lines.append('atual: %s' % ("true" if a.get("atual") else "false"))
+    lines.append('anterior: %s' % ("true" if a.get("anterior") else "false"))
+    lines.append("legislaturas: [%s]" % ", ".join('"%s"' % yaml_escape(x) for x in a.get("legislaturas", [])))
     if a.get("fonte_url"):
         lines.append('fonte_tse: "%s"' % yaml_escape(a["fonte_url"]))
     lines.append("---")
     lines.append("")
-    if a.get("partido"):
-        lines.append("**Partido:** %s · **Votos em 2024:** %s · **Situação no TSE:** %s" % (
-            a["partido"], a.get("votos") or 0, a.get("situacao_tse") or "—"))
-    else:
-        lines.append("_Sem correspondência identificada nos dados do TSE._")
-    lines.append("")
-    lines.append("**Proposições:** %d" % len(props_autor))
-    lines.append("")
-    if a.get("fonte_url"):
-        lines.append("Fonte: [TSE — Candidatos 2024](%s)." % a["fonte_url"])
-        lines.append("")
-    if props_autor:
-        lines.append("## Proposições")
-        lines.append("")
-        ano_atual = None
-        for p in props_autor:
-            if p["ano"] != ano_atual:
-                ano_atual = p["ano"]
-                lines.append("### %s" % (ano_atual or "Sem ano"))
-                lines.append("")
-            nome = p.get("identificacao") or ("%s %s/%s" % (p.get("tipo") or "", p.get("numero") or "", p.get("ano") or ""))
-            lines.append("- [%s](/proposicoes/#prop-%d) — %s" % (nome, p["id"], p["ementa_curta"]))
-        lines.append("")
-    else:
-        lines.append("_Nenhuma proposição registrada._")
-        lines.append("")
     with open(os.path.join(autores_dir, a["slug"] + ".md"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
@@ -544,6 +620,12 @@ with open(os.path.join(data_dir, "proposicoes.json"), "w", encoding="utf-8") as 
 
 with open(os.path.join(data_dir, "autores.json"), "w", encoding="utf-8") as f:
     json.dump(autores, f, ensure_ascii=False, indent=2)
+
+with open(os.path.join(data_dir, "glossario.json"), "w", encoding="utf-8") as f:
+    json.dump(glossario_data, f, ensure_ascii=False, indent=2)
+
+with open(os.path.join(BASE, "content", "estatisticas.md"), "w", encoding="utf-8") as f:
+    f.write('---\ntitle: "Estatísticas"\nlayout: "estatisticas"\ndescription: "Números das normas, proposições e vereadores de Pinheiro, com cruzamentos entre tipo, ano, situação, autor e partido."\n---\n')
 
 # Endpoints estáticos
 static_dados = os.path.join(BASE, "static", "dados")

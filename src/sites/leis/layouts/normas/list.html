@@ -1,97 +1,144 @@
 {{ define "main" }}
-<div style="padding:40px 48px 72px">
-  <h1 style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 16px">Leis e atos cadastrados</h1>
-  <div style="margin:0 0 24px;padding:16px;border:2px solid #1A1A1A;background:#fff">
-    <label for="busca-leis" style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B;display:block;margin-bottom:6px">Buscar nas leis</label>
-    <input id="busca-leis" type="search" placeholder="Ex.: barulho, multa, servidor, art. 5" style="width:100%;padding:10px 12px;border:2px solid #1A1A1A;font-family:inherit;font-size:16px">
+{{ $pages := .Pages }}
+{{ $vigente := where $pages "Params.situacao" "vigente" }}
+{{ $tramit := where $pages "Params.situacao" "projeto_em_tramitacao" }}
+<div class="pagehead">
+  <h1>Leis e atos da Câmara</h1>
+  <p class="lead">Filtre por espécie normativa, situação ou ano. A busca procura também no texto dos dispositivos.</p>
+  <div class="stats-strip">
+    <div class="stat"><span class="n">{{ len $pages }}</span><span class="l">normas e atos</span></div>
+    <div class="stat"><span class="n">{{ len $vigente }}</span><span class="l">em vigor</span></div>
+    <div class="stat"><span class="n">{{ len $tramit }}</span><span class="l">em tramitação</span></div>
+    <div class="stat dark"><span class="n">{{ len (where $pages "Params.situacao" "a_verificar") }}</span><span class="l">a verificar</span></div>
+  </div>
+</div>
+
+<div style="padding:0 48px 72px;max-width:1200px">
+  <div class="toolbar">
+    <p class="toolbar-title">Buscar no texto</p>
+    <label for="busca-leis" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Buscar nas leis</label>
+    <input id="busca-leis" type="search" placeholder="Ex.: barulho, multa, servidor, art. 5" style="width:100%;padding:11px 12px;border:2px solid #1A1A1A;font-family:inherit;font-size:16px">
     <p id="busca-status" style="font-size:13px;color:#5B5B5B;margin:8px 0 0"></p>
     <div id="busca-resultados" style="margin-top:12px;display:grid;gap:10px"></div>
   </div>
-  <div style="display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px">
-    <button class="profile-btn filtro-sit active" data-sit="all">Todas</button>
-    <button class="profile-btn filtro-sit" data-sit="vigente">Em vigor</button>
-    <button class="profile-btn filtro-sit" data-sit="projeto_em_tramitacao">Em tramitação</button>
-    <button class="profile-btn filtro-sit" data-sit="outro">Encerradas/outras</button>
-  </div>
-  <div style="overflow-x:auto">
-    <div class="table">
-      <div class="rowhead"><span>Ato</span><span>O que faz</span><span>Categoria</span><span>Natureza</span><span>Situação</span></div>
-      {{ range .Pages }}
-      {{ $outro := "outro" }}{{ if eq .Params.situacao "vigente" }}{{ $outro = "vigente" }}{{ else if eq .Params.situacao "projeto_em_tramitacao" }}{{ $outro = "tramit" }}{{ end }}
-      <div class="rowgrid filtro-row" data-sit="{{ .Params.situacao }}">
-        <strong><a href="{{ .RelPermalink }}">{{ .Params.numero }}</a><br><span style="font-size:12px;color:#5B5B5B">{{ .Params.tipo_label }}</span></strong>
-        <span>{{ .Params.ementa }}</span>
-        <span>{{ delimit .Params.categorias ", " }}</span>
-        <span>{{ .Params.natureza }}</span>
-        {{ $col := "#6B6B6B" }}{{ if eq .Params.situacao "vigente" }}{{ $col = "#1E7B4F" }}{{ end }}
-        <span style="color:{{ $col }};font-weight:700">{{ .Params.situacao_label }}</span>
-      </div>
+
+  <div class="toolbar">
+    <p class="toolbar-title">Espécie normativa</p>
+    <div class="chips" id="filtros-tipo">
+      <button class="chip active" data-tipo="all">Todas <span class="count">{{ len $pages }}</span></button>
+      {{ range $pages.GroupByParam "tipo" }}
+      <button class="chip" data-tipo="{{ .Key }}">{{ (index .Pages 0).Params.tipo_label }} <span class="count">{{ len .Pages }}</span></button>
       {{ end }}
     </div>
+    <p class="toolbar-title" style="margin-top:18px">Situação</p>
+    <div class="chips" id="filtros-sit">
+      <button class="chip active" data-sit="all">Todas</button>
+      <button class="chip" data-sit="vigente">Em vigor</button>
+      <button class="chip" data-sit="projeto_em_tramitacao">Em tramitação</button>
+      <button class="chip" data-sit="outro">Encerradas/outras</button>
+    </div>
+    <div class="filter-grid" style="margin-top:16px;max-width:260px">
+      <label>Ano
+        <select id="filtro-ano"><option value="">Todos os anos</option></select>
+      </label>
+    </div>
+    <p id="filtro-status" style="font-size:13px;color:#5B5B5B;margin:12px 0 0">{{ len $pages }} normas.</p>
+  </div>
+
+  <div style="overflow-x:auto">
+    <table class="table cards">
+      <thead>
+        <tr><th>Ato</th><th>Espécie</th><th>Ementa</th><th>Categoria</th><th>Situação</th></tr>
+      </thead>
+      <tbody>
+      {{ range $pages }}
+      {{ $ano := substr .Params.data 0 4 }}
+      <tr class="filtro-row" data-tipo="{{ .Params.tipo }}" data-sit="{{ .Params.situacao }}" data-ano="{{ $ano }}">
+        <td><strong><a href="{{ .RelPermalink }}">{{ .Params.numero }}</a></strong><br><span style="font-size:12px;color:#5B5B5B">{{ .Params.data }}</span></td>
+        <td><span class="pill">{{ .Params.tipo_label }}</span></td>
+        <td>{{ .Params.ementa }}</td>
+        <td>{{ delimit .Params.categorias ", " }}</td>
+        <td>{{ $col := "#6B6B6B" }}{{ if eq .Params.situacao "vigente" }}{{ $col = "#1E7B4F" }}{{ end }}<span style="color:{{ $col }};font-weight:700">{{ .Params.situacao_label }}</span></td>
+      </tr>
+      {{ end }}
+      </tbody>
+    </table>
   </div>
 </div>
+
 <script>
 (function(){
-  var sit='all';
-  function apply(){
-    document.querySelectorAll('.filtro-row').forEach(function(r){
-      var s=r.getAttribute('data-sit');
-      var ok = (sit==='all') || (sit==='outro' ? (s!=='vigente' && s!=='projeto_em_tramitacao') : s===sit);
-      r.style.display = ok ? '' : 'none';
-    });
-    document.querySelectorAll('.filtro-sit').forEach(function(b){
-      b.classList.toggle('active', b.getAttribute('data-sit')===sit);
-    });
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    apply();
-    document.querySelectorAll('.filtro-sit').forEach(function(b){
-      b.addEventListener('click', function(){ sit=b.getAttribute('data-sit'); apply(); });
-    });
+  var rows = Array.prototype.slice.call(document.querySelectorAll('.filtro-row'));
+  var tipo = 'all', sit = 'all', ano = '';
+  var ftipo = document.querySelectorAll('#filtros-tipo [data-tipo]');
+  var fsit = document.querySelectorAll('#filtros-sit [data-sit]');
+  var fano = document.getElementById('filtro-ano');
+  var status = document.getElementById('filtro-status');
+
+  var anos = {};
+  rows.forEach(function(r){ var a = r.getAttribute('data-ano'); if(a) anos[a] = 1; });
+  Object.keys(anos).sort().reverse().forEach(function(a){
+    var o = document.createElement('option'); o.value = a; o.textContent = a; fano.appendChild(o);
   });
+
+  function apply(){
+    var n = 0;
+    rows.forEach(function(r){
+      var s = r.getAttribute('data-sit');
+      var okTipo = tipo === 'all' || r.getAttribute('data-tipo') === tipo;
+      var okSit = sit === 'all' || (sit === 'outro' ? (s !== 'vigente' && s !== 'projeto_em_tramitacao') : s === sit);
+      var okAno = !ano || r.getAttribute('data-ano') === ano;
+      var ok = okTipo && okSit && okAno;
+      r.style.display = ok ? '' : 'none';
+      if(ok) n++;
+    });
+    ftipo.forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-tipo') === tipo); });
+    fsit.forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-sit') === sit); });
+    status.textContent = n + ' norma(s) encontrada(s).';
+  }
+
+  ftipo.forEach(function(b){ b.addEventListener('click', function(){ tipo = b.getAttribute('data-tipo'); apply(); }); });
+  fsit.forEach(function(b){ b.addEventListener('click', function(){ sit = b.getAttribute('data-sit'); apply(); }); });
+  fano.addEventListener('change', function(){ ano = fano.value; apply(); });
+  apply();
 })();
 </script>
+
 <script>
 (function(){
   var input=document.getElementById('busca-leis');
   var status=document.getElementById('busca-status');
   var box=document.getElementById('busca-resultados');
   if(!input) return;
-  var partes=[];
-  var loaded=false;
+  var partes=[], loaded=false;
+  function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
   function ensureLoaded(cb){
     if(loaded){ cb(); return; }
     if(status) status.textContent='Carregando índice...';
     fetch('/dados/busca.json').then(function(r){return r.json();}).then(function(d){partes=d.partes||[]; loaded=true; if(status) status.textContent='Índice carregado: '+partes.length+' trechos. Digite para buscar.'; cb();}).catch(function(){if(status) status.textContent='Não foi possível carregar o índice.';});
   }
-  function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
   input.addEventListener('input', function(){
     var q=norm(input.value.trim());
     box.innerHTML='';
     if(q.length<2){ if(status) status.textContent='Digite pelo menos 2 caracteres.'; return; }
     ensureLoaded(function(){
-    var res=[];
-    for(var i=0;i<partes.length;i++){
-      var p=partes[i];
-      if(norm(p.texto).indexOf(q)!==-1 || norm(p.norma_numero).indexOf(q)!==-1 || norm(p.rotulo||'').indexOf(q)!==-1 || norm(p.identificador||'').indexOf(q)!==-1){
-        res.push(p);
-        if(res.length>=60) break;
+      var res=[];
+      for(var i=0;i<partes.length;i++){
+        var p=partes[i];
+        if(norm(p.texto).indexOf(q)!==-1 || norm(p.norma_numero).indexOf(q)!==-1 || norm(p.rotulo||'').indexOf(q)!==-1 || norm(p.identificador||'').indexOf(q)!==-1){
+          res.push(p);
+          if(res.length>=60) break;
+        }
       }
-    }
-    if(status) status.textContent=res.length+' resultado(s)';
-    res.forEach(function(p){
-      var a=document.createElement('a');
-      a.href='/normas/'+p.norma_slug+'/#'+p.anchor;
-      a.style.display='block';
-      a.style.padding='10px 12px';
-      a.style.border='2px solid #1A1A1A';
-      a.style.background='#F4F1EA';
-      a.style.color='#1A1A1A';
-      a.style.textDecoration='none';
-      var snip=(p.texto||'').slice(0,180);
-      a.innerHTML='<strong>'+p.norma_numero+' — '+ (p.rotulo||'') +' '+(p.identificador||'')+'</strong><br><span style="font-size:14px;color:#3A3A3A">'+snip+(snip.length>=180?'…':'')+'</span>';
-      box.appendChild(a);
-    });
+      if(status) status.textContent=res.length+' resultado(s)';
+      res.forEach(function(p){
+        var a=document.createElement('a');
+        a.href='/normas/'+p.norma_slug+'/#'+p.anchor;
+        a.style.display='block'; a.style.padding='10px 12px'; a.style.border='2px solid #1A1A1A'; a.style.background='#F4F1EA'; a.style.color='#1A1A1A'; a.style.textDecoration='none';
+        var snip=(p.texto||'').slice(0,180);
+        a.innerHTML='<strong>'+p.norma_numero+' — '+(p.rotulo||'')+' '+(p.identificador||'')+'</strong><br><span style="font-size:14px;color:#3A3A3A">'+snip+(snip.length>=180?'…':'')+'</span>';
+        box.appendChild(a);
+      });
     });
   });
   var qp=new URLSearchParams(window.location.search).get('q');

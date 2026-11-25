@@ -53,6 +53,18 @@
   </section>
 
   <section class="section">
+    <h2>Números da Câmara</h2>
+    <p class="sub">Um resumo do que está cadastrado. A página de estatísticas cruza tipo, ano, situação, autor e partido.</p>
+    <div class="stats-strip">
+      <div class="stat"><span class="n">{{ len $normas }}</span><span class="l">normas e atos</span></div>
+      <div class="stat"><span class="n">{{ len $props }}</span><span class="l">proposições</span></div>
+      <div class="stat"><span class="n">{{ len (where $props "situacao" "Proposição aprovada") }}</span><span class="l">proposições aprovadas</span></div>
+      <div class="stat dark"><span class="n">{{ len $autores }}</span><span class="l">perfis de vereadores/autores</span></div>
+    </div>
+    <a href="/estatisticas/" class="btn" style="display:inline-block">Ver estatísticas e cruzamentos →</a>
+  </section>
+
+  <section class="section">
     <h2>Leis cadastradas</h2>
     <div class="grid grid-3">
       {{ range first 3 $normas }}
@@ -88,7 +100,7 @@
 
   <section class="section">
     <h2>Outros atos da Câmara</h2>
-    <p class="sub">Cada ato tem um verbo que diz o que ele faz. Ao lado, a categoria e para quem ele interessa.</p>
+    <p class="sub">Cada ato tem um verbo que diz o que ele faz. Ao lado, a categoria e a natureza da norma.</p>
     <div style="overflow-x:auto">
       <div class="table">
         <div class="rowhead"><span>Ato</span><span>O que faz</span><span>Categoria</span><span>Natureza</span><span>Situação</span></div>
@@ -110,20 +122,22 @@
   </section>
 
   <section style="padding:40px 48px 72px">
-    <h2 style="margin:0 0 8px;font-size:28px;font-weight:800;letter-spacing:-.01em">O que cada verbo significa</h2>
-    <p class="sub">Os textos usam verbos parecidos. A diferença está no que o ato faz.</p>
-    <div class="grid grid-3">
-      <div class="verbcard"><p class="t">Criar</p><p class="d">Dá existência a algo novo: um órgão, um cargo, uma procuradoria.</p><p class="e">Ex.: cria a Procuradoria Especial da Mulher.</p></div>
-      <div class="verbcard"><p class="t">Instituir</p><p class="d">Estabelece algo mais abstrato e duradouro: um programa, uma política ou um fundo.</p><p class="e">Ex.: institui o Programa de Governo Digital.</p></div>
-      <div class="verbcard"><p class="t">Regulamentar / dispor sobre</p><p class="d">Define as regras de como algo funciona.</p><p class="e">Ex.: regulamenta os gabinetes parlamentares.</p></div>
-      <div class="verbcard"><p class="t">Denominar</p><p class="d">Dá nome a um bem público, como uma ala, uma ponte ou um prédio.</p><p class="e">Ex.: denomina a ala de convivência.</p></div>
-      <div class="verbcard"><p class="t">Reconhecer</p><p class="d">Declara uma condição que já existe, como utilidade pública.</p><p class="e">Ex.: reconhece a ACIP como de utilidade pública.</p></div>
-      <div class="verbcard"><p class="t">Suspender</p><p class="d">Interrompe os efeitos por um prazo ou até um evento. Não apaga a norma.</p><p class="e">Ex.: suspende a eleição da Mesa.</p></div>
-      <div class="verbcard"><p class="t">Alterar / dar nova redação</p><p class="d">Muda o texto de uma norma que já está em vigor.</p><p class="e">Ex.: altera o artigo 58 do Regimento.</p></div>
-      <div class="verbcard"><p class="t">Revogar</p><p class="d">Torna sem efeito uma norma anterior.</p><p class="e">Ex.: revoga a Lei 507/1978, se o projeto 004/2026 for aprovado.</p></div>
-      <div class="verbcard"><p class="t">Designar</p><p class="d">Escolhe uma pessoa para uma função específica.</p><p class="e">Ex.: designa servidora para o e-SIC.</p></div>
-      <div class="verbcard"><p class="t">Julgar</p><p class="d">Decide sobre contas ou responsabilidades.</p><p class="e">Ex.: julga as contas de 2016.</p></div>
-      <div class="verbcard"><p class="t">Requerer / indicar</p><p class="d">Faz um pedido ou sugestão formal. Não obriga a prefeitura sozinho.</p><p class="e">Ex.: indica a recuperação de um ramal.</p></div>
+    <div class="callout">
+      <div>
+        <p class="eyebrow" style="color:#CFE5D7">Guia rápido</p>
+        <h2>O verbo diz o que a lei faz.</h2>
+        <p>“Criar”, “instituir” e “regulamentar” não são sinônimos. O verbo muda o efeito da norma — e ajuda a saber se ela cria algo, muda uma regra ou só faz um pedido.</p>
+        <a class="btn" href="/como-ler/">Entender os verbos com exemplos →</a>
+      </div>
+      <div class="mini-verbs">
+        {{ range first 3 .Site.Data.glossario }}
+        <div class="mini-verb">
+          <strong>{{ .verbo }}</strong>
+          {{ .definicao }}
+          {{ with .norma }}<a href="/normas/{{ .slug }}/" style="color:#fff;text-decoration:underline;font-weight:700">Ver exemplo: {{ .numero }}</a>{{ end }}
+        </div>
+        {{ end }}
+      </div>
     </div>
   </section>
 </div>

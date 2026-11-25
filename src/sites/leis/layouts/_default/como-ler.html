@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="pagehead">
+  <h1>Como ler uma lei</h1>
+  <p class="lead">O verbo principal de uma norma diz o que ela faz. “Criar” não é o mesmo que “instituir”; “revogar” não é o mesmo que “alterar”. Use este guia para saber o que esperar antes de abrir o texto.</p>
+</div>
+
+<div style="padding:0 48px 72px;max-width:1100px">
+  <div class="data-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:28px">
+    <div class="mini"><div class="k">1. Verbo</div><div class="v" style="font-size:16px;line-height:1.4">O que a norma cria, muda ou interrompe.</div></div>
+    <div class="mini"><div class="k">2. Sujeito</div><div class="v" style="font-size:16px;line-height:1.4">Quem pratica a ação: Câmara, Prefeitura, Mesa ou servidor.</div></div>
+    <div class="mini"><div class="k">3. Efeito</div><div class="v" style="font-size:16px;line-height:1.4">Se vale para todos, para um órgão ou só para uma pessoa.</div></div>
+  </div>
+
+  <div class="verb-grid">
+    {{ range .Site.Data.glossario }}
+    <article class="verbcard">
+      <p class="t">{{ .verbo }}</p>
+      <p class="d">{{ .definicao }}</p>
+      {{ with .exemplo }}<p class="e"><strong>No dia a dia:</strong> {{ . }}</p>{{ end }}
+      {{ with .norma }}
+      <a href="/normas/{{ .slug }}/">Ver exemplo real: {{ .tipo_label }} {{ .numero }} →</a>
+      <p class="e" style="margin-top:-2px">{{ .ementa }}</p>
+      {{ end }}
+    </article>
+    {{ end }}
+  </div>
+
+  <div class="panel" style="margin-top:28px">
+    <h3>O verbo não decide sozinho</h3>
+    <p style="margin:0 0 10px;font-size:16px;line-height:1.6;color:#3A3A3A">Uma indicação pode pedir a mesma coisa que um projeto de lei, mas não tem o mesmo efeito. Um requerimento cobra informação; uma moção manifesta posição; um projeto de lei propõe uma regra nova. Por isso o tipo da norma e o verbo aparecem juntos no site.</p>
+    <p style="margin:0;font-size:15px;color:#5B5B5B">Dica: comece pela ementa, confira o tipo e depois leia o artigo que começa com o verbo principal.</p>
+  </div>
+
+  <p style="margin-top:28px"><a href="/normas/">← Ver todas as normas</a> · <a href="/glossario/">Glossário completo</a></p>
+</div>
+{{ end }}

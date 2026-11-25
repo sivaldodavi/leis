@@ -1,12 +1,20 @@
 {{ define "main" }}
 {{ $props := .Site.Data.proposicoes }}
-<div style="padding:40px 48px 72px">
-  <h1 style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px">Proposições</h1>
+<div class="pagehead">
+  <h1>Proposições</h1>
   <p class="lead">{{ len $props }} indicações, moções, projetos e requerimentos apresentados na Câmara de Pinheiro.</p>
+  <div class="stats-strip">
+    <div class="stat"><span class="n">{{ len $props }}</span><span class="l">proposições</span></div>
+    <div class="stat"><span class="n">{{ len (where $props "situacao" "Proposição aprovada") }}</span><span class="l">aprovadas</span></div>
+    <div class="stat dark"><span class="n">{{ len .Site.Data.autores }}</span><span class="l">autores cadastrados</span></div>
+    <div class="stat dark"><span class="n">{{ len (where $props "situacao" "Proposição inclusa na Ordem do Dia") }}</span><span class="l">na Ordem do Dia</span></div>
+  </div>
+</div>
 
-  <div style="margin:0 0 20px;padding:16px;border:2px solid #1A1A1A;background:#fff;display:grid;gap:12px">
+<div style="padding:0 48px 72px">
+  <div class="toolbar" style="display:grid;gap:12px">
     <div>
-      <label for="busca-prop" style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B;display:block;margin-bottom:6px">Buscar</label>
+      <label for="busca-prop" class="toolbar-title">Buscar</label>
       <input id="busca-prop" type="search" placeholder="Ex.: pavimentação, saúde, escola, autor..." style="width:100%;padding:10px 12px;border:2px solid #1A1A1A;font-family:inherit;font-size:16px">
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px">
@@ -63,14 +71,17 @@
   var status = document.getElementById('prop-status');
 
   function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
-  function fill(sel, attr){
+  function fill(sel, attr, split){
     var vals = {};
-    rows.forEach(function(r){ var v = r.getAttribute(attr); if(v) vals[v] = true; });
+    rows.forEach(function(r){
+      var raw = r.getAttribute(attr) || '';
+      (split ? raw.split('|') : [raw]).forEach(function(v){ if(v) vals[v] = true; });
+    });
     Object.keys(vals).sort().reverse().forEach(function(v){
       var o = document.createElement('option'); o.value = v; o.textContent = v; sel.appendChild(o);
     });
   }
-  fill(ftipo, 'data-tipo'); fill(fano, 'data-ano'); fill(fautor, 'data-autor'); fill(fsit, 'data-sit');
+  fill(ftipo, 'data-tipo'); fill(fano, 'data-ano'); fill(fautor, 'data-autor', true); fill(fsit, 'data-sit');
 
   function apply(){
     var q = norm(busca.value.trim());

@@ -8,10 +8,13 @@ Os dados legislativos deste site (normas, dispositivos e proposições) foram or
 
 ## Dados eleitorais (TSE)
 
-Partido, votos e situação eleitoral dos vereadores/autores vêm do portal de dados abertos do Tribunal Superior Eleitoral (TSE), referentes à eleição municipal de 2024:
+Partido, votos, situação eleitoral e foto dos vereadores/autores vêm do portal de dados abertos do Tribunal Superior Eleitoral (TSE), referentes às eleições municipais de 2020 e 2024:
 
+- [TSE — Candidatos 2020](https://dadosabertos.tse.jus.br/dataset/candidatos-2020-subtemas)
 - [TSE — Candidatos 2024](https://dadosabertos.tse.jus.br/dataset/candidatos-2024)
 - [TSE — Resultados 2024](https://dadosabertos.tse.jus.br/dataset/resultados-2024)
+
+As fotos são as imagens oficiais de candidatura divulgadas pelo TSE. Quando não há foto disponível, o site mostra as iniciais do nome.
 
 Usamos apenas informações públicas de candidatura e votação. **Não usamos dados de bens, despesas, financiamento de campanha ou qualquer informação financeira do TSE.**
 
@@ -22,7 +25,7 @@ Estes arquivos são atualizados a cada publicação do site e podem ser usados l
 - `/dados/legislacao.json` — normas, dispositivos e metadados.
 - `/dados/busca.json` — índice de busca (trechos de dispositivos).
 - `/dados/proposicoes.json` — proposições, autores e situação.
-- `/dados/autores.json` — vereadores/autores, partido, votos e proposições.
+- `/dados/autores.json` — vereadores/autores, partido, votos, mandatos (2020 e 2024) e proposições.
 
 Exemplo de uso:
 

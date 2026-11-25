@@ -1,0 +1,160 @@
+{{ define "main" }}
+{{ $normas := .Site.Data.legislacao.normas }}
+{{ $props := .Site.Data.proposicoes }}
+{{ $autores := .Site.Data.autores }}
+<div class="pagehead">
+  <h1>Estatísticas da Câmara</h1>
+  <p class="lead">Números das normas, das proposições e dos vereadores de Pinheiro. Os cruzamentos usam apenas dados legislativos e eleitorais públicos; nenhum dado financeiro.</p>
+  <div class="stats-strip">
+    <div class="stat"><span class="n">{{ len $normas }}</span><span class="l">normas e atos</span></div>
+    <div class="stat"><span class="n">{{ len $props }}</span><span class="l">proposições</span></div>
+    <div class="stat"><span class="n">{{ len $autores }}</span><span class="l">perfis de autores</span></div>
+    <div class="stat dark"><span class="n">{{ len (where $props "situacao" "Proposição aprovada") }}</span><span class="l">proposições aprovadas</span></div>
+  </div>
+</div>
+
+<div style="padding:0 48px 72px;max-width:1200px">
+  <div class="section-line">
+    <h2>Normas e atos</h2>
+    <p>Como o acervo está distribuído.</p>
+  </div>
+  <div class="data-grid">
+    <section class="panel"><h3>Por espécie normativa</h3><div id="normas-tipo" class="bar-list"></div></section>
+    <section class="panel"><h3>Por situação</h3><div id="normas-situacao" class="bar-list"></div></section>
+    <section class="panel"><h3>Por ano</h3><div id="normas-ano" class="bar-list"></div><p class="note">Anos com pelo menos uma norma cadastrada.</p></section>
+  </div>
+
+  <div class="section-line">
+    <h2>Proposições</h2>
+    <p>O que os vereadores apresentaram.</p>
+  </div>
+  <div class="data-grid">
+    <section class="panel"><h3>Por tipo</h3><div id="props-tipo" class="bar-list"></div></section>
+    <section class="panel"><h3>Por situação</h3><div id="props-situacao" class="bar-list"></div></section>
+    <section class="panel"><h3>Por ano</h3><div id="props-ano" class="bar-list"></div><p class="note">Anos válidos entre 2000 e 2030; registros com ano corrompido ficam fora do gráfico.</p></section>
+  </div>
+
+  <div class="section-line">
+    <h2>Vereadores e partidos</h2>
+    <p>Quem mais apresentou proposições e como os partidos aparecem.</p>
+  </div>
+  <div class="data-grid">
+    <section class="panel"><h3>Autores com mais proposições</h3><div id="autores-ranking" class="bar-list"></div><p class="note">Contagem por autor; uma proposição com vários autores conta para cada um.</p></section>
+    <section class="panel"><h3>Proposições por partido</h3><div id="partidos-barras" class="bar-list"></div><p class="note">Soma das proposições dos autores de cada partido, conforme o TSE.</p></section>
+    <section class="panel"><h3>Taxa de aprovação por tipo</h3><div id="aprovacao-tipo" class="bar-list"></div><p class="note">Percentual de proposições com situação “aprovada” dentro de cada tipo.</p></section>
+  </div>
+
+  <div class="section-line">
+    <h2>Cruzamentos</h2>
+    <p>Tabelas para comparar duas dimensões.</p>
+  </div>
+  <div class="data-grid">
+    <section class="panel" style="grid-column:1/-1"><h3>Espécie normativa × situação</h3><div id="tabela-normas" style="overflow-x:auto"></div></section>
+    <section class="panel" style="grid-column:1/-1"><h3>Partido × proposições e mandatos</h3><div id="tabela-partidos" style="overflow-x:auto"></div></section>
+  </div>
+
+  <noscript><p class="empty">Os gráficos e tabelas desta página precisam de JavaScript. Os números principais estão no topo.</p></noscript>
+</div>
+
+<script>
+(function(){
+  function el(tag, cls, txt){ var e=document.createElement(tag); if(cls) e.className=cls; if(txt!==undefined) e.textContent=txt; return e; }
+  function countBy(arr, keyFn){
+    var out={}; arr.forEach(function(x){ var k=keyFn(x); if(k===undefined||k===null||k==='') k='Não informado'; out[k]=(out[k]||0)+1; }); return out;
+  }
+  function sorted(obj){ return Object.keys(obj).map(function(k){return [k,obj[k]];}).sort(function(a,b){return b[1]-a[1];}); }
+  function bars(id, obj, opts){
+    opts=opts||{};
+    var box=document.getElementById(id); if(!box) return;
+    var rows=sorted(obj).slice(0, opts.limit||20);
+    box.innerHTML='';
+    if(!rows.length){ box.appendChild(el('p','note','Sem dados.')); return; }
+    var max=Math.max.apply(null, rows.map(function(r){return r[1];})) || 1;
+    rows.forEach(function(r){
+      var row=el('div','bar-row');
+      row.appendChild(el('span','lbl',opts.label ? opts.label(r[0]) : r[0]));
+      var track=el('div','bar-track');
+      var fill=el('div','bar-fill'); fill.style.width=Math.max(2, Math.round(r[1]/max*100))+'%'; track.appendChild(fill);
+      row.appendChild(track); row.appendChild(el('span','val',opts.value ? opts.value(r[1]) : r[1]));
+      box.appendChild(row);
+    });
+  }
+  function table(id, headers, rows){
+    var box=document.getElementById(id); if(!box) return;
+    box.innerHTML='';
+    var t=el('table','table cards');
+    var thead=el('thead'); var htr=el('tr');
+    headers.forEach(function(h){ htr.appendChild(el('th',null,h)); }); thead.appendChild(htr); t.appendChild(thead);
+    var tb=el('tbody');
+    rows.forEach(function(r){ var tr=el('tr'); r.forEach(function(v){ tr.appendChild(el('td',null,String(v))); }); tb.appendChild(tr); });
+    t.appendChild(tb); box.appendChild(t);
+  }
+  function situacaoLabel(s){
+    var mapa={
+      'vigente':'Em vigor','a_verificar':'A verificar','projeto_em_tramitacao':'Em tramitação',
+      'apresentada':'Apresentada','apresentado':'Apresentado','prazo_expirado':'Prazo expirado',
+      'Proposição aprovada':'Aprovada','Proposição inclusa na Ordem do Dia':'Na Ordem do Dia',
+      'Proposição retirada da Ordem do Dia':'Retirada da Ordem do Dia','Proposição rejeitada pelo Plenário':'Rejeitada',
+      'nao_informada':'Não informada'
+    };
+    return mapa[s]||s;
+  }
+  function anoValido(a){ return /^\d{4}$/.test(String(a||'')) && +a>=2000 && +a<=2030; }
+
+  Promise.all([
+    fetch('/dados/legislacao.json').then(function(r){return r.json();}),
+    fetch('/dados/proposicoes.json').then(function(r){return r.json();}),
+    fetch('/dados/autores.json').then(function(r){return r.json();})
+  ]).then(function(res){
+    var legis=res[0], props=res[1], autores=res[2];
+    var normas=legis.normas||[];
+
+    bars('normas-tipo', countBy(normas,function(n){return n.tipo_label;}), {limit:12});
+    bars('normas-situacao', countBy(normas,function(n){return situacaoLabel(n.situacao);}), {limit:12});
+    bars('normas-ano', countBy(normas,function(n){return (n.data||'').slice(0,4);}), {limit:30});
+
+    bars('props-tipo', countBy(props,function(p){return p.tipo;}), {limit:14});
+    bars('props-situacao', countBy(props,function(p){return situacaoLabel(p.situacao);}), {limit:10});
+    bars('props-ano', countBy(props,function(p){return anoValido(p.ano)?String(p.ano):null;}), {limit:30});
+
+    var rank=autores.slice().sort(function(a,b){return (b.n_proposicoes||0)-(a.n_proposicoes||0);}).slice(0,15);
+    bars('autores-ranking', rank.reduce(function(o,a){o[a.nome]=a.n_proposicoes||0;return o;},{}), {limit:15});
+
+    var partidos={};
+    autores.forEach(function(a){ if(!a.partido) return; partidos[a.partido]=(partidos[a.partido]||0)+(a.n_proposicoes||0); });
+    bars('partidos-barras', partidos, {limit:15});
+
+    var tipos={};
+    props.forEach(function(p){
+      var t=p.tipo||'Não informado'; if(!tipos[t]) tipos[t]={total:0,aprovadas:0};
+      tipos[t].total++; if((p.situacao||'').toLowerCase().indexOf('aprovada')!==-1) tipos[t].aprovadas++;
+    });
+    var aprov={};
+    Object.keys(tipos).forEach(function(t){ var x=tipos[t]; if(x.total>=3) aprov[t]=Math.round(x.aprovadas/x.total*100); });
+    bars('aprovacao-tipo', aprov, {limit:12, value:function(n){return n+'%';}});
+
+    var situacoes=['vigente','a_verificar','projeto_em_tramitacao','prazo_expirado','apresentada','apresentado'];
+    var linhasNormas=[];
+    Object.keys(countBy(normas,function(n){return n.tipo_label;})).sort().forEach(function(tipo){
+      var subset=normas.filter(function(n){return n.tipo_label===tipo;});
+      var c=countBy(subset,function(n){return n.situacao;});
+      linhasNormas.push([tipo, subset.length].concat(situacoes.map(function(s){return c[s]||0;})));
+    });
+    table('tabela-normas', ['Espécie','Total','Em vigor','A verificar','Em tramitação','Prazo expirado','Apresentada','Apresentado'], linhasNormas);
+
+    var partidoData={};
+    autores.forEach(function(a){
+      if(!a.partido) return;
+      if(!partidoData[a.partido]) partidoData[a.partido]={autores:0,atuais:0,anteriores:0,props:0};
+      var d=partidoData[a.partido]; d.autores++; if(a.atual) d.atuais++; if(a.anterior) d.anteriores++; d.props+=a.n_proposicoes||0;
+    });
+    var linhasPartidos=Object.keys(partidoData).sort().map(function(p){
+      var d=partidoData[p]; return [p,d.autores,d.atuais,d.anteriores,d.props,d.autores?Math.round(d.props/d.autores):0];
+    }).sort(function(a,b){return b[4]-a[4];});
+    table('tabela-partidos', ['Partido','Autores','Na legislatura atual','Com passagem anterior','Proposições','Média por autor'], linhasPartidos);
+  }).catch(function(){
+    document.querySelectorAll('.bar-list').forEach(function(b){ b.innerHTML='<p class="note">Não foi possível carregar os dados.</p>'; });
+  });
+})();
+</script>
+{{ end }}
