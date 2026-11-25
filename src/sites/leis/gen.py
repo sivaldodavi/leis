@@ -290,7 +290,7 @@ def parse_br(v):
         return 0.0
 
 def fmt_br(x):
-    s = "{:.2f}".format(x)
+    s = "{:,.2f}".format(x)
     s = s.replace(",", "X").replace(".", ",").replace("X", ".")
     return s
 
