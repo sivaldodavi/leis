@@ -130,9 +130,9 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         temas_list = temas_do_disp(did)
         expls = explicacoes_do_disp(did)
 
-        heading = tit if tit else (cap + " " + rotulo).strip()
+        heading = rotulo if rotulo else (tit if tit else cap)
         if not heading:
-            heading = rotulo or ("Art. %d" % d["ordem"])
+            heading = "Art. %d" % d["ordem"]
         lines.append('<a id="disp-%d"></a>' % did)
         lines.append("### " + heading)
         lines.append("")
