@@ -342,6 +342,25 @@ dinheiro = {
     "contratos": contratos,
     "emendas": emendas,
 }
+def fmt_money_fields(obj):
+    tokens = ("EMPENHADO", "LIQUIDADO", "PAGO", "DOTACAO", "VALCON", "VALOR", "RECTRANSF", "RECAPLICACAOFINAN", "DIARIAS_TOTAL")
+    if isinstance(obj, dict):
+        for k, v in list(obj.items()):
+            if isinstance(v, (dict, list)):
+                fmt_money_fields(v)
+            elif isinstance(v, str) and any(t in k.upper() for t in tokens):
+                obj[k] = fmt_br(parse_br(v))
+    elif isinstance(obj, list):
+        for item in obj:
+            fmt_money_fields(item)
+
+for _o in dinheiro.get("despesas_orgao", []):
+    _o["_empenhado_num"] = parse_br(_o.get("EMPENHADO"))
+for _f in dinheiro.get("despesas_fornecedor", []):
+    _f["_pago_num"] = parse_br(_f.get("PAGO"))
+for _c in dinheiro.get("contratos", []):
+    _c["_valor_num"] = parse_br(_c.get("VALCON"))
+fmt_money_fields(dinheiro)
 with open(os.path.join(data_dir, "dinheiro_publico.json"), "w", encoding="utf-8") as f:
     json.dump(dinheiro, f, ensure_ascii=False, indent=2)
 print("dinheiro: orgaos=%d fornecedores=%d diarias=%d licitacoes=%d contratos=%d emendas=%d" % (len(desp_orgao), len(desp_forn), len(diarias), len(licitacoes), len(contratos), len(emendas)))

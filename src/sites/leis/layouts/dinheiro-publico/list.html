@@ -53,6 +53,36 @@
   </section>
 
   <section style="padding:16px 48px 8px">
+    <h2 style="margin:0 0 12px; font-size:22px; font-weight:800">Visualização rápida</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:24px; margin-bottom:16px">
+      <div class="card">
+        <h3 style="margin:0 0 10px; font-size:17px; font-weight:800">Despesas por órgão</h3>
+        {{ $maxOrg := 0.0 }}
+        {{ if $d }}{{ range $d.despesas_orgao }}{{ if gt ._empenhado_num $maxOrg }}{{ $maxOrg = ._empenhado_num }}{{ end }}{{ end }}{{ end }}
+        {{ if $d }}{{ range $d.despesas_orgao }}
+          <div style="margin:8px 0">
+            <div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:4px"><span>{{ .DESCRICAO }}</span><strong>{{ .EMPENHADO }}</strong></div>
+            <div style="height:12px;background:#E8E3D8;border:1px solid #B8B2A3"><div style="height:100%;background:#1E7B4F;width:{{ if $maxOrg }}{{ printf "%.1f" (mul (div ._empenhado_num $maxOrg) 100) }}%{{ else }}0%{{ end }}"></div></div>
+          </div>
+        {{ end }}{{ end }}
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 10px; font-size:17px; font-weight:800">Top fornecedores (por pago)</h3>
+        {{ $sortedForn := sort $d.despesas_fornecedor "_pago_num" "desc" }}
+        {{ $maxForn := 0.0 }}
+        {{ range $sortedForn }}{{ if gt ._pago_num $maxForn }}{{ $maxForn = ._pago_num }}{{ end }}{{ end }}
+        {{ $i := 0 }}
+        {{ range $sortedForn }}
+          {{ if lt $i 8 }}
+          <div style="margin:8px 0">
+            <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;gap:8px"><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:220px">{{ .DESCRICAO }}</span><strong>{{ .PAGO }}</strong></div>
+            <div style="height:10px;background:#E8E3D8;border:1px solid #B8B2A3"><div style="height:100%;background:#8A5F00;width:{{ if $maxForn }}{{ printf "%.1f" (mul (div ._pago_num $maxForn) 100) }}%{{ else }}0%{{ end }}"></div></div>
+          </div>
+          {{ $i = add $i 1 }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
       <label for="busca-dinheiro" style="font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B">Pesquisar nos dados:</label>
       <input id="busca-dinheiro" type="search" placeholder="Fornecedor, CNPJ, descrição, empenho..." class="search" style="max-width:420px">

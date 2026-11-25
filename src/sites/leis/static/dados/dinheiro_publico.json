@@ -17,11 +17,12 @@
       "CODIGO": "0101",
       "DESCRICAO": "CÂMARA MUNICIPAL",
       "EMPENHADO": "8849839,72",
-      "LIQUIDADO": "6640731,6",
+      "LIQUIDADO": "6640731,60",
       "PAGO": "6634611,67",
       "DOTAC": "9000000",
       "ALTDO": "447405,1",
-      "DOTACAO_ATUALIZADA": "9447405,1"
+      "DOTACAO_ATUALIZADA": "9447405,10",
+      "_empenhado_num": 8849839.72
     }
   ],
   "despesas_fornecedor": [
@@ -33,7 +34,8 @@
       "CEPCI": "PINHEIRO",
       "EMPENHADO": "206652,37",
       "LIQUIDADO": "206652,37",
-      "PAGO": "206652,37"
+      "PAGO": "206652,37",
+      "_pago_num": 206652.37
     },
     {
       "EMPRESA": "1",
@@ -41,9 +43,10 @@
       "DESCRICAO": "AUTO POSTO H D CHAGAS LTDA",
       "INSMF": "02.921.544/0001-11",
       "CEPCI": "",
-      "EMPENHADO": "183774,2",
-      "LIQUIDADO": "183774,2",
-      "PAGO": "183774,2"
+      "EMPENHADO": "183774,20",
+      "LIQUIDADO": "183774,20",
+      "PAGO": "183774,20",
+      "_pago_num": 183774.2
     },
     {
       "EMPRESA": "1",
@@ -51,9 +54,10 @@
       "DESCRICAO": "BANCO DO BRASIL",
       "INSMF": "00.655.522/0001-21",
       "CEPCI": "PINHEIRO",
-      "EMPENHADO": "15000",
+      "EMPENHADO": "15000,00",
       "LIQUIDADO": "10377,05",
-      "PAGO": "10377,05"
+      "PAGO": "10377,05",
+      "_pago_num": 10377.05
     },
     {
       "EMPRESA": "1",
@@ -61,9 +65,10 @@
       "DESCRICAO": "CAEMA COMPANHIA DE ABASTECIMENTO AMBIENTAL DO MARA",
       "INSMF": "06.274.757/0001-50",
       "CEPCI": "PINHEIRO",
-      "EMPENHADO": "4200",
+      "EMPENHADO": "4200,00",
       "LIQUIDADO": "2355,72",
-      "PAGO": "2355,72"
+      "PAGO": "2355,72",
+      "_pago_num": 2355.72
     },
     {
       "EMPRESA": "1",
@@ -71,9 +76,10 @@
       "DESCRICAO": "CARMO SOLUÇÕES INTEGRADAS LTDA",
       "INSMF": "52.082.423/0001-00",
       "CEPCI": "PINHEIRO",
-      "EMPENHADO": "298792,7",
-      "LIQUIDADO": "293692,7",
-      "PAGO": "293692,7"
+      "EMPENHADO": "298792,70",
+      "LIQUIDADO": "293692,70",
+      "PAGO": "293692,70",
+      "_pago_num": 293692.7
     },
     {
       "EMPRESA": "1",
@@ -83,7 +89,8 @@
       "CEPCI": "TERESINA",
       "EMPENHADO": "32216,24",
       "LIQUIDADO": "23776,24",
-      "PAGO": "23776,24"
+      "PAGO": "23776,24",
+      "_pago_num": 23776.24
     },
     {
       "EMPRESA": "1",
@@ -93,7 +100,8 @@
       "CEPCI": "SAO LUIS",
       "EMPENHADO": "32485,64",
       "LIQUIDADO": "30582,74",
-      "PAGO": "30582,74"
+      "PAGO": "30582,74",
+      "_pago_num": 30582.74
     },
     {
       "EMPRESA": "1",
@@ -101,9 +109,10 @@
       "DESCRICAO": "F. D. PRIVADO DA SILVA",
       "INSMF": "20.782.692/0001-84",
       "CEPCI": "PINHEIRO",
-      "EMPENHADO": "11260",
-      "LIQUIDADO": "11260",
-      "PAGO": "11260"
+      "EMPENHADO": "11260,00",
+      "LIQUIDADO": "11260,00",
+      "PAGO": "11260,00",
+      "_pago_num": 11260.0
     },
     {
       "EMPRESA": "1",
@@ -111,9 +120,10 @@
       "DESCRICAO": "FOLHA DE DE PAGAMENTO DOS VEREADORES",
       "INSMF": "",
       "CEPCI": "PINHEIRO",
-      "EMPENHADO": "2304000",
-      "LIQUIDADO": "1721500",
-      "PAGO": "1721500"
+      "EMPENHADO": "2304000,00",
+      "LIQUIDADO": "1721500,00",
+      "PAGO": "1721500,00",
+      "_pago_num": 1721500.0
     },
     {
       "EMPRESA": "1",
@@ -121,9 +131,10 @@
       "DESCRICAO": "FOLHA DE PAGAMENTO DOS SERVIDORES COMISSIONADOS",
       "INSMF": "",
       "CEPCI": "PINHEIRO",
-      "EMPENHADO": "2439112,1",
+      "EMPENHADO": "2439112,10",
       "LIQUIDADO": "1818620,09",
-      "PAGO": "1818620,09"
+      "PAGO": "1818620,09",
+      "_pago_num": 1818620.09
     },
     {
       "EMPRESA": "1",
@@ -131,9 +142,10 @@
       "DESCRICAO": "FOLHA DE PAGAMENTO DOS SERVIDORES CONTRATADOS",
       "INSMF": "",
       "CEPCI": "PINHEIRO",
-      "EMPENHADO": "120000",
-      "LIQUIDADO": "93994,7",
-      "PAGO": "93994,7"
+      "EMPENHADO": "120000,00",
+      "LIQUIDADO": "93994,70",
+      "PAGO": "93994,70",
+      "_pago_num": 93994.7
     },
     {
       "EMPRESA": "1",
@@ -141,9 +153,10 @@
       "DESCRICAO": "FOLHA DE PAGAMENTO DOS SERVIDORES EFETIVOS",
       "INSMF": "",
       "CEPCI": "PINHEIRO",
-      "EMPENHADO": "344000",
+      "EMPENHADO": "344000,00",
       "LIQUIDADO": "251670,33",
-      "PAGO": "251670,33"
+      "PAGO": "251670,33",
+      "_pago_num": 251670.33
     },
     {
       "EMPRESA": "1",
@@ -151,9 +164,10 @@
       "DESCRICAO": "IMMOBILE PARTICIPAÇÕES LTDA",
       "INSMF": "52.457.612/0001-01",
       "CEPCI": "SAO LUIS",
-      "EMPENHADO": "18000",
-      "LIQUIDADO": "9000",
-      "PAGO": "7200"
+      "EMPENHADO": "18000,00",
+      "LIQUIDADO": "9000,00",
+      "PAGO": "7200,00",
+      "_pago_num": 7200.0
     },
     {
       "EMPRESA": "1",
@@ -163,7 +177,8 @@
       "CEPCI": "",
       "EMPENHADO": "1054949,75",
       "LIQUIDADO": "738112,91",
-      "PAGO": "733792,98"
+      "PAGO": "733792,98",
+      "_pago_num": 733792.98
     },
     {
       "EMPRESA": "1",
@@ -171,9 +186,10 @@
       "DESCRICAO": "J. L. A. CARVALHO",
       "INSMF": "37.333.726/0001-56",
       "CEPCI": "",
-      "EMPENHADO": "62400",
-      "LIQUIDADO": "46800",
-      "PAGO": "46800"
+      "EMPENHADO": "62400,00",
+      "LIQUIDADO": "46800,00",
+      "PAGO": "46800,00",
+      "_pago_num": 46800.0
     },
     {
       "EMPRESA": "1",
@@ -181,9 +197,10 @@
       "DESCRICAO": "JUSTINO PEREIRA NETO - ME",
       "INSMF": "09.279.072/0001-94",
       "CEPCI": "PINHEIRO",
-      "EMPENHADO": "60000",
-      "LIQUIDADO": "45000",
-      "PAGO": "45000"
+      "EMPENHADO": "60000,00",
+      "LIQUIDADO": "45000,00",
+      "PAGO": "45000,00",
+      "_pago_num": 45000.0
     },
     {
       "EMPRESA": "1",
@@ -191,9 +208,10 @@
       "DESCRICAO": "LIDER CONSULTORIA E SERVIÇOS LTDA",
       "INSMF": "43.760.769/0001-10",
       "CEPCI": "",
-      "EMPENHADO": "63000",
-      "LIQUIDADO": "35000",
-      "PAGO": "35000"
+      "EMPENHADO": "63000,00",
+      "LIQUIDADO": "35000,00",
+      "PAGO": "35000,00",
+      "_pago_num": 35000.0
     },
     {
       "EMPRESA": "1",
@@ -203,7 +221,8 @@
       "CEPCI": "SÃO LUIS",
       "EMPENHADO": "365182,11",
       "LIQUIDADO": "271520,94",
-      "PAGO": "271520,94"
+      "PAGO": "271520,94",
+      "_pago_num": 271520.94
     },
     {
       "EMPRESA": "1",
@@ -213,7 +232,8 @@
       "CEPCI": "PINHEIRO",
       "EMPENHADO": "36736,06",
       "LIQUIDADO": "36736,06",
-      "PAGO": "36736,06"
+      "PAGO": "36736,06",
+      "_pago_num": 36736.06
     },
     {
       "EMPRESA": "1",
@@ -223,7 +243,8 @@
       "CEPCI": "",
       "EMPENHADO": "89222,51",
       "LIQUIDADO": "89222,51",
-      "PAGO": "89222,51"
+      "PAGO": "89222,51",
+      "_pago_num": 89222.51
     },
     {
       "EMPRESA": "1",
@@ -231,9 +252,10 @@
       "DESCRICAO": "M. S. REBOUÇAS",
       "INSMF": "26.192.489/0001-34",
       "CEPCI": "SAO LUIS",
-      "EMPENHADO": "235000",
-      "LIQUIDADO": "135000",
-      "PAGO": "135000"
+      "EMPENHADO": "235000,00",
+      "LIQUIDADO": "135000,00",
+      "PAGO": "135000,00",
+      "_pago_num": 135000.0
     },
     {
       "EMPRESA": "1",
@@ -241,9 +263,10 @@
       "DESCRICAO": "MAX E EMPREENDIMENTOS LTDA",
       "INSMF": "36.296.510/0001-03",
       "CEPCI": "PINHEIRO",
-      "EMPENHADO": "64293",
-      "LIQUIDADO": "24620",
-      "PAGO": "24620"
+      "EMPENHADO": "64293,00",
+      "LIQUIDADO": "24620,00",
+      "PAGO": "24620,00",
+      "_pago_num": 24620.0
     },
     {
       "EMPRESA": "1",
@@ -251,9 +274,10 @@
       "DESCRICAO": "N. J. D. PEREIRA-ME",
       "INSMF": "07.292.381/0001-79",
       "CEPCI": "SÃO LUIS",
-      "EMPENHADO": "40800",
-      "LIQUIDADO": "18000",
-      "PAGO": "18000"
+      "EMPENHADO": "40800,00",
+      "LIQUIDADO": "18000,00",
+      "PAGO": "18000,00",
+      "_pago_num": 18000.0
     },
     {
       "EMPRESA": "1",
@@ -261,9 +285,10 @@
       "DESCRICAO": "RB EMPREENDIMENTO LTDA",
       "INSMF": "11.431.264/0001-16",
       "CEPCI": "PINHEIRO",
-      "EMPENHADO": "361200",
-      "LIQUIDADO": "206400",
-      "PAGO": "206400"
+      "EMPENHADO": "361200,00",
+      "LIQUIDADO": "206400,00",
+      "PAGO": "206400,00",
+      "_pago_num": 206400.0
     },
     {
       "EMPRESA": "1",
@@ -271,9 +296,10 @@
       "DESCRICAO": "T S MEDEIROS ASSESSORIA CONTABIL",
       "INSMF": "19.803.086/0001-19",
       "CEPCI": "",
-      "EMPENHADO": "305500",
-      "LIQUIDADO": "235000",
-      "PAGO": "235000"
+      "EMPENHADO": "305500,00",
+      "LIQUIDADO": "235000,00",
+      "PAGO": "235000,00",
+      "_pago_num": 235000.0
     },
     {
       "EMPRESA": "1",
@@ -281,9 +307,10 @@
       "DESCRICAO": "TISERV SERVIÇOS E COMERCIO LTDA",
       "INSMF": "49.601.377/0001-95",
       "CEPCI": "PERI MIRIM",
-      "EMPENHADO": "5000",
-      "LIQUIDADO": "5000",
-      "PAGO": "5000"
+      "EMPENHADO": "5000,00",
+      "LIQUIDADO": "5000,00",
+      "PAGO": "5000,00",
+      "_pago_num": 5000.0
     },
     {
       "EMPRESA": "1",
@@ -293,7 +320,8 @@
       "CEPCI": "PINHEIRO",
       "EMPENHADO": "97063,04",
       "LIQUIDADO": "97063,04",
-      "PAGO": "97063,04"
+      "PAGO": "97063,04",
+      "_pago_num": 97063.04
     }
   ],
   "diarias": [],
@@ -314,7 +342,7 @@
       "DISCR": "Contratação de empresa especializada em serviços de software e equipamentos para digitalização de documentos correntes do ano de 2023 com mão de obra ",
       "SITUACAO": "            ",
       "COMP": "",
-      "VALOR": "",
+      "VALOR": "0,00",
       "ARQUIVO": "",
       "EMPRESA": "1",
       "CARONA": "",
@@ -325,7 +353,7 @@
       "CHAMADAPUB": "",
       "CODTCE": "",
       "ORCAMENTO_SIGILOSO": "",
-      "VALOR1": "",
+      "VALOR1": "0,00",
       "EDITAL": "Para consultar clique duas vezes na linha deste registro",
       "PARTICIPANTES": "Para consultar clique duas vezes na linha deste registro",
       "CPFCNPJ": "Para consultar clique duas vezes na linha deste registro",
@@ -350,7 +378,7 @@
       "DISCR": " SERVIÇOS DE ENGENHARIA E CONSTRUÇÃO CIVIL PARA EXECUÇÃO  DA REFORMA E AMPLIAÇÃO DA SEDE DA CÂMARA MUNICIPAL DE PINHEIRO-MA.",
       "SITUACAO": "            ",
       "COMP": "",
-      "VALOR": "",
+      "VALOR": "0,00",
       "ARQUIVO": "",
       "EMPRESA": "1",
       "CARONA": "",
@@ -361,7 +389,7 @@
       "CHAMADAPUB": "",
       "CODTCE": "",
       "ORCAMENTO_SIGILOSO": "",
-      "VALOR1": "",
+      "VALOR1": "0,00",
       "EDITAL": "Para consultar clique duas vezes na linha deste registro",
       "PARTICIPANTES": "Para consultar clique duas vezes na linha deste registro",
       "CPFCNPJ": "Para consultar clique duas vezes na linha deste registro",
@@ -386,7 +414,7 @@
       "DISCR": "PRESTAÇÃO DE SERVIÇOS DE ELABORAÇÃO DE PROJETO BÁSICO PARA REFORMA E AMPLIAÇÃO DA NOVA SEDE DA CÂMARA MUNICIPAL DE PINHEIRO-MA.",
       "SITUACAO": "            ",
       "COMP": "",
-      "VALOR": "",
+      "VALOR": "0,00",
       "ARQUIVO": "",
       "EMPRESA": "1",
       "CARONA": "",
@@ -397,7 +425,7 @@
       "CHAMADAPUB": "",
       "CODTCE": "",
       "ORCAMENTO_SIGILOSO": "",
-      "VALOR1": "",
+      "VALOR1": "0,00",
       "EDITAL": "Para consultar clique duas vezes na linha deste registro",
       "PARTICIPANTES": "Para consultar clique duas vezes na linha deste registro",
       "CPFCNPJ": "Para consultar clique duas vezes na linha deste registro",
@@ -422,7 +450,7 @@
       "DISCR": "CONTRATAÇÃO ESPECIALIZADA NO LICENCIAMENTO DE USO DO CONJUNTO DE SISTEMAS E APLICATIVOS DESTINADOS AO REGISTRO ELETRONICO DE PRESENÇA DE VOTAÇÃO (PAIN",
       "SITUACAO": "            ",
       "COMP": "",
-      "VALOR": "",
+      "VALOR": "0,00",
       "ARQUIVO": "",
       "EMPRESA": "1",
       "CARONA": "",
@@ -433,7 +461,7 @@
       "CHAMADAPUB": "",
       "CODTCE": "",
       "ORCAMENTO_SIGILOSO": "",
-      "VALOR1": "",
+      "VALOR1": "0,00",
       "EDITAL": "Para consultar clique duas vezes na linha deste registro",
       "PARTICIPANTES": "Para consultar clique duas vezes na linha deste registro",
       "CPFCNPJ": "Para consultar clique duas vezes na linha deste registro",
@@ -458,7 +486,7 @@
       "DISCR": "LOCAÇÃO DE SITE INSTITUCIONAL, PORTAL DA TRANSPARÊNCIA E ESTRUTURA DE DADOS PARA O DIÁRIO LEGISLATIVO DA CÂMARA MUNICIPAL DE PINHEIRO-MA.",
       "SITUACAO": "            ",
       "COMP": "",
-      "VALOR": "",
+      "VALOR": "0,00",
       "ARQUIVO": "",
       "EMPRESA": "1",
       "CARONA": "",
@@ -469,7 +497,7 @@
       "CHAMADAPUB": "",
       "CODTCE": "",
       "ORCAMENTO_SIGILOSO": "",
-      "VALOR1": "",
+      "VALOR1": "0,00",
       "EDITAL": "Para consultar clique duas vezes na linha deste registro",
       "PARTICIPANTES": "Para consultar clique duas vezes na linha deste registro",
       "CPFCNPJ": "Para consultar clique duas vezes na linha deste registro",
@@ -494,7 +522,7 @@
       "DISCR": "CONTRATAÇÃO PARA IMPLANTAÇÃO DE SISTEMA INFORMATIZADO, INTEGRADO DE GESTÃO PÚBLICA, ACOMPANHADO DE SISTEMAS E SUPORTE TÉCNICO.",
       "SITUACAO": "            ",
       "COMP": "",
-      "VALOR": "",
+      "VALOR": "0,00",
       "ARQUIVO": "",
       "EMPRESA": "1",
       "CARONA": "",
@@ -505,7 +533,7 @@
       "CHAMADAPUB": "",
       "CODTCE": "",
       "ORCAMENTO_SIGILOSO": "",
-      "VALOR1": "",
+      "VALOR1": "0,00",
       "EDITAL": "Para consultar clique duas vezes na linha deste registro",
       "PARTICIPANTES": "Para consultar clique duas vezes na linha deste registro",
       "CPFCNPJ": "Para consultar clique duas vezes na linha deste registro",
@@ -546,9 +574,9 @@
       "CONTRATONUM": "019/2026",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "0",
+      "EMPENHADOANT": "0,00",
       "EMPENHADO": "36736,06",
-      "LIQUIDADOANT": "0",
+      "LIQUIDADOANT": "0,00",
       "LIQUIDADO": "36736,06",
       "ADITADO": "0",
       "SALDOEMPENHAR": "25326,42",
@@ -563,7 +591,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "13/01/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 62062.48
     },
     {
       "CODIGO": "0018/26",
@@ -575,7 +604,7 @@
       "NUMLICMOD": "",
       "NPROLI": "",
       "FORNECEDOR": "N. J. D. PEREIRA-ME",
-      "VALCON": "50000",
+      "VALCON": "50000,00",
       "DTASSI": "07/08/2026 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "5",
@@ -595,10 +624,10 @@
       "CONTRATONUM": "202607020001/ADM",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "0",
-      "EMPENHADO": "40800",
-      "LIQUIDADOANT": "0",
-      "LIQUIDADO": "18000",
+      "EMPENHADOANT": "0,00",
+      "EMPENHADO": "40800,00",
+      "LIQUIDADOANT": "0,00",
+      "LIQUIDADO": "18000,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "9200",
       "SALDOLIQUIDAR": "32000",
@@ -612,7 +641,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "07/07/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 50000.0
     },
     {
       "CODIGO": "0017/26",
@@ -624,7 +654,7 @@
       "NUMLICMOD": "",
       "NPROLI": "",
       "FORNECEDOR": "MAX E EMPREENDIMENTOS LTDA",
-      "VALCON": "64293",
+      "VALCON": "64293,00",
       "DTASSI": "22/05/2026 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "3",
@@ -644,10 +674,10 @@
       "CONTRATONUM": "0017/26",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "0",
-      "EMPENHADO": "64293",
-      "LIQUIDADOANT": "0",
-      "LIQUIDADO": "24620",
+      "EMPENHADOANT": "0,00",
+      "EMPENHADO": "64293,00",
+      "LIQUIDADOANT": "0,00",
+      "LIQUIDADO": "24620,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "0",
       "SALDOLIQUIDAR": "39673",
@@ -661,7 +691,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "22/12/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 64293.0
     },
     {
       "CODIGO": "0006/26",
@@ -673,7 +704,7 @@
       "NUMLICMOD": "",
       "NPROLI": "",
       "FORNECEDOR": "M. J. F. ALVES",
-      "VALCON": "239286,3",
+      "VALCON": "239286,30",
       "DTASSI": "19/03/2026 00:00:00",
       "TIPOCO": "03",
       "REGEXE": "",
@@ -693,9 +724,9 @@
       "CONTRATONUM": "0007/2026",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "0",
+      "EMPENHADOANT": "0,00",
       "EMPENHADO": "67394,74",
-      "LIQUIDADOANT": "0",
+      "LIQUIDADOANT": "0,00",
       "LIQUIDADO": "67394,74",
       "ADITADO": "0",
       "SALDOEMPENHAR": "171891,56",
@@ -710,7 +741,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "19/03/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 239286.3
     },
     {
       "CODIGO": "0005/26",
@@ -722,7 +754,7 @@
       "NUMLICMOD": "",
       "NPROLI": "",
       "FORNECEDOR": "CARMO SOLUÇÕES INTEGRADAS LTDA",
-      "VALCON": "61200",
+      "VALCON": "61200,00",
       "DTASSI": "08/05/2026 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -742,10 +774,10 @@
       "CONTRATONUM": "015/2026",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "0",
-      "EMPENHADO": "61200",
-      "LIQUIDADOANT": "0",
-      "LIQUIDADO": "56100",
+      "EMPENHADOANT": "0,00",
+      "EMPENHADO": "61200,00",
+      "LIQUIDADOANT": "0,00",
+      "LIQUIDADO": "56100,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "0",
       "SALDOLIQUIDAR": "5100",
@@ -759,7 +791,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "08/05/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 61200.0
     },
     {
       "CODIGO": "0004/26",
@@ -771,7 +804,7 @@
       "NUMLICMOD": "",
       "NPROLI": "",
       "FORNECEDOR": "AUTO POSTO H D CHAGAS LTDA",
-      "VALCON": "217700",
+      "VALCON": "217700,00",
       "DTASSI": "19/03/2026 00:00:00",
       "TIPOCO": "03",
       "REGEXE": "",
@@ -791,10 +824,10 @@
       "CONTRATONUM": "008/2026",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "0",
-      "EMPENHADO": "129074,2",
-      "LIQUIDADOANT": "0",
-      "LIQUIDADO": "129074,2",
+      "EMPENHADOANT": "0,00",
+      "EMPENHADO": "129074,20",
+      "LIQUIDADOANT": "0,00",
+      "LIQUIDADO": "129074,20",
       "ADITADO": "0",
       "SALDOEMPENHAR": "88625,8",
       "SALDOLIQUIDAR": "88625,8",
@@ -808,7 +841,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "19/03/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 217700.0
     },
     {
       "CODIGO": "0003/26",
@@ -820,7 +854,7 @@
       "NUMLICMOD": "",
       "NPROLI": "",
       "FORNECEDOR": "LIDER CONSULTORIA E SERVIÇOS LTDA",
-      "VALCON": "63000",
+      "VALCON": "63000,00",
       "DTASSI": "15/04/2026 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -840,10 +874,10 @@
       "CONTRATONUM": "011/2026",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "0",
-      "EMPENHADO": "63000",
-      "LIQUIDADOANT": "0",
-      "LIQUIDADO": "35000",
+      "EMPENHADOANT": "0,00",
+      "EMPENHADO": "63000,00",
+      "LIQUIDADOANT": "0,00",
+      "LIQUIDADO": "35000,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "0",
       "SALDOLIQUIDAR": "28000",
@@ -857,7 +891,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "15/01/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 63000.0
     },
     {
       "CODIGO": "0002/26",
@@ -869,7 +904,7 @@
       "NUMLICMOD": "",
       "NPROLI": "202602130001",
       "FORNECEDOR": "J. L. A. CARVALHO",
-      "VALCON": "62400",
+      "VALCON": "62400,00",
       "DTASSI": "10/03/2026 00:00:00",
       "TIPOCO": "04",
       "REGEXE": "",
@@ -889,10 +924,10 @@
       "CONTRATONUM": "0004/26",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "0",
-      "EMPENHADO": "62400",
-      "LIQUIDADOANT": "0",
-      "LIQUIDADO": "46800",
+      "EMPENHADOANT": "0,00",
+      "EMPENHADO": "62400,00",
+      "LIQUIDADOANT": "0,00",
+      "LIQUIDADO": "46800,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "0",
       "SALDOLIQUIDAR": "15600",
@@ -906,7 +941,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "10/11/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 62400.0
     },
     {
       "CODIGO": "0001/26",
@@ -918,7 +954,7 @@
       "NUMLICMOD": "",
       "NPROLI": "",
       "FORNECEDOR": "A LEÃO FILHO",
-      "VALCON": "422127,6",
+      "VALCON": "422127,60",
       "DTASSI": "19/03/2026 00:00:00",
       "TIPOCO": "03",
       "REGEXE": "",
@@ -938,9 +974,9 @@
       "CONTRATONUM": "0009/26",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "0",
+      "EMPENHADOANT": "0,00",
       "EMPENHADO": "154997,44",
-      "LIQUIDADOANT": "0",
+      "LIQUIDADOANT": "0,00",
       "LIQUIDADO": "154997,44",
       "ADITADO": "0",
       "SALDOEMPENHAR": "267130,16",
@@ -955,7 +991,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "19/03/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 422127.6
     },
     {
       "CODIGO": "0020/25",
@@ -967,7 +1004,7 @@
       "NUMLICMOD": "",
       "NPROLI": "061011211",
       "FORNECEDOR": "IMMOBILE PARTICIPAÇÕES LTDA",
-      "VALCON": "21600",
+      "VALCON": "21600,00",
       "DTASSI": "27/10/2025 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "2",
@@ -987,10 +1024,10 @@
       "CONTRATONUM": "06101121/25",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "3600",
-      "EMPENHADO": "18000",
-      "LIQUIDADOANT": "3600",
-      "LIQUIDADO": "9000",
+      "EMPENHADOANT": "3600,00",
+      "EMPENHADO": "18000,00",
+      "LIQUIDADOANT": "3600,00",
+      "LIQUIDADO": "9000,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "0",
       "SALDOLIQUIDAR": "9000",
@@ -1004,7 +1041,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "27/10/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 21600.0
     },
     {
       "CODIGO": "0019/25",
@@ -1016,7 +1054,7 @@
       "NUMLICMOD": "",
       "NPROLI": "",
       "FORNECEDOR": "F. D. PRIVADO DA SILVA",
-      "VALCON": "56937,5",
+      "VALCON": "56937,50",
       "DTASSI": "02/09/2025 00:00:00",
       "TIPOCO": "03",
       "REGEXE": "",
@@ -1036,10 +1074,10 @@
       "CONTRATONUM": "01081332/25",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "1872",
-      "EMPENHADO": "11260",
-      "LIQUIDADOANT": "1872",
-      "LIQUIDADO": "11260",
+      "EMPENHADOANT": "1872,00",
+      "EMPENHADO": "11260,00",
+      "LIQUIDADOANT": "1872,00",
+      "LIQUIDADO": "11260,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "43805,5",
       "SALDOLIQUIDAR": "43805,5",
@@ -1053,7 +1091,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "02/09/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 56937.5
     },
     {
       "CODIGO": "0018/25",
@@ -1102,7 +1141,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "06/09/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 122432.42
     },
     {
       "CODIGO": "0017/25",
@@ -1114,7 +1154,7 @@
       "NUMLICMOD": "",
       "NPROLI": "",
       "FORNECEDOR": "CARMO SOLUÇÕES INTEGRADAS LTDA",
-      "VALCON": "483087,2",
+      "VALCON": "483087,20",
       "DTASSI": "11/07/2025 00:00:00",
       "TIPOCO": "03",
       "REGEXE": "",
@@ -1134,10 +1174,10 @@
       "CONTRATONUM": "1405162801/25",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "236664",
-      "EMPENHADO": "228667,7",
-      "LIQUIDADOANT": "236664",
-      "LIQUIDADO": "228667,7",
+      "EMPENHADOANT": "236664,00",
+      "EMPENHADO": "228667,70",
+      "LIQUIDADOANT": "236664,00",
+      "LIQUIDADO": "228667,70",
       "ADITADO": "0",
       "SALDOEMPENHAR": "17755,5",
       "SALDOLIQUIDAR": "17755,5",
@@ -1151,7 +1191,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "11/07/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 483087.2
     },
     {
       "CODIGO": "0016/25",
@@ -1163,7 +1204,7 @@
       "NUMLICMOD": "",
       "NPROLI": "",
       "FORNECEDOR": "LUATAN SEGURANÇA PRIVADA",
-      "VALCON": "336794,4",
+      "VALCON": "336794,40",
       "DTASSI": "17/04/2025 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -1183,9 +1224,9 @@
       "CONTRATONUM": "15011201/2025",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "224529,6",
+      "EMPENHADOANT": "224529,60",
       "EMPENHADO": "365182,11",
-      "LIQUIDADOANT": "224529,6",
+      "LIQUIDADOANT": "224529,60",
       "LIQUIDADO": "271520,94",
       "ADITADO": "336794,4",
       "SALDOEMPENHAR": "83877,09",
@@ -1200,7 +1241,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "10/04/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 336794.4
     },
     {
       "CODIGO": "0014/25",
@@ -1212,7 +1254,7 @@
       "NUMLICMOD": "",
       "NPROLI": "",
       "FORNECEDOR": "CARMO SOLUÇÕES INTEGRADAS LTDA",
-      "VALCON": "61200",
+      "VALCON": "61200,00",
       "DTASSI": "14/05/2025 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -1232,10 +1274,10 @@
       "CONTRATONUM": "14040901/2025",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "52275",
-      "EMPENHADO": "8925",
-      "LIQUIDADOANT": "52275",
-      "LIQUIDADO": "8925",
+      "EMPENHADOANT": "52275,00",
+      "EMPENHADO": "8925,00",
+      "LIQUIDADOANT": "52275,00",
+      "LIQUIDADO": "8925,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "0",
       "SALDOLIQUIDAR": "0",
@@ -1249,7 +1291,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "14/05/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 61200.0
     },
     {
       "CODIGO": "0013/25",
@@ -1298,7 +1341,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "19/01/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 27584.96
     },
     {
       "CODIGO": "0012/25",
@@ -1310,7 +1354,7 @@
       "NUMLICMOD": "",
       "NPROLI": "25031731/2025",
       "FORNECEDOR": "TISERV SERVIÇOS E COMERCIO LTDA",
-      "VALCON": "60000",
+      "VALCON": "60000,00",
       "DTASSI": "05/05/2025 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -1330,10 +1374,10 @@
       "CONTRATONUM": "250317311/2025",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "30000",
-      "EMPENHADO": "5000",
-      "LIQUIDADOANT": "30000",
-      "LIQUIDADO": "5000",
+      "EMPENHADOANT": "30000,00",
+      "EMPENHADO": "5000,00",
+      "LIQUIDADOANT": "30000,00",
+      "LIQUIDADO": "5000,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "25000",
       "SALDOLIQUIDAR": "25000",
@@ -1347,7 +1391,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "05/05/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 60000.0
     },
     {
       "CODIGO": "0011/25",
@@ -1359,7 +1404,7 @@
       "NUMLICMOD": "",
       "NPROLI": "13012510011/2025",
       "FORNECEDOR": "RB EMPREENDIMENTO LTDA",
-      "VALCON": "309600",
+      "VALCON": "309600,00",
       "DTASSI": "03/03/2025 00:00:00",
       "TIPOCO": "04",
       "REGEXE": "",
@@ -1380,9 +1425,9 @@
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
       "EMPENHADOANT": "180592,39",
-      "EMPENHADO": "103200",
+      "EMPENHADO": "103200,00",
       "LIQUIDADOANT": "180592,39",
-      "LIQUIDADO": "103200",
+      "LIQUIDADO": "103200,00",
       "ADITADO": "309600",
       "SALDOEMPENHAR": "335407,61",
       "SALDOLIQUIDAR": "335407,61",
@@ -1396,7 +1441,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "03/03/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 309600.0
     },
     {
       "CODIGO": "0010/25",
@@ -1408,7 +1454,7 @@
       "NUMLICMOD": "",
       "NPROLI": "13012511002/2025",
       "FORNECEDOR": "M. J. F. ALVES",
-      "VALCON": "239286,3",
+      "VALCON": "239286,30",
       "DTASSI": "25/03/2025 00:00:00",
       "TIPOCO": "03",
       "REGEXE": "",
@@ -1445,7 +1491,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "25/03/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 239286.3
     },
     {
       "CODIGO": "0009/25",
@@ -1477,10 +1524,10 @@
       "CONTRATONUM": "240217331/2025",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "46323,1",
-      "EMPENHADO": "0",
-      "LIQUIDADOANT": "46323,1",
-      "LIQUIDADO": "0",
+      "EMPENHADOANT": "46323,10",
+      "EMPENHADO": "0,00",
+      "LIQUIDADOANT": "46323,10",
+      "LIQUIDADO": "0,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "378855,63",
       "SALDOLIQUIDAR": "378855,63",
@@ -1494,7 +1541,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "24/03/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 425178.73
     },
     {
       "CODIGO": "0008/25",
@@ -1506,7 +1554,7 @@
       "NUMLICMOD": "",
       "NPROLI": "1601250945/2025",
       "FORNECEDOR": "AUTO POSTO H D CHAGAS LTDA",
-      "VALCON": "217700",
+      "VALCON": "217700,00",
       "DTASSI": "25/03/2025 00:00:00",
       "TIPOCO": "03",
       "REGEXE": "",
@@ -1527,9 +1575,9 @@
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
       "EMPENHADOANT": "122142,76",
-      "EMPENHADO": "36050",
+      "EMPENHADO": "36050,00",
       "LIQUIDADOANT": "122142,76",
-      "LIQUIDADO": "36050",
+      "LIQUIDADO": "36050,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "59507,24",
       "SALDOLIQUIDAR": "59507,24",
@@ -1543,7 +1591,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "25/03/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 217700.0
     },
     {
       "CODIGO": "0007/25",
@@ -1555,7 +1604,7 @@
       "NUMLICMOD": "",
       "NPROLI": "1301251100/2025",
       "FORNECEDOR": "A LEÃO FILHO",
-      "VALCON": "422127,6",
+      "VALCON": "422127,60",
       "DTASSI": "25/03/2025 00:00:00",
       "TIPOCO": "03",
       "REGEXE": "",
@@ -1592,7 +1641,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "25/03/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 422127.6
     },
     {
       "CODIGO": "0006/25",
@@ -1604,7 +1654,7 @@
       "NUMLICMOD": "",
       "NPROLI": "",
       "FORNECEDOR": "PH CONSULTORIA E ASSESSORIA PÚBLICA MUNICIPAL LTDA",
-      "VALCON": "84000",
+      "VALCON": "84000,00",
       "DTASSI": "17/03/2025 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -1624,10 +1674,10 @@
       "CONTRATONUM": "250203011/2025",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "56000",
-      "EMPENHADO": "0",
-      "LIQUIDADOANT": "56000",
-      "LIQUIDADO": "0",
+      "EMPENHADOANT": "56000,00",
+      "EMPENHADO": "0,00",
+      "LIQUIDADOANT": "56000,00",
+      "LIQUIDADO": "0,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "28000",
       "SALDOLIQUIDAR": "28000",
@@ -1641,7 +1691,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "17/03/2026 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 84000.0
     },
     {
       "CODIGO": "0005/25",
@@ -1653,7 +1704,7 @@
       "NUMLICMOD": "",
       "NPROLI": "10021337/2025",
       "FORNECEDOR": "JUSTINO PEREIRA NETO - ME",
-      "VALCON": "60000",
+      "VALCON": "60000,00",
       "DTASSI": "19/03/2025 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -1673,10 +1724,10 @@
       "CONTRATONUM": "100213371/2025",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "0",
-      "EMPENHADO": "0",
-      "LIQUIDADOANT": "0",
-      "LIQUIDADO": "0",
+      "EMPENHADOANT": "0,00",
+      "EMPENHADO": "0,00",
+      "LIQUIDADOANT": "0,00",
+      "LIQUIDADO": "0,00",
       "ADITADO": "60000",
       "SALDOEMPENHAR": "120000",
       "SALDOLIQUIDAR": "120000",
@@ -1690,7 +1741,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "17/03/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 60000.0
     },
     {
       "CODIGO": "0004/25",
@@ -1702,7 +1754,7 @@
       "NUMLICMOD": "",
       "NPROLI": "14011400/2025",
       "FORNECEDOR": "M. S. REBOUÇAS",
-      "VALCON": "60000",
+      "VALCON": "60000,00",
       "DTASSI": "10/02/2025 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -1722,10 +1774,10 @@
       "CONTRATONUM": "0004/25",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "55000",
-      "EMPENHADO": "60000",
-      "LIQUIDADOANT": "55000",
-      "LIQUIDADO": "45000",
+      "EMPENHADOANT": "55000,00",
+      "EMPENHADO": "60000,00",
+      "LIQUIDADOANT": "55000,00",
+      "LIQUIDADO": "45000,00",
       "ADITADO": "55000",
       "SALDOEMPENHAR": "0",
       "SALDOLIQUIDAR": "15000",
@@ -1739,7 +1791,8 @@
       "CODLO_GESTORNOME": "",
       "VENCIMENTO_ATUAL": "04/01/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 60000.0
     },
     {
       "CODIGO": "0003/25",
@@ -1751,7 +1804,7 @@
       "NUMLICMOD": "",
       "NPROLI": "14011400/2025",
       "FORNECEDOR": "M. S. REBOUÇAS",
-      "VALCON": "60000",
+      "VALCON": "60000,00",
       "DTASSI": "10/02/2025 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -1771,10 +1824,10 @@
       "CONTRATONUM": "0003/25",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "55000",
-      "EMPENHADO": "60000",
-      "LIQUIDADOANT": "55000",
-      "LIQUIDADO": "45000",
+      "EMPENHADOANT": "55000,00",
+      "EMPENHADO": "60000,00",
+      "LIQUIDADOANT": "55000,00",
+      "LIQUIDADO": "45000,00",
       "ADITADO": "55000",
       "SALDOEMPENHAR": "0",
       "SALDOLIQUIDAR": "15000",
@@ -1788,7 +1841,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "04/01/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 60000.0
     },
     {
       "CODIGO": "0002/25",
@@ -1800,7 +1854,7 @@
       "NUMLICMOD": "",
       "NPROLI": "14010900/2025",
       "FORNECEDOR": "M. S. REBOUÇAS",
-      "VALCON": "60000",
+      "VALCON": "60000,00",
       "DTASSI": "10/02/2025 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -1820,10 +1874,10 @@
       "CONTRATONUM": "1401090001/2025",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "55000",
-      "EMPENHADO": "60000",
-      "LIQUIDADOANT": "55000",
-      "LIQUIDADO": "45000",
+      "EMPENHADOANT": "55000,00",
+      "EMPENHADO": "60000,00",
+      "LIQUIDADOANT": "55000,00",
+      "LIQUIDADO": "45000,00",
       "ADITADO": "55000",
       "SALDOEMPENHAR": "0",
       "SALDOLIQUIDAR": "15000",
@@ -1837,7 +1891,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "04/01/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 60000.0
     },
     {
       "CODIGO": "0001/25",
@@ -1849,7 +1904,7 @@
       "NUMLICMOD": "",
       "NPROLI": "08011030/2025",
       "FORNECEDOR": "T S MEDEIROS ASSESSORIA CONTABIL",
-      "VALCON": "282000",
+      "VALCON": "282000,00",
       "DTASSI": "24/01/2025 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -1869,10 +1924,10 @@
       "CONTRATONUM": "0801103001/2025",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "235000",
-      "EMPENHADO": "305500",
-      "LIQUIDADOANT": "235000",
-      "LIQUIDADO": "235000",
+      "EMPENHADOANT": "235000,00",
+      "EMPENHADO": "305500,00",
+      "LIQUIDADOANT": "235000,00",
+      "LIQUIDADO": "235000,00",
       "ADITADO": "282000",
       "SALDOEMPENHAR": "23500",
       "SALDOLIQUIDAR": "94000",
@@ -1886,7 +1941,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "23/01/2027 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 282000.0
     },
     {
       "CODIGO": "0022/23",
@@ -1919,9 +1975,9 @@
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
       "EMPENHADOANT": "1321828,69",
-      "EMPENHADO": "0",
+      "EMPENHADO": "0,00",
       "LIQUIDADOANT": "1321826,22",
-      "LIQUIDADO": "0",
+      "LIQUIDADO": "0,00",
       "ADITADO": "440438,7",
       "SALDOEMPENHAR": "0",
       "SALDOLIQUIDAR": "2,47",
@@ -1935,7 +1991,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "06/11/2024 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 881389.99
     },
     {
       "CODIGO": "0020/23",
@@ -1947,7 +2004,7 @@
       "NUMLICMOD": "0012/23",
       "NPROLI": "016",
       "FORNECEDOR": "M. S. REBOUÇAS",
-      "VALCON": "36000",
+      "VALCON": "36000,00",
       "DTASSI": "22/08/2023 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -1967,10 +2024,10 @@
       "CONTRATONUM": "021/2023",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "42000",
-      "EMPENHADO": "0",
-      "LIQUIDADOANT": "36000",
-      "LIQUIDADO": "0",
+      "EMPENHADOANT": "42000,00",
+      "EMPENHADO": "0,00",
+      "LIQUIDADOANT": "36000,00",
+      "LIQUIDADO": "0,00",
       "ADITADO": "0",
       "SALDOEMPENHAR": "-6000",
       "SALDOLIQUIDAR": "0",
@@ -1984,7 +2041,8 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "31/12/2023 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 36000.0
     },
     {
       "CODIGO": "0001/23",
@@ -1996,7 +2054,7 @@
       "NUMLICMOD": "0001/23",
       "NPROLI": "003",
       "FORNECEDOR": "SISLOC-SISTEMA DE LOCACAO CONTABIL LTDA",
-      "VALCON": "34800",
+      "VALCON": "34800,00",
       "DTASSI": "17/01/2023 00:00:00",
       "TIPOCO": "02",
       "REGEXE": "1",
@@ -2016,10 +2074,10 @@
       "CONTRATONUM": "001/2023",
       "MULTA_RESCISORIA": "",
       "MULTA_INADIMPLENCIA": "",
-      "EMPENHADOANT": "72500",
-      "EMPENHADO": "0",
-      "LIQUIDADOANT": "69600",
-      "LIQUIDADO": "0",
+      "EMPENHADOANT": "72500,00",
+      "EMPENHADO": "0,00",
+      "LIQUIDADOANT": "69600,00",
+      "LIQUIDADO": "0,00",
       "ADITADO": "34800",
       "SALDOEMPENHAR": "-2900",
       "SALDOLIQUIDAR": "0",
@@ -2033,25 +2091,26 @@
       "CODLO_GESTORNOME": "CAMARA MUNICIPAL",
       "VENCIMENTO_ATUAL": "31/12/2024 00:00:00",
       "DTANULA": "",
-      "TIPOANU": ""
+      "TIPOANU": "",
+      "_valor_num": 34800.0
     }
   ],
   "emendas": [
     {
       "TIPOTRANSF": "Transferência Estadual",
-      "RECTRANSF": "0",
-      "RECAPLICACAOFINAN": "0",
-      "EMPENHADO": "0",
-      "LIQUIDADO": "0",
-      "PAGO": "0"
+      "RECTRANSF": "0,00",
+      "RECAPLICACAOFINAN": "0,00",
+      "EMPENHADO": "0,00",
+      "LIQUIDADO": "0,00",
+      "PAGO": "0,00"
     },
     {
       "TIPOTRANSF": "Transferência Federal ",
-      "RECTRANSF": "0",
-      "RECAPLICACAOFINAN": "0",
-      "EMPENHADO": "0",
-      "LIQUIDADO": "0",
-      "PAGO": "0"
+      "RECTRANSF": "0,00",
+      "RECAPLICACAOFINAN": "0,00",
+      "EMPENHADO": "0,00",
+      "LIQUIDADO": "0,00",
+      "PAGO": "0,00"
     }
   ]
 }
