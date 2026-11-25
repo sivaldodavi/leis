@@ -8,7 +8,6 @@ Base: `https://leis.sivaldodavi.com.br/dados/`
 
 - `/dados/legislacao.json` — leis, dispositivos e metadados.
 - `/dados/busca.json` — índice de busca (trechos de dispositivos).
-- `/dados/dinheiro_publico.json` — despesas, fornecedores, licitações, contratos e emendas.
 
 Versão estável: `/dados/v1/...` (mesmos arquivos).
 
