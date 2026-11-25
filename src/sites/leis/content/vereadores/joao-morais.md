@@ -1,5 +1,5 @@
 ---
-title: "JOÃO MORAIS"
+title: "João Morais"
 autor_id: 40
 slug: "joao-morais"
 partido: "PL"
@@ -13,4 +13,21 @@ atual: false
 anterior: false
 legislaturas: []
 fonte_tse: "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+impacto_total: 10
+impacto_equivalente: 2.5
+exclusivas: 2
+coletivas: 8
+taxa_exclusividade: 20
+peso_medio: 0.25
+og_image: "/og/v/joao-morais.jpg"
+share_text: "João Morais — 10 proposições, 2 de autoria exclusiva na Câmara de Pinheiro"
+og_cards:
+  - {formato: "4:5", arquivo: "/og/v/joao-morais-4x5.jpg"}
+  - {formato: "9:16", arquivo: "/og/v/joao-morais-9x16.jpg"}
+destaques:
+  - "Assina mais com Lucas do Beiradão (8)"
+parceiros:
+  - {nome: "Lucas do Beiradão", slug: "lucas-do-beiradao", n: 8}
+  - {nome: "Fabrícia do Sindicato", slug: "fabricia-do-sindicato", n: 8}
+  - {nome: "Zé Filho", slug: "ze-filho", n: 8}
 ---

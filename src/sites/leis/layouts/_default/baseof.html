@@ -2,15 +2,25 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>{{ .Title }} | Leis de Pinheiro</title>
+{{- $desc := .Params.description | default "As leis de Pinheiro/MA em linguagem simples, as proposições da Câmara e os vereadores que as apresentaram. Dados abertos da Câmara e do TSE." -}}
+{{- $img := .Params.og_image | default "/og/site.jpg" | absURL -}}
+<title>{{ if .IsHome }}Leis de Pinheiro — as leis e proposições da Câmara em linguagem simples{{ else }}{{ .Title }} | Leis de Pinheiro{{ end }}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="As leis de Pinheiro/MA em linguagem simples, as proposições da Câmara e os vereadores que as apresentaram. Dados abertos da Câmara e do TSE.">
-<meta property="og:title" content="Leis de Pinheiro — Entende lei.">
-<meta property="og:description" content="As leis de Pinheiro/MA em linguagem simples, as proposições da Câmara e os vereadores que as apresentaram.">
-<meta property="og:type" content="website">
+<meta name="description" content="{{ $desc }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:title" content="{{ if .IsHome }}Leis de Pinheiro — Entende lei.{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $img }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ if .IsHome }}Leis de Pinheiro — Entende lei.{{ else }}{{ .Title }} — Leis de Pinheiro{{ end }}">
+<meta property="og:type" content="{{ if and (eq .Section "normas") (not .IsSection) }}article{{ else }}website{{ end }}">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Leis de Pinheiro">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ $img }}">
+{{ partial "jsonld.html" . }}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -23,7 +33,7 @@ a:hover{text-decoration:underline}
 header.site{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:2px solid #1A1A1A;flex-wrap:wrap;gap:16px;background:#F4F1EA}
 .logo{font-size:22px;font-weight:800;letter-spacing:-0.02em}
 .logo span{color:#1E7B4F}
-nav.site{display:flex;gap:24px;font-size:15px;font-weight:500}
+nav.site{display:flex;gap:20px;font-size:15px;font-weight:500;flex-wrap:wrap}
 nav.site a{text-decoration:none}
 h1.hero{font-size:64px;line-height:1.05;font-weight:800;letter-spacing:-0.03em;margin:0 0 20px}
 .eyebrow{margin:0 0 12px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#5B5B5B}
@@ -149,7 +159,47 @@ footer.site{padding:24px 48px;border-top:2px solid #1A1A1A;font-size:14px;color:
 .person-body h3{font-size:20px;line-height:1.15;margin:0}
 .person-body .small{font-size:13px;color:#5B5B5B}
 .person-body .link{margin-top:auto;font-size:14px;font-weight:700}
+/* listas em colunas proporcionais */
+.plist{--cols:132px minmax(0,1fr) 176px 112px}
+.plist-head,.plist-row{display:grid;grid-template-columns:var(--cols);gap:18px;align-items:start}
+.plist-head{padding:12px 0;border-bottom:2px solid #1A1A1A;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B}
+.plist-row{padding:14px 0;border-bottom:1px solid #B8B2A3;font-size:15px}
+.plist-row:hover{background:#FBF9F3}
+.plist-id{font-weight:800;letter-spacing:-.01em;white-space:nowrap}
+.plist-sub{display:block;margin-top:3px;font-size:12px;font-weight:500;color:#5B5B5B}
+.clamp2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.autores{display:flex;flex-wrap:wrap;gap:3px 7px;font-size:14px;line-height:1.4}
+.autores a{font-weight:600}
+.autores .mais{font-weight:700;color:#1E7B4F}
+.badge-sit{display:inline-block;font-size:12px;font-weight:700;padding:3px 7px;border:1px solid #1A1A1A;background:#F4F1EA;white-space:nowrap}
+.badge-sit.ok{background:#1E7B4F;border-color:#1E7B4F;color:#fff}
+.badge-sit.no{background:#8A2B2B;border-color:#8A2B2B;color:#fff}
+.badge-sit.wait{background:#8A5F00;border-color:#8A5F00;color:#fff}
+.badge-sit.off{color:#5B5B5B;border-color:#B8B2A3;background:transparent}
+.q{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:2px 5px;border:1px solid}
+.q.bom{color:#1E7B4F;border-color:#1E7B4F}
+.q.regular{color:#8A5F00;border-color:#8A5F00}
+.q.fragil{color:#8A2B2B;border-color:#8A2B2B}
+.share{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:18px 0 0}
+.share .share-label{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B}
+.share a,.share button{display:inline-flex;align-items:center;padding:7px 11px;border:2px solid #1A1A1A;background:#fff;font:600 13px Inter,system-ui,sans-serif;color:#1A1A1A;cursor:pointer}
+.share a:hover,.share button:hover{background:#1A1A1A;color:#fff;text-decoration:none}
+.share .dl{background:#1E7B4F;border-color:#1E7B4F;color:#fff}
+.share .dl:hover{background:#16603c;border-color:#16603c}
+.esp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.esp{background:#fff;border:2px solid #1A1A1A;padding:22px;display:flex;flex-direction:column;gap:10px}
+.esp .fam{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#1E7B4F}
+.esp h2{font-size:22px;line-height:1.15;margin:0}
+.esp p{margin:0;font-size:15px;line-height:1.55;color:#3A3A3A}
+.esp .dat{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:#5B5B5B;border-top:1px solid #D6D1C4;padding-top:10px;margin-top:auto}
+.esp .dat strong{color:#1A1A1A;font-size:15px;display:block}
+.esp .ex{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:14px}
+.esp .ex a{font-weight:600;color:#1E7B4F}
+.destaques{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.destaques li{background:#fff;border:2px solid #1A1A1A;padding:10px 12px;font-size:15px;font-weight:600}
+.destaques li::before{content:"★ ";color:#1E7B4F}
 @media(max-width:820px){
+  .plist{--cols:1fr}.plist-head{display:none}.plist-row{grid-template-columns:1fr;gap:8px}
   .pagehead{padding:38px 20px 18px}.pagehead h1{font-size:36px}
   .profile-hero{grid-template-columns:130px minmax(0,1fr);gap:18px}.avatar,.avatar-fallback{width:130px;height:170px}.profile-name{font-size:34px}
   .callout{grid-template-columns:1fr}.bar-row{grid-template-columns:minmax(100px,150px) minmax(0,1fr) 42px}
@@ -164,5 +214,17 @@ footer.site{padding:24px 48px;border-top:2px solid #1A1A1A;font-size:14px;color:
 {{ block "main" . }}{{ end }}
 </main>
 {{ partial "footer.html" . }}
+<script>
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-share-copy]');
+  if(!b) return;
+  var url = b.getAttribute('data-share-copy');
+  var orig = b.textContent;
+  function ok(){ b.textContent = 'Link copiado'; setTimeout(function(){ b.textContent = orig; }, 1800); }
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(ok, function(){ window.prompt('Copie o link:', url); });
+  } else { window.prompt('Copie o link:', url); }
+});
+</script>
 </body>
 </html>

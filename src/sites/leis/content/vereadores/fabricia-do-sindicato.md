@@ -1,5 +1,5 @@
 ---
-title: "FABRÍCIA DO SINDICATO"
+title: "Fabrícia do Sindicato"
 autor_id: 28
 slug: "fabricia-do-sindicato"
 partido: "PSD"
@@ -13,4 +13,23 @@ atual: true
 anterior: true
 legislaturas: ["2021–2024", "2025–2028"]
 fonte_tse: "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+impacto_total: 47
+impacto_equivalente: 22.8
+exclusivas: 21
+coletivas: 25
+taxa_exclusividade: 45
+peso_medio: 0.49
+og_image: "/og/v/fabricia-do-sindicato.jpg"
+share_text: "Fabrícia do Sindicato — 47 proposições, 21 de autoria exclusiva na Câmara de Pinheiro"
+og_cards:
+  - {formato: "4:5", arquivo: "/og/v/fabricia-do-sindicato-4x5.jpg"}
+  - {formato: "9:16", arquivo: "/og/v/fabricia-do-sindicato-9x16.jpg"}
+destaques:
+  - "Autor exclusivo de 21 proposições"
+  - "Assina mais com Lucas do Beiradão (25)"
+  - "Apresentou proposições em 4 anos diferentes"
+parceiros:
+  - {nome: "Lucas do Beiradão", slug: "lucas-do-beiradao", n: 25}
+  - {nome: "Rubemar Ribeiro", slug: "rubemar-ribeiro", n: 25}
+  - {nome: "Albininho", slug: "albininho", n: 25}
 ---

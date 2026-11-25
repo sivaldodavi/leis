@@ -1,0 +1,51 @@
+{{ define "main" }}
+{{ $especies := .Site.Data.especies }}
+<div class="pagehead">
+  <h1>Espécies normativas</h1>
+  <p class="lead">Cada ato da Câmara tem uma espécie, e a espécie define o que ele pode fazer, quem aprova e se depende de sanção do prefeito. Abaixo, todas as espécies presentes nesta base — com exemplos reais.</p>
+</div>
+
+<div style="padding:0 48px 72px;max-width:1100px">
+  {{ range $fam := slice "cria_regra" "pede" "camara" "emenda" }}
+  {{ $grupo := where $especies "familia" $fam }}
+  {{ if $grupo }}
+  <div class="section-line">
+    <h2>{{ (index $grupo 0).familia_label }}</h2>
+    <p>{{ len $grupo }} espécie(s) nesta família.</p>
+  </div>
+  <div class="esp-grid">
+    {{ range $grupo }}
+    <article class="esp">
+      <h2>{{ .rotulo }}</h2>
+      <p>{{ .o_que_e }}</p>
+      {{ with .o_que_pode }}<p><strong>O que pode:</strong> {{ . }}</p>{{ end }}
+      <div class="dat">
+        <span><strong>{{ .n_normas }}</strong> normas</span>
+        <span><strong>{{ .n_props }}</strong> proposições</span>
+        {{ if .precisa_sancao }}<span><strong>Sanção</strong> do prefeito</span>{{ else }}<span><strong>Sanção</strong> não se aplica</span>{{ end }}
+        {{ with .maioria }}<span><strong>Maioria</strong> {{ . }}</span>{{ end }}
+      </div>
+      {{ if .exemplos }}
+      <ul class="ex">
+        {{ range .exemplos }}
+        <li><a href="{{ .url }}">{{ .titulo }}</a> <span style="color:#5B5B5B">· {{ .data }}</span><br><span style="color:#3A3A3A">{{ .ementa }}</span></li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </article>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+
+  <div class="section-line">
+    <h2>Como a base classifica</h2>
+  </div>
+  <div class="panel">
+    <p style="margin:0 0 10px;font-size:16px;line-height:1.6">A classificação vem do campo <em>tipo</em> de cada registro, definido na extração dos documentos da Câmara. Quando o arquivo de origem está com o nome trocado, a espécie segue o conteúdo do documento — e a discrepância fica registrada na observação da norma.</p>
+    <p style="margin:0;font-size:16px;line-height:1.6">Proposições são o que os vereadores apresentam (indicação, moção, requerimento, projeto). Normas são o que resulta disso depois de aprovado e sancionado, quando for o caso.</p>
+  </div>
+
+  <p style="margin-top:28px"><a href="/normas/" style="font-weight:700">Ver as normas por espécie →</a> · <a href="/como-ler/" style="font-weight:700">Como ler uma lei →</a></p>
+</div>
+{{ end }}

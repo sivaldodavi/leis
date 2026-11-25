@@ -1,0 +1,50 @@
+{{- $base := "https://leis.sivaldodavi.com.br" -}}
+{{- $data := dict
+  "@context" "https://schema.org"
+  "@type" "WebPage"
+  "name" .Title
+  "url" .Permalink
+  "inLanguage" "pt-BR"
+  "isPartOf" (dict "@type" "WebSite" "name" "Leis de Pinheiro" "url" (printf "%s/" $base))
+-}}
+{{- if .IsHome -}}
+  {{- $data = dict
+    "@context" "https://schema.org"
+    "@type" "WebSite"
+    "name" "Leis de Pinheiro"
+    "alternateName" "Entende lei"
+    "url" (printf "%s/" $base)
+    "inLanguage" "pt-BR"
+    "description" "As leis de Pinheiro/MA em linguagem simples, as proposições da Câmara e os vereadores que as apresentaram."
+    "publisher" (dict "@type" "Person" "name" "Sivaldo Davi" "url" $base)
+  -}}
+{{- else if and (eq .Section "vereadores") (not .IsSection) -}}
+  {{- $autor := index (where .Site.Data.autores "slug" .Params.slug) 0 -}}
+  {{- $person := dict
+    "@context" "https://schema.org"
+    "@type" "Person"
+    "name" .Title
+    "url" .Permalink
+    "jobTitle" "Vereador(a)"
+    "memberOf" (dict "@type" "Organization" "name" "Câmara Municipal de Pinheiro" "url" $base)
+  -}}
+  {{- with $autor -}}
+    {{- if .foto -}}{{- $person = merge $person (dict "image" (printf "%s%s" $base .foto)) -}}{{- end -}}
+    {{- if .partido -}}{{- $person = merge $person (dict "affiliation" (dict "@type" "PoliticalParty" "name" .partido)) -}}{{- end -}}
+  {{- end -}}
+  {{- $data = $person -}}
+{{- else if and (eq .Section "normas") (not .IsSection) -}}
+  {{- $data = dict
+    "@context" "https://schema.org"
+    "@type" "Legislation"
+    "name" .Params.title
+    "legislationIdentifier" .Params.norma_id
+    "legislationDate" .Params.data
+    "legislationType" .Params.tipo_label
+    "url" .Permalink
+    "inLanguage" "pt-BR"
+    "description" .Params.ementa
+    "isPartOf" (dict "@type" "WebSite" "name" "Leis de Pinheiro" "url" (printf "%s/" $base))
+  -}}
+{{- end -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>

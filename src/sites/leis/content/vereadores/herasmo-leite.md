@@ -1,5 +1,5 @@
 ---
-title: "HERASMO LEITE"
+title: "Herasmo Leite"
 autor_id: 1
 slug: "herasmo-leite"
 partido: "PSD"
@@ -13,4 +13,25 @@ atual: true
 anterior: true
 legislaturas: ["2021–2024", "2025–2028"]
 fonte_tse: "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+impacto_total: 540
+impacto_equivalente: 513.7
+exclusivas: 510
+coletivas: 25
+taxa_exclusividade: 94
+peso_medio: 0.95
+og_image: "/og/v/herasmo-leite.jpg"
+share_text: "Herasmo Leite — 540 proposições, 510 de autoria exclusiva na Câmara de Pinheiro"
+og_cards:
+  - {formato: "4:5", arquivo: "/og/v/herasmo-leite-4x5.jpg"}
+  - {formato: "9:16", arquivo: "/og/v/herasmo-leite-9x16.jpg"}
+destaques:
+  - "Mais proposições aprovadas (83)"
+  - "2º em moções (33)"
+  - "Autor exclusivo de 510 proposições"
+  - "Assina mais com Edinildo (26)"
+  - "Apresentou proposições em 7 anos diferentes"
+parceiros:
+  - {nome: "Edinildo", slug: "edinildo", n: 26}
+  - {nome: "Lucas do Beiradão", slug: "lucas-do-beiradao", n: 25}
+  - {nome: "Rubemar Ribeiro", slug: "rubemar-ribeiro", n: 25}
 ---

@@ -30,9 +30,145 @@ def slugify(s):
     return s or "autor"
 
 
+PARTICULAS = {
+    "de", "da", "do", "das", "dos", "e", "a", "o", "as", "os", "em", "no",
+    "na", "nos", "nas", "ao", "aos", "à", "às", "pela", "pelo", "pelas",
+    "pelos", "deste", "desta", "neste", "nesta",
+}
+
+
+def display_nome(s):
+    """Nome oficial do TSE (caixa alta) em caixa normal, para leitura."""
+    s = clean_ws(s)
+    if not s:
+        return ""
+    if s != s.upper():
+        return s
+    out, i = [], 0
+    for w in s.split(" "):
+        core = re.sub(r"^[^\wÀ-ÿ]+|[^\wÀ-ÿ]+$", "", w)
+        if not core:
+            out.append(w)
+            continue
+        low = core.lower()
+        if i and low in PARTICULAS:
+            out.append(w.replace(core, low))
+        elif len(core) <= 3 and core.isupper() and core not in ("DOS", "DAS"):
+            out.append(w.replace(core, core))
+        else:
+            out.append(w.replace(core, low[:1].upper() + low[1:]))
+        i += 1
+    return " ".join(out)
+
+
+def clamp_texto(s, limite):
+    """Corta em limite de palavra, sem quebrar a frase no meio."""
+    s = clean_ws(s)
+    if len(s) <= limite:
+        return s
+    corte = s[:limite]
+    pos = corte.rfind(" ")
+    if pos > limite * 0.6:
+        corte = corte[:pos]
+    return corte.rstrip(" ,;:.") + "…"
+
+
+MAPA_PROP_ESPECIE = {
+    "Indicação": "indicacao",
+    "Moção": "mocao",
+    "Requerimento": "requerimento",
+    "Projeto de Lei Ordinária": "projeto_lei",
+    "Projeto de Lei do Legislativo": "projeto_lei",
+    "Projeto de Resolução": "resolucao",
+    "Projeto de Decreto Legislativo": "decreto_legislativo",
+    "Projeto de Emenda à Lei Orgânica": "emenda_lo",
+    "Emenda ao Projeto de Lei do Legislativo": "emenda",
+    "Emenda ao Projeto de Lei Ordinária": "emenda",
+    "Prestação de Contas do Executivo": "prestacao_contas",
+}
+
+PROP_SITUACAO_LABEL = {
+    "nao_informada": "Não informada",
+    "Proposição aprovada": "Aprovada",
+    "Proposição inclusa na Ordem do Dia": "Na Ordem do Dia",
+    "Proposição retirada da Ordem do Dia": "Retirada da Ordem do Dia",
+    "Proposição rejeitada pelo Plenário": "Rejeitada",
+}
+
+PROP_SITUACAO_CLASSE = {
+    "Proposição aprovada": "ok",
+    "Proposição rejeitada pelo Plenário": "no",
+    "Proposição inclusa na Ordem do Dia": "wait",
+    "Proposição retirada da Ordem do Dia": "off",
+    "nao_informada": "off",
+}
+
+
+def categoria_autoria(n):
+    if n <= 1:
+        return "exclusiva"
+    if n == 2:
+        return "dupla"
+    if n == 3:
+        return "trio"
+    if n < 10:
+        return "coletiva"
+    return "ampla"
+
+
+def autoria_label(n):
+    if n <= 1:
+        return "Autoria exclusiva"
+    if n < 10:
+        return "%d autores" % n
+    return "Autoria coletiva (%d)" % n
+
+
 temas = {r["id"]: dict(r) for r in q("SELECT * FROM temas")}
 categorias = {r["id"]: dict(r) for r in q("SELECT * FROM categorias")}
 naturezas = {r["id"]: dict(r) for r in q("SELECT * FROM naturezas")}
+
+especies = []
+try:
+    especies = [dict(r) for r in q("SELECT * FROM especies ORDER BY ordem")]
+except sqlite3.OperationalError:
+    pass
+especies_por_chave = {e["chave"]: e for e in especies}
+
+qualidade_por_prop = {}
+try:
+    for r in q("SELECT * FROM proposicao_qualidade"):
+        try:
+            problemas = json.loads(r["problemas"] or "[]")
+        except ValueError:
+            problemas = []
+        qualidade_por_prop[r["proposicao_id"]] = {
+            "pontuacao": r["pontuacao"],
+            "nivel": r["nivel"],
+            "problemas": problemas,
+        }
+except sqlite3.OperationalError:
+    pass
+
+impacto_por_autor = {}
+try:
+    for r in q("SELECT * FROM autor_impacto"):
+        d = dict(r)
+        for campo in ("familias", "tipos", "coautores", "anos"):
+            try:
+                d[campo] = json.loads(d.get(campo) or "{}")
+            except ValueError:
+                d[campo] = {}
+        impacto_por_autor[r["autor_id"]] = d
+except sqlite3.OperationalError:
+    pass
+
+destaques_por_autor = {}
+try:
+    for r in q("SELECT * FROM autor_destaque ORDER BY autor_id, ordem"):
+        destaques_por_autor.setdefault(r["autor_id"], []).append(r["texto"])
+except sqlite3.OperationalError:
+    pass
 
 situacao_label_map = {
     "vigente": "Em vigor",
@@ -156,6 +292,21 @@ try:
 except sqlite3.OperationalError:
     pass
 
+TSE_LABEL = {
+    "ELEITO POR QP": "Eleito por quociente partidário",
+    "ELEITO POR MÉDIA": "Eleito por média",
+    "SUPLENTE": "Suplente",
+    "#NULO": "",
+}
+
+
+def label_tse(s):
+    s = clean_ws(s)
+    if not s:
+        return ""
+    return TSE_LABEL.get(s.upper(), s.title())
+
+
 autores = []
 autor_por_id = {}
 for r in autores_rows:
@@ -163,7 +314,19 @@ for r in autores_rows:
     a["slug"] = slugify(a["nome"])
     a["n_proposicoes"] = 0
     a["stats"] = {}
+    a["situacao_tse_label"] = label_tse(a.get("situacao_tse"))
+    imp = impacto_por_autor.get(a["id"])
+    a["impacto"] = imp or {
+        "n_total": 0, "n_exclusiva": 0, "n_dupla": 0, "n_trio": 0,
+        "n_coletiva": 0, "n_ampla": 0, "autoria_equivalente": 0,
+        "taxa_exclusividade": 0, "peso_medio": 0, "familias": {},
+        "tipos": {}, "coautores": [], "anos": {},
+    }
+    a["destaques"] = destaques_por_autor.get(a["id"], [])
     ms = sorted(mandatos_por_autor.get(a["id"], []), key=lambda x: x["ano_eleicao"])
+    for m in ms:
+        m["nome_tse_display"] = display_nome(m.get("nome_tse"))
+        m["situacao_label"] = label_tse(m.get("situacao_tse"))
     a["mandatos"] = ms
     eleitos = [m for m in ms if m.get("eleito")]
     a["legislaturas"] = []
@@ -180,8 +343,18 @@ for r in autores_rows:
     com_foto = [m for m in ms if m.get("foto")]
     a["foto"] = com_foto[-1]["foto"] if com_foto else ""
     a["foto_ano"] = com_foto[-1]["ano_eleicao"] if com_foto else None
+    a["nome_tse_display"] = display_nome(a.get("nome_tse"))
+    a["og_image"] = "/og/v/%s.jpg" % a["slug"]
     autores.append(a)
     autor_por_id[a["id"]] = a
+
+for a in autores:
+    a["impacto_equivalente_label"] = ("%.1f" % a["impacto"].get("autoria_equivalente", 0)).replace(".", ",")
+    a["parceiros"] = [
+        {"nome": x["nome"], "slug": slugify(x["nome"]), "n": x["n"]}
+        for x in a["impacto"].get("coautores", [])
+    ]
+    a["n_coletivas"] = a["impacto"].get("n_coletiva", 0) + a["impacto"].get("n_ampla", 0)
 
 # Proposições
 props_rows = q("""
@@ -201,9 +374,29 @@ for r in props_rows:
     p["autores"] = [{"id": a["id"], "nome": a["nome"], "slug": a["slug"], "partido": a.get("partido")} for a in autores_prop]
     p["autores_nomes"] = nomes
     p["autor_ids"] = [a["id"] for a in autores_prop]
-    p["ementa_curta"] = clean_ws(p["ementa"])
-    if len(p["ementa_curta"]) > 220:
-        p["ementa_curta"] = p["ementa_curta"][:217].rstrip() + "..."
+    p["n_autores"] = len(autores_prop)
+    p["autoria_categoria"] = categoria_autoria(len(autores_prop))
+    p["autoria_label"] = autoria_label(len(autores_prop))
+    p["coletiva"] = len(autores_prop) >= 10
+    p["ementa_limpa"] = clean_ws(p.get("ementa_limpa") or p["ementa"])
+    p["ementa_curta"] = clamp_texto(p["ementa_limpa"], 160)
+    p["ementa_card"] = clamp_texto(p["ementa_limpa"], 110)
+    p["ementa_truncada"] = (p["ementa"] or "").rstrip().endswith(("...", "…"))
+    p["situacao_label"] = PROP_SITUACAO_LABEL.get(
+        p["situacao"] or "", p["situacao"] or ""
+    )
+    p["situacao_classe"] = PROP_SITUACAO_CLASSE.get(p["situacao"] or "", "off")
+    p["ano_label"] = p["ano"] or "—"
+    esp = MAPA_PROP_ESPECIE.get(p["tipo"] or "")
+    p["especie"] = esp or ""
+    p["especie_rotulo"] = (especies_por_chave.get(esp) or {}).get("rotulo", p["tipo"] or "")
+    p["familia"] = (especies_por_chave.get(esp) or {}).get("familia", "")
+    p["familia_label"] = (especies_por_chave.get(esp) or {}).get("familia_label", "")
+    p["qualidade"] = qualidade_por_prop.get(p["id"]) or {
+        "pontuacao": None,
+        "nivel": "",
+        "problemas": [],
+    }
     props.append(p)
     for a in autores_prop:
         a["n_proposicoes"] += 1
@@ -211,24 +404,32 @@ for r in props_rows:
 
 
 def stats_de_proposicoes(ps):
-    by_year, by_tipo, by_situacao = {}, {}, {}
-    aprovadas = 0
+    by_year, by_tipo, by_situacao, by_familia = {}, {}, {}, {}
+    aprovadas = rejeitadas = 0
     for p in ps:
         ano = str(p.get("ano") or "")
         if re.fullmatch(r"\d{4}", ano) and 2000 <= int(ano) <= 2030:
             by_year[ano] = by_year.get(ano, 0) + 1
         by_tipo[p.get("tipo") or "Não informado"] = by_tipo.get(p.get("tipo") or "Não informado", 0) + 1
+        fam = p.get("familia_label") or "Não informado"
+        by_familia[fam] = by_familia.get(fam, 0) + 1
         sit = p.get("situacao") or "nao_informada"
         by_situacao[sit] = by_situacao.get(sit, 0) + 1
         if "aprovada" in sit.lower():
             aprovadas += 1
+        if "rejeitada" in sit.lower():
+            rejeitadas += 1
     total = len(ps)
+    com_situacao = total - by_situacao.get("nao_informada", 0)
     return {
         "total": total,
         "aprovadas": aprovadas,
-        "taxa_aprovacao": round(100 * aprovadas / total) if total else 0,
+        "rejeitadas": rejeitadas,
+        "com_situacao": com_situacao,
+        "taxa_aprovacao": round(100 * aprovadas / com_situacao) if com_situacao else 0,
         "by_year": dict(sorted(by_year.items())),
         "by_tipo": dict(sorted(by_tipo.items(), key=lambda x: -x[1])),
+        "by_familia": dict(sorted(by_familia.items(), key=lambda x: -x[1])),
         "by_situacao": dict(sorted(by_situacao.items(), key=lambda x: -x[1])),
     }
 
@@ -261,22 +462,30 @@ for n in normas_rows:
         "titulo": ementa or nid,
         "tipo_label": tipo_lbl,
     }
+    esp = tipo if tipo in especies_por_chave else ""
     normas_list.append({
         "id": nid,
         "slug": s,
         "tipo": tipo,
         "tipo_label": tipo_lbl,
+        "especie": esp,
+        "especie_rotulo": (especies_por_chave.get(esp) or {}).get("rotulo", tipo_lbl),
+        "familia": (especies_por_chave.get(esp) or {}).get("familia", ""),
+        "familia_label": (especies_por_chave.get(esp) or {}).get("familia_label", ""),
         "numero": n["numero"],
         "data": n["data"],
+        "data_label": n["data"] if len(n["data"] or "") == 10 else (n["data"] or "Sem data"),
         "situacao": sit,
         "situacao_label": sit_label,
         "ementa": ementa,
+        "ementa_curta": clamp_texto(ementa, 170),
         "observacao": obs,
         "categorias": cats,
         "natureza": nznome or "",
         "n_dispositivos": len(dsps),
         "fonte_arquivo": (fonte or {}).get("arquivo", ""),
         "teor_status": n["teor_status"] or "",
+        "og_image": "/og/tipos/%s.jpg" % esp if esp else "/og/site.jpg",
     })
 
 content_dir = os.path.join(BASE, "content", "normas")
@@ -295,6 +504,7 @@ for n in normas_rows:
     obs = md_text(n["observacao"])
     tipo = n["tipo"]
     tipo_lbl = tipo_label.get(tipo, tipo)
+    esp = tipo if tipo in especies_por_chave else ""
     nzid, nznome = norma_natureza(nid)
     fonte = norma_fonte(nid)
     dsps = dispositivos(nid)
@@ -309,6 +519,8 @@ for n in normas_rows:
     lines.append('tipo_label: "%s"' % tipo_lbl)
     lines.append('numero: "%s"' % yaml_escape(n["numero"]))
     lines.append('data: "%s"' % n["data"])
+    lines.append('especie: "%s"' % esp)
+    lines.append('og_image: "%s"' % ("/og/tipos/%s.jpg" % esp if esp else "/og/site.jpg"))
     lines.append('situacao: "%s"' % sit)
     lines.append('situacao_label: "%s"' % yaml_escape(sit_label))
     lines.append('ementa: "%s"' % yaml_escape(ementa))
@@ -592,6 +804,32 @@ for a in autores:
     lines.append("legislaturas: [%s]" % ", ".join('"%s"' % yaml_escape(x) for x in a.get("legislaturas", [])))
     if a.get("fonte_url"):
         lines.append('fonte_tse: "%s"' % yaml_escape(a["fonte_url"]))
+    imp = a["impacto"]
+    lines.append('impacto_total: %d' % imp.get("n_total", 0))
+    lines.append('impacto_equivalente: %.1f' % imp.get("autoria_equivalente", 0))
+    lines.append('exclusivas: %d' % imp.get("n_exclusiva", 0))
+    lines.append('coletivas: %d' % a["n_coletivas"])
+    lines.append('taxa_exclusividade: %d' % round(imp.get("taxa_exclusividade", 0) * 100))
+    lines.append('peso_medio: %.2f' % imp.get("peso_medio", 0))
+    lines.append('og_image: "%s"' % a["og_image"])
+    share_txt = a["nome"]
+    if imp.get("n_total"):
+        share_txt += " — %d proposições" % imp["n_total"]
+        if imp.get("n_exclusiva"):
+            share_txt += ", %d de autoria exclusiva" % imp["n_exclusiva"]
+    share_txt += " na Câmara de Pinheiro"
+    lines.append('share_text: "%s"' % yaml_escape(share_txt))
+    lines.append("og_cards:")
+    lines.append('  - {formato: "4:5", arquivo: "/og/v/%s-4x5.jpg"}' % a["slug"])
+    lines.append('  - {formato: "9:16", arquivo: "/og/v/%s-9x16.jpg"}' % a["slug"])
+    if a["destaques"]:
+        lines.append("destaques:")
+        for d in a["destaques"]:
+            lines.append('  - "%s"' % yaml_escape(d))
+    if a["parceiros"]:
+        lines.append("parceiros:")
+        for x in a["parceiros"]:
+            lines.append('  - {nome: "%s", slug: "%s", n: %d}' % (yaml_escape(x["nome"]), x["slug"], x["n"]))
     lines.append("---")
     lines.append("")
     with open(os.path.join(autores_dir, a["slug"] + ".md"), "w", encoding="utf-8") as f:
@@ -628,20 +866,120 @@ with open(os.path.join(data_dir, "autores.json"), "w", encoding="utf-8") as f:
 with open(os.path.join(data_dir, "glossario.json"), "w", encoding="utf-8") as f:
     json.dump(glossario_data, f, ensure_ascii=False, indent=2)
 
+# Espécies normativas: catálogo com contagens e exemplos
+normas_por_especie = {}
+for n in normas_list:
+    normas_por_especie.setdefault(n["especie"], []).append(n)
+props_por_especie = {}
+for p in props:
+    props_por_especie.setdefault(p["especie"], []).append(p)
+
+especies_view = []
+for e in especies:
+    k = e["chave"]
+    ns = sorted(normas_por_especie.get(k, []), key=lambda x: (x["data"] or ""), reverse=True)
+    ps = props_por_especie.get(k, [])
+    exemplos = []
+    for n in ns[:3]:
+        exemplos.append({
+            "titulo": n["tipo_label"] + " nº " + str(n["numero"]),
+            "url": "/normas/%s/" % n["slug"],
+            "data": n["data_label"],
+            "ementa": clamp_texto(n["ementa"], 120),
+        })
+    for p in ps[:2]:
+        exemplos.append({
+            "titulo": p["identificacao"],
+            "url": "/proposicoes/?q=" + p["identificacao"],
+            "data": p["ano_label"],
+            "ementa": p["ementa_card"],
+        })
+    ev = dict(e)
+    ev["n_normas"] = len(ns)
+    ev["n_props"] = len(ps)
+    ev["exemplos"] = exemplos
+    ev["ultima"] = ns[0]["data_label"] if ns else ""
+    especies_view.append(ev)
+
+especies_json = [dict(e) for e in especies_view]
+with open(os.path.join(data_dir, "especies.json"), "w", encoding="utf-8") as f:
+    json.dump(especies_json, f, ensure_ascii=False, indent=2)
+
+# Qualidade das proposições
+niveis_n = {"bom": 0, "regular": 0, "frágil": 0}
+problemas_n = {}
+notas = []
+q_itens = []
+for p in props:
+    qual = p["qualidade"]
+    if qual["nivel"]:
+        niveis_n[qual["nivel"]] = niveis_n.get(qual["nivel"], 0) + 1
+    if qual["pontuacao"] is not None:
+        notas.append(qual["pontuacao"])
+    for pr in qual["problemas"]:
+        problemas_n[pr] = problemas_n.get(pr, 0) + 1
+    q_itens.append({
+        "id": p["id"],
+        "identificacao": p["identificacao"],
+        "tipo": p["especie_rotulo"],
+        "ano": p["ano_label"],
+        "situacao": p["situacao_label"],
+        "pontuacao": qual["pontuacao"],
+        "nivel": qual["nivel"],
+        "problemas": qual["problemas"],
+        "ementa": p["ementa_card"],
+        "autores": p["autores_nomes"],
+        "url": "/proposicoes/?q=" + p["identificacao"],
+    })
+
+por_ano_q = {}
+for p in props:
+    a = p["ano_label"]
+    d = por_ano_q.setdefault(a, {"ano": a, "n": 0, "soma": 0, "bom": 0, "fragil": 0})
+    d["n"] += 1
+    if p["qualidade"]["pontuacao"] is not None:
+        d["soma"] += p["qualidade"]["pontuacao"]
+    if p["qualidade"]["nivel"] == "bom":
+        d["bom"] += 1
+    if p["qualidade"]["nivel"] == "frágil":
+        d["fragil"] += 1
+for d in por_ano_q.values():
+    d["media"] = round(d["soma"] / d["n"], 1) if d["n"] else 0
+
+qualidade_json = {
+    "resumo": {
+        "total": len(props),
+        "media": round(sum(notas) / len(notas), 1) if notas else 0,
+        "niveis": niveis_n,
+        "problemas": [
+            {"texto": k, "n": v}
+            for k, v in sorted(problemas_n.items(), key=lambda x: -x[1])
+        ],
+        "por_ano": sorted(por_ano_q.values(), key=lambda x: x["ano"]),
+    },
+    "itens": q_itens,
+}
+with open(os.path.join(data_dir, "qualidade.json"), "w", encoding="utf-8") as f:
+    json.dump(qualidade_json, f, ensure_ascii=False)
+
 with open(os.path.join(BASE, "content", "estatisticas.md"), "w", encoding="utf-8") as f:
     f.write('---\ntitle: "Estatísticas"\nlayout: "estatisticas"\ndescription: "Números das normas, proposições e vereadores de Pinheiro, com cruzamentos entre tipo, ano, situação, autor e partido."\n---\n')
 
 # Endpoints estáticos
 static_dados = os.path.join(BASE, "static", "dados")
 os.makedirs(static_dados, exist_ok=True)
-for fname in ("legislacao.json", "busca.json", "proposicoes.json", "autores.json"):
+ARQUIVOS_DADOS = (
+    "legislacao.json", "busca.json", "proposicoes.json", "autores.json",
+    "especies.json", "qualidade.json",
+)
+for fname in ARQUIVOS_DADOS:
     src = os.path.join(data_dir, fname)
     dst = os.path.join(static_dados, fname)
     if os.path.exists(src):
         shutil.copyfile(src, dst)
 v1_dir = os.path.join(static_dados, "v1")
 os.makedirs(v1_dir, exist_ok=True)
-for fname in ("legislacao.json", "busca.json", "proposicoes.json", "autores.json"):
+for fname in ARQUIVOS_DADOS:
     src = os.path.join(static_dados, fname)
     dst = os.path.join(v1_dir, fname)
     if os.path.exists(src):
@@ -649,5 +987,15 @@ for fname in ("legislacao.json", "busca.json", "proposicoes.json", "autores.json
 
 with open(os.path.join(BASE, "content", "normas", "_index.md"), "w", encoding="utf-8") as f:
     f.write('---\ntitle: "Leis e atos da Câmara"\n---\n\nTodas as normas cadastradas.\n')
+
+with open(os.path.join(BASE, "content", "tipos.md"), "w", encoding="utf-8") as f:
+    f.write(
+        '---\ntitle: "Espécies normativas"\nlayout: "tipos"\ndescription: "O que é cada tipo de ato da Câmara de Pinheiro: lei ordinária, decreto legislativo, resolução, portaria e o que é proposição."\n---\n'
+    )
+
+with open(os.path.join(BASE, "content", "qualidade.md"), "w", encoding="utf-8") as f:
+    f.write(
+        '---\ntitle: "Qualidade do registro"\nlayout: "qualidade"\ndescription: "Como cada proposição foi avaliada: ementa, autor, ano, situação e identificação. Transparência sobre lacunas da fonte."\n---\n'
+    )
 
 print("done: %d normas, %d dispositivos, %d proposicoes, %d autores" % (len(normas_list), len(dispositivos_list), len(props), len(autores)))

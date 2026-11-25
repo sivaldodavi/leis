@@ -1,13 +1,16 @@
 {{ define "main" }}
 {{ $props := .Site.Data.proposicoes }}
+{{ $aprovadas := len (where $props "situacao" "Proposição aprovada") }}
+{{ $semSit := len (where $props "situacao" "nao_informada") }}
+{{ $comSit := sub (len $props) $semSit }}
 <div class="pagehead">
   <h1>Proposições</h1>
-  <p class="lead">{{ len $props }} indicações, moções, projetos e requerimentos apresentados na Câmara de Pinheiro.</p>
+  <p class="lead">{{ len $props }} indicações, moções, projetos e requerimentos apresentados na Câmara de Pinheiro, com a ementa limpa e a autoria de cada um.</p>
   <div class="stats-strip">
     <div class="stat"><span class="n">{{ len $props }}</span><span class="l">proposições</span></div>
-    <div class="stat"><span class="n">{{ len (where $props "situacao" "Proposição aprovada") }}</span><span class="l">aprovadas</span></div>
+    <div class="stat"><span class="n">{{ $aprovadas }}</span><span class="l">aprovadas</span></div>
+    <div class="stat dark"><span class="n">{{ if $comSit }}{{ math.Round (div (mul $aprovadas 100.0) $comSit) }}{{ else }}0{{ end }}%</span><span class="l">aprovação entre as {{ $comSit }} com situação</span></div>
     <div class="stat dark"><span class="n">{{ len .Site.Data.autores }}</span><span class="l">autores cadastrados</span></div>
-    <div class="stat dark"><span class="n">{{ len (where $props "situacao" "Proposição inclusa na Ordem do Dia") }}</span><span class="l">na Ordem do Dia</span></div>
   </div>
 </div>
 
@@ -15,48 +18,68 @@
   <div class="toolbar" style="display:grid;gap:12px">
     <div>
       <label for="busca-prop" class="toolbar-title">Buscar</label>
-      <input id="busca-prop" type="search" placeholder="Ex.: pavimentação, saúde, escola, autor..." style="width:100%;padding:10px 12px;border:2px solid #1A1A1A;font-family:inherit;font-size:16px">
+      <input id="busca-prop" type="search" placeholder="Ex.: pavimentação, saúde, escola, autor…" style="width:100%;padding:10px 12px;border:2px solid #1A1A1A;font-family:inherit;font-size:16px">
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px">
-      <label style="font-size:13px;font-weight:700;color:#5B5B5B">Tipo
-        <select id="filtro-tipo" style="width:100%;padding:8px;border:2px solid #1A1A1A;font-family:inherit;font-size:15px;background:#fff"><option value="">Todos</option></select>
+    <div class="filter-grid">
+      <label>Tipo
+        <select id="filtro-tipo"><option value="">Todos</option></select>
       </label>
-      <label style="font-size:13px;font-weight:700;color:#5B5B5B">Ano
-        <select id="filtro-ano" style="width:100%;padding:8px;border:2px solid #1A1A1A;font-family:inherit;font-size:15px;background:#fff"><option value="">Todos</option></select>
+      <label>Ano
+        <select id="filtro-ano"><option value="">Todos</option></select>
       </label>
-      <label style="font-size:13px;font-weight:700;color:#5B5B5B">Autor
-        <select id="filtro-autor" style="width:100%;padding:8px;border:2px solid #1A1A1A;font-family:inherit;font-size:15px;background:#fff"><option value="">Todos</option></select>
+      <label>Autor
+        <select id="filtro-autor"><option value="">Todos</option></select>
       </label>
-      <label style="font-size:13px;font-weight:700;color:#5B5B5B">Situação
-        <select id="filtro-sit" style="width:100%;padding:8px;border:2px solid #1A1A1A;font-family:inherit;font-size:15px;background:#fff"><option value="">Todas</option></select>
+      <label>Situação
+        <select id="filtro-sit"><option value="">Todas</option></select>
+      </label>
+      <label>Autoria
+        <select id="filtro-cat">
+          <option value="">Todas</option>
+          <option value="exclusiva">Exclusiva</option>
+          <option value="dupla">Dupla</option>
+          <option value="trio">Trio</option>
+          <option value="coletiva">Coletiva (4–9)</option>
+          <option value="ampla">Coletiva ampla (10+)</option>
+        </select>
       </label>
     </div>
     <p id="prop-status" style="font-size:13px;color:#5B5B5B;margin:0">{{ len $props }} proposições.</p>
   </div>
 
-  <div style="overflow-x:auto">
-    <table class="table">
-      <thead>
-        <tr><th>Identificação</th><th>Tipo</th><th>Ano</th><th>Ementa</th><th>Autor(es)</th><th>Situação</th></tr>
-      </thead>
-      <tbody>
-      {{ range $props }}
-        <tr id="prop-{{ .id }}" class="prop-row"
-            data-tipo="{{ .tipo }}"
-            data-ano="{{ .ano }}"
-            data-sit="{{ .situacao }}"
-            data-autor="{{ delimit .autores_nomes "|" }}"
-            data-search="{{ .identificacao }} {{ .ementa_curta }} {{ delimit .autores_nomes " " }}">
-          <td><strong>{{ .identificacao }}</strong></td>
-          <td>{{ .tipo }}</td>
-          <td>{{ .ano }}</td>
-          <td>{{ .ementa_curta }}</td>
-          <td>{{ range $i, $a := .autores }}{{ if $i }}, {{ end }}<a href="/vereadores/{{ $a.slug }}/">{{ $a.nome }}</a>{{ end }}</td>
-          <td>{{ .situacao | replace "_" " " }}</td>
-        </tr>
-      {{ end }}
-      </tbody>
-    </table>
+  <div class="plist">
+    <div class="plist-head">
+      <span>Identificação</span><span>Ementa</span><span>Autoria</span><span>Situação</span>
+    </div>
+    <div id="prop-lista">
+    {{ range $props }}
+      <div id="prop-{{ .id }}" class="plist-row prop-row"
+           data-tipo="{{ .especie_rotulo }}"
+           data-ano="{{ .ano_label }}"
+           data-sit="{{ .situacao_label }}"
+           data-cat="{{ .autoria_categoria }}"
+           data-autor="{{ delimit .autores_nomes "|" }}"
+           data-search="{{ .identificacao }} {{ .ementa_limpa }} {{ delimit .autores_nomes " " }}">
+        <div>
+          <span class="plist-id">{{ .identificacao }}</span>
+          <span class="plist-sub">{{ .especie_rotulo }} · {{ .ano_label }}</span>
+        </div>
+        <div>
+          <span class="clamp2">{{ .ementa_limpa }}</span>
+          {{ if .coletiva }}<span class="plist-sub">{{ .autoria_label }}</span>{{ end }}
+        </div>
+        <div class="autores">
+          {{ if .autores }}
+            {{ range first 2 .autores }}<a href="/vereadores/{{ .slug }}/">{{ .nome }}</a>{{ end }}
+            {{ if gt .n_autores 2 }}<span class="mais" title="{{ delimit .autores_nomes ", " }}">+{{ sub .n_autores 2 }}</span>{{ end }}
+          {{ else }}
+            <span class="plist-sub">Não informada</span>
+          {{ end }}
+        </div>
+        <div><span class="badge-sit {{ .situacao_classe }}">{{ .situacao_label }}</span></div>
+      </div>
+    {{ end }}
+    </div>
   </div>
 </div>
 
@@ -68,6 +91,7 @@
   var fano = document.getElementById('filtro-ano');
   var fautor = document.getElementById('filtro-autor');
   var fsit = document.getElementById('filtro-sit');
+  var fcat = document.getElementById('filtro-cat');
   var status = document.getElementById('prop-status');
 
   function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
@@ -85,7 +109,7 @@
 
   function apply(){
     var q = norm(busca.value.trim());
-    var tipo = ftipo.value, ano = fano.value, autor = fautor.value, sit = fsit.value;
+    var tipo = ftipo.value, ano = fano.value, autor = fautor.value, sit = fsit.value, cat = fcat.value;
     var n = 0;
     rows.forEach(function(r){
       var ok = true;
@@ -94,12 +118,20 @@
       if(ano && r.getAttribute('data-ano') !== ano) ok = false;
       if(autor && (r.getAttribute('data-autor') || '').split('|').indexOf(autor) === -1) ok = false;
       if(sit && r.getAttribute('data-sit') !== sit) ok = false;
+      if(cat && r.getAttribute('data-cat') !== cat) ok = false;
       r.style.display = ok ? '' : 'none';
       if(ok) n++;
     });
     status.textContent = n + ' proposição(ões) encontrada(s).';
   }
-  [busca, ftipo, fano, fautor, fsit].forEach(function(el){ el.addEventListener('input', apply); el.addEventListener('change', apply); });
+  [busca, ftipo, fano, fautor, fsit, fcat].forEach(function(el){ el.addEventListener('input', apply); el.addEventListener('change', apply); });
+  var qp = new URLSearchParams(window.location.search).get('q');
+  if(qp){ busca.value = qp; }
+  var h = window.location.hash;
+  if(h && h.indexOf('#prop-') === 0){
+    var alvo = document.querySelector(h);
+    if(alvo){ alvo.style.background = '#FBF3D6'; }
+  }
   apply();
 })();
 </script>

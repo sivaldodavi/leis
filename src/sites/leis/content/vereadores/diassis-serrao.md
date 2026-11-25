@@ -1,5 +1,5 @@
 ---
-title: "DIASSIS SERRÃO"
+title: "Diassis Serrão"
 autor_id: 694
 slug: "diassis-serrao"
 partido: "PL"
@@ -13,4 +13,22 @@ atual: true
 anterior: false
 legislaturas: ["2025–2028"]
 fonte_tse: "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
+impacto_total: 103
+impacto_equivalente: 88.3
+exclusivas: 84
+coletivas: 12
+taxa_exclusividade: 82
+peso_medio: 0.86
+og_image: "/og/v/diassis-serrao.jpg"
+share_text: "Diassis Serrão — 103 proposições, 84 de autoria exclusiva na Câmara de Pinheiro"
+og_cards:
+  - {formato: "4:5", arquivo: "/og/v/diassis-serrao-4x5.jpg"}
+  - {formato: "9:16", arquivo: "/og/v/diassis-serrao-9x16.jpg"}
+destaques:
+  - "Autor exclusivo de 84 proposições"
+  - "Assina mais com Edinildo (18)"
+parceiros:
+  - {nome: "Edinildo", slug: "edinildo", n: 18}
+  - {nome: "Albininho", slug: "albininho", n: 12}
+  - {nome: "Enesio Ferreira", slug: "enesio-ferreira", n: 12}
 ---

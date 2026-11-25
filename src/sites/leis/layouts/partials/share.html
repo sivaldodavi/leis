@@ -1,0 +1,16 @@
+{{- $url := .Permalink -}}
+{{- $titulo := .Title -}}
+{{- $texto := printf "%s — %s" $titulo $url -}}
+{{- with .Params.share_text }}{{ $texto = printf "%s — %s" . $url }}{{ end -}}
+{{- $cards := .Params.og_cards | default (slice) -}}
+<div class="share">
+  <span class="share-label">Compartilhar</span>
+  <a href="https://wa.me/?text={{ urlquery $texto }}" target="_blank" rel="noopener">WhatsApp</a>
+  <a href="https://x.com/intent/post?text={{ urlquery $titulo }}&url={{ urlquery $url }}" target="_blank" rel="noopener">X</a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlquery $url }}" target="_blank" rel="noopener">Facebook</a>
+  <a href="https://t.me/share/url?url={{ urlquery $url }}&text={{ urlquery $titulo }}" target="_blank" rel="noopener">Telegram</a>
+  <button type="button" data-share-copy="{{ $url }}">Copiar link</button>
+  {{- range $cards }}
+  <a class="dl" href="{{ .arquivo }}" download>Cartão {{ .formato }}</a>
+  {{- end }}
+</div>

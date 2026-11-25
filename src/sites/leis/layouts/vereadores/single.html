@@ -18,10 +18,10 @@
         {{ with $autor.partido }}<span class="pill">{{ . }}</span>{{ end }}
         {{ if $autor.atual }}<span class="pill green">Legislatura 2025–2028</span>{{ end }}
         {{ if $autor.anterior }}<span class="pill amber">Legislatura 2021–2024</span>{{ end }}
-        {{ with $autor.situacao_tse }}<span class="pill">{{ . }}</span>{{ end }}
+        {{ with $autor.situacao_tse_label }}<span class="pill">{{ . }}</span>{{ end }}
       </div>
       {{ if $autor.votos }}
-      <p class="meta-line"><strong>{{ $autor.votos }}</strong> votos em {{ $autor.ano_tse }} · {{ $autor.situacao_tse }}</p>
+      <p class="meta-line"><strong>{{ $autor.votos }}</strong> votos em {{ $autor.ano_tse }}{{ with $autor.situacao_tse_label }} · {{ . }}{{ end }}</p>
       {{ else }}
       <p class="meta-line" style="color:#5B5B5B">Sem dados eleitorais correspondentes no TSE.</p>
       {{ end }}
@@ -29,16 +29,67 @@
       <p class="meta-line" style="font-size:14px;color:#5B5B5B">
         {{ if gt $autor.n_proposicoes 0 }}{{ $autor.n_proposicoes }} proposições registradas no banco.{{ else }}Nenhuma proposição registrada no banco para este perfil.{{ end }}
       </p>
+      {{ partial "share.html" . }}
     </div>
   </section>
 
   <div class="stats-strip">
     <div class="stat"><span class="n">{{ $autor.n_proposicoes }}</span><span class="l">proposições</span></div>
-    <div class="stat"><span class="n">{{ $autor.stats.aprovadas }}</span><span class="l">aprovadas</span></div>
-    <div class="stat dark"><span class="n">{{ $autor.stats.taxa_aprovacao }}%</span><span class="l">taxa de aprovação</span></div>
-    <div class="stat dark"><span class="n">{{ len $autor.stats.by_year }}</span><span class="l">anos com proposições</span></div>
-    <div class="stat dark"><span class="n">{{ len $autor.legislaturas }}</span><span class="l">legislaturas</span></div>
+    <div class="stat"><span class="n">{{ $autor.impacto_equivalente_label }}</span><span class="l">autoria equivalente</span></div>
+    <div class="stat"><span class="n">{{ $autor.impacto.n_exclusiva }}</span><span class="l">de autoria exclusiva</span></div>
+    <div class="stat dark"><span class="n">{{ $autor.stats.aprovadas }}</span><span class="l">aprovadas</span></div>
+    <div class="stat dark"><span class="n">{{ $autor.stats.taxa_aprovacao }}%</span><span class="l">aprovação entre as com situação</span></div>
   </div>
+
+  {{ if $autor.destaques }}
+  <div class="section-line">
+    <h2>Destaques</h2>
+    <p>Comparações entre os vereadores com mandato na Câmara.</p>
+  </div>
+  <ul class="destaques">
+    {{ range $autor.destaques }}<li>{{ . }}</li>{{ end }}
+  </ul>
+  {{ end }}
+
+  {{ if or $autor.impacto.n_coletiva $autor.parceiros }}
+  <div class="section-line">
+    <h2>Como assina</h2>
+    <p>Autoria dividida igualmente entre os coautores de cada proposição.</p>
+  </div>
+  <div class="data-grid">
+    <div class="panel">
+      <h3>Formato da autoria</h3>
+      <div class="bar-list">
+        {{ $cats := slice (dict "l" "Exclusiva" "n" $autor.impacto.n_exclusiva) (dict "l" "Dupla" "n" $autor.impacto.n_dupla) (dict "l" "Trio" "n" $autor.impacto.n_trio) (dict "l" "Coletiva (4–9)" "n" $autor.impacto.n_coletiva) (dict "l" "Coletiva ampla (10+)" "n" $autor.impacto.n_ampla) }}
+        {{ $max := 1 }}{{ range $cats }}{{ if gt .n $max }}{{ $max = .n }}{{ end }}{{ end }}
+        {{ range $cats }}
+        <div class="bar-row">
+          <span class="lbl">{{ .l }}</span>
+          <div class="bar-track"><div class="bar-fill" style="width:{{ if .n }}{{ math.Round (mul (div (float .n) (float $max)) 100) }}{{ else }}0{{ end }}%"></div></div>
+          <span class="val">{{ .n }}</span>
+        </div>
+        {{ end }}
+      </div>
+      <p class="note">{{ $autor.taxa_exclusividade }}% das proposições são de autoria exclusiva; a autoria equivalente soma 1/n por proposição assinada em conjunto.</p>
+    </div>
+    {{ if $autor.parceiros }}
+    <div class="panel">
+      <h3>Quem mais coassina</h3>
+      <div class="bar-list">
+        {{ $maxp := 1 }}{{ range $autor.parceiros }}{{ if gt .n $maxp }}{{ $maxp = .n }}{{ end }}{{ end }}
+        {{ range $autor.parceiros }}
+        <div class="bar-row">
+          <span class="lbl"><a href="/vereadores/{{ .slug }}/">{{ .nome }}</a></span>
+          <div class="bar-track"><div class="bar-fill" style="width:{{ math.Round (mul (div (float .n) (float $maxp)) 100) }}%"></div></div>
+          <span class="val">{{ .n }}</span>
+        </div>
+        {{ end }}
+      </div>
+      <p class="note">Proposições assinadas em conjunto nos últimos anos.</p>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
 
   <div class="section-line">
     <h2>Mandatos e candidaturas</h2>
@@ -50,10 +101,10 @@
     <article class="mandato">
       <div class="top">
         <span class="leg">{{ if .eleito }}Legislatura {{ .legislatura }}{{ else }}Candidatura em {{ .ano_eleicao }}{{ end }}</span>
-        <span class="pill {{ if .eleito }}green{{ else }}amber{{ end }}">{{ if .eleito }}Eleito(a){{ else }}{{ .situacao_tse }}{{ end }}</span>
+        <span class="pill {{ if .eleito }}green{{ else }}amber{{ end }}">{{ if .eleito }}Eleito(a){{ else }}{{ .situacao_label }}{{ end }}</span>
       </div>
-      <p class="detail">{{ .partido }} · {{ .votos }} votos · {{ .situacao_tse }}</p>
-      <p class="detail" style="font-size:13px;color:#5B5B5B">Nome no TSE: {{ .nome_tse }}</p>
+      <p class="detail">{{ .partido }} · {{ .votos }} votos{{ with .situacao_label }} · {{ . }}{{ end }}</p>
+      <p class="detail" style="font-size:13px;color:#5B5B5B">Nome no TSE: {{ .nome_tse_display }}</p>
     </article>
     {{ end }}
   </div>
@@ -110,40 +161,46 @@
 
   function el(tag, cls, txt){ var e=document.createElement(tag); if(cls) e.className=cls; if(txt!==undefined) e.textContent=txt; return e; }
   function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
-  function situacaoLabel(s){ return (s||'Não informada').replace(/_/g,' '); }
+  function row(p){
+    var r = el('div','plist-row prop-row');
+    var c1 = el('div');
+    var a = el('a','plist-id', p.identificacao || ('Proposição ' + p.id));
+    a.href = '/proposicoes/?q=' + encodeURIComponent(p.identificacao || '');
+    c1.appendChild(a);
+    c1.appendChild(el('span','plist-sub', (p.especie_rotulo || p.tipo || '') + ' · ' + (p.ano_label || '—')));
+    var c2 = el('div');
+    c2.appendChild(el('span','clamp2', p.ementa_limpa || p.ementa_curta || ''));
+    var c3 = el('div','autores');
+    var nomes = p.autores_nomes || [];
+    if(nomes.length){
+      nomes.slice(0,2).forEach(function(n){ c3.appendChild(el('span', null, n)); });
+      if(nomes.length > 2){
+        var m = el('span','mais','+' + (nomes.length-2));
+        m.title = nomes.join(', ');
+        c3.appendChild(m);
+      }
+    } else { c3.appendChild(el('span','plist-sub','Não informada')); }
+    var c4 = el('div');
+    c4.appendChild(el('span','badge-sit ' + (p.situacao_classe || 'off'), p.situacao_label || 'Não informada'));
+    [c1,c2,c3,c4].forEach(function(x){ r.appendChild(x); });
+    return r;
+  }
 
   function render(){
-    var wrap = document.getElementById('autor-props-body');
-    if(!wrap) return;
+    var list = document.getElementById('autor-props-list');
+    if(!list) return;
     var q = norm(busca.value.trim());
     var tipo = ftipo.value, ano = fano.value;
-    var tbody = wrap.querySelector('tbody');
-    tbody.innerHTML = '';
+    list.innerHTML = '';
     var n = 0;
     props.forEach(function(p){
-      var ok = true;
-      if(q && norm(p.identificacao + ' ' + p.ementa_curta).indexOf(q) === -1) ok = false;
-      if(tipo && p.tipo !== tipo) ok = false;
-      if(ano && String(p.ano) !== ano) ok = false;
-      if(!ok) return;
+      if(q && norm((p.identificacao||'') + ' ' + (p.ementa_limpa||'')).indexOf(q) === -1) return;
+      if(tipo && (p.especie_rotulo || p.tipo) !== tipo) return;
+      if(ano && String(p.ano_label) !== ano) return;
       n++;
-      var tr = el('tr');
-      var tdId = el('td');
-      var a = el('a', null, p.identificacao || ('Proposição ' + p.id));
-      a.href = '/proposicoes/#prop-' + p.id;
-      a.style.fontWeight = '700';
-      tdId.appendChild(a);
-      tr.appendChild(tdId);
-      tr.appendChild(el('td', null, p.tipo || '—'));
-      tr.appendChild(el('td', null, p.ano || '—'));
-      tr.appendChild(el('td', null, p.ementa_curta || ''));
-      tr.appendChild(el('td', null, (p.autores || []).map(function(a){return a.nome;}).join(', ')));
-      tr.appendChild(el('td', null, situacaoLabel(p.situacao)));
-      tbody.appendChild(tr);
+      list.appendChild(row(p));
     });
-    if(!n){
-      var tr = el('tr'); var td = el('td', null, 'Nenhuma proposição encontrada com esses filtros.'); td.colSpan = 6; td.style.color = '#5B5B5B'; tr.appendChild(td); tbody.appendChild(tr);
-    }
+    if(!n){ list.appendChild(el('p','empty','Nenhuma proposição encontrada com esses filtros.')); }
     status.textContent = n + ' proposição(ões) encontrada(s).';
   }
 
@@ -156,22 +213,23 @@
     var toolbar = el('div','toolbar');
     var grid = el('div','filter-grid');
     var l1 = el('label', null, 'Buscar'); busca = el('input'); busca.type='search'; busca.placeholder='Assunto ou identificação'; l1.appendChild(busca);
-    var l2 = el('label', null, 'Tipo'); ftipo = el('select'); ftipo.appendChild(el('option', null, 'Todos')); ftipo.firstChild.value='';
-    var l3 = el('label', null, 'Ano'); fano = el('select'); fano.appendChild(el('option', null, 'Todos')); fano.firstChild.value='';
+    var l2 = el('label', null, 'Tipo'); ftipo = el('select'); var o0 = el('option', null, 'Todos'); o0.value=''; ftipo.appendChild(o0);
+    var l3 = el('label', null, 'Ano'); fano = el('select'); var o1 = el('option', null, 'Todos'); o1.value=''; fano.appendChild(o1);
     grid.appendChild(l1); grid.appendChild(l2); grid.appendChild(l3); toolbar.appendChild(grid);
     var types = {}, years = {};
-    props.forEach(function(p){ if(p.tipo) types[p.tipo]=1; if(p.ano) years[p.ano]=1; });
+    props.forEach(function(p){ var t = p.especie_rotulo || p.tipo; if(t) types[t]=1; if(p.ano_label) years[p.ano_label]=1; });
     Object.keys(types).sort().forEach(function(v){ var o=el('option',null,v); o.value=v; ftipo.appendChild(o); });
     Object.keys(years).sort().reverse().forEach(function(v){ var o=el('option',null,v); o.value=v; fano.appendChild(o); });
+
     box.innerHTML = '';
     box.appendChild(toolbar);
-    var scroll = el('div'); scroll.style.overflowX='auto';
-    var table = el('table','table cards');
-    var thead = el('thead'); var htr = el('tr');
-    ['Identificação','Tipo','Ano','Ementa','Autor(es)','Situação'].forEach(function(t){ htr.appendChild(el('th',null,t)); });
-    thead.appendChild(htr); table.appendChild(thead);
-    var tbody = el('tbody'); table.appendChild(tbody); scroll.appendChild(table); box.appendChild(scroll);
-    var body = el('div'); body.id='autor-props-body'; body.appendChild(scroll); box.innerHTML=''; box.appendChild(toolbar); box.appendChild(body);
+    var plist = el('div','plist');
+    var head = el('div','plist-head');
+    ['Identificação','Ementa','Autoria','Situação'].forEach(function(t){ head.appendChild(el('span',null,t)); });
+    plist.appendChild(head);
+    var list = el('div'); list.id = 'autor-props-list';
+    plist.appendChild(list);
+    box.appendChild(plist);
     [busca, ftipo, fano].forEach(function(x){ x.addEventListener('input', render); x.addEventListener('change', render); });
     render();
   }
