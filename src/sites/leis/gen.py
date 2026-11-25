@@ -9,7 +9,6 @@ c = conn.cursor()
 def q(sql, *a):
     return c.execute(sql, a).fetchall()
 
-publicos = {r["id"]: dict(r) for r in q("SELECT * FROM publicos")}
 temas = {r["id"]: dict(r) for r in q("SELECT * FROM temas")}
 categorias = {r["id"]: dict(r) for r in q("SELECT * FROM categorias")}
 naturezas = {r["id"]: dict(r) for r in q("SELECT * FROM naturezas")}
@@ -45,10 +44,6 @@ def norma_categorias(nid):
     ids = [r["categoria_id"] for r in q("SELECT categoria_id FROM norma_categoria WHERE norma_id=?", nid)]
     return [categorias[i]["nome"] for i in ids if i in categorias]
 
-def norma_publicos(nid):
-    rows = q("SELECT publico_id, motivo FROM norma_publico WHERE norma_id=?", nid)
-    return [(r["publico_id"], r["motivo"]) for r in rows]
-
 def norma_natureza(nid):
     rows = q("SELECT natureza_id, justificativa FROM norma_natureza WHERE norma_id=?", nid)
     if not rows:
@@ -70,10 +65,7 @@ def temas_do_disp(did):
 
 def explicacoes_do_disp(did):
     rows = q("SELECT * FROM explicacoes WHERE dispositivo_id=?", did)
-    out = {}
-    for r in rows:
-        out.setdefault(r["publico_id"], []).append(dict(r))
-    return out
+    return [dict(r) for r in rows]
 
 def md_text(s):
     return (s or "").strip()
@@ -91,8 +83,6 @@ for n in q("SELECT * FROM normas ORDER BY id"):
     nid = n["id"]
     s = slug(nid)
     cats = norma_categorias(nid)
-    pubs = norma_publicos(nid)
-    pub_names = [publicos[p[0]]["nome"] if p[0] in publicos else p[0] for p in pubs]
     sit = n["situacao"]
     sit_label = situacao_label_map.get(sit, sit)
     ementa = md_text(n["ementa"])
@@ -101,7 +91,6 @@ for n in q("SELECT * FROM normas ORDER BY id"):
     tipo_lbl = tipo_label.get(tipo, tipo)
     nzid, nznome, nzdesc, nzjust = norma_natureza(nid)
 
-    norma_expl_perfis = set()
     lines = []
     lines.append("---")
     lines.append('title: "%s"' % (ementa if ementa else nid).replace('"', '\\"'))
@@ -115,13 +104,6 @@ for n in q("SELECT * FROM normas ORDER BY id"):
     if obs:
         lines.append('observacao: "%s"' % obs.replace('"', '\\"'))
     lines.append("categorias: [%s]" % ", ".join('"%s"' % c for c in cats))
-    lines.append("publicos: [%s]" % ", ".join('"%s"' % p[0] for p in pubs))
-    lines.append("explicacoes_perfis: [%s]" % ", ".join('"%s"' % p for p in sorted(norma_expl_perfis)))
-    if pubs:
-        lines.append("publicos_motivos:")
-        for p in pubs:
-            motivo = md_text(p[1]).replace('"', '\\"')
-            lines.append('  %s: "%s"' % (p[0], motivo))
     if nzid:
         lines.append('natureza_id: "%s"' % nzid)
     if nznome:
@@ -138,9 +120,6 @@ for n in q("SELECT * FROM normas ORDER BY id"):
     if nznome:
         lines.append("**Natureza:** " + nznome)
         lines.append("")
-    if pub_names:
-        lines.append("**Para quem interessa:** " + ", ".join(pub_names))
-        lines.append("")
     if obs:
         lines.append("> " + obs)
         lines.append("")
@@ -155,9 +134,6 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         texto = md_text(d["texto"])
         temas_list = temas_do_disp(did)
         expls = explicacoes_do_disp(did)
-        expl_perfis_disp = set(expls.keys())
-        for _pid in expl_perfis_disp:
-            norma_expl_perfis.add(_pid)
 
         heading = tit if tit else (cap + " " + rotulo).strip()
         if not heading:
@@ -200,24 +176,22 @@ for n in q("SELECT * FROM normas ORDER BY id"):
                 "identificador": "",
                 "texto": texto,
             })
-        for pub_id, lst in expls.items():
-            for e in lst:
-                short = short_profile.get(pub_id, pub_id)
-                titulo = md_text(e["titulo"])
-                texto_e = md_text(e["texto"])
-                exemplo = md_text(e["exemplo"])
-                lines.append('<details class="expl" data-perfil="%s">' % pub_id)
-                lines.append('<summary class="expl-sum">💡 Como isso te afeta (%s)</summary>' % short)
-                lines.append('<div class="expl-body">')
-                if titulo:
-                    lines.append('<p class="expl-titulo"><strong>%s</strong></p>' % titulo)
-                if texto_e:
-                    lines.append('<p>%s</p>' % texto_e)
-                if exemplo:
-                    lines.append('<p class="expl-exemplo"><em>Exemplo:</em> %s</p>' % exemplo)
-                lines.append('</div>')
-                lines.append('</details>')
-                lines.append("")
+        for e in expls:
+            titulo = md_text(e["titulo"])
+            texto_e = md_text(e["texto"])
+            exemplo = md_text(e["exemplo"])
+            lines.append('<details class="expl">')
+            lines.append('<summary class="expl-sum">💡 Explicação simples</summary>')
+            lines.append('<div class="expl-body">')
+            if titulo:
+                lines.append('<p class="expl-titulo"><strong>%s</strong></p>' % titulo)
+            if texto_e:
+                lines.append('<p>%s</p>' % texto_e)
+            if exemplo:
+                lines.append('<p class="expl-exemplo"><em>Exemplo:</em> %s</p>' % exemplo)
+            lines.append('</div>')
+            lines.append('</details>')
+            lines.append("")
         if temas_list:
             lines.append("*Temas:* " + ", ".join(temas_list))
             lines.append("")
@@ -231,8 +205,7 @@ for n in q("SELECT * FROM normas ORDER BY id"):
             "rotulo": rotulo,
             "heading": heading,
             "anchor": "disp-%d" % did,
-            "explicacoes_perfis": sorted(expl_perfis_disp),
-            "n_explicacoes": sum(len(v) for v in expls.values()),
+            "n_explicacoes": len(expls),
         })
 
     out_path = os.path.join(content_dir, s + ".md")
@@ -251,10 +224,6 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         "ementa": ementa,
         "observacao": obs,
         "categorias": cats,
-        "publicos": [p[0] for p in pubs],
-        "publicos_nomes": pub_names,
-        "publicos_motivos": {p[0]: md_text(p[1]) for p in pubs},
-        "explicacoes_perfis": sorted(norma_expl_perfis),
         "natureza_id": nzid or "",
         "natureza": nznome or "",
         "natureza_desc": nzdesc or "",
@@ -306,7 +275,6 @@ with open(os.path.join(data_dir, "legislacao.json"), "w", encoding="utf-8") as f
     json.dump({
         "normas": normas_list,
         "dispositivos": dispositivos_list,
-        "publicos": list(publicos.values()),
         "temas": list(temas.values()),
         "naturezas": list(naturezas.values()),
         "categorias": list(categorias.values()),

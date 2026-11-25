@@ -71,7 +71,7 @@
           <strong>{{ .Params.numero }}</strong>
           <span>{{ .Params.ementa }}</span>
           <span>{{ delimit .Params.categorias ", " }}</span>
-          <span>{{ delimit .Params.publicos ", " }}</span>
+          <span>{{ .Params.natureza }}</span>
           {{ $col := "#6B6B6B" }}{{ if eq .Params.situacao "vigente" }}{{ $col = "#1E7B4F" }}{{ end }}
           <span style="color:{{ $col }};font-weight:700">{{ .Params.situacao_label }}</span>
         </div>

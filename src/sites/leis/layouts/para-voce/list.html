@@ -1,92 +1,21 @@
 {{ define "main" }}
 {{ $disps := .Site.Data.legislacao.dispositivos }}
 <div style="padding:40px 48px 72px">
-  <h1 style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px">Para você</h1>
-  <p class="lead" id="pv-lead">Escolha quem você é para ver os trechos das leis que têm explicação feita para o seu perfil. A escolha fica salva neste navegador. Você também pode abrir a lei inteira quando quiser.</p>
-
-  <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 8px">
-    <span style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B;align-self:center">Seu perfil:</span>
-    <button class="profile-btn pv-prof" data-prof="cidadao">Morador</button>
-    <button class="profile-btn pv-prof" data-prof="comerciante">Comerciante</button>
-    <button class="profile-btn pv-prof" data-prof="estudante">Estudante</button>
-    <button class="profile-btn pv-prof" data-prof="responsavel">Responsável</button>
-    <button class="profile-btn pv-prof" data-prof="servidor">Servidor</button>
-    <button class="profile-btn pv-prof" data-prof-clear style="border-style:dashed">Limpar</button>
-  </div>
-
-  <p id="pv-status" style="font-size:14px;color:#5B5B5B;margin:0 0 20px"></p>
+  <h1 style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px">Explicações simples</h1>
+  <p class="lead">Trechos das leis com explicação em linguagem comum para moradores. Abra o trecho para ler a explicação.</p>
 
   <div class="grid grid-3" id="pv-grid">
     {{ range $disps }}
-    {{ if .explicacoes_perfis }}
-    <article class="card pv-card"
-      data-explicacoes="{{ delimit .explicacoes_perfis "," }}"
-      data-url="/normas/{{ .norma_slug }}/#{{ .anchor }}">
+    {{ if gt .n_explicacoes 0 }}
+    <article class="card">
       <span class="badge vigente">{{ .norma_numero }}</span>
       <h3 style="margin:0;font-size:20px;font-weight:800">{{ .rotulo }} — {{ .heading }}</h3>
-      <p class="pv-expl" style="margin:0;font-size:14px;color:#5B5B5B;font-style:italic"></p>
+      <p style="margin:0;font-size:14px;color:#5B5B5B">{{ .n_explicacoes }} explicação(ões) simples.</p>
       <a href="/normas/{{ .norma_slug }}/#{{ .anchor }}" style="margin-top:auto;font-weight:700;font-size:16px">Ver trecho →</a>
       <a href="/normas/{{ .norma_slug }}/" style="font-size:14px;color:#5B5B5B">Abrir lei inteira</a>
     </article>
     {{ end }}
     {{ end }}
   </div>
-
-  <div id="pv-empty" style="display:none;padding:40px 0;text-align:center;color:#5B5B5B">
-    <p style="font-size:18px">Nenhum trecho com explicação específica para este perfil.</p>
-  </div>
 </div>
-
-<script>
-(function(){
-  var KEY='leis.perfil';
-  function getPerfil(){ try{return localStorage.getItem(KEY)||'';}catch(e){return '';} }
-  function setPerfil(p){ try{ if(p) localStorage.setItem(KEY,p); else localStorage.removeItem(KEY);}catch(e){} apply(); }
-  var prof='';
-  function apply(){
-    var cards=document.querySelectorAll('.pv-card');
-    var shown=0;
-    cards.forEach(function(c){
-      var expls=(c.getAttribute('data-explicacoes')||'').split(',');
-      var has = !prof || expls.indexOf(prof)!==-1;
-      c.style.display = has ? '' : 'none';
-      if(has){
-        shown++;
-        var el=c.querySelector('.pv-expl');
-        if(el){
-          var txt = prof ? 'Tem explicação para o seu perfil.' : 'Perfis: '+expls.filter(Boolean).join(', ');
-          el.textContent = txt;
-        }
-      }
-    });
-    var empty=document.getElementById('pv-empty');
-    if(empty) empty.style.display = (shown===0) ? '' : 'none';
-    var status=document.getElementById('pv-status');
-    if(status){
-      if(prof){
-        status.textContent = shown+' trecho(s) com explicação para o perfil selecionado.';
-      } else {
-        status.textContent = 'Nenhum perfil escolhido: mostrando todos os '+shown+' trechos. Escolha um perfil acima.';
-      }
-    }
-    document.querySelectorAll('.pv-prof').forEach(function(b){
-      if(b.hasAttribute('data-prof')) b.classList.toggle('active', b.getAttribute('data-prof')===prof);
-    });
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var params=new URLSearchParams(window.location.search);
-    var fromUrl=params.get('perfil');
-    prof = fromUrl || getPerfil() || '';
-    if(fromUrl){ setPerfil(fromUrl); }
-    apply();
-    document.querySelectorAll('.pv-prof').forEach(function(b){
-      if(b.hasAttribute('data-prof')){
-        b.addEventListener('click', function(){ prof=b.getAttribute('data-prof'); setPerfil(prof); apply(); });
-      }
-    });
-    var clearBtn=document.querySelector('.pv-prof[data-prof-clear]');
-    if(clearBtn){ clearBtn.addEventListener('click', function(){ prof=''; setPerfil(''); apply(); }); }
-  });
-})();
-</script>
 {{ end }}
