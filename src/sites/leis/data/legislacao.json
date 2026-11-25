@@ -124,7 +124,11 @@
         "cidadao": "Uso e ocupação do solo, moradia e meio ambiente",
         "comerciante": "Zoneamento e incentivos econômicos"
       },
-      "explicacoes_perfis": [],
+      "explicacoes_perfis": [
+        "cidadao",
+        "comerciante",
+        "estudante"
+      ],
       "natureza_id": "impacto_direto",
       "natureza": "Impacto direto na população",
       "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
@@ -145,7 +149,10 @@
       "publicos": [],
       "publicos_nomes": [],
       "publicos_motivos": {},
-      "explicacoes_perfis": [],
+      "explicacoes_perfis": [
+        "cidadao",
+        "servidor"
+      ],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -233,7 +240,10 @@
       "publicos_motivos": {
         "cidadao": "Canal de denúncias e defesa de direitos humanos"
       },
-      "explicacoes_perfis": [],
+      "explicacoes_perfis": [
+        "cidadao",
+        "responsavel"
+      ],
       "natureza_id": "impacto_direto",
       "natureza": "Impacto direto na população",
       "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
@@ -254,7 +264,10 @@
       "publicos": [],
       "publicos_nomes": [],
       "publicos_motivos": {},
-      "explicacoes_perfis": [],
+      "explicacoes_perfis": [
+        "cidadao",
+        "servidor"
+      ],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -286,7 +299,11 @@
         "cidadao": "Organização geral da cidade",
         "estudante": "Como a cidade é organizada"
       },
-      "explicacoes_perfis": [],
+      "explicacoes_perfis": [
+        "cidadao",
+        "estudante",
+        "servidor"
+      ],
       "natureza_id": "impacto_direto",
       "natureza": "Impacto direto na população",
       "natureza_desc": "Afeta a rotina, direitos ou deveres de moradores, comerciantes ou estudantes.",
@@ -455,7 +472,11 @@
       "publicos": [],
       "publicos_nomes": [],
       "publicos_motivos": {},
-      "explicacoes_perfis": [],
+      "explicacoes_perfis": [
+        "cidadao",
+        "estudante",
+        "servidor"
+      ],
       "natureza_id": "rotina_interna",
       "natureza": "Rotina interna e burocracia",
       "natureza_desc": "Organização, cargos, gabinetes, regimento, eleições internas e homenagens. Interessa sobretudo a vereadores e servidores.",
@@ -787,8 +808,11 @@
       "rotulo": "Art. 4",
       "heading": "TÍTULO – I",
       "anchor": "disp-285",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao",
+        "comerciante"
+      ],
+      "n_explicacoes": 2
     },
     {
       "id": 286,
@@ -798,8 +822,11 @@
       "rotulo": "Art. 5",
       "heading": "TÍTULO – I",
       "anchor": "disp-286",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao",
+        "comerciante"
+      ],
+      "n_explicacoes": 2
     },
     {
       "id": 287,
@@ -822,8 +849,10 @@
       "rotulo": "Art. 7",
       "heading": "TÍTULO – I",
       "anchor": "disp-288",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 289,
@@ -833,8 +862,10 @@
       "rotulo": "Art. 8",
       "heading": "TÍTULO – I",
       "anchor": "disp-289",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 290,
@@ -844,8 +875,10 @@
       "rotulo": "Art. 9",
       "heading": "TÍTULO – I",
       "anchor": "disp-290",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 291,
@@ -855,8 +888,10 @@
       "rotulo": "Art. 10",
       "heading": "TÍTULO – I",
       "anchor": "disp-291",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "comerciante"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 292,
@@ -866,8 +901,10 @@
       "rotulo": "Art. 11",
       "heading": "TÍTULO – I",
       "anchor": "disp-292",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "comerciante"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 293,
@@ -877,8 +914,10 @@
       "rotulo": "Art. 12",
       "heading": "TÍTULO – I",
       "anchor": "disp-293",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "responsavel"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 294,
@@ -901,8 +940,10 @@
       "rotulo": "Art. 14",
       "heading": "TÍTULO – I",
       "anchor": "disp-295",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "comerciante"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 296,
@@ -912,8 +953,10 @@
       "rotulo": "Art. 15",
       "heading": "TÍTULO – I",
       "anchor": "disp-296",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "comerciante"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 297,
@@ -923,8 +966,10 @@
       "rotulo": "Art. 16",
       "heading": "TÍTULO – I",
       "anchor": "disp-297",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "comerciante"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 298,
@@ -934,8 +979,10 @@
       "rotulo": "Art. 17",
       "heading": "TÍTULO – I",
       "anchor": "disp-298",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 299,
@@ -945,8 +992,11 @@
       "rotulo": "Art. 18",
       "heading": "TÍTULO – I",
       "anchor": "disp-299",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao",
+        "comerciante"
+      ],
+      "n_explicacoes": 2
     },
     {
       "id": 300,
@@ -956,8 +1006,11 @@
       "rotulo": "Art. 19",
       "heading": "TÍTULO – I",
       "anchor": "disp-300",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao",
+        "comerciante"
+      ],
+      "n_explicacoes": 2
     },
     {
       "id": 301,
@@ -967,8 +1020,10 @@
       "rotulo": "Art. 20",
       "heading": "TÍTULO – II",
       "anchor": "disp-301",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 302,
@@ -978,8 +1033,10 @@
       "rotulo": "Art. 21",
       "heading": "TÍTULO – II",
       "anchor": "disp-302",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 303,
@@ -989,8 +1046,10 @@
       "rotulo": "Art. 22",
       "heading": "TÍTULO – II",
       "anchor": "disp-303",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 304,
@@ -1026,8 +1085,10 @@
       "rotulo": "Art. 25",
       "heading": "TÍTULO – II",
       "anchor": "disp-306",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 307,
@@ -1037,8 +1098,10 @@
       "rotulo": "Art. 26",
       "heading": "TÍTULO – II",
       "anchor": "disp-307",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 308,
@@ -1048,8 +1111,10 @@
       "rotulo": "Art. 27",
       "heading": "TÍTULO – II",
       "anchor": "disp-308",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 309,
@@ -1059,8 +1124,10 @@
       "rotulo": "Art. 28",
       "heading": "TÍTULO – II",
       "anchor": "disp-309",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 310,
@@ -1096,8 +1163,10 @@
       "rotulo": "Art. 31",
       "heading": "TÍTULO – II",
       "anchor": "disp-312",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "comerciante"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 313,
@@ -1145,8 +1214,10 @@
       "rotulo": "Art. 35",
       "heading": "TÍTULO – II",
       "anchor": "disp-316",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "comerciante"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 317,
@@ -1180,8 +1251,10 @@
       "rotulo": "Art. 38",
       "heading": "TÍTULO – II",
       "anchor": "disp-319",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "comerciante"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 320,
@@ -1204,8 +1277,10 @@
       "rotulo": "Art. 40",
       "heading": "TÍTULO – II",
       "anchor": "disp-321",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "comerciante"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 322,
@@ -1268,8 +1343,11 @@
       "rotulo": "Art. 45",
       "heading": "TITULO – III",
       "anchor": "disp-326",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao",
+        "comerciante"
+      ],
+      "n_explicacoes": 2
     },
     {
       "id": 327,
@@ -1279,8 +1357,10 @@
       "rotulo": "Art. 46",
       "heading": "TITULO – III",
       "anchor": "disp-327",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "comerciante"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 328,
@@ -1303,8 +1383,10 @@
       "rotulo": "Art. 48",
       "heading": "TITULO – III",
       "anchor": "disp-329",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "comerciante"
+      ],
+      "n_explicacoes": 1
     },
     {
       "id": 330,
@@ -2341,8 +2423,12 @@
       "rotulo": "Art. 1",
       "heading": "Art. 1",
       "anchor": "disp-2225",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao",
+        "comerciante",
+        "estudante"
+      ],
+      "n_explicacoes": 3
     },
     {
       "id": 2226,
@@ -3342,8 +3428,11 @@
       "rotulo": "Art. 1",
       "heading": "Art. 1",
       "anchor": "disp-1588",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao",
+        "servidor"
+      ],
+      "n_explicacoes": 2
     },
     {
       "id": 1589,
@@ -6862,8 +6951,11 @@
       "rotulo": "Art. 1",
       "heading": "Art. 1",
       "anchor": "disp-2320",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao",
+        "responsavel"
+      ],
+      "n_explicacoes": 2
     },
     {
       "id": 2321,
@@ -7148,8 +7240,11 @@
       "rotulo": "Art. 12",
       "heading": "TÍTULO I",
       "anchor": "disp-1904",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao",
+        "servidor"
+      ],
+      "n_explicacoes": 2
     },
     {
       "id": 1905,
@@ -7478,8 +7573,12 @@
       "rotulo": "Art. 1O",
       "heading": "Art. 1O",
       "anchor": "disp-668",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao",
+        "estudante",
+        "servidor"
+      ],
+      "n_explicacoes": 3
     },
     {
       "id": 669,
@@ -13363,8 +13462,12 @@
       "rotulo": "Art. 1",
       "heading": "TÍTULO - I",
       "anchor": "disp-1934",
-      "explicacoes_perfis": [],
-      "n_explicacoes": 0
+      "explicacoes_perfis": [
+        "cidadao",
+        "estudante",
+        "servidor"
+      ],
+      "n_explicacoes": 3
     },
     {
       "id": 1935,

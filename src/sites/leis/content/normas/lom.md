@@ -37,6 +37,33 @@ natureza_desc: "Afeta a rotina, direitos ou deveres de moradores, comerciantes o
 Município de Pinheiro, em união indissolúvel ao Estado do Maranhão e à República Federativa do Brasil, constituído dentro do Estado Democrático de Direito, em esfera de Governo local, objetiva o seu desenvolvimento com a construção de uma sociedade livre, justa e solidária, exercendo o seu poder por decisão dos Munícipes, pelos seus representantes eleitos ou diretamente, nos termos desta Lei Orgânica da Constituição Estadual e Constituição Federal.
 Parágrafo Único - A ação Municipal desenvolve-se em todo o seu território, sem privilégio, de Distritos, povoados ou Bairros, reduzindo-se as desigualdades regionais e sociais, promovendo o bem-estar de todos sem preconceitos de origem, raça, sexo, cor, idade, e quaisquer outras formas discriminatórias.
 
+<details class="expl" data-perfil="cidadao">
+<summary class="expl-sum">💡 Como isso te afeta (Morador)</summary>
+<div class="expl-body">
+<p class="expl-titulo"><strong>O que é a Lei Orgânica</strong></p>
+<p>A Lei Orgânica é a lei maior do município: define organização, competências e direitos da cidade.</p>
+<p class="expl-exemplo"><em>Exemplo:</em> Em caso de conflito, a Lei Orgânica prevalece.</p>
+</div>
+</details>
+
+<details class="expl" data-perfil="estudante">
+<summary class="expl-sum">💡 Como isso te afeta (Estudante)</summary>
+<div class="expl-body">
+<p class="expl-titulo"><strong>Lei Orgânica da cidade</strong></p>
+<p>É a "constituição" de Pinheiro: organiza o município e seus poderes.</p>
+<p class="expl-exemplo"><em>Exemplo:</em> Útil para entender como a cidade é governada.</p>
+</div>
+</details>
+
+<details class="expl" data-perfil="servidor">
+<summary class="expl-sum">💡 Como isso te afeta (Servidor)</summary>
+<div class="expl-body">
+<p class="expl-titulo"><strong>Princípios da administração</strong></p>
+<p>A Lei Orgânica orienta a organização do município e a atuação dos servidores.</p>
+<p class="expl-exemplo"><em>Exemplo:</em> Conheça as competências do seu órgão.</p>
+</div>
+</details>
+
 
 <a id="disp-669"></a>
 ### Art. 2O
