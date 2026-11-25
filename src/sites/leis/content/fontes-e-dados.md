@@ -38,20 +38,11 @@ Resposta: JSON em UTF-8. Valores monetários vêm como texto com vírgula decima
 
 ## API do portal Fiorilli (Câmara)
 
-<details>
-<summary>Ver detalhes da API (base, exemplo e endpoints)</summary>
+A API oficial da Câmara pode ser consultada diretamente no portal:
 
-Base: `http://177.136.250.170:5656/SCPIWEB_CMDEPINHEIRO/versaoJson/`
+- [Portal de Transparência (Fiorilli)](http://177.136.250.170:5656/SCPIWEB_CMDEPINHEIRO/versaoJson/)
 
-Exemplo (despesas por órgão, 2026):
-
-```
-http://177.136.250.170:5656/SCPIWEB_CMDEPINHEIRO/versaoJson/Despesas/?ConectarExercicio=2026&Listagem=DespesasPorOrgao&DiaInicioPeriodo=01&MesInicialPeriodo=01&DiaFinalPeriodo=31&MesFinalPeriodo=12&Ano=2026&Empresa=1&MostraDadosConsolidado=False
-```
-
-Endpoints (GET, retornam array JSON): Despesas (por órgão, unidade, fornecedor, gerais, detalhe por empenho, diárias, restos a pagar, extra-orçamentárias, exigibilidade), Receitas (orçamentária, União, Estado, extra, detalhes), Licitações e Contratos, Transferências (entre entidades, emendas impositivas), Pessoal (servidores, quando disponível).
-
-</details>
+Este site não reproduz a documentação completa da API; use o link acima para consultar endpoints e parâmetros.
 
 ## Termos de uso
 

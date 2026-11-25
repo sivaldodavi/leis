@@ -6,9 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="As leis de Pinheiro/MA em linguagem simples: o que está em vigor, o que está em tramitação e para quem interessa. Dados abertos da Câmara Municipal.">
 <meta property="og:title" content="Leis de Pinheiro — Entende lei.">
-<meta property="og:description" content="As leis de Pinheiro/MA em linguagem simples, com explicações por perfil e dados abertos.">
+<meta property="og:description" content="As leis de Pinheiro/MA em linguagem simples, com explicações por perfil e dados abertos da Câmara.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Leis de Pinheiro">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,20 +76,7 @@ footer.site{padding:24px 48px;border-top:2px solid #1A1A1A;font-size:14px;color:
 .profile-btn.active{background:#1E7B4F;color:#fff;border-color:#1E7B4F}
 .profile-btn:hover:not(.active){background:#F4F1EA}
 @media(max-width:720px){h1.hero{font-size:40px}.wrap{padding:0 20px}header.site{padding:20px}.section{padding:40px 20px 16px}.content{padding:40px 20px 72px}}
-html.dark body{background:#1A1A1A;color:#F4F1EA}
-html.dark header.site,html.dark footer.site{background:#1A1A1A;border-color:#F4F1EA}
-html.dark .card,html.dark .profilecard,html.dark input.search,html.dark input,html.dark .expl,html.dark .verbcard{background:#2A2A2A;border-color:#F4F1EA;color:#F4F1EA}
-html.dark a{color:#F4F1EA}
-html.dark .lead,html.dark .section .sub{color:#B8B2A3}
 </style>
-<script>
-(function(){
-  try{
-    var t=localStorage.getItem('leis.tema');
-    if(t==='dark') document.documentElement.classList.add('dark');
-  }catch(e){}
-})();
-</script>
 </head>
 <body>
 {{ partial "header.html" . }}
