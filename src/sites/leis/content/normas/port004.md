@@ -20,6 +20,4 @@ natureza_desc: "Organização, cargos, gabinetes, regimento, eleições internas
 
 **Natureza:** Rotina interna e burocracia
 
-> Arquivo chama-se PORT_004, mas o documento é a Resolução 004/2026. Nome do arquivo deve ser corrigido.
-
 ## Dispositivos

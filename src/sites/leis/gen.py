@@ -35,8 +35,6 @@ tipo_label = {
     "regimento_interno": "Regimento Interno",
 }
 
-short_profile = {"cidadao":"Morador","comerciante":"Comerciante","estudante":"Estudante","responsavel":"Responsável","servidor":"Servidor"}
-
 def slug(nid):
     return nid.lower()
 
@@ -119,9 +117,6 @@ for n in q("SELECT * FROM normas ORDER BY id"):
         lines.append("")
     if nznome:
         lines.append("**Natureza:** " + nznome)
-        lines.append("")
-    if obs:
-        lines.append("> " + obs)
         lines.append("")
     lines.append("## Dispositivos")
     lines.append("")

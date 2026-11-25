@@ -6,7 +6,7 @@ title: "Fontes e dados"
 
 O site da **Câmara Municipal de Pinheiro não oferece uma API pública**. A única fonte estruturada é o **Portal de Transparência (Fiorilli)**, que publica endpoints JSON para despesas, receitas, licitações, contratos, transferências e (quando disponível) pessoal.
 
-Os dados legislativos deste site (leis, dispositivos e explicações por perfil) **foram criados e organizados por nós**, a partir dos PDFs publicados pela Câmara. Como o portal não permite automação de download, os PDFs foram baixados e processados manualmente para montar o banco de dados local (`legislacao_pinheiro.db`). A base é atualizada quando novos documentos são publicados.
+Os dados legislativos deste site (leis, dispositivos e explicações simples) **foram criados e organizados por nós**, a partir dos PDFs publicados pela Câmara. Como o portal não permite automação de download, os PDFs foram baixados e processados manualmente para montar o banco de dados local (`legislacao_pinheiro.db`). A base é atualizada quando novos documentos são publicados.
 
 ## Fundamento legal
 

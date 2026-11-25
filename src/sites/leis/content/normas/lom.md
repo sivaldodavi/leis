@@ -20,8 +20,6 @@ natureza_desc: "Afeta a rotina, direitos ou deveres de moradores, comerciantes o
 
 **Natureza:** Impacto direto na população
 
-> Texto atual sem histórico de emendas. Emendas posteriores a 2011-2012 pendentes.
-
 ## Dispositivos
 
 <a id="disp-668"></a>
