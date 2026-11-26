@@ -49,6 +49,20 @@
   </div>
 
   <div class="section-line">
+    <h2>Sessões e votações</h2>
+    <p>Presença dos vereadores, pauta e votos nominais registrados nos relatórios de sessão.</p>
+  </div>
+  <div class="data-grid">
+    <section class="panel"><h3>Sessões por ano</h3><div id="camara-sessoes-ano" class="bar-list"></div></section>
+    <section class="panel"><h3>Sessões por tipo</h3><div id="camara-sessoes-tipo" class="bar-list"></div></section>
+    <section class="panel"><h3>Presença média por partido</h3><div id="camara-presenca-partido" class="bar-list"></div><p class="note">Média do percentual de presença dos vereadores de cada partido nas sessões com lista de presença.</p></section>
+    <section class="panel"><h3>Votos por partido</h3><div id="camara-votos-partido" class="bar-list"></div><p class="note">Soma de votos favoráveis, contrários e abstenções nas votações nominais.</p></section>
+    <section class="panel"><h3>Aprovação nas votações por tipo</h3><div id="camara-aprovacao" class="bar-list"></div><p class="note">Percentual de matérias aprovadas dentro de cada tipo com votação registrada.</p></section>
+    <section class="panel"><h3>Destinatários mais citados</h3><div id="camara-destinatarios" class="bar-list"></div><p class="note">Órgãos e pessoas a quem as matérias foram encaminhadas.</p></section>
+    <section class="panel" style="grid-column:1/-1"><h3>Partido × presença e votos</h3><div id="camara-tabela" style="overflow-x:auto"></div></section>
+  </div>
+
+  <div class="section-line">
     <h2>Cruzamentos</h2>
     <p>Tabelas para comparar duas dimensões.</p>
   </div>
@@ -111,9 +125,10 @@
   Promise.all([
     fetch('/dados/legislacao.json').then(function(r){return r.json();}),
     fetch('/dados/proposicoes.json').then(function(r){return r.json();}),
-    fetch('/dados/autores.json').then(function(r){return r.json();})
+    fetch('/dados/autores.json').then(function(r){return r.json();}),
+    fetch('/dados/camara.json').then(function(r){return r.json();})
   ]).then(function(res){
-    var legis=res[0], props=res[1], autores=res[2];
+    var legis=res[0], props=res[1], autores=res[2], cam=res[3];
     var normas=legis.normas||[];
 
     bars('normas-tipo', countBy(normas,function(n){return n.tipo_label;}), {limit:12});
@@ -163,6 +178,44 @@
       var d=partidoData[p]; return [p,d.autores,d.atuais,d.anteriores,d.props,d.autores?Math.round(d.props/d.autores):0];
     }).sort(function(a,b){return b[4]-a[4];});
     table('tabela-partidos', ['Partido','Autores','Na legislatura atual','Com passagem anterior','Proposições','Média por autor'], linhasPartidos);
+
+    if(cam){
+      bars('camara-sessoes-ano', cam.sessoes_por_ano||{}, {limit:30});
+      bars('camara-sessoes-tipo', cam.sessoes_por_tipo||{}, {limit:10});
+
+      var presenca={};
+      (cam.presenca_partido||[]).forEach(function(x){ presenca[x.partido]=x.media_pct; });
+      bars('camara-presenca-partido', presenca, {limit:15, value:function(n){return n+'%';}});
+
+      var votosPartido={};
+      (cam.votos_partido||[]).forEach(function(x){ votosPartido[x.partido]=(x.favor||0)+(x.contra||0)+(x.abstencao||0); });
+      bars('camara-votos-partido', votosPartido, {limit:15});
+
+      var aprovacao={};
+      (cam.aprovacao_tipo||[]).forEach(function(x){ if(x.total>=3) aprovacao[x.tipo]=x.pct; });
+      bars('camara-aprovacao', aprovacao, {limit:12, value:function(n){return n+'%';}});
+
+      var destinatarios={};
+      (cam.destinatarios||[]).forEach(function(x){ destinatarios[x.nome]=x.n; });
+      bars('camara-destinatarios', destinatarios, {limit:10});
+
+      var porPartido={};
+      (cam.presenca_partido||[]).forEach(function(x){
+        if(!porPartido[x.partido]) porPartido[x.partido]={vereadores:0,presencas:0,media:0,favor:0,contra:0,abstencao:0};
+        var d=porPartido[x.partido]; d.vereadores=x.vereadores; d.presencas=x.presencas; d.media=x.media_pct;
+      });
+      (cam.votos_partido||[]).forEach(function(x){
+        if(!porPartido[x.partido]) porPartido[x.partido]={vereadores:0,presencas:0,media:0,favor:0,contra:0,abstencao:0};
+        var d=porPartido[x.partido]; d.favor=x.favor||0; d.contra=x.contra||0; d.abstencao=x.abstencao||0;
+      });
+      var linhasCamara=Object.keys(porPartido).sort(function(a,b){
+        return (porPartido[b].favor+porPartido[b].contra)-(porPartido[a].favor+porPartido[a].contra);
+      }).map(function(p){
+        var d=porPartido[p];
+        return [p,d.vereadores,d.presencas,d.media+'%',d.favor,d.contra,d.abstencao];
+      });
+      table('camara-tabela', ['Partido','Vereadores','Presenças','Presença média','A favor','Contra','Abstenções'], linhasCamara);
+    }
   }).catch(function(){
     document.querySelectorAll('.bar-list').forEach(function(b){ b.innerHTML='<p class="note">Não foi possível carregar os dados.</p>'; });
   });

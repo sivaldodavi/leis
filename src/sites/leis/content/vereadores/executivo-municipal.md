@@ -2,6 +2,11 @@
 title: "Executivo Municipal"
 autor_id: 142
 slug: "executivo-municipal"
+presencas: 0
+pct_presenca: 0
+votos_favor: 0
+votos_contra: 0
+abstencoes: 0
 n_proposicoes: 57
 atual: false
 anterior: false

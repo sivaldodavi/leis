@@ -33,6 +33,46 @@
   </p>
   {{ end }}
 
+  {{ $matches := where .Site.Data.proposicoes "id" .Params.proposicao_id }}
+  {{ $pd := false }}{{ if $matches }}{{ $pd = index $matches 0 }}{{ end }}
+  {{ with $pd }}
+  {{ if or .sessoes .votacao .destinatarios }}
+  <div class="section-line">
+    <h2>Tramitação e votação</h2>
+    <p>Dados ligados a esta proposição a partir dos relatórios de sessão da Câmara.</p>
+  </div>
+  {{ with .votacao }}
+  <div class="panel">
+    <h3>Votação {{ .fase }}</h3>
+    <p><strong>{{ .resultado }}</strong> · {{ .favor }} a favor · {{ .contra }} contra · {{ .abstencoes }} abstenções</p>
+    {{ if .nominal }}
+    <div class="chips">
+      {{ range .nominal }}<span class="chip{{ if eq .voto "A Favor" }} active{{ end }}">{{ .nome }}: {{ .voto }}</span>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ if .sessoes }}
+  <div class="panel">
+    <h3>Sessões em que foi pautada</h3>
+    <ul>
+      {{ range .sessoes }}
+      <li><a href="/sessoes/{{ .slug }}/">Sessão {{ .tipo }} {{ .numero }}/{{ substr .data 0 4 }}</a> — {{ .secao }} · {{ substr .data 8 2 }}/{{ substr .data 5 2 }}/{{ substr .data 0 4 }}</li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+  {{ if .destinatarios }}
+  <div class="panel">
+    <h3>Destinatários</h3>
+    <div class="chips">
+      {{ range .destinatarios }}<span class="chip">{{ .nome }}{{ with .cargo }} · {{ . }}{{ end }}</span>{{ end }}
+    </div>
+  </div>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+
   <hr>
 
   {{ if .Content }}

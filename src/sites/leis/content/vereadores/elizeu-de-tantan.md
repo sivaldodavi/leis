@@ -3,6 +3,11 @@ title: "Elizeu de Tantan"
 autor_id: 343
 slug: "elizeu-de-tantan"
 partido: "PSD"
+presencas: 122
+pct_presenca: 50
+votos_favor: 202
+votos_contra: 15
+abstencoes: 1
 nome_urna: "ELIZEU DE TANTAN"
 nome_urna_display: "Elizeu de Tantan"
 nome_urna_igual: true
@@ -10,21 +15,21 @@ votos: 1999
 ano_tse: 2024
 situacao_tse: "ELEITO POR QP"
 situacao_tse_ajuda: "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
-n_proposicoes: 29
+n_proposicoes: 30
 foto: "/fotos/elizeu-de-tantan-2024.jpg"
 foto_ano: 2024
 atual: true
 anterior: true
 legislaturas: ["2021–2024", "2025–2028"]
 fonte_tse: "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
-impacto_total: 29
-impacto_equivalente: 15.0
-exclusivas: 14
+impacto_total: 30
+impacto_equivalente: 16.0
+exclusivas: 15
 coletivas: 15
-taxa_exclusividade: 48
-peso_medio: 0.52
+taxa_exclusividade: 50
+peso_medio: 0.53
 og_image: "/og/v/elizeu-de-tantan.jpg"
-share_text: "Elizeu de Tantan — 29 proposições, 14 de autoria exclusiva na Câmara de Pinheiro"
+share_text: "Elizeu de Tantan — 30 proposições, 15 de autoria exclusiva na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/elizeu-de-tantan-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/elizeu-de-tantan-9x16.jpg"}

@@ -1,0 +1,153 @@
+{{ define "main" }}
+{{ $camara := .Site.Data.camara }}
+<div class="pagehead">
+  <h1>Votações</h1>
+  <p class="lead">Resultado e voto nominal de cada vereador nas votações da Câmara de Pinheiro. Clique em “Ver votos” para abrir a lista nominal.</p>
+  <div class="stats-strip">
+    <div class="stat"><span class="n">{{ $camara.resumo.votacoes }}</span><span class="l">votações</span></div>
+    <div class="stat"><span class="n">{{ $camara.resumo.votos }}</span><span class="l">votos nominais</span></div>
+    <div class="stat dark"><span class="n">{{ $camara.resumo.sessoes }}</span><span class="l">sessões</span></div>
+  </div>
+</div>
+
+<div style="padding:0 48px 72px;max-width:1200px">
+  <div class="toolbar">
+    <div class="filter-grid">
+      <label>Resultado
+        <select id="votacao-resultado"><option value="">Todos</option></select>
+      </label>
+      <label>Vereador
+        <select id="votacao-vereador"><option value="">Todos</option></select>
+      </label>
+      <label>Buscar
+        <input id="votacao-busca" type="search" placeholder="matéria, sessão, vereador…">
+      </label>
+    </div>
+    <p id="votacao-status" style="font-size:13px;color:#5B5B5B;margin:10px 0 0">Carregando votações…</p>
+  </div>
+
+  <div class="plist" style="--cols:100px minmax(0,1fr) 150px 130px 90px">
+    <div class="plist-head">
+      <span>Data</span><span>Matéria</span><span>Sessão</span><span>Resultado</span><span>Votos</span>
+    </div>
+    <div id="votacoes-lista"><p class="empty">Carregando votações…</p></div>
+  </div>
+
+  <div id="votacao-detalhe" class="panel" style="display:none;margin-top:18px"></div>
+</div>
+
+<script>
+(function(){
+  var lista = document.getElementById('votacoes-lista');
+  var status = document.getElementById('votacao-status');
+  var detalhe = document.getElementById('votacao-detalhe');
+  var fre = document.getElementById('votacao-resultado');
+  var fver = document.getElementById('votacao-vereador');
+  var busca = document.getElementById('votacao-busca');
+  var votacoes = [];
+
+  function el(tag, cls, txt){ var e=document.createElement(tag); if(cls) e.className=cls; if(txt!==undefined) e.textContent=txt; return e; }
+  function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  function dataBR(d){ return d ? d.slice(8,10)+'/'+d.slice(5,7)+'/'+d.slice(0,4) : ''; }
+
+  function renderDetalhe(v){
+    detalhe.innerHTML = '';
+    detalhe.style.display = 'block';
+    var h = el('h3', null, v.materia + ' — ' + v.sessao);
+    detalhe.appendChild(h);
+    var p = el('p', null,
+      (v.fase ? v.fase + ' · ' : '') +
+      (v.resultado || 'Sem resultado') + ' · ' +
+      v.favor + ' a favor · ' + v.contra + ' contra · ' + v.abstencoes + ' abstenções'
+    );
+    detalhe.appendChild(p);
+    if(v.nominal && v.nominal.length){
+      var chips = el('div','chips');
+      v.nominal.forEach(function(x){
+        var c = el('span','chip' + (x.voto === 'A Favor' ? ' active' : ''), x.nome + ': ' + x.voto);
+        chips.appendChild(c);
+      });
+      detalhe.appendChild(chips);
+    }
+    var links = el('p');
+    links.style.margin = '10px 0 0';
+    if(v.proposicao_slug){
+      var a = el('a', null, 'Ver a proposição →');
+      a.href = '/proposicoes/' + v.proposicao_slug + '/';
+      a.style.fontWeight = '700';
+      links.appendChild(a);
+    }
+    if(v.sessao_slug){
+      if(v.proposicao_slug) links.appendChild(document.createTextNode(' · '));
+      var s = el('a', null, 'Ver a sessão →');
+      s.href = '/sessoes/' + v.sessao_slug + '/';
+      s.style.fontWeight = '700';
+      links.appendChild(s);
+    }
+    detalhe.appendChild(links);
+  }
+
+  function linha(v){
+    var r = el('div','plist-row votacao-row');
+    r.appendChild(el('div','small', dataBR(v.data)));
+    var c = el('div');
+    if(v.proposicao_slug){
+      var a = el('a','plist-id', v.materia);
+      a.href = '/proposicoes/' + v.proposicao_slug + '/';
+      c.appendChild(a);
+    } else {
+      c.appendChild(el('span','plist-id', v.materia));
+    }
+    c.appendChild(el('span','plist-sub', v.fase || ''));
+    r.appendChild(c);
+    r.appendChild(el('div','small', v.sessao));
+    r.appendChild(el('div','small', v.resultado || 'Sem resultado'));
+    var acoes = el('div');
+    var b = el('button','chip','Ver votos');
+    b.type = 'button';
+    b.addEventListener('click', function(){ renderDetalhe(v); });
+    acoes.appendChild(b);
+    r.appendChild(acoes);
+    return r;
+  }
+
+  function apply(){
+    var q = norm(busca.value.trim());
+    var res = fre.value;
+    var ver = fver.value;
+    var n = 0;
+    lista.innerHTML = '';
+    votacoes.forEach(function(v){
+      if(res && v.resultado !== res) return;
+      if(ver && !(v.nominal||[]).some(function(x){ return x.nome === ver; })) return;
+      if(q){
+        var texto = [v.materia, v.sessao, v.resultado, v.fase].concat((v.nominal||[]).map(function(x){return x.nome;})).join(' ');
+        if(norm(texto).indexOf(q) === -1) return;
+      }
+      n++;
+      lista.appendChild(linha(v));
+    });
+    if(!n){ lista.appendChild(el('p','empty','Nenhuma votação encontrada com esses filtros.')); }
+    status.textContent = n + ' votação(ões) encontrada(s).';
+  }
+
+  fetch('/dados/votacoes.json').then(function(r){ return r.json(); }).then(function(data){
+    votacoes = (data.votacoes || []).slice().sort(function(a,b){
+      return (b.data || '').localeCompare(a.data || '') || (b.id || 0) - (a.id || 0);
+    });
+    var resultados = {}, vereadores = {};
+    votacoes.forEach(function(v){
+      if(v.resultado) resultados[v.resultado] = true;
+      (v.nominal||[]).forEach(function(x){ vereadores[x.nome] = true; });
+    });
+    Object.keys(resultados).sort().forEach(function(r){ fre.insertAdjacentHTML('beforeend','<option>'+r+'</option>'); });
+    Object.keys(vereadores).sort().forEach(function(v){ fver.insertAdjacentHTML('beforeend','<option>'+v+'</option>'); });
+    [fre, fver, busca].forEach(function(x){ x.addEventListener('input', apply); x.addEventListener('change', apply); });
+    apply();
+  }).catch(function(){
+    lista.innerHTML = '<p class="empty">Não foi possível carregar as votações.</p>';
+    status.textContent = 'Falha ao carregar.';
+  });
+})();
+</script>
+{{ end }}

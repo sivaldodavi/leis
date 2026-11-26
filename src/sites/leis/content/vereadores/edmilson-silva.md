@@ -3,6 +3,11 @@ title: "Edmilson Silva"
 autor_id: 3447
 slug: "edmilson-silva"
 partido: "PDT"
+presencas: 0
+pct_presenca: 0
+votos_favor: 0
+votos_contra: 0
+abstencoes: 0
 nome_urna: "EDMILSON SILVA"
 nome_urna_display: "Edmilson Silva"
 nome_urna_igual: true

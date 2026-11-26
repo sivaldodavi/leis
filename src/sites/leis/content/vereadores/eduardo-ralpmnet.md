@@ -3,6 +3,11 @@ title: "Eduardo Ralpmnet"
 autor_id: 693
 slug: "eduardo-ralpmnet"
 partido: "SOLIDARIEDADE"
+presencas: 108
+pct_presenca: 44
+votos_favor: 209
+votos_contra: 2
+abstencoes: 1
 nome_urna: "EDUARDO DA RALPNET"
 nome_urna_display: "Eduardo da Ralpnet"
 votos: 1178

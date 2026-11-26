@@ -109,6 +109,8 @@
         <div>
           <span class="badge-sit {{ .situacao_classe }}">{{ .situacao_label }}</span>
           {{ if .pdf_url }}<div><a href="{{ .pdf_url }}" target="_blank" rel="noopener" class="plist-sub" style="color:#1E7B4F;font-weight:700">PDF ↗</a></div>{{ end }}
+          {{ if .n_sessoes }}<div><a href="/sessoes/{{ (index .sessoes 0).slug }}/" class="plist-sub">Em {{ .n_sessoes }} sessão(ões)</a></div>{{ end }}
+          {{ with .votacao }}<div><span class="plist-sub">Votação: {{ .resultado }}</span></div>{{ end }}
         </div>
       </div>
     {{ end }}

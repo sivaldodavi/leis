@@ -3,6 +3,12 @@ title: "João Morais"
 autor_id: 40
 slug: "joao-morais"
 partido: "PL"
+partido_camara: "PL"
+presencas: 27
+pct_presenca: 11
+votos_favor: 48
+votos_contra: 1
+abstencoes: 0
 nome_urna: "JOÃO MORAIS"
 nome_urna_display: "João Morais"
 nome_urna_igual: true

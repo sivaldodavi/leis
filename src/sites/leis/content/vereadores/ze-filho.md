@@ -3,6 +3,11 @@ title: "Zé Filho"
 autor_id: 29
 slug: "ze-filho"
 partido: "PL"
+presencas: 47
+pct_presenca: 19
+votos_favor: 85
+votos_contra: 1
+abstencoes: 0
 nome_urna: "ZÉ FILHO"
 nome_urna_display: "ZÉ Filho"
 nome_urna_igual: true

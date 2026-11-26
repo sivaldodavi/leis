@@ -3,6 +3,11 @@ title: "Felipe de Chicão"
 autor_id: 36
 slug: "felipe-de-chicao"
 partido: "PL"
+presencas: 46
+pct_presenca: 19
+votos_favor: 81
+votos_contra: 2
+abstencoes: 2
 nome_urna: "FELIPE DE CHICÃO"
 nome_urna_display: "Felipe de Chicão"
 nome_urna_igual: true

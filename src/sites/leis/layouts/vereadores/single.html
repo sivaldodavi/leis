@@ -41,6 +41,35 @@
     <div class="stat dark"><span class="n">{{ $autor.stats.taxa_aprovacao }}%</span><span class="l">aprovação entre as com situação</span></div>
   </div>
 
+  {{ if $autor.presencas }}
+  <div class="data-grid">
+    <section class="panel">
+      <h3>Presença nas sessões</h3>
+      <p><strong>{{ $autor.presencas }}</strong> presenças registradas · <strong>{{ $autor.pct_presenca }}%</strong> das {{ .Site.Data.camara.resumo.sessoes }} sessões mapeadas.</p>
+      <p class="note">A presença vem dos relatórios de sessão da Câmara; sessões sem lista de presença não entram no cálculo.</p>
+    </section>
+    <section class="panel">
+      <h3>Votos nominais</h3>
+      <p><strong>{{ $autor.votos_favor }}</strong> a favor · <strong>{{ $autor.votos_contra }}</strong> contra · <strong>{{ $autor.abstencoes }}</strong> abstenções</p>
+      <p class="note">Contagem dos votos registrados nas votações nominais.</p>
+    </section>
+  </div>
+  {{ end }}
+
+  {{ if $autor.ultimas_sessoes }}
+  <div class="section-line">
+    <h2>Últimas sessões</h2>
+    <p>Sessões recentes com presença registrada.</p>
+  </div>
+  <div class="panel">
+    <ul>
+      {{ range $autor.ultimas_sessoes }}
+      <li><a href="/sessoes/{{ .slug }}/">Sessão {{ .tipo }} {{ .numero }}/{{ substr .data 0 4 }}</a> — {{ substr .data 8 2 }}/{{ substr .data 5 2 }}/{{ substr .data 0 4 }}</li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+
   {{ if $autor.destaques }}
   <div class="section-line">
     <h2>Destaques</h2>

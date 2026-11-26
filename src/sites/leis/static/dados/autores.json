@@ -3,21 +3,21 @@
     "id": 700,
     "nome": "Abdias de Jesus",
     "slug": "abdias-de-jesus",
-    "n_proposicoes": 40,
+    "n_proposicoes": 42,
     "stats": {
-      "total": 40,
-      "aprovadas": 15,
+      "total": 42,
+      "aprovadas": 17,
       "rejeitadas": 0,
-      "com_situacao": 22,
-      "taxa_aprovacao": 68,
+      "com_situacao": 24,
+      "taxa_aprovacao": 71,
       "by_year": {
-        "2025": 15,
-        "2026": 25
+        "2025": 16,
+        "2026": 26
       },
       "by_tipo": {
         "Indicação": 18,
         "Moção": 13,
-        "Projeto de Decreto Legislativo": 3,
+        "Projeto de Decreto Legislativo": 5,
         "Projeto de Lei do Legislativo": 3,
         "Projeto de Resolução": 2,
         "Requerimento": 1
@@ -25,14 +25,14 @@
       "by_familia": {},
       "by_situacao": {
         "nao_informada": 18,
-        "Proposição aprovada": 15,
+        "Proposição aprovada": 17,
         "Proposição inclusa na Ordem do Dia": 7
       },
       "by_classe": {
         "Indicação": 18,
+        "Projeto normativo": 7,
         "Aplauso": 7,
         "Pesar": 6,
-        "Projeto normativo": 5,
         "Homenagem ou título": 2,
         "Outro ato": 1,
         "Procedimento regimental": 1
@@ -115,18 +115,18 @@
     "nome_tse_display": "Abdias de Jesus Silva",
     "og_image": "/og/v/abdias-de-jesus.jpg",
     "impacto": {
-      "n_total": 40,
-      "n_exclusiva": 21,
+      "n_total": 42,
+      "n_exclusiva": 22,
       "n_dupla": 1,
-      "n_trio": 0,
+      "n_trio": 1,
       "n_coletiva": 6,
       "n_ampla": 12,
-      "autoria_equivalente": 23.667239623121972,
-      "taxa_exclusividade": 0.525,
-      "peso_medio": 0.5916809905780493,
+      "autoria_equivalente": 25.000572956455308,
+      "taxa_exclusividade": 0.5238095238095238,
+      "peso_medio": 0.5952517370584597,
       "familias": {},
       "tipos": {
-        "Projeto de Decreto Legislativo": 3,
+        "Projeto de Decreto Legislativo": 5,
         "Moção": 13,
         "Indicação": 18,
         "Projeto de Resolução": 2,
@@ -136,11 +136,11 @@
       "coautores": [
         {
           "nome": "Edinildo",
-          "n": 19
+          "n": 20
         },
         {
           "nome": "Guto",
-          "n": 17
+          "n": 18
         },
         {
           "nome": "Jaelson Araújo",
@@ -176,21 +176,21 @@
         }
       ],
       "anos": {
-        "2026": 25,
-        "2025": 15
+        "2026": 26,
+        "2025": 16
       }
     },
-    "impacto_equivalente_label": "23,7",
+    "impacto_equivalente_label": "25,0",
     "parceiros": [
       {
         "nome": "Edinildo",
         "slug": "edinildo",
-        "n": 19
+        "n": 20
       },
       {
         "nome": "Guto",
         "slug": "guto",
-        "n": 17
+        "n": 18
       },
       {
         "nome": "Jaelson Araújo",
@@ -233,15 +233,57 @@
         "n": 12
       }
     ],
-    "n_coletivas": 18
+    "n_coletivas": 18,
+    "vereador_ids": [
+      1,
+      2
+    ],
+    "presencas": 139,
+    "pct_presenca": 57,
+    "votos_favor": 258,
+    "votos_contra": 2,
+    "abstencoes": 5,
+    "partido_camara": "MOBILIZA",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      }
+    ]
   },
   {
     "id": 31,
     "nome": "Albininho",
     "slug": "albininho",
-    "n_proposicoes": 62,
+    "n_proposicoes": 63,
     "stats": {
-      "total": 62,
+      "total": 63,
       "aprovadas": 19,
       "rejeitadas": 0,
       "com_situacao": 27,
@@ -250,10 +292,10 @@
         "2023": 8,
         "2024": 10,
         "2025": 20,
-        "2026": 24
+        "2026": 25
       },
       "by_tipo": {
-        "Indicação": 40,
+        "Indicação": 41,
         "Moção": 14,
         "Projeto de Resolução": 3,
         "Projeto de Decreto Legislativo": 2,
@@ -262,13 +304,13 @@
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 35,
+        "nao_informada": 36,
         "Proposição aprovada": 19,
         "Proposição inclusa na Ordem do Dia": 5,
         "Proposição retirada da Ordem do Dia": 3
       },
       "by_classe": {
-        "Indicação": 40,
+        "Indicação": 41,
         "Pesar": 10,
         "Aplauso": 4,
         "Procedimento regimental": 3,
@@ -383,18 +425,18 @@
     "nome_tse_display": "Jose Albino Costa Araujo",
     "og_image": "/og/v/albininho.jpg",
     "impacto": {
-      "n_total": 62,
-      "n_exclusiva": 33,
+      "n_total": 63,
+      "n_exclusiva": 34,
       "n_dupla": 0,
       "n_trio": 0,
       "n_coletiva": 2,
       "n_ampla": 27,
-      "autoria_equivalente": 35.0169595110772,
-      "taxa_exclusividade": 0.532258064516129,
-      "peso_medio": 0.5647896695335032,
+      "autoria_equivalente": 36.016959511077204,
+      "taxa_exclusividade": 0.5396825396825397,
+      "peso_medio": 0.5716977700170984,
       "familias": {},
       "tipos": {
-        "Indicação": 40,
+        "Indicação": 41,
         "Moção": 14,
         "Projeto de Decreto Legislativo": 2,
         "Requerimento": 2,
@@ -444,13 +486,13 @@
         }
       ],
       "anos": {
-        "2026": 24,
+        "2026": 25,
         "2025": 20,
         "2024": 10,
         "2023": 8
       }
     },
-    "impacto_equivalente_label": "35,0",
+    "impacto_equivalente_label": "36,0",
     "parceiros": [
       {
         "nome": "Lucas do Beiradão",
@@ -503,26 +545,68 @@
         "n": 16
       }
     ],
-    "n_coletivas": 29
+    "n_coletivas": 29,
+    "vereador_ids": [
+      24,
+      25
+    ],
+    "presencas": 192,
+    "pct_presenca": 78,
+    "votos_favor": 362,
+    "votos_contra": 6,
+    "abstencoes": 1,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      },
+      {
+        "slug": "2026-11-10-ordinaria-071",
+        "data": "2026-11-10",
+        "tipo": "Ordinária",
+        "numero": 71
+      },
+      {
+        "slug": "2026-11-03-ordinaria-069",
+        "data": "2026-11-03",
+        "tipo": "Ordinária",
+        "numero": 69
+      }
+    ]
   },
   {
     "id": 19,
     "nome": "Alessandro Montenegro",
     "slug": "alessandro-montenegro",
-    "n_proposicoes": 30,
+    "n_proposicoes": 32,
     "stats": {
-      "total": 30,
+      "total": 32,
       "aprovadas": 14,
       "rejeitadas": 0,
       "com_situacao": 21,
       "taxa_aprovacao": 67,
       "by_year": {
         "2023": 12,
-        "2024": 18
+        "2024": 20
       },
       "by_tipo": {
         "Indicação": 14,
-        "Moção": 10,
+        "Moção": 12,
         "Projeto de Resolução": 2,
         "Projeto de Lei do Legislativo": 2,
         "Emenda ao Projeto de Lei Ordinária": 1,
@@ -531,17 +615,17 @@
       "by_familia": {},
       "by_situacao": {
         "Proposição aprovada": 14,
-        "nao_informada": 9,
+        "nao_informada": 11,
         "Proposição inclusa na Ordem do Dia": 5,
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
         "Indicação": 14,
-        "Pesar": 8,
+        "Pesar": 9,
         "Projeto normativo": 3,
+        "Aplauso": 2,
         "Procedimento regimental": 2,
         "Homenagem ou título": 1,
-        "Aplauso": 1,
         "Agradecimento": 1
       },
       "by_tema": {
@@ -630,19 +714,19 @@
     "nome_tse_display": "Alessandro Costa Montenegro",
     "og_image": "/og/v/alessandro-montenegro.jpg",
     "impacto": {
-      "n_total": 30,
-      "n_exclusiva": 15,
+      "n_total": 32,
+      "n_exclusiva": 17,
       "n_dupla": 0,
       "n_trio": 0,
       "n_coletiva": 0,
       "n_ampla": 15,
-      "autoria_equivalente": 15.923529411764704,
-      "taxa_exclusividade": 0.5,
-      "peso_medio": 0.5307843137254902,
+      "autoria_equivalente": 17.9235294117647,
+      "taxa_exclusividade": 0.53125,
+      "peso_medio": 0.5601102941176469,
       "familias": {},
       "tipos": {
+        "Moção": 12,
         "Projeto de Resolução": 2,
-        "Moção": 10,
         "Emenda ao Projeto de Lei Ordinária": 1,
         "Projeto de Lei do Legislativo": 2,
         "Projeto de Decreto Legislativo": 1,
@@ -691,11 +775,11 @@
         }
       ],
       "anos": {
-        "2024": 18,
+        "2024": 20,
         "2023": 12
       }
     },
-    "impacto_equivalente_label": "15,9",
+    "impacto_equivalente_label": "17,9",
     "parceiros": [
       {
         "nome": "Lucas do Beiradão",
@@ -748,42 +832,83 @@
         "n": 14
       }
     ],
-    "n_coletivas": 15
+    "n_coletivas": 15,
+    "vereador_ids": [
+      3
+    ],
+    "presencas": 60,
+    "pct_presenca": 24,
+    "votos_favor": 112,
+    "votos_contra": 2,
+    "abstencoes": 0,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2024-12-18-ordinaria-060",
+        "data": "2024-12-18",
+        "tipo": "Ordinária",
+        "numero": 60
+      },
+      {
+        "slug": "2024-12-17-ordinaria-059",
+        "data": "2024-12-17",
+        "tipo": "Ordinária",
+        "numero": 59
+      },
+      {
+        "slug": "2024-12-11-ordinaria-058",
+        "data": "2024-12-11",
+        "tipo": "Ordinária",
+        "numero": 58
+      },
+      {
+        "slug": "2024-12-10-ordinaria-057",
+        "data": "2024-12-10",
+        "tipo": "Ordinária",
+        "numero": 57
+      },
+      {
+        "slug": "2024-12-04-ordinaria-056",
+        "data": "2024-12-04",
+        "tipo": "Ordinária",
+        "numero": 56
+      }
+    ]
   },
   {
     "id": 694,
     "nome": "Diassis Serrão",
     "slug": "diassis-serrao",
-    "n_proposicoes": 103,
+    "n_proposicoes": 110,
     "stats": {
-      "total": 103,
+      "total": 110,
       "aprovadas": 14,
       "rejeitadas": 0,
       "com_situacao": 18,
       "taxa_aprovacao": 78,
       "by_year": {
-        "2025": 40,
-        "2026": 63
+        "2025": 41,
+        "2026": 69
       },
       "by_tipo": {
-        "Indicação": 84,
+        "Indicação": 90,
         "Moção": 14,
         "Requerimento": 2,
+        "Projeto de Decreto Legislativo": 2,
         "Projeto de Lei do Legislativo": 1,
-        "Projeto de Decreto Legislativo": 1,
         "Projeto de Resolução": 1
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 85,
+        "nao_informada": 92,
         "Proposição aprovada": 14,
         "Proposição inclusa na Ordem do Dia": 4
       },
       "by_classe": {
-        "Indicação": 84,
+        "Indicação": 90,
         "Pesar": 8,
         "Aplauso": 5,
-        "Projeto normativo": 3,
+        "Projeto normativo": 4,
         "Convite ou convocação": 1,
         "Homenagem ou título": 1,
         "Outro ato": 1
@@ -895,22 +1020,22 @@
     "nome_tse_display": "Francisco de Assis Serrão",
     "og_image": "/og/v/diassis-serrao.jpg",
     "impacto": {
-      "n_total": 103,
-      "n_exclusiva": 84,
+      "n_total": 110,
+      "n_exclusiva": 91,
       "n_dupla": 7,
       "n_trio": 0,
       "n_coletiva": 1,
       "n_ampla": 11,
-      "autoria_equivalente": 88.30252100840337,
-      "taxa_exclusividade": 0.8155339805825242,
-      "peso_medio": 0.8573060292077997,
+      "autoria_equivalente": 95.30252100840339,
+      "taxa_exclusividade": 0.8272727272727273,
+      "peso_medio": 0.866386554621849,
       "familias": {},
       "tipos": {
+        "Indicação": 90,
         "Moção": 14,
         "Projeto de Lei do Legislativo": 1,
-        "Indicação": 84,
         "Requerimento": 2,
-        "Projeto de Decreto Legislativo": 1,
+        "Projeto de Decreto Legislativo": 2,
         "Projeto de Resolução": 1
       },
       "coautores": [
@@ -956,11 +1081,11 @@
         }
       ],
       "anos": {
-        "2026": 63,
-        "2025": 40
+        "2026": 69,
+        "2025": 41
       }
     },
-    "impacto_equivalente_label": "88,3",
+    "impacto_equivalente_label": "95,3",
     "parceiros": [
       {
         "nome": "Edinildo",
@@ -1013,46 +1138,87 @@
         "n": 11
       }
     ],
-    "n_coletivas": 12
+    "n_coletivas": 12,
+    "vereador_ids": [
+      15
+    ],
+    "presencas": 121,
+    "pct_presenca": 49,
+    "votos_favor": 208,
+    "votos_contra": 2,
+    "abstencoes": 1,
+    "partido_camara": "PL",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      }
+    ]
   },
   {
     "id": 23,
     "nome": "Edinildo",
     "slug": "edinildo",
-    "n_proposicoes": 225,
+    "n_proposicoes": 246,
     "stats": {
-      "total": 225,
-      "aprovadas": 57,
+      "total": 246,
+      "aprovadas": 60,
       "rejeitadas": 0,
-      "com_situacao": 79,
-      "taxa_aprovacao": 72,
+      "com_situacao": 82,
+      "taxa_aprovacao": 73,
       "by_year": {
         "2023": 14,
         "2024": 41,
-        "2025": 79,
-        "2026": 91
+        "2025": 82,
+        "2026": 109
       },
       "by_tipo": {
-        "Indicação": 155,
+        "Indicação": 170,
         "Moção": 44,
-        "Projeto de Lei do Legislativo": 8,
-        "Projeto de Decreto Legislativo": 7,
+        "Projeto de Lei do Legislativo": 12,
+        "Projeto de Decreto Legislativo": 9,
         "Requerimento": 6,
         "Projeto de Resolução": 4,
         "Emenda à Lei Orgânica": 1
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 146,
-        "Proposição aprovada": 57,
+        "nao_informada": 164,
+        "Proposição aprovada": 60,
         "Proposição inclusa na Ordem do Dia": 19,
         "Proposição retirada da Ordem do Dia": 3
       },
       "by_classe": {
-        "Indicação": 155,
+        "Indicação": 170,
         "Pesar": 31,
+        "Projeto normativo": 17,
         "Aplauso": 13,
-        "Projeto normativo": 11,
         "Homenagem ou título": 6,
         "Procedimento regimental": 4,
         "Convite ou convocação": 4,
@@ -1212,21 +1378,21 @@
     "nome_tse_display": "Edinildo dos Santos Soares Rodrigues",
     "og_image": "/og/v/edinildo.jpg",
     "impacto": {
-      "n_total": 225,
-      "n_exclusiva": 173,
-      "n_dupla": 16,
-      "n_trio": 3,
+      "n_total": 246,
+      "n_exclusiva": 190,
+      "n_dupla": 19,
+      "n_trio": 4,
       "n_coletiva": 7,
       "n_ampla": 26,
-      "autoria_equivalente": 185.19076903488673,
-      "taxa_exclusividade": 0.7688888888888888,
-      "peso_medio": 0.8230700845994966,
+      "autoria_equivalente": 204.02410236822007,
+      "taxa_exclusividade": 0.7723577235772358,
+      "peso_medio": 0.8293662697895124,
       "familias": {},
       "tipos": {
-        "Projeto de Lei do Legislativo": 8,
+        "Projeto de Lei do Legislativo": 12,
+        "Projeto de Decreto Legislativo": 9,
+        "Indicação": 170,
         "Moção": 44,
-        "Projeto de Decreto Legislativo": 7,
-        "Indicação": 155,
         "Emenda à Lei Orgânica": 1,
         "Projeto de Resolução": 4,
         "Requerimento": 6
@@ -1238,7 +1404,7 @@
         },
         {
           "nome": "Guto",
-          "n": 29
+          "n": 30
         },
         {
           "nome": "Rubemar Ribeiro",
@@ -1262,7 +1428,7 @@
         },
         {
           "nome": "Abdias de Jesus",
-          "n": 19
+          "n": 20
         },
         {
           "nome": "Enesio Ferreira",
@@ -1274,13 +1440,13 @@
         }
       ],
       "anos": {
-        "2026": 91,
-        "2025": 79,
+        "2026": 109,
+        "2025": 82,
         "2024": 41,
         "2023": 14
       }
     },
-    "impacto_equivalente_label": "185,2",
+    "impacto_equivalente_label": "204,0",
     "parceiros": [
       {
         "nome": "Jaelson Araújo",
@@ -1290,7 +1456,7 @@
       {
         "nome": "Guto",
         "slug": "guto",
-        "n": 29
+        "n": 30
       },
       {
         "nome": "Rubemar Ribeiro",
@@ -1320,7 +1486,7 @@
       {
         "nome": "Abdias de Jesus",
         "slug": "abdias-de-jesus",
-        "n": 19
+        "n": 20
       },
       {
         "nome": "Enesio Ferreira",
@@ -1333,7 +1499,48 @@
         "n": 18
       }
     ],
-    "n_coletivas": 33
+    "n_coletivas": 33,
+    "vereador_ids": [
+      8
+    ],
+    "presencas": 230,
+    "pct_presenca": 93,
+    "votos_favor": 126,
+    "votos_contra": 2,
+    "abstencoes": 11,
+    "partido_camara": "SOLIDARIEDADE",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      }
+    ]
   },
   {
     "id": 3447,
@@ -1416,7 +1623,15 @@
     },
     "impacto_equivalente_label": "0,0",
     "parceiros": [],
-    "n_coletivas": 0
+    "n_coletivas": 0,
+    "vereador_ids": [],
+    "presencas": 0,
+    "pct_presenca": 0,
+    "votos_favor": 0,
+    "votos_contra": 0,
+    "abstencoes": 0,
+    "partido_camara": "",
+    "ultimas_sessoes": []
   },
   {
     "id": 693,
@@ -1684,21 +1899,62 @@
         "n": 12
       }
     ],
-    "n_coletivas": 14
+    "n_coletivas": 14,
+    "vereador_ids": [
+      9
+    ],
+    "presencas": 108,
+    "pct_presenca": 44,
+    "votos_favor": 209,
+    "votos_contra": 2,
+    "abstencoes": 1,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-10-ordinaria-071",
+        "data": "2026-11-10",
+        "tipo": "Ordinária",
+        "numero": 71
+      }
+    ]
   },
   {
     "id": 343,
     "nome": "Elizeu de Tantan",
     "slug": "elizeu-de-tantan",
-    "n_proposicoes": 29,
+    "n_proposicoes": 30,
     "stats": {
-      "total": 29,
+      "total": 30,
       "aprovadas": 12,
       "rejeitadas": 0,
       "com_situacao": 21,
       "taxa_aprovacao": 57,
       "by_year": {
-        "2024": 11,
+        "2024": 12,
         "2025": 6,
         "2026": 12
       },
@@ -1706,23 +1962,23 @@
         "Moção": 11,
         "Indicação": 8,
         "Projeto de Resolução": 3,
+        "Projeto de Lei do Legislativo": 3,
         "Requerimento": 3,
-        "Projeto de Lei do Legislativo": 2,
         "Projeto de Decreto Legislativo": 1,
         "Emenda ao Projeto de Lei Ordinária": 1
       },
       "by_familia": {},
       "by_situacao": {
         "Proposição aprovada": 12,
-        "nao_informada": 8,
+        "nao_informada": 9,
         "Proposição inclusa na Ordem do Dia": 7,
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
         "Indicação": 8,
         "Pesar": 7,
+        "Projeto normativo": 5,
         "Aplauso": 4,
-        "Projeto normativo": 4,
         "Procedimento regimental": 4,
         "Homenagem ou título": 1,
         "Outro ato": 1
@@ -1816,23 +2072,23 @@
     "nome_tse_display": "Elizeu Rodrigues Furtado",
     "og_image": "/og/v/elizeu-de-tantan.jpg",
     "impacto": {
-      "n_total": 29,
-      "n_exclusiva": 14,
+      "n_total": 30,
+      "n_exclusiva": 15,
       "n_dupla": 0,
       "n_trio": 0,
       "n_coletiva": 1,
       "n_ampla": 14,
-      "autoria_equivalente": 15.00756302521008,
-      "taxa_exclusividade": 0.4827586206896552,
-      "peso_medio": 0.5175021732831062,
+      "autoria_equivalente": 16.007563025210082,
+      "taxa_exclusividade": 0.5,
+      "peso_medio": 0.5335854341736694,
       "familias": {},
       "tipos": {
         "Moção": 11,
         "Indicação": 8,
         "Projeto de Decreto Legislativo": 1,
         "Projeto de Resolução": 3,
+        "Projeto de Lei do Legislativo": 3,
         "Emenda ao Projeto de Lei Ordinária": 1,
-        "Projeto de Lei do Legislativo": 2,
         "Requerimento": 3
       },
       "coautores": [
@@ -1880,10 +2136,10 @@
       "anos": {
         "2026": 12,
         "2025": 6,
-        "2024": 11
+        "2024": 12
       }
     },
-    "impacto_equivalente_label": "15,0",
+    "impacto_equivalente_label": "16,0",
     "parceiros": [
       {
         "nome": "Albininho",
@@ -1936,26 +2192,67 @@
         "n": 11
       }
     ],
-    "n_coletivas": 15
+    "n_coletivas": 15,
+    "vereador_ids": [
+      10
+    ],
+    "presencas": 122,
+    "pct_presenca": 50,
+    "votos_favor": 202,
+    "votos_contra": 15,
+    "abstencoes": 1,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-10-01-extraordinaria-062",
+        "data": "2026-10-01",
+        "tipo": "Extraordinária",
+        "numero": 62
+      },
+      {
+        "slug": "2026-09-30-ordinaria-061",
+        "data": "2026-09-30",
+        "tipo": "Ordinária",
+        "numero": 61
+      },
+      {
+        "slug": "2026-09-29-ordinaria-060",
+        "data": "2026-09-29",
+        "tipo": "Ordinária",
+        "numero": 60
+      },
+      {
+        "slug": "2026-09-09-ordinaria-055",
+        "data": "2026-09-09",
+        "tipo": "Ordinária",
+        "numero": 55
+      },
+      {
+        "slug": "2026-09-08-ordinaria-054",
+        "data": "2026-09-08",
+        "tipo": "Ordinária",
+        "numero": 54
+      }
+    ]
   },
   {
     "id": 95,
     "nome": "Enesio Ferreira",
     "slug": "enesio-ferreira",
-    "n_proposicoes": 74,
+    "n_proposicoes": 82,
     "stats": {
-      "total": 74,
+      "total": 82,
       "aprovadas": 23,
       "rejeitadas": 0,
       "com_situacao": 25,
       "taxa_aprovacao": 92,
       "by_year": {
-        "2023": 8,
+        "2023": 9,
         "2025": 36,
-        "2026": 30
+        "2026": 37
       },
       "by_tipo": {
-        "Indicação": 52,
+        "Indicação": 60,
         "Moção": 16,
         "Requerimento": 4,
         "Projeto de Decreto Legislativo": 1,
@@ -1963,12 +2260,12 @@
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 49,
+        "nao_informada": 57,
         "Proposição aprovada": 23,
         "Proposição inclusa na Ordem do Dia": 2
       },
       "by_classe": {
-        "Indicação": 52,
+        "Indicação": 60,
         "Pesar": 9,
         "Aplauso": 7,
         "Convite ou convocação": 2,
@@ -2070,18 +2367,18 @@
     "nome_tse_display": "Enesio Vitorino Ribeiro Ferreira",
     "og_image": "/og/v/enesio-ferreira.jpg",
     "impacto": {
-      "n_total": 74,
-      "n_exclusiva": 50,
+      "n_total": 82,
+      "n_exclusiva": 58,
       "n_dupla": 2,
       "n_trio": 4,
       "n_coletiva": 1,
       "n_ampla": 17,
-      "autoria_equivalente": 53.52088107970463,
-      "taxa_exclusividade": 0.6756756756756757,
-      "peso_medio": 0.7232551497257382,
+      "autoria_equivalente": 61.52088107970463,
+      "taxa_exclusividade": 0.7073170731707317,
+      "peso_medio": 0.7502546473134711,
       "familias": {},
       "tipos": {
-        "Indicação": 52,
+        "Indicação": 60,
         "Moção": 16,
         "Projeto de Decreto Legislativo": 1,
         "Requerimento": 4,
@@ -2130,12 +2427,12 @@
         }
       ],
       "anos": {
-        "2026": 30,
+        "2026": 37,
         "2025": 36,
-        "2023": 8
+        "2023": 9
       }
     },
-    "impacto_equivalente_label": "53,5",
+    "impacto_equivalente_label": "61,5",
     "parceiros": [
       {
         "nome": "Rubemar Ribeiro",
@@ -2188,37 +2485,78 @@
         "n": 13
       }
     ],
-    "n_coletivas": 18
+    "n_coletivas": 18,
+    "vereador_ids": [
+      11
+    ],
+    "presencas": 152,
+    "pct_presenca": 62,
+    "votos_favor": 269,
+    "votos_contra": 2,
+    "abstencoes": 1,
+    "partido_camara": "PODE",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      },
+      {
+        "slug": "2026-11-10-ordinaria-071",
+        "data": "2026-11-10",
+        "tipo": "Ordinária",
+        "numero": 71
+      },
+      {
+        "slug": "2026-11-03-ordinaria-069",
+        "data": "2026-11-03",
+        "tipo": "Ordinária",
+        "numero": 69
+      }
+    ]
   },
   {
     "id": 1118,
     "nome": "Evilson de Jesus",
     "slug": "evilson-de-jesus",
-    "n_proposicoes": 6,
+    "n_proposicoes": 7,
     "stats": {
-      "total": 6,
+      "total": 7,
       "aprovadas": 1,
       "rejeitadas": 0,
       "com_situacao": 3,
       "taxa_aprovacao": 33,
       "by_year": {
         "2025": 5,
-        "2026": 1
+        "2026": 2
       },
       "by_tipo": {
-        "Indicação": 3,
+        "Indicação": 4,
         "Moção": 1,
         "Projeto de Decreto Legislativo": 1,
         "Projeto de Lei do Legislativo": 1
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 3,
+        "nao_informada": 4,
         "Proposição inclusa na Ordem do Dia": 2,
         "Proposição aprovada": 1
       },
       "by_classe": {
-        "Indicação": 3,
+        "Indicação": 4,
         "Aplauso": 1,
         "Homenagem ou título": 1,
         "Projeto normativo": 1
@@ -2278,20 +2616,20 @@
     "nome_tse_display": "Evilson de Jesus Lopes dos Santos",
     "og_image": "/og/v/evilson-de-jesus.jpg",
     "impacto": {
-      "n_total": 6,
-      "n_exclusiva": 5,
+      "n_total": 7,
+      "n_exclusiva": 6,
       "n_dupla": 0,
       "n_trio": 0,
       "n_coletiva": 1,
       "n_ampla": 0,
-      "autoria_equivalente": 5.166666666666667,
-      "taxa_exclusividade": 0.8333333333333334,
-      "peso_medio": 0.8611111111111112,
+      "autoria_equivalente": 6.166666666666667,
+      "taxa_exclusividade": 0.8571428571428571,
+      "peso_medio": 0.880952380952381,
       "familias": {},
       "tipos": {
+        "Indicação": 4,
         "Moção": 1,
         "Projeto de Decreto Legislativo": 1,
-        "Indicação": 3,
         "Projeto de Lei do Legislativo": 1
       },
       "coautores": [
@@ -2317,11 +2655,11 @@
         }
       ],
       "anos": {
-        "2026": 1,
+        "2026": 2,
         "2025": 5
       }
     },
-    "impacto_equivalente_label": "5,2",
+    "impacto_equivalente_label": "6,2",
     "parceiros": [
       {
         "nome": "Rubemar Ribeiro",
@@ -2349,7 +2687,48 @@
         "n": 1
       }
     ],
-    "n_coletivas": 1
+    "n_coletivas": 1,
+    "vereador_ids": [
+      12
+    ],
+    "presencas": 37,
+    "pct_presenca": 15,
+    "votos_favor": 74,
+    "votos_contra": 0,
+    "abstencoes": 0,
+    "partido_camara": "PSD",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      }
+    ]
   },
   {
     "id": 142,
@@ -2436,35 +2815,44 @@
     },
     "impacto_equivalente_label": "57,0",
     "parceiros": [],
-    "n_coletivas": 0
+    "n_coletivas": 0,
+    "vereador_ids": [],
+    "presencas": 0,
+    "pct_presenca": 0,
+    "votos_favor": 0,
+    "votos_contra": 0,
+    "abstencoes": 0,
+    "partido_camara": "",
+    "ultimas_sessoes": []
   },
   {
     "id": 28,
     "nome": "Fabrícia do Sindicato",
     "slug": "fabricia-do-sindicato",
-    "n_proposicoes": 47,
+    "n_proposicoes": 50,
     "stats": {
-      "total": 47,
+      "total": 50,
       "aprovadas": 17,
       "rejeitadas": 0,
       "com_situacao": 24,
       "taxa_aprovacao": 71,
       "by_year": {
         "2023": 8,
-        "2024": 8,
-        "2025": 12,
+        "2024": 9,
+        "2025": 14,
         "2026": 19
       },
       "by_tipo": {
         "Indicação": 28,
         "Moção": 13,
         "Projeto de Decreto Legislativo": 3,
-        "Projeto de Resolução": 2,
-        "Requerimento": 1
+        "Projeto de Lei do Legislativo": 2,
+        "Requerimento": 2,
+        "Projeto de Resolução": 2
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 23,
+        "nao_informada": 26,
         "Proposição aprovada": 17,
         "Proposição inclusa na Ordem do Dia": 6,
         "Proposição retirada da Ordem do Dia": 1
@@ -2473,10 +2861,10 @@
         "Indicação": 28,
         "Pesar": 9,
         "Aplauso": 4,
+        "Projeto normativo": 3,
+        "Procedimento regimental": 3,
         "Homenagem ou título": 2,
-        "Procedimento regimental": 2,
-        "Informação e fiscalização": 1,
-        "Projeto normativo": 1
+        "Informação e fiscalização": 1
       },
       "by_tema": {
         "Infraestrutura viária": 6,
@@ -2576,30 +2964,31 @@
     "nome_tse_display": "Fabricia Lorena Melo Durans",
     "og_image": "/og/v/fabricia-do-sindicato.jpg",
     "impacto": {
-      "n_total": 47,
-      "n_exclusiva": 21,
+      "n_total": 50,
+      "n_exclusiva": 23,
       "n_dupla": 0,
-      "n_trio": 1,
+      "n_trio": 2,
       "n_coletiva": 0,
       "n_ampla": 25,
-      "autoria_equivalente": 22.83600713012477,
-      "taxa_exclusividade": 0.44680851063829785,
-      "peso_medio": 0.48587249213031425,
+      "autoria_equivalente": 25.169340463458102,
+      "taxa_exclusividade": 0.46,
+      "peso_medio": 0.503386809269162,
       "familias": {},
       "tipos": {
         "Indicação": 28,
         "Moção": 13,
         "Projeto de Decreto Legislativo": 3,
-        "Requerimento": 1,
+        "Projeto de Lei do Legislativo": 2,
+        "Requerimento": 2,
         "Projeto de Resolução": 2
       },
       "coautores": [
         {
-          "nome": "Lucas do Beiradão",
-          "n": 25
+          "nome": "Rubemar Ribeiro",
+          "n": 26
         },
         {
-          "nome": "Rubemar Ribeiro",
+          "nome": "Lucas do Beiradão",
           "n": 25
         },
         {
@@ -2637,21 +3026,21 @@
       ],
       "anos": {
         "2026": 19,
-        "2025": 12,
-        "2024": 8,
+        "2025": 14,
+        "2024": 9,
         "2023": 8
       }
     },
-    "impacto_equivalente_label": "22,8",
+    "impacto_equivalente_label": "25,2",
     "parceiros": [
-      {
-        "nome": "Lucas do Beiradão",
-        "slug": "lucas-do-beiradao",
-        "n": 25
-      },
       {
         "nome": "Rubemar Ribeiro",
         "slug": "rubemar-ribeiro",
+        "n": 26
+      },
+      {
+        "nome": "Lucas do Beiradão",
+        "slug": "lucas-do-beiradao",
         "n": 25
       },
       {
@@ -2695,7 +3084,48 @@
         "n": 14
       }
     ],
-    "n_coletivas": 25
+    "n_coletivas": 25,
+    "vereador_ids": [
+      13
+    ],
+    "presencas": 164,
+    "pct_presenca": 67,
+    "votos_favor": 279,
+    "votos_contra": 2,
+    "abstencoes": 1,
+    "partido_camara": "PSD",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      },
+      {
+        "slug": "2026-11-10-ordinaria-071",
+        "data": "2026-11-10",
+        "tipo": "Ordinária",
+        "numero": 71
+      }
+    ]
   },
   {
     "id": 36,
@@ -2927,34 +3357,77 @@
         "n": 14
       }
     ],
-    "n_coletivas": 14
+    "n_coletivas": 14,
+    "vereador_ids": [
+      14
+    ],
+    "presencas": 46,
+    "pct_presenca": 19,
+    "votos_favor": 81,
+    "votos_contra": 2,
+    "abstencoes": 2,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2024-12-17-ordinaria-059",
+        "data": "2024-12-17",
+        "tipo": "Ordinária",
+        "numero": 59
+      },
+      {
+        "slug": "2024-12-11-ordinaria-058",
+        "data": "2024-12-11",
+        "tipo": "Ordinária",
+        "numero": 58
+      },
+      {
+        "slug": "2024-12-10-ordinaria-057",
+        "data": "2024-12-10",
+        "tipo": "Ordinária",
+        "numero": 57
+      },
+      {
+        "slug": "2024-12-03-ordinaria-055",
+        "data": "2024-12-03",
+        "tipo": "Ordinária",
+        "numero": 55
+      },
+      {
+        "slug": "2024-11-26-ordinaria-054",
+        "data": "2024-11-26",
+        "tipo": "Ordinária",
+        "numero": 54
+      }
+    ]
   },
   {
     "id": 1215,
     "nome": "Gury",
     "slug": "gury",
-    "n_proposicoes": 16,
+    "n_proposicoes": 17,
     "stats": {
-      "total": 16,
+      "total": 17,
       "aprovadas": 2,
       "rejeitadas": 0,
       "com_situacao": 2,
       "taxa_aprovacao": 100,
       "by_year": {
-        "2025": 16
+        "2025": 17
       },
       "by_tipo": {
         "Indicação": 14,
-        "Moção": 2
+        "Moção": 2,
+        "Projeto de Decreto Legislativo": 1
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 14,
+        "nao_informada": 15,
         "Proposição aprovada": 2
       },
       "by_classe": {
         "Indicação": 14,
-        "Pesar": 2
+        "Pesar": 2,
+        "Projeto normativo": 1
       },
       "by_tema": {
         "Infraestrutura viária": 4,
@@ -3028,58 +3501,100 @@
     "nome_tse_display": "José Magno Ramalho Froz",
     "og_image": "/og/v/gury.jpg",
     "impacto": {
-      "n_total": 16,
-      "n_exclusiva": 16,
+      "n_total": 17,
+      "n_exclusiva": 17,
       "n_dupla": 0,
       "n_trio": 0,
       "n_coletiva": 0,
       "n_ampla": 0,
-      "autoria_equivalente": 16.0,
+      "autoria_equivalente": 17.0,
       "taxa_exclusividade": 1.0,
       "peso_medio": 1.0,
       "familias": {},
       "tipos": {
+        "Projeto de Decreto Legislativo": 1,
         "Moção": 2,
         "Indicação": 14
       },
       "coautores": [],
       "anos": {
-        "2025": 16
+        "2025": 17
       }
     },
-    "impacto_equivalente_label": "16,0",
+    "impacto_equivalente_label": "17,0",
     "parceiros": [],
-    "n_coletivas": 0
+    "n_coletivas": 0,
+    "vereador_ids": [
+      28
+    ],
+    "presencas": 28,
+    "pct_presenca": 11,
+    "votos_favor": 60,
+    "votos_contra": 0,
+    "abstencoes": 0,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2025-12-03-ordinaria-078",
+        "data": "2025-12-03",
+        "tipo": "Ordinária",
+        "numero": 78
+      },
+      {
+        "slug": "2025-12-02-ordinaria-077",
+        "data": "2025-12-02",
+        "tipo": "Ordinária",
+        "numero": 77
+      },
+      {
+        "slug": "2025-11-25-ordinaria-075",
+        "data": "2025-11-25",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2025-11-19-ordinaria-074",
+        "data": "2025-11-19",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2025-11-18-ordinaria-073",
+        "data": "2025-11-18",
+        "tipo": "Ordinária",
+        "numero": 73
+      }
+    ]
   },
   {
     "id": 89,
     "nome": "Guto",
     "slug": "guto",
-    "n_proposicoes": 65,
+    "n_proposicoes": 67,
     "stats": {
-      "total": 65,
-      "aprovadas": 26,
+      "total": 67,
+      "aprovadas": 27,
       "rejeitadas": 0,
-      "com_situacao": 41,
-      "taxa_aprovacao": 63,
+      "com_situacao": 42,
+      "taxa_aprovacao": 64,
       "by_year": {
         "2023": 10,
-        "2024": 9,
-        "2025": 23,
+        "2024": 10,
+        "2025": 24,
         "2026": 23
       },
       "by_tipo": {
         "Moção": 26,
         "Indicação": 25,
-        "Projeto de Decreto Legislativo": 4,
+        "Projeto de Decreto Legislativo": 6,
         "Projeto de Resolução": 4,
         "Requerimento": 3,
         "Projeto de Lei do Legislativo": 3
       },
       "by_familia": {},
       "by_situacao": {
-        "Proposição aprovada": 26,
-        "nao_informada": 24,
+        "Proposição aprovada": 27,
+        "nao_informada": 25,
         "Proposição inclusa na Ordem do Dia": 13,
         "Proposição retirada da Ordem do Dia": 2
       },
@@ -3087,7 +3602,7 @@
         "Indicação": 25,
         "Pesar": 13,
         "Aplauso": 12,
-        "Projeto normativo": 6,
+        "Projeto normativo": 8,
         "Homenagem ou título": 3,
         "Outro ato": 2,
         "Procedimento regimental": 2,
@@ -3193,18 +3708,18 @@
     "nome_tse_display": "Augusto Vinícius Martins de Araujo",
     "og_image": "/og/v/guto.jpg",
     "impacto": {
-      "n_total": 65,
-      "n_exclusiva": 35,
+      "n_total": 67,
+      "n_exclusiva": 36,
       "n_dupla": 1,
-      "n_trio": 0,
+      "n_trio": 1,
       "n_coletiva": 7,
       "n_ampla": 22,
-      "autoria_equivalente": 38.423389355742316,
-      "taxa_exclusividade": 0.5384615384615384,
-      "peso_medio": 0.5911290670114202,
+      "autoria_equivalente": 39.756722689075666,
+      "taxa_exclusividade": 0.5373134328358209,
+      "peso_medio": 0.5933839207324726,
       "familias": {},
       "tipos": {
-        "Projeto de Decreto Legislativo": 4,
+        "Projeto de Decreto Legislativo": 6,
         "Requerimento": 3,
         "Moção": 26,
         "Indicação": 25,
@@ -3214,7 +3729,7 @@
       "coautores": [
         {
           "nome": "Edinildo",
-          "n": 29
+          "n": 30
         },
         {
           "nome": "Jaelson Araújo",
@@ -3242,7 +3757,7 @@
         },
         {
           "nome": "Abdias de Jesus",
-          "n": 17
+          "n": 18
         },
         {
           "nome": "Enesio Ferreira",
@@ -3255,17 +3770,17 @@
       ],
       "anos": {
         "2026": 23,
-        "2025": 23,
-        "2024": 9,
+        "2025": 24,
+        "2024": 10,
         "2023": 10
       }
     },
-    "impacto_equivalente_label": "38,4",
+    "impacto_equivalente_label": "39,8",
     "parceiros": [
       {
         "nome": "Edinildo",
         "slug": "edinildo",
-        "n": 29
+        "n": 30
       },
       {
         "nome": "Jaelson Araújo",
@@ -3300,7 +3815,7 @@
       {
         "nome": "Abdias de Jesus",
         "slug": "abdias-de-jesus",
-        "n": 17
+        "n": 18
       },
       {
         "nome": "Enesio Ferreira",
@@ -3313,55 +3828,96 @@
         "n": 13
       }
     ],
-    "n_coletivas": 29
+    "n_coletivas": 29,
+    "vereador_ids": [
+      6
+    ],
+    "presencas": 137,
+    "pct_presenca": 56,
+    "votos_favor": 225,
+    "votos_contra": 2,
+    "abstencoes": 2,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-05-20-ordinaria-027",
+        "data": "2026-05-20",
+        "tipo": "Ordinária",
+        "numero": 27
+      },
+      {
+        "slug": "2026-05-19-ordinaria-026",
+        "data": "2026-05-19",
+        "tipo": "Ordinária",
+        "numero": 26
+      },
+      {
+        "slug": "2026-05-12-ordinaria-024",
+        "data": "2026-05-12",
+        "tipo": "Ordinária",
+        "numero": 24
+      },
+      {
+        "slug": "2026-05-06-ordinaria-023",
+        "data": "2026-05-06",
+        "tipo": "Ordinária",
+        "numero": 23
+      },
+      {
+        "slug": "2026-05-05-ordinaria-022",
+        "data": "2026-05-05",
+        "tipo": "Ordinária",
+        "numero": 22
+      }
+    ]
   },
   {
     "id": 1,
     "nome": "Herasmo Leite",
     "slug": "herasmo-leite",
-    "n_proposicoes": 539,
+    "n_proposicoes": 589,
     "stats": {
-      "total": 539,
-      "aprovadas": 83,
+      "total": 589,
+      "aprovadas": 84,
       "rejeitadas": 1,
-      "com_situacao": 110,
-      "taxa_aprovacao": 75,
+      "com_situacao": 111,
+      "taxa_aprovacao": 76,
       "by_year": {
         "2002": 1,
         "2021": 2,
         "2022": 1,
-        "2023": 36,
+        "2023": 37,
         "2024": 103,
-        "2025": 233,
-        "2026": 163
+        "2025": 244,
+        "2026": 201
       },
       "by_tipo": {
-        "Indicação": 451,
+        "Indicação": 483,
+        "Projeto de Lei do Legislativo": 44,
         "Moção": 33,
-        "Projeto de Lei do Legislativo": 31,
-        "Requerimento": 14,
-        "Projeto de Decreto Legislativo": 6,
+        "Requerimento": 16,
+        "Projeto de Decreto Legislativo": 9,
         "Projeto de Resolução": 2,
         "Emenda ao Projeto de Lei Ordinária": 1,
         "Projeto de Lei Ordinária": 1
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 429,
-        "Proposição aprovada": 83,
+        "nao_informada": 478,
+        "Proposição aprovada": 84,
         "Proposição inclusa na Ordem do Dia": 18,
         "Proposição retirada da Ordem do Dia": 8,
         "Proposição rejeitada pelo Plenário": 1
       },
       "by_classe": {
-        "Indicação": 451,
-        "Projeto normativo": 34,
+        "Indicação": 483,
+        "Projeto normativo": 50,
         "Parabenização": 14,
         "Pesar": 13,
         "Convite ou convocação": 12,
         "Homenagem ou título": 6,
         "Aplauso": 5,
-        "Procedimento regimental": 2,
+        "Procedimento regimental": 4,
         "Outro ato": 2
       },
       "by_tema": {
@@ -3595,22 +4151,22 @@
     "nome_tse_display": "Herasmo Leite Soares",
     "og_image": "/og/v/herasmo-leite.jpg",
     "impacto": {
-      "n_total": 539,
-      "n_exclusiva": 509,
+      "n_total": 589,
+      "n_exclusiva": 559,
       "n_dupla": 3,
       "n_trio": 2,
       "n_coletiva": 0,
       "n_ampla": 25,
-      "autoria_equivalente": 512.6784313725491,
-      "taxa_exclusividade": 0.9443413729128015,
-      "peso_medio": 0.9511659209138202,
+      "autoria_equivalente": 562.6784313725486,
+      "taxa_exclusividade": 0.9490662139219015,
+      "peso_medio": 0.9553114284763135,
       "familias": {},
       "tipos": {
+        "Indicação": 483,
+        "Projeto de Decreto Legislativo": 9,
+        "Requerimento": 16,
+        "Projeto de Lei do Legislativo": 44,
         "Moção": 33,
-        "Indicação": 451,
-        "Projeto de Lei do Legislativo": 31,
-        "Requerimento": 14,
-        "Projeto de Decreto Legislativo": 6,
         "Projeto de Resolução": 2,
         "Emenda ao Projeto de Lei Ordinária": 1,
         "Projeto de Lei Ordinária": 1
@@ -3658,16 +4214,16 @@
         }
       ],
       "anos": {
-        "2026": 163,
-        "2025": 233,
+        "2026": 201,
+        "2025": 244,
         "2024": 103,
-        "2023": 36,
+        "2023": 37,
         "2022": 1,
         "2021": 2,
         "2002": 1
       }
     },
-    "impacto_equivalente_label": "512,7",
+    "impacto_equivalente_label": "562,7",
     "parceiros": [
       {
         "nome": "Edinildo",
@@ -3720,7 +4276,48 @@
         "n": 15
       }
     ],
-    "n_coletivas": 25
+    "n_coletivas": 25,
+    "vereador_ids": [
+      16
+    ],
+    "presencas": 192,
+    "pct_presenca": 78,
+    "votos_favor": 337,
+    "votos_contra": 7,
+    "abstencoes": 0,
+    "partido_camara": "PSD",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      }
+    ]
   },
   {
     "id": 10,
@@ -3999,7 +4596,50 @@
         "n": 15
       }
     ],
-    "n_coletivas": 29
+    "n_coletivas": 29,
+    "vereador_ids": [
+      17,
+      18,
+      19
+    ],
+    "presencas": 116,
+    "pct_presenca": 47,
+    "votos_favor": 231,
+    "votos_contra": 1,
+    "abstencoes": 0,
+    "partido_camara": "PSD",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-04-ordinaria-070",
+        "data": "2026-11-04",
+        "tipo": "Ordinária",
+        "numero": 70
+      },
+      {
+        "slug": "2026-10-14-ordinaria-064",
+        "data": "2026-10-14",
+        "tipo": "Ordinária",
+        "numero": 64
+      },
+      {
+        "slug": "2026-10-13-ordinaria-063",
+        "data": "2026-10-13",
+        "tipo": "Ordinária",
+        "numero": 63
+      },
+      {
+        "slug": "2026-10-07-solene-001",
+        "data": "2026-10-07",
+        "tipo": "Solene",
+        "numero": 1
+      },
+      {
+        "slug": "2026-10-01-extraordinaria-062",
+        "data": "2026-10-01",
+        "tipo": "Extraordinária",
+        "numero": 62
+      }
+    ]
   },
   {
     "id": 40,
@@ -4198,15 +4838,56 @@
         "n": 8
       }
     ],
-    "n_coletivas": 8
+    "n_coletivas": 8,
+    "vereador_ids": [
+      23
+    ],
+    "presencas": 27,
+    "pct_presenca": 11,
+    "votos_favor": 48,
+    "votos_contra": 1,
+    "abstencoes": 0,
+    "partido_camara": "PL",
+    "ultimas_sessoes": [
+      {
+        "slug": "2024-03-26-ordinaria-011",
+        "data": "2024-03-26",
+        "tipo": "Ordinária",
+        "numero": 11
+      },
+      {
+        "slug": "2024-03-20-ordinaria-010",
+        "data": "2024-03-20",
+        "tipo": "Ordinária",
+        "numero": 10
+      },
+      {
+        "slug": "2024-03-19-ordinaria-009",
+        "data": "2024-03-19",
+        "tipo": "Ordinária",
+        "numero": 9
+      },
+      {
+        "slug": "2024-03-13-ordinaria-008",
+        "data": "2024-03-13",
+        "tipo": "Ordinária",
+        "numero": 8
+      },
+      {
+        "slug": "2024-03-05-ordinaria-005",
+        "data": "2024-03-05",
+        "tipo": "Ordinária",
+        "numero": 5
+      }
+    ]
   },
   {
     "id": 5,
     "nome": "João do Vale",
     "slug": "joao-do-vale",
-    "n_proposicoes": 169,
+    "n_proposicoes": 175,
     "stats": {
-      "total": 169,
+      "total": 175,
       "aprovadas": 26,
       "rejeitadas": 0,
       "com_situacao": 30,
@@ -4215,10 +4896,10 @@
         "2002": 1,
         "2023": 12,
         "2025": 87,
-        "2026": 69
+        "2026": 75
       },
       "by_tipo": {
-        "Indicação": 151,
+        "Indicação": 157,
         "Moção": 12,
         "Projeto de Decreto Legislativo": 2,
         "Emenda à Lei Orgânica": 1,
@@ -4228,12 +4909,12 @@
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 139,
+        "nao_informada": 145,
         "Proposição aprovada": 26,
         "Proposição inclusa na Ordem do Dia": 4
       },
       "by_classe": {
-        "Indicação": 151,
+        "Indicação": 157,
         "Aplauso": 6,
         "Pesar": 6,
         "Procedimento regimental": 2,
@@ -4383,18 +5064,18 @@
     "nome_tse_display": "João José Martins Frazão",
     "og_image": "/og/v/joao-do-vale.jpg",
     "impacto": {
-      "n_total": 169,
-      "n_exclusiva": 150,
+      "n_total": 175,
+      "n_exclusiva": 156,
       "n_dupla": 0,
       "n_trio": 3,
       "n_coletiva": 1,
       "n_ampla": 15,
-      "autoria_equivalente": 152.06990068754777,
-      "taxa_exclusividade": 0.8875739644970414,
-      "peso_medio": 0.8998218975594543,
+      "autoria_equivalente": 158.0699006875478,
+      "taxa_exclusividade": 0.8914285714285715,
+      "peso_medio": 0.903256575357416,
       "familias": {},
       "tipos": {
-        "Indicação": 151,
+        "Indicação": 157,
         "Emenda à Lei Orgânica": 1,
         "Moção": 12,
         "Projeto de Decreto Legislativo": 2,
@@ -4445,13 +5126,13 @@
         }
       ],
       "anos": {
-        "2026": 69,
+        "2026": 75,
         "2025": 87,
         "2023": 12,
         "2002": 1
       }
     },
-    "impacto_equivalente_label": "152,1",
+    "impacto_equivalente_label": "158,1",
     "parceiros": [
       {
         "nome": "Jaelson Araújo",
@@ -4504,41 +5185,87 @@
         "n": 13
       }
     ],
-    "n_coletivas": 16
+    "n_coletivas": 16,
+    "vereador_ids": [
+      20,
+      21,
+      22
+    ],
+    "presencas": 159,
+    "pct_presenca": 65,
+    "votos_favor": 280,
+    "votos_contra": 2,
+    "abstencoes": 1,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      }
+    ]
   },
   {
     "id": 663,
     "nome": "Keimilson Guterres",
     "slug": "keimilson-guterres",
-    "n_proposicoes": 59,
+    "n_proposicoes": 68,
     "stats": {
-      "total": 59,
-      "aprovadas": 18,
+      "total": 68,
+      "aprovadas": 19,
       "rejeitadas": 0,
-      "com_situacao": 22,
-      "taxa_aprovacao": 82,
+      "com_situacao": 23,
+      "taxa_aprovacao": 83,
       "by_year": {
-        "2025": 19,
-        "2026": 40
+        "2025": 22,
+        "2026": 46
       },
       "by_tipo": {
-        "Indicação": 37,
+        "Indicação": 43,
         "Moção": 20,
-        "Projeto de Decreto Legislativo": 1,
-        "Requerimento": 1
+        "Projeto de Lei do Legislativo": 2,
+        "Requerimento": 2,
+        "Projeto de Decreto Legislativo": 1
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 37,
-        "Proposição aprovada": 18,
+        "nao_informada": 45,
+        "Proposição aprovada": 19,
         "Proposição inclusa na Ordem do Dia": 4
       },
       "by_classe": {
-        "Indicação": 37,
+        "Indicação": 43,
         "Aplauso": 10,
         "Pesar": 9,
+        "Projeto normativo": 2,
         "Homenagem ou título": 1,
         "Agradecimento": 1,
+        "Procedimento regimental": 1,
         "Convite ou convocação": 1
       },
       "by_tema": {
@@ -4627,21 +5354,22 @@
     "nome_tse_display": "Keimilson Sodré Guterres",
     "og_image": "/og/v/keimilson-guterres.jpg",
     "impacto": {
-      "n_total": 59,
-      "n_exclusiva": 41,
+      "n_total": 68,
+      "n_exclusiva": 50,
       "n_dupla": 2,
       "n_trio": 5,
       "n_coletiva": 0,
       "n_ampla": 11,
-      "autoria_equivalente": 44.326330532212886,
-      "taxa_exclusividade": 0.6949152542372882,
-      "peso_medio": 0.7512937378341167,
+      "autoria_equivalente": 53.32633053221289,
+      "taxa_exclusividade": 0.7352941176470589,
+      "peso_medio": 0.7842107431207779,
       "familias": {},
       "tipos": {
+        "Indicação": 43,
         "Moção": 20,
-        "Indicação": 37,
         "Projeto de Decreto Legislativo": 1,
-        "Requerimento": 1
+        "Projeto de Lei do Legislativo": 2,
+        "Requerimento": 2
       },
       "coautores": [
         {
@@ -4686,11 +5414,11 @@
         }
       ],
       "anos": {
-        "2026": 40,
-        "2025": 19
+        "2026": 46,
+        "2025": 22
       }
     },
-    "impacto_equivalente_label": "44,3",
+    "impacto_equivalente_label": "53,3",
     "parceiros": [
       {
         "nome": "Enesio Ferreira",
@@ -4743,7 +5471,49 @@
         "n": 11
       }
     ],
-    "n_coletivas": 11
+    "n_coletivas": 11,
+    "vereador_ids": [
+      32,
+      33
+    ],
+    "presencas": 135,
+    "pct_presenca": 55,
+    "votos_favor": 245,
+    "votos_contra": 2,
+    "abstencoes": 0,
+    "partido_camara": "PDT",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      }
+    ]
   },
   {
     "id": 407,
@@ -4944,30 +5714,185 @@
         "n": 3
       }
     ],
-    "n_coletivas": 3
+    "n_coletivas": 3,
+    "vereador_ids": [
+      35
+    ],
+    "presencas": 9,
+    "pct_presenca": 4,
+    "votos_favor": 16,
+    "votos_contra": 0,
+    "abstencoes": 0,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2024-07-10-ordinaria-036",
+        "data": "2024-07-10",
+        "tipo": "Ordinária",
+        "numero": 36
+      },
+      {
+        "slug": "2024-06-25-ordinaria-032",
+        "data": "2024-06-25",
+        "tipo": "Ordinária",
+        "numero": 32
+      },
+      {
+        "slug": "2024-06-12-ordinaria-029",
+        "data": "2024-06-12",
+        "tipo": "Ordinária",
+        "numero": 29
+      },
+      {
+        "slug": "2024-06-04-ordinaria-027",
+        "data": "2024-06-04",
+        "tipo": "Ordinária",
+        "numero": 27
+      },
+      {
+        "slug": "2024-05-28-ordinaria-025",
+        "data": "2024-05-28",
+        "tipo": "Ordinária",
+        "numero": 25
+      }
+    ]
+  },
+  {
+    "id": 3448,
+    "nome": "Lindoarte de Sousa Ferreira",
+    "slug": "lindoarte-de-sousa-ferreira",
+    "n_proposicoes": 3,
+    "stats": {
+      "total": 3,
+      "aprovadas": 0,
+      "rejeitadas": 0,
+      "com_situacao": 0,
+      "taxa_aprovacao": 0,
+      "by_year": {
+        "2026": 3
+      },
+      "by_tipo": {
+        "Indicação": 3
+      },
+      "by_familia": {},
+      "by_situacao": {
+        "nao_informada": 3
+      },
+      "by_classe": {
+        "Indicação": 3
+      },
+      "by_tema": {},
+      "by_objeto": {},
+      "by_local": {}
+    },
+    "nome_tse": null,
+    "nome_urna": null,
+    "partido": null,
+    "cargo": null,
+    "votos": null,
+    "situacao_tse": null,
+    "eleito": null,
+    "fonte_url": null,
+    "ano_tse": null,
+    "situacao_tse_label": "",
+    "situacao_tse_ajuda": "",
+    "nome_urna_display": "",
+    "nome_urna_igual": false,
+    "destaques": [],
+    "mandatos": [],
+    "legislaturas": [],
+    "atual": false,
+    "anterior": false,
+    "foto": "",
+    "foto_ano": null,
+    "nome_tse_display": "",
+    "og_image": "/og/v/lindoarte-de-sousa-ferreira.jpg",
+    "impacto": {
+      "n_total": 3,
+      "n_exclusiva": 3,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 0,
+      "autoria_equivalente": 3.0,
+      "taxa_exclusividade": 1.0,
+      "peso_medio": 1.0,
+      "familias": {},
+      "tipos": {
+        "Indicação": 3
+      },
+      "coautores": [],
+      "anos": {
+        "2026": 3
+      }
+    },
+    "impacto_equivalente_label": "3,0",
+    "parceiros": [],
+    "n_coletivas": 0,
+    "vereador_ids": [
+      34
+    ],
+    "presencas": 14,
+    "pct_presenca": 6,
+    "votos_favor": 30,
+    "votos_contra": 0,
+    "abstencoes": 0,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-09-29-ordinaria-060",
+        "data": "2026-09-29",
+        "tipo": "Ordinária",
+        "numero": 60
+      },
+      {
+        "slug": "2026-09-22-ordinaria-058",
+        "data": "2026-09-22",
+        "tipo": "Ordinária",
+        "numero": 58
+      },
+      {
+        "slug": "2026-09-09-ordinaria-055",
+        "data": "2026-09-09",
+        "tipo": "Ordinária",
+        "numero": 55
+      },
+      {
+        "slug": "2026-09-08-ordinaria-054",
+        "data": "2026-09-08",
+        "tipo": "Ordinária",
+        "numero": 54
+      },
+      {
+        "slug": "2026-09-02-ordinaria-053",
+        "data": "2026-09-02",
+        "tipo": "Ordinária",
+        "numero": 53
+      }
+    ]
   },
   {
     "id": 13,
     "nome": "Lucas do Beiradão",
     "slug": "lucas-do-beiradao",
-    "n_proposicoes": 60,
+    "n_proposicoes": 64,
     "stats": {
-      "total": 60,
-      "aprovadas": 23,
+      "total": 64,
+      "aprovadas": 24,
       "rejeitadas": 0,
-      "com_situacao": 49,
-      "taxa_aprovacao": 47,
+      "com_situacao": 50,
+      "taxa_aprovacao": 48,
       "by_year": {
-        "2023": 17,
-        "2024": 29,
+        "2023": 18,
+        "2024": 30,
         "2025": 4,
-        "2026": 10
+        "2026": 12
       },
       "by_tipo": {
-        "Indicação": 17,
+        "Indicação": 19,
         "Moção": 16,
         "Projeto de Decreto Legislativo": 12,
-        "Projeto de Lei do Legislativo": 6,
+        "Projeto de Lei do Legislativo": 8,
         "Projeto de Resolução": 4,
         "Requerimento": 3,
         "Emenda ao Projeto de Lei Ordinária": 1,
@@ -4975,15 +5900,15 @@
       },
       "by_familia": {},
       "by_situacao": {
-        "Proposição aprovada": 23,
+        "Proposição aprovada": 24,
         "Proposição inclusa na Ordem do Dia": 21,
-        "nao_informada": 11,
+        "nao_informada": 14,
         "Proposição retirada da Ordem do Dia": 5
       },
       "by_classe": {
-        "Indicação": 17,
+        "Indicação": 19,
         "Pesar": 12,
-        "Projeto normativo": 10,
+        "Projeto normativo": 12,
         "Homenagem ou título": 7,
         "Informação e fiscalização": 6,
         "Aplauso": 4,
@@ -5080,23 +6005,23 @@
     "nome_tse_display": "José Lucas Pereira Fernandes",
     "og_image": "/og/v/lucas-do-beiradao.jpg",
     "impacto": {
-      "n_total": 60,
-      "n_exclusiva": 31,
+      "n_total": 64,
+      "n_exclusiva": 35,
       "n_dupla": 1,
       "n_trio": 1,
       "n_coletiva": 0,
       "n_ampla": 27,
-      "autoria_equivalente": 33.50743570155336,
-      "taxa_exclusividade": 0.5166666666666667,
-      "peso_medio": 0.558457261692556,
+      "autoria_equivalente": 37.50743570155336,
+      "taxa_exclusividade": 0.546875,
+      "peso_medio": 0.5860536828367713,
       "familias": {},
       "tipos": {
+        "Indicação": 19,
         "Moção": 16,
         "Projeto de Decreto Legislativo": 12,
-        "Indicação": 17,
         "Requerimento": 3,
+        "Projeto de Lei do Legislativo": 8,
         "Projeto de Resolução": 4,
-        "Projeto de Lei do Legislativo": 6,
         "Emenda ao Projeto de Lei Ordinária": 1,
         "Projeto de Lei Ordinária": 1
       },
@@ -5143,13 +6068,13 @@
         }
       ],
       "anos": {
-        "2026": 10,
+        "2026": 12,
         "2025": 4,
-        "2024": 29,
-        "2023": 17
+        "2024": 30,
+        "2023": 18
       }
     },
-    "impacto_equivalente_label": "33,5",
+    "impacto_equivalente_label": "37,5",
     "parceiros": [
       {
         "nome": "Rubemar Ribeiro",
@@ -5202,39 +6127,80 @@
         "n": 15
       }
     ],
-    "n_coletivas": 27
+    "n_coletivas": 27,
+    "vereador_ids": [
+      27
+    ],
+    "presencas": 168,
+    "pct_presenca": 68,
+    "votos_favor": 197,
+    "votos_contra": 4,
+    "abstencoes": 2,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      },
+      {
+        "slug": "2026-11-10-ordinaria-071",
+        "data": "2026-11-10",
+        "tipo": "Ordinária",
+        "numero": 71
+      }
+    ]
   },
   {
     "id": 2197,
     "nome": "Oziel Menezes",
     "slug": "oziel-menezes",
-    "n_proposicoes": 13,
+    "n_proposicoes": 34,
     "stats": {
-      "total": 13,
+      "total": 34,
       "aprovadas": 5,
       "rejeitadas": 0,
       "com_situacao": 7,
       "taxa_aprovacao": 71,
       "by_year": {
-        "2026": 13
+        "2026": 34
       },
       "by_tipo": {
-        "Indicação": 6,
+        "Indicação": 26,
+        "Projeto de Decreto Legislativo": 3,
         "Moção": 2,
         "Projeto de Lei do Legislativo": 2,
-        "Projeto de Decreto Legislativo": 2,
         "Requerimento": 1
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 6,
+        "nao_informada": 27,
         "Proposição aprovada": 5,
         "Proposição inclusa na Ordem do Dia": 2
       },
       "by_classe": {
-        "Indicação": 6,
+        "Indicação": 26,
+        "Projeto normativo": 3,
         "Aplauso": 2,
-        "Projeto normativo": 2,
         "Homenagem ou título": 2,
         "Convite ou convocação": 1
       },
@@ -5302,57 +6268,98 @@
     "nome_tse_display": "Oziel Abreu Menezes",
     "og_image": "/og/v/oziel-menezes.jpg",
     "impacto": {
-      "n_total": 13,
-      "n_exclusiva": 11,
-      "n_dupla": 2,
+      "n_total": 34,
+      "n_exclusiva": 29,
+      "n_dupla": 5,
       "n_trio": 0,
       "n_coletiva": 0,
       "n_ampla": 0,
-      "autoria_equivalente": 12.0,
-      "taxa_exclusividade": 0.8461538461538461,
-      "peso_medio": 0.9230769230769231,
+      "autoria_equivalente": 31.5,
+      "taxa_exclusividade": 0.8529411764705882,
+      "peso_medio": 0.9264705882352942,
       "familias": {},
       "tipos": {
+        "Indicação": 26,
+        "Projeto de Decreto Legislativo": 3,
         "Requerimento": 1,
         "Moção": 2,
-        "Projeto de Lei do Legislativo": 2,
-        "Projeto de Decreto Legislativo": 2,
-        "Indicação": 6
+        "Projeto de Lei do Legislativo": 2
       },
       "coautores": [
         {
           "nome": "Edinildo",
-          "n": 2
+          "n": 5
         }
       ],
       "anos": {
-        "2026": 13
+        "2026": 34
       }
     },
-    "impacto_equivalente_label": "12,0",
+    "impacto_equivalente_label": "31,5",
     "parceiros": [
       {
         "nome": "Edinildo",
         "slug": "edinildo",
-        "n": 2
+        "n": 5
       }
     ],
-    "n_coletivas": 0
+    "n_coletivas": 0,
+    "vereador_ids": [
+      36
+    ],
+    "presencas": 45,
+    "pct_presenca": 18,
+    "votos_favor": 103,
+    "votos_contra": 0,
+    "abstencoes": 1,
+    "partido_camara": "PRD",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      }
+    ]
   },
   {
     "id": 4,
     "nome": "Paulinho Enfermeiro",
     "slug": "paulinho-enfermeiro",
-    "n_proposicoes": 47,
+    "n_proposicoes": 48,
     "stats": {
-      "total": 47,
-      "aprovadas": 16,
+      "total": 48,
+      "aprovadas": 17,
       "rejeitadas": 0,
-      "com_situacao": 24,
-      "taxa_aprovacao": 67,
+      "com_situacao": 25,
+      "taxa_aprovacao": 68,
       "by_year": {
         "2022": 1,
-        "2023": 19,
+        "2023": 20,
         "2024": 27
       },
       "by_tipo": {
@@ -5360,19 +6367,19 @@
         "Moção": 5,
         "Projeto de Resolução": 3,
         "Projeto de Decreto Legislativo": 3,
-        "Projeto de Lei Ordinária": 2,
-        "Projeto de Lei do Legislativo": 1
+        "Projeto de Lei do Legislativo": 2,
+        "Projeto de Lei Ordinária": 2
       },
       "by_familia": {},
       "by_situacao": {
         "nao_informada": 23,
-        "Proposição aprovada": 16,
+        "Proposição aprovada": 17,
         "Proposição inclusa na Ordem do Dia": 7,
         "Proposição retirada da Ordem do Dia": 1
       },
       "by_classe": {
         "Indicação": 33,
-        "Projeto normativo": 5,
+        "Projeto normativo": 6,
         "Pesar": 5,
         "Homenagem ou título": 3,
         "Procedimento regimental": 1
@@ -5458,22 +6465,22 @@
     "nome_tse_display": "Paulo Henrique Trinta Marques",
     "og_image": "/og/v/paulinho-enfermeiro.jpg",
     "impacto": {
-      "n_total": 47,
-      "n_exclusiva": 31,
+      "n_total": 48,
+      "n_exclusiva": 32,
       "n_dupla": 1,
       "n_trio": 1,
       "n_coletiva": 0,
       "n_ampla": 14,
-      "autoria_equivalente": 32.65686274509804,
-      "taxa_exclusividade": 0.6595744680851063,
-      "peso_medio": 0.6948268669169796,
+      "autoria_equivalente": 33.65686274509804,
+      "taxa_exclusividade": 0.6666666666666666,
+      "peso_medio": 0.7011846405228758,
       "familias": {},
       "tipos": {
         "Projeto de Resolução": 3,
         "Moção": 5,
         "Projeto de Decreto Legislativo": 3,
         "Indicação": 33,
-        "Projeto de Lei do Legislativo": 1,
+        "Projeto de Lei do Legislativo": 2,
         "Projeto de Lei Ordinária": 2
       },
       "coautores": [
@@ -5520,11 +6527,11 @@
       ],
       "anos": {
         "2024": 27,
-        "2023": 19,
+        "2023": 20,
         "2022": 1
       }
     },
-    "impacto_equivalente_label": "32,7",
+    "impacto_equivalente_label": "33,7",
     "parceiros": [
       {
         "nome": "Lucas do Beiradão",
@@ -5577,7 +6584,49 @@
         "n": 14
       }
     ],
-    "n_coletivas": 14
+    "n_coletivas": 14,
+    "vereador_ids": [
+      37,
+      38
+    ],
+    "presencas": 60,
+    "pct_presenca": 24,
+    "votos_favor": 91,
+    "votos_contra": 1,
+    "abstencoes": 2,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2024-12-17-ordinaria-059",
+        "data": "2024-12-17",
+        "tipo": "Ordinária",
+        "numero": 59
+      },
+      {
+        "slug": "2024-12-11-ordinaria-058",
+        "data": "2024-12-11",
+        "tipo": "Ordinária",
+        "numero": 58
+      },
+      {
+        "slug": "2024-12-10-ordinaria-057",
+        "data": "2024-12-10",
+        "tipo": "Ordinária",
+        "numero": 57
+      },
+      {
+        "slug": "2024-12-03-ordinaria-055",
+        "data": "2024-12-03",
+        "tipo": "Ordinária",
+        "numero": 55
+      },
+      {
+        "slug": "2024-11-26-ordinaria-054",
+        "data": "2024-11-26",
+        "tipo": "Ordinária",
+        "numero": 54
+      }
+    ]
   },
   {
     "id": 3,
@@ -5824,28 +6873,69 @@
         "n": 14
       }
     ],
-    "n_coletivas": 16
+    "n_coletivas": 16,
+    "vereador_ids": [
+      42
+    ],
+    "presencas": 76,
+    "pct_presenca": 31,
+    "votos_favor": 117,
+    "votos_contra": 2,
+    "abstencoes": 4,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2024-12-18-ordinaria-060",
+        "data": "2024-12-18",
+        "tipo": "Ordinária",
+        "numero": 60
+      },
+      {
+        "slug": "2024-12-17-ordinaria-059",
+        "data": "2024-12-17",
+        "tipo": "Ordinária",
+        "numero": 59
+      },
+      {
+        "slug": "2024-12-11-ordinaria-058",
+        "data": "2024-12-11",
+        "tipo": "Ordinária",
+        "numero": 58
+      },
+      {
+        "slug": "2024-12-10-ordinaria-057",
+        "data": "2024-12-10",
+        "tipo": "Ordinária",
+        "numero": 57
+      },
+      {
+        "slug": "2024-12-04-ordinaria-056",
+        "data": "2024-12-04",
+        "tipo": "Ordinária",
+        "numero": 56
+      }
+    ]
   },
   {
     "id": 33,
     "nome": "Riba do Bom Viver",
     "slug": "riba-do-bom-viver",
-    "n_proposicoes": 14,
+    "n_proposicoes": 15,
     "stats": {
-      "total": 14,
+      "total": 15,
       "aprovadas": 7,
       "rejeitadas": 0,
       "com_situacao": 13,
       "taxa_aprovacao": 54,
       "by_year": {
         "2023": 6,
-        "2024": 8
+        "2024": 9
       },
       "by_tipo": {
         "Indicação": 6,
+        "Requerimento": 3,
         "Moção": 3,
         "Projeto de Resolução": 2,
-        "Requerimento": 2,
         "Projeto de Decreto Legislativo": 1
       },
       "by_familia": {},
@@ -5853,12 +6943,12 @@
         "Proposição aprovada": 7,
         "Proposição inclusa na Ordem do Dia": 3,
         "Proposição retirada da Ordem do Dia": 3,
-        "nao_informada": 1
+        "nao_informada": 2
       },
       "by_classe": {
         "Indicação": 6,
+        "Procedimento regimental": 3,
         "Pesar": 3,
-        "Procedimento regimental": 2,
         "Projeto normativo": 1,
         "Homenagem ou título": 1,
         "Convite ou convocação": 1
@@ -5942,24 +7032,32 @@
     "nome_tse_display": "José de Ribamar Brito",
     "og_image": "/og/v/riba-do-bom-viver.jpg",
     "impacto": {
-      "n_total": 14,
+      "n_total": 15,
       "n_exclusiva": 2,
       "n_dupla": 0,
-      "n_trio": 0,
+      "n_trio": 1,
       "n_coletiva": 1,
       "n_ampla": 11,
-      "autoria_equivalente": 2.8470588235294105,
-      "taxa_exclusividade": 0.14285714285714285,
-      "peso_medio": 0.20336134453781504,
+      "autoria_equivalente": 3.180392156862744,
+      "taxa_exclusividade": 0.13333333333333333,
+      "peso_medio": 0.2120261437908496,
       "familias": {},
       "tipos": {
+        "Requerimento": 3,
         "Projeto de Resolução": 2,
         "Moção": 3,
         "Projeto de Decreto Legislativo": 1,
-        "Indicação": 6,
-        "Requerimento": 2
+        "Indicação": 6
       },
       "coautores": [
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 12
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 12
+        },
         {
           "nome": "Albininho",
           "n": 12
@@ -5977,15 +7075,7 @@
           "n": 11
         },
         {
-          "nome": "Fabrícia do Sindicato",
-          "n": 11
-        },
-        {
           "nome": "Zé Filho",
-          "n": 11
-        },
-        {
-          "nome": "Rubemar Ribeiro",
           "n": 11
         },
         {
@@ -6002,12 +7092,22 @@
         }
       ],
       "anos": {
-        "2024": 8,
+        "2024": 9,
         "2023": 6
       }
     },
-    "impacto_equivalente_label": "2,8",
+    "impacto_equivalente_label": "3,2",
     "parceiros": [
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 12
+      },
+      {
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 12
+      },
       {
         "nome": "Albininho",
         "slug": "albininho",
@@ -6029,18 +7129,8 @@
         "n": 11
       },
       {
-        "nome": "Fabrícia do Sindicato",
-        "slug": "fabricia-do-sindicato",
-        "n": 11
-      },
-      {
         "nome": "Zé Filho",
         "slug": "ze-filho",
-        "n": 11
-      },
-      {
-        "nome": "Rubemar Ribeiro",
-        "slug": "rubemar-ribeiro",
         "n": 11
       },
       {
@@ -6059,44 +7149,87 @@
         "n": 11
       }
     ],
-    "n_coletivas": 12
+    "n_coletivas": 12,
+    "vereador_ids": [
+      26
+    ],
+    "presencas": 55,
+    "pct_presenca": 22,
+    "votos_favor": 86,
+    "votos_contra": 3,
+    "abstencoes": 0,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2024-12-18-ordinaria-060",
+        "data": "2024-12-18",
+        "tipo": "Ordinária",
+        "numero": 60
+      },
+      {
+        "slug": "2024-12-17-ordinaria-059",
+        "data": "2024-12-17",
+        "tipo": "Ordinária",
+        "numero": 59
+      },
+      {
+        "slug": "2024-12-11-ordinaria-058",
+        "data": "2024-12-11",
+        "tipo": "Ordinária",
+        "numero": 58
+      },
+      {
+        "slug": "2024-12-10-ordinaria-057",
+        "data": "2024-12-10",
+        "tipo": "Ordinária",
+        "numero": 57
+      },
+      {
+        "slug": "2024-12-04-ordinaria-056",
+        "data": "2024-12-04",
+        "tipo": "Ordinária",
+        "numero": 56
+      }
+    ]
   },
   {
     "id": 692,
     "nome": "Rodrigo Brasil",
     "slug": "rodrigo-brasil",
-    "n_proposicoes": 55,
+    "n_proposicoes": 59,
     "stats": {
-      "total": 55,
+      "total": 59,
       "aprovadas": 22,
       "rejeitadas": 0,
       "com_situacao": 25,
       "taxa_aprovacao": 88,
       "by_year": {
         "2025": 26,
-        "2026": 29
+        "2026": 33
       },
       "by_tipo": {
-        "Indicação": 30,
+        "Indicação": 32,
         "Moção": 18,
-        "Requerimento": 5,
-        "Projeto de Decreto Legislativo": 2
+        "Requerimento": 6,
+        "Projeto de Decreto Legislativo": 2,
+        "Projeto de Lei do Legislativo": 1
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 30,
+        "nao_informada": 34,
         "Proposição aprovada": 22,
         "Proposição inclusa na Ordem do Dia": 3
       },
       "by_classe": {
-        "Indicação": 30,
+        "Indicação": 32,
         "Pesar": 13,
         "Aplauso": 5,
+        "Procedimento regimental": 2,
         "Homenagem ou título": 2,
         "Convite ou convocação": 2,
+        "Projeto normativo": 1,
         "Informação e fiscalização": 1,
-        "Outro ato": 1,
-        "Procedimento regimental": 1
+        "Outro ato": 1
       },
       "by_tema": {
         "Saúde": 7,
@@ -6187,21 +7320,22 @@
     "nome_tse_display": "Rodrigo Brasil Rodrigues",
     "og_image": "/og/v/rodrigo-brasil.jpg",
     "impacto": {
-      "n_total": 55,
-      "n_exclusiva": 42,
+      "n_total": 59,
+      "n_exclusiva": 46,
       "n_dupla": 1,
       "n_trio": 0,
       "n_coletiva": 0,
       "n_ampla": 12,
-      "autoria_equivalente": 43.250572956455315,
-      "taxa_exclusividade": 0.7636363636363637,
-      "peso_medio": 0.786374053753733,
+      "autoria_equivalente": 47.250572956455315,
+      "taxa_exclusividade": 0.7796610169491526,
+      "peso_medio": 0.8008571687534799,
       "familias": {},
       "tipos": {
+        "Requerimento": 6,
+        "Indicação": 32,
+        "Projeto de Lei do Legislativo": 1,
         "Moção": 18,
-        "Indicação": 30,
-        "Projeto de Decreto Legislativo": 2,
-        "Requerimento": 5
+        "Projeto de Decreto Legislativo": 2
       },
       "coautores": [
         {
@@ -6246,11 +7380,11 @@
         }
       ],
       "anos": {
-        "2026": 29,
+        "2026": 33,
         "2025": 26
       }
     },
-    "impacto_equivalente_label": "43,3",
+    "impacto_equivalente_label": "47,3",
     "parceiros": [
       {
         "nome": "Lucas do Beiradão",
@@ -6303,47 +7437,88 @@
         "n": 11
       }
     ],
-    "n_coletivas": 12
+    "n_coletivas": 12,
+    "vereador_ids": [
+      39
+    ],
+    "presencas": 130,
+    "pct_presenca": 53,
+    "votos_favor": 207,
+    "votos_contra": 14,
+    "abstencoes": 5,
+    "partido_camara": "PRD",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      },
+      {
+        "slug": "2026-11-10-ordinaria-071",
+        "data": "2026-11-10",
+        "tipo": "Ordinária",
+        "numero": 71
+      },
+      {
+        "slug": "2026-11-04-ordinaria-070",
+        "data": "2026-11-04",
+        "tipo": "Ordinária",
+        "numero": 70
+      },
+      {
+        "slug": "2026-11-03-ordinaria-069",
+        "data": "2026-11-03",
+        "tipo": "Ordinária",
+        "numero": 69
+      }
+    ]
   },
   {
     "id": 30,
     "nome": "Rubemar Ribeiro",
     "slug": "rubemar-ribeiro",
-    "n_proposicoes": 69,
+    "n_proposicoes": 77,
     "stats": {
-      "total": 69,
+      "total": 77,
       "aprovadas": 22,
       "rejeitadas": 0,
       "com_situacao": 32,
       "taxa_aprovacao": 69,
       "by_year": {
         "2023": 12,
-        "2024": 22,
+        "2024": 24,
         "2025": 7,
-        "2026": 28
+        "2026": 34
       },
       "by_tipo": {
-        "Indicação": 45,
+        "Indicação": 52,
         "Moção": 14,
         "Projeto de Lei do Legislativo": 3,
         "Projeto de Resolução": 3,
         "Projeto de Decreto Legislativo": 2,
-        "Requerimento": 1,
+        "Requerimento": 2,
         "Emenda ao Projeto de Lei Ordinária": 1
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 37,
+        "nao_informada": 45,
         "Proposição aprovada": 22,
         "Proposição inclusa na Ordem do Dia": 8,
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Indicação": 45,
+        "Indicação": 52,
         "Pesar": 10,
         "Projeto normativo": 5,
         "Aplauso": 4,
-        "Procedimento regimental": 3,
+        "Procedimento regimental": 4,
         "Homenagem ou título": 2
       },
       "by_tema": {
@@ -6450,22 +7625,22 @@
     "nome_tse_display": "Rubemar de Jesus Diniz Ribeiro",
     "og_image": "/og/v/rubemar-ribeiro.jpg",
     "impacto": {
-      "n_total": 69,
-      "n_exclusiva": 37,
+      "n_total": 77,
+      "n_exclusiva": 44,
       "n_dupla": 0,
-      "n_trio": 4,
+      "n_trio": 5,
       "n_coletiva": 1,
       "n_ampla": 27,
-      "autoria_equivalente": 40.17410236822004,
-      "taxa_exclusividade": 0.5362318840579711,
-      "peso_medio": 0.5822333676553629,
+      "autoria_equivalente": 47.507435701553376,
+      "taxa_exclusividade": 0.5714285714285714,
+      "peso_medio": 0.6169796844357581,
       "familias": {},
       "tipos": {
-        "Indicação": 45,
+        "Indicação": 52,
         "Moção": 14,
         "Projeto de Decreto Legislativo": 2,
         "Projeto de Lei do Legislativo": 3,
-        "Requerimento": 1,
+        "Requerimento": 2,
         "Projeto de Resolução": 3,
         "Emenda ao Projeto de Lei Ordinária": 1
       },
@@ -6484,7 +7659,7 @@
         },
         {
           "nome": "Fabrícia do Sindicato",
-          "n": 25
+          "n": 26
         },
         {
           "nome": "Herasmo Leite",
@@ -6512,13 +7687,13 @@
         }
       ],
       "anos": {
-        "2026": 28,
+        "2026": 34,
         "2025": 7,
-        "2024": 22,
+        "2024": 24,
         "2023": 12
       }
     },
-    "impacto_equivalente_label": "40,2",
+    "impacto_equivalente_label": "47,5",
     "parceiros": [
       {
         "nome": "Lucas do Beiradão",
@@ -6538,7 +7713,7 @@
       {
         "nome": "Fabrícia do Sindicato",
         "slug": "fabricia-do-sindicato",
-        "n": 25
+        "n": 26
       },
       {
         "nome": "Herasmo Leite",
@@ -6571,37 +7746,79 @@
         "n": 15
       }
     ],
-    "n_coletivas": 28
+    "n_coletivas": 28,
+    "vereador_ids": [
+      40,
+      41
+    ],
+    "presencas": 175,
+    "pct_presenca": 71,
+    "votos_favor": 339,
+    "votos_contra": 2,
+    "abstencoes": 0,
+    "partido_camara": "PP",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-10-ordinaria-071",
+        "data": "2026-11-10",
+        "tipo": "Ordinária",
+        "numero": 71
+      },
+      {
+        "slug": "2026-11-03-ordinaria-069",
+        "data": "2026-11-03",
+        "tipo": "Ordinária",
+        "numero": 69
+      }
+    ]
   },
   {
     "id": 724,
     "nome": "Sapo da Kiola",
     "slug": "sapo-da-kiola",
-    "n_proposicoes": 58,
+    "n_proposicoes": 60,
     "stats": {
-      "total": 58,
+      "total": 60,
       "aprovadas": 10,
       "rejeitadas": 0,
       "com_situacao": 13,
       "taxa_aprovacao": 77,
       "by_year": {
         "2025": 22,
-        "2026": 36
+        "2026": 38
       },
       "by_tipo": {
-        "Indicação": 45,
+        "Indicação": 47,
         "Moção": 10,
         "Projeto de Decreto Legislativo": 2,
         "Projeto de Resolução": 1
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 45,
+        "nao_informada": 47,
         "Proposição aprovada": 10,
         "Proposição inclusa na Ordem do Dia": 3
       },
       "by_classe": {
-        "Indicação": 45,
+        "Indicação": 47,
         "Aplauso": 5,
         "Pesar": 5,
         "Homenagem ou título": 2,
@@ -6693,19 +7910,19 @@
     "nome_tse_display": "Jurdinewton Pereira Ribeiro",
     "og_image": "/og/v/sapo-da-kiola.jpg",
     "impacto": {
-      "n_total": 58,
-      "n_exclusiva": 45,
+      "n_total": 60,
+      "n_exclusiva": 47,
       "n_dupla": 0,
       "n_trio": 1,
       "n_coletiva": 1,
       "n_ampla": 11,
-      "autoria_equivalente": 46.135854341736696,
-      "taxa_exclusividade": 0.7758620689655172,
-      "peso_medio": 0.7954457645127017,
+      "autoria_equivalente": 48.135854341736696,
+      "taxa_exclusividade": 0.7833333333333333,
+      "peso_medio": 0.802264239028945,
       "familias": {},
       "tipos": {
+        "Indicação": 47,
         "Moção": 10,
-        "Indicação": 45,
         "Projeto de Decreto Legislativo": 2,
         "Projeto de Resolução": 1
       },
@@ -6752,11 +7969,11 @@
         }
       ],
       "anos": {
-        "2026": 36,
+        "2026": 38,
         "2025": 22
       }
     },
-    "impacto_equivalente_label": "46,1",
+    "impacto_equivalente_label": "48,1",
     "parceiros": [
       {
         "nome": "João do Vale",
@@ -6809,28 +8026,70 @@
         "n": 11
       }
     ],
-    "n_coletivas": 12
+    "n_coletivas": 12,
+    "vereador_ids": [
+      31
+    ],
+    "presencas": 140,
+    "pct_presenca": 57,
+    "votos_favor": 241,
+    "votos_contra": 2,
+    "abstencoes": 1,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2026-11-25-ordinaria-076",
+        "data": "2026-11-25",
+        "tipo": "Ordinária",
+        "numero": 76
+      },
+      {
+        "slug": "2026-11-24-ordinaria-075",
+        "data": "2026-11-24",
+        "tipo": "Ordinária",
+        "numero": 75
+      },
+      {
+        "slug": "2026-11-18-ordinaria-074",
+        "data": "2026-11-18",
+        "tipo": "Ordinária",
+        "numero": 74
+      },
+      {
+        "slug": "2026-11-17-ordinaria-073",
+        "data": "2026-11-17",
+        "tipo": "Ordinária",
+        "numero": 73
+      },
+      {
+        "slug": "2026-11-11-ordinaria-072",
+        "data": "2026-11-11",
+        "tipo": "Ordinária",
+        "numero": 72
+      }
+    ]
   },
   {
     "id": 11,
     "nome": "Selma da Colônia",
     "slug": "selma-da-colonia",
-    "n_proposicoes": 32,
+    "n_proposicoes": 33,
     "stats": {
-      "total": 32,
-      "aprovadas": 10,
+      "total": 33,
+      "aprovadas": 11,
       "rejeitadas": 0,
-      "com_situacao": 17,
-      "taxa_aprovacao": 59,
+      "com_situacao": 18,
+      "taxa_aprovacao": 61,
       "by_year": {
         "2023": 10,
-        "2024": 22
+        "2024": 23
       },
       "by_tipo": {
         "Indicação": 20,
         "Moção": 5,
         "Projeto de Resolução": 2,
         "Projeto de Decreto Legislativo": 2,
+        "Projeto de Lei do Legislativo": 1,
         "Projeto de Lei Ordinária": 1,
         "Emenda ao Projeto de Lei Ordinária": 1,
         "Requerimento": 1
@@ -6838,14 +8097,14 @@
       "by_familia": {},
       "by_situacao": {
         "nao_informada": 15,
-        "Proposição aprovada": 10,
+        "Proposição aprovada": 11,
         "Proposição inclusa na Ordem do Dia": 5,
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
         "Indicação": 20,
         "Pesar": 5,
-        "Projeto normativo": 2,
+        "Projeto normativo": 3,
         "Procedimento regimental": 2,
         "Homenagem ou título": 2,
         "Convite ou convocação": 1
@@ -6944,17 +8203,18 @@
     "nome_tse_display": "Selma Maria Rodrigues Durans",
     "og_image": "/og/v/selma-da-colonia.jpg",
     "impacto": {
-      "n_total": 32,
-      "n_exclusiva": 17,
+      "n_total": 33,
+      "n_exclusiva": 18,
       "n_dupla": 0,
       "n_trio": 0,
       "n_coletiva": 0,
       "n_ampla": 15,
-      "autoria_equivalente": 17.923529411764704,
-      "taxa_exclusividade": 0.53125,
-      "peso_medio": 0.560110294117647,
+      "autoria_equivalente": 18.923529411764704,
+      "taxa_exclusividade": 0.5454545454545454,
+      "peso_medio": 0.573440285204991,
       "familias": {},
       "tipos": {
+        "Projeto de Lei do Legislativo": 1,
         "Projeto de Resolução": 2,
         "Moção": 5,
         "Projeto de Lei Ordinária": 1,
@@ -7006,11 +8266,11 @@
         }
       ],
       "anos": {
-        "2024": 22,
+        "2024": 23,
         "2023": 10
       }
     },
-    "impacto_equivalente_label": "17,9",
+    "impacto_equivalente_label": "18,9",
     "parceiros": [
       {
         "nome": "Lucas do Beiradão",
@@ -7063,43 +8323,162 @@
         "n": 14
       }
     ],
-    "n_coletivas": 15
+    "n_coletivas": 15,
+    "vereador_ids": [
+      43
+    ],
+    "presencas": 59,
+    "pct_presenca": 24,
+    "votos_favor": 103,
+    "votos_contra": 0,
+    "abstencoes": 0,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2024-12-18-ordinaria-060",
+        "data": "2024-12-18",
+        "tipo": "Ordinária",
+        "numero": 60
+      },
+      {
+        "slug": "2024-12-17-ordinaria-059",
+        "data": "2024-12-17",
+        "tipo": "Ordinária",
+        "numero": 59
+      },
+      {
+        "slug": "2024-12-11-ordinaria-058",
+        "data": "2024-12-11",
+        "tipo": "Ordinária",
+        "numero": 58
+      },
+      {
+        "slug": "2024-12-10-ordinaria-057",
+        "data": "2024-12-10",
+        "tipo": "Ordinária",
+        "numero": 57
+      },
+      {
+        "slug": "2024-12-04-ordinaria-056",
+        "data": "2024-12-04",
+        "tipo": "Ordinária",
+        "numero": 56
+      }
+    ]
+  },
+  {
+    "id": 3449,
+    "nome": "Stelio Castro Cordeiro",
+    "slug": "stelio-castro-cordeiro",
+    "n_proposicoes": 0,
+    "stats": {
+      "total": 0,
+      "aprovadas": 0,
+      "rejeitadas": 0,
+      "com_situacao": 0,
+      "taxa_aprovacao": 0,
+      "by_year": {},
+      "by_tipo": {},
+      "by_familia": {},
+      "by_situacao": {},
+      "by_classe": {},
+      "by_tema": {},
+      "by_objeto": {},
+      "by_local": {}
+    },
+    "nome_tse": null,
+    "nome_urna": null,
+    "partido": null,
+    "cargo": null,
+    "votos": null,
+    "situacao_tse": null,
+    "eleito": null,
+    "fonte_url": null,
+    "ano_tse": null,
+    "situacao_tse_label": "",
+    "situacao_tse_ajuda": "",
+    "nome_urna_display": "",
+    "nome_urna_igual": false,
+    "destaques": [],
+    "mandatos": [],
+    "legislaturas": [],
+    "atual": false,
+    "anterior": false,
+    "foto": "",
+    "foto_ano": null,
+    "nome_tse_display": "",
+    "og_image": "/og/v/stelio-castro-cordeiro.jpg",
+    "impacto": {
+      "n_total": 0,
+      "n_exclusiva": 0,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 0,
+      "autoria_equivalente": 0.0,
+      "taxa_exclusividade": 0,
+      "peso_medio": 0,
+      "familias": {},
+      "tipos": {},
+      "coautores": [],
+      "anos": {}
+    },
+    "impacto_equivalente_label": "0,0",
+    "parceiros": [],
+    "n_coletivas": 0,
+    "vereador_ids": [
+      44
+    ],
+    "presencas": 1,
+    "pct_presenca": 0,
+    "votos_favor": 0,
+    "votos_contra": 0,
+    "abstencoes": 0,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2023-09-26-ordinaria-055",
+        "data": "2023-09-26",
+        "tipo": "Ordinária",
+        "numero": 55
+      }
+    ]
   },
   {
     "id": 37,
     "nome": "Willian Vieira da Tv",
     "slug": "willian-vieira-da-tv",
-    "n_proposicoes": 40,
+    "n_proposicoes": 42,
     "stats": {
-      "total": 40,
+      "total": 42,
       "aprovadas": 11,
       "rejeitadas": 0,
       "com_situacao": 21,
       "taxa_aprovacao": 52,
       "by_year": {
         "2023": 14,
-        "2024": 26
+        "2024": 28
       },
       "by_tipo": {
         "Indicação": 26,
+        "Projeto de Decreto Legislativo": 6,
         "Moção": 5,
-        "Projeto de Decreto Legislativo": 4,
         "Projeto de Resolução": 2,
         "Projeto de Lei do Legislativo": 2,
         "Emenda ao Projeto de Lei Ordinária": 1
       },
       "by_familia": {},
       "by_situacao": {
-        "nao_informada": 19,
+        "nao_informada": 21,
         "Proposição aprovada": 11,
         "Proposição inclusa na Ordem do Dia": 8,
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
         "Indicação": 26,
+        "Projeto normativo": 5,
         "Pesar": 5,
         "Homenagem ou título": 4,
-        "Projeto normativo": 3,
         "Procedimento regimental": 2
       },
       "by_tema": {
@@ -7198,20 +8577,20 @@
     "nome_tse_display": "Antonio Willian Ramos dos Santos",
     "og_image": "/og/v/willian-vieira-da-tv.jpg",
     "impacto": {
-      "n_total": 40,
-      "n_exclusiva": 24,
+      "n_total": 42,
+      "n_exclusiva": 26,
       "n_dupla": 1,
       "n_trio": 0,
       "n_coletiva": 0,
       "n_ampla": 15,
-      "autoria_equivalente": 25.423529411764704,
-      "taxa_exclusividade": 0.6,
-      "peso_medio": 0.6355882352941176,
+      "autoria_equivalente": 27.423529411764704,
+      "taxa_exclusividade": 0.6190476190476191,
+      "peso_medio": 0.6529411764705882,
       "familias": {},
       "tipos": {
+        "Projeto de Decreto Legislativo": 6,
         "Projeto de Resolução": 2,
         "Moção": 5,
-        "Projeto de Decreto Legislativo": 4,
         "Emenda ao Projeto de Lei Ordinária": 1,
         "Indicação": 26,
         "Projeto de Lei do Legislativo": 2
@@ -7259,11 +8638,11 @@
         }
       ],
       "anos": {
-        "2024": 26,
+        "2024": 28,
         "2023": 14
       }
     },
-    "impacto_equivalente_label": "25,4",
+    "impacto_equivalente_label": "27,4",
     "parceiros": [
       {
         "nome": "Lucas do Beiradão",
@@ -7316,7 +8695,48 @@
         "n": 14
       }
     ],
-    "n_coletivas": 15
+    "n_coletivas": 15,
+    "vereador_ids": [
+      4
+    ],
+    "presencas": 61,
+    "pct_presenca": 25,
+    "votos_favor": 95,
+    "votos_contra": 2,
+    "abstencoes": 0,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2024-12-17-ordinaria-059",
+        "data": "2024-12-17",
+        "tipo": "Ordinária",
+        "numero": 59
+      },
+      {
+        "slug": "2024-12-11-ordinaria-058",
+        "data": "2024-12-11",
+        "tipo": "Ordinária",
+        "numero": 58
+      },
+      {
+        "slug": "2024-12-10-ordinaria-057",
+        "data": "2024-12-10",
+        "tipo": "Ordinária",
+        "numero": 57
+      },
+      {
+        "slug": "2024-12-03-ordinaria-055",
+        "data": "2024-12-03",
+        "tipo": "Ordinária",
+        "numero": 55
+      },
+      {
+        "slug": "2024-11-26-ordinaria-054",
+        "data": "2024-11-26",
+        "tipo": "Ordinária",
+        "numero": 54
+      }
+    ]
   },
   {
     "id": 29,
@@ -7545,6 +8965,48 @@
         "n": 14
       }
     ],
-    "n_coletivas": 15
+    "n_coletivas": 15,
+    "vereador_ids": [
+      29,
+      30
+    ],
+    "presencas": 47,
+    "pct_presenca": 19,
+    "votos_favor": 85,
+    "votos_contra": 1,
+    "abstencoes": 0,
+    "partido_camara": "",
+    "ultimas_sessoes": [
+      {
+        "slug": "2024-12-17-ordinaria-059",
+        "data": "2024-12-17",
+        "tipo": "Ordinária",
+        "numero": 59
+      },
+      {
+        "slug": "2024-12-11-ordinaria-058",
+        "data": "2024-12-11",
+        "tipo": "Ordinária",
+        "numero": 58
+      },
+      {
+        "slug": "2024-12-04-ordinaria-056",
+        "data": "2024-12-04",
+        "tipo": "Ordinária",
+        "numero": 56
+      },
+      {
+        "slug": "2024-12-03-ordinaria-055",
+        "data": "2024-12-03",
+        "tipo": "Ordinária",
+        "numero": 55
+      },
+      {
+        "slug": "2024-11-19-ordinaria-053",
+        "data": "2024-11-19",
+        "tipo": "Ordinária",
+        "numero": 53
+      }
+    ]
   }
 ]

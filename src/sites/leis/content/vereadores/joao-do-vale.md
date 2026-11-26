@@ -3,6 +3,11 @@ title: "João do Vale"
 autor_id: 5
 slug: "joao-do-vale"
 partido: "PL"
+presencas: 159
+pct_presenca: 65
+votos_favor: 280
+votos_contra: 2
+abstencoes: 1
 nome_urna: "JOÃO DO VALE"
 nome_urna_display: "João do Vale"
 nome_urna_igual: true
@@ -10,21 +15,21 @@ votos: 939
 ano_tse: 2024
 situacao_tse: "ELEITO POR QP"
 situacao_tse_ajuda: "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
-n_proposicoes: 169
+n_proposicoes: 175
 foto: "/fotos/joao-do-vale-2024.jpg"
 foto_ano: 2024
 atual: true
 anterior: false
 legislaturas: ["2025–2028"]
 fonte_tse: "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
-impacto_total: 169
-impacto_equivalente: 152.1
-exclusivas: 150
+impacto_total: 175
+impacto_equivalente: 158.1
+exclusivas: 156
 coletivas: 16
 taxa_exclusividade: 89
 peso_medio: 0.90
 og_image: "/og/v/joao-do-vale.jpg"
-share_text: "João do Vale — 169 proposições, 150 de autoria exclusiva na Câmara de Pinheiro"
+share_text: "João do Vale — 175 proposições, 156 de autoria exclusiva na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/joao-do-vale-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/joao-do-vale-9x16.jpg"}

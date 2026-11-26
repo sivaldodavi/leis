@@ -1,4 +1,5 @@
 import sqlite3, json, os, re, shutil, unicodedata, html
+from collections import Counter, defaultdict
 
 BASE = os.environ.get("LEIS_BASE", "/opt/servidor/src/sites/leis")
 DB = os.environ.get("LEIS_DB", "/opt/servidor/data/servicos/leis/legislacao_pinheiro.db")
@@ -493,6 +494,344 @@ for a in autores:
     a["n_coletivas"] = a["impacto"].get("n_coletiva", 0) + a["impacto"].get("n_ampla", 0)
 
 
+# ---------------------------------------------------------------------------
+# Câmara: sessões, presenças, matérias, votações
+# ---------------------------------------------------------------------------
+def tem_tabela(nome):
+    return bool(c.execute(
+        "SELECT 1 FROM sqlite_master WHERE type='table' AND name=?", (nome,)
+    ).fetchone())
+
+
+CAMARA_OK = all(tem_tabela(t) for t in (
+    "sessao", "presenca", "cargo_mesa", "materia", "materia_autor",
+    "materia_destinatario", "pauta_ocorrencia", "votacao", "voto",
+    "materia_proposicao", "vereador_autor", "vereador_partido",
+))
+
+sessoes_rows = [dict(r) for r in q("SELECT * FROM sessao ORDER BY data, id")] if CAMARA_OK else []
+vereadores_rows = [dict(r) for r in q("SELECT id, nome FROM vereador")] if CAMARA_OK else []
+materias_rows = [dict(r) for r in q("SELECT * FROM materia")] if CAMARA_OK else []
+votacoes_rows = [dict(r) for r in q("SELECT * FROM votacao ORDER BY sessao_id, id")] if CAMARA_OK else []
+
+vereador_por_id = {r["id"]: dict(r) for r in vereadores_rows}
+materia_por_id = {r["id"]: dict(r) for r in materias_rows}
+
+materia_prop = {
+    r["materia_id"]: r["proposicao_id"]
+    for r in (q("SELECT materia_id, proposicao_id FROM materia_proposicao") if CAMARA_OK else [])
+}
+prop_materia = {pid: mid for mid, pid in materia_prop.items()}
+autor_por_vereador = {
+    r["vereador_id"]: r["autor_id"]
+    for r in (q("SELECT vereador_id, autor_id FROM vereador_autor") if CAMARA_OK else [])
+}
+vereador_ids_por_autor = defaultdict(list)
+for vid, aid in autor_por_vereador.items():
+    vereador_ids_por_autor[aid].append(vid)
+
+partido_por_vereador = {
+    r["vereador_id"]: r["partido_final"]
+    for r in (q("SELECT vereador_id, partido_final FROM vereador_partido") if CAMARA_OK else [])
+    if r["partido_final"]
+}
+
+presencas_por_sessao = defaultdict(list)
+sessoes_presentes_por_vereador = defaultdict(set)
+if CAMARA_OK:
+    for r in q("SELECT sessao_id, vereador_id FROM presenca"):
+        presencas_por_sessao[r["sessao_id"]].append(r["vereador_id"])
+        sessoes_presentes_por_vereador[r["vereador_id"]].add(r["sessao_id"])
+
+mesa_por_sessao = defaultdict(dict)
+if CAMARA_OK:
+    for r in q("SELECT sessao_id, cargo, vereador_id FROM cargo_mesa"):
+        mesa_por_sessao[r["sessao_id"]][r["cargo"]] = r["vereador_id"]
+
+pauta_por_sessao = defaultdict(list)
+if CAMARA_OK:
+    for r in q("SELECT sessao_id, materia_id, secao FROM pauta_ocorrencia"):
+        pauta_por_sessao[r["sessao_id"]].append(dict(r))
+
+materia_sessoes = defaultdict(list)
+if CAMARA_OK:
+    for r in q(
+        """SELECT p.materia_id, p.secao, s.id AS sessao_id, s.data, s.tipo, s.numero
+           FROM pauta_ocorrencia p JOIN sessao s ON s.id = p.sessao_id
+           ORDER BY s.data, s.id"""
+    ):
+        materia_sessoes[r["materia_id"]].append(dict(r))
+
+materia_destinatarios = defaultdict(list)
+if CAMARA_OK:
+    for r in q(
+        """SELECT md.materia_id, md.cargo_categoria, md.cargo_original, d.nome
+           FROM materia_destinatario md JOIN destinatario d ON d.id = md.destinatario_id"""
+    ):
+        materia_destinatarios[r["materia_id"]].append(dict(r))
+
+votos_por_votacao = defaultdict(list)
+votos_por_vereador = defaultdict(list)
+if CAMARA_OK:
+    for r in q("SELECT votacao_id, vereador_id, voto FROM voto"):
+        votos_por_votacao[r["votacao_id"]].append(dict(r))
+        votos_por_vereador[r["vereador_id"]].append(dict(r))
+
+votacoes_por_sessao = defaultdict(list)
+votacoes_por_materia = defaultdict(list)
+for v in votacoes_rows:
+    votacoes_por_sessao[v["sessao_id"]].append(dict(v))
+    votacoes_por_materia[v["materia_id"]].append(dict(v))
+
+
+def nome_slug_vereador(vid):
+    aid = autor_por_vereador.get(vid)
+    if aid and aid in autor_por_id:
+        a = autor_por_id[aid]
+        return a["nome"], a["slug"]
+    v = vereador_por_id.get(vid, {})
+    nome = v.get("nome") or "Vereador"
+    return nome, slugify(nome)
+
+
+def identificacao_materia(m):
+    return "%s %03d/%s" % (m.get("tipo") or "Matéria", m.get("numero") or 0, m.get("ano") or "")
+
+
+def votacao_info(v):
+    m = materia_por_id.get(v["materia_id"])
+    pid = materia_prop.get(v["materia_id"])
+    p = prop_por_id.get(pid)
+    nominal = []
+    vistos = set()
+    for x in votos_por_votacao.get(v["id"], []):
+        nome, slug = nome_slug_vereador(x["vereador_id"])
+        if slug in vistos:
+            continue
+        vistos.add(slug)
+        nominal.append({"nome": nome, "slug": slug, "voto": x["voto"]})
+    return {
+        "id": v["id"],
+        "sessao_id": v["sessao_id"],
+        "materia_id": v["materia_id"],
+        "materia": (p["identificacao"] if p else identificacao_materia(m or {})),
+        "proposicao_slug": p["slug"] if p else "",
+        "fase": v.get("fase") or "",
+        "resultado": v.get("resultado") or "",
+        "favor": v.get("votos_favor") or 0,
+        "contra": v.get("votos_contra") or 0,
+        "abstencoes": v.get("abstencoes") or 0,
+        "nominal": nominal,
+    }
+
+
+prop_por_id = {p["id"]: p for p in props}
+
+# Enriquece proposições com sessões, votação e destinatários
+for p in props:
+    mid = prop_materia.get(p["id"])
+    p["materia_id"] = mid
+    p["sessoes"] = []
+    p["votacao"] = None
+    p["destinatarios"] = []
+    if mid:
+        for s in materia_sessoes.get(mid, []):
+            p["sessoes"].append({
+                "sessao_id": s["sessao_id"],
+                "data": s["data"],
+                "tipo": s["tipo"],
+                "numero": s["numero"],
+                "secao": s["secao"],
+            })
+        vts = votacoes_por_materia.get(mid, [])
+        if vts:
+            p["votacao"] = votacao_info(sorted(vts, key=lambda x: (x.get("sessao_id") or 0, x.get("id") or 0))[-1])
+        for d in materia_destinatarios.get(mid, []):
+            p["destinatarios"].append({
+                "nome": d["nome"],
+                "cargo": d.get("cargo_categoria") or d.get("cargo_original") or "",
+            })
+    p["n_sessoes"] = len(p["sessoes"])
+
+# Enriquece autores com presença e votos
+autores_sessoes_presentes = {}
+for a in autores:
+    vids = vereador_ids_por_autor.get(a["id"], [])
+    a["vereador_ids"] = vids
+    sessoes_presentes = set()
+    for vid in vids:
+        sessoes_presentes |= sessoes_presentes_por_vereador.get(vid, set())
+    autores_sessoes_presentes[a["id"]] = sessoes_presentes
+    a["presencas"] = len(sessoes_presentes)
+    a["pct_presenca"] = round(100 * len(sessoes_presentes) / len(sessoes_rows)) if sessoes_rows else 0
+    votos_set = set()
+    for vid in vids:
+        for x in votos_por_vereador.get(vid, []):
+            votos_set.add((x["votacao_id"], x["voto"]))
+    a["votos_favor"] = sum(1 for _, voto in votos_set if voto == "A Favor")
+    a["votos_contra"] = sum(1 for _, voto in votos_set if voto == "Contra")
+    a["abstencoes"] = sum(1 for _, voto in votos_set if voto == "Abstenção")
+    a["partido_camara"] = next((partido_por_vereador[vid] for vid in vids if vid in partido_por_vereador), "")
+
+# Dados derivados para as novas páginas
+sessoes_data = []
+for s in sessoes_rows:
+    presentes, vistos = [], set()
+    for vid in presencas_por_sessao.get(s["id"], []):
+        nome, slug = nome_slug_vereador(vid)
+        if slug in vistos:
+            continue
+        vistos.add(slug)
+        presentes.append({"nome": nome, "slug": slug})
+    mesa_diretora = {}
+    for cargo, vid in mesa_por_sessao.get(s["id"], {}).items():
+        nome, slug = nome_slug_vereador(vid)
+        mesa_diretora[cargo] = {"nome": nome, "slug": slug}
+    pauta = []
+    for r in pauta_por_sessao.get(s["id"], []):
+        m = materia_por_id.get(r["materia_id"])
+        pid = materia_prop.get(r["materia_id"])
+        p = prop_por_id.get(pid)
+        pauta.append({
+            "materia_id": r["materia_id"],
+            "identificacao": p["identificacao"] if p else identificacao_materia(m or {}),
+            "ementa": p["ementa_limpa"] if p else clean_ws((m or {}).get("ementa")),
+            "secao": r["secao"],
+            "proposicao_slug": p["slug"] if p else "",
+        })
+    vts = [votacao_info(v) for v in votacoes_por_sessao.get(s["id"], [])]
+    slug_sessao = "%s-%s-%03d" % (s["data"], slugify(s["tipo"]), s["numero"])
+    sessoes_data.append({
+        "id": s["id"],
+        "slug": slug_sessao,
+        "data": s["data"],
+        "tipo": s["tipo"],
+        "numero": s["numero"],
+        "legislatura": s.get("legislatura"),
+        "sessao_legislativa": s.get("sessao_legislativa"),
+        "local": clean_ws(s.get("local")),
+        "hora_inicio": s.get("hora_inicio") or "",
+        "hora_fim": s.get("hora_fim") or "",
+        "presentes": presentes,
+        "mesa": mesa_diretora,
+        "pauta": pauta,
+        "votacoes": vts,
+    })
+
+sessoes_data.sort(key=lambda x: (x["data"], x["id"]), reverse=True)
+
+slug_por_sessao = {s["id"]: s["slug"] for s in sessoes_data}
+for p in props:
+    for item in p["sessoes"]:
+        item["slug"] = slug_por_sessao.get(item["sessao_id"], "")
+
+for a in autores:
+    presentes_ids = autores_sessoes_presentes.get(a["id"], set())
+    a["ultimas_sessoes"] = [
+        {"slug": s["slug"], "data": s["data"], "tipo": s["tipo"], "numero": s["numero"]}
+        for s in sessoes_data if s["id"] in presentes_ids
+    ][:5]
+
+votacoes_data = []
+for v in votacoes_rows:
+    info = votacao_info(v)
+    s = next((x for x in sessoes_data if x["id"] == v["sessao_id"]), None)
+    info["data"] = s["data"] if s else ""
+    info["sessao_slug"] = s["slug"] if s else ""
+    info["sessao"] = "%s %d/%s" % (s["tipo"], s["numero"], (s["data"] or "")[:4]) if s else ""
+    votacoes_data.append(info)
+votacoes_data.sort(key=lambda x: (x.get("data") or "", x["id"]), reverse=True)
+
+# Agregados para a home e as estatísticas
+presenca_partido = defaultdict(lambda: {"soma": 0, "n": 0, "presencas": 0})
+for a in autores:
+    partido = a.get("partido") or a.get("partido_camara") or ""
+    if not partido:
+        continue
+    d = presenca_partido[partido]
+    d["soma"] += a["pct_presenca"]
+    d["n"] += 1
+    d["presencas"] += a["presencas"]
+presenca_partido = [
+    {"partido": k, "media_pct": round(x["soma"] / x["n"]) if x["n"] else 0,
+     "vereadores": x["n"], "presencas": x["presencas"]}
+    for k, x in presenca_partido.items()
+]
+presenca_partido.sort(key=lambda x: -x["media_pct"])
+
+votos_partido = defaultdict(lambda: Counter())
+for v in votacoes_rows:
+    for x in votos_por_votacao.get(v["id"], []):
+        aid = autor_por_vereador.get(x["vereador_id"])
+        a = autor_por_id.get(aid, {})
+        partido = a.get("partido") or a.get("partido_camara") or "Sem partido"
+        votos_partido[partido][x["voto"]] += 1
+votos_partido = [
+    {"partido": k, "favor": x.get("A Favor", 0), "contra": x.get("Contra", 0), "abstencao": x.get("Abstenção", 0)}
+    for k, x in votos_partido.items()
+]
+votos_partido.sort(key=lambda x: -(x["favor"] + x["contra"] + x["abstencao"]))
+
+aprovacao_tipo = defaultdict(lambda: {"total": 0, "aprovadas": 0, "rejeitadas": 0})
+for p in props:
+    v = p.get("votacao")
+    if not v or not v.get("resultado"):
+        continue
+    d = aprovacao_tipo[p["especie_rotulo"]]
+    d["total"] += 1
+    if v["resultado"] == "Aprovado":
+        d["aprovadas"] += 1
+    elif v["resultado"] == "Rejeitado":
+        d["rejeitadas"] += 1
+aprovacao_tipo = [
+    {"tipo": k, "total": x["total"], "aprovadas": x["aprovadas"],
+     "rejeitadas": x["rejeitadas"],
+     "pct": round(100 * x["aprovadas"] / x["total"]) if x["total"] else 0}
+    for k, x in aprovacao_tipo.items()
+]
+aprovacao_tipo.sort(key=lambda x: -x["total"])
+
+destinatarios_contagem = Counter()
+for p in props:
+    for d in p.get("destinatarios", []):
+        destinatarios_contagem[(d["nome"], d["cargo"])] += 1
+destinatarios_top = [
+    {"nome": k[0], "cargo": k[1], "n": n}
+    for k, n in destinatarios_contagem.most_common(15)
+]
+
+camara_data = {
+    "resumo": {
+        "sessoes": len(sessoes_data),
+        "presencas": sum(len(s["presentes"]) for s in sessoes_data),
+        "materias": len(materias_rows),
+        "votacoes": len(votacoes_data),
+        "votos": sum(len(v["nominal"]) for v in votacoes_data),
+        "vereadores": len(vereadores_rows),
+        "periodo_inicio": sessoes_data[-1]["data"] if sessoes_data else "",
+        "periodo_fim": sessoes_data[0]["data"] if sessoes_data else "",
+    },
+    "ultimas_sessoes": [
+        {"slug": s["slug"], "data": s["data"], "tipo": s["tipo"], "numero": s["numero"],
+         "presentes": len(s["presentes"]), "pauta": len(s["pauta"]), "votacoes": len(s["votacoes"])}
+        for s in sessoes_data[:4]
+    ],
+    "ultimas_votacoes": [
+        {"materia": v["materia"], "resultado": v["resultado"], "data": v["data"],
+         "sessao": v["sessao"], "favor": v["favor"], "contra": v["contra"], "abstencoes": v["abstencoes"],
+         "proposicao_slug": v["proposicao_slug"]}
+        for v in votacoes_data[:5]
+    ],
+    "presenca_partido": presenca_partido,
+    "votos_partido": votos_partido,
+    "aprovacao_tipo": aprovacao_tipo,
+    "destinatarios": destinatarios_top,
+    "sessoes_por_tipo": dict(Counter(s["tipo"] for s in sessoes_data)),
+    "sessoes_por_ano": dict(Counter((s["data"] or "")[:4] for s in sessoes_data if s.get("data"))),
+    "materias_por_ano": dict(Counter(str(p["ano"]) for p in props if re.fullmatch(r"\d{4}", str(p.get("ano") or "")))),
+}
+
+
 RE_TITULO_LINHA = re.compile(r"^[A-ZÁÉÍÓÚÂÊÔÃÕÇ0-9 ,.\-ºª]{3,42}$")
 
 
@@ -924,8 +1263,16 @@ for a in autores:
     lines.append('title: "%s"' % yaml_escape(a["nome"]))
     lines.append('autor_id: %d' % a["id"])
     lines.append('slug: "%s"' % a["slug"])
-    if a.get("partido"):
-        lines.append('partido: "%s"' % yaml_escape(a["partido"]))
+    partido_exibir = a.get("partido") or a.get("partido_camara")
+    if partido_exibir:
+        lines.append('partido: "%s"' % yaml_escape(partido_exibir))
+    if a.get("partido_camara"):
+        lines.append('partido_camara: "%s"' % yaml_escape(a["partido_camara"]))
+    lines.append('presencas: %d' % a.get("presencas", 0))
+    lines.append('pct_presenca: %d' % a.get("pct_presenca", 0))
+    lines.append('votos_favor: %d' % a.get("votos_favor", 0))
+    lines.append('votos_contra: %d' % a.get("votos_contra", 0))
+    lines.append('abstencoes: %d' % a.get("abstencoes", 0))
     if a.get("nome_urna"):
         lines.append('nome_urna: "%s"' % yaml_escape(a["nome_urna"]))
         lines.append('nome_urna_display: "%s"' % yaml_escape(a["nome_urna_display"]))
@@ -978,6 +1325,92 @@ for a in autores:
 with open(os.path.join(props_dir, "_index.md"), "w", encoding="utf-8") as f:
     f.write('---\ntitle: "Proposições"\n---\n\nIndicações, moções, projetos e requerimentos apresentados na Câmara de Pinheiro.\n')
 
+# Sessões: uma página por sessão
+sessoes_dir = os.path.join(BASE, "content", "sessoes")
+os.makedirs(sessoes_dir, exist_ok=True)
+for f in os.listdir(sessoes_dir):
+    if f.endswith(".md") and f != "_index.md":
+        os.remove(os.path.join(sessoes_dir, f))
+
+with open(os.path.join(sessoes_dir, "_index.md"), "w", encoding="utf-8") as f:
+    f.write('---\ntitle: "Sessões da Câmara"\nlayout: "sessoes/list"\ndescription: "Presença, pauta e votações de cada sessão da Câmara Municipal de Pinheiro."\n---\n')
+
+for s in sessoes_data:
+    data_br = "%s/%s/%s" % (s["data"][8:10], s["data"][5:7], s["data"][:4]) if s.get("data") else ""
+    resumo = "Sessão %s %d/%s, em %s, com %d presentes e %d matérias na pauta." % (
+        s["tipo"], s["numero"], (s["data"] or "")[:4], data_br,
+        len(s["presentes"]), len(s["pauta"]),
+    )
+    lines = ["---"]
+    lines.append('title: "Sessão %s %d/%s"' % (yaml_escape(s["tipo"]), s["numero"], (s["data"] or "")[:4]))
+    lines.append('layout: "sessoes/single"')
+    lines.append('sessao_id: %d' % s["id"])
+    lines.append('data: "%s"' % s["data"])
+    lines.append('tipo: "%s"' % yaml_escape(s["tipo"]))
+    lines.append('numero: %d' % s["numero"])
+    lines.append('n_presentes: %d' % len(s["presentes"]))
+    lines.append('n_pauta: %d' % len(s["pauta"]))
+    lines.append('n_votacoes: %d' % len(s["votacoes"]))
+    lines.append('resumo: "%s"' % yaml_escape(resumo))
+    lines.append("---")
+    lines.append("")
+    lines.append('<div class="stats-strip">')
+    lines.append('<div class="stat"><span class="n">%d</span><span class="l">presentes</span></div>' % len(s["presentes"]))
+    lines.append('<div class="stat"><span class="n">%d</span><span class="l">matérias na pauta</span></div>' % len(s["pauta"]))
+    lines.append('<div class="stat"><span class="n">%d</span><span class="l">votações</span></div>' % len(s["votacoes"]))
+    lines.append('</div>')
+    lines.append('<h2>Presença</h2>')
+    if s["presentes"]:
+        lines.append('<div class="chips">')
+        for v in s["presentes"]:
+            lines.append('<a class="chip" href="/vereadores/%s/">%s</a>' % (v["slug"], html.escape(v["nome"])))
+        lines.append('</div>')
+    else:
+        lines.append('<p class="empty">Presença não registrada.</p>')
+    lines.append('<h2>Mesa diretora</h2>')
+    if s["mesa"]:
+        lines.append('<ul>')
+        for cargo, v in s["mesa"].items():
+            lines.append('<li><strong>%s:</strong> <a href="/vereadores/%s/">%s</a></li>' % (html.escape(cargo), v["slug"], html.escape(v["nome"])))
+        lines.append('</ul>')
+    else:
+        lines.append('<p class="empty">Mesa não registrada.</p>')
+    lines.append('<h2>Pauta</h2>')
+    if s["pauta"]:
+        lines.append('<div class="plist" style="--cols:150px minmax(0,1fr) 150px">')
+        lines.append('<div class="plist-head"><span>Matéria</span><span>Ementa</span><span>Seção</span></div>')
+        for item in s["pauta"]:
+            ident = html.escape(item["identificacao"])
+            if item["proposicao_slug"]:
+                ident = '<a class="plist-id" href="/proposicoes/%s/">%s</a>' % (item["proposicao_slug"], ident)
+            lines.append('<div class="plist-row"><div>%s</div><div><span class="clamp2">%s</span></div><div class="small">%s</div></div>' % (
+                ident, html.escape(item["ementa"]), html.escape(item["secao"])
+            ))
+        lines.append('</div>')
+    else:
+        lines.append('<p class="empty">Pauta não registrada.</p>')
+    lines.append('<h2>Votações</h2>')
+    if s["votacoes"]:
+        for v in s["votacoes"]:
+            lines.append('<div class="panel" style="margin:0 0 12px">')
+            lines.append('<h3>%s</h3>' % html.escape(v["materia"]))
+            lines.append('<p><strong>%s</strong> · %d a favor · %d contra · %d abstenções</p>' % (
+                html.escape(v["resultado"] or "Sem resultado"), v["favor"], v["contra"], v["abstencoes"]
+            ))
+            if v["nominal"]:
+                lines.append('<div class="chips">')
+                for x in v["nominal"]:
+                    lines.append('<span class="chip">%s: %s</span>' % (html.escape(x["nome"]), html.escape(x["voto"])))
+                lines.append('</div>')
+            lines.append('</div>')
+    else:
+        lines.append('<p class="empty">Nenhuma votação registrada.</p>')
+    with open(os.path.join(sessoes_dir, s["slug"] + ".md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+with open(os.path.join(BASE, "content", "votacoes.md"), "w", encoding="utf-8") as f:
+    f.write('---\ntitle: "Votações"\nlayout: "votacoes"\ndescription: "Resultado e voto nominal de cada vereador nas votações da Câmara de Pinheiro."\n---\n')
+
 # JSON
 data_dir = os.path.join(BASE, "data")
 os.makedirs(data_dir, exist_ok=True)
@@ -1001,13 +1434,22 @@ with open(os.path.join(data_dir, "autores.json"), "w", encoding="utf-8") as f:
 with open(os.path.join(data_dir, "glossario.json"), "w", encoding="utf-8") as f:
     json.dump(glossario_data, f, ensure_ascii=False, indent=2)
 
+with open(os.path.join(data_dir, "sessoes.json"), "w", encoding="utf-8") as f:
+    json.dump({"sessoes": sessoes_data}, f, ensure_ascii=False, indent=2)
+
+with open(os.path.join(data_dir, "votacoes.json"), "w", encoding="utf-8") as f:
+    json.dump({"votacoes": votacoes_data}, f, ensure_ascii=False, indent=2)
+
+with open(os.path.join(data_dir, "camara.json"), "w", encoding="utf-8") as f:
+    json.dump(camara_data, f, ensure_ascii=False, indent=2)
+
 with open(os.path.join(BASE, "content", "estatisticas.md"), "w", encoding="utf-8") as f:
     f.write('---\ntitle: "Estatísticas"\nlayout: "estatisticas"\ndescription: "Números das normas, proposições e vereadores de Pinheiro, com cruzamentos entre tipo, ano, situação, autor e partido."\n---\n')
 
 # Dados internos consumidos pelos filtros do site (não é API pública)
 static_dados = os.path.join(BASE, "static", "dados")
 os.makedirs(static_dados, exist_ok=True)
-ARQUIVOS_DADOS = ("legislacao.json", "busca.json", "proposicoes.json", "autores.json", "glossario.json")
+ARQUIVOS_DADOS = ("legislacao.json", "busca.json", "proposicoes.json", "autores.json", "glossario.json", "sessoes.json", "votacoes.json", "camara.json")
 for fname in ARQUIVOS_DADOS:
     src = os.path.join(data_dir, fname)
     dst = os.path.join(static_dados, fname)

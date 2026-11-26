@@ -3,6 +3,11 @@ title: "Professor Sandro Lima"
 autor_id: 3
 slug: "professor-sandro-lima"
 partido: "SOLIDARIEDADE"
+presencas: 76
+pct_presenca: 31
+votos_favor: 117
+votos_contra: 2
+abstencoes: 4
 nome_urna: "PROFESSOR SANDRO LIMA"
 nome_urna_display: "Professor Sandro Lima"
 nome_urna_igual: true

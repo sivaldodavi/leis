@@ -3,6 +3,12 @@ title: "Jaelson Araújo"
 autor_id: 10
 slug: "jaelson-araujo"
 partido: "PSD"
+partido_camara: "PSD"
+presencas: 116
+pct_presenca: 47
+votos_favor: 231
+votos_contra: 1
+abstencoes: 0
 nome_urna: "JAELSON ARAUJO"
 nome_urna_display: "Jaelson Araujo"
 nome_urna_igual: true

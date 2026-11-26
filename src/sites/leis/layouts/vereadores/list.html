@@ -45,7 +45,7 @@
           {{ with .Params.votos }}<strong>{{ . }}</strong> votos em {{ $page.Params.ano_tse }}{{ else }}Sem dados eleitorais{{ end }}
           {{ with .Params.situacao_tse }} · {{ . }}{{ end }}
         </p>
-        <p class="small"><strong>{{ .Params.n_proposicoes }}</strong> proposições</p>
+        <p class="small"><strong>{{ .Params.n_proposicoes }}</strong> proposições{{ if .Params.presencas }} · <strong>{{ .Params.pct_presenca }}%</strong> de presença ({{ .Params.presencas }}){{ end }}</p>
         <a class="link" href="{{ .RelPermalink }}">Ver perfil →</a>
       </div>
     </article>

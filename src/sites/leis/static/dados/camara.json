@@ -1,0 +1,370 @@
+{
+  "resumo": {
+    "sessoes": 246,
+    "presencas": 3205,
+    "materias": 1825,
+    "votacoes": 416,
+    "votos": 5441,
+    "vereadores": 42,
+    "periodo_inicio": "2023-03-27",
+    "periodo_fim": "2026-11-25"
+  },
+  "ultimas_sessoes": [
+    {
+      "slug": "2026-11-25-ordinaria-076",
+      "data": "2026-11-25",
+      "tipo": "Ordinária",
+      "numero": 76,
+      "presentes": 13,
+      "pauta": 15,
+      "votacoes": 7
+    },
+    {
+      "slug": "2026-11-24-ordinaria-075",
+      "data": "2026-11-24",
+      "tipo": "Ordinária",
+      "numero": 75,
+      "presentes": 13,
+      "pauta": 13,
+      "votacoes": 4
+    },
+    {
+      "slug": "2026-11-18-ordinaria-074",
+      "data": "2026-11-18",
+      "tipo": "Ordinária",
+      "numero": 74,
+      "presentes": 14,
+      "pauta": 19,
+      "votacoes": 7
+    },
+    {
+      "slug": "2026-11-17-ordinaria-073",
+      "data": "2026-11-17",
+      "tipo": "Ordinária",
+      "numero": 73,
+      "presentes": 14,
+      "pauta": 9,
+      "votacoes": 0
+    }
+  ],
+  "ultimas_votacoes": [
+    {
+      "materia": "PLL-044/2025",
+      "resultado": "Aprovado",
+      "data": "2026-11-25",
+      "sessao": "Ordinária 76/2026",
+      "favor": 12,
+      "contra": 0,
+      "abstencoes": 0,
+      "proposicao_slug": "pll-044-2025"
+    },
+    {
+      "materia": "PLL-030/2025",
+      "resultado": "Aprovado",
+      "data": "2026-11-25",
+      "sessao": "Ordinária 76/2026",
+      "favor": 12,
+      "contra": 0,
+      "abstencoes": 0,
+      "proposicao_slug": "pll-030-2025"
+    },
+    {
+      "materia": "PLL-018/2026",
+      "resultado": "Aprovado",
+      "data": "2026-11-25",
+      "sessao": "Ordinária 76/2026",
+      "favor": 12,
+      "contra": 0,
+      "abstencoes": 0,
+      "proposicao_slug": "pll-018-2026"
+    },
+    {
+      "materia": "PDL-014/2026",
+      "resultado": "Aprovado",
+      "data": "2026-11-25",
+      "sessao": "Ordinária 76/2026",
+      "favor": 13,
+      "contra": 0,
+      "abstencoes": 0,
+      "proposicao_slug": "pdl-014-2026"
+    },
+    {
+      "materia": "REQ-016/2026",
+      "resultado": "Aprovado",
+      "data": "2026-11-25",
+      "sessao": "Ordinária 76/2026",
+      "favor": 12,
+      "contra": 0,
+      "abstencoes": 0,
+      "proposicao_slug": "req-016-2026"
+    }
+  ],
+  "presenca_partido": [
+    {
+      "partido": "MOBILIZA",
+      "media_pct": 57,
+      "vereadores": 1,
+      "presencas": 139
+    },
+    {
+      "partido": "SOLIDARIEDADE",
+      "media_pct": 56,
+      "vereadores": 4,
+      "presencas": 554
+    },
+    {
+      "partido": "PODE",
+      "media_pct": 54,
+      "vereadores": 3,
+      "presencas": 399
+    },
+    {
+      "partido": "PSD",
+      "media_pct": 47,
+      "vereadores": 6,
+      "presencas": 691
+    },
+    {
+      "partido": "PP",
+      "media_pct": 42,
+      "vereadores": 5,
+      "presencas": 523
+    },
+    {
+      "partido": "PRD",
+      "media_pct": 42,
+      "vereadores": 3,
+      "presencas": 312
+    },
+    {
+      "partido": "PL",
+      "media_pct": 29,
+      "vereadores": 6,
+      "presencas": 428
+    },
+    {
+      "partido": "PDT",
+      "media_pct": 20,
+      "vereadores": 3,
+      "presencas": 144
+    }
+  ],
+  "votos_partido": [
+    {
+      "partido": "PSD",
+      "favor": 1214,
+      "contra": 26,
+      "abstencao": 4
+    },
+    {
+      "partido": "PP",
+      "favor": 846,
+      "contra": 10,
+      "abstencao": 2
+    },
+    {
+      "partido": "PL",
+      "favor": 762,
+      "contra": 8,
+      "abstencao": 4
+    },
+    {
+      "partido": "PODE",
+      "favor": 717,
+      "contra": 11,
+      "abstencao": 2
+    },
+    {
+      "partido": "SOLIDARIEDADE",
+      "favor": 693,
+      "contra": 8,
+      "abstencao": 17
+    },
+    {
+      "partido": "PRD",
+      "favor": 535,
+      "contra": 16,
+      "abstencao": 8
+    },
+    {
+      "partido": "MOBILIZA",
+      "favor": 258,
+      "contra": 2,
+      "abstencao": 5
+    },
+    {
+      "partido": "PDT",
+      "favor": 261,
+      "contra": 2,
+      "abstencao": 0
+    },
+    {
+      "partido": "Sem partido",
+      "favor": 30,
+      "contra": 0,
+      "abstencao": 0
+    }
+  ],
+  "aprovacao_tipo": [
+    {
+      "tipo": "Moção",
+      "total": 130,
+      "aprovadas": 127,
+      "rejeitadas": 0,
+      "pct": 98
+    },
+    {
+      "tipo": "Projeto de Lei do Legislativo",
+      "total": 57,
+      "aprovadas": 50,
+      "rejeitadas": 3,
+      "pct": 88
+    },
+    {
+      "tipo": "Projeto de Lei Ordinária",
+      "total": 54,
+      "aprovadas": 52,
+      "rejeitadas": 0,
+      "pct": 96
+    },
+    {
+      "tipo": "Requerimento",
+      "total": 40,
+      "aprovadas": 38,
+      "rejeitadas": 1,
+      "pct": 95
+    },
+    {
+      "tipo": "Projeto de Decreto Legislativo",
+      "total": 37,
+      "aprovadas": 37,
+      "rejeitadas": 0,
+      "pct": 100
+    },
+    {
+      "tipo": "Projeto de Resolução",
+      "total": 8,
+      "aprovadas": 8,
+      "rejeitadas": 0,
+      "pct": 100
+    },
+    {
+      "tipo": "Indicação",
+      "total": 2,
+      "aprovadas": 2,
+      "rejeitadas": 0,
+      "pct": 100
+    },
+    {
+      "tipo": "Emenda à Lei Orgânica",
+      "total": 1,
+      "aprovadas": 1,
+      "rejeitadas": 0,
+      "pct": 100
+    },
+    {
+      "tipo": "Emenda ao Projeto de Lei do Legislativo",
+      "total": 1,
+      "aprovadas": 1,
+      "rejeitadas": 0,
+      "pct": 100
+    }
+  ],
+  "destinatarios": [
+    {
+      "nome": "Carlos André Costa Silva",
+      "cargo": "Prefeito",
+      "n": 663
+    },
+    {
+      "nome": "JOÃO LUCIANO",
+      "cargo": "Prefeito",
+      "n": 112
+    },
+    {
+      "nome": "JOÃO LUCIANO SOARES",
+      "cargo": "Prefeito",
+      "n": 28
+    },
+    {
+      "nome": "CARLOS BRANDÃO",
+      "cargo": "Governador",
+      "n": 23
+    },
+    {
+      "nome": "RAIMUNDO MIRANDA",
+      "cargo": "Secretário",
+      "n": 21
+    },
+    {
+      "nome": "RAIMUNDO MIRANDA",
+      "cargo": "Secretário Municipal",
+      "n": 14
+    },
+    {
+      "nome": "JOÃO LUCIANO SILVA SOARES",
+      "cargo": "Prefeito",
+      "n": 11
+    },
+    {
+      "nome": "JOÃO BATISTA SEGUNDO",
+      "cargo": "Deputado Estadual",
+      "n": 7
+    },
+    {
+      "nome": "CAEMA",
+      "cargo": "Dirigente de órgão",
+      "n": 7
+    },
+    {
+      "nome": "INFRAESTRUTURA",
+      "cargo": "Secretário",
+      "n": 7
+    },
+    {
+      "nome": "RODRIGO MONTEIRO",
+      "cargo": "Secretário",
+      "n": 6
+    },
+    {
+      "nome": "DR. KAIO HORTEGAL",
+      "cargo": "Secretário Municipal",
+      "n": 6
+    },
+    {
+      "nome": "DR EDUARDO SA",
+      "cargo": "Secretário Municipal",
+      "n": 4
+    },
+    {
+      "nome": "INDICAR",
+      "cargo": "Dirigente de órgão",
+      "n": 4
+    },
+    {
+      "nome": "DR. KAIO HORTEGAL",
+      "cargo": "Secretário",
+      "n": 4
+    }
+  ],
+  "sessoes_por_tipo": {
+    "Ordinária": 239,
+    "Solene": 1,
+    "Extraordinária": 6
+  },
+  "sessoes_por_ano": {
+    "2026": 78,
+    "2025": 83,
+    "2024": 61,
+    "2023": 24
+  },
+  "materias_por_ano": {
+    "2026": 729,
+    "2025": 756,
+    "2024": 308,
+    "2023": 111,
+    "2022": 2,
+    "2021": 3,
+    "2002": 2
+  }
+}

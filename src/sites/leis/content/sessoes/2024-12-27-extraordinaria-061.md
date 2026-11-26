@@ -1,0 +1,31 @@
+---
+title: "Sessão Extraordinária 61/2024"
+layout: "sessoes/single"
+sessao_id: 15
+data: "2024-12-27"
+tipo: "Extraordinária"
+numero: 61
+n_presentes: 0
+n_pauta: 0
+n_votacoes: 0
+resumo: "Sessão Extraordinária 61/2024, em 27/12/2024, com 0 presentes e 0 matérias na pauta."
+---
+
+<div class="stats-strip">
+<div class="stat"><span class="n">0</span><span class="l">presentes</span></div>
+<div class="stat"><span class="n">0</span><span class="l">matérias na pauta</span></div>
+<div class="stat"><span class="n">0</span><span class="l">votações</span></div>
+</div>
+<h2>Presença</h2>
+<p class="empty">Presença não registrada.</p>
+<h2>Mesa diretora</h2>
+<ul>
+<li><strong>Presidente:</strong> <a href="/vereadores/lucas-do-beiradao/">Lucas do Beiradão</a></li>
+<li><strong>Vice-Presidente:</strong> <a href="/vereadores/rubemar-ribeiro/">Rubemar Ribeiro</a></li>
+<li><strong>1º Secretário:</strong> <a href="/vereadores/willian-vieira-da-tv/">Willian Vieira da Tv</a></li>
+<li><strong>2º Secretário:</strong> <a href="/vereadores/paulinho-enfermeiro/">Paulinho Enfermeiro</a></li>
+</ul>
+<h2>Pauta</h2>
+<p class="empty">Pauta não registrada.</p>
+<h2>Votações</h2>
+<p class="empty">Nenhuma votação registrada.</p>

@@ -1,0 +1,88 @@
+{{ define "main" }}
+{{ $pages := sort .Pages "Params.data" "desc" }}
+{{ $camara := .Site.Data.camara }}
+<div class="pagehead">
+  <h1>Sessões da Câmara</h1>
+  <p class="lead">Presença, pauta e votações de cada sessão. Os dados vêm dos relatórios de sessão e foram ligados às proposições que já existem no site.</p>
+  <div class="stats-strip">
+    <div class="stat"><span class="n">{{ $camara.resumo.sessoes }}</span><span class="l">sessões</span></div>
+    <div class="stat"><span class="n">{{ $camara.resumo.presencas }}</span><span class="l">presenças</span></div>
+    <div class="stat"><span class="n">{{ $camara.resumo.votacoes }}</span><span class="l">votações</span></div>
+    <div class="stat dark"><span class="n">{{ $camara.resumo.votos }}</span><span class="l">votos nominais</span></div>
+  </div>
+</div>
+
+<div style="padding:0 48px 72px;max-width:1200px">
+  <div class="toolbar">
+    <div class="filter-grid">
+      <label>Tipo
+        <select id="sessao-tipo"><option value="">Todos</option></select>
+      </label>
+      <label>Ano
+        <select id="sessao-ano"><option value="">Todos</option></select>
+      </label>
+      <label>Buscar
+        <input id="sessao-busca" type="search" placeholder="data, número, matéria…">
+      </label>
+    </div>
+    <p id="sessao-status" style="font-size:13px;color:#5B5B5B;margin:10px 0 0"></p>
+  </div>
+
+  <div class="plist" style="--cols:150px minmax(0,1fr) 90px 90px 90px">
+    <div class="plist-head">
+      <span>Data</span><span>Sessão</span><span>Presentes</span><span>Pauta</span><span>Votações</span>
+    </div>
+    {{ range $pages }}
+    <div class="plist-row sessao-row"
+         data-tipo="{{ .Params.tipo }}"
+         data-ano="{{ substr .Params.data 0 4 }}"
+         data-search="{{ .Title }} {{ .Params.resumo }} {{ .Params.data }}">
+      <div style="font-variant-numeric:tabular-nums">
+        <strong>{{ substr .Params.data 8 2 }}/{{ substr .Params.data 5 2 }}/{{ substr .Params.data 0 4 }}</strong>
+      </div>
+      <div>
+        <a class="plist-id" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="plist-sub">{{ .Params.resumo }}</span>
+      </div>
+      <div class="num">{{ .Params.n_presentes }}</div>
+      <div class="num">{{ .Params.n_pauta }}</div>
+      <div class="num">{{ .Params.n_votacoes }}</div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+<script>
+(function(){
+  var rows = Array.prototype.slice.call(document.querySelectorAll('.sessao-row'));
+  var ftipo = document.getElementById('sessao-tipo');
+  var fano = document.getElementById('sessao-ano');
+  var busca = document.getElementById('sessao-busca');
+  var status = document.getElementById('sessao-status');
+
+  var tipos = {}, anos = {};
+  rows.forEach(function(r){
+    var t = r.getAttribute('data-tipo'), a = r.getAttribute('data-ano');
+    if(t) tipos[t] = 1;
+    if(a) anos[a] = 1;
+  });
+  Object.keys(tipos).sort().forEach(function(t){ ftipo.insertAdjacentHTML('beforeend', '<option>'+t+'</option>'); });
+  Object.keys(anos).sort().reverse().forEach(function(a){ fano.insertAdjacentHTML('beforeend', '<option>'+a+'</option>'); });
+
+  function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  function apply(){
+    var t = ftipo.value, a = fano.value, q = norm(busca.value.trim()), n = 0;
+    rows.forEach(function(r){
+      var ok = (!t || r.getAttribute('data-tipo') === t) &&
+               (!a || r.getAttribute('data-ano') === a) &&
+               (!q || norm(r.getAttribute('data-search')).indexOf(q) !== -1);
+      r.style.display = ok ? '' : 'none';
+      if(ok) n++;
+    });
+    status.textContent = n + ' sessão(ões) encontrada(s).';
+  }
+  [ftipo, fano, busca].forEach(function(el){ el.addEventListener('input', apply); el.addEventListener('change', apply); });
+  apply();
+})();
+</script>
+{{ end }}

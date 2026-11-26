@@ -3,6 +3,11 @@ title: "Layanna Ferreira"
 autor_id: 407
 slug: "layanna-ferreira"
 partido: "PDT"
+presencas: 9
+pct_presenca: 4
+votos_favor: 16
+votos_contra: 0
+abstencoes: 0
 nome_urna: "LAYANNA FERREIRA"
 nome_urna_display: "Layanna Ferreira"
 nome_urna_igual: true

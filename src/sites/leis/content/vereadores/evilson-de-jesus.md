@@ -3,27 +3,33 @@ title: "Evilson de Jesus"
 autor_id: 1118
 slug: "evilson-de-jesus"
 partido: "PSD"
+partido_camara: "PSD"
+presencas: 37
+pct_presenca: 15
+votos_favor: 74
+votos_contra: 0
+abstencoes: 0
 nome_urna: "EVILSON SANTOS"
 nome_urna_display: "Evilson Santos"
 votos: 880
 ano_tse: 2024
 situacao_tse: "SUPLENTE"
 situacao_tse_ajuda: "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
-n_proposicoes: 6
+n_proposicoes: 7
 foto: "/fotos/evilson-de-jesus-2024.jpg"
 foto_ano: 2024
 atual: false
 anterior: false
 legislaturas: []
 fonte_tse: "https://dadosabertos.tse.jus.br/dataset/candidatos-2024"
-impacto_total: 6
-impacto_equivalente: 5.2
-exclusivas: 5
+impacto_total: 7
+impacto_equivalente: 6.2
+exclusivas: 6
 coletivas: 1
-taxa_exclusividade: 83
-peso_medio: 0.86
+taxa_exclusividade: 86
+peso_medio: 0.88
 og_image: "/og/v/evilson-de-jesus.jpg"
-share_text: "Evilson de Jesus — 6 proposições, 5 de autoria exclusiva na Câmara de Pinheiro"
+share_text: "Evilson de Jesus — 7 proposições, 6 de autoria exclusiva na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/evilson-de-jesus-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/evilson-de-jesus-9x16.jpg"}
