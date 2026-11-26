@@ -5,48 +5,68 @@
 {{ $comSit := sub (len $props) $semSit }}
 <div class="pagehead">
   <h1>Proposições</h1>
-  <p class="lead">{{ len $props }} indicações, moções, projetos e requerimentos apresentados na Câmara de Pinheiro. Clique em qualquer uma para ler o texto integral e abrir o PDF original.</p>
+  <p class="lead">{{ len $props }} indicações, moções, projetos e requerimentos apresentados na Câmara de Pinheiro. Filtre pelo que o ato faz, pelo tema, pelo objeto do pedido ou pelo bairro/povoado citado.</p>
   <div class="stats-strip">
     <div class="stat"><span class="n">{{ len $props }}</span><span class="l">proposições</span></div>
     <div class="stat"><span class="n">{{ $aprovadas }}</span><span class="l">aprovadas</span></div>
+    <div class="stat"><span class="n">{{ len .Site.Data.autores }}</span><span class="l">autores cadastrados</span></div>
     <div class="stat dark"><span class="n">{{ if $comSit }}{{ math.Round (div (mul $aprovadas 100.0) $comSit) }}{{ else }}0{{ end }}%</span><span class="l">aprovação entre as {{ $comSit }} com situação</span></div>
-    <div class="stat dark"><span class="n">{{ len .Site.Data.autores }}</span><span class="l">autores cadastrados</span></div>
   </div>
 </div>
 
 <div style="padding:0 48px 72px">
-  <div class="toolbar" style="display:grid;gap:12px">
+  <div class="toolbar" style="display:grid;gap:14px">
     <div>
       <label for="busca-prop" class="toolbar-title">Buscar</label>
-      <input id="busca-prop" type="search" placeholder="Ex.: pavimentação, saúde, escola, autor…" style="width:100%;padding:10px 12px;border:2px solid #1A1A1A;font-family:inherit;font-size:16px">
+      <input id="busca-prop" type="search" placeholder="Ex.: pavimentação, iluminação, escola, autor…" style="width:100%;padding:10px 12px;border:2px solid #1A1A1A;font-family:inherit;font-size:16px">
     </div>
-    <div class="filter-grid">
-      <label>Tipo
-        <select id="filtro-tipo"><option value="">Todos</option></select>
-      </label>
-      <label>Ano
-        <select id="filtro-ano"><option value="">Todos</option></select>
-      </label>
-      <label>Autor
-        <select id="filtro-autor"><option value="">Todos</option></select>
-      </label>
-      <label>Situação
-        <select id="filtro-sit"><option value="">Todas</option></select>
-      </label>
-      <label>Tema
-        <select id="filtro-tema"><option value="">Todos</option></select>
-      </label>
-      <label>Autoria
-        <select id="filtro-cat">
-          <option value="">Todas</option>
-          <option value="exclusiva">Exclusiva</option>
-          <option value="dupla">Dupla</option>
-          <option value="trio">Trio</option>
-          <option value="coletiva">Coletiva (4–9)</option>
-          <option value="ampla">Coletiva ampla (10+)</option>
-        </select>
-      </label>
+
+    <div>
+      <p class="toolbar-title" style="margin:0 0 8px">O que a proposição faz</p>
+      <div class="filter-grid">
+        <label>Classe do ato
+          <select id="filtro-classe"><option value="">Todas</option></select>
+        </label>
+        <label>Tema
+          <select id="filtro-tema"><option value="">Todos</option></select>
+        </label>
+        <label>Objeto
+          <select id="filtro-objeto"><option value="">Todos</option></select>
+        </label>
+        <label>Local
+          <select id="filtro-local"><option value="">Todos</option></select>
+        </label>
+      </div>
     </div>
+
+    <div>
+      <p class="toolbar-title" style="margin:0 0 8px">Identificação e autoria</p>
+      <div class="filter-grid">
+        <label>Tipo
+          <select id="filtro-tipo"><option value="">Todos</option></select>
+        </label>
+        <label>Ano
+          <select id="filtro-ano"><option value="">Todos</option></select>
+        </label>
+        <label>Autor
+          <select id="filtro-autor"><option value="">Todos</option></select>
+        </label>
+        <label>Situação
+          <select id="filtro-sit"><option value="">Todas</option></select>
+        </label>
+        <label>Autoria
+          <select id="filtro-cat">
+            <option value="">Todas</option>
+            <option value="exclusiva">Exclusiva</option>
+            <option value="dupla">Dupla</option>
+            <option value="trio">Trio</option>
+            <option value="coletiva">Coletiva (4–9)</option>
+            <option value="ampla">Coletiva ampla (10+)</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
     <p id="prop-status" style="font-size:13px;color:#5B5B5B;margin:0">{{ len $props }} proposições.</p>
   </div>
 
@@ -62,8 +82,11 @@
            data-sit="{{ .situacao_label }}"
            data-cat="{{ .autoria_categoria }}"
            data-autor="{{ delimit .autores_nomes "|" }}"
+           data-classe="{{ .classe_rotulo }}"
            data-tema="{{ .tema_rotulo }}"
-           data-search="{{ .identificacao }} {{ .ementa_limpa }} {{ .tema_rotulo }} {{ delimit .autores_nomes " " }}">
+           data-objeto="{{ .objeto_rotulo }}"
+           data-local="{{ .local_rotulo }}"
+           data-search="{{ .identificacao }} {{ .ementa_limpa }} {{ .tema_rotulo }} {{ .objeto_rotulo }} {{ .local_rotulo }} {{ delimit .autores_nomes " " }}">
         <div>
           <a class="plist-id" href="/proposicoes/{{ .slug }}/">{{ .identificacao }}</a>
           <span class="plist-sub">{{ .especie_rotulo }} · {{ .ano_label }}</span>
@@ -71,6 +94,8 @@
         <div>
           <span class="clamp2">{{ .ementa_limpa }}</span>
           {{ if .tema_rotulo }}<span class="plist-sub">Tema: {{ .tema_rotulo }}</span>{{ end }}
+          {{ if .objeto_rotulo }}<span class="plist-sub">Objeto: {{ .objeto_rotulo }}</span>{{ end }}
+          {{ if .local_rotulo }}<span class="plist-sub">Local: {{ .local_rotulo }}</span>{{ end }}
           {{ if .coletiva }}<span class="plist-sub">{{ .autoria_label }}</span>{{ end }}
         </div>
         <div class="autores">
@@ -99,8 +124,11 @@
   var fano = document.getElementById('filtro-ano');
   var fautor = document.getElementById('filtro-autor');
   var fsit = document.getElementById('filtro-sit');
-  var ftema = document.getElementById('filtro-tema');
   var fcat = document.getElementById('filtro-cat');
+  var fclasse = document.getElementById('filtro-classe');
+  var ftema = document.getElementById('filtro-tema');
+  var fobjeto = document.getElementById('filtro-objeto');
+  var flocal = document.getElementById('filtro-local');
   var status = document.getElementById('prop-status');
 
   function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
@@ -114,29 +142,57 @@
       var o = document.createElement('option'); o.value = v; o.textContent = v; sel.appendChild(o);
     });
   }
-  fill(ftipo, 'data-tipo'); fill(fano, 'data-ano'); fill(fautor, 'data-autor', true); fill(fsit, 'data-sit'); fill(ftema, 'data-tema');
+  fill(ftipo, 'data-tipo');
+  fill(fano, 'data-ano');
+  fill(fautor, 'data-autor', true);
+  fill(fsit, 'data-sit');
+  fill(fcat, 'data-cat');
+  fill(fclasse, 'data-classe');
+  fill(ftema, 'data-tema');
+  fill(fobjeto, 'data-objeto');
+  fill(flocal, 'data-local');
+
+  var filtros = [
+    ['tipo', ftipo], ['ano', fano], ['autor', fautor], ['sit', fsit],
+    ['cat', fcat], ['classe', fclasse], ['tema', ftema], ['objeto', fobjeto], ['local', flocal]
+  ];
 
   function apply(){
     var q = norm(busca.value.trim());
-    var tipo = ftipo.value, ano = fano.value, autor = fautor.value, sit = fsit.value, cat = fcat.value, tema = ftema.value;
+    var vals = {};
+    filtros.forEach(function(f){ vals[f[0]] = f[1].value; });
     var n = 0;
     rows.forEach(function(r){
       var ok = true;
       if(q && norm(r.getAttribute('data-search')).indexOf(q) === -1) ok = false;
-      if(tipo && r.getAttribute('data-tipo') !== tipo) ok = false;
-      if(ano && r.getAttribute('data-ano') !== ano) ok = false;
-      if(autor && (r.getAttribute('data-autor') || '').split('|').indexOf(autor) === -1) ok = false;
-      if(sit && r.getAttribute('data-sit') !== sit) ok = false;
-      if(cat && r.getAttribute('data-cat') !== cat) ok = false;
-      if(tema && r.getAttribute('data-tema') !== tema) ok = false;
+      if(vals.tipo && r.getAttribute('data-tipo') !== vals.tipo) ok = false;
+      if(vals.ano && r.getAttribute('data-ano') !== vals.ano) ok = false;
+      if(vals.autor && (r.getAttribute('data-autor') || '').split('|').indexOf(vals.autor) === -1) ok = false;
+      if(vals.sit && r.getAttribute('data-sit') !== vals.sit) ok = false;
+      if(vals.cat && r.getAttribute('data-cat') !== vals.cat) ok = false;
+      if(vals.classe && r.getAttribute('data-classe') !== vals.classe) ok = false;
+      if(vals.tema && r.getAttribute('data-tema') !== vals.tema) ok = false;
+      if(vals.objeto && r.getAttribute('data-objeto') !== vals.objeto) ok = false;
+      if(vals.local && r.getAttribute('data-local') !== vals.local) ok = false;
       r.style.display = ok ? '' : 'none';
       if(ok) n++;
     });
     status.textContent = n + ' proposição(ões) encontrada(s).';
   }
-  [busca, ftipo, fano, fautor, fsit, fcat, ftema].forEach(function(el){ el.addEventListener('input', apply); el.addEventListener('change', apply); });
-  var qp = new URLSearchParams(window.location.search).get('q');
-  if(qp){ busca.value = qp; }
+
+  [busca].concat(filtros.map(function(f){ return f[1]; })).forEach(function(el){
+    el.addEventListener('input', apply); el.addEventListener('change', apply);
+  });
+
+  var params = new URLSearchParams(window.location.search);
+  function prefill(chave, el){
+    var v = params.get(chave);
+    if(v){ el.value = v; }
+  }
+  prefill('q', busca);
+  filtros.forEach(function(f){ prefill(f[0], f[1]); });
+  prefill('situacao', fsit);
+
   var h = window.location.hash;
   if(h && h.indexOf('#prop-') === 0){
     var alvo = document.querySelector(h);

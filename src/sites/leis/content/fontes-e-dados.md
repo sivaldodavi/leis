@@ -18,23 +18,6 @@ As fotos são as imagens oficiais de candidatura divulgadas pelo TSE. Quando nã
 
 Usamos apenas informações públicas de candidatura e votação. **Não usamos dados de bens, despesas, financiamento de campanha ou qualquer informação financeira do TSE.**
 
-## Dados que publicamos (formato aberto)
-
-Estes arquivos são atualizados a cada publicação do site e podem ser usados livremente (com atribuição à fonte):
-
-- `/dados/legislacao.json` — normas, dispositivos e metadados.
-- `/dados/busca.json` — índice de busca (trechos de dispositivos).
-- `/dados/proposicoes.json` — proposições, autores e situação.
-- `/dados/autores.json` — vereadores/autores, partido, votos, mandatos (2020 e 2024) e proposições.
-
-Exemplo de uso:
-
-```bash
-curl https://leis.sivaldodavi.com.br/dados/legislacao.json
-```
-
-Resposta: JSON em UTF-8.
-
 ## Termos de uso
 
 Os dados são públicos. Ao reutilizar, cite a fonte (Câmara Municipal de Pinheiro, TSE e/ou este site) e a data de atualização. Este site não é oficial da Câmara.

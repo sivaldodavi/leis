@@ -29,6 +29,10 @@
     <p>O que os vereadores apresentaram.</p>
   </div>
   <div class="data-grid">
+    <section class="panel"><h3>Por classe do ato</h3><div id="props-classe" class="bar-list"></div><p class="note">O que a proposição faz: indicação, projeto normativo, orçamentário, homenagem e demais atos.</p></section>
+    <section class="panel"><h3>Por tema</h3><div id="props-tema" class="bar-list"></div><p class="note">Assunto principal do pedido, quando informado.</p></section>
+    <section class="panel"><h3>Por objeto</h3><div id="props-objeto" class="bar-list"></div><p class="note">Objetos mais frequentes, sobretudo nas indicações.</p></section>
+    <section class="panel"><h3>Por local</h3><div id="props-local" class="bar-list"></div><p class="note">Bairros, povoados, vias e escolas citados.</p></section>
     <section class="panel"><h3>Por tipo</h3><div id="props-tipo" class="bar-list"></div></section>
     <section class="panel"><h3>Por situação</h3><div id="props-situacao" class="bar-list"></div></section>
     <section class="panel"><h3>Por ano</h3><div id="props-ano" class="bar-list"></div><p class="note">Anos válidos entre 2000 e 2030; registros com ano corrompido ficam fora do gráfico.</p></section>
@@ -61,6 +65,9 @@
   function el(tag, cls, txt){ var e=document.createElement(tag); if(cls) e.className=cls; if(txt!==undefined) e.textContent=txt; return e; }
   function countBy(arr, keyFn){
     var out={}; arr.forEach(function(x){ var k=keyFn(x); if(k===undefined||k===null||k==='') k='Não informado'; out[k]=(out[k]||0)+1; }); return out;
+  }
+  function countFilled(arr, keyFn){
+    var out={}; arr.forEach(function(x){ var k=keyFn(x); if(k) out[k]=(out[k]||0)+1; }); return out;
   }
   function sorted(obj){ return Object.keys(obj).map(function(k){return [k,obj[k]];}).sort(function(a,b){return b[1]-a[1];}); }
   function bars(id, obj, opts){
@@ -113,6 +120,10 @@
     bars('normas-situacao', countBy(normas,function(n){return situacaoLabel(n.situacao);}), {limit:12});
     bars('normas-ano', countBy(normas,function(n){return (n.data||'').slice(0,4);}), {limit:30});
 
+    bars('props-classe', countFilled(props,function(p){return p.classe_rotulo;}), {limit:14});
+    bars('props-tema', countFilled(props,function(p){return p.tema_rotulo;}), {limit:16});
+    bars('props-objeto', countFilled(props,function(p){return p.objeto_rotulo;}), {limit:15});
+    bars('props-local', countFilled(props,function(p){return p.local_rotulo;}), {limit:15});
     bars('props-tipo', countBy(props,function(p){return p.especie_rotulo || p.tipo;}), {limit:14});
     bars('props-situacao', countBy(props,function(p){return situacaoLabel(p.situacao);}), {limit:10});
     bars('props-ano', countBy(props,function(p){return anoValido(p.ano)?String(p.ano):null;}), {limit:30});

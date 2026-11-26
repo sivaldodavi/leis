@@ -3,8 +3,9 @@
 {{ $props := .Site.Data.proposicoes }}
 {{ $autores := .Site.Data.autores }}
 {{ $vigente := where $normas "Params.situacao" "vigente" }}
-{{ $tramit := where $normas "Params.situacao" "projeto_em_tramitacao" }}
-{{ $outros := sub (len $normas) (add (len $vigente) (len $tramit)) }}
+{{ $verificar := where $normas "Params.situacao" "a_verificar" }}
+{{ $expirado := where $normas "Params.situacao" "prazo_expirado" }}
+{{ $outros := sub (len $normas) (add (len $vigente) (add (len $verificar) (len $expirado))) }}
 {{ $aprovadas := len (where $props "situacao" "Proposição aprovada") }}
 <div style="background:#F4F1EA">
   <section style="padding:72px 48px 32px; max-width:1100px">
@@ -44,13 +45,15 @@
     <h2 style="margin:0 0 16px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5B5B5B">Medidor de situação</h2>
     <div class="meter">
       <div style="flex:{{ len $vigente }};background:#1E7B4F"></div>
-      <div style="flex:{{ len $tramit }};background:#8A5F00"></div>
+      <div style="flex:{{ len $verificar }};background:#8A5F00"></div>
+      <div style="flex:{{ len $expirado }};background:#B03A2E"></div>
       <div style="flex:{{ $outros }};background:#D6D1C4"></div>
     </div>
     <div class="legend">
       <span><strong style="color:#1E7B4F">■</strong> Em vigor ({{ len $vigente }})</span>
-      <span><strong style="color:#8A5F00">■</strong> Em tramitação ({{ len $tramit }})</span>
-      <span><strong style="color:#6B6B6B">■</strong> Sem efeito, a verificar ou encerrado ({{ $outros }})</span>
+      <span><strong style="color:#8A5F00">■</strong> A verificar ({{ len $verificar }})</span>
+      <span><strong style="color:#B03A2E">■</strong> Prazo expirado ({{ len $expirado }})</span>
+      <span><strong style="color:#6B6B6B">■</strong> Outras situações ({{ $outros }})</span>
     </div>
   </section>
 
@@ -60,7 +63,7 @@
     <div class="grid grid-3">
       {{ range first 3 $normas }}
       <article class="card">
-        {{ $cls := "outro" }}{{ if eq .Params.situacao "vigente" }}{{ $cls = "vigente" }}{{ else if eq .Params.situacao "projeto_em_tramitacao" }}{{ $cls = "tramit" }}{{ end }}
+        {{ $cls := "outro" }}{{ if eq .Params.situacao "vigente" }}{{ $cls = "vigente" }}{{ else if eq .Params.situacao "a_verificar" }}{{ $cls = "tramit" }}{{ else if eq .Params.situacao "prazo_expirado" }}{{ $cls = "tramit" }}{{ end }}
         <span class="badge {{ $cls }}">{{ .Params.situacao_label }}</span>
         <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B5B5B">{{ .Params.tipo_label }} · {{ .Params.numero }}</p>
         <h3 style="margin:0;font-size:22px;font-weight:800">{{ .Title }}</h3>

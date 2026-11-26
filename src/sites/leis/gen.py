@@ -103,6 +103,81 @@ PROP_TIPO_LABEL = {
     "prestacao_contas_executivo": "Prestação de Contas do Executivo",
 }
 
+TEMA_LABEL = {
+    "infraestrutura_predial": "Infraestrutura predial",
+    "infraestrutura_viaria": "Infraestrutura viária",
+    "agua_saneamento": "Água e saneamento",
+    "saude": "Saúde",
+    "iluminacao_publica": "Iluminação pública",
+    "educacao": "Educação",
+    "esporte_lazer": "Esporte e lazer",
+    "seguranca": "Segurança",
+    "meio_ambiente_limpeza": "Meio ambiente e limpeza",
+    "planejamento_gestao": "Planejamento e gestão",
+    "assistencia": "Assistência social",
+    "economia": "Economia",
+    "cultura_turismo": "Cultura e turismo",
+    "patrimonio": "Patrimônio",
+    "transporte": "Transporte",
+}
+
+OBJETO_LABEL = {
+    "reparo_reforma": "Reparo e reforma",
+    "pavimentacao": "Pavimentação",
+    "agua_poco": "Água e poço",
+    "construcao": "Construção",
+    "iluminacao": "Iluminação",
+    "saude": "Saúde",
+    "aquisicao_equipamento": "Aquisição de equipamento",
+    "educacao": "Educação",
+    "esporte_lazer": "Esporte e lazer",
+    "seguranca": "Segurança",
+    "via_estrada": "Via e estrada",
+    "limpeza_meio_ambiente": "Limpeza e meio ambiente",
+    "ponte_drenagem": "Ponte e drenagem",
+    "climatizacao": "Climatização",
+    "servico_publico": "Serviço público",
+    "programa_social": "Programa social",
+    "equipamento_social": "Equipamento social",
+    "obra_reparo": "Obra e reparo",
+    "mobilidade_transito": "Mobilidade e trânsito",
+    "evento": "Evento",
+    "documentacao": "Documentação",
+    "terreno_doacao": "Terreno e doação",
+    "lazer_revitalizacao": "Lazer e revitalização",
+    "diagnostico": "Diagnóstico",
+    "cais_orla": "Cais e orla",
+    "semaforo_transito": "Semáforo e trânsito",
+    "qualificacao": "Qualificação",
+    "equipamento_saude": "Equipamento de saúde",
+    "desenvolvimento_economico": "Desenvolvimento econômico",
+    "concurso_pessoal": "Concurso e pessoal",
+    "agricultura": "Agricultura",
+    "turismo": "Turismo",
+    "transporte": "Transporte",
+    "telecomunicacao": "Telecomunicação",
+    "taxa_isencao": "Taxa e isenção",
+    "revitalizacao": "Revitalização",
+    "remuneracao_servidor": "Remuneração de servidor",
+    "programa_saude": "Programa de saúde",
+    "politica_animal": "Política animal",
+    "limpeza": "Limpeza",
+    "equipamento_seguranca": "Equipamento de segurança",
+    "drenagem": "Drenagem",
+    "criacao_orgao": "Criação de órgão",
+    "contratacao_plano": "Contratação e plano",
+    "banheiro_publico": "Banheiro público",
+    "assessoria_tecnica": "Assessoria técnica",
+    "acessibilidade": "Acessibilidade",
+}
+
+LOCAL_TIPO_LABEL = {
+    "povoado": "Povoado",
+    "bairro": "Bairro",
+    "via": "Via",
+    "escola": "Escola",
+}
+
 tipo_label = {
     "lei_organica": "Lei Orgânica",
     "codigo_posturas": "Código de Posturas",
@@ -306,8 +381,19 @@ for r in props_rows:
     p["classe_curta"] = p["classe_rotulo"]
     p["classe_evidencia"] = sub.get("descricao") or ""
     p["tema"] = p.get("tema") or ""
-    p["tema_rotulo"] = humaniza(p.get("tema"))
+    p["tema_rotulo"] = TEMA_LABEL.get(p["tema"], humaniza(p["tema"]))
     p["tema_evidencia"] = ""
+    p["objeto"] = p.get("objeto") or ""
+    p["objeto_rotulo"] = OBJETO_LABEL.get(p["objeto"], humaniza(p["objeto"]))
+    if p["objeto"] in ("nao_identificado", "nao_aplicavel"):
+        p["objeto_rotulo"] = ""
+    loc = clean_ws(p.get("local") or "")
+    lt, ln = (loc.split(":", 1) + [""])[:2] if ":" in loc else ("", loc)
+    p["local"] = loc
+    p["local_tipo"] = lt
+    p["local_tipo_rotulo"] = LOCAL_TIPO_LABEL.get(lt, humaniza(lt))
+    p["local_nome"] = clean_ws(ln)
+    p["local_rotulo"] = (p["local_tipo_rotulo"] + " " + p["local_nome"]).strip() if loc else ""
     p["slug"] = re.sub(r"[^a-z0-9]+", "-", (p["identificacao"] or "").lower()).strip("-") or ("prop-%s" % p["id"])
     p["texto_integral"] = justificativas.get(p["id"], "")
     p["pdf_arquivo"] = p.get("arquivo_pdf") or ""
@@ -354,6 +440,7 @@ for a in autores:
 
 def stats_de_proposicoes(ps):
     by_year, by_tipo, by_situacao, by_classe = {}, {}, {}, {}
+    by_tema, by_objeto, by_local = {}, {}, {}
     aprovadas = rejeitadas = 0
     for p in ps:
         ano = str(p.get("ano") or "")
@@ -362,6 +449,15 @@ def stats_de_proposicoes(ps):
         by_tipo[p.get("especie_rotulo") or "Não informado"] = by_tipo.get(p.get("especie_rotulo") or "Não informado", 0) + 1
         cls = p.get("classe_rotulo") or "Outro ato"
         by_classe[cls] = by_classe.get(cls, 0) + 1
+        tema = p.get("tema_rotulo") or ""
+        if tema:
+            by_tema[tema] = by_tema.get(tema, 0) + 1
+        obj = p.get("objeto_rotulo") or ""
+        if obj:
+            by_objeto[obj] = by_objeto.get(obj, 0) + 1
+        loc = p.get("local_rotulo") or ""
+        if loc:
+            by_local[loc] = by_local.get(loc, 0) + 1
         sit = p.get("situacao") or "nao_informada"
         by_situacao[sit] = by_situacao.get(sit, 0) + 1
         if "aprovada" in sit.lower():
@@ -381,6 +477,9 @@ def stats_de_proposicoes(ps):
         "by_familia": {},
         "by_situacao": dict(sorted(by_situacao.items(), key=lambda x: -x[1])),
         "by_classe": dict(sorted(by_classe.items(), key=lambda x: -x[1])),
+        "by_tema": dict(sorted(by_tema.items(), key=lambda x: -x[1])),
+        "by_objeto": dict(sorted(by_objeto.items(), key=lambda x: -x[1])),
+        "by_local": dict(sorted(by_local.items(), key=lambda x: -x[1])),
     }
 
 
@@ -433,6 +532,8 @@ for p in props:
     p["slug"] = slug
 
 for p in props:
+    dp_prop = q("SELECT * FROM dispositivos WHERE proposicao_id=? ORDER BY ordem, id", p["id"])
+    p["n_dispositivos"] = len(dp_prop)
     lines = ["---"]
     lines.append('title: "%s"' % yaml_escape(p["identificacao"]))
     lines.append('proposicao_id: %d' % p["id"])
@@ -450,10 +551,20 @@ for p in props:
         lines.append('tema: "%s"' % yaml_escape(p["tema"]))
         lines.append('tema_rotulo: "%s"' % yaml_escape(p["tema_rotulo"]))
         lines.append('tema_evidencia: "%s"' % yaml_escape(p["tema_evidencia"] or ""))
+    if p["objeto_rotulo"]:
+        lines.append('objeto: "%s"' % yaml_escape(p["objeto"]))
+        lines.append('objeto_rotulo: "%s"' % yaml_escape(p["objeto_rotulo"]))
+    if p["local_rotulo"]:
+        lines.append('local: "%s"' % yaml_escape(p["local"]))
+        lines.append('local_tipo: "%s"' % yaml_escape(p["local_tipo"]))
+        lines.append('local_tipo_rotulo: "%s"' % yaml_escape(p["local_tipo_rotulo"]))
+        lines.append('local_nome: "%s"' % yaml_escape(p["local_nome"]))
+        lines.append('local_rotulo: "%s"' % yaml_escape(p["local_rotulo"]))
     if p["pdf_url"]:
         lines.append('pdf_url: "%s"' % yaml_escape(p["pdf_url"]))
         lines.append('pdf_arquivo: "%s"' % yaml_escape(p["pdf_arquivo"]))
     lines.append('tem_texto: %s' % ("true" if p["tem_texto"] else "false"))
+    lines.append('n_dispositivos: %d' % p["n_dispositivos"])
     lines.append('ementa: "%s"' % yaml_escape(p["ementa_limpa"]))
     if p["autores"]:
         lines.append("autores:")
@@ -467,6 +578,29 @@ for p in props:
         for par in paras:
             lines.append("<p>%s</p>" % par)
         lines.append("</div>")
+
+    if dp_prop:
+        lines.append("")
+        lines.append("## Dispositivos")
+        lines.append("")
+        for d in dp_prop:
+            rotulo = md_text(d["rotulo"])
+            titulo = md_text(d["titulo"])
+            capitulo = md_text(d["capitulo"])
+            heading = rotulo or titulo or capitulo or ("Dispositivo %d" % d["ordem"])
+            lines.append("### " + heading)
+            lines.append("")
+            partes = q("SELECT * FROM dispositivo_partes WHERE dispositivo_id=? ORDER BY ordem, id", d["id"])
+            if partes:
+                for pt in partes:
+                    ident = md_text(pt["identificador"])
+                    ptexto = md_text(pt["texto"])
+                    lines.append(("**%s.** %s" % (ident, ptexto)) if ident else ptexto)
+                    lines.append("")
+            elif md_text(d["texto"]):
+                lines.append(md_text(d["texto"]))
+                lines.append("")
+
     with open(os.path.join(props_dir, p["slug"] + ".md"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
@@ -870,7 +1004,7 @@ with open(os.path.join(data_dir, "glossario.json"), "w", encoding="utf-8") as f:
 with open(os.path.join(BASE, "content", "estatisticas.md"), "w", encoding="utf-8") as f:
     f.write('---\ntitle: "Estatísticas"\nlayout: "estatisticas"\ndescription: "Números das normas, proposições e vereadores de Pinheiro, com cruzamentos entre tipo, ano, situação, autor e partido."\n---\n')
 
-# Endpoints estáticos
+# Dados internos consumidos pelos filtros do site (não é API pública)
 static_dados = os.path.join(BASE, "static", "dados")
 os.makedirs(static_dados, exist_ok=True)
 ARQUIVOS_DADOS = ("legislacao.json", "busca.json", "proposicoes.json", "autores.json", "glossario.json")
@@ -879,13 +1013,8 @@ for fname in ARQUIVOS_DADOS:
     dst = os.path.join(static_dados, fname)
     if os.path.exists(src):
         shutil.copyfile(src, dst)
-v1_dir = os.path.join(static_dados, "v1")
-os.makedirs(v1_dir, exist_ok=True)
-for fname in ARQUIVOS_DADOS:
-    src = os.path.join(static_dados, fname)
-    dst = os.path.join(v1_dir, fname)
-    if os.path.exists(src):
-        shutil.copyfile(src, dst)
+# A antiga API em /dados/v1 foi descontinuada.
+shutil.rmtree(os.path.join(static_dados, "v1"), ignore_errors=True)
 
 # Páginas descontinuadas (sem tabelas no banco novo)
 for nome in ("temas.md", "qualidade.md", "tipos.md"):
@@ -893,7 +1022,7 @@ for nome in ("temas.md", "qualidade.md", "tipos.md"):
     if os.path.exists(caminho):
         os.remove(caminho)
 for fname in ("especies.json", "qualidade.json"):
-    for pasta in (data_dir, static_dados, v1_dir):
+    for pasta in (data_dir, static_dados):
         caminho = os.path.join(pasta, fname)
         if os.path.exists(caminho):
             os.remove(caminho)
