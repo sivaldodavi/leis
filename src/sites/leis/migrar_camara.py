@@ -497,6 +497,11 @@ def migrar(oficial_path, camara_path):
         "Limitação",
         "Migração: as tabelas site_*, hubpolitico_* e instagram_perfil ficaram apenas no banco de origem; o banco oficial recebeu as tabelas de sessão e as correspondências."
     )
+    obs(
+        "Limitação",
+        "Migração: os 300 PDFs dos relatórios foram copiados para /opt/servidor/data/servicos/camara/relatorios/ e não são referenciados pelo site.",
+        "Resolvida",
+    )
     for m in ambiguas:
         obs(
             "Pendência de revisão",
