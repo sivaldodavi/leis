@@ -6,7 +6,7 @@ tipo_label: "Lei Orgânica"
 numero: "LOM"
 data: "2000"
 ano: "2000"
-pdf_url: "/pdfs/lei_organica/LOM_025_2000.pdf"
+pdf_url: "https://pub-c9e7f83be13a4ced872b3bd4d04c075a.r2.dev/documentos/lei_organica/LOM_025_2000.pdf"
 especie: "lei_organica"
 og_image: "/og/site.jpg"
 situacao: "vigente"
@@ -21,7 +21,7 @@ fonte_paginas: 68
 
 **Tipo:** Lei Orgânica · **Número:** LOM · **Data:** 2000 · **Situação:** Em vigor · **Fonte:** lei_organica/LOM_025_2000.pdf
 
-**Documento original:** [ver PDF](/pdfs/lei_organica/LOM_025_2000.pdf)
+**Documento original:** [ver PDF](https://pub-c9e7f83be13a4ced872b3bd4d04c075a.r2.dev/documentos/lei_organica/LOM_025_2000.pdf)
 
 > Texto atual sem histórico de emendas. Emendas posteriores a 2011-2012 pendentes.
 

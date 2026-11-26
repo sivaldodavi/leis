@@ -6,7 +6,7 @@ tipo_label: "Resolução"
 numero: "004/2026"
 data: "2026-04-01"
 ano: "2026"
-pdf_url: "/pdfs/portarias/PORT_004_2026.pdf"
+pdf_url: "https://pub-c9e7f83be13a4ced872b3bd4d04c075a.r2.dev/documentos/portarias/PORT_004_2026.pdf"
 especie: "resolucao"
 og_image: "/og/site.jpg"
 situacao: "vigente"
@@ -21,7 +21,7 @@ fonte_paginas: 3
 
 **Tipo:** Resolução · **Número:** 004/2026 · **Data:** 2026-04-01 · **Situação:** Em vigor · **Fonte:** portarias/PORT_004_2026.pdf
 
-**Documento original:** [ver PDF](/pdfs/portarias/PORT_004_2026.pdf)
+**Documento original:** [ver PDF](https://pub-c9e7f83be13a4ced872b3bd4d04c075a.r2.dev/documentos/portarias/PORT_004_2026.pdf)
 
 > Arquivo chama-se PORT_004, mas o documento é a Resolução 004/2026. Nome do arquivo deve ser corrigido.
 

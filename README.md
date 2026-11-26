@@ -13,7 +13,7 @@ Portal de normas, proposições, sessões e votações da Câmara Municipal de P
 - `db/camara_pinheiro.db`: banco de origem usado na migração das sessões.
 - `migrar_camara.py`: script usado para unificar o banco de sessões ao banco oficial.
 
-Os PDFs dos relatórios e das proposições não fazem parte do repositório. O acervo fica em armazenamento local e será migrado para o Cloudflare R2.
+Os PDFs dos relatórios e das proposições não fazem parte do repositório. Eles são publicados no Cloudflare R2 em `https://pub-c9e7f83be13a4ced872b3bd4d04c075a.r2.dev/documentos/`, e o `gen.py` gera os links do site apontando para essa base.
 
 ## Como o site é publicado
 

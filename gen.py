@@ -3,6 +3,7 @@ from collections import Counter, defaultdict
 
 BASE = os.environ.get("LEIS_BASE", "/opt/servidor/src/sites/leis")
 DB = os.environ.get("LEIS_DB", "/opt/servidor/data/servicos/leis/legislacao_pinheiro.db")
+PDF_BASE = "https://pub-c9e7f83be13a4ced872b3bd4d04c075a.r2.dev/documentos"
 conn = sqlite3.connect(DB)
 conn.row_factory = sqlite3.Row
 c = conn.cursor()
@@ -398,7 +399,7 @@ for r in props_rows:
     p["slug"] = re.sub(r"[^a-z0-9]+", "-", (p["identificacao"] or "").lower()).strip("-") or ("prop-%s" % p["id"])
     p["texto_integral"] = justificativas.get(p["id"], "")
     p["pdf_arquivo"] = p.get("arquivo_pdf") or ""
-    p["pdf_url"] = "/pdfs/%s" % p["pdf_arquivo"] if p["pdf_arquivo"] else ""
+    p["pdf_url"] = "%s/%s" % (PDF_BASE, p["pdf_arquivo"]) if p["pdf_arquivo"] else ""
     p["tem_texto"] = len(p["texto_integral"]) > 100
     p["qualidade"] = {"pontuacao": None, "nivel": "", "problemas": []}
     props.append(p)
@@ -993,7 +994,7 @@ for n in normas_rows:
         "observacao": obs,
         "n_dispositivos": len(dsps),
         "fonte_arquivo": (fonte or {}).get("arquivo", ""),
-        "pdf_url": "/pdfs/%s" % arquivo_pdf if arquivo_pdf else "",
+        "pdf_url": "%s/%s" % (PDF_BASE, arquivo_pdf) if arquivo_pdf else "",
         "texto_disponivel": n["texto_disponivel"],
         "og_image": "/og/site.jpg",
     })
@@ -1045,7 +1046,7 @@ for n in normas_rows:
     lines.append('data: "%s"' % n["data"])
     lines.append('ano: "%s"' % (n["data"][:4] if n["data"] else ""))
     if arquivo_pdf:
-        lines.append('pdf_url: "/pdfs/%s"' % yaml_escape(arquivo_pdf))
+        lines.append('pdf_url: "%s/%s"' % (PDF_BASE, yaml_escape(arquivo_pdf)))
     lines.append('especie: "%s"' % tipo)
     lines.append('og_image: "/og/site.jpg"')
     lines.append('situacao: "%s"' % sit)
@@ -1070,7 +1071,7 @@ for n in normas_rows:
     lines.append(" · ".join(meta))
     lines.append("")
     if arquivo_pdf:
-        lines.append("**Documento original:** [ver PDF](/pdfs/%s)" % arquivo_pdf)
+        lines.append("**Documento original:** [ver PDF](%s/%s)" % (PDF_BASE, arquivo_pdf))
         lines.append("")
     if obs:
         lines.append("> %s" % obs)
