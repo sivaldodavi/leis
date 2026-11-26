@@ -10,8 +10,6 @@ Portal de normas, proposições, sessões e votações da Câmara Municipal de P
 - `content/`, `data/`, `layouts/`, `static/`: fonte do site Hugo.
 - `gen.py`: gera as páginas e os JSONs do site a partir do banco SQLite.
 - `db/legislacao_pinheiro.db`: banco oficial usado na geração.
-- `db/camara_pinheiro.db`: banco de origem usado na migração das sessões.
-- `migrar_camara.py`: script usado para unificar o banco de sessões ao banco oficial.
 
 Os PDFs dos relatórios e das proposições não fazem parte do repositório. Eles são publicados no Cloudflare R2: proposições e normas em `https://pub-c9e7f83be13a4ced872b3bd4d04c075a.r2.dev/documentos/` e relatórios em `https://pub-c9e7f83be13a4ced872b3bd4d04c075a.r2.dev/relatorios/`. O `gen.py` gera os links do site apontando para essa base.
 
