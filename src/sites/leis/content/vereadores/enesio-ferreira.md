@@ -22,7 +22,7 @@ coletivas: 18
 taxa_exclusividade: 68
 peso_medio: 0.72
 og_image: "/og/v/enesio-ferreira.jpg"
-share_text: "Enesio Ferreira — 74 proposições, 50 de autoria exclusiva, 57 com objeto definido na Câmara de Pinheiro"
+share_text: "Enesio Ferreira — 74 proposições, 50 de autoria exclusiva, 54 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/enesio-ferreira-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/enesio-ferreira-9x16.jpg"}

@@ -23,7 +23,7 @@ coletivas: 14
 taxa_exclusividade: 33
 peso_medio: 0.37
 og_image: "/og/v/felipe-de-chicao.jpg"
-share_text: "Felipe de Chicão — 21 proposições, 7 de autoria exclusiva, 9 com objeto definido na Câmara de Pinheiro"
+share_text: "Felipe de Chicão — 21 proposições, 7 de autoria exclusiva, 7 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/felipe-de-chicao-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/felipe-de-chicao-9x16.jpg"}

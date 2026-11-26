@@ -23,7 +23,7 @@ coletivas: 28
 taxa_exclusividade: 54
 peso_medio: 0.58
 og_image: "/og/v/rubemar-ribeiro.jpg"
-share_text: "Rubemar Ribeiro — 69 proposições, 37 de autoria exclusiva, 48 com objeto definido na Câmara de Pinheiro"
+share_text: "Rubemar Ribeiro — 69 proposições, 37 de autoria exclusiva, 45 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/rubemar-ribeiro-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/rubemar-ribeiro-9x16.jpg"}

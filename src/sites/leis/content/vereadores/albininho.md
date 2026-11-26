@@ -23,7 +23,7 @@ coletivas: 29
 taxa_exclusividade: 53
 peso_medio: 0.56
 og_image: "/og/v/albininho.jpg"
-share_text: "Albininho — 62 proposições, 33 de autoria exclusiva, 44 com objeto definido na Câmara de Pinheiro"
+share_text: "Albininho — 62 proposições, 33 de autoria exclusiva, 41 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/albininho-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/albininho-9x16.jpg"}

@@ -23,7 +23,7 @@ coletivas: 15
 taxa_exclusividade: 0
 peso_medio: 0.06
 og_image: "/og/v/ze-filho.jpg"
-share_text: "Zé Filho — 15 proposições, 6 com objeto definido na Câmara de Pinheiro"
+share_text: "Zé Filho — 15 proposições, 3 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/ze-filho-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/ze-filho-9x16.jpg"}

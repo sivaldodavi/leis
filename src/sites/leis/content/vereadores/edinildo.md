@@ -22,7 +22,7 @@ coletivas: 33
 taxa_exclusividade: 77
 peso_medio: 0.82
 og_image: "/og/v/edinildo.jpg"
-share_text: "Edinildo — 225 proposições, 173 de autoria exclusiva, 164 com objeto definido na Câmara de Pinheiro"
+share_text: "Edinildo — 225 proposições, 173 de autoria exclusiva, 156 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/edinildo-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/edinildo-9x16.jpg"}

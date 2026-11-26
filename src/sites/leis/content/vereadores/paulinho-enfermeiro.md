@@ -23,7 +23,7 @@ coletivas: 14
 taxa_exclusividade: 66
 peso_medio: 0.69
 og_image: "/og/v/paulinho-enfermeiro.jpg"
-share_text: "Paulinho Enfermeiro — 47 proposições, 31 de autoria exclusiva, 35 com objeto definido na Câmara de Pinheiro"
+share_text: "Paulinho Enfermeiro — 47 proposições, 31 de autoria exclusiva, 29 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/paulinho-enfermeiro-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/paulinho-enfermeiro-9x16.jpg"}

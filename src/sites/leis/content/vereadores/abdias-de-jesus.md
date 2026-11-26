@@ -23,7 +23,7 @@ coletivas: 18
 taxa_exclusividade: 52
 peso_medio: 0.59
 og_image: "/og/v/abdias-de-jesus.jpg"
-share_text: "Abdias de Jesus — 40 proposições, 21 de autoria exclusiva, 24 com objeto definido na Câmara de Pinheiro"
+share_text: "Abdias de Jesus — 40 proposições, 21 de autoria exclusiva, 23 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/abdias-de-jesus-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/abdias-de-jesus-9x16.jpg"}

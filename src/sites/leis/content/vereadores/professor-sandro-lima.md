@@ -23,7 +23,7 @@ coletivas: 16
 taxa_exclusividade: 47
 peso_medio: 0.50
 og_image: "/og/v/professor-sandro-lima.jpg"
-share_text: "Professor Sandro Lima — 30 proposições, 14 de autoria exclusiva, 13 com objeto definido na Câmara de Pinheiro"
+share_text: "Professor Sandro Lima — 30 proposições, 14 de autoria exclusiva, 10 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/professor-sandro-lima-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/professor-sandro-lima-9x16.jpg"}

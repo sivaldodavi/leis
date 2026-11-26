@@ -23,7 +23,7 @@ coletivas: 27
 taxa_exclusividade: 52
 peso_medio: 0.56
 og_image: "/og/v/lucas-do-beiradao.jpg"
-share_text: "Lucas do Beiradão — 60 proposições, 31 de autoria exclusiva, 24 com objeto definido na Câmara de Pinheiro"
+share_text: "Lucas do Beiradão — 60 proposições, 31 de autoria exclusiva, 20 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/lucas-do-beiradao-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/lucas-do-beiradao-9x16.jpg"}

@@ -23,7 +23,7 @@ coletivas: 8
 taxa_exclusividade: 20
 peso_medio: 0.25
 og_image: "/og/v/joao-morais.jpg"
-share_text: "João Morais — 10 proposições, 2 de autoria exclusiva, 7 com objeto definido na Câmara de Pinheiro"
+share_text: "João Morais — 10 proposições, 2 de autoria exclusiva, 4 com objeto definido na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/joao-morais-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/joao-morais-9x16.jpg"}
