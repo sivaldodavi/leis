@@ -4,9 +4,12 @@ autor_id: 3447
 slug: "edmilson-silva"
 partido: "PDT"
 nome_urna: "EDMILSON SILVA"
-nome_urna_display: ""
+nome_urna_display: "Edmilson Silva"
+nome_urna_igual: true
 votos: 1094
+ano_tse: 2020
 situacao_tse: "ELEITO POR QP"
+situacao_tse_ajuda: "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
 n_proposicoes: 0
 foto: "/fotos/edmilson-silva-2020.jpg"
 foto_ano: 2020

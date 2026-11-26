@@ -9,9 +9,7 @@ Base: `https://leis.sivaldodavi.com.br/dados/`
 - `/dados/legislacao.json` — normas, dispositivos e metadados.
 - `/dados/busca.json` — índice de busca (trechos de dispositivos).
 - `/dados/proposicoes.json` — proposições, autores e situação.
-- `/dados/autores.json` — vereadores/autores, partido, votos, mandatos, impacto de autoria e destaques.
-- `/dados/especies.json` — catálogo de espécies normativas, com definição, maioria, sanção e exemplos.
-- `/dados/qualidade.json` — nota de qualidade de cada proposição, nível e lacunas da fonte.
+- `/dados/autores.json` — vereadores/autores, partido, votos, mandatos, impacto de autoria.
 
 Versão estável: `/dados/v1/...` (mesmos arquivos).
 

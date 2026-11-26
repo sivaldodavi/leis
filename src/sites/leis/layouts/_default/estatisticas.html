@@ -113,7 +113,7 @@
     bars('normas-situacao', countBy(normas,function(n){return situacaoLabel(n.situacao);}), {limit:12});
     bars('normas-ano', countBy(normas,function(n){return (n.data||'').slice(0,4);}), {limit:30});
 
-    bars('props-tipo', countBy(props,function(p){return p.tipo;}), {limit:14});
+    bars('props-tipo', countBy(props,function(p){return p.especie_rotulo || p.tipo;}), {limit:14});
     bars('props-situacao', countBy(props,function(p){return situacaoLabel(p.situacao);}), {limit:10});
     bars('props-ano', countBy(props,function(p){return anoValido(p.ano)?String(p.ano):null;}), {limit:30});
 

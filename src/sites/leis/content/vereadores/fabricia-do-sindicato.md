@@ -7,6 +7,7 @@ nome_urna: "FABRÍCIA DO SINDICATO"
 nome_urna_display: "Fabrícia do Sindicato"
 nome_urna_igual: true
 votos: 1161
+ano_tse: 2024
 situacao_tse: "ELEITO POR QP"
 situacao_tse_ajuda: "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista."
 n_proposicoes: 47
@@ -23,16 +24,19 @@ coletivas: 25
 taxa_exclusividade: 45
 peso_medio: 0.49
 og_image: "/og/v/fabricia-do-sindicato.jpg"
-share_text: "Fabrícia do Sindicato — 47 proposições, 21 de autoria exclusiva, 24 com objeto definido na Câmara de Pinheiro"
+share_text: "Fabrícia do Sindicato — 47 proposições, 21 de autoria exclusiva na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/fabricia-do-sindicato-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/fabricia-do-sindicato-9x16.jpg"}
-destaques:
-  - "Autor exclusivo de 21 proposições"
-  - "Assina mais com Lucas do Beiradão (25)"
-  - "Apresentou proposições em 4 anos diferentes"
 parceiros:
   - {nome: "Lucas do Beiradão", slug: "lucas-do-beiradao", n: 25}
   - {nome: "Rubemar Ribeiro", slug: "rubemar-ribeiro", n: 25}
   - {nome: "Albininho", slug: "albininho", n: 25}
+  - {nome: "Edinildo", slug: "edinildo", n: 25}
+  - {nome: "Jaelson Araújo", slug: "jaelson-araujo", n: 24}
+  - {nome: "Herasmo Leite", slug: "herasmo-leite", n: 24}
+  - {nome: "Guto", slug: "guto", n: 21}
+  - {nome: "Enesio Ferreira", slug: "enesio-ferreira", n: 16}
+  - {nome: "João do Vale", slug: "joao-do-vale", n: 15}
+  - {nome: "Zé Filho", slug: "ze-filho", n: 14}
 ---

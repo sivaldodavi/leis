@@ -2,15 +2,6 @@
   {
     "id": 700,
     "nome": "Abdias de Jesus",
-    "nome_tse": "ABDIAS DE JESUS SILVA",
-    "nome_urna": "ABDIAS DE JESUS",
-    "partido": "MOBILIZA",
-    "cargo": "VEREADOR",
-    "votos": 770,
-    "situacao_tse": "ELEITO POR MÉDIA",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "abdias-de-jesus",
     "n_proposicoes": 40,
     "stats": {
@@ -31,83 +22,36 @@
         "Projeto de Resolução": 2,
         "Requerimento": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 32,
-        "Organiza a Câmara": 5,
-        "Cria regra": 3
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 18,
         "Proposição aprovada": 15,
         "Proposição inclusa na Ordem do Dia": 7
       },
       "by_classe": {
-        "Proposta com objeto": 23,
-        "Moção/manifestação": 9,
-        "Não classificável": 5,
+        "Indicação": 18,
+        "Aplauso": 7,
+        "Pesar": 6,
+        "Projeto normativo": 5,
         "Homenagem ou título": 2,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 23,
-      "n_nomeacao": 1,
-      "n_homenagem": 2,
-      "n_indefinida": 5
+        "Outro ato": 1,
+        "Procedimento regimental": 1
+      }
     },
+    "nome_tse": "ABDIAS DE JESUS SILVA",
+    "nome_urna": "ABDIAS DE JESUS",
+    "partido": "MOBILIZA",
+    "cargo": "Vereador",
+    "votos": 770,
+    "situacao_tse": "ELEITO POR MÉDIA",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por média",
     "situacao_tse_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.",
     "nome_urna_display": "Abdias de Jesus",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 700,
-      "n_total": 40,
-      "n_exclusiva": 21,
-      "n_dupla": 1,
-      "n_trio": 0,
-      "n_coletiva": 6,
-      "n_ampla": 12,
-      "autoria_equivalente": 23.7,
-      "taxa_exclusividade": 0.525,
-      "peso_medio": 0.592,
-      "familias": {
-        "pede": 32,
-        "cria_regra": 3,
-        "camara": 5
-      },
-      "tipos": {
-        "Indicação": 18,
-        "Requerimento": 1,
-        "Projeto de Lei do Legislativo": 3,
-        "Projeto de Resolução": 2,
-        "Moção": 13,
-        "Projeto de Decreto Legislativo": 3
-      },
-      "coautores": [
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 19
-        },
-        {
-          "nome": "Jaelson Araújo",
-          "id": 10,
-          "n": 17
-        },
-        {
-          "nome": "Guto",
-          "id": 89,
-          "n": 17
-        }
-      ],
-      "anos": {
-        "2025": 15,
-        "2026": 25
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 21 proposições",
-      "Assina mais com Edinildo (19)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 700,
@@ -138,6 +82,72 @@
     "foto_ano": 2024,
     "nome_tse_display": "Abdias de Jesus Silva",
     "og_image": "/og/v/abdias-de-jesus.jpg",
+    "impacto": {
+      "n_total": 40,
+      "n_exclusiva": 21,
+      "n_dupla": 1,
+      "n_trio": 0,
+      "n_coletiva": 6,
+      "n_ampla": 12,
+      "autoria_equivalente": 23.667239623121972,
+      "taxa_exclusividade": 0.525,
+      "peso_medio": 0.5916809905780493,
+      "familias": {},
+      "tipos": {
+        "Projeto de Decreto Legislativo": 3,
+        "Moção": 13,
+        "Indicação": 18,
+        "Projeto de Resolução": 2,
+        "Projeto de Lei do Legislativo": 3,
+        "Requerimento": 1
+      },
+      "coautores": [
+        {
+          "nome": "Edinildo",
+          "n": 19
+        },
+        {
+          "nome": "Guto",
+          "n": 17
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 17
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 13
+        },
+        {
+          "nome": "Eduardo Ralpmnet",
+          "n": 13
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 12
+        },
+        {
+          "nome": "Albininho",
+          "n": 12
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 12
+        },
+        {
+          "nome": "João do Vale",
+          "n": 12
+        },
+        {
+          "nome": "Rodrigo Brasil",
+          "n": 12
+        }
+      ],
+      "anos": {
+        "2026": 25,
+        "2025": 15
+      }
+    },
     "impacto_equivalente_label": "23,7",
     "parceiros": [
       {
@@ -146,14 +156,49 @@
         "n": 19
       },
       {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 17
+      },
+      {
         "nome": "Jaelson Araújo",
         "slug": "jaelson-araujo",
         "n": 17
       },
       {
-        "nome": "Guto",
-        "slug": "guto",
-        "n": 17
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 13
+      },
+      {
+        "nome": "Eduardo Ralpmnet",
+        "slug": "eduardo-ralpmnet",
+        "n": 13
+      },
+      {
+        "nome": "Lucas do Beiradão",
+        "slug": "lucas-do-beiradao",
+        "n": 12
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 12
+      },
+      {
+        "nome": "Enesio Ferreira",
+        "slug": "enesio-ferreira",
+        "n": 12
+      },
+      {
+        "nome": "João do Vale",
+        "slug": "joao-do-vale",
+        "n": 12
+      },
+      {
+        "nome": "Rodrigo Brasil",
+        "slug": "rodrigo-brasil",
+        "n": 12
       }
     ],
     "n_coletivas": 18
@@ -161,15 +206,6 @@
   {
     "id": 31,
     "nome": "Albininho",
-    "nome_tse": "JOSE ALBINO COSTA ARAUJO",
-    "nome_urna": "ALBININHO",
-    "partido": "PODE",
-    "cargo": "VEREADOR",
-    "votos": 1170,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "albininho",
     "n_proposicoes": 62,
     "stats": {
@@ -192,11 +228,7 @@
         "Requerimento": 2,
         "Emenda ao Projeto de Lei Ordinária": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 56,
-        "Organiza a Câmara": 5,
-        "Altera outra proposta": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 35,
         "Proposição aprovada": 19,
@@ -204,75 +236,29 @@
         "Proposição retirada da Ordem do Dia": 3
       },
       "by_classe": {
-        "Proposta com objeto": 41,
-        "Moção/manifestação": 11,
-        "Não classificável": 8,
-        "Homenagem ou título": 1,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 41,
-      "n_nomeacao": 1,
-      "n_homenagem": 1,
-      "n_indefinida": 8
+        "Indicação": 40,
+        "Pesar": 10,
+        "Aplauso": 4,
+        "Procedimento regimental": 3,
+        "Homenagem ou título": 2,
+        "Projeto normativo": 2,
+        "Convite ou convocação": 1
+      }
     },
+    "nome_tse": "JOSE ALBINO COSTA ARAUJO",
+    "nome_urna": "ALBININHO",
+    "partido": "PODE",
+    "cargo": "Vereador",
+    "votos": 1170,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "Albininho",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 31,
-      "n_total": 62,
-      "n_exclusiva": 33,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 2,
-      "n_ampla": 27,
-      "autoria_equivalente": 35.0,
-      "taxa_exclusividade": 0.532,
-      "peso_medio": 0.565,
-      "familias": {
-        "pede": 56,
-        "camara": 5,
-        "emenda": 1
-      },
-      "tipos": {
-        "Indicação": 40,
-        "Moção": 14,
-        "Requerimento": 2,
-        "Projeto de Decreto Legislativo": 2,
-        "Projeto de Resolução": 3,
-        "Emenda ao Projeto de Lei Ordinária": 1
-      },
-      "coautores": [
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 27
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 27
-        },
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 27
-        }
-      ],
-      "anos": {
-        "2023": 8,
-        "2024": 10,
-        "2025": 20,
-        "2026": 24
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 33 proposições",
-      "Assina mais com Lucas do Beiradão (27)",
-      "Apresentou proposições em 4 anos diferentes"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 31,
@@ -323,6 +309,74 @@
     "foto_ano": 2020,
     "nome_tse_display": "Jose Albino Costa Araujo",
     "og_image": "/og/v/albininho.jpg",
+    "impacto": {
+      "n_total": 62,
+      "n_exclusiva": 33,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 2,
+      "n_ampla": 27,
+      "autoria_equivalente": 35.0169595110772,
+      "taxa_exclusividade": 0.532258064516129,
+      "peso_medio": 0.5647896695335032,
+      "familias": {},
+      "tipos": {
+        "Indicação": 40,
+        "Moção": 14,
+        "Projeto de Decreto Legislativo": 2,
+        "Requerimento": 2,
+        "Projeto de Resolução": 3,
+        "Emenda ao Projeto de Lei Ordinária": 1
+      },
+      "coautores": [
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 27
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 27
+        },
+        {
+          "nome": "Edinildo",
+          "n": 27
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 25
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 25
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 24
+        },
+        {
+          "nome": "Guto",
+          "n": 23
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 18
+        },
+        {
+          "nome": "João do Vale",
+          "n": 16
+        },
+        {
+          "nome": "Professor Sandro Lima",
+          "n": 16
+        }
+      ],
+      "anos": {
+        "2026": 24,
+        "2025": 20,
+        "2024": 10,
+        "2023": 8
+      }
+    },
     "impacto_equivalente_label": "35,0",
     "parceiros": [
       {
@@ -339,6 +393,41 @@
         "nome": "Edinildo",
         "slug": "edinildo",
         "n": 27
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 25
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 25
+      },
+      {
+        "nome": "Jaelson Araújo",
+        "slug": "jaelson-araujo",
+        "n": 24
+      },
+      {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 23
+      },
+      {
+        "nome": "Enesio Ferreira",
+        "slug": "enesio-ferreira",
+        "n": 18
+      },
+      {
+        "nome": "João do Vale",
+        "slug": "joao-do-vale",
+        "n": 16
+      },
+      {
+        "nome": "Professor Sandro Lima",
+        "slug": "professor-sandro-lima",
+        "n": 16
       }
     ],
     "n_coletivas": 29
@@ -346,15 +435,6 @@
   {
     "id": 19,
     "nome": "Alessandro Montenegro",
-    "nome_tse": "ALESSANDRO COSTA MONTENEGRO",
-    "nome_urna": "ALESSANDRO MONTENEGRO",
-    "partido": "PP",
-    "cargo": "VEREADOR",
-    "votos": 596,
-    "situacao_tse": "SUPLENTE",
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "alessandro-montenegro",
     "n_proposicoes": 30,
     "stats": {
@@ -375,12 +455,7 @@
         "Emenda ao Projeto de Lei Ordinária": 1,
         "Projeto de Decreto Legislativo": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 24,
-        "Organiza a Câmara": 3,
-        "Cria regra": 2,
-        "Altera outra proposta": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "Proposição aprovada": 14,
         "nao_informada": 9,
@@ -388,72 +463,29 @@
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Proposta com objeto": 12,
-        "Moção/manifestação": 9,
-        "Não classificável": 7,
-        "Nomeação de lugar": 2
-      },
-      "n_proposta": 12,
-      "n_nomeacao": 2,
-      "n_homenagem": 0,
-      "n_indefinida": 7
+        "Indicação": 14,
+        "Pesar": 8,
+        "Projeto normativo": 3,
+        "Procedimento regimental": 2,
+        "Homenagem ou título": 1,
+        "Aplauso": 1,
+        "Agradecimento": 1
+      }
     },
+    "nome_tse": "ALESSANDRO COSTA MONTENEGRO",
+    "nome_urna": "ALESSANDRO MONTENEGRO",
+    "partido": "PP",
+    "cargo": "Vereador",
+    "votos": 596,
+    "situacao_tse": "SUPLENTE",
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
     "nome_urna_display": "Alessandro Montenegro",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 19,
-      "n_total": 30,
-      "n_exclusiva": 15,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 0,
-      "n_ampla": 15,
-      "autoria_equivalente": 15.9,
-      "taxa_exclusividade": 0.5,
-      "peso_medio": 0.531,
-      "familias": {
-        "pede": 24,
-        "cria_regra": 2,
-        "camara": 3,
-        "emenda": 1
-      },
-      "tipos": {
-        "Moção": 10,
-        "Indicação": 14,
-        "Projeto de Lei do Legislativo": 2,
-        "Projeto de Decreto Legislativo": 1,
-        "Projeto de Resolução": 2,
-        "Emenda ao Projeto de Lei Ordinária": 1
-      },
-      "coautores": [
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 15
-        },
-        {
-          "nome": "Zé Filho",
-          "id": 29,
-          "n": 15
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 15
-        }
-      ],
-      "anos": {
-        "2023": 12,
-        "2024": 18
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 15 proposições",
-      "Assina mais com Lucas do Beiradão (15)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 19,
@@ -503,6 +535,72 @@
     "foto_ano": 2024,
     "nome_tse_display": "Alessandro Costa Montenegro",
     "og_image": "/og/v/alessandro-montenegro.jpg",
+    "impacto": {
+      "n_total": 30,
+      "n_exclusiva": 15,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 15,
+      "autoria_equivalente": 15.923529411764704,
+      "taxa_exclusividade": 0.5,
+      "peso_medio": 0.5307843137254902,
+      "familias": {},
+      "tipos": {
+        "Projeto de Resolução": 2,
+        "Moção": 10,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Projeto de Lei do Legislativo": 2,
+        "Projeto de Decreto Legislativo": 1,
+        "Indicação": 14
+      },
+      "coautores": [
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 15
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 15
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 15
+        },
+        {
+          "nome": "Albininho",
+          "n": 15
+        },
+        {
+          "nome": "Selma da Colônia",
+          "n": 15
+        },
+        {
+          "nome": "Professor Sandro Lima",
+          "n": 15
+        },
+        {
+          "nome": "Willian Vieira da Tv",
+          "n": 15
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 15
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 14
+        },
+        {
+          "nome": "Edinildo",
+          "n": 14
+        }
+      ],
+      "anos": {
+        "2024": 18,
+        "2023": 12
+      }
+    },
     "impacto_equivalente_label": "15,9",
     "parceiros": [
       {
@@ -519,6 +617,41 @@
         "nome": "Rubemar Ribeiro",
         "slug": "rubemar-ribeiro",
         "n": 15
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 15
+      },
+      {
+        "nome": "Selma da Colônia",
+        "slug": "selma-da-colonia",
+        "n": 15
+      },
+      {
+        "nome": "Professor Sandro Lima",
+        "slug": "professor-sandro-lima",
+        "n": 15
+      },
+      {
+        "nome": "Willian Vieira da Tv",
+        "slug": "willian-vieira-da-tv",
+        "n": 15
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 15
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 14
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 14
       }
     ],
     "n_coletivas": 15
@@ -526,15 +659,6 @@
   {
     "id": 694,
     "nome": "Diassis Serrão",
-    "nome_tse": "FRANCISCO DE ASSIS SERRÃO",
-    "nome_urna": "DIASSIS SERRÃO",
-    "partido": "PL",
-    "cargo": "VEREADOR",
-    "votos": 854,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "diassis-serrao",
     "n_proposicoes": 103,
     "stats": {
@@ -555,83 +679,36 @@
         "Projeto de Decreto Legislativo": 1,
         "Projeto de Resolução": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 100,
-        "Organiza a Câmara": 2,
-        "Cria regra": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 85,
         "Proposição aprovada": 14,
         "Proposição inclusa na Ordem do Dia": 4
       },
       "by_classe": {
-        "Proposta com objeto": 81,
-        "Moção/manifestação": 10,
-        "Não classificável": 9,
-        "Homenagem ou título": 2,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 81,
-      "n_nomeacao": 1,
-      "n_homenagem": 2,
-      "n_indefinida": 9
+        "Indicação": 84,
+        "Pesar": 8,
+        "Aplauso": 5,
+        "Projeto normativo": 3,
+        "Convite ou convocação": 1,
+        "Homenagem ou título": 1,
+        "Outro ato": 1
+      }
     },
+    "nome_tse": "FRANCISCO DE ASSIS SERRÃO",
+    "nome_urna": "DIASSIS SERRÃO",
+    "partido": "PL",
+    "cargo": "Vereador",
+    "votos": 854,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "Diassis Serrão",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 694,
-      "n_total": 103,
-      "n_exclusiva": 84,
-      "n_dupla": 7,
-      "n_trio": 0,
-      "n_coletiva": 1,
-      "n_ampla": 11,
-      "autoria_equivalente": 88.3,
-      "taxa_exclusividade": 0.816,
-      "peso_medio": 0.857,
-      "familias": {
-        "pede": 100,
-        "camara": 2,
-        "cria_regra": 1
-      },
-      "tipos": {
-        "Indicação": 84,
-        "Requerimento": 2,
-        "Projeto de Resolução": 1,
-        "Moção": 14,
-        "Projeto de Decreto Legislativo": 1,
-        "Projeto de Lei do Legislativo": 1
-      },
-      "coautores": [
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 18
-        },
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 12
-        },
-        {
-          "nome": "Enesio Ferreira",
-          "id": 95,
-          "n": 12
-        }
-      ],
-      "anos": {
-        "2025": 40,
-        "2026": 63
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 84 proposições",
-      "Assina mais com Edinildo (18)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 694,
@@ -662,6 +739,72 @@
     "foto_ano": 2024,
     "nome_tse_display": "Francisco de Assis Serrão",
     "og_image": "/og/v/diassis-serrao.jpg",
+    "impacto": {
+      "n_total": 103,
+      "n_exclusiva": 84,
+      "n_dupla": 7,
+      "n_trio": 0,
+      "n_coletiva": 1,
+      "n_ampla": 11,
+      "autoria_equivalente": 88.30252100840337,
+      "taxa_exclusividade": 0.8155339805825242,
+      "peso_medio": 0.8573060292077997,
+      "familias": {},
+      "tipos": {
+        "Moção": 14,
+        "Projeto de Lei do Legislativo": 1,
+        "Indicação": 84,
+        "Requerimento": 2,
+        "Projeto de Decreto Legislativo": 1,
+        "Projeto de Resolução": 1
+      },
+      "coautores": [
+        {
+          "nome": "Edinildo",
+          "n": 18
+        },
+        {
+          "nome": "Albininho",
+          "n": 12
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 12
+        },
+        {
+          "nome": "João do Vale",
+          "n": 12
+        },
+        {
+          "nome": "Eduardo Ralpmnet",
+          "n": 12
+        },
+        {
+          "nome": "Sapo da Kiola",
+          "n": 12
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 11
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 11
+        },
+        {
+          "nome": "Guto",
+          "n": 11
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 11
+        }
+      ],
+      "anos": {
+        "2026": 63,
+        "2025": 40
+      }
+    },
     "impacto_equivalente_label": "88,3",
     "parceiros": [
       {
@@ -678,6 +821,41 @@
         "nome": "Enesio Ferreira",
         "slug": "enesio-ferreira",
         "n": 12
+      },
+      {
+        "nome": "João do Vale",
+        "slug": "joao-do-vale",
+        "n": 12
+      },
+      {
+        "nome": "Eduardo Ralpmnet",
+        "slug": "eduardo-ralpmnet",
+        "n": 12
+      },
+      {
+        "nome": "Sapo da Kiola",
+        "slug": "sapo-da-kiola",
+        "n": 12
+      },
+      {
+        "nome": "Lucas do Beiradão",
+        "slug": "lucas-do-beiradao",
+        "n": 11
+      },
+      {
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 11
+      },
+      {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 11
+      },
+      {
+        "nome": "Jaelson Araújo",
+        "slug": "jaelson-araujo",
+        "n": 11
       }
     ],
     "n_coletivas": 12
@@ -685,15 +863,6 @@
   {
     "id": 23,
     "nome": "Edinildo",
-    "nome_tse": "EDINILDO DOS SANTOS SOARES RODRIGUES",
-    "nome_urna": "EDINILDO RODRIGUES",
-    "partido": "SOLIDARIEDADE",
-    "cargo": "VEREADOR",
-    "votos": 1151,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "edinildo",
     "n_proposicoes": 225,
     "stats": {
@@ -715,13 +884,9 @@
         "Projeto de Decreto Legislativo": 7,
         "Requerimento": 6,
         "Projeto de Resolução": 4,
-        "Projeto de Emenda à Lei Orgânica": 1
+        "Emenda à Lei Orgânica": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 205,
-        "Organiza a Câmara": 11,
-        "Cria regra": 9
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 146,
         "Proposição aprovada": 57,
@@ -729,77 +894,30 @@
         "Proposição retirada da Ordem do Dia": 3
       },
       "by_classe": {
-        "Proposta com objeto": 156,
-        "Moção/manifestação": 37,
-        "Não classificável": 21,
-        "Nomeação de lugar": 6,
-        "Homenagem ou título": 5
-      },
-      "n_proposta": 156,
-      "n_nomeacao": 6,
-      "n_homenagem": 5,
-      "n_indefinida": 21
+        "Indicação": 155,
+        "Pesar": 31,
+        "Aplauso": 13,
+        "Projeto normativo": 11,
+        "Homenagem ou título": 6,
+        "Procedimento regimental": 4,
+        "Convite ou convocação": 4,
+        "Outro ato": 1
+      }
     },
+    "nome_tse": "EDINILDO DOS SANTOS SOARES RODRIGUES",
+    "nome_urna": "EDINILDO RODRIGUES",
+    "partido": "SOLIDARIEDADE",
+    "cargo": "Vereador",
+    "votos": 1151,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "Edinildo Rodrigues",
     "nome_urna_igual": false,
-    "impacto": {
-      "autor_id": 23,
-      "n_total": 225,
-      "n_exclusiva": 173,
-      "n_dupla": 16,
-      "n_trio": 3,
-      "n_coletiva": 7,
-      "n_ampla": 26,
-      "autoria_equivalente": 185.2,
-      "taxa_exclusividade": 0.769,
-      "peso_medio": 0.823,
-      "familias": {
-        "pede": 205,
-        "camara": 11,
-        "cria_regra": 9
-      },
-      "tipos": {
-        "Indicação": 155,
-        "Moção": 44,
-        "Requerimento": 6,
-        "Projeto de Decreto Legislativo": 7,
-        "Projeto de Resolução": 4,
-        "Projeto de Lei do Legislativo": 8,
-        "Projeto de Emenda à Lei Orgânica": 1
-      },
-      "coautores": [
-        {
-          "nome": "Jaelson Araújo",
-          "id": 10,
-          "n": 33
-        },
-        {
-          "nome": "Guto",
-          "id": 89,
-          "n": 29
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 27
-        }
-      ],
-      "anos": {
-        "2023": 14,
-        "2024": 41,
-        "2025": 79,
-        "2026": 91
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Mais moções da Câmara (44)",
-      "Autor exclusivo de 173 proposições",
-      "Assina mais com Jaelson Araújo (33)",
-      "Apresentou proposições em 4 anos diferentes"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 23,
@@ -850,6 +968,75 @@
     "foto_ano": 2024,
     "nome_tse_display": "Edinildo dos Santos Soares Rodrigues",
     "og_image": "/og/v/edinildo.jpg",
+    "impacto": {
+      "n_total": 225,
+      "n_exclusiva": 173,
+      "n_dupla": 16,
+      "n_trio": 3,
+      "n_coletiva": 7,
+      "n_ampla": 26,
+      "autoria_equivalente": 185.19076903488673,
+      "taxa_exclusividade": 0.7688888888888888,
+      "peso_medio": 0.8230700845994966,
+      "familias": {},
+      "tipos": {
+        "Projeto de Lei do Legislativo": 8,
+        "Moção": 44,
+        "Projeto de Decreto Legislativo": 7,
+        "Indicação": 155,
+        "Emenda à Lei Orgânica": 1,
+        "Projeto de Resolução": 4,
+        "Requerimento": 6
+      },
+      "coautores": [
+        {
+          "nome": "Jaelson Araújo",
+          "n": 33
+        },
+        {
+          "nome": "Guto",
+          "n": 29
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 27
+        },
+        {
+          "nome": "Albininho",
+          "n": 27
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 26
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 26
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 25
+        },
+        {
+          "nome": "Abdias de Jesus",
+          "n": 19
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 19
+        },
+        {
+          "nome": "Diassis Serrão",
+          "n": 18
+        }
+      ],
+      "anos": {
+        "2026": 91,
+        "2025": 79,
+        "2024": 41,
+        "2023": 14
+      }
+    },
     "impacto_equivalente_label": "185,2",
     "parceiros": [
       {
@@ -866,6 +1053,41 @@
         "nome": "Rubemar Ribeiro",
         "slug": "rubemar-ribeiro",
         "n": 27
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 27
+      },
+      {
+        "nome": "Lucas do Beiradão",
+        "slug": "lucas-do-beiradao",
+        "n": 26
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 26
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 25
+      },
+      {
+        "nome": "Abdias de Jesus",
+        "slug": "abdias-de-jesus",
+        "n": 19
+      },
+      {
+        "nome": "Enesio Ferreira",
+        "slug": "enesio-ferreira",
+        "n": 19
+      },
+      {
+        "nome": "Diassis Serrão",
+        "slug": "diassis-serrao",
+        "n": 18
       }
     ],
     "n_coletivas": 33
@@ -873,15 +1095,6 @@
   {
     "id": 3447,
     "nome": "Edmilson Silva",
-    "nome_tse": "EDMILSON JOSÉ ALVES DA SILVA",
-    "nome_urna": "EDMILSON SILVA",
-    "partido": "PDT",
-    "cargo": "Vereador",
-    "votos": 1094,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2020,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
     "slug": "edmilson-silva",
     "n_proposicoes": 0,
     "stats": {
@@ -894,31 +1107,21 @@
       "by_tipo": {},
       "by_familia": {},
       "by_situacao": {},
-      "by_classe": {},
-      "n_proposta": 0,
-      "n_nomeacao": 0,
-      "n_homenagem": 0,
-      "n_indefinida": 0
+      "by_classe": {}
     },
-    "situacao_tse_label": "",
-    "situacao_tse_ajuda": "",
-    "nome_urna_display": "",
-    "nome_urna_igual": false,
-    "impacto": {
-      "n_total": 0,
-      "n_exclusiva": 0,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 0,
-      "n_ampla": 0,
-      "autoria_equivalente": 0,
-      "taxa_exclusividade": 0,
-      "peso_medio": 0,
-      "familias": {},
-      "tipos": {},
-      "coautores": [],
-      "anos": {}
-    },
+    "nome_tse": "EDMILSON JOSÉ ALVES DA SILVA",
+    "nome_urna": "EDMILSON SILVA",
+    "partido": "PDT",
+    "cargo": "Vereador",
+    "votos": 1094,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2020",
+    "ano_tse": 2020,
+    "situacao_tse_label": "Eleito por quociente partidário",
+    "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
+    "nome_urna_display": "Edmilson Silva",
+    "nome_urna_igual": true,
     "destaques": [],
     "mandatos": [
       {
@@ -950,23 +1153,29 @@
     "foto_ano": 2020,
     "nome_tse_display": "Edmilson José Alves da Silva",
     "og_image": "/og/v/edmilson-silva.jpg",
+    "impacto": {
+      "n_total": 0,
+      "n_exclusiva": 0,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 0,
+      "autoria_equivalente": 0.0,
+      "taxa_exclusividade": 0,
+      "peso_medio": 0,
+      "familias": {},
+      "tipos": {},
+      "coautores": [],
+      "anos": {}
+    },
     "impacto_equivalente_label": "0,0",
     "parceiros": [],
     "n_coletivas": 0
   },
   {
     "id": 693,
-    "nome": "Eduardo da Ralpnet",
-    "nome_tse": "EDUARDO LYNNIK RIBEIRO RODRIGUES",
-    "nome_urna": "EDUARDO DA RALPNET",
-    "partido": "SOLIDARIEDADE",
-    "cargo": "VEREADOR",
-    "votos": 1178,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
-    "slug": "eduardo-da-ralpnet",
+    "nome": "Eduardo Ralpmnet",
+    "slug": "eduardo-ralpmnet",
     "n_proposicoes": 111,
     "stats": {
       "total": 111,
@@ -986,83 +1195,37 @@
         "Projeto de Lei do Legislativo": 2,
         "Projeto de Decreto Legislativo": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 106,
-        "Organiza a Câmara": 3,
-        "Cria regra": 2
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 89,
         "Proposição aprovada": 18,
         "Proposição inclusa na Ordem do Dia": 4
       },
       "by_classe": {
-        "Proposta com objeto": 90,
-        "Moção/manifestação": 10,
-        "Não classificável": 8,
+        "Indicação": 89,
+        "Pesar": 7,
+        "Aplauso": 6,
+        "Projeto normativo": 3,
         "Homenagem ou título": 2,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 90,
-      "n_nomeacao": 1,
-      "n_homenagem": 2,
-      "n_indefinida": 8
+        "Convite ou convocação": 2,
+        "Outro ato": 1,
+        "Procedimento regimental": 1
+      }
     },
+    "nome_tse": "EDUARDO LYNNIK RIBEIRO RODRIGUES",
+    "nome_urna": "EDUARDO DA RALPNET",
+    "partido": "SOLIDARIEDADE",
+    "cargo": "Vereador",
+    "votos": 1178,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "Eduardo da Ralpnet",
-    "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 693,
-      "n_total": 111,
-      "n_exclusiva": 97,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 2,
-      "n_ampla": 12,
-      "autoria_equivalente": 98.1,
-      "taxa_exclusividade": 0.874,
-      "peso_medio": 0.883,
-      "familias": {
-        "pede": 106,
-        "camara": 3,
-        "cria_regra": 2
-      },
-      "tipos": {
-        "Indicação": 89,
-        "Requerimento": 3,
-        "Projeto de Resolução": 2,
-        "Projeto de Lei do Legislativo": 2,
-        "Moção": 14,
-        "Projeto de Decreto Legislativo": 1
-      },
-      "coautores": [
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 13
-        },
-        {
-          "nome": "Enesio Ferreira",
-          "id": 95,
-          "n": 13
-        },
-        {
-          "nome": "João do Vale",
-          "id": 5,
-          "n": 13
-        }
-      ],
-      "anos": {
-        "2025": 67,
-        "2026": 44
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 97 proposições",
-      "Assina mais com Albininho (13)"
-    ],
+    "nome_urna_igual": false,
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 693,
@@ -1092,12 +1255,88 @@
     "foto": "/fotos/eduardo-da-ralpnet-2024.jpg",
     "foto_ano": 2024,
     "nome_tse_display": "Eduardo Lynnik Ribeiro Rodrigues",
-    "og_image": "/og/v/eduardo-da-ralpnet.jpg",
+    "og_image": "/og/v/eduardo-ralpmnet.jpg",
+    "impacto": {
+      "n_total": 111,
+      "n_exclusiva": 97,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 2,
+      "n_ampla": 12,
+      "autoria_equivalente": 98.06009676597913,
+      "taxa_exclusividade": 0.8738738738738738,
+      "peso_medio": 0.8834242951890011,
+      "familias": {},
+      "tipos": {
+        "Indicação": 89,
+        "Moção": 14,
+        "Projeto de Decreto Legislativo": 1,
+        "Projeto de Resolução": 2,
+        "Projeto de Lei do Legislativo": 2,
+        "Requerimento": 3
+      },
+      "coautores": [
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 13
+        },
+        {
+          "nome": "Albininho",
+          "n": 13
+        },
+        {
+          "nome": "Edinildo",
+          "n": 13
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 13
+        },
+        {
+          "nome": "João do Vale",
+          "n": 13
+        },
+        {
+          "nome": "Abdias de Jesus",
+          "n": 13
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 12
+        },
+        {
+          "nome": "Guto",
+          "n": 12
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 12
+        },
+        {
+          "nome": "Diassis Serrão",
+          "n": 12
+        }
+      ],
+      "anos": {
+        "2026": 44,
+        "2025": 67
+      }
+    },
     "impacto_equivalente_label": "98,1",
     "parceiros": [
       {
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 13
+      },
+      {
         "nome": "Albininho",
         "slug": "albininho",
+        "n": 13
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
         "n": 13
       },
       {
@@ -1109,6 +1348,31 @@
         "nome": "João do Vale",
         "slug": "joao-do-vale",
         "n": 13
+      },
+      {
+        "nome": "Abdias de Jesus",
+        "slug": "abdias-de-jesus",
+        "n": 13
+      },
+      {
+        "nome": "Lucas do Beiradão",
+        "slug": "lucas-do-beiradao",
+        "n": 12
+      },
+      {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 12
+      },
+      {
+        "nome": "Jaelson Araújo",
+        "slug": "jaelson-araujo",
+        "n": 12
+      },
+      {
+        "nome": "Diassis Serrão",
+        "slug": "diassis-serrao",
+        "n": 12
       }
     ],
     "n_coletivas": 14
@@ -1116,15 +1380,6 @@
   {
     "id": 343,
     "nome": "Elizeu de Tantan",
-    "nome_tse": "ELIZEU RODRIGUES FURTADO",
-    "nome_urna": "ELIZEU DE TANTAN",
-    "partido": "PSD",
-    "cargo": "VEREADOR",
-    "votos": 1999,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "elizeu-de-tantan",
     "n_proposicoes": 29,
     "stats": {
@@ -1147,12 +1402,7 @@
         "Projeto de Decreto Legislativo": 1,
         "Emenda ao Projeto de Lei Ordinária": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 22,
-        "Organiza a Câmara": 4,
-        "Cria regra": 2,
-        "Altera outra proposta": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "Proposição aprovada": 12,
         "nao_informada": 8,
@@ -1160,75 +1410,29 @@
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Proposta com objeto": 10,
-        "Moção/manifestação": 8,
-        "Não classificável": 7,
-        "Nomeação de lugar": 3,
-        "Homenagem ou título": 1
-      },
-      "n_proposta": 10,
-      "n_nomeacao": 3,
-      "n_homenagem": 1,
-      "n_indefinida": 7
+        "Indicação": 8,
+        "Pesar": 7,
+        "Aplauso": 4,
+        "Projeto normativo": 4,
+        "Procedimento regimental": 4,
+        "Homenagem ou título": 1,
+        "Outro ato": 1
+      }
     },
+    "nome_tse": "ELIZEU RODRIGUES FURTADO",
+    "nome_urna": "ELIZEU DE TANTAN",
+    "partido": "PSD",
+    "cargo": "Vereador",
+    "votos": 1999,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "Elizeu de Tantan",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 343,
-      "n_total": 29,
-      "n_exclusiva": 14,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 1,
-      "n_ampla": 14,
-      "autoria_equivalente": 15.0,
-      "taxa_exclusividade": 0.483,
-      "peso_medio": 0.518,
-      "familias": {
-        "pede": 22,
-        "cria_regra": 2,
-        "camara": 4,
-        "emenda": 1
-      },
-      "tipos": {
-        "Requerimento": 3,
-        "Indicação": 8,
-        "Projeto de Lei do Legislativo": 2,
-        "Projeto de Resolução": 3,
-        "Emenda ao Projeto de Lei Ordinária": 1,
-        "Moção": 11,
-        "Projeto de Decreto Legislativo": 1
-      },
-      "coautores": [
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 15
-        },
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 14
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 14
-        }
-      ],
-      "anos": {
-        "2024": 11,
-        "2025": 6,
-        "2026": 12
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 14 proposições",
-      "Assina mais com Albininho (15)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 343,
@@ -1279,6 +1483,74 @@
     "foto_ano": 2024,
     "nome_tse_display": "Elizeu Rodrigues Furtado",
     "og_image": "/og/v/elizeu-de-tantan.jpg",
+    "impacto": {
+      "n_total": 29,
+      "n_exclusiva": 14,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 1,
+      "n_ampla": 14,
+      "autoria_equivalente": 15.00756302521008,
+      "taxa_exclusividade": 0.4827586206896552,
+      "peso_medio": 0.5175021732831062,
+      "familias": {},
+      "tipos": {
+        "Moção": 11,
+        "Indicação": 8,
+        "Projeto de Decreto Legislativo": 1,
+        "Projeto de Resolução": 3,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Projeto de Lei do Legislativo": 2,
+        "Requerimento": 3
+      },
+      "coautores": [
+        {
+          "nome": "Albininho",
+          "n": 15
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 14
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 14
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 14
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 13
+        },
+        {
+          "nome": "Edinildo",
+          "n": 13
+        },
+        {
+          "nome": "Guto",
+          "n": 13
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 13
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 11
+        },
+        {
+          "nome": "João do Vale",
+          "n": 11
+        }
+      ],
+      "anos": {
+        "2026": 12,
+        "2025": 6,
+        "2024": 11
+      }
+    },
     "impacto_equivalente_label": "15,0",
     "parceiros": [
       {
@@ -1295,6 +1567,41 @@
         "nome": "Rubemar Ribeiro",
         "slug": "rubemar-ribeiro",
         "n": 14
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 14
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 13
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 13
+      },
+      {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 13
+      },
+      {
+        "nome": "Jaelson Araújo",
+        "slug": "jaelson-araujo",
+        "n": 13
+      },
+      {
+        "nome": "Enesio Ferreira",
+        "slug": "enesio-ferreira",
+        "n": 11
+      },
+      {
+        "nome": "João do Vale",
+        "slug": "joao-do-vale",
+        "n": 11
       }
     ],
     "n_coletivas": 15
@@ -1302,15 +1609,6 @@
   {
     "id": 95,
     "nome": "Enesio Ferreira",
-    "nome_tse": "ENESIO VITORINO RIBEIRO FERREIRA",
-    "nome_urna": "NÉSIO FERREIRA",
-    "partido": "PODE",
-    "cargo": "VEREADOR",
-    "votos": 696,
-    "situacao_tse": "SUPLENTE",
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "enesio-ferreira",
     "n_proposicoes": 74,
     "stats": {
@@ -1331,80 +1629,37 @@
         "Projeto de Decreto Legislativo": 1,
         "Projeto de Resolução": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 72,
-        "Organiza a Câmara": 2
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 49,
         "Proposição aprovada": 23,
         "Proposição inclusa na Ordem do Dia": 2
       },
       "by_classe": {
-        "Proposta com objeto": 54,
-        "Moção/manifestação": 12,
-        "Não classificável": 7,
-        "Homenagem ou título": 1
-      },
-      "n_proposta": 54,
-      "n_nomeacao": 0,
-      "n_homenagem": 1,
-      "n_indefinida": 7
+        "Indicação": 52,
+        "Pesar": 9,
+        "Aplauso": 7,
+        "Convite ou convocação": 2,
+        "Homenagem ou título": 1,
+        "Procedimento regimental": 1,
+        "Projeto normativo": 1,
+        "Outro ato": 1
+      }
     },
+    "nome_tse": "ENESIO VITORINO RIBEIRO FERREIRA",
+    "nome_urna": "NÉSIO FERREIRA",
+    "partido": "PODE",
+    "cargo": "Vereador",
+    "votos": 696,
+    "situacao_tse": "SUPLENTE",
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
     "nome_urna_display": "Nésio Ferreira",
     "nome_urna_igual": false,
-    "impacto": {
-      "autor_id": 95,
-      "n_total": 74,
-      "n_exclusiva": 50,
-      "n_dupla": 2,
-      "n_trio": 4,
-      "n_coletiva": 1,
-      "n_ampla": 17,
-      "autoria_equivalente": 53.5,
-      "taxa_exclusividade": 0.676,
-      "peso_medio": 0.723,
-      "familias": {
-        "pede": 72,
-        "camara": 2
-      },
-      "tipos": {
-        "Indicação": 52,
-        "Moção": 16,
-        "Requerimento": 4,
-        "Projeto de Resolução": 1,
-        "Projeto de Decreto Legislativo": 1
-      },
-      "coautores": [
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 20
-        },
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 19
-        },
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 18
-        }
-      ],
-      "anos": {
-        "2023": 8,
-        "2025": 36,
-        "2026": 30
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 50 proposições",
-      "Assina mais com Rubemar Ribeiro (20)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 95,
@@ -1433,6 +1688,72 @@
     "foto_ano": 2024,
     "nome_tse_display": "Enesio Vitorino Ribeiro Ferreira",
     "og_image": "/og/v/enesio-ferreira.jpg",
+    "impacto": {
+      "n_total": 74,
+      "n_exclusiva": 50,
+      "n_dupla": 2,
+      "n_trio": 4,
+      "n_coletiva": 1,
+      "n_ampla": 17,
+      "autoria_equivalente": 53.52088107970463,
+      "taxa_exclusividade": 0.6756756756756757,
+      "peso_medio": 0.7232551497257382,
+      "familias": {},
+      "tipos": {
+        "Indicação": 52,
+        "Moção": 16,
+        "Projeto de Decreto Legislativo": 1,
+        "Requerimento": 4,
+        "Projeto de Resolução": 1
+      },
+      "coautores": [
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 20
+        },
+        {
+          "nome": "Edinildo",
+          "n": 19
+        },
+        {
+          "nome": "Albininho",
+          "n": 18
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 17
+        },
+        {
+          "nome": "Guto",
+          "n": 17
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 16
+        },
+        {
+          "nome": "Keimilson Guterres",
+          "n": 15
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 15
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 15
+        },
+        {
+          "nome": "João do Vale",
+          "n": 13
+        }
+      ],
+      "anos": {
+        "2026": 30,
+        "2025": 36,
+        "2023": 8
+      }
+    },
     "impacto_equivalente_label": "53,5",
     "parceiros": [
       {
@@ -1449,6 +1770,41 @@
         "nome": "Albininho",
         "slug": "albininho",
         "n": 18
+      },
+      {
+        "nome": "Lucas do Beiradão",
+        "slug": "lucas-do-beiradao",
+        "n": 17
+      },
+      {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 17
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 16
+      },
+      {
+        "nome": "Keimilson Guterres",
+        "slug": "keimilson-guterres",
+        "n": 15
+      },
+      {
+        "nome": "Jaelson Araújo",
+        "slug": "jaelson-araujo",
+        "n": 15
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 15
+      },
+      {
+        "nome": "João do Vale",
+        "slug": "joao-do-vale",
+        "n": 13
       }
     ],
     "n_coletivas": 18
@@ -1456,15 +1812,6 @@
   {
     "id": 1118,
     "nome": "Evilson de Jesus",
-    "nome_tse": "EVILSON DE JESUS LOPES DOS SANTOS",
-    "nome_urna": "EVILSON SANTOS",
-    "partido": "PSD",
-    "cargo": "VEREADOR",
-    "votos": 880,
-    "situacao_tse": "SUPLENTE",
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "evilson-de-jesus",
     "n_proposicoes": 6,
     "stats": {
@@ -1483,78 +1830,33 @@
         "Projeto de Decreto Legislativo": 1,
         "Projeto de Lei do Legislativo": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 4,
-        "Organiza a Câmara": 1,
-        "Cria regra": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 3,
         "Proposição inclusa na Ordem do Dia": 2,
         "Proposição aprovada": 1
       },
       "by_classe": {
-        "Proposta com objeto": 3,
-        "Homenagem ou título": 2,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 3,
-      "n_nomeacao": 1,
-      "n_homenagem": 2,
-      "n_indefinida": 0
+        "Indicação": 3,
+        "Aplauso": 1,
+        "Homenagem ou título": 1,
+        "Projeto normativo": 1
+      }
     },
+    "nome_tse": "EVILSON DE JESUS LOPES DOS SANTOS",
+    "nome_urna": "EVILSON SANTOS",
+    "partido": "PSD",
+    "cargo": "Vereador",
+    "votos": 880,
+    "situacao_tse": "SUPLENTE",
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
     "nome_urna_display": "Evilson Santos",
     "nome_urna_igual": false,
-    "impacto": {
-      "autor_id": 1118,
-      "n_total": 6,
-      "n_exclusiva": 5,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 1,
-      "n_ampla": 0,
-      "autoria_equivalente": 5.2,
-      "taxa_exclusividade": 0.833,
-      "peso_medio": 0.861,
-      "familias": {
-        "cria_regra": 1,
-        "pede": 4,
-        "camara": 1
-      },
-      "tipos": {
-        "Projeto de Lei do Legislativo": 1,
-        "Indicação": 3,
-        "Projeto de Decreto Legislativo": 1,
-        "Moção": 1
-      },
-      "coautores": [
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 1
-        },
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 1
-        },
-        {
-          "nome": "Guto",
-          "id": 89,
-          "n": 1
-        }
-      ],
-      "anos": {
-        "2025": 5,
-        "2026": 1
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 5 proposições"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 1118,
@@ -1583,6 +1885,50 @@
     "foto_ano": 2024,
     "nome_tse_display": "Evilson de Jesus Lopes dos Santos",
     "og_image": "/og/v/evilson-de-jesus.jpg",
+    "impacto": {
+      "n_total": 6,
+      "n_exclusiva": 5,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 1,
+      "n_ampla": 0,
+      "autoria_equivalente": 5.166666666666667,
+      "taxa_exclusividade": 0.8333333333333334,
+      "peso_medio": 0.8611111111111112,
+      "familias": {},
+      "tipos": {
+        "Moção": 1,
+        "Projeto de Decreto Legislativo": 1,
+        "Indicação": 3,
+        "Projeto de Lei do Legislativo": 1
+      },
+      "coautores": [
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 1
+        },
+        {
+          "nome": "Edinildo",
+          "n": 1
+        },
+        {
+          "nome": "Guto",
+          "n": 1
+        },
+        {
+          "nome": "Abdias de Jesus",
+          "n": 1
+        },
+        {
+          "nome": "Eduardo Ralpmnet",
+          "n": 1
+        }
+      ],
+      "anos": {
+        "2026": 1,
+        "2025": 5
+      }
+    },
     "impacto_equivalente_label": "5,2",
     "parceiros": [
       {
@@ -1599,6 +1945,16 @@
         "nome": "Guto",
         "slug": "guto",
         "n": 1
+      },
+      {
+        "nome": "Abdias de Jesus",
+        "slug": "abdias-de-jesus",
+        "n": 1
+      },
+      {
+        "nome": "Eduardo Ralpmnet",
+        "slug": "eduardo-ralpmnet",
+        "n": 1
       }
     ],
     "n_coletivas": 1
@@ -1606,15 +1962,6 @@
   {
     "id": 142,
     "nome": "Executivo Municipal",
-    "nome_tse": null,
-    "nome_urna": null,
-    "partido": null,
-    "cargo": null,
-    "votos": null,
-    "situacao_tse": null,
-    "eleito": null,
-    "ano_tse": null,
-    "fonte_url": null,
     "slug": "executivo-municipal",
     "n_proposicoes": 57,
     "stats": {
@@ -1633,10 +1980,7 @@
         "Projeto de Lei Ordinária": 56,
         "Prestação de Contas do Executivo": 1
       },
-      "by_familia": {
-        "Cria regra": 56,
-        "Pede, opina ou fiscaliza": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "Proposição inclusa na Ordem do Dia": 36,
         "Proposição aprovada": 18,
@@ -1644,21 +1988,35 @@
         "nao_informada": 1
       },
       "by_classe": {
-        "Não classificável": 38,
-        "Proposta com objeto": 18,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 18,
-      "n_nomeacao": 1,
-      "n_homenagem": 0,
-      "n_indefinida": 38
+        "Projeto normativo": 46,
+        "Orçamentário": 8,
+        "Procedimento regimental": 2,
+        "Informação e fiscalização": 1
+      }
     },
+    "nome_tse": null,
+    "nome_urna": null,
+    "partido": null,
+    "cargo": null,
+    "votos": null,
+    "situacao_tse": null,
+    "eleito": null,
+    "fonte_url": null,
+    "ano_tse": null,
     "situacao_tse_label": "",
     "situacao_tse_ajuda": "",
     "nome_urna_display": "",
     "nome_urna_igual": false,
+    "destaques": [],
+    "mandatos": [],
+    "legislaturas": [],
+    "atual": false,
+    "anterior": false,
+    "foto": "",
+    "foto_ano": null,
+    "nome_tse_display": "",
+    "og_image": "/og/v/executivo-municipal.jpg",
     "impacto": {
-      "autor_id": 142,
       "n_total": 57,
       "n_exclusiva": 57,
       "n_dupla": 0,
@@ -1668,35 +2026,19 @@
       "autoria_equivalente": 57.0,
       "taxa_exclusividade": 1.0,
       "peso_medio": 1.0,
-      "familias": {
-        "cria_regra": 56,
-        "pede": 1
-      },
+      "familias": {},
       "tipos": {
         "Projeto de Lei Ordinária": 56,
         "Prestação de Contas do Executivo": 1
       },
       "coautores": [],
       "anos": {
-        "2023": 2,
-        "2024": 15,
+        "2026": 17,
         "2025": 23,
-        "2026": 17
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
+        "2024": 15,
+        "2023": 2
+      }
     },
-    "destaques": [
-      "Autor exclusivo de 57 proposições",
-      "Apresentou proposições em 4 anos diferentes"
-    ],
-    "mandatos": [],
-    "legislaturas": [],
-    "atual": false,
-    "anterior": false,
-    "foto": "",
-    "foto_ano": null,
-    "nome_tse_display": "",
-    "og_image": "/og/v/executivo-municipal.jpg",
     "impacto_equivalente_label": "57,0",
     "parceiros": [],
     "n_coletivas": 0
@@ -1704,15 +2046,6 @@
   {
     "id": 28,
     "nome": "Fabrícia do Sindicato",
-    "nome_tse": "FABRICIA LORENA MELO DURANS",
-    "nome_urna": "FABRÍCIA DO SINDICATO",
-    "partido": "PSD",
-    "cargo": "VEREADOR",
-    "votos": 1161,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "fabricia-do-sindicato",
     "n_proposicoes": 47,
     "stats": {
@@ -1734,10 +2067,7 @@
         "Projeto de Resolução": 2,
         "Requerimento": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 42,
-        "Organiza a Câmara": 5
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 23,
         "Proposição aprovada": 17,
@@ -1745,73 +2075,29 @@
         "Proposição retirada da Ordem do Dia": 1
       },
       "by_classe": {
-        "Proposta com objeto": 24,
-        "Não classificável": 11,
-        "Moção/manifestação": 10,
-        "Homenagem ou título": 1,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 24,
-      "n_nomeacao": 1,
-      "n_homenagem": 1,
-      "n_indefinida": 11
+        "Indicação": 28,
+        "Pesar": 9,
+        "Aplauso": 4,
+        "Homenagem ou título": 2,
+        "Procedimento regimental": 2,
+        "Informação e fiscalização": 1,
+        "Projeto normativo": 1
+      }
     },
+    "nome_tse": "FABRICIA LORENA MELO DURANS",
+    "nome_urna": "FABRÍCIA DO SINDICATO",
+    "partido": "PSD",
+    "cargo": "Vereador",
+    "votos": 1161,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "Fabrícia do Sindicato",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 28,
-      "n_total": 47,
-      "n_exclusiva": 21,
-      "n_dupla": 0,
-      "n_trio": 1,
-      "n_coletiva": 0,
-      "n_ampla": 25,
-      "autoria_equivalente": 22.8,
-      "taxa_exclusividade": 0.447,
-      "peso_medio": 0.486,
-      "familias": {
-        "pede": 42,
-        "camara": 5
-      },
-      "tipos": {
-        "Indicação": 28,
-        "Moção": 13,
-        "Projeto de Decreto Legislativo": 3,
-        "Projeto de Resolução": 2,
-        "Requerimento": 1
-      },
-      "coautores": [
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 25
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 25
-        },
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 25
-        }
-      ],
-      "anos": {
-        "2023": 8,
-        "2024": 8,
-        "2025": 12,
-        "2026": 19
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 21 proposições",
-      "Assina mais com Lucas do Beiradão (25)",
-      "Apresentou proposições em 4 anos diferentes"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 28,
@@ -1862,6 +2148,73 @@
     "foto_ano": 2024,
     "nome_tse_display": "Fabricia Lorena Melo Durans",
     "og_image": "/og/v/fabricia-do-sindicato.jpg",
+    "impacto": {
+      "n_total": 47,
+      "n_exclusiva": 21,
+      "n_dupla": 0,
+      "n_trio": 1,
+      "n_coletiva": 0,
+      "n_ampla": 25,
+      "autoria_equivalente": 22.83600713012477,
+      "taxa_exclusividade": 0.44680851063829785,
+      "peso_medio": 0.48587249213031425,
+      "familias": {},
+      "tipos": {
+        "Indicação": 28,
+        "Moção": 13,
+        "Projeto de Decreto Legislativo": 3,
+        "Requerimento": 1,
+        "Projeto de Resolução": 2
+      },
+      "coautores": [
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 25
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 25
+        },
+        {
+          "nome": "Albininho",
+          "n": 25
+        },
+        {
+          "nome": "Edinildo",
+          "n": 25
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 24
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 24
+        },
+        {
+          "nome": "Guto",
+          "n": 21
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 16
+        },
+        {
+          "nome": "João do Vale",
+          "n": 15
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 14
+        }
+      ],
+      "anos": {
+        "2026": 19,
+        "2025": 12,
+        "2024": 8,
+        "2023": 8
+      }
+    },
     "impacto_equivalente_label": "22,8",
     "parceiros": [
       {
@@ -1878,6 +2231,41 @@
         "nome": "Albininho",
         "slug": "albininho",
         "n": 25
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 25
+      },
+      {
+        "nome": "Jaelson Araújo",
+        "slug": "jaelson-araujo",
+        "n": 24
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 24
+      },
+      {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 21
+      },
+      {
+        "nome": "Enesio Ferreira",
+        "slug": "enesio-ferreira",
+        "n": 16
+      },
+      {
+        "nome": "João do Vale",
+        "slug": "joao-do-vale",
+        "n": 15
+      },
+      {
+        "nome": "Zé Filho",
+        "slug": "ze-filho",
+        "n": 14
       }
     ],
     "n_coletivas": 25
@@ -1885,15 +2273,6 @@
   {
     "id": 36,
     "nome": "Felipe de Chicão",
-    "nome_tse": "FELIPE DAYVISSSON CARVALHO DA SILVA",
-    "nome_urna": "FELIPE DE CHICÃO",
-    "partido": "PL",
-    "cargo": "VEREADOR",
-    "votos": 715,
-    "situacao_tse": "SUPLENTE",
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "felipe-de-chicao",
     "n_proposicoes": 21,
     "stats": {
@@ -1913,10 +2292,7 @@
         "Projeto de Decreto Legislativo": 1,
         "Requerimento": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 18,
-        "Organiza a Câmara": 3
-      },
+      "by_familia": {},
       "by_situacao": {
         "Proposição aprovada": 12,
         "Proposição inclusa na Ordem do Dia": 4,
@@ -1924,69 +2300,28 @@
         "Proposição retirada da Ordem do Dia": 1
       },
       "by_classe": {
-        "Moção/manifestação": 8,
-        "Proposta com objeto": 7,
-        "Não classificável": 5,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 7,
-      "n_nomeacao": 1,
-      "n_homenagem": 0,
-      "n_indefinida": 5
+        "Indicação": 9,
+        "Pesar": 6,
+        "Projeto normativo": 2,
+        "Aplauso": 2,
+        "Procedimento regimental": 1,
+        "Homenagem ou título": 1
+      }
     },
+    "nome_tse": "FELIPE DAYVISSSON CARVALHO DA SILVA",
+    "nome_urna": "FELIPE DE CHICÃO",
+    "partido": "PL",
+    "cargo": "Vereador",
+    "votos": 715,
+    "situacao_tse": "SUPLENTE",
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
     "nome_urna_display": "Felipe de Chicão",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 36,
-      "n_total": 21,
-      "n_exclusiva": 7,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 0,
-      "n_ampla": 14,
-      "autoria_equivalente": 7.8,
-      "taxa_exclusividade": 0.333,
-      "peso_medio": 0.373,
-      "familias": {
-        "pede": 18,
-        "camara": 3
-      },
-      "tipos": {
-        "Indicação": 9,
-        "Moção": 8,
-        "Requerimento": 1,
-        "Projeto de Decreto Legislativo": 1,
-        "Projeto de Resolução": 2
-      },
-      "coautores": [
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 14
-        },
-        {
-          "nome": "Fabrícia do Sindicato",
-          "id": 28,
-          "n": 14
-        },
-        {
-          "nome": "Zé Filho",
-          "id": 29,
-          "n": 14
-        }
-      ],
-      "anos": {
-        "2023": 8,
-        "2024": 13
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 7 proposições",
-      "Assina mais com Lucas do Beiradão (14)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 36,
@@ -2036,6 +2371,71 @@
     "foto_ano": 2024,
     "nome_tse_display": "Felipe Dayvissson Carvalho da Silva",
     "og_image": "/og/v/felipe-de-chicao.jpg",
+    "impacto": {
+      "n_total": 21,
+      "n_exclusiva": 7,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 14,
+      "autoria_equivalente": 7.823529411764705,
+      "taxa_exclusividade": 0.3333333333333333,
+      "peso_medio": 0.3725490196078431,
+      "familias": {},
+      "tipos": {
+        "Projeto de Resolução": 2,
+        "Moção": 8,
+        "Projeto de Decreto Legislativo": 1,
+        "Indicação": 9,
+        "Requerimento": 1
+      },
+      "coautores": [
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 14
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 14
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 14
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 14
+        },
+        {
+          "nome": "Albininho",
+          "n": 14
+        },
+        {
+          "nome": "Edinildo",
+          "n": 14
+        },
+        {
+          "nome": "Selma da Colônia",
+          "n": 14
+        },
+        {
+          "nome": "Professor Sandro Lima",
+          "n": 14
+        },
+        {
+          "nome": "Willian Vieira da Tv",
+          "n": 14
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 14
+        }
+      ],
+      "anos": {
+        "2024": 13,
+        "2023": 8
+      }
+    },
     "impacto_equivalente_label": "7,8",
     "parceiros": [
       {
@@ -2052,6 +2452,41 @@
         "nome": "Zé Filho",
         "slug": "ze-filho",
         "n": 14
+      },
+      {
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 14
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 14
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 14
+      },
+      {
+        "nome": "Selma da Colônia",
+        "slug": "selma-da-colonia",
+        "n": 14
+      },
+      {
+        "nome": "Professor Sandro Lima",
+        "slug": "professor-sandro-lima",
+        "n": 14
+      },
+      {
+        "nome": "Willian Vieira da Tv",
+        "slug": "willian-vieira-da-tv",
+        "n": 14
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 14
       }
     ],
     "n_coletivas": 14
@@ -2059,15 +2494,6 @@
   {
     "id": 1215,
     "nome": "Gury",
-    "nome_tse": "JOSÉ MAGNO RAMALHO FROZ",
-    "nome_urna": "GURY",
-    "partido": "PL",
-    "cargo": "VEREADOR",
-    "votos": 744,
-    "situacao_tse": "SUPLENTE",
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "gury",
     "n_proposicoes": 16,
     "stats": {
@@ -2083,55 +2509,30 @@
         "Indicação": 14,
         "Moção": 2
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 16
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 14,
         "Proposição aprovada": 2
       },
       "by_classe": {
-        "Proposta com objeto": 13,
-        "Moção/manifestação": 2,
-        "Não classificável": 1
-      },
-      "n_proposta": 13,
-      "n_nomeacao": 0,
-      "n_homenagem": 0,
-      "n_indefinida": 1
+        "Indicação": 14,
+        "Pesar": 2
+      }
     },
+    "nome_tse": "JOSÉ MAGNO RAMALHO FROZ",
+    "nome_urna": "GURY",
+    "partido": "PL",
+    "cargo": "Vereador",
+    "votos": 744,
+    "situacao_tse": "SUPLENTE",
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
     "nome_urna_display": "Gury",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 1215,
-      "n_total": 16,
-      "n_exclusiva": 16,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 0,
-      "n_ampla": 0,
-      "autoria_equivalente": 16.0,
-      "taxa_exclusividade": 1.0,
-      "peso_medio": 1.0,
-      "familias": {
-        "pede": 16
-      },
-      "tipos": {
-        "Indicação": 14,
-        "Moção": 2
-      },
-      "coautores": [],
-      "anos": {
-        "2025": 16
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Maior taxa de autoria exclusiva (100%)",
-      "Autor exclusivo de 16 proposições"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 1215,
@@ -2160,6 +2561,26 @@
     "foto_ano": 2024,
     "nome_tse_display": "José Magno Ramalho Froz",
     "og_image": "/og/v/gury.jpg",
+    "impacto": {
+      "n_total": 16,
+      "n_exclusiva": 16,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 0,
+      "autoria_equivalente": 16.0,
+      "taxa_exclusividade": 1.0,
+      "peso_medio": 1.0,
+      "familias": {},
+      "tipos": {
+        "Moção": 2,
+        "Indicação": 14
+      },
+      "coautores": [],
+      "anos": {
+        "2025": 16
+      }
+    },
     "impacto_equivalente_label": "16,0",
     "parceiros": [],
     "n_coletivas": 0
@@ -2167,15 +2588,6 @@
   {
     "id": 89,
     "nome": "Guto",
-    "nome_tse": "AUGUSTO VINÍCIUS MARTINS DE ARAUJO",
-    "nome_urna": "GUTO",
-    "partido": "PRD",
-    "cargo": "VEREADOR",
-    "votos": 771,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "guto",
     "n_proposicoes": 65,
     "stats": {
@@ -2198,11 +2610,7 @@
         "Requerimento": 3,
         "Projeto de Lei do Legislativo": 3
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 54,
-        "Organiza a Câmara": 8,
-        "Cria regra": 3
-      },
+      "by_familia": {},
       "by_situacao": {
         "Proposição aprovada": 26,
         "nao_informada": 24,
@@ -2210,76 +2618,30 @@
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Proposta com objeto": 32,
-        "Moção/manifestação": 17,
-        "Não classificável": 11,
+        "Indicação": 25,
+        "Pesar": 13,
+        "Aplauso": 12,
+        "Projeto normativo": 6,
         "Homenagem ou título": 3,
-        "Nomeação de lugar": 2
-      },
-      "n_proposta": 32,
-      "n_nomeacao": 2,
-      "n_homenagem": 3,
-      "n_indefinida": 11
+        "Outro ato": 2,
+        "Procedimento regimental": 2,
+        "Convite ou convocação": 2
+      }
     },
+    "nome_tse": "AUGUSTO VINÍCIUS MARTINS DE ARAUJO",
+    "nome_urna": "GUTO",
+    "partido": "PRD",
+    "cargo": "Vereador",
+    "votos": 771,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "Guto",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 89,
-      "n_total": 65,
-      "n_exclusiva": 35,
-      "n_dupla": 1,
-      "n_trio": 0,
-      "n_coletiva": 7,
-      "n_ampla": 22,
-      "autoria_equivalente": 38.4,
-      "taxa_exclusividade": 0.538,
-      "peso_medio": 0.591,
-      "familias": {
-        "pede": 54,
-        "camara": 8,
-        "cria_regra": 3
-      },
-      "tipos": {
-        "Indicação": 25,
-        "Moção": 26,
-        "Projeto de Decreto Legislativo": 4,
-        "Requerimento": 3,
-        "Projeto de Resolução": 4,
-        "Projeto de Lei do Legislativo": 3
-      },
-      "coautores": [
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 29
-        },
-        {
-          "nome": "Jaelson Araújo",
-          "id": 10,
-          "n": 25
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 23
-        }
-      ],
-      "anos": {
-        "2023": 10,
-        "2024": 9,
-        "2025": 23,
-        "2026": 23
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "3º em moções (26)",
-      "Autor exclusivo de 35 proposições",
-      "Assina mais com Edinildo (29)",
-      "Apresentou proposições em 4 anos diferentes"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 89,
@@ -2330,6 +2692,74 @@
     "foto_ano": 2024,
     "nome_tse_display": "Augusto Vinícius Martins de Araujo",
     "og_image": "/og/v/guto.jpg",
+    "impacto": {
+      "n_total": 65,
+      "n_exclusiva": 35,
+      "n_dupla": 1,
+      "n_trio": 0,
+      "n_coletiva": 7,
+      "n_ampla": 22,
+      "autoria_equivalente": 38.423389355742316,
+      "taxa_exclusividade": 0.5384615384615384,
+      "peso_medio": 0.5911290670114202,
+      "familias": {},
+      "tipos": {
+        "Projeto de Decreto Legislativo": 4,
+        "Requerimento": 3,
+        "Moção": 26,
+        "Indicação": 25,
+        "Projeto de Resolução": 4,
+        "Projeto de Lei do Legislativo": 3
+      },
+      "coautores": [
+        {
+          "nome": "Edinildo",
+          "n": 29
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 25
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 23
+        },
+        {
+          "nome": "Albininho",
+          "n": 23
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 22
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 21
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 21
+        },
+        {
+          "nome": "Abdias de Jesus",
+          "n": 17
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 17
+        },
+        {
+          "nome": "Elizeu de Tantan",
+          "n": 13
+        }
+      ],
+      "anos": {
+        "2026": 23,
+        "2025": 23,
+        "2024": 9,
+        "2023": 10
+      }
+    },
     "impacto_equivalente_label": "38,4",
     "parceiros": [
       {
@@ -2346,6 +2776,41 @@
         "nome": "Rubemar Ribeiro",
         "slug": "rubemar-ribeiro",
         "n": 23
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 23
+      },
+      {
+        "nome": "Lucas do Beiradão",
+        "slug": "lucas-do-beiradao",
+        "n": 22
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 21
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 21
+      },
+      {
+        "nome": "Abdias de Jesus",
+        "slug": "abdias-de-jesus",
+        "n": 17
+      },
+      {
+        "nome": "Enesio Ferreira",
+        "slug": "enesio-ferreira",
+        "n": 17
+      },
+      {
+        "nome": "Elizeu de Tantan",
+        "slug": "elizeu-de-tantan",
+        "n": 13
       }
     ],
     "n_coletivas": 29
@@ -2353,19 +2818,10 @@
   {
     "id": 1,
     "nome": "Herasmo Leite",
-    "nome_tse": "HERASMO LEITE SOARES",
-    "nome_urna": "HERASMO LEITE",
-    "partido": "PSD",
-    "cargo": "VEREADOR",
-    "votos": 987,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "herasmo-leite",
-    "n_proposicoes": 540,
+    "n_proposicoes": 539,
     "stats": {
-      "total": 540,
+      "total": 539,
       "aprovadas": 83,
       "rejeitadas": 1,
       "com_situacao": 110,
@@ -2375,12 +2831,12 @@
         "2021": 2,
         "2022": 1,
         "2023": 36,
-        "2024": 104,
+        "2024": 103,
         "2025": 233,
         "2026": 163
       },
       "by_tipo": {
-        "Indicação": 452,
+        "Indicação": 451,
         "Moção": 33,
         "Projeto de Lei do Legislativo": 31,
         "Requerimento": 14,
@@ -2389,97 +2845,40 @@
         "Emenda ao Projeto de Lei Ordinária": 1,
         "Projeto de Lei Ordinária": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 499,
-        "Cria regra": 32,
-        "Organiza a Câmara": 8,
-        "Altera outra proposta": 1
-      },
+      "by_familia": {},
       "by_situacao": {
-        "nao_informada": 430,
+        "nao_informada": 429,
         "Proposição aprovada": 83,
         "Proposição inclusa na Ordem do Dia": 18,
         "Proposição retirada da Ordem do Dia": 8,
         "Proposição rejeitada pelo Plenário": 1
       },
       "by_classe": {
-        "Proposta com objeto": 438,
-        "Não classificável": 63,
-        "Moção/manifestação": 22,
-        "Homenagem ou título": 11,
-        "Nomeação de lugar": 6
-      },
-      "n_proposta": 438,
-      "n_nomeacao": 6,
-      "n_homenagem": 11,
-      "n_indefinida": 63
+        "Indicação": 451,
+        "Projeto normativo": 34,
+        "Parabenização": 14,
+        "Pesar": 13,
+        "Convite ou convocação": 12,
+        "Homenagem ou título": 6,
+        "Aplauso": 5,
+        "Procedimento regimental": 2,
+        "Outro ato": 2
+      }
     },
+    "nome_tse": "HERASMO LEITE SOARES",
+    "nome_urna": "HERASMO LEITE",
+    "partido": "PSD",
+    "cargo": "Vereador",
+    "votos": 987,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "Herasmo Leite",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 1,
-      "n_total": 540,
-      "n_exclusiva": 510,
-      "n_dupla": 3,
-      "n_trio": 2,
-      "n_coletiva": 0,
-      "n_ampla": 25,
-      "autoria_equivalente": 513.7,
-      "taxa_exclusividade": 0.944,
-      "peso_medio": 0.951,
-      "familias": {
-        "cria_regra": 32,
-        "pede": 499,
-        "camara": 8,
-        "emenda": 1
-      },
-      "tipos": {
-        "Projeto de Lei do Legislativo": 31,
-        "Moção": 33,
-        "Indicação": 452,
-        "Projeto de Lei Ordinária": 1,
-        "Projeto de Decreto Legislativo": 6,
-        "Requerimento": 14,
-        "Projeto de Resolução": 2,
-        "Emenda ao Projeto de Lei Ordinária": 1
-      },
-      "coautores": [
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 26
-        },
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 25
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 25
-        }
-      ],
-      "anos": {
-        "2002": 1,
-        "2021": 2,
-        "2022": 1,
-        "2023": 36,
-        "2024": 104,
-        "2025": 233,
-        "2026": 163
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Mais proposições aprovadas (83)",
-      "2º em moções (33)",
-      "Autor exclusivo de 510 proposições",
-      "Assina mais com Edinildo (26)",
-      "Apresentou proposições em 7 anos diferentes"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 1,
@@ -2530,7 +2929,80 @@
     "foto_ano": 2024,
     "nome_tse_display": "Herasmo Leite Soares",
     "og_image": "/og/v/herasmo-leite.jpg",
-    "impacto_equivalente_label": "513,7",
+    "impacto": {
+      "n_total": 539,
+      "n_exclusiva": 509,
+      "n_dupla": 3,
+      "n_trio": 2,
+      "n_coletiva": 0,
+      "n_ampla": 25,
+      "autoria_equivalente": 512.6784313725491,
+      "taxa_exclusividade": 0.9443413729128015,
+      "peso_medio": 0.9511659209138202,
+      "familias": {},
+      "tipos": {
+        "Moção": 33,
+        "Indicação": 451,
+        "Projeto de Lei do Legislativo": 31,
+        "Requerimento": 14,
+        "Projeto de Decreto Legislativo": 6,
+        "Projeto de Resolução": 2,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Projeto de Lei Ordinária": 1
+      },
+      "coautores": [
+        {
+          "nome": "Edinildo",
+          "n": 26
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 25
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 25
+        },
+        {
+          "nome": "Albininho",
+          "n": 25
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 24
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 22
+        },
+        {
+          "nome": "Guto",
+          "n": 21
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 15
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 15
+        },
+        {
+          "nome": "Selma da Colônia",
+          "n": 15
+        }
+      ],
+      "anos": {
+        "2026": 163,
+        "2025": 233,
+        "2024": 103,
+        "2023": 36,
+        "2022": 1,
+        "2021": 2,
+        "2002": 1
+      }
+    },
+    "impacto_equivalente_label": "512,7",
     "parceiros": [
       {
         "nome": "Edinildo",
@@ -2546,6 +3018,41 @@
         "nome": "Rubemar Ribeiro",
         "slug": "rubemar-ribeiro",
         "n": 25
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 25
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 24
+      },
+      {
+        "nome": "Jaelson Araújo",
+        "slug": "jaelson-araujo",
+        "n": 22
+      },
+      {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 21
+      },
+      {
+        "nome": "Enesio Ferreira",
+        "slug": "enesio-ferreira",
+        "n": 15
+      },
+      {
+        "nome": "Zé Filho",
+        "slug": "ze-filho",
+        "n": 15
+      },
+      {
+        "nome": "Selma da Colônia",
+        "slug": "selma-da-colonia",
+        "n": 15
       }
     ],
     "n_coletivas": 25
@@ -2553,15 +3060,6 @@
   {
     "id": 10,
     "nome": "Jaelson Araújo",
-    "nome_tse": "JAELSON PEREIRA SOUZA",
-    "nome_urna": "JAELSON ARAUJO",
-    "partido": "PSD",
-    "cargo": "VEREADOR",
-    "votos": 892,
-    "situacao_tse": "ELEITO POR MÉDIA",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "jaelson-araujo",
     "n_proposicoes": 85,
     "stats": {
@@ -2583,13 +3081,9 @@
         "Projeto de Resolução": 4,
         "Projeto de Lei do Legislativo": 2,
         "Requerimento": 2,
-        "Projeto de Emenda à Lei Orgânica": 1
+        "Emenda à Lei Orgânica": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 74,
-        "Organiza a Câmara": 8,
-        "Cria regra": 3
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 51,
         "Proposição aprovada": 22,
@@ -2597,76 +3091,30 @@
         "Proposição retirada da Ordem do Dia": 1
       },
       "by_classe": {
-        "Proposta com objeto": 53,
-        "Moção/manifestação": 15,
-        "Não classificável": 15,
-        "Homenagem ou título": 1,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 53,
-      "n_nomeacao": 1,
-      "n_homenagem": 1,
-      "n_indefinida": 15
+        "Indicação": 54,
+        "Pesar": 14,
+        "Projeto normativo": 5,
+        "Procedimento regimental": 4,
+        "Aplauso": 4,
+        "Homenagem ou título": 2,
+        "Outro ato": 1,
+        "Informação e fiscalização": 1
+      }
     },
+    "nome_tse": "JAELSON PEREIRA SOUZA",
+    "nome_urna": "JAELSON ARAUJO",
+    "partido": "PSD",
+    "cargo": "Vereador",
+    "votos": 892,
+    "situacao_tse": "ELEITO POR MÉDIA",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por média",
     "situacao_tse_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.",
     "nome_urna_display": "Jaelson Araujo",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 10,
-      "n_total": 85,
-      "n_exclusiva": 50,
-      "n_dupla": 4,
-      "n_trio": 2,
-      "n_coletiva": 5,
-      "n_ampla": 24,
-      "autoria_equivalente": 55.4,
-      "taxa_exclusividade": 0.588,
-      "peso_medio": 0.651,
-      "familias": {
-        "pede": 74,
-        "camara": 8,
-        "cria_regra": 3
-      },
-      "tipos": {
-        "Requerimento": 2,
-        "Indicação": 54,
-        "Moção": 18,
-        "Projeto de Decreto Legislativo": 4,
-        "Projeto de Resolução": 4,
-        "Projeto de Lei do Legislativo": 2,
-        "Projeto de Emenda à Lei Orgânica": 1
-      },
-      "coautores": [
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 33
-        },
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 25
-        },
-        {
-          "nome": "Guto",
-          "id": 89,
-          "n": 25
-        }
-      ],
-      "anos": {
-        "2023": 7,
-        "2024": 19,
-        "2025": 34,
-        "2026": 25
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 50 proposições",
-      "Assina mais com Edinildo (33)",
-      "Apresentou proposições em 4 anos diferentes"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 10,
@@ -2717,6 +3165,75 @@
     "foto_ano": 2024,
     "nome_tse_display": "Jaelson Pereira Souza",
     "og_image": "/og/v/jaelson-araujo.jpg",
+    "impacto": {
+      "n_total": 85,
+      "n_exclusiva": 50,
+      "n_dupla": 4,
+      "n_trio": 2,
+      "n_coletiva": 5,
+      "n_ampla": 24,
+      "autoria_equivalente": 55.37312197606319,
+      "taxa_exclusividade": 0.5882352941176471,
+      "peso_medio": 0.6514484938360375,
+      "familias": {},
+      "tipos": {
+        "Moção": 18,
+        "Projeto de Decreto Legislativo": 4,
+        "Emenda à Lei Orgânica": 1,
+        "Indicação": 54,
+        "Projeto de Resolução": 4,
+        "Projeto de Lei do Legislativo": 2,
+        "Requerimento": 2
+      },
+      "coautores": [
+        {
+          "nome": "Edinildo",
+          "n": 33
+        },
+        {
+          "nome": "Guto",
+          "n": 25
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 25
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 24
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 24
+        },
+        {
+          "nome": "Albininho",
+          "n": 24
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 22
+        },
+        {
+          "nome": "Abdias de Jesus",
+          "n": 17
+        },
+        {
+          "nome": "João do Vale",
+          "n": 17
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 15
+        }
+      ],
+      "anos": {
+        "2026": 25,
+        "2025": 34,
+        "2024": 19,
+        "2023": 7
+      }
+    },
     "impacto_equivalente_label": "55,4",
     "parceiros": [
       {
@@ -2725,14 +3242,49 @@
         "n": 33
       },
       {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 25
+      },
+      {
         "nome": "Lucas do Beiradão",
         "slug": "lucas-do-beiradao",
         "n": 25
       },
       {
-        "nome": "Guto",
-        "slug": "guto",
-        "n": 25
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 24
+      },
+      {
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 24
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 24
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 22
+      },
+      {
+        "nome": "Abdias de Jesus",
+        "slug": "abdias-de-jesus",
+        "n": 17
+      },
+      {
+        "nome": "João do Vale",
+        "slug": "joao-do-vale",
+        "n": 17
+      },
+      {
+        "nome": "Enesio Ferreira",
+        "slug": "enesio-ferreira",
+        "n": 15
       }
     ],
     "n_coletivas": 29
@@ -2740,15 +3292,6 @@
   {
     "id": 40,
     "nome": "João Morais",
-    "nome_tse": "JOÃO RAIMUNDO MORAIS",
-    "nome_urna": "JOÃO MORAIS",
-    "partido": "PL",
-    "cargo": "VEREADOR",
-    "votos": 662,
-    "situacao_tse": "SUPLENTE",
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "joao-morais",
     "n_proposicoes": 10,
     "stats": {
@@ -2765,74 +3308,32 @@
         "Moção": 2,
         "Projeto de Lei do Legislativo": 2
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 8,
-        "Cria regra": 2
-      },
+      "by_familia": {},
       "by_situacao": {
         "Proposição aprovada": 7,
         "Proposição inclusa na Ordem do Dia": 2,
         "nao_informada": 1
       },
       "by_classe": {
-        "Proposta com objeto": 4,
-        "Não classificável": 4,
-        "Moção/manifestação": 2
-      },
-      "n_proposta": 4,
-      "n_nomeacao": 0,
-      "n_homenagem": 0,
-      "n_indefinida": 4
+        "Indicação": 6,
+        "Pesar": 2,
+        "Projeto normativo": 2
+      }
     },
+    "nome_tse": "JOÃO RAIMUNDO MORAIS",
+    "nome_urna": "JOÃO MORAIS",
+    "partido": "PL",
+    "cargo": "Vereador",
+    "votos": 662,
+    "situacao_tse": "SUPLENTE",
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
     "nome_urna_display": "João Morais",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 40,
-      "n_total": 10,
-      "n_exclusiva": 2,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 0,
-      "n_ampla": 8,
-      "autoria_equivalente": 2.5,
-      "taxa_exclusividade": 0.2,
-      "peso_medio": 0.247,
-      "familias": {
-        "pede": 8,
-        "cria_regra": 2
-      },
-      "tipos": {
-        "Indicação": 6,
-        "Projeto de Lei do Legislativo": 2,
-        "Moção": 2
-      },
-      "coautores": [
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 8
-        },
-        {
-          "nome": "Fabrícia do Sindicato",
-          "id": 28,
-          "n": 8
-        },
-        {
-          "nome": "Zé Filho",
-          "id": 29,
-          "n": 8
-        }
-      ],
-      "anos": {
-        "2023": 10
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Assina mais com Lucas do Beiradão (8)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 40,
@@ -2861,6 +3362,68 @@
     "foto_ano": 2024,
     "nome_tse_display": "João Raimundo Morais",
     "og_image": "/og/v/joao-morais.jpg",
+    "impacto": {
+      "n_total": 10,
+      "n_exclusiva": 2,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 8,
+      "autoria_equivalente": 2.470588235294117,
+      "taxa_exclusividade": 0.2,
+      "peso_medio": 0.2470588235294117,
+      "familias": {},
+      "tipos": {
+        "Moção": 2,
+        "Indicação": 6,
+        "Projeto de Lei do Legislativo": 2
+      },
+      "coautores": [
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 8
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 8
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 8
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 8
+        },
+        {
+          "nome": "Albininho",
+          "n": 8
+        },
+        {
+          "nome": "Edinildo",
+          "n": 8
+        },
+        {
+          "nome": "Selma da Colônia",
+          "n": 8
+        },
+        {
+          "nome": "Professor Sandro Lima",
+          "n": 8
+        },
+        {
+          "nome": "Felipe de Chicão",
+          "n": 8
+        },
+        {
+          "nome": "Willian Vieira da Tv",
+          "n": 8
+        }
+      ],
+      "anos": {
+        "2023": 10
+      }
+    },
     "impacto_equivalente_label": "2,5",
     "parceiros": [
       {
@@ -2877,6 +3440,41 @@
         "nome": "Zé Filho",
         "slug": "ze-filho",
         "n": 8
+      },
+      {
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 8
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 8
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 8
+      },
+      {
+        "nome": "Selma da Colônia",
+        "slug": "selma-da-colonia",
+        "n": 8
+      },
+      {
+        "nome": "Professor Sandro Lima",
+        "slug": "professor-sandro-lima",
+        "n": 8
+      },
+      {
+        "nome": "Felipe de Chicão",
+        "slug": "felipe-de-chicao",
+        "n": 8
+      },
+      {
+        "nome": "Willian Vieira da Tv",
+        "slug": "willian-vieira-da-tv",
+        "n": 8
       }
     ],
     "n_coletivas": 8
@@ -2884,15 +3482,6 @@
   {
     "id": 5,
     "nome": "João do Vale",
-    "nome_tse": "JOÃO JOSÉ MARTINS FRAZÃO",
-    "nome_urna": "JOÃO DO VALE",
-    "partido": "PL",
-    "cargo": "VEREADOR",
-    "votos": 939,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "joao-do-vale",
     "n_proposicoes": 169,
     "stats": {
@@ -2911,92 +3500,41 @@
         "Indicação": 151,
         "Moção": 12,
         "Projeto de Decreto Legislativo": 2,
-        "Projeto de Emenda à Lei Orgânica": 1,
+        "Emenda à Lei Orgânica": 1,
         "Requerimento": 1,
         "Projeto de Resolução": 1,
         "Projeto de Lei do Legislativo": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 164,
-        "Organiza a Câmara": 3,
-        "Cria regra": 2
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 139,
         "Proposição aprovada": 26,
         "Proposição inclusa na Ordem do Dia": 4
       },
       "by_classe": {
-        "Proposta com objeto": 140,
-        "Não classificável": 19,
-        "Moção/manifestação": 8,
-        "Homenagem ou título": 2
-      },
-      "n_proposta": 140,
-      "n_nomeacao": 0,
-      "n_homenagem": 2,
-      "n_indefinida": 19
+        "Indicação": 151,
+        "Aplauso": 6,
+        "Pesar": 6,
+        "Procedimento regimental": 2,
+        "Projeto normativo": 2,
+        "Informação e fiscalização": 1,
+        "Homenagem ou título": 1
+      }
     },
+    "nome_tse": "JOÃO JOSÉ MARTINS FRAZÃO",
+    "nome_urna": "JOÃO DO VALE",
+    "partido": "PL",
+    "cargo": "Vereador",
+    "votos": 939,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "João do Vale",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 5,
-      "n_total": 169,
-      "n_exclusiva": 150,
-      "n_dupla": 0,
-      "n_trio": 3,
-      "n_coletiva": 1,
-      "n_ampla": 15,
-      "autoria_equivalente": 152.1,
-      "taxa_exclusividade": 0.888,
-      "peso_medio": 0.9,
-      "familias": {
-        "pede": 164,
-        "cria_regra": 2,
-        "camara": 3
-      },
-      "tipos": {
-        "Indicação": 151,
-        "Projeto de Lei do Legislativo": 1,
-        "Projeto de Resolução": 1,
-        "Requerimento": 1,
-        "Moção": 12,
-        "Projeto de Decreto Legislativo": 2,
-        "Projeto de Emenda à Lei Orgânica": 1
-      },
-      "coautores": [
-        {
-          "nome": "Jaelson Araújo",
-          "id": 10,
-          "n": 17
-        },
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 16
-        },
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 16
-        }
-      ],
-      "anos": {
-        "2002": 1,
-        "2023": 12,
-        "2025": 87,
-        "2026": 69
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "3º em indicações (151)",
-      "Autor exclusivo de 150 proposições",
-      "Assina mais com Jaelson Araújo (17)",
-      "Apresentou proposições em 4 anos diferentes"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 5,
@@ -3027,6 +3565,75 @@
     "foto_ano": 2024,
     "nome_tse_display": "João José Martins Frazão",
     "og_image": "/og/v/joao-do-vale.jpg",
+    "impacto": {
+      "n_total": 169,
+      "n_exclusiva": 150,
+      "n_dupla": 0,
+      "n_trio": 3,
+      "n_coletiva": 1,
+      "n_ampla": 15,
+      "autoria_equivalente": 152.06990068754777,
+      "taxa_exclusividade": 0.8875739644970414,
+      "peso_medio": 0.8998218975594543,
+      "familias": {},
+      "tipos": {
+        "Indicação": 151,
+        "Emenda à Lei Orgânica": 1,
+        "Moção": 12,
+        "Projeto de Decreto Legislativo": 2,
+        "Requerimento": 1,
+        "Projeto de Resolução": 1,
+        "Projeto de Lei do Legislativo": 1
+      },
+      "coautores": [
+        {
+          "nome": "Jaelson Araújo",
+          "n": 17
+        },
+        {
+          "nome": "Edinildo",
+          "n": 16
+        },
+        {
+          "nome": "Albininho",
+          "n": 16
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 15
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 15
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 15
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 14
+        },
+        {
+          "nome": "Sapo da Kiola",
+          "n": 13
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 13
+        },
+        {
+          "nome": "Eduardo Ralpmnet",
+          "n": 13
+        }
+      ],
+      "anos": {
+        "2026": 69,
+        "2025": 87,
+        "2023": 12,
+        "2002": 1
+      }
+    },
     "impacto_equivalente_label": "152,1",
     "parceiros": [
       {
@@ -3035,14 +3642,49 @@
         "n": 17
       },
       {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 16
+      },
+      {
         "nome": "Albininho",
         "slug": "albininho",
         "n": 16
       },
       {
-        "nome": "Edinildo",
-        "slug": "edinildo",
-        "n": 16
+        "nome": "Lucas do Beiradão",
+        "slug": "lucas-do-beiradao",
+        "n": 15
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 15
+      },
+      {
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 15
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 14
+      },
+      {
+        "nome": "Sapo da Kiola",
+        "slug": "sapo-da-kiola",
+        "n": 13
+      },
+      {
+        "nome": "Enesio Ferreira",
+        "slug": "enesio-ferreira",
+        "n": 13
+      },
+      {
+        "nome": "Eduardo Ralpmnet",
+        "slug": "eduardo-ralpmnet",
+        "n": 13
       }
     ],
     "n_coletivas": 16
@@ -3050,15 +3692,6 @@
   {
     "id": 663,
     "nome": "Keimilson Guterres",
-    "nome_tse": "KEIMILSON SODRÉ GUTERRES",
-    "nome_urna": "KEIMILSON DE ZEZINHO",
-    "partido": "PDT",
-    "cargo": "VEREADOR",
-    "votos": 742,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "keimilson-guterres",
     "n_proposicoes": 59,
     "stats": {
@@ -3077,77 +3710,35 @@
         "Projeto de Decreto Legislativo": 1,
         "Requerimento": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 58,
-        "Organiza a Câmara": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 37,
         "Proposição aprovada": 18,
         "Proposição inclusa na Ordem do Dia": 4
       },
       "by_classe": {
-        "Proposta com objeto": 42,
-        "Moção/manifestação": 13,
-        "Homenagem ou título": 4
-      },
-      "n_proposta": 42,
-      "n_nomeacao": 0,
-      "n_homenagem": 4,
-      "n_indefinida": 0
+        "Indicação": 37,
+        "Aplauso": 10,
+        "Pesar": 9,
+        "Homenagem ou título": 1,
+        "Agradecimento": 1,
+        "Convite ou convocação": 1
+      }
     },
+    "nome_tse": "KEIMILSON SODRÉ GUTERRES",
+    "nome_urna": "KEIMILSON DE ZEZINHO",
+    "partido": "PDT",
+    "cargo": "Vereador",
+    "votos": 742,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "Keimilson de Zezinho",
     "nome_urna_igual": false,
-    "impacto": {
-      "autor_id": 663,
-      "n_total": 59,
-      "n_exclusiva": 41,
-      "n_dupla": 2,
-      "n_trio": 5,
-      "n_coletiva": 0,
-      "n_ampla": 11,
-      "autoria_equivalente": 44.3,
-      "taxa_exclusividade": 0.695,
-      "peso_medio": 0.751,
-      "familias": {
-        "pede": 58,
-        "camara": 1
-      },
-      "tipos": {
-        "Indicação": 37,
-        "Moção": 20,
-        "Requerimento": 1,
-        "Projeto de Decreto Legislativo": 1
-      },
-      "coautores": [
-        {
-          "nome": "Enesio Ferreira",
-          "id": 95,
-          "n": 15
-        },
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 14
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 14
-        }
-      ],
-      "anos": {
-        "2025": 19,
-        "2026": 40
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 41 proposições",
-      "Assina mais com Enesio Ferreira (15)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 663,
@@ -3178,6 +3769,70 @@
     "foto_ano": 2024,
     "nome_tse_display": "Keimilson Sodré Guterres",
     "og_image": "/og/v/keimilson-guterres.jpg",
+    "impacto": {
+      "n_total": 59,
+      "n_exclusiva": 41,
+      "n_dupla": 2,
+      "n_trio": 5,
+      "n_coletiva": 0,
+      "n_ampla": 11,
+      "autoria_equivalente": 44.326330532212886,
+      "taxa_exclusividade": 0.6949152542372882,
+      "peso_medio": 0.7512937378341167,
+      "familias": {},
+      "tipos": {
+        "Moção": 20,
+        "Indicação": 37,
+        "Projeto de Decreto Legislativo": 1,
+        "Requerimento": 1
+      },
+      "coautores": [
+        {
+          "nome": "Enesio Ferreira",
+          "n": 15
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 14
+        },
+        {
+          "nome": "Edinildo",
+          "n": 14
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 12
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 11
+        },
+        {
+          "nome": "Albininho",
+          "n": 11
+        },
+        {
+          "nome": "Guto",
+          "n": 11
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 11
+        },
+        {
+          "nome": "João do Vale",
+          "n": 11
+        },
+        {
+          "nome": "Abdias de Jesus",
+          "n": 11
+        }
+      ],
+      "anos": {
+        "2026": 40,
+        "2025": 19
+      }
+    },
     "impacto_equivalente_label": "44,3",
     "parceiros": [
       {
@@ -3186,14 +3841,49 @@
         "n": 15
       },
       {
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 14
+      },
+      {
         "nome": "Edinildo",
         "slug": "edinildo",
         "n": 14
       },
       {
-        "nome": "Rubemar Ribeiro",
-        "slug": "rubemar-ribeiro",
-        "n": 14
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 12
+      },
+      {
+        "nome": "Lucas do Beiradão",
+        "slug": "lucas-do-beiradao",
+        "n": 11
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 11
+      },
+      {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 11
+      },
+      {
+        "nome": "Jaelson Araújo",
+        "slug": "jaelson-araujo",
+        "n": 11
+      },
+      {
+        "nome": "João do Vale",
+        "slug": "joao-do-vale",
+        "n": 11
+      },
+      {
+        "nome": "Abdias de Jesus",
+        "slug": "abdias-de-jesus",
+        "n": 11
       }
     ],
     "n_coletivas": 11
@@ -3201,15 +3891,6 @@
   {
     "id": 407,
     "nome": "Layanna Ferreira",
-    "nome_tse": "LUTIELLEN LAYANNA BASTOS SÁ",
-    "nome_urna": "LAYANNA FERREIRA",
-    "partido": "PDT",
-    "cargo": "VEREADOR",
-    "votos": null,
-    "situacao_tse": null,
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "layanna-ferreira",
     "n_proposicoes": 6,
     "stats": {
@@ -3227,71 +3908,33 @@
         "Requerimento": 1,
         "Indicação": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 5,
-        "Organiza a Câmara": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "Proposição aprovada": 3,
         "Proposição retirada da Ordem do Dia": 2,
         "nao_informada": 1
       },
       "by_classe": {
-        "Não classificável": 3,
-        "Moção/manifestação": 3
-      },
-      "n_proposta": 0,
-      "n_nomeacao": 0,
-      "n_homenagem": 0,
-      "n_indefinida": 3
+        "Pesar": 2,
+        "Homenagem ou título": 1,
+        "Convite ou convocação": 1,
+        "Aplauso": 1,
+        "Indicação": 1
+      }
     },
+    "nome_tse": "LUTIELLEN LAYANNA BASTOS SÁ",
+    "nome_urna": "LAYANNA FERREIRA",
+    "partido": "PDT",
+    "cargo": "Vereador",
+    "votos": null,
+    "situacao_tse": null,
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "",
     "situacao_tse_ajuda": "",
     "nome_urna_display": "Layanna Ferreira",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 407,
-      "n_total": 6,
-      "n_exclusiva": 3,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 0,
-      "n_ampla": 3,
-      "autoria_equivalente": 3.2,
-      "taxa_exclusividade": 0.5,
-      "peso_medio": 0.529,
-      "familias": {
-        "pede": 5,
-        "camara": 1
-      },
-      "tipos": {
-        "Indicação": 1,
-        "Moção": 3,
-        "Requerimento": 1,
-        "Projeto de Decreto Legislativo": 1
-      },
-      "coautores": [
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 3
-        },
-        {
-          "nome": "Fabrícia do Sindicato",
-          "id": 28,
-          "n": 3
-        },
-        {
-          "nome": "Zé Filho",
-          "id": 29,
-          "n": 3
-        }
-      ],
-      "anos": {
-        "2024": 6
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
     "destaques": [],
     "mandatos": [
       {
@@ -3321,6 +3964,69 @@
     "foto_ano": 2024,
     "nome_tse_display": "Lutiellen Layanna Bastos SÁ",
     "og_image": "/og/v/layanna-ferreira.jpg",
+    "impacto": {
+      "n_total": 6,
+      "n_exclusiva": 3,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 3,
+      "autoria_equivalente": 3.1764705882352944,
+      "taxa_exclusividade": 0.5,
+      "peso_medio": 0.5294117647058824,
+      "familias": {},
+      "tipos": {
+        "Projeto de Decreto Legislativo": 1,
+        "Moção": 3,
+        "Requerimento": 1,
+        "Indicação": 1
+      },
+      "coautores": [
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 3
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 3
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 3
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 3
+        },
+        {
+          "nome": "Albininho",
+          "n": 3
+        },
+        {
+          "nome": "Edinildo",
+          "n": 3
+        },
+        {
+          "nome": "Riba do Bom Viver",
+          "n": 3
+        },
+        {
+          "nome": "Selma da Colônia",
+          "n": 3
+        },
+        {
+          "nome": "Professor Sandro Lima",
+          "n": 3
+        },
+        {
+          "nome": "Felipe de Chicão",
+          "n": 3
+        }
+      ],
+      "anos": {
+        "2024": 6
+      }
+    },
     "impacto_equivalente_label": "3,2",
     "parceiros": [
       {
@@ -3337,6 +4043,41 @@
         "nome": "Zé Filho",
         "slug": "ze-filho",
         "n": 3
+      },
+      {
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 3
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 3
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 3
+      },
+      {
+        "nome": "Riba do Bom Viver",
+        "slug": "riba-do-bom-viver",
+        "n": 3
+      },
+      {
+        "nome": "Selma da Colônia",
+        "slug": "selma-da-colonia",
+        "n": 3
+      },
+      {
+        "nome": "Professor Sandro Lima",
+        "slug": "professor-sandro-lima",
+        "n": 3
+      },
+      {
+        "nome": "Felipe de Chicão",
+        "slug": "felipe-de-chicao",
+        "n": 3
       }
     ],
     "n_coletivas": 3
@@ -3344,15 +4085,6 @@
   {
     "id": 13,
     "nome": "Lucas do Beiradão",
-    "nome_tse": "JOSÉ LUCAS PEREIRA FERNANDES",
-    "nome_urna": "LUCAS DO BEIRADÃO",
-    "partido": "PP",
-    "cargo": "VEREADOR",
-    "votos": 972,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "lucas-do-beiradao",
     "n_proposicoes": 60,
     "stats": {
@@ -3377,12 +4109,7 @@
         "Emenda ao Projeto de Lei Ordinária": 1,
         "Projeto de Lei Ordinária": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 36,
-        "Organiza a Câmara": 16,
-        "Cria regra": 7,
-        "Altera outra proposta": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "Proposição aprovada": 23,
         "Proposição inclusa na Ordem do Dia": 21,
@@ -3390,79 +4117,30 @@
         "Proposição retirada da Ordem do Dia": 5
       },
       "by_classe": {
-        "Proposta com objeto": 20,
-        "Não classificável": 19,
-        "Moção/manifestação": 13,
-        "Homenagem ou título": 6,
-        "Nomeação de lugar": 2
-      },
-      "n_proposta": 20,
-      "n_nomeacao": 2,
-      "n_homenagem": 6,
-      "n_indefinida": 19
+        "Indicação": 17,
+        "Pesar": 12,
+        "Projeto normativo": 10,
+        "Homenagem ou título": 7,
+        "Informação e fiscalização": 6,
+        "Aplauso": 4,
+        "Procedimento regimental": 3,
+        "Convite ou convocação": 1
+      }
     },
+    "nome_tse": "JOSÉ LUCAS PEREIRA FERNANDES",
+    "nome_urna": "LUCAS DO BEIRADÃO",
+    "partido": "PP",
+    "cargo": "Vereador",
+    "votos": 972,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "Lucas do Beiradão",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 13,
-      "n_total": 60,
-      "n_exclusiva": 31,
-      "n_dupla": 1,
-      "n_trio": 1,
-      "n_coletiva": 0,
-      "n_ampla": 27,
-      "autoria_equivalente": 33.5,
-      "taxa_exclusividade": 0.517,
-      "peso_medio": 0.558,
-      "familias": {
-        "cria_regra": 7,
-        "pede": 36,
-        "camara": 16,
-        "emenda": 1
-      },
-      "tipos": {
-        "Projeto de Lei do Legislativo": 6,
-        "Indicação": 17,
-        "Projeto de Resolução": 4,
-        "Projeto de Lei Ordinária": 1,
-        "Projeto de Decreto Legislativo": 12,
-        "Requerimento": 3,
-        "Moção": 16,
-        "Emenda ao Projeto de Lei Ordinária": 1
-      },
-      "coautores": [
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 28
-        },
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 27
-        },
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 26
-        }
-      ],
-      "anos": {
-        "2023": 17,
-        "2024": 29,
-        "2025": 4,
-        "2026": 10
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "3º em projetos de lei do Legislativo (6)",
-      "Autor exclusivo de 31 proposições",
-      "Assina mais com Rubemar Ribeiro (28)",
-      "Apresentou proposições em 4 anos diferentes"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 13,
@@ -3513,6 +4191,76 @@
     "foto_ano": 2024,
     "nome_tse_display": "José Lucas Pereira Fernandes",
     "og_image": "/og/v/lucas-do-beiradao.jpg",
+    "impacto": {
+      "n_total": 60,
+      "n_exclusiva": 31,
+      "n_dupla": 1,
+      "n_trio": 1,
+      "n_coletiva": 0,
+      "n_ampla": 27,
+      "autoria_equivalente": 33.50743570155336,
+      "taxa_exclusividade": 0.5166666666666667,
+      "peso_medio": 0.558457261692556,
+      "familias": {},
+      "tipos": {
+        "Moção": 16,
+        "Projeto de Decreto Legislativo": 12,
+        "Indicação": 17,
+        "Requerimento": 3,
+        "Projeto de Resolução": 4,
+        "Projeto de Lei do Legislativo": 6,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Projeto de Lei Ordinária": 1
+      },
+      "coautores": [
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 28
+        },
+        {
+          "nome": "Albininho",
+          "n": 27
+        },
+        {
+          "nome": "Edinildo",
+          "n": 26
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 25
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 25
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 25
+        },
+        {
+          "nome": "Guto",
+          "n": 22
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 17
+        },
+        {
+          "nome": "João do Vale",
+          "n": 15
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 15
+        }
+      ],
+      "anos": {
+        "2026": 10,
+        "2025": 4,
+        "2024": 29,
+        "2023": 17
+      }
+    },
     "impacto_equivalente_label": "33,5",
     "parceiros": [
       {
@@ -3529,6 +4277,41 @@
         "nome": "Edinildo",
         "slug": "edinildo",
         "n": 26
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 25
+      },
+      {
+        "nome": "Jaelson Araújo",
+        "slug": "jaelson-araujo",
+        "n": 25
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 25
+      },
+      {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 22
+      },
+      {
+        "nome": "Enesio Ferreira",
+        "slug": "enesio-ferreira",
+        "n": 17
+      },
+      {
+        "nome": "João do Vale",
+        "slug": "joao-do-vale",
+        "n": 15
+      },
+      {
+        "nome": "Zé Filho",
+        "slug": "ze-filho",
+        "n": 15
       }
     ],
     "n_coletivas": 27
@@ -3536,15 +4319,6 @@
   {
     "id": 2197,
     "nome": "Oziel Menezes",
-    "nome_tse": "OZIEL ABREU MENEZES",
-    "nome_urna": "OZIEL MENEZES",
-    "partido": "PRD",
-    "cargo": "VEREADOR",
-    "votos": 352,
-    "situacao_tse": "SUPLENTE",
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "oziel-menezes",
     "n_proposicoes": 13,
     "stats": {
@@ -3563,69 +4337,34 @@
         "Projeto de Decreto Legislativo": 2,
         "Requerimento": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 9,
-        "Cria regra": 2,
-        "Organiza a Câmara": 2
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 6,
         "Proposição aprovada": 5,
         "Proposição inclusa na Ordem do Dia": 2
       },
       "by_classe": {
-        "Proposta com objeto": 6,
-        "Homenagem ou título": 4,
-        "Nomeação de lugar": 2,
-        "Não classificável": 1
-      },
-      "n_proposta": 6,
-      "n_nomeacao": 2,
-      "n_homenagem": 4,
-      "n_indefinida": 1
+        "Indicação": 6,
+        "Aplauso": 2,
+        "Projeto normativo": 2,
+        "Homenagem ou título": 2,
+        "Convite ou convocação": 1
+      }
     },
+    "nome_tse": "OZIEL ABREU MENEZES",
+    "nome_urna": "OZIEL MENEZES",
+    "partido": "PRD",
+    "cargo": "Vereador",
+    "votos": 352,
+    "situacao_tse": "SUPLENTE",
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
     "nome_urna_display": "Oziel Menezes",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 2197,
-      "n_total": 13,
-      "n_exclusiva": 11,
-      "n_dupla": 2,
-      "n_trio": 0,
-      "n_coletiva": 0,
-      "n_ampla": 0,
-      "autoria_equivalente": 12.0,
-      "taxa_exclusividade": 0.846,
-      "peso_medio": 0.923,
-      "familias": {
-        "pede": 9,
-        "camara": 2,
-        "cria_regra": 2
-      },
-      "tipos": {
-        "Indicação": 6,
-        "Projeto de Decreto Legislativo": 2,
-        "Moção": 2,
-        "Projeto de Lei do Legislativo": 2,
-        "Requerimento": 1
-      },
-      "coautores": [
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 2
-        }
-      ],
-      "anos": {
-        "2026": 13
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 11 proposições"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 2197,
@@ -3654,6 +4393,34 @@
     "foto_ano": 2024,
     "nome_tse_display": "Oziel Abreu Menezes",
     "og_image": "/og/v/oziel-menezes.jpg",
+    "impacto": {
+      "n_total": 13,
+      "n_exclusiva": 11,
+      "n_dupla": 2,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 0,
+      "autoria_equivalente": 12.0,
+      "taxa_exclusividade": 0.8461538461538461,
+      "peso_medio": 0.9230769230769231,
+      "familias": {},
+      "tipos": {
+        "Requerimento": 1,
+        "Moção": 2,
+        "Projeto de Lei do Legislativo": 2,
+        "Projeto de Decreto Legislativo": 2,
+        "Indicação": 6
+      },
+      "coautores": [
+        {
+          "nome": "Edinildo",
+          "n": 2
+        }
+      ],
+      "anos": {
+        "2026": 13
+      }
+    },
     "impacto_equivalente_label": "12,0",
     "parceiros": [
       {
@@ -3667,15 +4434,6 @@
   {
     "id": 4,
     "nome": "Paulinho Enfermeiro",
-    "nome_tse": "PAULO HENRIQUE TRINTA MARQUES",
-    "nome_urna": "PAULINHO ENFERMEIRO",
-    "partido": "PSD",
-    "cargo": "VEREADOR",
-    "votos": 678,
-    "situacao_tse": "SUPLENTE",
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "paulinho-enfermeiro",
     "n_proposicoes": 47,
     "stats": {
@@ -3697,11 +4455,7 @@
         "Projeto de Lei Ordinária": 2,
         "Projeto de Lei do Legislativo": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 38,
-        "Organiza a Câmara": 6,
-        "Cria regra": 3
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 23,
         "Proposição aprovada": 16,
@@ -3709,73 +4463,27 @@
         "Proposição retirada da Ordem do Dia": 1
       },
       "by_classe": {
-        "Proposta com objeto": 29,
-        "Não classificável": 8,
-        "Moção/manifestação": 5,
-        "Nomeação de lugar": 3,
-        "Homenagem ou título": 2
-      },
-      "n_proposta": 29,
-      "n_nomeacao": 3,
-      "n_homenagem": 2,
-      "n_indefinida": 8
+        "Indicação": 33,
+        "Projeto normativo": 5,
+        "Pesar": 5,
+        "Homenagem ou título": 3,
+        "Procedimento regimental": 1
+      }
     },
+    "nome_tse": "PAULO HENRIQUE TRINTA MARQUES",
+    "nome_urna": "PAULINHO ENFERMEIRO",
+    "partido": "PSD",
+    "cargo": "Vereador",
+    "votos": 678,
+    "situacao_tse": "SUPLENTE",
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
     "nome_urna_display": "Paulinho Enfermeiro",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 4,
-      "n_total": 47,
-      "n_exclusiva": 31,
-      "n_dupla": 1,
-      "n_trio": 1,
-      "n_coletiva": 0,
-      "n_ampla": 14,
-      "autoria_equivalente": 32.7,
-      "taxa_exclusividade": 0.66,
-      "peso_medio": 0.695,
-      "familias": {
-        "pede": 38,
-        "cria_regra": 3,
-        "camara": 6
-      },
-      "tipos": {
-        "Indicação": 33,
-        "Projeto de Lei Ordinária": 2,
-        "Projeto de Resolução": 3,
-        "Moção": 5,
-        "Projeto de Decreto Legislativo": 3,
-        "Projeto de Lei do Legislativo": 1
-      },
-      "coautores": [
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 15
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 15
-        },
-        {
-          "nome": "Willian Vieira da Tv",
-          "id": 37,
-          "n": 15
-        }
-      ],
-      "anos": {
-        "2022": 1,
-        "2023": 19,
-        "2024": 27
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 31 proposições",
-      "Assina mais com Lucas do Beiradão (15)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 4,
@@ -3804,6 +4512,73 @@
     "foto_ano": 2024,
     "nome_tse_display": "Paulo Henrique Trinta Marques",
     "og_image": "/og/v/paulinho-enfermeiro.jpg",
+    "impacto": {
+      "n_total": 47,
+      "n_exclusiva": 31,
+      "n_dupla": 1,
+      "n_trio": 1,
+      "n_coletiva": 0,
+      "n_ampla": 14,
+      "autoria_equivalente": 32.65686274509804,
+      "taxa_exclusividade": 0.6595744680851063,
+      "peso_medio": 0.6948268669169796,
+      "familias": {},
+      "tipos": {
+        "Projeto de Resolução": 3,
+        "Moção": 5,
+        "Projeto de Decreto Legislativo": 3,
+        "Indicação": 33,
+        "Projeto de Lei do Legislativo": 1,
+        "Projeto de Lei Ordinária": 2
+      },
+      "coautores": [
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 15
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 15
+        },
+        {
+          "nome": "Willian Vieira da Tv",
+          "n": 15
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 14
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 14
+        },
+        {
+          "nome": "Albininho",
+          "n": 14
+        },
+        {
+          "nome": "Edinildo",
+          "n": 14
+        },
+        {
+          "nome": "Selma da Colônia",
+          "n": 14
+        },
+        {
+          "nome": "Professor Sandro Lima",
+          "n": 14
+        },
+        {
+          "nome": "Felipe de Chicão",
+          "n": 14
+        }
+      ],
+      "anos": {
+        "2024": 27,
+        "2023": 19,
+        "2022": 1
+      }
+    },
     "impacto_equivalente_label": "32,7",
     "parceiros": [
       {
@@ -3820,6 +4595,41 @@
         "nome": "Willian Vieira da Tv",
         "slug": "willian-vieira-da-tv",
         "n": 15
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 14
+      },
+      {
+        "nome": "Zé Filho",
+        "slug": "ze-filho",
+        "n": 14
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 14
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 14
+      },
+      {
+        "nome": "Selma da Colônia",
+        "slug": "selma-da-colonia",
+        "n": 14
+      },
+      {
+        "nome": "Professor Sandro Lima",
+        "slug": "professor-sandro-lima",
+        "n": 14
+      },
+      {
+        "nome": "Felipe de Chicão",
+        "slug": "felipe-de-chicao",
+        "n": 14
       }
     ],
     "n_coletivas": 14
@@ -3827,15 +4637,6 @@
   {
     "id": 3,
     "nome": "Professor Sandro Lima",
-    "nome_tse": "SANDRO HENRIQUE LIMA",
-    "nome_urna": "PROFESSOR SANDRO LIMA",
-    "partido": "SOLIDARIEDADE",
-    "cargo": "VEREADOR",
-    "votos": 697,
-    "situacao_tse": "ELEITO POR MÉDIA",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "professor-sandro-lima",
     "n_proposicoes": 30,
     "stats": {
@@ -3856,11 +4657,7 @@
         "Projeto de Resolução": 2,
         "Emenda ao Projeto de Lei Ordinária": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 22,
-        "Organiza a Câmara": 7,
-        "Altera outra proposta": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "Proposição aprovada": 13,
         "Proposição inclusa na Ordem do Dia": 7,
@@ -3869,72 +4666,30 @@
         "Proposição rejeitada pelo Plenário": 1
       },
       "by_classe": {
-        "Não classificável": 11,
-        "Proposta com objeto": 10,
-        "Moção/manifestação": 5,
-        "Homenagem ou título": 3,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 10,
-      "n_nomeacao": 1,
-      "n_homenagem": 3,
-      "n_indefinida": 11
+        "Indicação": 12,
+        "Pesar": 5,
+        "Homenagem ou título": 5,
+        "Procedimento regimental": 3,
+        "Convite ou convocação": 2,
+        "Projeto normativo": 1,
+        "Aplauso": 1,
+        "Outro ato": 1
+      }
     },
+    "nome_tse": "SANDRO HENRIQUE LIMA",
+    "nome_urna": "PROFESSOR SANDRO LIMA",
+    "partido": "SOLIDARIEDADE",
+    "cargo": "Vereador",
+    "votos": 697,
+    "situacao_tse": "ELEITO POR MÉDIA",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por média",
     "situacao_tse_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.",
     "nome_urna_display": "Professor Sandro Lima",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 3,
-      "n_total": 30,
-      "n_exclusiva": 14,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 1,
-      "n_ampla": 15,
-      "autoria_equivalente": 15.1,
-      "taxa_exclusividade": 0.467,
-      "peso_medio": 0.504,
-      "familias": {
-        "pede": 22,
-        "camara": 7,
-        "emenda": 1
-      },
-      "tipos": {
-        "Indicação": 12,
-        "Requerimento": 4,
-        "Projeto de Decreto Legislativo": 5,
-        "Moção": 6,
-        "Projeto de Resolução": 2,
-        "Emenda ao Projeto de Lei Ordinária": 1
-      },
-      "coautores": [
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 16
-        },
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 15
-        },
-        {
-          "nome": "Zé Filho",
-          "id": 29,
-          "n": 15
-        }
-      ],
-      "anos": {
-        "2023": 16,
-        "2024": 14
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 14 proposições",
-      "Assina mais com Albininho (16)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 3,
@@ -3985,6 +4740,72 @@
     "foto_ano": 2024,
     "nome_tse_display": "Sandro Henrique Lima",
     "og_image": "/og/v/professor-sandro-lima.jpg",
+    "impacto": {
+      "n_total": 30,
+      "n_exclusiva": 14,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 1,
+      "n_ampla": 15,
+      "autoria_equivalente": 15.123529411764704,
+      "taxa_exclusividade": 0.4666666666666667,
+      "peso_medio": 0.5041176470588234,
+      "familias": {},
+      "tipos": {
+        "Projeto de Resolução": 2,
+        "Moção": 6,
+        "Projeto de Decreto Legislativo": 5,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Requerimento": 4,
+        "Indicação": 12
+      },
+      "coautores": [
+        {
+          "nome": "Albininho",
+          "n": 16
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 15
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 15
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 15
+        },
+        {
+          "nome": "Edinildo",
+          "n": 15
+        },
+        {
+          "nome": "Selma da Colônia",
+          "n": 15
+        },
+        {
+          "nome": "Willian Vieira da Tv",
+          "n": 15
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 15
+        },
+        {
+          "nome": "Alessandro Montenegro",
+          "n": 15
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 14
+        }
+      ],
+      "anos": {
+        "2024": 14,
+        "2023": 16
+      }
+    },
     "impacto_equivalente_label": "15,1",
     "parceiros": [
       {
@@ -4001,6 +4822,41 @@
         "nome": "Zé Filho",
         "slug": "ze-filho",
         "n": 15
+      },
+      {
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 15
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 15
+      },
+      {
+        "nome": "Selma da Colônia",
+        "slug": "selma-da-colonia",
+        "n": 15
+      },
+      {
+        "nome": "Willian Vieira da Tv",
+        "slug": "willian-vieira-da-tv",
+        "n": 15
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 15
+      },
+      {
+        "nome": "Alessandro Montenegro",
+        "slug": "alessandro-montenegro",
+        "n": 15
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 14
       }
     ],
     "n_coletivas": 16
@@ -4008,15 +4864,6 @@
   {
     "id": 33,
     "nome": "Riba do Bom Viver",
-    "nome_tse": "JOSÉ DE RIBAMAR BRITO",
-    "nome_urna": "RIBA DO BOM VIVER",
-    "partido": "PODE",
-    "cargo": "VEREADOR",
-    "votos": 1095,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "riba-do-bom-viver",
     "n_proposicoes": 14,
     "stats": {
@@ -4036,10 +4883,7 @@
         "Requerimento": 2,
         "Projeto de Decreto Legislativo": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 11,
-        "Organiza a Câmara": 3
-      },
+      "by_familia": {},
       "by_situacao": {
         "Proposição aprovada": 7,
         "Proposição inclusa na Ordem do Dia": 3,
@@ -4047,68 +4891,28 @@
         "nao_informada": 1
       },
       "by_classe": {
-        "Não classificável": 7,
-        "Moção/manifestação": 3,
-        "Proposta com objeto": 3,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 3,
-      "n_nomeacao": 1,
-      "n_homenagem": 0,
-      "n_indefinida": 7
+        "Indicação": 6,
+        "Pesar": 3,
+        "Procedimento regimental": 2,
+        "Projeto normativo": 1,
+        "Homenagem ou título": 1,
+        "Convite ou convocação": 1
+      }
     },
+    "nome_tse": "JOSÉ DE RIBAMAR BRITO",
+    "nome_urna": "RIBA DO BOM VIVER",
+    "partido": "PODE",
+    "cargo": "Vereador",
+    "votos": 1095,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "Riba do BOM Viver",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 33,
-      "n_total": 14,
-      "n_exclusiva": 2,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 1,
-      "n_ampla": 11,
-      "autoria_equivalente": 2.8,
-      "taxa_exclusividade": 0.143,
-      "peso_medio": 0.203,
-      "familias": {
-        "pede": 11,
-        "camara": 3
-      },
-      "tipos": {
-        "Indicação": 6,
-        "Requerimento": 2,
-        "Moção": 3,
-        "Projeto de Decreto Legislativo": 1,
-        "Projeto de Resolução": 2
-      },
-      "coautores": [
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 12
-        },
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 12
-        },
-        {
-          "nome": "Professor Sandro Lima",
-          "id": 3,
-          "n": 12
-        }
-      ],
-      "anos": {
-        "2023": 6,
-        "2024": 8
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Assina mais com Albininho (12)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 33,
@@ -4159,6 +4963,71 @@
     "foto_ano": 2020,
     "nome_tse_display": "José de Ribamar Brito",
     "og_image": "/og/v/riba-do-bom-viver.jpg",
+    "impacto": {
+      "n_total": 14,
+      "n_exclusiva": 2,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 1,
+      "n_ampla": 11,
+      "autoria_equivalente": 2.8470588235294105,
+      "taxa_exclusividade": 0.14285714285714285,
+      "peso_medio": 0.20336134453781504,
+      "familias": {},
+      "tipos": {
+        "Projeto de Resolução": 2,
+        "Moção": 3,
+        "Projeto de Decreto Legislativo": 1,
+        "Indicação": 6,
+        "Requerimento": 2
+      },
+      "coautores": [
+        {
+          "nome": "Albininho",
+          "n": 12
+        },
+        {
+          "nome": "Edinildo",
+          "n": 12
+        },
+        {
+          "nome": "Professor Sandro Lima",
+          "n": 12
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 11
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 11
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 11
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 11
+        },
+        {
+          "nome": "Selma da Colônia",
+          "n": 11
+        },
+        {
+          "nome": "Felipe de Chicão",
+          "n": 11
+        },
+        {
+          "nome": "Willian Vieira da Tv",
+          "n": 11
+        }
+      ],
+      "anos": {
+        "2024": 8,
+        "2023": 6
+      }
+    },
     "impacto_equivalente_label": "2,8",
     "parceiros": [
       {
@@ -4175,6 +5044,41 @@
         "nome": "Professor Sandro Lima",
         "slug": "professor-sandro-lima",
         "n": 12
+      },
+      {
+        "nome": "Lucas do Beiradão",
+        "slug": "lucas-do-beiradao",
+        "n": 11
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 11
+      },
+      {
+        "nome": "Zé Filho",
+        "slug": "ze-filho",
+        "n": 11
+      },
+      {
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 11
+      },
+      {
+        "nome": "Selma da Colônia",
+        "slug": "selma-da-colonia",
+        "n": 11
+      },
+      {
+        "nome": "Felipe de Chicão",
+        "slug": "felipe-de-chicao",
+        "n": 11
+      },
+      {
+        "nome": "Willian Vieira da Tv",
+        "slug": "willian-vieira-da-tv",
+        "n": 11
       }
     ],
     "n_coletivas": 12
@@ -4182,15 +5086,6 @@
   {
     "id": 692,
     "nome": "Rodrigo Brasil",
-    "nome_tse": "RODRIGO BRASIL RODRIGUES",
-    "nome_urna": "RODRIGO BRASIL",
-    "partido": "PRD",
-    "cargo": "VEREADOR",
-    "votos": 649,
-    "situacao_tse": "ELEITO POR MÉDIA",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "rodrigo-brasil",
     "n_proposicoes": 55,
     "stats": {
@@ -4209,79 +5104,37 @@
         "Requerimento": 5,
         "Projeto de Decreto Legislativo": 2
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 53,
-        "Organiza a Câmara": 2
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 30,
         "Proposição aprovada": 22,
         "Proposição inclusa na Ordem do Dia": 3
       },
       "by_classe": {
-        "Proposta com objeto": 26,
-        "Moção/manifestação": 15,
-        "Não classificável": 12,
-        "Homenagem ou título": 2
-      },
-      "n_proposta": 26,
-      "n_nomeacao": 0,
-      "n_homenagem": 2,
-      "n_indefinida": 12
+        "Indicação": 30,
+        "Pesar": 13,
+        "Aplauso": 5,
+        "Homenagem ou título": 2,
+        "Convite ou convocação": 2,
+        "Informação e fiscalização": 1,
+        "Outro ato": 1,
+        "Procedimento regimental": 1
+      }
     },
+    "nome_tse": "RODRIGO BRASIL RODRIGUES",
+    "nome_urna": "RODRIGO BRASIL",
+    "partido": "PRD",
+    "cargo": "Vereador",
+    "votos": 649,
+    "situacao_tse": "ELEITO POR MÉDIA",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por média",
     "situacao_tse_ajuda": "A vaga veio na distribuição das sobras, pela média: divide-se a votação do partido pelo número de cadeiras que ele já obteve mais um. Quem tiver a maior média fica com a vaga.",
     "nome_urna_display": "Rodrigo Brasil",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 692,
-      "n_total": 55,
-      "n_exclusiva": 42,
-      "n_dupla": 1,
-      "n_trio": 0,
-      "n_coletiva": 0,
-      "n_ampla": 12,
-      "autoria_equivalente": 43.3,
-      "taxa_exclusividade": 0.764,
-      "peso_medio": 0.786,
-      "familias": {
-        "pede": 53,
-        "camara": 2
-      },
-      "tipos": {
-        "Indicação": 30,
-        "Moção": 18,
-        "Requerimento": 5,
-        "Projeto de Decreto Legislativo": 2
-      },
-      "coautores": [
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 12
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 12
-        },
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 12
-        }
-      ],
-      "anos": {
-        "2025": 26,
-        "2026": 29
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "3º em requerimentos (5)",
-      "Autor exclusivo de 42 proposições",
-      "Assina mais com Lucas do Beiradão (12)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 692,
@@ -4312,6 +5165,70 @@
     "foto_ano": 2024,
     "nome_tse_display": "Rodrigo Brasil Rodrigues",
     "og_image": "/og/v/rodrigo-brasil.jpg",
+    "impacto": {
+      "n_total": 55,
+      "n_exclusiva": 42,
+      "n_dupla": 1,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 12,
+      "autoria_equivalente": 43.250572956455315,
+      "taxa_exclusividade": 0.7636363636363637,
+      "peso_medio": 0.786374053753733,
+      "familias": {},
+      "tipos": {
+        "Moção": 18,
+        "Indicação": 30,
+        "Projeto de Decreto Legislativo": 2,
+        "Requerimento": 5
+      },
+      "coautores": [
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 12
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 12
+        },
+        {
+          "nome": "Albininho",
+          "n": 12
+        },
+        {
+          "nome": "Edinildo",
+          "n": 12
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 12
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 12
+        },
+        {
+          "nome": "João do Vale",
+          "n": 12
+        },
+        {
+          "nome": "Abdias de Jesus",
+          "n": 12
+        },
+        {
+          "nome": "Eduardo Ralpmnet",
+          "n": 12
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 11
+        }
+      ],
+      "anos": {
+        "2026": 29,
+        "2025": 26
+      }
+    },
     "impacto_equivalente_label": "43,3",
     "parceiros": [
       {
@@ -4328,6 +5245,41 @@
         "nome": "Albininho",
         "slug": "albininho",
         "n": 12
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 12
+      },
+      {
+        "nome": "Jaelson Araújo",
+        "slug": "jaelson-araujo",
+        "n": 12
+      },
+      {
+        "nome": "Enesio Ferreira",
+        "slug": "enesio-ferreira",
+        "n": 12
+      },
+      {
+        "nome": "João do Vale",
+        "slug": "joao-do-vale",
+        "n": 12
+      },
+      {
+        "nome": "Abdias de Jesus",
+        "slug": "abdias-de-jesus",
+        "n": 12
+      },
+      {
+        "nome": "Eduardo Ralpmnet",
+        "slug": "eduardo-ralpmnet",
+        "n": 12
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 11
       }
     ],
     "n_coletivas": 12
@@ -4335,15 +5287,6 @@
   {
     "id": 30,
     "nome": "Rubemar Ribeiro",
-    "nome_tse": "RUBEMAR DE JESUS DINIZ RIBEIRO",
-    "nome_urna": "RUBEMAR RIBEIRO",
-    "partido": "PP",
-    "cargo": "VEREADOR",
-    "votos": 1126,
-    "situacao_tse": "ELEITO POR QP",
-    "eleito": 1,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "rubemar-ribeiro",
     "n_proposicoes": 69,
     "stats": {
@@ -4367,12 +5310,7 @@
         "Requerimento": 1,
         "Emenda ao Projeto de Lei Ordinária": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 60,
-        "Organiza a Câmara": 5,
-        "Cria regra": 3,
-        "Altera outra proposta": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 37,
         "Proposição aprovada": 22,
@@ -4380,77 +5318,28 @@
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Proposta com objeto": 45,
-        "Moção/manifestação": 11,
-        "Não classificável": 8,
-        "Nomeação de lugar": 4,
-        "Homenagem ou título": 1
-      },
-      "n_proposta": 45,
-      "n_nomeacao": 4,
-      "n_homenagem": 1,
-      "n_indefinida": 8
+        "Indicação": 45,
+        "Pesar": 10,
+        "Projeto normativo": 5,
+        "Aplauso": 4,
+        "Procedimento regimental": 3,
+        "Homenagem ou título": 2
+      }
     },
+    "nome_tse": "RUBEMAR DE JESUS DINIZ RIBEIRO",
+    "nome_urna": "RUBEMAR RIBEIRO",
+    "partido": "PP",
+    "cargo": "Vereador",
+    "votos": 1126,
+    "situacao_tse": "ELEITO POR QP",
+    "eleito": 1,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Eleito por quociente partidário",
     "situacao_tse_ajuda": "O partido conquistou a vaga pelo quociente partidário: divide-se o total de votos válidos pelo quociente eleitoral para saber quantas cadeiras cada partido ou federação preenche. A vaga fica com os mais votados da lista.",
     "nome_urna_display": "Rubemar Ribeiro",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 30,
-      "n_total": 69,
-      "n_exclusiva": 37,
-      "n_dupla": 0,
-      "n_trio": 4,
-      "n_coletiva": 1,
-      "n_ampla": 27,
-      "autoria_equivalente": 40.2,
-      "taxa_exclusividade": 0.536,
-      "peso_medio": 0.582,
-      "familias": {
-        "pede": 60,
-        "camara": 5,
-        "cria_regra": 3,
-        "emenda": 1
-      },
-      "tipos": {
-        "Indicação": 45,
-        "Projeto de Resolução": 3,
-        "Moção": 14,
-        "Projeto de Lei do Legislativo": 3,
-        "Projeto de Decreto Legislativo": 2,
-        "Emenda ao Projeto de Lei Ordinária": 1,
-        "Requerimento": 1
-      },
-      "coautores": [
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 28
-        },
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 27
-        },
-        {
-          "nome": "Edinildo",
-          "id": 23,
-          "n": 27
-        }
-      ],
-      "anos": {
-        "2023": 12,
-        "2024": 22,
-        "2025": 7,
-        "2026": 28
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 37 proposições",
-      "Assina mais com Lucas do Beiradão (28)",
-      "Apresentou proposições em 4 anos diferentes"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 30,
@@ -4501,6 +5390,75 @@
     "foto_ano": 2024,
     "nome_tse_display": "Rubemar de Jesus Diniz Ribeiro",
     "og_image": "/og/v/rubemar-ribeiro.jpg",
+    "impacto": {
+      "n_total": 69,
+      "n_exclusiva": 37,
+      "n_dupla": 0,
+      "n_trio": 4,
+      "n_coletiva": 1,
+      "n_ampla": 27,
+      "autoria_equivalente": 40.17410236822004,
+      "taxa_exclusividade": 0.5362318840579711,
+      "peso_medio": 0.5822333676553629,
+      "familias": {},
+      "tipos": {
+        "Indicação": 45,
+        "Moção": 14,
+        "Projeto de Decreto Legislativo": 2,
+        "Projeto de Lei do Legislativo": 3,
+        "Requerimento": 1,
+        "Projeto de Resolução": 3,
+        "Emenda ao Projeto de Lei Ordinária": 1
+      },
+      "coautores": [
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 28
+        },
+        {
+          "nome": "Albininho",
+          "n": 27
+        },
+        {
+          "nome": "Edinildo",
+          "n": 27
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 25
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 25
+        },
+        {
+          "nome": "Jaelson Araújo",
+          "n": 24
+        },
+        {
+          "nome": "Guto",
+          "n": 23
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 20
+        },
+        {
+          "nome": "João do Vale",
+          "n": 15
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 15
+        }
+      ],
+      "anos": {
+        "2026": 28,
+        "2025": 7,
+        "2024": 22,
+        "2023": 12
+      }
+    },
     "impacto_equivalente_label": "40,2",
     "parceiros": [
       {
@@ -4517,6 +5475,41 @@
         "nome": "Edinildo",
         "slug": "edinildo",
         "n": 27
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 25
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 25
+      },
+      {
+        "nome": "Jaelson Araújo",
+        "slug": "jaelson-araujo",
+        "n": 24
+      },
+      {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 23
+      },
+      {
+        "nome": "Enesio Ferreira",
+        "slug": "enesio-ferreira",
+        "n": 20
+      },
+      {
+        "nome": "João do Vale",
+        "slug": "joao-do-vale",
+        "n": 15
+      },
+      {
+        "nome": "Zé Filho",
+        "slug": "ze-filho",
+        "n": 15
       }
     ],
     "n_coletivas": 28
@@ -4524,15 +5517,6 @@
   {
     "id": 724,
     "nome": "Sapo da Kiola",
-    "nome_tse": "JURDINEWTON PEREIRA RIBEIRO",
-    "nome_urna": "SAPO DO KIOLA",
-    "partido": "SOLIDARIEDADE",
-    "cargo": "VEREADOR",
-    "votos": 587,
-    "situacao_tse": "SUPLENTE",
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "sapo-da-kiola",
     "n_proposicoes": 58,
     "stats": {
@@ -4551,78 +5535,34 @@
         "Projeto de Decreto Legislativo": 2,
         "Projeto de Resolução": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 55,
-        "Organiza a Câmara": 3
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 45,
         "Proposição aprovada": 10,
         "Proposição inclusa na Ordem do Dia": 3
       },
       "by_classe": {
-        "Proposta com objeto": 44,
-        "Moção/manifestação": 7,
-        "Não classificável": 5,
-        "Homenagem ou título": 2
-      },
-      "n_proposta": 44,
-      "n_nomeacao": 0,
-      "n_homenagem": 2,
-      "n_indefinida": 5
+        "Indicação": 45,
+        "Aplauso": 5,
+        "Pesar": 5,
+        "Homenagem ou título": 2,
+        "Projeto normativo": 1
+      }
     },
+    "nome_tse": "JURDINEWTON PEREIRA RIBEIRO",
+    "nome_urna": "SAPO DO KIOLA",
+    "partido": "SOLIDARIEDADE",
+    "cargo": "Vereador",
+    "votos": 587,
+    "situacao_tse": "SUPLENTE",
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
     "nome_urna_display": "Sapo do Kiola",
     "nome_urna_igual": false,
-    "impacto": {
-      "autor_id": 724,
-      "n_total": 58,
-      "n_exclusiva": 45,
-      "n_dupla": 0,
-      "n_trio": 1,
-      "n_coletiva": 1,
-      "n_ampla": 11,
-      "autoria_equivalente": 46.1,
-      "taxa_exclusividade": 0.776,
-      "peso_medio": 0.795,
-      "familias": {
-        "pede": 55,
-        "camara": 3
-      },
-      "tipos": {
-        "Indicação": 45,
-        "Projeto de Resolução": 1,
-        "Projeto de Decreto Legislativo": 2,
-        "Moção": 10
-      },
-      "coautores": [
-        {
-          "nome": "João do Vale",
-          "id": 5,
-          "n": 13
-        },
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 12
-        },
-        {
-          "nome": "Enesio Ferreira",
-          "id": 95,
-          "n": 12
-        }
-      ],
-      "anos": {
-        "2025": 22,
-        "2026": 36
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 45 proposições",
-      "Assina mais com João do Vale (13)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 724,
@@ -4651,6 +5591,70 @@
     "foto_ano": 2024,
     "nome_tse_display": "Jurdinewton Pereira Ribeiro",
     "og_image": "/og/v/sapo-da-kiola.jpg",
+    "impacto": {
+      "n_total": 58,
+      "n_exclusiva": 45,
+      "n_dupla": 0,
+      "n_trio": 1,
+      "n_coletiva": 1,
+      "n_ampla": 11,
+      "autoria_equivalente": 46.135854341736696,
+      "taxa_exclusividade": 0.7758620689655172,
+      "peso_medio": 0.7954457645127017,
+      "familias": {},
+      "tipos": {
+        "Moção": 10,
+        "Indicação": 45,
+        "Projeto de Decreto Legislativo": 2,
+        "Projeto de Resolução": 1
+      },
+      "coautores": [
+        {
+          "nome": "João do Vale",
+          "n": 13
+        },
+        {
+          "nome": "Albininho",
+          "n": 12
+        },
+        {
+          "nome": "Enesio Ferreira",
+          "n": 12
+        },
+        {
+          "nome": "Diassis Serrão",
+          "n": 12
+        },
+        {
+          "nome": "Eduardo Ralpmnet",
+          "n": 12
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 11
+        },
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 11
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 11
+        },
+        {
+          "nome": "Edinildo",
+          "n": 11
+        },
+        {
+          "nome": "Guto",
+          "n": 11
+        }
+      ],
+      "anos": {
+        "2026": 36,
+        "2025": 22
+      }
+    },
     "impacto_equivalente_label": "46,1",
     "parceiros": [
       {
@@ -4667,6 +5671,41 @@
         "nome": "Enesio Ferreira",
         "slug": "enesio-ferreira",
         "n": 12
+      },
+      {
+        "nome": "Diassis Serrão",
+        "slug": "diassis-serrao",
+        "n": 12
+      },
+      {
+        "nome": "Eduardo Ralpmnet",
+        "slug": "eduardo-ralpmnet",
+        "n": 12
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 11
+      },
+      {
+        "nome": "Lucas do Beiradão",
+        "slug": "lucas-do-beiradao",
+        "n": 11
+      },
+      {
+        "nome": "Rubemar Ribeiro",
+        "slug": "rubemar-ribeiro",
+        "n": 11
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 11
+      },
+      {
+        "nome": "Guto",
+        "slug": "guto",
+        "n": 11
       }
     ],
     "n_coletivas": 12
@@ -4674,15 +5713,6 @@
   {
     "id": 11,
     "nome": "Selma da Colônia",
-    "nome_tse": "SELMA MARIA RODRIGUES DURANS",
-    "nome_urna": "SELMA DA COLÔNIA",
-    "partido": "PP",
-    "cargo": "VEREADOR",
-    "votos": 641,
-    "situacao_tse": "SUPLENTE",
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "selma-da-colonia",
     "n_proposicoes": 32,
     "stats": {
@@ -4704,12 +5734,7 @@
         "Emenda ao Projeto de Lei Ordinária": 1,
         "Requerimento": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 26,
-        "Organiza a Câmara": 4,
-        "Cria regra": 1,
-        "Altera outra proposta": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 15,
         "Proposição aprovada": 10,
@@ -4717,74 +5742,28 @@
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Proposta com objeto": 16,
-        "Não classificável": 9,
-        "Moção/manifestação": 5,
-        "Nomeação de lugar": 1,
-        "Homenagem ou título": 1
-      },
-      "n_proposta": 16,
-      "n_nomeacao": 1,
-      "n_homenagem": 1,
-      "n_indefinida": 9
+        "Indicação": 20,
+        "Pesar": 5,
+        "Projeto normativo": 2,
+        "Procedimento regimental": 2,
+        "Homenagem ou título": 2,
+        "Convite ou convocação": 1
+      }
     },
+    "nome_tse": "SELMA MARIA RODRIGUES DURANS",
+    "nome_urna": "SELMA DA COLÔNIA",
+    "partido": "PP",
+    "cargo": "Vereador",
+    "votos": 641,
+    "situacao_tse": "SUPLENTE",
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
     "nome_urna_display": "Selma da Colônia",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 11,
-      "n_total": 32,
-      "n_exclusiva": 17,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 0,
-      "n_ampla": 15,
-      "autoria_equivalente": 17.9,
-      "taxa_exclusividade": 0.531,
-      "peso_medio": 0.56,
-      "familias": {
-        "pede": 26,
-        "camara": 4,
-        "emenda": 1,
-        "cria_regra": 1
-      },
-      "tipos": {
-        "Requerimento": 1,
-        "Indicação": 20,
-        "Moção": 5,
-        "Projeto de Decreto Legislativo": 2,
-        "Projeto de Resolução": 2,
-        "Emenda ao Projeto de Lei Ordinária": 1,
-        "Projeto de Lei Ordinária": 1
-      },
-      "coautores": [
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 15
-        },
-        {
-          "nome": "Zé Filho",
-          "id": 29,
-          "n": 15
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 15
-        }
-      ],
-      "anos": {
-        "2023": 10,
-        "2024": 22
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 17 proposições",
-      "Assina mais com Lucas do Beiradão (15)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 11,
@@ -4834,6 +5813,73 @@
     "foto_ano": 2024,
     "nome_tse_display": "Selma Maria Rodrigues Durans",
     "og_image": "/og/v/selma-da-colonia.jpg",
+    "impacto": {
+      "n_total": 32,
+      "n_exclusiva": 17,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 15,
+      "autoria_equivalente": 17.923529411764704,
+      "taxa_exclusividade": 0.53125,
+      "peso_medio": 0.560110294117647,
+      "familias": {},
+      "tipos": {
+        "Projeto de Resolução": 2,
+        "Moção": 5,
+        "Projeto de Lei Ordinária": 1,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Projeto de Decreto Legislativo": 2,
+        "Indicação": 20,
+        "Requerimento": 1
+      },
+      "coautores": [
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 15
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 15
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 15
+        },
+        {
+          "nome": "Albininho",
+          "n": 15
+        },
+        {
+          "nome": "Professor Sandro Lima",
+          "n": 15
+        },
+        {
+          "nome": "Willian Vieira da Tv",
+          "n": 15
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 15
+        },
+        {
+          "nome": "Alessandro Montenegro",
+          "n": 15
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 14
+        },
+        {
+          "nome": "Edinildo",
+          "n": 14
+        }
+      ],
+      "anos": {
+        "2024": 22,
+        "2023": 10
+      }
+    },
     "impacto_equivalente_label": "17,9",
     "parceiros": [
       {
@@ -4850,6 +5896,41 @@
         "nome": "Rubemar Ribeiro",
         "slug": "rubemar-ribeiro",
         "n": 15
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 15
+      },
+      {
+        "nome": "Professor Sandro Lima",
+        "slug": "professor-sandro-lima",
+        "n": 15
+      },
+      {
+        "nome": "Willian Vieira da Tv",
+        "slug": "willian-vieira-da-tv",
+        "n": 15
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 15
+      },
+      {
+        "nome": "Alessandro Montenegro",
+        "slug": "alessandro-montenegro",
+        "n": 15
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 14
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 14
       }
     ],
     "n_coletivas": 15
@@ -4857,15 +5938,6 @@
   {
     "id": 37,
     "nome": "Willian Vieira da Tv",
-    "nome_tse": "ANTONIO WILLIAN RAMOS DOS SANTOS",
-    "nome_urna": "WILLIAN VIEIRA DA TV",
-    "partido": "PP",
-    "cargo": "VEREADOR",
-    "votos": 695,
-    "situacao_tse": "SUPLENTE",
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "willian-vieira-da-tv",
     "n_proposicoes": 40,
     "stats": {
@@ -4886,12 +5958,7 @@
         "Projeto de Lei do Legislativo": 2,
         "Emenda ao Projeto de Lei Ordinária": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 31,
-        "Organiza a Câmara": 6,
-        "Cria regra": 2,
-        "Altera outra proposta": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "nao_informada": 19,
         "Proposição aprovada": 11,
@@ -4899,73 +5966,27 @@
         "Proposição retirada da Ordem do Dia": 2
       },
       "by_classe": {
-        "Proposta com objeto": 22,
-        "Não classificável": 10,
-        "Moção/manifestação": 5,
-        "Homenagem ou título": 2,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 22,
-      "n_nomeacao": 1,
-      "n_homenagem": 2,
-      "n_indefinida": 10
+        "Indicação": 26,
+        "Pesar": 5,
+        "Homenagem ou título": 4,
+        "Projeto normativo": 3,
+        "Procedimento regimental": 2
+      }
     },
+    "nome_tse": "ANTONIO WILLIAN RAMOS DOS SANTOS",
+    "nome_urna": "WILLIAN VIEIRA DA TV",
+    "partido": "PP",
+    "cargo": "Vereador",
+    "votos": 695,
+    "situacao_tse": "SUPLENTE",
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
     "nome_urna_display": "Willian Vieira da TV",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 37,
-      "n_total": 40,
-      "n_exclusiva": 24,
-      "n_dupla": 1,
-      "n_trio": 0,
-      "n_coletiva": 0,
-      "n_ampla": 15,
-      "autoria_equivalente": 25.4,
-      "taxa_exclusividade": 0.6,
-      "peso_medio": 0.636,
-      "familias": {
-        "pede": 31,
-        "camara": 6,
-        "cria_regra": 2,
-        "emenda": 1
-      },
-      "tipos": {
-        "Indicação": 26,
-        "Projeto de Decreto Legislativo": 4,
-        "Moção": 5,
-        "Projeto de Lei do Legislativo": 2,
-        "Projeto de Resolução": 2,
-        "Emenda ao Projeto de Lei Ordinária": 1
-      },
-      "coautores": [
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 15
-        },
-        {
-          "nome": "Zé Filho",
-          "id": 29,
-          "n": 15
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 15
-        }
-      ],
-      "anos": {
-        "2023": 14,
-        "2024": 26
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Autor exclusivo de 24 proposições",
-      "Assina mais com Lucas do Beiradão (15)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 37,
@@ -5015,6 +6036,72 @@
     "foto_ano": 2024,
     "nome_tse_display": "Antonio Willian Ramos dos Santos",
     "og_image": "/og/v/willian-vieira-da-tv.jpg",
+    "impacto": {
+      "n_total": 40,
+      "n_exclusiva": 24,
+      "n_dupla": 1,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 15,
+      "autoria_equivalente": 25.423529411764704,
+      "taxa_exclusividade": 0.6,
+      "peso_medio": 0.6355882352941176,
+      "familias": {},
+      "tipos": {
+        "Projeto de Resolução": 2,
+        "Moção": 5,
+        "Projeto de Decreto Legislativo": 4,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Indicação": 26,
+        "Projeto de Lei do Legislativo": 2
+      },
+      "coautores": [
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 15
+        },
+        {
+          "nome": "Zé Filho",
+          "n": 15
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 15
+        },
+        {
+          "nome": "Albininho",
+          "n": 15
+        },
+        {
+          "nome": "Selma da Colônia",
+          "n": 15
+        },
+        {
+          "nome": "Professor Sandro Lima",
+          "n": 15
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 15
+        },
+        {
+          "nome": "Paulinho Enfermeiro",
+          "n": 15
+        },
+        {
+          "nome": "Alessandro Montenegro",
+          "n": 15
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 14
+        }
+      ],
+      "anos": {
+        "2024": 26,
+        "2023": 14
+      }
+    },
     "impacto_equivalente_label": "25,4",
     "parceiros": [
       {
@@ -5031,6 +6118,41 @@
         "nome": "Rubemar Ribeiro",
         "slug": "rubemar-ribeiro",
         "n": 15
+      },
+      {
+        "nome": "Albininho",
+        "slug": "albininho",
+        "n": 15
+      },
+      {
+        "nome": "Selma da Colônia",
+        "slug": "selma-da-colonia",
+        "n": 15
+      },
+      {
+        "nome": "Professor Sandro Lima",
+        "slug": "professor-sandro-lima",
+        "n": 15
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 15
+      },
+      {
+        "nome": "Paulinho Enfermeiro",
+        "slug": "paulinho-enfermeiro",
+        "n": 15
+      },
+      {
+        "nome": "Alessandro Montenegro",
+        "slug": "alessandro-montenegro",
+        "n": 15
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 14
       }
     ],
     "n_coletivas": 15
@@ -5038,15 +6160,6 @@
   {
     "id": 29,
     "nome": "Zé Filho",
-    "nome_tse": "JOSÉ MARIA NAZIAZENO FILHO",
-    "nome_urna": "ZÉ FILHO",
-    "partido": "PL",
-    "cargo": "VEREADOR",
-    "votos": 557,
-    "situacao_tse": "SUPLENTE",
-    "eleito": 0,
-    "ano_tse": 2024,
-    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
     "slug": "ze-filho",
     "n_proposicoes": 15,
     "stats": {
@@ -5066,11 +6179,7 @@
         "Emenda ao Projeto de Lei Ordinária": 1,
         "Projeto de Decreto Legislativo": 1
       },
-      "by_familia": {
-        "Pede, opina ou fiscaliza": 11,
-        "Organiza a Câmara": 3,
-        "Altera outra proposta": 1
-      },
+      "by_familia": {},
       "by_situacao": {
         "Proposição aprovada": 9,
         "Proposição inclusa na Ordem do Dia": 3,
@@ -5078,69 +6187,27 @@
         "nao_informada": 1
       },
       "by_classe": {
-        "Não classificável": 6,
-        "Moção/manifestação": 5,
-        "Proposta com objeto": 3,
-        "Nomeação de lugar": 1
-      },
-      "n_proposta": 3,
-      "n_nomeacao": 1,
-      "n_homenagem": 0,
-      "n_indefinida": 6
+        "Indicação": 6,
+        "Pesar": 5,
+        "Procedimento regimental": 2,
+        "Projeto normativo": 1,
+        "Homenagem ou título": 1
+      }
     },
+    "nome_tse": "JOSÉ MARIA NAZIAZENO FILHO",
+    "nome_urna": "ZÉ FILHO",
+    "partido": "PL",
+    "cargo": "Vereador",
+    "votos": 557,
+    "situacao_tse": "SUPLENTE",
+    "eleito": 0,
+    "fonte_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+    "ano_tse": 2024,
     "situacao_tse_label": "Suplente",
     "situacao_tse_ajuda": "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado.",
     "nome_urna_display": "ZÉ Filho",
     "nome_urna_igual": true,
-    "impacto": {
-      "autor_id": 29,
-      "n_total": 15,
-      "n_exclusiva": 0,
-      "n_dupla": 0,
-      "n_trio": 0,
-      "n_coletiva": 0,
-      "n_ampla": 15,
-      "autoria_equivalente": 0.9,
-      "taxa_exclusividade": 0.0,
-      "peso_medio": 0.062,
-      "familias": {
-        "pede": 11,
-        "camara": 3,
-        "emenda": 1
-      },
-      "tipos": {
-        "Indicação": 6,
-        "Moção": 5,
-        "Projeto de Decreto Legislativo": 1,
-        "Projeto de Resolução": 2,
-        "Emenda ao Projeto de Lei Ordinária": 1
-      },
-      "coautores": [
-        {
-          "nome": "Lucas do Beiradão",
-          "id": 13,
-          "n": 15
-        },
-        {
-          "nome": "Rubemar Ribeiro",
-          "id": 30,
-          "n": 15
-        },
-        {
-          "nome": "Albininho",
-          "id": 31,
-          "n": 15
-        }
-      ],
-      "anos": {
-        "2023": 8,
-        "2024": 7
-      },
-      "atualizado_em": "2026-11-25T18:42:13"
-    },
-    "destaques": [
-      "Assina mais com Lucas do Beiradão (15)"
-    ],
+    "destaques": [],
     "mandatos": [
       {
         "autor_id": 29,
@@ -5190,6 +6257,71 @@
     "foto_ano": 2024,
     "nome_tse_display": "José Maria Naziazeno Filho",
     "og_image": "/og/v/ze-filho.jpg",
+    "impacto": {
+      "n_total": 15,
+      "n_exclusiva": 0,
+      "n_dupla": 0,
+      "n_trio": 0,
+      "n_coletiva": 0,
+      "n_ampla": 15,
+      "autoria_equivalente": 0.923529411764706,
+      "taxa_exclusividade": 0.0,
+      "peso_medio": 0.0615686274509804,
+      "familias": {},
+      "tipos": {
+        "Projeto de Resolução": 2,
+        "Moção": 5,
+        "Emenda ao Projeto de Lei Ordinária": 1,
+        "Projeto de Decreto Legislativo": 1,
+        "Indicação": 6
+      },
+      "coautores": [
+        {
+          "nome": "Lucas do Beiradão",
+          "n": 15
+        },
+        {
+          "nome": "Rubemar Ribeiro",
+          "n": 15
+        },
+        {
+          "nome": "Albininho",
+          "n": 15
+        },
+        {
+          "nome": "Selma da Colônia",
+          "n": 15
+        },
+        {
+          "nome": "Professor Sandro Lima",
+          "n": 15
+        },
+        {
+          "nome": "Willian Vieira da Tv",
+          "n": 15
+        },
+        {
+          "nome": "Herasmo Leite",
+          "n": 15
+        },
+        {
+          "nome": "Alessandro Montenegro",
+          "n": 15
+        },
+        {
+          "nome": "Fabrícia do Sindicato",
+          "n": 14
+        },
+        {
+          "nome": "Edinildo",
+          "n": 14
+        }
+      ],
+      "anos": {
+        "2024": 7,
+        "2023": 8
+      }
+    },
     "impacto_equivalente_label": "0,9",
     "parceiros": [
       {
@@ -5206,6 +6338,41 @@
         "nome": "Albininho",
         "slug": "albininho",
         "n": 15
+      },
+      {
+        "nome": "Selma da Colônia",
+        "slug": "selma-da-colonia",
+        "n": 15
+      },
+      {
+        "nome": "Professor Sandro Lima",
+        "slug": "professor-sandro-lima",
+        "n": 15
+      },
+      {
+        "nome": "Willian Vieira da Tv",
+        "slug": "willian-vieira-da-tv",
+        "n": 15
+      },
+      {
+        "nome": "Herasmo Leite",
+        "slug": "herasmo-leite",
+        "n": 15
+      },
+      {
+        "nome": "Alessandro Montenegro",
+        "slug": "alessandro-montenegro",
+        "n": 15
+      },
+      {
+        "nome": "Fabrícia do Sindicato",
+        "slug": "fabricia-do-sindicato",
+        "n": 14
+      },
+      {
+        "nome": "Edinildo",
+        "slug": "edinildo",
+        "n": 14
       }
     ],
     "n_coletivas": 15

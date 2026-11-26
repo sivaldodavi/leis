@@ -1,0 +1,144 @@
+[
+  {
+    "verbo": "alterar / dar nova redação",
+    "definicao": "Muda parte do texto de uma norma que já está em vigor.",
+    "exemplo": "Dá nova redação ao art. 58 do Regimento.",
+    "norma": {
+      "id": "SITE_LEI_2923_2024",
+      "slug": "site_lei_2923_2024",
+      "numero": "2.923/2024",
+      "tipo_label": "Lei Ordinária",
+      "data": "2024-04-15",
+      "ementa": "Altera a Lei 2.889/2023."
+    }
+  },
+  {
+    "verbo": "criar",
+    "definicao": "Dá existência a algo novo que ainda não existia: órgão, cargo, conselho, procuradoria.",
+    "exemplo": "Cria a Procuradoria Especial da Mulher.",
+    "norma": {
+      "id": "RSL002_2026",
+      "slug": "rsl002_2026",
+      "numero": "002/2026",
+      "tipo_label": "Resolução",
+      "data": "2026-08-12",
+      "ementa": "Dispõe sobre o acesso à informação, aplica a Lei 12.527/2011 na Câmara e cria o Serviço de Informação ao Cidadão (SIC)."
+    }
+  },
+  {
+    "verbo": "denominar",
+    "definicao": "Dá nome a um bem público, como ala, ponte ou prédio.",
+    "exemplo": "Denomina de Ver. X a ala do 1º andar.",
+    "norma": {
+      "id": "RSL015_2024",
+      "slug": "rsl015_2024",
+      "numero": "015/2024",
+      "tipo_label": "Resolução",
+      "data": "2024-12-19",
+      "ementa": "Dispõe sobre a denominação de alas no Poder Legislativo."
+    }
+  },
+  {
+    "verbo": "designar",
+    "definicao": "Escolhe uma pessoa para uma função específica, por ato administrativo.",
+    "exemplo": "Designa servidora para responder ao e-SIC.",
+    "norma": {
+      "id": "PORT213_2026",
+      "slug": "port213_2026",
+      "numero": "213/2026",
+      "tipo_label": "Portaria",
+      "data": "2026-08-10",
+      "ementa": "Designa servidora para responder às demandas do e-SIC (Sistema Eletrônico de Serviço de Informação ao Cidadão)."
+    }
+  },
+  {
+    "verbo": "homenagear / aplaudir",
+    "definicao": "Expressa reconhecimento público, em geral sem efeito normativo.",
+    "exemplo": "Moção de aplausos às equipes de combate ao incêndio.",
+    "norma": null
+  },
+  {
+    "verbo": "instituir",
+    "definicao": "Estabelece algo mais abstrato: um programa, política, fundo, sistema ou obrigação. Costuma ser de longo prazo.",
+    "exemplo": "Institui o Programa de Governo Digital.",
+    "norma": {
+      "id": "SITE_POR_160_2026",
+      "slug": "site_por_160_2026",
+      "numero": "160/2026",
+      "tipo_label": "Portaria",
+      "data": "2026-01-23",
+      "ementa": "Institui processo de nomeação e exoneração de assessor parlamentar de vereador."
+    }
+  },
+  {
+    "verbo": "julgar",
+    "definicao": "Decide sobre contas, fatos ou responsabilidades.",
+    "exemplo": "Julga as contas anuais de governo de 2016.",
+    "norma": {
+      "id": "DL075",
+      "slug": "dl075",
+      "numero": "075/2026",
+      "tipo_label": "Decreto Legislativo",
+      "data": "2026-06-15",
+      "ementa": "Julga as contas anuais de governo do Município referentes a 2016, de responsabilidade do ex-prefeito Filadelfo Mendes Neto, e reprova as contas."
+    }
+  },
+  {
+    "verbo": "reconhecer",
+    "definicao": "Declara uma condição que já existe, como utilidade pública ou homenagem.",
+    "exemplo": "Reconhece como de utilidade pública a ACIP.",
+    "norma": {
+      "id": "LEI2920",
+      "slug": "lei2920",
+      "numero": "2.920/2024",
+      "tipo_label": "Lei Ordinária",
+      "data": "2024-04-01",
+      "ementa": "Reconhece como de utilidade pública a Associação Comercial e Industrial de Pinheiro (ACIP), CNPJ 12.568.267/0001-69."
+    }
+  },
+  {
+    "verbo": "regulamentar / dispor sobre",
+    "definicao": "Define as regras de como algo funciona.",
+    "exemplo": "Dispõe e regulamenta sobre os gabinetes parlamentares.",
+    "norma": {
+      "id": "RSL013_2024",
+      "slug": "rsl013_2024",
+      "numero": "013/2024",
+      "tipo_label": "Resolução",
+      "data": "2024-07-16",
+      "ementa": "Dispõe e regulamenta sobre os gabinetes parlamentares dos vereadores e sobre os servidores que atuam neles."
+    }
+  },
+  {
+    "verbo": "requerer / indicar",
+    "definicao": "Faz um pedido ou sugestão formal. Não obriga a Administração por si só.",
+    "exemplo": "Indica ao Prefeito a recuperação de um ramal.",
+    "norma": null
+  },
+  {
+    "verbo": "revogar",
+    "definicao": "Torna sem efeito uma norma anterior.",
+    "exemplo": "Revoga a Lei 507/1978, se o PL 004 for aprovado.",
+    "norma": {
+      "id": "SITE_LEI_2875_2022",
+      "slug": "site_lei_2875_2022",
+      "numero": "2.875/2022",
+      "tipo_label": "Lei Ordinária",
+      "data": "2022-11-21",
+      "ementa": "Revoga as Leis 2.632/2013, 2.649/2014 e 2.716/2017."
+    }
+  },
+  {
+    "verbo": "suspender",
+    "definicao": "Interrompe os efeitos de algo por um prazo ou até um evento. Não apaga a norma.",
+    "exemplo": "Suspende a eleição da Mesa até a aprovação da emenda.",
+    "norma": {
+      "id": "RSL001_2026",
+      "slug": "rsl001_2026",
+      "numero": "001/2026",
+      "tipo_label": "Resolução",
+      "data": "2026-07-15",
+      "ementa": "Suspende a eleição da Mesa Diretora para o biênio 2027/2028, prevista para 17/07/2026, até a conclusão da tramitação da Proposta de Emenda à LOM que trata da matéria."
+    }
+  }
+]

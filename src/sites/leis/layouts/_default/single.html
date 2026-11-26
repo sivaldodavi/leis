@@ -2,7 +2,7 @@
 <div class="content">
   <p class="eyebrow">{{ .Params.tipo_label }} · {{ .Params.numero }}</p>
   <h1>{{ .Title }}</h1>
-  <p style="font-size:14px;color:#5B5B5B">Situação: <strong style="color:{{ if eq .Params.situacao "vigente" }}#1E7B4F{{ else }}#6B6B6B{{ end }}">{{ .Params.situacao_label }}</strong> · {{ with .Params.data }}Data: {{ . }}{{ else }}Ano: {{ .Params.ano }}{{ end }} · <a href="/tipos/">O que este tipo de ato faz?</a></p>
+  <p style="font-size:14px;color:#5B5B5B">Situação: <strong style="color:{{ if eq .Params.situacao "vigente" }}#1E7B4F{{ else }}#6B6B6B{{ end }}">{{ .Params.situacao_label }}</strong> · {{ with .Params.data }}Data: {{ . }}{{ else }}Ano: {{ .Params.ano }}{{ end }}</p>
   {{ if .Params.especie }}{{ partial "share.html" . }}{{ end }}
   <hr>
   {{ .Content }}

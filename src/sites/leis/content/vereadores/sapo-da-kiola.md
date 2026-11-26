@@ -6,6 +6,7 @@ partido: "SOLIDARIEDADE"
 nome_urna: "SAPO DO KIOLA"
 nome_urna_display: "Sapo do Kiola"
 votos: 587
+ano_tse: 2024
 situacao_tse: "SUPLENTE"
 situacao_tse_ajuda: "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
 n_proposicoes: 58
@@ -22,15 +23,19 @@ coletivas: 12
 taxa_exclusividade: 78
 peso_medio: 0.80
 og_image: "/og/v/sapo-da-kiola.jpg"
-share_text: "Sapo da Kiola — 58 proposições, 45 de autoria exclusiva, 44 com objeto definido na Câmara de Pinheiro"
+share_text: "Sapo da Kiola — 58 proposições, 45 de autoria exclusiva na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/sapo-da-kiola-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/sapo-da-kiola-9x16.jpg"}
-destaques:
-  - "Autor exclusivo de 45 proposições"
-  - "Assina mais com João do Vale (13)"
 parceiros:
   - {nome: "João do Vale", slug: "joao-do-vale", n: 13}
   - {nome: "Albininho", slug: "albininho", n: 12}
   - {nome: "Enesio Ferreira", slug: "enesio-ferreira", n: 12}
+  - {nome: "Diassis Serrão", slug: "diassis-serrao", n: 12}
+  - {nome: "Eduardo Ralpmnet", slug: "eduardo-ralpmnet", n: 12}
+  - {nome: "Herasmo Leite", slug: "herasmo-leite", n: 11}
+  - {nome: "Lucas do Beiradão", slug: "lucas-do-beiradao", n: 11}
+  - {nome: "Rubemar Ribeiro", slug: "rubemar-ribeiro", n: 11}
+  - {nome: "Edinildo", slug: "edinildo", n: 11}
+  - {nome: "Guto", slug: "guto", n: 11}
 ---

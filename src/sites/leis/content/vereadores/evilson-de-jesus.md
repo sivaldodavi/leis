@@ -6,6 +6,7 @@ partido: "PSD"
 nome_urna: "EVILSON SANTOS"
 nome_urna_display: "Evilson Santos"
 votos: 880
+ano_tse: 2024
 situacao_tse: "SUPLENTE"
 situacao_tse_ajuda: "Não assumiu a cadeira na eleição, mas ficou na suplência da coligação ou do partido e pode ser convocado."
 n_proposicoes: 6
@@ -22,14 +23,14 @@ coletivas: 1
 taxa_exclusividade: 83
 peso_medio: 0.86
 og_image: "/og/v/evilson-de-jesus.jpg"
-share_text: "Evilson de Jesus — 6 proposições, 5 de autoria exclusiva, 3 com objeto definido na Câmara de Pinheiro"
+share_text: "Evilson de Jesus — 6 proposições, 5 de autoria exclusiva na Câmara de Pinheiro"
 og_cards:
   - {formato: "4:5", arquivo: "/og/v/evilson-de-jesus-4x5.jpg"}
   - {formato: "9:16", arquivo: "/og/v/evilson-de-jesus-9x16.jpg"}
-destaques:
-  - "Autor exclusivo de 5 proposições"
 parceiros:
   - {nome: "Rubemar Ribeiro", slug: "rubemar-ribeiro", n: 1}
   - {nome: "Edinildo", slug: "edinildo", n: 1}
   - {nome: "Guto", slug: "guto", n: 1}
+  - {nome: "Abdias de Jesus", slug: "abdias-de-jesus", n: 1}
+  - {nome: "Eduardo Ralpmnet", slug: "eduardo-ralpmnet", n: 1}
 ---

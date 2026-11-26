@@ -127,22 +127,18 @@
   </div>
   <div class="panel">
     <div class="bar-list">
-      {{ $classes := slice (dict "l" "Proposta com objeto (obra, serviço, política)" "k" "Proposta com objeto" "c" "proposta") (dict "l" "Nomeação de lugar (via, ponte, prédio)" "k" "Nomeação de lugar" "c" "denominacao") (dict "l" "Homenagem ou título" "k" "Homenagem ou título" "c" "homenagem") (dict "l" "Moção/manifestação" "k" "Moção/manifestação" "c" "manifestacao") (dict "l" "Não classificável" "k" "Não classificável" "c" "indefinida") }}
       {{ $maxc := 1 }}
-      {{ range $classes }}{{ $n := index $autor.stats.by_classe .k | default 0 }}{{ if gt $n $maxc }}{{ $maxc = $n }}{{ end }}{{ end }}
-      {{ range $classes }}
-      {{ $n := index $autor.stats.by_classe .k | default 0 }}
+      {{ range $k, $n := $autor.stats.by_classe }}{{ if gt $n $maxc }}{{ $maxc = $n }}{{ end }}{{ end }}
+      {{ range $k, $n := $autor.stats.by_classe }}
       <div class="bar-row">
-        <span class="lbl">{{ .l }}</span>
+        <span class="lbl">{{ $k }}</span>
         <div class="bar-track"><div class="bar-fill" style="width:{{ if $n }}{{ math.Round (mul (div (float $n) (float $maxc)) 100) }}{{ else }}0{{ end }}%"></div></div>
         <span class="val">{{ $n }}</span>
       </div>
       {{ end }}
     </div>
     <p class="note">
-      {{ $nc := add $autor.stats.n_nomeacao $autor.stats.n_homenagem }}
-      {{ if gt $nc 0 }}{{ $nc }} proposição(ões) apenas nomeiam lugares ou homenageiam pessoas. {{ end }}
-      “Não classificável” reúne ementas incompletas na fonte ou sem objeto explícito; não significa proposta sem valor. A classificação não entra na conta de autoria equivalente.
+      Classificação pelo subtipo do ato, conforme o banco: indicações, projetos normativos, orçamentários, homenagens e demais atos.
     </p>
   </div>
 
